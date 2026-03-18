@@ -1,0 +1,157 @@
+{
+  "type": "FeatureCollection",
+  "name": "s10_corridor_01",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "field",
+        "map_id": "s10_corridor_01",
+        "dataset": "maps_fc_mppi_closedloop_18",
+        "family_id": "s10_corridor",
+        "distribution": "corridor",
+        "size_label": "10",
+        "size_m": 10.0,
+        "pair_id": 1,
+        "seed": 20261419,
+        "start_corner": "lower_left",
+        "gate_side": "south",
+        "gate_pos_ratio": 0.12,
+        "gate_width": 1.2,
+        "obstacle_fraction": 0.007827
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.0,
+              0.0
+            ],
+            [
+              10.0,
+              10.0
+            ],
+            [
+              0.0,
+              10.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              10.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 1,
+        "distribution": "corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.722063020035954,
+              3.2137745952349537
+            ],
+            [
+              8.722063020035954,
+              4.534193585368548
+            ],
+            [
+              8.456164827922386,
+              4.534193585368548
+            ],
+            [
+              8.456164827922386,
+              3.2137745952349537
+            ],
+            [
+              8.722063020035954,
+              3.2137745952349537
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 2,
+        "distribution": "corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5912307010482,
+              6.849439293081779
+            ],
+            [
+              8.5912307010482,
+              7.998337172315641
+            ],
+            [
+              8.34743763519743,
+              7.998337172315641
+            ],
+            [
+              8.34743763519743,
+              6.849439293081779
+            ],
+            [
+              8.5912307010482,
+              6.849439293081779
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 3,
+        "distribution": "corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5447614405891175,
+              8.491764312466971
+            ],
+            [
+              7.5447614405891175,
+              8.880977654604889
+            ],
+            [
+              7.155548098451201,
+              8.880977654604889
+            ],
+            [
+              7.155548098451201,
+              8.491764312466971
+            ],
+            [
+              7.5447614405891175,
+              8.491764312466971
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

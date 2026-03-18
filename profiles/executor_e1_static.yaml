@@ -1,0 +1,40 @@
+coverage_executor:
+  ros__parameters:
+    plan_path: ""
+    resume_from_state: true
+    state_file: ""
+    log_file: ""
+
+    use_smoother: false
+    smoother_action: "/smooth_path"
+    smoother_id: ""
+    max_smoothing_duration_sec: 0.5
+    check_smoother_collisions: false
+    follow_action: "/follow_path"
+
+    startup_wait_for_nav2_sec: 45.0
+    startup_wait_poll_sec: 1.0
+
+    controller_id: ""
+    goal_checker_id: ""
+    progress_checker_id: ""
+
+    merge_short_segments: true
+    merge_length_threshold_m: 2.0
+    merge_min_poses: 3
+
+    retry_max: 1
+    skip_on_failure: true
+    wait_after_fail_sec: 0.5
+
+    clear_costmaps_on_fail: false
+    clear_local_service: "/local_costmap/clear_entirely_local_costmap"
+    clear_global_service: "/global_costmap/clear_entirely_global_costmap"
+    clear_service_timeout_sec: 1.0
+
+    enable_stuck_watchdog: false
+    stuck_timeout_sec: 60.0
+    stuck_cooldown_sec: 6.0
+
+    current_path_topic: "/coverage/current_path"
+    events_topic: "/coverage/events"

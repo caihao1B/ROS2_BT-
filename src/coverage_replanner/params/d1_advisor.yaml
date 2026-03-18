@@ -1,0 +1,16 @@
+coverage_d1_advisor:
+  ros__parameters:
+    map_topic: /map
+    costmap_topic: /global_costmap/costmap_raw
+    occ_thresh: 50
+    w_p: 1.0
+    w_h: 1.2
+    w_s: 1.5
+    w_r: 1.8
+    w_b: 1.0
+    replace_improvement_min: 0.08
+    candidate_window_segments: 5
+    beam_width: 12
+    top_seed_count: 4
+    turn_kind_penalty: 0.35
+    tail_discount: 0.65

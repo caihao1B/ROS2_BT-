@@ -1,0 +1,25 @@
+dynamic_obstacles:
+  ros__parameters:
+    scenario: agri_suite
+    mode: low
+    seed: 22
+    bounds_source: plan
+    bbox: [0.0, 0.0, 16.0, 12.0]
+    edge_margin_m: 0.20
+
+    obstacle_name_prefix: "microB"
+    obstacle_speed_mps: 0.42
+
+    suite_segment_indices: [0, 1, 2, 3]
+
+    agri_crossing_num: 0
+    agri_parallel_num: 2
+    agri_blocking_num: 0
+    agri_random_walk_num: 0
+
+    agri_parallel_speed_scale: 0.45
+
+    enable_wiggle: true
+    wiggle_amp_m_range: [0.00, 0.03]
+    wiggle_freq_hz_range: [0.05, 0.20]
+    gaussian_noise_std_m: 0.008

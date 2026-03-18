@@ -1,0 +1,8 @@
+{
+  "map_id": "s05_corridor_02",
+  "planner": "f2c_geom",
+  "path_length_m": 17.480052513284278,
+  "segment_count": 7,
+  "row_count": 3,
+  "turn_count": 4
+}

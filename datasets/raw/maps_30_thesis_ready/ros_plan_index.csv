@@ -1,0 +1,5 @@
+map_id,planner,plan_json,summary_json
+low_01_5p0m_scatter,f2c_geom,f2c_geom/json/low_01_5p0m_scatter.json,f2c_geom/summary/low_01_5p0m_scatter.summary.json
+low_08_8p2m_ring,f2c_geom,f2c_geom/json/low_08_8p2m_ring.json,f2c_geom/summary/low_08_8p2m_ring.summary.json
+low_09_8p6m_corridor_vertical,f2c_geom,f2c_geom/json/low_09_8p6m_corridor_vertical.json,f2c_geom/summary/low_09_8p6m_corridor_vertical.summary.json
+low_11_9p5m_dual_cluster_lr,f2c_geom,f2c_geom/json/low_11_9p5m_dual_cluster_lr.json,f2c_geom/summary/low_11_9p5m_dual_cluster_lr.summary.json

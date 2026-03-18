@@ -1,0 +1,27 @@
+dynamic_obstacles:
+  ros__parameters:
+    scenario: yaml
+    seed: 404
+    bounds_source: plan
+    bbox: [0.0, 0.0, 10.0, 10.0]
+    edge_margin_m: 0.15
+
+    startup_wait_sec: 4.0
+    cleanup_before_spawn: true
+    safe_spawn_enable: true
+    safe_spawn_arm_delay_sec: 1.0
+    safe_spawn_pose_timeout_sec: 8.0
+    safe_spawn_robot_clearance_m: 0.85
+    safe_spawn_front_clearance_m: 1.10
+    safe_spawn_front_half_angle_deg: 70.0
+    safe_spawn_outside_pad_m: 0.60
+
+    obstacle_name_prefix: "smallS4Still"
+    obstacle_mass: 1.0
+    obstacle_kinematic: true
+    spawn_z: 0.0
+    obstacle_speed_mps: 0.0
+    update_rate_hz: 10.0
+
+    enable_wiggle: false
+    gaussian_noise_std_m: 0.0

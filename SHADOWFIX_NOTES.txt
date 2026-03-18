@@ -1,0 +1,30 @@
+coverage_ws_exp shadow-fix patch
+
+Changed files:
+- config/nav2_params_farm_gate_sim_dyn_costmap_mppi_shadowfix.yaml
+- scripts/start_stack_static_tf_fixed.sh
+- profiles/supervisor_dynamic_full.yaml
+- profiles/supervisor_norepair.yaml
+- profiles/supervisor_closure_off.yaml
+- src/coverage_bt_supervisor/params/supervisor.yaml
+- src/coverage_perception/params/scan_tracker.yaml
+- config/cv_predictor_h12.yaml
+- src/coverage_prediction/params/cv_predictor.yaml
+- src/coverage_replanner/params/region_state.yaml
+- scripts/run_obstacles.sh
+- scripts/gen_still_obstacles_yaml.py
+- profiles/dynamic_obstacles_small_s4_still.yaml
+- scripts/clear_shadow.sh
+
+Purpose:
+1) Reduce stale dynamic-obstacle shadows that remain in costmaps after movers leave.
+2) Make supervisor use local costmap for live blocking checks and clear faster when no live tracks/predictions exist.
+3) Shorten track/prediction/region-state retention times.
+4) Add a T4 still obstacle scenario that spawns persistent non-map obstacles anchored on selected plan segments.
+
+Key runtime behavior:
+- T1 now defaults to config/nav2_params_farm_gate_sim_dyn_costmap_mppi_shadowfix.yaml
+- Old nav2 file still exists and can be used with --nav2-params if needed.
+- For dynamic runs, run: bash scripts/apply_profile.sh dynamic
+- New still obstacle example:
+  bash scripts/run_obstacles.sh --scenario still --map-id <map> --planner <planner> --segments '[5,6]' --startup-wait 8.0

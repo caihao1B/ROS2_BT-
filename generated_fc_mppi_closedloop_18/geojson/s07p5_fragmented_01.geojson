@@ -1,0 +1,157 @@
+{
+  "type": "FeatureCollection",
+  "name": "s07p5_fragmented_01",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "field",
+        "map_id": "s07p5_fragmented_01",
+        "dataset": "maps_fc_mppi_closedloop_18",
+        "family_id": "s07p5_fragmented",
+        "distribution": "fragmented",
+        "size_label": "07p5",
+        "size_m": 7.5,
+        "pair_id": 1,
+        "seed": 20261269,
+        "start_corner": "lower_left",
+        "gate_side": "south",
+        "gate_pos_ratio": 0.12,
+        "gate_width": 1.2,
+        "obstacle_fraction": 0.007314
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              0.0
+            ],
+            [
+              7.5,
+              7.5
+            ],
+            [
+              0.0,
+              7.5
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              7.5,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 1,
+        "distribution": "fragmented"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.865396012495313,
+              3.519081110136
+            ],
+            [
+              5.865396012495313,
+              3.882664827728748
+            ],
+            [
+              5.501812294902565,
+              3.882664827728748
+            ],
+            [
+              5.501812294902565,
+              3.519081110136
+            ],
+            [
+              5.865396012495313,
+              3.519081110136
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 2,
+        "distribution": "fragmented"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.792052647994827,
+              6.409670991295656
+            ],
+            [
+              6.792052647994827,
+              6.771013494356732
+            ],
+            [
+              6.430710144933751,
+              6.771013494356732
+            ],
+            [
+              6.430710144933751,
+              6.409670991295656
+            ],
+            [
+              6.792052647994827,
+              6.409670991295656
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 3,
+        "distribution": "fragmented"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.301545308936885,
+              5.163329720090516
+            ],
+            [
+              6.301545308936885,
+              5.5488680308679434
+            ],
+            [
+              5.916006998159458,
+              5.5488680308679434
+            ],
+            [
+              5.916006998159458,
+              5.163329720090516
+            ],
+            [
+              6.301545308936885,
+              5.163329720090516
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='farm_map_collision_s05_corridor_01'>
+    <static>true</static>
+    <link name='link'>
+      <collision name='occ_0000'>
+        <pose>3.500000 0.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>7.000000 0.950000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0000'>
+        <pose>3.500000 0.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>7.000000 0.950000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0001'>
+        <pose>5.300000 3.300000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.900000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0001'>
+        <pose>5.300000 3.300000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.900000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0002'>
+        <pose>5.200000 4.600000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.800000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0002'>
+        <pose>5.200000 4.600000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.800000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0003'>
+        <pose>0.500000 3.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.000000 5.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0003'>
+        <pose>0.500000 3.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.000000 5.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0004'>
+        <pose>6.525000 3.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.950000 5.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0004'>
+        <pose>6.525000 3.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.950000 5.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0005'>
+        <pose>3.500000 6.500000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>7.000000 1.000000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0005'>
+        <pose>3.500000 6.500000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>7.000000 1.000000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,25 @@
+dynamic_obstacles:
+  ros__parameters:
+    # low: 10-30s; high: 2-5s
+    mode: "low"
+    num_obstacles: 1
+
+    spawn_service: "/spawn_entity"
+    set_state_service: "/gazebo/set_entity_state"
+
+    obstacle_name_prefix: "dyn_obstacle"
+    obstacle_size_xyz: [0.30, 0.30, 0.40]   # meters
+    obstacle_speed_mps: 0.35
+
+    update_rate_hz: 10.0
+
+    # If plan_path is provided, bbox will be inferred and obstacles will cross it.
+    plan_path: ""
+
+    # Manual override of crossing line (world coordinates)
+    use_manual_line: false
+    line_start_xy: [0.0, 0.0]
+    line_end_xy: [2.0, 0.0]
+
+    # Spawn pose
+    spawn_z: 0.0

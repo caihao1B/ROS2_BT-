@@ -1,0 +1,60 @@
+dynamic_obstacles:
+  ros__parameters:
+    scenario: agri_suite
+    mode: low
+    seed: 42
+    bounds_source: plan
+    bbox: [0.0, 0.0, 16.0, 12.0]
+    edge_margin_m: 0.20
+
+    spawn_service_candidates: ["/spawn_entity", "/gazebo/spawn_entity"]
+    set_state_service_candidates: ["/gazebo/set_entity_state", "/set_entity_state"]
+    delete_service_candidates: ["/delete_entity", "/gazebo/delete_entity"]
+
+    startup_wait_sec: 6.0
+    cleanup_before_spawn: true
+
+    safe_spawn_enable: true
+    safe_spawn_arm_delay_sec: 2.0
+    safe_spawn_pose_timeout_sec: 8.0
+    safe_spawn_robot_clearance_m: 1.35
+    safe_spawn_front_clearance_m: 1.80
+    safe_spawn_front_half_angle_deg: 70.0
+    safe_spawn_outside_pad_m: 1.20
+
+    obstacle_name_prefix: "micro_obs"
+    obstacle_mass: 1.0
+    obstacle_kinematic: true
+    spawn_z: 0.0
+    obstacle_speed_mps: 0.45
+    update_rate_hz: 10.0
+
+    suite_segment_indices: [0, 1, 2, 3]
+
+    agri_crossing_num: 2
+    agri_parallel_num: 1
+    agri_blocking_num: 1
+    agri_random_walk_num: 0
+
+    agri_crossing_speed_scale: 1.05
+    agri_parallel_speed_scale: 0.55
+    agri_blocking_speed_scale: 0.80
+
+    agri_block_leave: true
+    agri_block_dwell_min_sec: 10.0
+    agri_block_dwell_max_sec: 18.0
+    agri_outside_pause_min_sec: 0.8
+    agri_outside_pause_max_sec: 2.5
+
+    agri_initial_delay_max_sec: 4.0
+
+    agri_size_profiles: ["small", "human"]
+    agri_size_weights:  [3.0, 1.0]
+    size_small_xyz:   [0.20, 0.20, 0.30]
+    size_human_xyz:   [0.50, 0.50, 0.90]
+    size_vehicle_xyz: [1.50, 1.00, 0.90]
+
+    enable_wiggle: true
+    wiggle_amp_m_range:  [0.00, 0.04]
+    wiggle_freq_hz_range: [0.00, 0.25]
+    gaussian_noise_std_m: 0.008

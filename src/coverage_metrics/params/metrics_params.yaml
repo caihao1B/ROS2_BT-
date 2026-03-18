@@ -1,0 +1,21 @@
+coverage_metrics:
+  ros__parameters:
+    map_topic: "/map"
+    tf_map_frame: "map"
+    tf_base_frame: "base_link"
+
+    # The 'tool' radius used to mark map cells as covered.
+    # For TurtleBot3 waffle, ~0.18-0.22m is a reasonable default.
+    tool_radius_m: 0.20
+
+    # Sampling / writing
+    sample_period_sec: 0.5
+    write_period_sec: 2.0
+
+    # Outputs
+    output_dir: ""   # empty => ~/.ros/coverage_metrics
+    timeseries_filename: "metrics_timeseries.csv"
+    summary_filename: "metrics_summary.json"
+
+    # Event integration
+    events_topic: "/coverage/events"

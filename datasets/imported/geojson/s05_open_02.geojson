@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "name": "s05_open_02",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "field",
+        "map_id": "s05_open_02",
+        "dataset": "maps_fc_mppi_closedloop_18",
+        "family_id": "s05_open",
+        "distribution": "open",
+        "size_label": "05",
+        "size_m": 5.0,
+        "pair_id": 2,
+        "seed": 20260826,
+        "start_corner": "lower_left",
+        "gate_side": "south",
+        "gate_pos_ratio": 0.12,
+        "gate_width": 1.2,
+        "obstacle_fraction": 0.004082
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.0,
+              0.0
+            ],
+            [
+              5.0,
+              5.0
+            ],
+            [
+              0.0,
+              5.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              5.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 1,
+        "distribution": "open"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.554622164001256,
+              4.261101703083289
+            ],
+            [
+              4.554622164001256,
+              4.5805547733127785
+            ],
+            [
+              4.235169093771767,
+              4.5805547733127785
+            ],
+            [
+              4.235169093771767,
+              4.261101703083289
+            ],
+            [
+              4.554622164001256,
+              4.261101703083289
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

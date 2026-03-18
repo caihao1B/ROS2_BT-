@@ -1,0 +1,5 @@
+map_id,density,size_m,seed,layout_mode,geojson
+low_01_5p0m_scatter,low,5.000,20260908,scatter,geojson/low_01_5p0m_scatter.geojson
+low_08_8p2m_ring,low,8.182,20261905,ring,geojson/low_08_8p2m_ring.geojson
+low_09_8p6m_corridor_vertical,low,8.636,20262048,corridor_vertical,geojson/low_09_8p6m_corridor_vertical.geojson
+low_11_9p5m_dual_cluster_lr,low,9.545,20262332,dual_cluster_lr,geojson/low_11_9p5m_dual_cluster_lr.geojson

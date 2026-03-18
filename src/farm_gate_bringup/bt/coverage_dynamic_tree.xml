@@ -1,0 +1,59 @@
+<root main_tree_to_execute="MainTree">
+  <!--
+    This is a DESIGN XML skeleton.
+    We will implement these nodes in later steps (either via BehaviorTree.CPP plugins or a BT runner).
+  -->
+  <BehaviorTree ID="MainTree">
+    <ReactiveFallback name="Root">
+      <Sequence name="EmergencySafety">
+        <IsDangerZone   decision_topic="/coverage/strategy_decision"/>
+        <StopRobot/>
+        <WaitUntilSafe  decision_topic="/coverage/strategy_decision"/>
+      </Sequence>
+
+      <Sequence name="CoverageMain">
+        <ObserveAndTrack/>
+        <ComputeConflict/>
+        <SelectMode/>
+
+        <Fallback name="ExecuteMode">
+          <Sequence name="ModeA_WaitToClear">
+            <IsModeA/>
+            <GotoSafeStopPose/>
+            <WaitToClear/>
+            <ResumeFollowPath/>
+          </Sequence>
+
+          <Sequence name="ModeB_Yield">
+            <IsModeB/>
+            <ApplySpeedLimit/>
+            <ResumeFollowPath/>
+          </Sequence>
+
+          <Sequence name="ModeC_DeferSegment">
+            <IsModeC/>
+            <DeferSegment/>
+            <SwitchCluster/>
+          </Sequence>
+
+          <Sequence name="ModeD_LocalReplan">
+            <IsModeD/>
+            <RequestLocalDetour/>
+            <FollowDetour/>
+            <RejoinCoverage/>
+          </Sequence>
+
+          <Sequence name="ModeE_SkipWithMark">
+            <IsModeE/>
+            <MarkSkipRegion/>
+            <SelectNextSegment/>
+          </Sequence>
+
+          <Sequence name="Default_RunFollowPath">
+            <FollowCoverageSegment/>
+          </Sequence>
+        </Fallback>
+      </Sequence>
+    </ReactiveFallback>
+  </BehaviorTree>
+</root>

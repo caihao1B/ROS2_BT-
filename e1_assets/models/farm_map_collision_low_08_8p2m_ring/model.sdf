@@ -1,0 +1,998 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='farm_map_collision_low_08_8p2m_ring'>
+    <static>true</static>
+    <link name='link'>
+      <collision name='occ_0000'>
+        <pose>5.100000 0.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>10.200000 0.950000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0000'>
+        <pose>5.100000 0.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>10.200000 0.950000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0001'>
+        <pose>6.825000 2.625000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0001'>
+        <pose>6.825000 2.625000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0002'>
+        <pose>6.850000 2.675000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0002'>
+        <pose>6.850000 2.675000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0003'>
+        <pose>6.825000 2.725000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0003'>
+        <pose>6.825000 2.725000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0004'>
+        <pose>6.800000 2.800000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0004'>
+        <pose>6.800000 2.800000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0005'>
+        <pose>6.775000 2.875000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.550000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0005'>
+        <pose>6.775000 2.875000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.550000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0006'>
+        <pose>6.750000 2.950000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0006'>
+        <pose>6.750000 2.950000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0007'>
+        <pose>6.725000 3.050000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0007'>
+        <pose>6.725000 3.050000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0008'>
+        <pose>6.700000 3.150000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0008'>
+        <pose>6.700000 3.150000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0009'>
+        <pose>6.675000 3.250000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.550000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0009'>
+        <pose>6.675000 3.250000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.550000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0010'>
+        <pose>6.650000 3.325000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0010'>
+        <pose>6.650000 3.325000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0011'>
+        <pose>6.625000 3.375000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0011'>
+        <pose>6.625000 3.375000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0012'>
+        <pose>6.600000 3.425000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0012'>
+        <pose>6.600000 3.425000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0013'>
+        <pose>3.475000 3.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.050000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0013'>
+        <pose>3.475000 3.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.050000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0014'>
+        <pose>6.600000 3.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.200000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0014'>
+        <pose>6.600000 3.475000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.200000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0015'>
+        <pose>3.575000 3.525000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0015'>
+        <pose>3.575000 3.525000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0016'>
+        <pose>3.650000 3.575000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0016'>
+        <pose>3.650000 3.575000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0017'>
+        <pose>3.725000 3.625000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0017'>
+        <pose>3.725000 3.625000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0018'>
+        <pose>3.825000 3.700000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.850000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0018'>
+        <pose>3.825000 3.700000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.850000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0019'>
+        <pose>3.800000 3.775000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.800000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0019'>
+        <pose>3.800000 3.775000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.800000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0020'>
+        <pose>3.775000 3.850000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.850000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0020'>
+        <pose>3.775000 3.850000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.850000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0021'>
+        <pose>3.875000 3.925000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0021'>
+        <pose>3.875000 3.925000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0022'>
+        <pose>3.950000 3.975000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0022'>
+        <pose>3.950000 3.975000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0023'>
+        <pose>4.025000 4.025000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0023'>
+        <pose>4.025000 4.025000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0024'>
+        <pose>4.125000 4.075000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.050000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0024'>
+        <pose>4.125000 4.075000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.050000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0025'>
+        <pose>3.975000 6.275000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0025'>
+        <pose>3.975000 6.275000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0026'>
+        <pose>3.925000 6.325000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0026'>
+        <pose>3.925000 6.325000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0027'>
+        <pose>3.925000 6.375000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.550000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0027'>
+        <pose>3.925000 6.375000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.550000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0028'>
+        <pose>3.925000 6.425000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0028'>
+        <pose>3.925000 6.425000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0029'>
+        <pose>3.900000 6.500000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0029'>
+        <pose>3.900000 6.500000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0030'>
+        <pose>3.875000 6.575000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.750000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0030'>
+        <pose>3.875000 6.575000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.750000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0031'>
+        <pose>3.850000 6.625000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.800000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0031'>
+        <pose>3.850000 6.625000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.800000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0032'>
+        <pose>3.825000 6.700000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.750000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0032'>
+        <pose>3.825000 6.700000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.750000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0033'>
+        <pose>3.775000 6.800000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.750000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0033'>
+        <pose>3.775000 6.800000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.750000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0034'>
+        <pose>3.775000 6.875000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0034'>
+        <pose>3.775000 6.875000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0035'>
+        <pose>3.750000 6.925000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0035'>
+        <pose>3.750000 6.925000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0036'>
+        <pose>3.750000 6.975000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0036'>
+        <pose>3.750000 6.975000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0037'>
+        <pose>3.725000 7.025000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0037'>
+        <pose>3.725000 7.025000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0038'>
+        <pose>3.725000 7.075000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0038'>
+        <pose>3.725000 7.075000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.250000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0039'>
+        <pose>4.925000 7.225000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.150000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0039'>
+        <pose>4.925000 7.225000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.150000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0040'>
+        <pose>4.950000 7.275000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0040'>
+        <pose>4.950000 7.275000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0041'>
+        <pose>4.975000 7.325000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.350000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0041'>
+        <pose>4.975000 7.325000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.350000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0042'>
+        <pose>5.000000 7.375000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0042'>
+        <pose>5.000000 7.375000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0043'>
+        <pose>5.050000 7.450000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0043'>
+        <pose>5.050000 7.450000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0044'>
+        <pose>5.075000 7.525000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.550000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0044'>
+        <pose>5.075000 7.525000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.550000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0045'>
+        <pose>5.100000 7.575000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0045'>
+        <pose>5.100000 7.575000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0046'>
+        <pose>5.150000 7.650000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0046'>
+        <pose>5.150000 7.650000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.500000 0.100000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0047'>
+        <pose>5.175000 7.725000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0047'>
+        <pose>5.175000 7.725000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0048'>
+        <pose>5.200000 7.775000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0048'>
+        <pose>5.200000 7.775000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0049'>
+        <pose>5.225000 7.825000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.350000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0049'>
+        <pose>5.225000 7.825000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.350000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0050'>
+        <pose>5.250000 7.875000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0050'>
+        <pose>5.250000 7.875000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.300000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0051'>
+        <pose>5.275000 7.925000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.150000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0051'>
+        <pose>5.275000 7.925000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.150000 0.050000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0052'>
+        <pose>0.500000 5.075000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.000000 8.250000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0052'>
+        <pose>0.500000 5.075000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.000000 8.250000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0053'>
+        <pose>9.700000 5.075000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.000000 8.250000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0053'>
+        <pose>9.700000 5.075000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.000000 8.250000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+      <collision name='occ_0054'>
+        <pose>5.100000 9.700000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>10.200000 1.000000 1.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='vis_0054'>
+        <pose>5.100000 9.700000 0.500000 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>10.200000 1.000000 1.000000</size>
+          </box>
+        </geometry>
+        <material><ambient>0.8 0.3 0.1 0.15</ambient></material>
+        <transparency>0.85</transparency>
+      </visual>
+    </link>
+  </model>
+</sdf>

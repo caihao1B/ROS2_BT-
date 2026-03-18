@@ -1,0 +1,192 @@
+{
+  "type": "FeatureCollection",
+  "name": "s10_fragmented_01",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "field",
+        "map_id": "s10_fragmented_01",
+        "dataset": "maps_fc_mppi_closedloop_18",
+        "family_id": "s10_fragmented",
+        "distribution": "fragmented",
+        "size_label": "10",
+        "size_m": 10.0,
+        "pair_id": 1,
+        "seed": 20261519,
+        "start_corner": "lower_left",
+        "gate_side": "south",
+        "gate_pos_ratio": 0.12,
+        "gate_width": 1.2,
+        "obstacle_fraction": 0.00402
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.0,
+              0.0
+            ],
+            [
+              10.0,
+              10.0
+            ],
+            [
+              0.0,
+              10.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              10.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 1,
+        "distribution": "fragmented"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.7032948462166555,
+              6.333505717034008
+            ],
+            [
+              7.7032948462166555,
+              6.677227830470466
+            ],
+            [
+              7.359572732780197,
+              6.677227830470466
+            ],
+            [
+              7.359572732780197,
+              6.333505717034008
+            ],
+            [
+              7.7032948462166555,
+              6.333505717034008
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 2,
+        "distribution": "fragmented"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.499565362593453,
+              7.7812161267075055
+            ],
+            [
+              8.499565362593453,
+              8.080543746500936
+            ],
+            [
+              8.200237742800022,
+              8.080543746500936
+            ],
+            [
+              8.200237742800022,
+              7.7812161267075055
+            ],
+            [
+              8.499565362593453,
+              7.7812161267075055
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 3,
+        "distribution": "fragmented"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.08703646737594,
+              8.24536435151267
+            ],
+            [
+              7.08703646737594,
+              8.58479306441652
+            ],
+            [
+              6.7476077544720905,
+              8.58479306441652
+            ],
+            [
+              6.7476077544720905,
+              8.24536435151267
+            ],
+            [
+              7.08703646737594,
+              8.24536435151267
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 4,
+        "distribution": "fragmented"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.099575498731948,
+              9.074960909611361
+            ],
+            [
+              9.099575498731948,
+              9.35605536077155
+            ],
+            [
+              8.818481047571758,
+              9.35605536077155
+            ],
+            [
+              8.818481047571758,
+              9.074960909611361
+            ],
+            [
+              9.099575498731948,
+              9.074960909611361
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

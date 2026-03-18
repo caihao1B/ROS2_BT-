@@ -1,0 +1,13 @@
+strategy_selector:
+  ros__parameters:
+    robot_base_frame: base_footprint
+    path_frame: map
+    use_latest_tf: true
+    corridor_radius: 0.9
+    danger_radius: 0.2
+    lookahead_dist: 5.0
+    t_clear_max: 0.1
+    t_block_defer: 999.0
+    enable_yield: false
+    enable_replan: false
+    enable_skip: false

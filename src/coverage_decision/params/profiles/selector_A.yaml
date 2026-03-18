@@ -1,0 +1,16 @@
+strategy_selector:
+  ros__parameters:
+    pred_topic: /coverage/obstacles/predictions
+    decision_topic: /coverage/strategy_decision
+    coverage_path_topic: /coverage/current_path
+    robot_base_frame: base_footprint
+    path_frame: map
+    use_latest_tf: true
+    corridor_radius: 0.8
+    danger_radius: 0.6
+    lookahead_dist: 4.0
+    t_clear_max: 6.0
+    t_block_defer: 999.0
+    enable_yield: false
+    enable_replan: false
+    enable_skip: false

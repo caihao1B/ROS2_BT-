@@ -1,0 +1,19 @@
+{
+  "dataset_name": "maps_fc_mppi_closedloop_18",
+  "map_count": 18,
+  "sizes_m": [
+    5.0,
+    7.5,
+    10.0
+  ],
+  "distributions": [
+    "open",
+    "corridor",
+    "fragmented"
+  ],
+  "pair_ids": [
+    1,
+    2
+  ],
+  "design_goal": "ROS2-friendly small-map FC family with safer obstacle clearance and lower-left closed-loop home"
+}

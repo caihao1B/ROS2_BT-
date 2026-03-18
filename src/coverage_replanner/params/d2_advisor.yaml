@@ -1,0 +1,21 @@
+coverage_d2_advisor:
+  ros__parameters:
+    map_topic: /map
+    costmap_topic: /global_costmap/costmap_raw
+    occ_thresh: 50
+    sweep_spacing_m: 0.45
+    sample_step_m: 0.10
+    min_run_length_m: 0.60
+    pose_step_m: 0.20
+    blocked_zone_pad_m: 0.12
+    nominal_speed_mps: 0.35
+    row_segment_target_len_m: 4.0
+    row_segment_min_len_m: 2.4
+    tiny_segment_len_m: 0.80
+    candidate_limit: 6
+    replace_improvement_min: 0.02
+    window_max_segments: 4
+    window_forward_span_m: 5.0
+    window_bbox_pad_m: 0.55
+    replace_current_blocked_exposure_min_m: 0.75
+    replace_blocked_relief_min_m: 0.40

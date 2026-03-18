@@ -1,0 +1,122 @@
+{
+  "type": "FeatureCollection",
+  "name": "s07p5_open_01",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "field",
+        "map_id": "s07p5_open_01",
+        "dataset": "maps_fc_mppi_closedloop_18",
+        "family_id": "s07p5_open",
+        "distribution": "open",
+        "size_label": "07p5",
+        "size_m": 7.5,
+        "pair_id": 1,
+        "seed": 20261069,
+        "start_corner": "lower_left",
+        "gate_side": "south",
+        "gate_pos_ratio": 0.12,
+        "gate_width": 1.2,
+        "obstacle_fraction": 0.004345
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              0.0
+            ],
+            [
+              7.5,
+              7.5
+            ],
+            [
+              0.0,
+              7.5
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              7.5,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 1,
+        "distribution": "open"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.863928880435886,
+              6.3027222365649855
+            ],
+            [
+              6.863928880435886,
+              6.638530170605344
+            ],
+            [
+              6.528120946395527,
+              6.638530170605344
+            ],
+            [
+              6.528120946395527,
+              6.3027222365649855
+            ],
+            [
+              6.863928880435886,
+              6.3027222365649855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "obstacle",
+        "obstacle_id": 2,
+        "distribution": "open"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.037265408176466,
+              6.299440831944986
+            ],
+            [
+              5.037265408176466,
+              6.662259543047821
+            ],
+            [
+              4.674446697073631,
+              6.662259543047821
+            ],
+            [
+              4.674446697073631,
+              6.299440831944986
+            ],
+            [
+              5.037265408176466,
+              6.299440831944986
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
