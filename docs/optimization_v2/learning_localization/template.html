@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="基于实际项目源码的 SLAM、IMU、相机、激光、轮速融合与 GNSS 位姿监督学习手册。离线可用。">
+<title>从传感器到可信位姿 · 项目学习手册</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<aside class="sidebar">
+  <a class="brand" href="#top"><span class="brand-mark">↗</span><span>ROBOT FIELD NOTES<small>定位与融合 · 源码学习</small></span></a>
+  <p class="nav-label">阅读路线</p>
+  <nav aria-label="章节目录">{{NAV}}<a href="#source-index">12 · 按函数查看源码</a></nav>
+  <div class="side-bottom"><span class="dot"></span> 完全离线 · 无需安装<br><small>源码核查 2026.11.12<br>教学示例与实测数据分开标注</small></div>
+</aside>
+<main id="main">
+  <header class="hero" id="top">
+    <div class="eyebrow">PROJECT LEARNING GUIDE / 01</div>
+    <h1>从传感器<br>到<span>可信位姿</span></h1>
+    <p class="lead">沿着实际数据流，理解机器人如何估计运动、认出旧地点，以及决定一次修正是否可信。</p>
+    <div class="hero-tags"><span>普通 EKF</span><span>RTAB-Map / GTSAM</span><span>SE(2) 区域匹配</span><span>GNSS 监督</span></div>
+    <div class="hero-actions"><a class="primary" href="#chapter-01">开始阅读 ↓</a><a href="README.md">文字版</a><a href="SOURCE_SNAPSHOT.json">源码快照</a><button id="print" type="button">打印 / 存为 PDF</button></div>
+    <div class="hero-fact"><b>先记住</b><span>相机与 IMU 在本项目中分层协作；当前没有实现紧耦合视觉惯性里程计。</span></div>
+  </header>
+  <article>{{CONTENT}}</article>
+  <section class="source-index" aria-labelledby="source-index">
+    <h2 id="source-index">12 · 按函数查看源码</h2>
+    <label for="source-search">筛选文件、算法或函数</label>
+    <input type="search" id="source-search" placeholder="例如 IMU、regional、mapEvidence" autocomplete="off">
+    <output id="source-count" aria-live="polite"></output>
+    <div id="sources">{{INDEX}}</div>
+  </section>
+  <footer>资料与独立实验仅写入 learning_localization。机器人生产代码、地图与阶段回执保持原状。<br><a href="#top">回到顶部 ↑</a> · <a href="verification.json">本学习资料的检查记录</a></footer>
+</main>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>

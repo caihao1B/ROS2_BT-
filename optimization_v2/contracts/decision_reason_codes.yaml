@@ -1,0 +1,16 @@
+SENSOR_ADMISSION_WAIT: 等待当前定位、地形、底盘和工具的合取准入
+OBSERVATION_RECOVERY_WAIT: 已取消导航并停车，等待观测、代价图和工具合取恢复；数据缺失不能靠重规划解决
+STARTUP_ADMISSION_TIMEOUT: 起点观测一直未通过，停止并保留全簇
+INPUT_STALE: 黑板或时钟失联，立即撤销执行许可
+SAFETY_STOP: 定位丢失、工具状态不确定或观测风险超限
+BUDGET_STOP: 剩余预算不足以完成下一动作并停车
+SHORT_OBSTRUCTION_WAIT: 短时封堵先等待，避免无收益重规划
+CLEAR_HYSTERESIS_WAIT: 障碍消退后保持确认，防止反复切换
+LOCAL_DETOUR: 已验证局部绕行的时间成本低于继续等待
+GLOBAL_REPLAN: 持续封堵且全局路径查询仍有预算
+DEFER_OBLIGATION: 当前义务延后，原始分母和残余不变
+BLOCK_RETRY_EXHAUSTED: 封堵或重试预算耗尽
+RESIDUAL_PATCH: 对账本未完成区域执行有界补扫
+PATCH_LIMIT: 补扫次数耗尽，输出 PARTIAL
+NEXT_OBLIGATION: 输入合格，执行下一条固定义务
+FEEDBACK_COMPLETE: 全簇反馈完成并确认停车

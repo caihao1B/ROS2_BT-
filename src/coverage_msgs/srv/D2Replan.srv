@@ -1,8 +1,0 @@
-string snapshot_json
----
-bool replace_plan
-string selected_backend
-string selected_plan_json
-string ranking_json
-float32 improvement
-string message

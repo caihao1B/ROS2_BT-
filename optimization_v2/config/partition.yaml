@@ -1,0 +1,26 @@
+schema: S11-PARTITION/1
+revision: s11.1
+k: 3
+seed: 41
+comparison_seeds: [41, 42, 43]
+cell_size_m: 1.0
+spray_point_spacing_m: 2.0
+geometry_precision_m: 0.00000001
+adjacency_min_shared_m: 0.000001
+area_relative_tolerance: 0.000001
+node_weight_scale: 100
+edge_weight_scale: 100
+mowing_along_strip_edge_factor: 3.0
+clearance_margin_m: 0.10
+coarse_terrain_time_multiplier: 1.25
+spray_docking_overhead_s: 1.0
+turn_distance_scale_m: 20.0
+mowing_turn_overhead_s: 8.0
+spray_turn_overhead_s: 1.0
+cluster_setup_s: 15.0
+normal_budget_s: 1440.0
+hard_budget_s: 1800.0
+metis_ufactor: 50
+repair_balance_passes: 8
+max_nodes: 10000
+status: PROVISIONAL

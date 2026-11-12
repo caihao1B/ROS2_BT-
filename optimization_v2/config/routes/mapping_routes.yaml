@@ -1,0 +1,18 @@
+schema: S06-ROUTES/1
+frame: operator_local_start
+note: Operator survey waypoints from public prior; not Gazebo feedback or registration truth.
+speed_mps: 0.42
+arrival_m: 0.55
+spawn_survey: [28.0, 14.0, 0.0]
+mapping_loop:
+  kind: circle
+  center: [0.0, 4.0]
+  radius: 4.0
+  laps: 1.18
+mapping_full:
+  kind: survey
+  # Absolute public ENU waypoints, converted ONCE by declared survey start.
+  # Two continuous work areas and curved connector, no truth feedback.
+  outbound: [[42,15],[42,23],[42,34],[49,42],[59,38],[68,38],[76,43],[82,50],[89,60],[98,64],[109,64],[122,58]]
+  zone_b_circle: {center: [126,58], radius: 4.0}
+  return_to_start: true

@@ -1,0 +1,32 @@
+{
+  "mode": "actual Chrome CDP; offline file URL",
+  "screenshots": [
+    {
+      "path": "checks/desktop.png",
+      "viewport": [
+        1400,
+        1100
+      ],
+      "bytes": 238227,
+      "scroll_y": 0
+    },
+    {
+      "path": "checks/mobile.png",
+      "viewport": [
+        420,
+        1050
+      ],
+      "bytes": 115293,
+      "scroll_y": 0
+    },
+    {
+      "path": "checks/experiment.png",
+      "viewport": [
+        1400,
+        1000
+      ],
+      "bytes": 257726,
+      "scroll_y": 4284
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<root BTCPP_format="4" main_tree_to_execute="DinoMission">
+  <BehaviorTree ID="DinoMission">
+    <ReactiveFallback name="TaskPriority">
+      <ReactiveSequence name="FaultFirst"><HasFault/><FailurePause timeout_s="15"/></ReactiveSequence>
+      <ReactiveSequence name="RestartOrOperatorHold"><HoldRequired/><HoldPause timeout_s="15"/></ReactiveSequence>
+      <ReactiveSequence name="Finished"><IsFinished/><ReportTerminal/></ReactiveSequence>
+      <ReactiveSequence name="D1Boundary"><D1Requested/><RepairD1 timeout_s="20"/></ReactiveSequence>
+      <ReactiveSequence name="D2Boundary"><D2Requested/><RepairD2 timeout_s="20"/></ReactiveSequence>
+      <ReactiveSequence name="WaitForOccupancy">
+        <WaitNeeded/>
+        <Sequence name="ConfirmThenWait"><EnsureStopped timeout_s="15"/><WaitClear timeout_s="45"/></Sequence>
+      </ReactiveSequence>
+      <ReactiveSequence name="SameSegmentRecovery"><NeedsRejoin/><RecoverSameSegment timeout_s="35"/></ReactiveSequence>
+      <ReactiveSequence name="ExecuteAllowed">
+        <MayExecute/>
+        <ReactiveFallback name="ModeSelection">
+          <Sequence><IsYield/><SetMode value="YIELD"/></Sequence>
+          <Sequence><IsTransfer/><SetMode value="TRANSFER"/></Sequence>
+          <SetMode value="NORMAL_COVERAGE"/>
+        </ReactiveFallback>
+        <!-- Bounded VM budget for a 10.68 m U at 0.10 m/s and RTF >= 0.5:
+             214 wall seconds plus 26 s allowance. Nav2's 15 s no-progress
+             watchdog, action cancellation and all safety leases stay active. -->
+        <ExecuteSegment timeout_s="240"/>
+      </ReactiveSequence>
+      <HoldPause name="NoUnsafeFallback" timeout_s="15"/>
+    </ReactiveFallback>
+  </BehaviorTree>
+</root>

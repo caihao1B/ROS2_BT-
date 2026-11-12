@@ -1,0 +1,8 @@
+{
+  "project_root": "/home/ceihao/robot_project",
+  "ros_domain_id": 118,
+  "required_files": [
+    "native_20261108/farm_sensor_smoke.sdf",
+    "optimization_v2/ws/src/project_baseline/src/bt_engine.cpp"
+  ]
+}

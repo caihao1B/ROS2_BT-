@@ -1,0 +1,22 @@
+{
+  "case": "nominal_mow_cluster",
+  "purpose": "Independent offline scoring only; no truth sent online",
+  "evaluated_from_sim_s": 9.25,
+  "position_samples": 15224,
+  "position_error_p95_m": 0.006356398143166246,
+  "position_error_max_m": 0.020235732256069165,
+  "follow_path_samples": 14491,
+  "follow_path_cross_track_p95_m": 0.020204510060530395,
+  "follow_path_cross_track_max_m": 0.04324667488895464,
+  "obstacle_contacts": {},
+  "mission_state": "SUCCEEDED",
+  "coverage_fraction": 0.9949154498974639,
+  "confirmed_points": 0,
+  "required_points": 0,
+  "confirmed_area_m2": 16.276277396356527,
+  "required_area_m2": 16.35945787959566,
+  "sim_seconds": 1531.663,
+  "stopped_confirmed": true,
+  "database_unchanged": true,
+  "task_level_replans": 0
+}

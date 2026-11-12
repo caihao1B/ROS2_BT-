@@ -1,0 +1,15 @@
+{
+  "scope": "S15_TWO_POINT_BENCHMARK_NOT_FULL_CLUSTER",
+  "start_map": [
+    6.150163169999999,
+    32.50427919,
+    0.0
+  ],
+  "distances": [
+    0.0,
+    0.6
+  ],
+  "required_points": 2,
+  "quantity_each": 2.0,
+  "original_s14_plan": 0
+}

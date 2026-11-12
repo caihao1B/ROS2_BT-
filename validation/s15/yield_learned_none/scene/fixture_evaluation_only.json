@@ -1,0 +1,74 @@
+{
+  "scenario": "yield",
+  "split": "test",
+  "actors": [
+    {
+      "name": "s15_person",
+      "knots": [
+        [
+          0.0,
+          2.0,
+          -2.0
+        ],
+        [
+          10.0,
+          2.0,
+          -2.0
+        ],
+        [
+          22.0,
+          1.6,
+          -0.8
+        ],
+        [
+          28.0,
+          1.6,
+          -0.8
+        ],
+        [
+          40.0,
+          2.1,
+          2.1
+        ],
+        [
+          65.0,
+          2.1,
+          2.1
+        ]
+      ]
+    },
+    {
+      "name": "s15_neighbor",
+      "knots": [
+        [
+          0,
+          3.3,
+          1.8
+        ],
+        [
+          8,
+          3.3,
+          1.8
+        ],
+        [
+          25,
+          2.5,
+          -0.2
+        ],
+        [
+          40,
+          3.8,
+          -2.0
+        ],
+        [
+          65,
+          3.8,
+          -2.0
+        ]
+      ]
+    }
+  ],
+  "source": "SIMULATOR_ONLY_NOT_PREDICTOR_INPUT",
+  "articulated_gait": false,
+  "interaction": "scripted yield; no social response dynamics"
+}

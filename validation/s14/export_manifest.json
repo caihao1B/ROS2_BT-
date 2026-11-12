@@ -1,0 +1,245 @@
+{
+  "schema": "ROBOT-ARCHIVAL-REPLAY/1",
+  "source_run_id": "test_20261112_143553_2062800",
+  "original_result_sha256": "21009ac76ae071265805f92a72fab88744aae1d31570992b4e597c18d6b3741d",
+  "scope": "Downsampled display only; not an active acceptance receipt",
+  "sampling": {
+    "decision_interval_target_s": 2,
+    "trace_interval_target_s": 0.5,
+    "original_gaps_and_state_transitions_preserved": true
+  },
+  "cases": {
+    "decision_story": {
+      "original_counts": {
+        "decisions": 377,
+        "trace": 674,
+        "tree": 603,
+        "events": 152
+      },
+      "exported_counts": {
+        "decisions": 53,
+        "trace": 136,
+        "tree": 36,
+        "events": 31
+      }
+    },
+    "mow_smoke": {
+      "original_counts": {
+        "decisions": 221,
+        "trace": 376,
+        "tree": 356,
+        "events": 85
+      },
+      "exported_counts": {
+        "decisions": 26,
+        "trace": 76,
+        "tree": 21,
+        "events": 21
+      }
+    },
+    "nominal_spray_cluster": {
+      "original_counts": {
+        "decisions": 6239,
+        "trace": 12751,
+        "tree": 10820,
+        "events": 2745
+      },
+      "exported_counts": {
+        "decisions": 666,
+        "trace": 2526,
+        "tree": 633,
+        "events": 206
+      }
+    },
+    "nominal_mow_cluster": {
+      "original_counts": {
+        "decisions": 7435,
+        "trace": 15244,
+        "tree": 12927,
+        "events": 3325
+      },
+      "exported_counts": {
+        "decisions": 750,
+        "trace": 3049,
+        "tree": 755,
+        "events": 291
+      }
+    },
+    "budget_exhaustion": {
+      "original_counts": {
+        "decisions": 57,
+        "trace": 33,
+        "tree": 67,
+        "events": 0
+      },
+      "exported_counts": {
+        "decisions": 9,
+        "trace": 8,
+        "tree": 5,
+        "events": 0
+      }
+    },
+    "persistent_block": {
+      "original_counts": {
+        "decisions": 380,
+        "trace": 689,
+        "tree": 622,
+        "events": 145
+      },
+      "exported_counts": {
+        "decisions": 47,
+        "trace": 139,
+        "tree": 37,
+        "events": 18
+      }
+    },
+    "tool_loss": {
+      "original_counts": {
+        "decisions": 105,
+        "trace": 128,
+        "tree": 150,
+        "events": 16
+      },
+      "exported_counts": {
+        "decisions": 15,
+        "trace": 27,
+        "tree": 10,
+        "events": 9
+      }
+    }
+  },
+  "copied_files": [
+    {
+      "path": "decision_story/client/mission.json",
+      "sha256": "114ecc0bb91047a28437e14a93b055d0f5e204a242f6938107e1bb8f6a6d7b62"
+    },
+    {
+      "path": "decision_story/client/residual.geojson",
+      "sha256": "7fe6f098e3dda4eab227d5f2414d5dd49860b0abb63704da8643c2fd23229412"
+    },
+    {
+      "path": "decision_story/ledger/ledger.sqlite",
+      "sha256": "776a92a8f1f546f9cfb9e9ea22f74acc89af22db0cc978814b1f6f0b9cb7226f"
+    },
+    {
+      "path": "decision_story/runtime.json",
+      "sha256": "ea3f3c3be3ab10f96ffd020be2e97f2449ba9a07a77a8496485bb217fbd748ae"
+    },
+    {
+      "path": "mow_smoke/client/mission.json",
+      "sha256": "b42a52e8a013a6e54f86b0db96b11998ad1e50a42e93c2dc1acb2662726fcc5d"
+    },
+    {
+      "path": "mow_smoke/client/residual.geojson",
+      "sha256": "4c590e6dfc236d04400b972a5f6741d2150fc1414eb9e4827a08ac9bb4d97112"
+    },
+    {
+      "path": "mow_smoke/ledger/ledger.sqlite",
+      "sha256": "f2b6fe01af8a5c00032cf4acd84ffc369204b51d83f5d3d7003000327a9a6fc7"
+    },
+    {
+      "path": "mow_smoke/runtime.json",
+      "sha256": "ee068ab650882db42ff8f750d40f7c89e3074ad5681583a5fe5af5483e946258"
+    },
+    {
+      "path": "nominal_spray_cluster/client/mission.json",
+      "sha256": "9f2c12f7cec527a599296a619e6030cc16df53e754b332420f24cda6ffbc138c"
+    },
+    {
+      "path": "nominal_spray_cluster/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "nominal_spray_cluster/ledger/ledger.sqlite",
+      "sha256": "f2d332b7b0ba597386c11f871fd75184d93f9bd5927d99718b0acd37a14d5921"
+    },
+    {
+      "path": "nominal_spray_cluster/runtime.json",
+      "sha256": "0eb1b13ce75d105907bd5da024d0ddd2d635317ce2d4d1bdf4c5e50cf67210dc"
+    },
+    {
+      "path": "nominal_mow_cluster/client/mission.json",
+      "sha256": "6ff396ef35cac24f01ab6a897494a5b6a905eb6c2ce9b1746ec46fe542b1f5ad"
+    },
+    {
+      "path": "nominal_mow_cluster/client/residual.geojson",
+      "sha256": "fd15d9b938e5e3f81c5f4681c8490c29ace8dcc673a3c8d599b8e98326d26e5c"
+    },
+    {
+      "path": "nominal_mow_cluster/ledger/ledger.sqlite",
+      "sha256": "22ca8185b8e5b8fd2f1ca54b3eb8eb32931627dc883783cc8de28a32ecb1e0a2"
+    },
+    {
+      "path": "nominal_mow_cluster/runtime.json",
+      "sha256": "f237a9e9e1965d4a62067db0588e558741e0d4992cf675276342bb2d195d9fa2"
+    },
+    {
+      "path": "budget_exhaustion/client/mission.json",
+      "sha256": "7b92574ec7c032daacd2556dedea7813c7fd12b2343544c46dc591958fcff923"
+    },
+    {
+      "path": "budget_exhaustion/client/residual.geojson",
+      "sha256": "08a67685aa76137610fd3f2ddd900267cdae8675d2ca2d218d36b8b200b423a7"
+    },
+    {
+      "path": "budget_exhaustion/ledger/ledger.sqlite",
+      "sha256": "2fa9d580f4cda6c2d63b636e18313e9383d36c3c67db80f3b1a1eda9a4fa1a7c"
+    },
+    {
+      "path": "budget_exhaustion/runtime.json",
+      "sha256": "9b63b5183ca106d6ebd1e2d0a37dacb98a1ffb0b279d1529d680858bb0d18931"
+    },
+    {
+      "path": "persistent_block/client/mission.json",
+      "sha256": "23143cdabae291d359d8cf412ca9745538570b4871e8b79efb3ee3c674cd1ba7"
+    },
+    {
+      "path": "persistent_block/client/residual.geojson",
+      "sha256": "7fe6f098e3dda4eab227d5f2414d5dd49860b0abb63704da8643c2fd23229412"
+    },
+    {
+      "path": "persistent_block/ledger/ledger.sqlite",
+      "sha256": "5c2974ed148a5bb0663c9dade90a96af4827cfc9412d67da718c2297e742d847"
+    },
+    {
+      "path": "persistent_block/runtime.json",
+      "sha256": "de434c847ba9d14be271d285fdaf7637eef74574a714ea433c67ca58eb442748"
+    },
+    {
+      "path": "tool_loss/client/mission.json",
+      "sha256": "551345c9eed05a1ec3f326a4a14f349189f13fc3052ce59731bc829efc341aa1"
+    },
+    {
+      "path": "tool_loss/client/residual.geojson",
+      "sha256": "08a67685aa76137610fd3f2ddd900267cdae8675d2ca2d218d36b8b200b423a7"
+    },
+    {
+      "path": "tool_loss/ledger/ledger.sqlite",
+      "sha256": "9bf52b447f66395c1a298d7f89cd642a29c28616bf3ae4e6bba9bad32fdb7cc0"
+    },
+    {
+      "path": "tool_loss/runtime.json",
+      "sha256": "69ab137ed2b72b28d06df2d6a81867b03b3d8cb577872de31b49f50e761c4fac"
+    },
+    {
+      "path": "registration_validation.png",
+      "sha256": "ffdc36f951d4f5592206d5d709795d2b09146382162149108275307e497bb873"
+    },
+    {
+      "path": "navigation_validation.png",
+      "sha256": "42219622b621af8717e157071aef67d4f173d3ad0950c39809f8b5f97b675d50"
+    },
+    {
+      "path": "commands.jsonl",
+      "sha256": "c4f631bcdb48086ecb8764808a73bea6f85d9b074175bd167dad0a276656410b"
+    },
+    {
+      "path": "source_snapshot.json",
+      "sha256": "1d33b9459cd6ee1b1a648a8e5e61f44075090d6a42ef2a74239a76313c81b0b2"
+    },
+    {
+      "path": "input_bindings.json",
+      "sha256": "f87b05d3fc99b190b327951f3ac0dcdf4a3ad60eaf76462e97998f0d15c54744"
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "schema": "S15-PUBLIC-EVIDENCE/1",
+  "source_run": "test_20261112_165536_2291112",
+  "source_result_sha256": "ad4b25d1a6dad3974a5641238cc12fb985bc8f2350f09fc77aff0a89a4413137",
+  "original_html_sha256": "9f1af6f7683bc0b19e8fa24f65e0a2b89c22890378ec4754fcfb929d638c61e3",
+  "export_html_sha256": "1111f0df73cdf3a343e40aab5714764024c77228d6ca5a08ee326fd02112bfc0",
+  "scope": "Unmodified numerical evidence and inline replay, plus archival banner",
+  "active_receipt": false,
+  "files": [
+    {
+      "path": "result.json",
+      "sha256": "ad4b25d1a6dad3974a5641238cc12fb985bc8f2350f09fc77aff0a89a4413137"
+    },
+    {
+      "path": "offline_metrics.json",
+      "sha256": "16fe969ccdbb3fdd138dfe590feee3d582cfc9381da8c2930ec4bd0d9d0cbf8f"
+    },
+    {
+      "path": "window_metrics.jsonl",
+      "sha256": "51eefdc79dbda3a15523f12748b5088ea70dcbf0cbe6fb4dee78633a4d07d87d"
+    },
+    {
+      "path": "prediction_examples.json",
+      "sha256": "8373c03a3d5b1402345b2e9d3cca0422a54f3a4c8901602cdbe8255742466ca7"
+    },
+    {
+      "path": "commands.jsonl",
+      "sha256": "ee86dd79379f24311127d51f3b3c81b2deec7fdc6cc52bdc3d0824563d62940b"
+    },
+    {
+      "path": "source_snapshot.json",
+      "sha256": "338c5dbc7dc1cf833b2693e316ca2d5f28afc81cfa8dd95e3d3ef7a481997be1"
+    },
+    {
+      "path": "input_bindings.json",
+      "sha256": "76dd2b014dd683718f23b013d9db18e98fb2d6db5af30e6d361ef1aa9c8301a1"
+    },
+    {
+      "path": "inference.json",
+      "sha256": "12e464a3919e71ea3f00616028b9d4c59fba2ed27561d6c6b3ca40a50b924167"
+    },
+    {
+      "path": "prediction.json",
+      "sha256": "491409db5c6d91cff535691262e6db6f12b0b99804f86535346b5879a505c278"
+    },
+    {
+      "path": "policy.json",
+      "sha256": "79de06a84a732c3df9e7d41b07ae822e83fdb86d7d0b7c0727cc986d678b73b6"
+    },
+    {
+      "path": "turning_no_prediction_none/metrics15.json",
+      "sha256": "dfed9204143c03bb25054735c5f8b7289366b9c75763e540acd9b7f7db62a0a6"
+    },
+    {
+      "path": "turning_no_prediction_none/runtime.json",
+      "sha256": "5df3a22ad4e28b6a8c817d67c48ae84539a72e2e9dd0c5b3580c97cb4cd6823f"
+    },
+    {
+      "path": "turning_no_prediction_none/client/mission.json",
+      "sha256": "6a7ce6e2608d60051291f8e43a0c08486a24d5c922535d499e98301d08bec3f1"
+    },
+    {
+      "path": "turning_no_prediction_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "turning_no_prediction_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "turning_no_prediction_none/scene/fixture_evaluation_only.json",
+      "sha256": "51a54c2290b428095cdeb355f078bd3345e39ce5b6ef01d1fbf83fa2a3e9db50"
+    },
+    {
+      "path": "turning_imm_none/metrics15.json",
+      "sha256": "6e55c19be2f1793b4a606693f5bb214816ce5c5f258330e8969d4a75c08d5ddc"
+    },
+    {
+      "path": "turning_imm_none/runtime.json",
+      "sha256": "1bab844f1bf97f07f023e035d047eb0df9c522460fe0bdf0d46de3ddd1fd7f0b"
+    },
+    {
+      "path": "turning_imm_none/client/mission.json",
+      "sha256": "77df97a6f7d79714c04ff74b2178199eb9b0d22c8c4133e69cd59d5304001b12"
+    },
+    {
+      "path": "turning_imm_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "turning_imm_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "turning_imm_none/scene/fixture_evaluation_only.json",
+      "sha256": "51a54c2290b428095cdeb355f078bd3345e39ce5b6ef01d1fbf83fa2a3e9db50"
+    },
+    {
+      "path": "turning_learned_none/metrics15.json",
+      "sha256": "995fac6d11151811e818a10ab7f010f29b15db232aeee7f673cb7509f6eef69b"
+    },
+    {
+      "path": "turning_learned_none/runtime.json",
+      "sha256": "31e7f14c54b5cd04f3b3e066932e3b036833952fd528505b1b87defc2d529ab8"
+    },
+    {
+      "path": "turning_learned_none/client/mission.json",
+      "sha256": "cfaded7d19d20ccff5dbb599ce21b61cd20c430e21e6e7ea13a3faf44c2440f8"
+    },
+    {
+      "path": "turning_learned_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "turning_learned_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "turning_learned_none/scene/fixture_evaluation_only.json",
+      "sha256": "51a54c2290b428095cdeb355f078bd3345e39ce5b6ef01d1fbf83fa2a3e9db50"
+    },
+    {
+      "path": "stop_go_no_prediction_none/metrics15.json",
+      "sha256": "efe73bf798af2a6c34700e653aacdc2b6ebd5d40a9d136461328c78dfbeac48f"
+    },
+    {
+      "path": "stop_go_no_prediction_none/runtime.json",
+      "sha256": "60874617692b4adbf5c0e1c0bc1a903e14c2deb105c82de9303773dbf1b14569"
+    },
+    {
+      "path": "stop_go_no_prediction_none/client/mission.json",
+      "sha256": "dbaa40d48e77883d298b2aaf1d458af470c8e5b64a7997597a665f06c402a65e"
+    },
+    {
+      "path": "stop_go_no_prediction_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "stop_go_no_prediction_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "stop_go_no_prediction_none/scene/fixture_evaluation_only.json",
+      "sha256": "2535eef0129b822671c02386287e6d5eabed9b6e0c729c940059b04ca8273893"
+    },
+    {
+      "path": "stop_go_imm_none/metrics15.json",
+      "sha256": "8a71f1542b2da6a594ff22053fb3d950380bb31420f9e18b0986f6bb8378e6d2"
+    },
+    {
+      "path": "stop_go_imm_none/runtime.json",
+      "sha256": "7d57028d120292cbed0cd18e40bff07fc3f29c00b825e0dc812141310c5a3e09"
+    },
+    {
+      "path": "stop_go_imm_none/client/mission.json",
+      "sha256": "dcedf8339a0546f123c6675e941a38437417e6d253cfd90097c103e9ad642bf6"
+    },
+    {
+      "path": "stop_go_imm_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "stop_go_imm_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "stop_go_imm_none/scene/fixture_evaluation_only.json",
+      "sha256": "2535eef0129b822671c02386287e6d5eabed9b6e0c729c940059b04ca8273893"
+    },
+    {
+      "path": "stop_go_learned_none/metrics15.json",
+      "sha256": "f55019536476d31edac8026159d170ce470612b2f16d72fe4b59c0f40c497a64"
+    },
+    {
+      "path": "stop_go_learned_none/runtime.json",
+      "sha256": "baac18eb7af6c5dce0062c4e8f2087316dd5dfa32037c4f9dcf56fda5fdbf675"
+    },
+    {
+      "path": "stop_go_learned_none/client/mission.json",
+      "sha256": "afea3512862a22f787d45b52982a43c1997584de5e101b26bf0f472e40c967cf"
+    },
+    {
+      "path": "stop_go_learned_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "stop_go_learned_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "stop_go_learned_none/scene/fixture_evaluation_only.json",
+      "sha256": "2535eef0129b822671c02386287e6d5eabed9b6e0c729c940059b04ca8273893"
+    },
+    {
+      "path": "yield_no_prediction_none/metrics15.json",
+      "sha256": "cafdb53368615e3530a23cb77e2cfff55043a2dbbbc37468baf8f6aa435dbbb5"
+    },
+    {
+      "path": "yield_no_prediction_none/runtime.json",
+      "sha256": "d2d84ddba2c75ff9e6645a7cba5257c6898d32911571bf627963dc28896a8675"
+    },
+    {
+      "path": "yield_no_prediction_none/client/mission.json",
+      "sha256": "955e12e32844ed06453789ca8e3bdc70fa87e3e734ee83775d8ab95f06d7ae7e"
+    },
+    {
+      "path": "yield_no_prediction_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "yield_no_prediction_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "yield_no_prediction_none/scene/fixture_evaluation_only.json",
+      "sha256": "0099a9927603388ab307066d44efa5feb30e4b7d489dabbd7fc9953cb5f968ee"
+    },
+    {
+      "path": "yield_imm_none/metrics15.json",
+      "sha256": "b7be8a8841dde5d6fe29970216dcfdf683b0c0f40521673753e3df848be1a6e1"
+    },
+    {
+      "path": "yield_imm_none/runtime.json",
+      "sha256": "f2897e8ecccb933f103a50e9394adcabf12517635baad9106fc9ba477a7e9ccf"
+    },
+    {
+      "path": "yield_imm_none/client/mission.json",
+      "sha256": "2c0d8d72e440cf5d6c1f0419da5dcd62a5f9de604dd562bc035ba49e26436475"
+    },
+    {
+      "path": "yield_imm_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "yield_imm_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "yield_imm_none/scene/fixture_evaluation_only.json",
+      "sha256": "0099a9927603388ab307066d44efa5feb30e4b7d489dabbd7fc9953cb5f968ee"
+    },
+    {
+      "path": "yield_learned_none/metrics15.json",
+      "sha256": "b5fbfee082c6bea9653105f0e9869b3281012756e17571ade42d697c44880505"
+    },
+    {
+      "path": "yield_learned_none/runtime.json",
+      "sha256": "3bbdc12b08f491c753b94c109d3c0bde672b209e3ba6c3190d7e1fac2d8e9370"
+    },
+    {
+      "path": "yield_learned_none/client/mission.json",
+      "sha256": "dae24cea2b1d202d6940bb5ab993c9a28cb1cee28bc24e39a8ed7b6d12e7e5ea"
+    },
+    {
+      "path": "yield_learned_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "yield_learned_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "yield_learned_none/scene/fixture_evaluation_only.json",
+      "sha256": "0099a9927603388ab307066d44efa5feb30e4b7d489dabbd7fc9953cb5f968ee"
+    },
+    {
+      "path": "occlusion_no_prediction_none/metrics15.json",
+      "sha256": "69f651bbaeb329caacbafd27849a5bdca9e51a64fee7e3a937a8ac9a9cea9bbe"
+    },
+    {
+      "path": "occlusion_no_prediction_none/runtime.json",
+      "sha256": "e2b858da701feb71d16fc6caa3b78789f6ec37e6aa2c582c75c78227f42da2f7"
+    },
+    {
+      "path": "occlusion_no_prediction_none/client/mission.json",
+      "sha256": "bc18a4612acd5e3ae63446d633204e3a5d0310abd70b81fe0b24e212b3db737b"
+    },
+    {
+      "path": "occlusion_no_prediction_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "occlusion_no_prediction_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "occlusion_no_prediction_none/scene/fixture_evaluation_only.json",
+      "sha256": "260c1170cb5e7f1fd25307138e15dcb98dd14e0baa14b741df03b284f6eb31ee"
+    },
+    {
+      "path": "occlusion_imm_none/metrics15.json",
+      "sha256": "5a80208132d45ee7ae4c4d6dd1f4413144f7a6dd9cc47f5ce8dcb39a5b25acea"
+    },
+    {
+      "path": "occlusion_imm_none/runtime.json",
+      "sha256": "995410d5a6cf5102c1a2f4243a8f864257e3184a5872d68ea8c8d1d99c4f7c5d"
+    },
+    {
+      "path": "occlusion_imm_none/client/mission.json",
+      "sha256": "8546c436b3262a2fa9cee6e79ceb6d8b9170f6697074ae42ce1403c225487fcd"
+    },
+    {
+      "path": "occlusion_imm_none/client/residual.geojson",
+      "sha256": "649b50f2b0431d676ac5290a7d03d356d08902484c9b2d45d906e3b3e7bc8297"
+    },
+    {
+      "path": "occlusion_imm_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "occlusion_imm_none/scene/fixture_evaluation_only.json",
+      "sha256": "260c1170cb5e7f1fd25307138e15dcb98dd14e0baa14b741df03b284f6eb31ee"
+    },
+    {
+      "path": "occlusion_learned_none/metrics15.json",
+      "sha256": "e68bb355913c0507c4dc6e68e39b7fbd8eddbea89af1ac295b5fafe1162bae90"
+    },
+    {
+      "path": "occlusion_learned_none/runtime.json",
+      "sha256": "91e84c76f366882cdefbdb617ff5cc20f5763284533a710188711d0444f82581"
+    },
+    {
+      "path": "occlusion_learned_none/client/mission.json",
+      "sha256": "752fc1b76d94d5646ccd1e2a2539180c3a0eb1992cb382369f151ab5126e5eea"
+    },
+    {
+      "path": "occlusion_learned_none/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "occlusion_learned_none/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "occlusion_learned_none/scene/fixture_evaluation_only.json",
+      "sha256": "260c1170cb5e7f1fd25307138e15dcb98dd14e0baa14b741df03b284f6eb31ee"
+    },
+    {
+      "path": "turning_learned_timeout/metrics15.json",
+      "sha256": "847be16fd5cf669a6f9cb4879f5c34ac4cb6efab1badf20da028e2b7de770778"
+    },
+    {
+      "path": "turning_learned_timeout/runtime.json",
+      "sha256": "65a89653d7559ec75f4d30ed989a003cf933309941940139736db1776533ef9a"
+    },
+    {
+      "path": "turning_learned_timeout/client/mission.json",
+      "sha256": "0d3e350c230fe051fe6c62d1938684adb02fac898d26fe8ea560788b959d214d"
+    },
+    {
+      "path": "turning_learned_timeout/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "turning_learned_timeout/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "turning_learned_timeout/scene/fixture_evaluation_only.json",
+      "sha256": "51a54c2290b428095cdeb355f078bd3345e39ce5b6ef01d1fbf83fa2a3e9db50"
+    },
+    {
+      "path": "turning_learned_channel_loss/metrics15.json",
+      "sha256": "07d6a3881e53dc61436b68e3529cdadbe6a7b31b4ab36d6dbb9dee9917f96ca3"
+    },
+    {
+      "path": "turning_learned_channel_loss/runtime.json",
+      "sha256": "8a6f5c39d611d957506cde04dcddd0fbf5a609202a43d8d61d7124d46a5bf6fb"
+    },
+    {
+      "path": "turning_learned_channel_loss/client/mission.json",
+      "sha256": "6e795720907da5af4e8c09c81ef7c69d6ef072f1071ea87b3a744ae1cd1a9c82"
+    },
+    {
+      "path": "turning_learned_channel_loss/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "turning_learned_channel_loss/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "turning_learned_channel_loss/scene/fixture_evaluation_only.json",
+      "sha256": "51a54c2290b428095cdeb355f078bd3345e39ce5b6ef01d1fbf83fa2a3e9db50"
+    },
+    {
+      "path": "turning_learned_uncertainty/metrics15.json",
+      "sha256": "c9bb0450d505a1fc833e10bce8048ce314874f06f81eb1a42290408f7eea8578"
+    },
+    {
+      "path": "turning_learned_uncertainty/runtime.json",
+      "sha256": "ebceff78d9b8e3e6d0397e7a4bcf5efe2281f1addeb5b6ffba84747a76909fc8"
+    },
+    {
+      "path": "turning_learned_uncertainty/client/mission.json",
+      "sha256": "80225879f1f5fa386d023213756f3c52b18624f567cce9a5c44484d9f7b94274"
+    },
+    {
+      "path": "turning_learned_uncertainty/client/residual.geojson",
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "turning_learned_uncertainty/scene/benchmark_task.json",
+      "sha256": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7"
+    },
+    {
+      "path": "turning_learned_uncertainty/scene/fixture_evaluation_only.json",
+      "sha256": "51a54c2290b428095cdeb355f078bd3345e39ce5b6ef01d1fbf83fa2a3e9db50"
+    }
+  ]
+}

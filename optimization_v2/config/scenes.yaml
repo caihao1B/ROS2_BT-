@@ -1,0 +1,11 @@
+schema_version: 1
+map_version: s02.2
+coordinate_system: {frame: map, axes: ENU, units: m, origin: [0, 0, 0], geodetic_datum: null}
+world_size_m: [160, 112]
+seed: 41
+variants: [base, notch, holes]
+area_targets_m2: {spray: 1650, mowing: 1140}
+connector_width_m: 6.0
+probe: {position: [20, 25, 1.1], camera_pitch: 0.08, camera_hfov: 1.4, width: 640, height: 360}
+dependencies: {shapely: 2.1.2, gz_sim_major: 8, ros: jazzy}
+data_policy: {prior: boundaries_permanent_structures_road_coarse_terrain, unknown: temporary_obstacles_dynamic_agents_fine_terrain, online_ros_domain: 119, evaluation_ros_domain: 120}

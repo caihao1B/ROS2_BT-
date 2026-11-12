@@ -1,0 +1,57 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Background Color: 28; 38; 48
+    Fixed Frame: map
+    Frame Rate: 20
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Metre grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 40
+    - Class: rviz_default_plugins/TF
+      Name: Unique local TF
+      Enabled: true
+      Show Names: true
+      Marker Scale: 0.3
+    - Class: rviz_default_plugins/Path
+      Name: Current localized trajectory
+      Enabled: true
+      Topic: {Value: /s07/trace, Depth: 2}
+      Color: 97; 231; 114
+      Line Style: Billboards
+      Line Width: 0.06
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Real sensor 3D map
+      Enabled: true
+      Topic: {Value: /s07/rtabmap/cloud_map, Reliability Policy: Reliable, Depth: 2}
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: AxisColor
+      Axis: Z
+      Position Transformer: XYZ
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Current measured lidar
+      Enabled: true
+      Topic: {Value: /s07/inputs/cloud, Reliability Policy: Best Effort, Depth: 2}
+      Style: Points
+      Size (Pixels): 1
+      Color Transformer: AxisColor
+      Axis: Z
+      Position Transformer: XYZ
+    - Class: rviz_default_plugins/Marker
+      Name: Localization state
+      Enabled: true
+      Topic: {Value: /s07/state_marker, Reliability Policy: Reliable, Depth: 2}
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 32
+      Focal Point: {X: 0, Y: 3, Z: 1}
+      Pitch: 0.7
+      Yaw: 0.1
+Window Geometry: {Width: 1280, Height: 850, X: 40, Y: 60}

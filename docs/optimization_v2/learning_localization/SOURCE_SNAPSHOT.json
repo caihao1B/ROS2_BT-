@@ -1,0 +1,621 @@
+{
+  "schema": "LEARNING_SOURCE_SNAPSHOT/1",
+  "captured_utc": "2026-11-12T08:49:11.420007+00:00",
+  "project_root_at_capture": "/home/ceihao/robot_project",
+  "scope": "Read-only source inspection, not stage revalidation",
+  "files": [
+    {
+      "path": "optimization_v2/config/local_estimator.yaml",
+      "role": "S05 输入掩码与 EKF 状态选择",
+      "bytes": 5878,
+      "sha256": "8261ede9d1b6e3b21dd5badcd596fca50d5463ea35b6d6dd4024556176fa5835",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/config/localization_policy.yaml",
+      "role": "S05 噪声、轮滑、几何门限",
+      "bytes": 1035,
+      "sha256": "5edaa64b0f12ea3ff63da3b559f885a6d2b476241936a056b426fc841cb74077",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/ws/src/localization_guard/scripts/runtime.py",
+      "role": "实际启动的 EKF 与 ICP 节点",
+      "bytes": 11311,
+      "sha256": "c85051cb1ff0fd5c1020315b449e53e72fdbcb0627c9542d15c6dfdf97a94a85",
+      "functions": [
+        {
+          "name": "compose",
+          "line": 11
+        },
+        {
+          "name": "run_case",
+          "line": 22
+        },
+        {
+          "name": "launch",
+          "line": 24
+        },
+        {
+          "name": "gz",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/localization_guard/scripts/input_adapter.py",
+      "role": "IMU 标定、倾斜估计、轮滑降权",
+      "bytes": 8056,
+      "sha256": "53f91b5326f1d6d540af20e6be8bc1941618f6cd3cb30e5d0f8233a28ed596ec",
+      "functions": [
+        {
+          "name": "Inputs",
+          "line": 12
+        },
+        {
+          "name": "__init__",
+          "line": 13
+        },
+        {
+          "name": "reset_state",
+          "line": 20
+        },
+        {
+          "name": "reset",
+          "line": 22
+        },
+        {
+          "name": "request_reset",
+          "line": 29
+        },
+        {
+          "name": "clock",
+          "line": 30
+        },
+        {
+          "name": "icp",
+          "line": 34
+        },
+        {
+          "name": "imu",
+          "line": 35
+        },
+        {
+          "name": "wheel",
+          "line": 50
+        },
+        {
+          "name": "main",
+          "line": 75
+        },
+        {
+          "name": "end",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/localization_guard/scripts/cloud_filter.py",
+      "role": "点云过滤与法向几何退化检测",
+      "bytes": 3013,
+      "sha256": "d6e426d12021d19359f213ad6b4da9b8df43dc39380628ad87a77dad28b64e22",
+      "functions": [
+        {
+          "name": "geometry",
+          "line": 11
+        },
+        {
+          "name": "main",
+          "line": 15
+        },
+        {
+          "name": "cloud",
+          "line": 18
+        },
+        {
+          "name": "end",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/localization_guard/scripts/icp_gate.py",
+      "role": "独立激光配准的时间与质量门控",
+      "bytes": 5348,
+      "sha256": "4eb16d3d48129626015adc0e8dbeda1450cece2c2b4f7bf6595ebf53c377a9ae",
+      "functions": [
+        {
+          "name": "main",
+          "line": 12
+        },
+        {
+          "name": "clock",
+          "line": 16
+        },
+        {
+          "name": "geom",
+          "line": 21
+        },
+        {
+          "name": "emit",
+          "line": 24
+        },
+        {
+          "name": "drain",
+          "line": 55
+        },
+        {
+          "name": "odom",
+          "line": 60
+        },
+        {
+          "name": "info",
+          "line": 61
+        },
+        {
+          "name": "epoch",
+          "line": 62
+        },
+        {
+          "name": "end",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/localization_guard/scripts/odom_output.py",
+      "role": "公开连续里程计：积分估计速度",
+      "bytes": 3791,
+      "sha256": "8802d8665f871d0f225371d7735f0fdb2516634945c5af0ba83f144e8c05d33f",
+      "functions": [
+        {
+          "name": "Integrator",
+          "line": 16
+        },
+        {
+          "name": "__init__",
+          "line": 17
+        },
+        {
+          "name": "reset",
+          "line": 18
+        },
+        {
+          "name": "update",
+          "line": 19
+        },
+        {
+          "name": "main",
+          "line": 34
+        },
+        {
+          "name": "reset",
+          "line": 36
+        },
+        {
+          "name": "epoch",
+          "line": 39
+        },
+        {
+          "name": "clock",
+          "line": 40
+        },
+        {
+          "name": "receive",
+          "line": 44
+        },
+        {
+          "name": "end",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/localization_guard/src/health_guard.cpp",
+      "role": "C++ 局部定位健康监督",
+      "bytes": 3730,
+      "sha256": "39289351e544a9d1600dee7b56560666f13245e17246292bb43e7115bf1ddc71",
+      "functions": [
+        {
+          "name": "tick",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/references/S05/ekf.cpp",
+      "role": "上游 EKF 学习副本；predict 与 correct",
+      "bytes": 17734,
+      "sha256": "2972c9a49110b3f54afda34eb04bdc40a8ba7b2d5cc2e4c528db310f41beee8a",
+      "functions": [
+        {
+          "name": "Ekf::correct",
+          "line": 54
+        },
+        {
+          "name": "Ekf::predict",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/config/slam_mapping.yaml",
+      "role": "RTAB-Map 建图、ICP、重力、GTSAM 配置",
+      "bytes": 1943,
+      "sha256": "84d0a89eccad62bc5ea2c3162cb871a943af189f60bfb2627865562272920a3d",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/scripts/mapping_inputs.py",
+      "role": "建图输入同步与时序几何过滤",
+      "bytes": 5524,
+      "sha256": "c94031b39da56acfc3100c62ba96bd8bb39dd4033bfd622fb4d4e231e4b82d2e",
+      "functions": [
+        {
+          "name": "temporal_filter",
+          "line": 15
+        },
+        {
+          "name": "main",
+          "line": 24
+        },
+        {
+          "name": "process",
+          "line": 34
+        },
+        {
+          "name": "end",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/scripts/mapping_runtime.py",
+      "role": "建图模式启动与 TF 职责",
+      "bytes": 12613,
+      "sha256": "40e3472bf8495a998d4cbe82fd05d46da4738169cd1b1808dc35669e51ae798c",
+      "functions": [
+        {
+          "name": "run_case",
+          "line": 16
+        },
+        {
+          "name": "launch",
+          "line": 19
+        },
+        {
+          "name": "gz",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/config/slam_localization.yaml",
+      "role": "冻结地图只读定位配置",
+      "bytes": 2447,
+      "sha256": "486a74a6a12d1ff519db05ed90fe1e6ce72e6fbfc6a0da58128bd0c1914e785c",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/ws/src/global_pose_manager/scripts/localization_preprocessor.py",
+      "role": "位置插值、SLERP、整帧时间对齐",
+      "bytes": 7302,
+      "sha256": "1973b21eef3634aa35d1db7439a3ae37bdf6dedc6be117ce88313e492398184c",
+      "functions": [
+        {
+          "name": "interpolate_odom",
+          "line": 18
+        },
+        {
+          "name": "main",
+          "line": 29
+        },
+        {
+          "name": "forward_local_tf",
+          "line": 35
+        },
+        {
+          "name": "process",
+          "line": 44
+        },
+        {
+          "name": "end",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/global_pose_manager/scripts/localization_quality.py",
+      "role": "S07 几何观测审核",
+      "bytes": 6754,
+      "sha256": "bcb1c6dbc04236882773d22f3dc1afd4a34e65b5bd49b06bc1ed5310a2efe308",
+      "functions": [
+        {
+          "name": "main",
+          "line": 18
+        },
+        {
+          "name": "clock",
+          "line": 24
+        },
+        {
+          "name": "end",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/global_pose_manager/scripts/map_refinement.py",
+      "role": "S07 有界匹配修正",
+      "bytes": 2314,
+      "sha256": "862d723461ba9fbcafd93c07e79f06beeccbfb7ac714b1130c656971728c2ea5",
+      "functions": [
+        {
+          "name": "refine",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/config/gnss_alignment.yaml",
+      "role": "S08 控制点与 ENU 地图配准",
+      "bytes": 1036,
+      "sha256": "5d4a878522029775268396d57f76daacd628e88519b3f6573d6256aeead5a54a",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/config/localization_supervisor.yaml",
+      "role": "S08 GNSS/地图监督门限",
+      "bytes": 446,
+      "sha256": "9a91ecac1552023f331f26f9fc9c9cbe3c0ea65b4d822d3618d33a4573419e07",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/ws/src/gnss_supervisor/scripts/alignment.py",
+      "role": "坐标转换、刚体 SVD、协方差传播",
+      "bytes": 1566,
+      "sha256": "fcf9758df4f3487e1071cef4de13e7c0ec368647c7c01edcfe7f4db6bb8143da",
+      "functions": [
+        {
+          "name": "solve",
+          "line": 5
+        },
+        {
+          "name": "convert",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/gnss_supervisor/scripts/source_adapter.py",
+      "role": "GNSS 与地图证据适配",
+      "bytes": 4155,
+      "sha256": "9646a46d718e77bab28adce9aa6ac94187c78d7c837aea0e65394d661a7d040e",
+      "functions": [
+        {
+          "name": "main",
+          "line": 12
+        },
+        {
+          "name": "record",
+          "line": 15
+        },
+        {
+          "name": "pub",
+          "line": 16
+        },
+        {
+          "name": "fault",
+          "line": 17
+        },
+        {
+          "name": "match",
+          "line": 18
+        },
+        {
+          "name": "contract",
+          "line": 34
+        },
+        {
+          "name": "gnss",
+          "line": 41
+        },
+        {
+          "name": "quality",
+          "line": 42
+        },
+        {
+          "name": "map_obs",
+          "line": 43
+        },
+        {
+          "name": "end",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/gnss_supervisor/src/gnss_supervisor.cpp",
+      "role": "C++ 创新检查、来源选择与 map→odom",
+      "bytes": 12238,
+      "sha256": "e4d1fad6cabd9555e17c35fb8b92cea9608f004fcb4261a7bfadc17fde9b1e5f",
+      "functions": [
+        {
+          "name": "mapEvidence",
+          "line": 31
+        },
+        {
+          "name": "gpsEvidence",
+          "line": 42
+        },
+        {
+          "name": "tick",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/mission_bt/scripts/runtime14.py",
+      "role": "当前区域定位分支的实际选择",
+      "bytes": 7433,
+      "sha256": "96c8e2c15c0d77d9405076af714d1968a843b7122c97f2866f2d65913b107085",
+      "functions": [
+        {
+          "name": "runtime",
+          "line": 7
+        },
+        {
+          "name": "run_case",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/mission_bt/scripts/regional_localizer14.py",
+      "role": "区域定位：初值、歧义、修正与版本门控",
+      "bytes": 6571,
+      "sha256": "2b5d1fe0fb366f95f85aa0ae669a671a843b28343e2ab5a41c11d5dc0f2008ab",
+      "functions": [
+        {
+          "name": "main",
+          "line": 21
+        },
+        {
+          "name": "hint",
+          "line": 33
+        },
+        {
+          "name": "end",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/mission_bt/scripts/regional_math14.py",
+      "role": "SE(2) 粗配准、鲁棒点到平面、留出验证",
+      "bytes": 4038,
+      "sha256": "00bf04439abe00f01d4c24f3f52b7e2c462fd7124ef11847e806c86db904bcdd",
+      "functions": [
+        {
+          "name": "rotation",
+          "line": 8
+        },
+        {
+          "name": "SurfaceMap",
+          "line": 11
+        },
+        {
+          "name": "__init__",
+          "line": 12
+        },
+        {
+          "name": "prepare_normals",
+          "line": 15
+        },
+        {
+          "name": "align",
+          "line": 20
+        },
+        {
+          "name": "rigid_fit",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/mission_bt/scripts/regional_source14.py",
+      "role": "S14 注册区域 GNSS 输入适配",
+      "bytes": 1295,
+      "sha256": "3fa677b97708a79fea04728b8eaba7d4693ed719cca4d87cccd39d8e8ca722b5",
+      "functions": [
+        {
+          "name": "main",
+          "line": 10
+        },
+        {
+          "name": "convert",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/maps/frozen/manifest.json",
+      "role": "S07 冻结地图版本契约；仅读取 manifest",
+      "bytes": 2152,
+      "sha256": "1f931b1d43456f6d217bad25d4996991ed01e59c590d9e55280f37ed16b35a36",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/maps/s14_regions/manifest.json",
+      "role": "S14 冻结区域地图版本契约",
+      "bytes": 199794,
+      "sha256": "438ff98369e7299f35ff908c10d03ec6c6d21947c7501b33f5f383045b7ed595",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/ws/src/object_fusion/scripts/fusion_node.py",
+      "role": "相机语义、激光与双目深度关联",
+      "bytes": 7319,
+      "sha256": "faaf406e65afaacb21f5de47b907449b5efd8b2f6881f8f8230c39f44fed59dc",
+      "functions": [
+        {
+          "name": "main",
+          "line": 15
+        },
+        {
+          "name": "info",
+          "line": 20
+        },
+        {
+          "name": "process",
+          "line": 24
+        },
+        {
+          "name": "end",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/ws/src/object_fusion/scripts/tracker.py",
+      "role": "障碍物 KF 与匈牙利匹配；不是自身定位",
+      "bytes": 2828,
+      "sha256": "6501f9350ae5059c57177a54d7ccd7f969bc034b063817453316e10cdca7abfd",
+      "functions": [
+        {
+          "name": "Tracker",
+          "line": 4
+        },
+        {
+          "name": "__init__",
+          "line": 5
+        },
+        {
+          "name": "update",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "path": "optimization_v2/config/s05_dependency_lock.json",
+      "role": "S05 已安装依赖版本记录",
+      "bytes": 826,
+      "sha256": "b5c29dcf8cedd999d95288fa1ccb5fefb71ab6ba2f355d301bbf78674efb71c8",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/config/s06_dependency_lock.json",
+      "role": "S06 已安装依赖版本记录",
+      "bytes": 744,
+      "sha256": "24c508070cd963dd2834620011d5a936ce32522812d025360cf97b60f8c41b38",
+      "functions": []
+    },
+    {
+      "path": "optimization_v2/references/S06/README.md",
+      "role": "上游来源与版本差异说明",
+      "bytes": 1248,
+      "sha256": "f6d94aaa62707570002ec0f8555e7e8257f64945d0382f17b26ceef9ec42dff6",
+      "functions": []
+    }
+  ]
+}

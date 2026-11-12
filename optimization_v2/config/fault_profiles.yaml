@@ -1,0 +1,11 @@
+schema: S04-FAULTS/1
+revision: s04.1
+nominal: []
+sensor_faults:
+  - {name: transport_delay, start: 12, end: 20, delay_s: 0.18}
+  - {name: image_loss, start: 22, end: 30, image_drop_probability: 0.5}
+  - {name: wheel_slip, start: 32, end: 40, wheel_scale_error: 0.30}
+  - {name: gnss_float, start: 42, end: 50, gnss_mode: float}
+  - {name: gnss_dropout, start: 52, end: 60, gnss_mode: dropout}
+  - {name: gnss_false_fixed, start: 62, end: 72, gnss_mode: false_fixed, gnss_bias_enu_m: [3.0, -2.0, 0.5]}
+  - {name: imu_bias_step, start: 74, end: 82, gyro_z_bias_rad_s: 0.04}

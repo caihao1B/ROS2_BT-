@@ -1,0 +1,51 @@
+{
+  "kind": "SYNTHETIC_TEACHING_ONLY",
+  "checks_passed": 5,
+  "velocity": {
+    "normal_mps": 0.6323809523809523,
+    "slip_downweighted_mps": 0.41656686626746503,
+    "normal_wheel_gain": 0.7619047619047619,
+    "degraded_wheel_gain": 0.001996007984031936
+  },
+  "transform": {
+    "local_unchanged": [
+      2.0,
+      1.0,
+      0.1
+    ],
+    "global_pose": [
+      2.1959673283574856,
+      1.1321041083460686,
+      0.27453292519943295
+    ],
+    "recovered_map_odom": [
+      0.3999999999999997,
+      -0.2000000000000003,
+      0.17453292519943295
+    ]
+  },
+  "gnss_16cm": {
+    "distance_m": 0.16,
+    "nis": 6.2439024390243905,
+    "distance_ok": false,
+    "nis_ok": true,
+    "accepted": false
+  },
+  "graph": {
+    "before": [
+      0,
+      1.1,
+      2.2
+    ],
+    "after": [
+      0,
+      1.0333333333333334,
+      2.066666666666667
+    ]
+  },
+  "normal_geometry": {
+    "parallel_min_eigenvalue": 0.0,
+    "orthogonal_min_eigenvalue": 1.0
+  }
+}
+PASS: 5 个教学检查通过；不代表生产阶段验收。

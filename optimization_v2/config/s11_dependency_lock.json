@@ -1,0 +1,24 @@
+{
+  "schema": "S11-DEPENDENCIES/1",
+  "versions": {
+    "python": "3.12.3",
+    "shapely": "2.1.2",
+    "geos": "3.13.1",
+    "numpy": "1.26.4",
+    "yaml": "6.0.1",
+    "metis_binary": {
+      "idx_bits": 32,
+      "metis": "5.1.0",
+      "real_bits": 32
+    },
+    "packages": {
+      "libmetis5": "5.1.0.dfsg-7build3",
+      "libmetis-dev": "5.1.0.dfsg-7build3",
+      "nlohmann-json3-dev": "3.11.3-1"
+    },
+    "metis_header_sha256": "20826dae4a5ff3fce9ad5fd0cf28ed0f8899e1cbdab1e318dfb33c8123840616",
+    "metis_library_sha256": "e3644eb16d61bdc633255b36851aecbb61919963a3a3d3cd8a5eb9bf2895f200"
+  },
+  "installed_this_step": [],
+  "scope": "Installed METIS C++ library, existing isolated scene venv, offline CPU only"
+}

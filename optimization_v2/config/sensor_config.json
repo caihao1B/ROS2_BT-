@@ -1,0 +1,20 @@
+{
+  "probe": {
+    "position": [
+      20,
+      25,
+      1.1
+    ],
+    "camera_pitch": 0.08,
+    "camera_hfov": 1.4,
+    "width": 640,
+    "height": 360
+  },
+  "topics": [
+    "/clock",
+    "/s02/probe/lidar/points",
+    "/s02/probe/image"
+  ],
+  "prior_path": "/home/ceihao/robot_project/optimization_v2/maps/prior",
+  "ros_domain_id": 119
+}

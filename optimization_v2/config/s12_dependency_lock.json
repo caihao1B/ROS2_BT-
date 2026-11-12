@@ -1,0 +1,20 @@
+{
+  "schema": "S12-DEPS/1",
+  "versions": {
+    "python": "3.12.3",
+    "shapely": "2.1.2",
+    "geos": "3.13.1",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "packages": {
+      "ros-jazzy-fields2cover": "2.1.1-1noble.20260922.035009",
+      "ros-jazzy-ortools-vendor": "9.9.1-4noble.20260813.150622",
+      "libgdal-dev": "3.8.4+dfsg-3ubuntu3",
+      "libmetis-dev": "5.1.0.dfsg-7build3"
+    },
+    "f2c_header_sha256": "71669f25eb383673aca5d1e9d098b53f4d224456c2115c115a2d1891801cccfd",
+    "ortools_header_sha256": "3bcb6581a91f4d1a96ca8e7a4b1bb6fcdbf2eb50ba54572470804de42c5949ec"
+  },
+  "installed_this_step": [],
+  "note": "Existing C++ Fields2Cover and OR-Tools; Python uses existing scene venv. No Python OR-Tools install required."
+}

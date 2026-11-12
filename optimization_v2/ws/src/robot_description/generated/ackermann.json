@@ -1,0 +1,115 @@
+{
+  "schema": "S03-VEHICLE/1",
+  "id": "ackermann",
+  "revision": "s03.1",
+  "kind": "ackermann",
+  "body": {
+    "size": [
+      1.5,
+      0.8,
+      0.24
+    ],
+    "center": [
+      0.5,
+      0,
+      0.38
+    ],
+    "mass": 80
+  },
+  "wheel": {
+    "radius": 0.18,
+    "width": 0.1,
+    "mass": 3.0,
+    "track": 0.7,
+    "friction": 1.0,
+    "effort_Nm": 60
+  },
+  "wheelbase": 1.0,
+  "calibration": {
+    "drive_track_m": 0.6,
+    "scope": "Gazebo inner contact span; steering geometry remains 0.70 m"
+  },
+  "footprint": [
+    [
+      -0.3,
+      -0.52
+    ],
+    [
+      1.3,
+      -0.52
+    ],
+    [
+      1.3,
+      0.52
+    ],
+    [
+      -0.3,
+      0.52
+    ]
+  ],
+  "steering": {
+    "joint_limit_rad": 0.6,
+    "rate_rad_s": 0.6,
+    "effort_Nm": 60,
+    "gain": 6.0,
+    "max_curvature": 0.5
+  },
+  "limits": {
+    "max_speed": 1.2,
+    "reverse": 0.3,
+    "yaw_rate": 0.8,
+    "acceleration": 0.5,
+    "deceleration": 0.8,
+    "yaw_acceleration": 0.8
+  },
+  "qualification_candidates": {
+    "work_mps": 0.8,
+    "transit_mps": [
+      0.4,
+      0.8,
+      1.0,
+      1.2
+    ],
+    "connector_mps": 0.8,
+    "slope_mps": 0.4,
+    "slope_deg": 5
+  },
+  "encoder": {
+    "ticks_per_revolution": 4096,
+    "steering_resolution_rad": 0.001
+  },
+  "safety": {
+    "command_wall_s": 0.4,
+    "command_sim_s": 0.2,
+    "feedback_wall_s": 0.5,
+    "actuator_wall_s": 0.35,
+    "actuator_sim_s": 0.35,
+    "clock_wall_s": 0.2,
+    "stopped_v_mps": 0.01,
+    "stopped_w_rad_s": 0.02,
+    "stop_delay_s": 2.0,
+    "alignment_error_rad": 0.05,
+    "alignment_speed_mps": 0.1,
+    "steering_tracking_timeout_s": 3.0
+  },
+  "tool": {
+    "vehicle": "ackermann",
+    "mount_xyz": [
+      0.5,
+      0,
+      0.19
+    ],
+    "collision_size": [
+      0.7,
+      1.0,
+      0.1
+    ],
+    "mass_kg": 8,
+    "virtual_effective_width_m": 0.9,
+    "nominal_overlap_m": 0.1,
+    "requires_stopped": false,
+    "evidence_scope": "width inside physical deck; real cutting effectiveness is not claimed"
+  },
+  "config_hash": "0b1811de66b245be6793ede70dbdff38ba60f3dff89d454190d18ffe310b8639",
+  "total_mass_kg": 100.6
+}

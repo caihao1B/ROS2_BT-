@@ -1,0 +1,50 @@
+[
+  {
+    "source": "/home/ceihao/robot_project/native_20261108/task_bt/engine.cpp",
+    "destination": "optimization_v2/ws/src/project_baseline/src/bt_engine.cpp",
+    "original_sha256": "a4b4e640bf29c8c3dcc40de75b7d505381500e4e089be298147c2e4a7e9dd3ca",
+    "rights": "User-supplied local project; no redistribution license inferred."
+  },
+  {
+    "source": "/home/ceihao/robot_project/native_20261108/task_bt/tree.xml",
+    "destination": "optimization_v2/ws/src/project_baseline/fixtures/tree.xml",
+    "original_sha256": "adba7896edb5e560ace1898dbc3f322fdcecf57c1988ff29ad773096dc2bf3cf",
+    "rights": "User-supplied local project; no redistribution license inferred."
+  },
+  {
+    "source": "/home/ceihao/robot_migration_20261108/scripts/sensor_smoke.py",
+    "destination": "optimization_v2/ws/src/project_baseline/scripts/sensor_smoke.py",
+    "original_sha256": "6cc09ed08ca2d811e53d0cc91d4d5390ee8cecfed18c9fbe1e141c0217207e52",
+    "rights": "User-supplied local project; no redistribution license inferred."
+  },
+  {
+    "source": "/home/ceihao/robot_project/native_20261108/task_bt/test_engine.py",
+    "destination": "optimization_v2/ws/src/project_baseline/tests/test_engine.py",
+    "original_sha256": "3a8f525eb2bd60be75e9d8c99bb70db6cc3f0985802bdda75a5b242e66ca7ee5",
+    "rights": "User-supplied local project; no redistribution license inferred."
+  },
+  {
+    "source": "/home/ceihao/robot_project/native_20261108/task_bt/test_ipc_contract.py",
+    "destination": "optimization_v2/ws/src/project_baseline/tests/test_ipc_contract.py",
+    "original_sha256": "4e9bd1b8ad8acc5592674bd54db066cebc722c3be77e5b26d864879078fb2903",
+    "rights": "User-supplied local project; no redistribution license inferred."
+  },
+  {
+    "source": "/home/ceihao/robot_project/native_20261108/task_bt/test_repair_contract.py",
+    "destination": "optimization_v2/ws/src/project_baseline/tests/test_repair_contract.py",
+    "original_sha256": "d83840da48b8740e2b33f62f5326e015fbc25f4284f2a410158180c4c7ca9b18",
+    "rights": "User-supplied local project; no redistribution license inferred."
+  },
+  {
+    "source": "/home/ceihao/robot_project/native_20261108/task_bt/ipc_contract.py",
+    "destination": "optimization_v2/ws/src/project_baseline/tests/ipc_contract.py",
+    "original_sha256": "4ef0957f8577f869665b37df13b6da36633c602c6316d484a2e0e4ce6e976390",
+    "rights": "User-supplied local project; no redistribution license inferred."
+  },
+  {
+    "source": "/home/ceihao/robot_project/native_20261108/task_bt/repair_contract.py",
+    "destination": "optimization_v2/ws/src/project_baseline/tests/repair_contract.py",
+    "original_sha256": "64ec7eccb34d84a3d056fc727b31db7ed8816ae2a47163d558eb8b1558f12ee4",
+    "rights": "User-supplied local project; no redistribution license inferred."
+  }
+]

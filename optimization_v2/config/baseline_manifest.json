@@ -1,0 +1,2269 @@
+{
+  "schema_version": 1,
+  "source_comparison": {
+    "root_file_count": 139,
+    "native_file_count": 139,
+    "changed": [
+      "dino_control/generated/contract.json",
+      "dino_control/generated/footprint_rear_axle.json",
+      "dino_control/launch/drive.launch.py",
+      "dino_description/config/geometry.json",
+      "dino_description/reference_fixes/Dino_ackermann_syntax_paths_only.sdf",
+      "dino_description/reference_fixes/legacy_sdf.patch",
+      "dino_description/urdf/dino_display_original.urdf",
+      "dino_navigation/generated/contract.json",
+      "dino_sensors/config/sensors.json",
+      "dino_sensors/generated/contract.json",
+      "dino_sensors/launch/sensors.launch.py",
+      "dino_sensors/package.xml",
+      "dino_slam/launch/mode.launch.py"
+    ],
+    "only_root": [],
+    "only_native": [],
+    "authoritative_legacy_source": "/home/ceihao/robot_project/native_20261108/ros2_ws/src",
+    "new_source": "/home/ceihao/robot_project/optimization_v2/ws/src",
+    "root_source_policy": "reference_only_not_loaded_or_edited_for_new_features"
+  },
+  "runtime_files": [
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/materials/textures/gravel.png",
+      "sha256": "5f27cc5663e8b360ba0cd896f157128c2186f40d0388f74f354c0b4d24de64d5"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/materials/textures/turf.png",
+      "sha256": "e7300b159c887f0b5a58c8d5e777cf1558607d8a11a8a3fe22b2a2fc509a74eb"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/bark.mtl",
+      "sha256": "cd2ebce0c947a81aea3bc23c46d1d51d82f916397d3dc4a09ae596c331b95886"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/bark.obj",
+      "sha256": "a419c2787ca4043e7a62556072c2925e3491c02e8ffc3f986554cf01014bd010"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/glass.mtl",
+      "sha256": "4e2477c158e145c835d9ece5030901fbc3a1e61b61cb16487d3345b4892d2006"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/glass.obj",
+      "sha256": "bec3272bf24b7e57e0366f69d6a01240661cfeba403379a8c4c4c9f0cc84f000"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/gravel.mtl",
+      "sha256": "c931df894de6101104dd8bc2f5339fb9cb4a34cd53b77de2da99f2630e8f6657"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/gravel.obj",
+      "sha256": "de6aa3ccab7e3ad2a30742d8e9d168e675159d6df6b9fc48d3c28c51727e01e6"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/leaf_dark.mtl",
+      "sha256": "d6e84954bc82b81258c3921d3a5499530c19ab18e926dfd1d37b2c0f50cb220a"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/leaf_dark.obj",
+      "sha256": "c61437147db18a7e72f7d8567bb5b28933776c6bc332f63a5f9def57a5315727"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/leaf_light.mtl",
+      "sha256": "2e57fd155ceda88e62a4af4899e97bbe9196cbdb288ebca13bf82a30b8a47132"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/leaf_light.obj",
+      "sha256": "5f780907b4558707a5cb31d7b1dfb69bb05d837d2f7e81e7124bc1fdf6d6cb07"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/leaf_mid.mtl",
+      "sha256": "41272050911c130ae767a45d133afab391fe9e1999bb65f1d21e7cb7710c52b7"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/leaf_mid.obj",
+      "sha256": "04779e5c482a5fe16766f49a17a0df574a1ef47517ca3c916f8baf7195ad8173"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/metal.mtl",
+      "sha256": "67ea3effc9462d913a6b258bdc52b748ef97a35385d24ddd5539f67b60e134ec"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/metal.obj",
+      "sha256": "a8dfe78cac984be65c0bb15db401870bd46186853fe45d991294655d0ba610e3"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/mulch.mtl",
+      "sha256": "6ed708c7f7e52b014b51c750a343deefb8545e760f647f0d74612a2e9ff4fa09"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/mulch.obj",
+      "sha256": "94b32c30f6c8ef7cd94bd65b6e2b519a6d909dfb0aca1ad1d916605dd3e4dfcc"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/roof.mtl",
+      "sha256": "82c01e252c7f95f8926f54aea836f9e0b2de59f2f895ba5df97964a1a5099569"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/roof.obj",
+      "sha256": "2758d6c6563c563a8f1d77c5a02ca5cc2a4283c1f902bae2b7a0441d9faafce8"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/shed_wall.mtl",
+      "sha256": "e39d160b767881a7d839f24b8ea40b8ef84481e88177e4bb559936b7ce3a6ae3"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/shed_wall.obj",
+      "sha256": "f798417de9332327ee84e2f598530f1898abd50697d153a360598fce952b0a8c"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/soil.mtl",
+      "sha256": "8a90fbfca3d589a0a431215ef44aa62a15ca9d9b6fef1fbc269925aa0789a900"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/soil.obj",
+      "sha256": "3521b5906cd7cfa540fea9bc94405db26c218847f2c8348c2d464a66e80eb4f7"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/stone.mtl",
+      "sha256": "40300650eb3812d066e2f71d1181d03c7962b11b7bb75b3ce26024e7b3e4399f"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/stone.obj",
+      "sha256": "d49c039a67eafb7943ccc8f6cbb354505cbcf756f64de9fe82fb9d5e5b339047"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/turf.mtl",
+      "sha256": "b1418e3c34fcb086b24b197f88847a5c99737269159e8848a6680ca6c651d6d3"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/turf.obj",
+      "sha256": "0e66ecac289cf62415a3354ab7a3782bb403802cf596b113e60b60884f9e4c15"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/verge.mtl",
+      "sha256": "8e751baa8f7e80729ee9a9c6ded580632023d2ef75202482f596e0d058c4b23a"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/verge.obj",
+      "sha256": "9b37d42de3af33235642c1b43c18d2a39c97dde90a808b66a6dfc00dc9bfb47a"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/wood.mtl",
+      "sha256": "825cc6bc471d0b5d7d488baeb88f3e71749833e04a11f734a5b8744264359c46"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/wood.obj",
+      "sha256": "7d910e23f94f4ca5a4b9b1dd2efc731d07d3b3df9b3cab09a8c3d9abb52d5d07"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.config",
+      "sha256": "e8c3486eb086fbcb311756b5e57e625fc9813d7ba25c128dd93146689f59882e"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "sha256": "6ee11c4e37a31600a5164041c5945937d334db14b6a7a31c90fe2990ce769a5d"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_obstacle_cart_v1/model.config",
+      "sha256": "e9ddcdb6e4903101bd224d199cd5e390b6987e8c6a206219e4da997509fba269"
+    },
+    {
+      "path": "native_20261108/farm_scene/gazebo/models/dino_obstacle_cart_v1/model.sdf",
+      "sha256": "e4f050849511b34964b46781fc151ef2a128ff8188543d9c6b3cf2d6faf27a21"
+    },
+    {
+      "path": "native_20261108/farm_sensor_smoke.sdf",
+      "sha256": "7dd39714b97b2f7dea2654a9a0ec3b121fa55b8a0001ea4f2f47ceabd72f97a9"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/lib/dino_control/drive_node.py",
+      "sha256": "87a511538b9ab86096a1ce77a333dd4c04142b409292f068bf2c180a15b6a75f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/lib/dino_control/kinematics.py",
+      "sha256": "6b9ed881bdb9b98f733ef82ddadaf7939920a773b32e38c0841224b2998d704f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/lib/dino_control/stationary_gate.py",
+      "sha256": "ffc2072ffba34a5069ae3e93d0f76b9d58f49b597137c219b7266eb0fe0e3971"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/lib/libdino_ackermann_system.so",
+      "sha256": "d8ffa360755cd7ef3b06df2d44e5f919b4372a95ff9d7a8f3a6b7e6e79188689"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/cmake/dino_controlConfig-version.cmake",
+      "sha256": "5df7fb3481e154840dd6ac6d1b6eb53c81ed9cadd5e7a00398962383332be7ea"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/cmake/dino_controlConfig.cmake",
+      "sha256": "6b38a33d99d9d698c720af62a37ce270fa302cf5f9726be0ebe5928e64f75913"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/config/control.json",
+      "sha256": "fe65c54c46a143569e89bb674ede7045cd8c4d674f454962180b9813e391c9b7"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/environment/ament_prefix_path.dsv",
+      "sha256": "c4797d0a0670c70b4d3bcb5b7d47563635c7950595603f3af66f70af546ad57e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/environment/ament_prefix_path.sh",
+      "sha256": "6658f14efe913e291c0bf2c74059a9e14fb8abdb5a31628bef61d3b41e206679"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/environment/path.dsv",
+      "sha256": "3f2cdf6234ea2525c1670c140b6a03700d98a2408e7a232107791fa96c08b58b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/environment/path.sh",
+      "sha256": "abe10a0452bc4b93f665fc343a7e6d32fe3f3a2b6beb90d338044a71d2583f18"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/generated/bridge.yaml",
+      "sha256": "f9b46431522a816040b6f9e4643b321074be99cffbe5b0d2c731a3afd2cc65bd"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/generated/bridge_full.yaml",
+      "sha256": "df82a4b70d077e5480034eda534b2a49de9da972a2a560de944c4aa513d6875d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/generated/contract.json",
+      "sha256": "47da4a0b08eb389d637875266f432bbca5636b3ccb6d21ecb61b8c8bac3629e1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/generated/dino_drive.urdf",
+      "sha256": "c1bc47f8316917324cf50c10922c372cbbe4ae981bd5480ec85831526757f833"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/generated/drive_full.sdf",
+      "sha256": "009196b5d3a1c909bebed550f88e3441251d11c9dafd971a06408f2bc63e7a42"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/generated/drive_physics.sdf",
+      "sha256": "bd733ff4a146f725855189758ccdaf6ecdfca5003ec1a721a217b724e9ab3bce"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/generated/footprint_rear_axle.json",
+      "sha256": "f33363dcb4a5245f9d3ced89cb1060bbbb19b62b04fdbd37b57e13514694863a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/hook/cmake_prefix_path.dsv",
+      "sha256": "7ab2eb0a25c282f9a5bf62596b4c098865cd3a8aa5740601a9efa8620acd69d3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/hook/cmake_prefix_path.ps1",
+      "sha256": "0c7394c1d89765deec81cb10e59a36d0d98867690b4b8781d5bc9186fc67885a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/hook/cmake_prefix_path.sh",
+      "sha256": "ee9849def404b669097010f38735aa521e0731366a319b6e1abe996c793494b2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/hook/ld_library_path_lib.dsv",
+      "sha256": "038195297fbe5e22d78680bf0f2b1b182fea46aaececf77d84daadad1fdfa665"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/hook/ld_library_path_lib.ps1",
+      "sha256": "c6e5dc5fc7ca92a59dec3b4107c761602c03e4ca0b4211ec2634efc3b43ef84e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/hook/ld_library_path_lib.sh",
+      "sha256": "535fe00314bc8acdb36d1057e32d60c215005141a8c30a99bf665a29fed4e222"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/launch/drive.launch.py",
+      "sha256": "fc2302ed454f31fde5cb5bf32adbde8f900917a2d437c65dd721770d53fbdbc0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/local_setup.bash",
+      "sha256": "41b30b6c107da94a2478e43953b8cbd0d920f5e8fc1ea847c61a213623d623b0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/local_setup.dsv",
+      "sha256": "d8553099262985416d40a3068f9d7ec3d76e7b2d6235bf8c720164f30c3a35d2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/local_setup.sh",
+      "sha256": "acefa3ecb5284ead0d3628d51298dd220454bf8221037a69594eee60de630644"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/local_setup.zsh",
+      "sha256": "56942873096201f4e7fe5e7b9bd87e56cc42ced33fadb53fbc25766fd9149c81"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/package.bash",
+      "sha256": "2bb66b1dd32bc969c20184dd2ea9ad0bf79faf77003e8a754a9731bf805b8368"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/package.dsv",
+      "sha256": "413ed5bdf15234d37c02d41beede9fe0ac2a26dfd87e136f8f11c0fd7290c4ab"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/package.ps1",
+      "sha256": "035e690669c989429e9728f107ef6383482f2c350c4c813d8bf4002968ea7e6a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/package.sh",
+      "sha256": "a2945ff013e823a2b644ea059f82bedc58b41cf897e4718d1940ea2daaf9764d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/package.xml",
+      "sha256": "b849f1a99df4da70888a854500dcb7302eca36c47e549a64fa5445f3bd82a99d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_control/share/dino_control/package.zsh",
+      "sha256": "6a7994b63914abb7c8bfbff921d7ab5c29c8b19e7b697406fa199aa8700003b9"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/cmake/dino_descriptionConfig-version.cmake",
+      "sha256": "5df7fb3481e154840dd6ac6d1b6eb53c81ed9cadd5e7a00398962383332be7ea"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/cmake/dino_descriptionConfig.cmake",
+      "sha256": "be2271ee0d707425bca84659fe3451ca171c62a7eeaa88ada2f8ff997a94353c"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/config/bridge.yaml",
+      "sha256": "b8df1527b8353c5bbfc329d25a9fe88fa363f8cca5aaa9bbfa3743bd4a63f014"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/config/geometry.json",
+      "sha256": "9f4a528f53b8d59641b98908c96c79144e2e884cd2fec056030534d1a185b5ca"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/config/gui.config",
+      "sha256": "a2b77c7c0cc0fc6598eb40222c4df995e9fd8be38e321962c3484df23c673615"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/config/source_mesh_manifest.json",
+      "sha256": "2212fc7047ed961ce57b41f6edc94fc6debd1dbdb0fbd66f1716edfae68e9286"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/environment/ament_prefix_path.dsv",
+      "sha256": "c4797d0a0670c70b4d3bcb5b7d47563635c7950595603f3af66f70af546ad57e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/environment/ament_prefix_path.sh",
+      "sha256": "6658f14efe913e291c0bf2c74059a9e14fb8abdb5a31628bef61d3b41e206679"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/environment/path.dsv",
+      "sha256": "3f2cdf6234ea2525c1670c140b6a03700d98a2408e7a232107791fa96c08b58b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/environment/path.sh",
+      "sha256": "abe10a0452bc4b93f665fc343a7e6d32fe3f3a2b6beb90d338044a71d2583f18"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/hook/cmake_prefix_path.dsv",
+      "sha256": "7ab2eb0a25c282f9a5bf62596b4c098865cd3a8aa5740601a9efa8620acd69d3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/hook/cmake_prefix_path.ps1",
+      "sha256": "0c7394c1d89765deec81cb10e59a36d0d98867690b4b8781d5bc9186fc67885a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/hook/cmake_prefix_path.sh",
+      "sha256": "ee9849def404b669097010f38735aa521e0731366a319b6e1abe996c793494b2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/launch/inspect.launch.py",
+      "sha256": "d78a305dee4dd363a788bc67200e780b287583b223f9eb91b272f58b1e2ae54a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/local_setup.bash",
+      "sha256": "41b30b6c107da94a2478e43953b8cbd0d920f5e8fc1ea847c61a213623d623b0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/local_setup.dsv",
+      "sha256": "866cbb42bbbbd2b30f88c740ff2c3342f069a726d6e4d2807afbeaac6550f405"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/local_setup.sh",
+      "sha256": "d6141a204cfa41c4105ac7ecaf069df14d6e7986b98398d9c65efb95c6e731d5"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/local_setup.zsh",
+      "sha256": "56942873096201f4e7fe5e7b9bd87e56cc42ced33fadb53fbc25766fd9149c81"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_0.stl",
+      "sha256": "25bb409aed32243c826c041eeabc0797c7f2af74e0a8c723e0105a0eb553a324"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_1.stl",
+      "sha256": "62640bcbf787a9c1891b46c797b3588cb3733563872095ff1ba007c6baf01de5"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_2.stl",
+      "sha256": "ed7f26af86486293e47e4249c34fecbc4ba8d1f97f79aef30e27b329b761fea1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_3.stl",
+      "sha256": "aa83fbd46d4e8ae403a12e616328d0a48e42a4c89c60211835e8ec2666923d96"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_0.stl",
+      "sha256": "c0245ec4e28b6165e4a6f47ad08877b31d19ce2678de1489b6e4f80943729d73"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_1.stl",
+      "sha256": "ef7f7f7e7ccb08385a9dcfab33276fa842f9fcc13629cede2f53d79a53772829"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_2.stl",
+      "sha256": "9dd779fd687552e09fdf80794971d9ae5f08a0590e0a19ea993771a10eba8553"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_3.stl",
+      "sha256": "73efedee74026a0d8800a5725765414545339b494a8e9a6c48432828122d603c"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_0.stl",
+      "sha256": "8deaa105b1e7856db8d42d49bd6c5c435280da58888c37e5cc7fb453121162f4"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_1.stl",
+      "sha256": "9fc2126bd4b90693e4808214e61ae63b1d5be612076056d5ee3d191d6ecc492f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_2.stl",
+      "sha256": "b0fe76e6c857003b208bf192dfdb1ff35573b1cb83544ac339e75acad54fcd6d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_3.stl",
+      "sha256": "5e27d23987d35a1663d25668e6beefefe6742d379a07ac0451e392ef1b859101"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_0.stl",
+      "sha256": "9b1ee0f607901eca758fbdbee0e3e5740f6336e344263a4aafdf65069e7917f0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_1.stl",
+      "sha256": "2e51ed79ab55a4b8d3b0ba0720aaeca2f9649065b86356e0edb7bed77a21debc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_2.stl",
+      "sha256": "c60b9004fb458b109dc41d8df135d72a41c0956f2a914ffc35439d69e8855364"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_3.stl",
+      "sha256": "5b1230669c7541bc01b9303b416a214335e328ceaf8d8c532fcb39dacc94563d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_0.stl",
+      "sha256": "e9ffa665839768a024838dbd8ce602ffc7c16aa3bb1b1dd70bc685ae35c85645"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_1.stl",
+      "sha256": "bcaae4b21b5faaeadfe4b6acaf9ceb021042479f5d21c8a80d197decd112d76b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_2.stl",
+      "sha256": "e964041308455942917fce1c491485f33a39a6fed917f19d584f7173d15b83e8"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_3.stl",
+      "sha256": "cb576a5ac3a5236d0d6c9617b592da4b74cd1b0ae40ae0b3ec88d155ee573083"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/FL.dae",
+      "sha256": "46d0aa328f3a6292dcde440f2db84ec8105af3d2fbdb8983623ceb5ee1b9f8f8"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/FR.dae",
+      "sha256": "2a4049176490cb6d27df58e1d123c5ea52451967ca6fe4f3295134d28da43c01"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/RL.dae",
+      "sha256": "220d612d6aa2e8d01bf3b34588aa6182bd325b5cad8f1fb5c029596bc9cedb84"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/RR.dae",
+      "sha256": "c820d5eedc4b95928e488746979fa90eb135c063a66350f2c519116f4b3def05"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/body.dae",
+      "sha256": "f46f56ab2c09a23d649b756fff5e15b89e8aa9ef9a02b8bc6149e25052f0bdf8"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/wheel.dae",
+      "sha256": "6ae4c223642a5fe33eaf0ead8561f31f1225306589a0f3a4225ddd757bed1fcb"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/models/dino/model.config",
+      "sha256": "70deb6dda458821c30cce1ad24f8d7f910ba865e7bf1be6c69ac7760d480de3f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/models/dino/model.sdf",
+      "sha256": "6bab169fb8c4c8826b71a6a5919defcd54d0bdb776f3ec4c2832a32a9176fc64"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/package.bash",
+      "sha256": "5a6f38d539819db18aefd521da59b870a1ac0ae15876fe45b0c54fc00d5bbd6e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/package.dsv",
+      "sha256": "f6327f0513b8bddff00ad4400f5bc85588deaa7bfd447b90b2544acdcde9b32a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/package.ps1",
+      "sha256": "2c38fec21e86273d58637bdc9ce460749e439714a6f13069c112d25ba1e1a644"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/package.sh",
+      "sha256": "d118d59c8457443f1e5b0cd18e8c36d449102040847507dc73a4150b1845a72f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/package.xml",
+      "sha256": "6310a84bb333453959d3054f7084eb63e5fef1a5dac17dc4b67e0cb7181cddac"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/package.zsh",
+      "sha256": "885751bd72ceefed6587cce56e735d42842d0422d42f7084c560997886cde5fb"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/rviz/dino.rviz",
+      "sha256": "98ab532bc0deb16de9c12ba3cd27011ee03f21a80cb91b86d5d66579a1b7f03e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/urdf/dino.urdf",
+      "sha256": "e8e1eb12e5b55050d3a28060f884ed43dfd68cb138f99235da05d804861a030d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/urdf/dino.urdf.xacro",
+      "sha256": "e8e1eb12e5b55050d3a28060f884ed43dfd68cb138f99235da05d804861a030d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/urdf/dino_display_original.urdf",
+      "sha256": "baa2d836fde6991a9b139b208546dcecc88e34ecc8ab8631121c56f7fcdb2b25"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_description/share/dino_description/worlds/dino_validation.sdf",
+      "sha256": "f308d0d5270167c60ea9c995eef00d613af5f903e1ab7371f05b0a27b43c13f3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/dino_navigation/arbiter.py",
+      "sha256": "c9cc2ed1bb4c19aa720de1607c585d0e68eae81840efb98a234498c88dad8a20"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/dino_navigation/execute_path.py",
+      "sha256": "c53132309f4376c73714f53a10fb430bde4d793d32404fe430b705d429d8c79d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/dino_navigation/navigation_math.py",
+      "sha256": "74ee0321cb3fe8204484e9ad2c923cc2de5632ba4ae41cd7a27867aecf0fd3de"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/dino_navigation/tf_fault_proxy.py",
+      "sha256": "bf550af2f0660a63e66befa929455f6cf482d9fa89e7a838616bc5894ed57432"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/libdino_navigation__rosidl_generator_c.so",
+      "sha256": "97ab40b6116d1e3c894c1f79038cea8626827d9de882ae69760fbf32389f4a62"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/libdino_navigation__rosidl_generator_py.so",
+      "sha256": "283d44876ba3dc168310f3e51743ae2acf14feebc0708671af13e91bb5fbf42a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/libdino_navigation__rosidl_typesupport_c.so",
+      "sha256": "b7c16fc9ea92cbc1f8587ca31cb066641f67dcef2277e0f77f0e2afbc155a9fc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/libdino_navigation__rosidl_typesupport_cpp.so",
+      "sha256": "21d462e67601984c12a8560dcc3eaf7814ecbc45e879c7aae10eb688216d7d90"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/libdino_navigation__rosidl_typesupport_fastrtps_c.so",
+      "sha256": "e3d686277316c3dc58c61d2e09bdf98c80dcc8013f83431c4852f0788966d09f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/libdino_navigation__rosidl_typesupport_fastrtps_cpp.so",
+      "sha256": "706a310f1a66a5f81ef0fdebda9a25668d8533f61e3ebdc477bb7bb9f3514ee7"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/libdino_navigation__rosidl_typesupport_introspection_c.so",
+      "sha256": "7081ebb1f6149cbde13b086af298443fdf92a2f43e6c19dd390b14748d4848b4"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/libdino_navigation__rosidl_typesupport_introspection_cpp.so",
+      "sha256": "a7c3d48bef79ead334b0ff025cfe162dc31be0161bb8f35e92d1339ffa3cce73"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/_dino_navigation_s.ep.rosidl_typesupport_c.c",
+      "sha256": "0bb5d08faf5d76df4b44f66d94b5b4ada0ae76804ec9f5e69ca7070445b52a0b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/_dino_navigation_s.ep.rosidl_typesupport_fastrtps_c.c",
+      "sha256": "f2dbbd4bb43ecd2916d0f21d21cd72f4c49967d41f5a097e9fce1802d0c74e59"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/_dino_navigation_s.ep.rosidl_typesupport_introspection_c.c",
+      "sha256": "0eb682a4d8785c0bda7bd0b58d8bcfb2824826694d127ba452ee1ae50adda141"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/dino_navigation_s__rosidl_typesupport_c.so",
+      "sha256": "60a972f6117570a646f2bdd17101c884da4137b612491673a79ff03a0c4076f4"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/dino_navigation_s__rosidl_typesupport_fastrtps_c.so",
+      "sha256": "f29e13997f7ad1108d4637b19517b46c5174e3f857584ed72683a98484be3e7d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/dino_navigation_s__rosidl_typesupport_introspection_c.so",
+      "sha256": "66bebe827254a5cf46644730fdf0061a25ef97d7076aa324aecdfb857c7dc819"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/srv/__init__.py",
+      "sha256": "a05555809f3ae8993fad71ce80083396cc67350450b1785ee78342ba816d48f9"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/srv/_authorize_path.py",
+      "sha256": "ab9c98d98c59595a43f949bee2e65d485e56c0e8bca47f01c018825df4399d26"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation/srv/_authorize_path_s.c",
+      "sha256": "a1d13b4181ad03c30cb873f96fcd54f3f3efa82e33a2c704af273f28218fbd87"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation-0.1.0-py3.12.egg-info/PKG-INFO",
+      "sha256": "5b905e9bbfbd37b028e113782789c3884e614405c5016b4ec87a1b5554e1d772"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation-0.1.0-py3.12.egg-info/SOURCES.txt",
+      "sha256": "d6c2c4cb05e2e6bad1a052d3d9c204fc936114b45947391da11aac305ce1a5ad"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation-0.1.0-py3.12.egg-info/dependency_links.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/lib/python3.12/site-packages/dino_navigation-0.1.0-py3.12.egg-info/top_level.txt",
+      "sha256": "cdf95c592b69a2256d0fa612674bc44a3b3d384d64699a476229bd13fa2dfc74"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/ament_cmake_export_dependencies-extras.cmake",
+      "sha256": "c1c9d2775d8933608dbe3fd6d98ac27ad6a0d7ee057ad9690ac5c27f1ff3fe5d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/ament_cmake_export_include_directories-extras.cmake",
+      "sha256": "166c3b5927fda7898af5668badb0ba82c3685d74f92f1c3b0e928d2c1b5cc66d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/ament_cmake_export_libraries-extras.cmake",
+      "sha256": "ba2f3fbeec86b913c6826c0aa654a320421217d89779ef8345d5f69ae6fdb06a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/ament_cmake_export_targets-extras.cmake",
+      "sha256": "d36d05d9a67c1e10e370c7d5a108465c1eb96c60e22f07fe872088c0891da81a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigationConfig-version.cmake",
+      "sha256": "5df7fb3481e154840dd6ac6d1b6eb53c81ed9cadd5e7a00398962383332be7ea"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigationConfig.cmake",
+      "sha256": "b74485d5fb4f4b72ffb52bbc02fa01ce09acd85ffc01a1bd6b99212735b41adf"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigation__rosidl_typesupport_cExport-relwithdebinfo.cmake",
+      "sha256": "cf54e1a95552136c4c48509daf330cc96b0812ad2c564665a4a298e65d12cd68"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigation__rosidl_typesupport_cExport.cmake",
+      "sha256": "94bd5cf26085e1a328f25ccda7109189405326f1224d7dd4c6778bb8c82db631"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigation__rosidl_typesupport_cppExport-relwithdebinfo.cmake",
+      "sha256": "c36a2711f7387984535893de9a68296a56036efa0cae450f9694adc624c3d261"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigation__rosidl_typesupport_cppExport.cmake",
+      "sha256": "4e7270ee06c7ac736dc7906338b161b6646e82b8ce5bc113be63a879a568190f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigation__rosidl_typesupport_introspection_cExport-relwithdebinfo.cmake",
+      "sha256": "3a85914e331bedaacd27f6779549efc52c06bf56e740fdfeb19d3acc77bb8bba"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigation__rosidl_typesupport_introspection_cExport.cmake",
+      "sha256": "b7d339fed3d81a1b4e1f207b79275ed2dca728f80fc8f30f65c468df6618e693"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigation__rosidl_typesupport_introspection_cppExport-relwithdebinfo.cmake",
+      "sha256": "6683b4baec892708d1dadbf57207acfbe7632121d7e0a8fc745f41a6e0b42759"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/dino_navigation__rosidl_typesupport_introspection_cppExport.cmake",
+      "sha256": "cdc27c96477cdc925c5de5d029798c08dda50ea0fd167b11cfcc86e77954aad9"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/export_dino_navigation__rosidl_generator_cExport-relwithdebinfo.cmake",
+      "sha256": "fbd53446fcedc6f582a9bdb9ad83172b797384f80e2b1a6ab1d2ec178b396da0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/export_dino_navigation__rosidl_generator_cExport.cmake",
+      "sha256": "16c32758cc49165daa004eea917d491205c614e0a77675033b24f082f3ab3920"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/export_dino_navigation__rosidl_generator_cppExport.cmake",
+      "sha256": "2bbd3ad6946de3e17e8135c05f7fc61c6a6e6d6ae912d8bcbed34083a4faeafb"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/export_dino_navigation__rosidl_generator_pyExport-relwithdebinfo.cmake",
+      "sha256": "1a4ea9261727a45365f249c7eabf279fa80875fcbff512236461a8090f428bfe"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/export_dino_navigation__rosidl_generator_pyExport.cmake",
+      "sha256": "6bf4a012f4d7302a6ec7334e1c9e010abce5767b68a74d4a61c60b7e14be1d3d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/export_dino_navigation__rosidl_typesupport_fastrtps_cExport-relwithdebinfo.cmake",
+      "sha256": "9ed9feaab6ae4177c1434f534b991ac3e4163bd8424102a7eecad3ec3e6f17dc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/export_dino_navigation__rosidl_typesupport_fastrtps_cExport.cmake",
+      "sha256": "8389eabeb657d7a8d2aad8abe533eec5876963055be43180efa691af4886daa8"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/export_dino_navigation__rosidl_typesupport_fastrtps_cppExport-relwithdebinfo.cmake",
+      "sha256": "797fb5320572e019aa564739e61157c30dfec373ca200cb653aec3fb95d19200"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/export_dino_navigation__rosidl_typesupport_fastrtps_cppExport.cmake",
+      "sha256": "f7e2153098232b123da3c3c4312b9259305ed3ee82bd75a93cfea6ceaf7db172"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/rosidl_cmake-extras.cmake",
+      "sha256": "e663575b219424da1a94fff73c35447f7a252266142c568f6624a3d03c181774"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/rosidl_cmake_aggregate_target-extras.cmake",
+      "sha256": "d246b762ddce4d9b9978b268fb3f97ef110b903b1ea6a9ca261e8a048553a201"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake",
+      "sha256": "f1feecd2580e38f4c4cf8afd20c89b77d8d2e3561e7b100d19d0b4cb80866c5c"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake",
+      "sha256": "d0f00a3f62593cff81d2cc6b11073bf9e2d51dcf4b6d93cbfa4e7d9d8594d46f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/config/policy.json",
+      "sha256": "169b7629cb59ebee1d88b08dd215052572ab396036d581eae1b912a27ef4d6b6"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/environment/ament_prefix_path.dsv",
+      "sha256": "c4797d0a0670c70b4d3bcb5b7d47563635c7950595603f3af66f70af546ad57e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/environment/ament_prefix_path.sh",
+      "sha256": "6658f14efe913e291c0bf2c74059a9e14fb8abdb5a31628bef61d3b41e206679"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/environment/library_path.dsv",
+      "sha256": "038195297fbe5e22d78680bf0f2b1b182fea46aaececf77d84daadad1fdfa665"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/environment/library_path.sh",
+      "sha256": "9f85b113cb295c5c431b91985839eb7838a7e3c4416552f7b29bb6530fd2166e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/environment/path.dsv",
+      "sha256": "3f2cdf6234ea2525c1670c140b6a03700d98a2408e7a232107791fa96c08b58b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/environment/path.sh",
+      "sha256": "abe10a0452bc4b93f665fc343a7e6d32fe3f3a2b6beb90d338044a71d2583f18"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/environment/pythonpath.dsv",
+      "sha256": "070ebe43e03af540d1d1e1a820dcdba2b6fac511fcecc16664eea6fc0e9a6691"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/environment/pythonpath.sh",
+      "sha256": "fd1f3e7814a79876855e9dd9d2ae9a35c35942716b0693b3840448dad8f86b95"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/generated/contract.json",
+      "sha256": "785f285670db19676c35beeba1419271f3ef473ff4ad24b87dcb95eeba21424d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/generated/nav2.yaml",
+      "sha256": "0e631660dba46d0e3fa844d058f875d451bec04a786b768fad74e82adfbfe16f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/hook/cmake_prefix_path.dsv",
+      "sha256": "7ab2eb0a25c282f9a5bf62596b4c098865cd3a8aa5740601a9efa8620acd69d3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/hook/cmake_prefix_path.ps1",
+      "sha256": "0c7394c1d89765deec81cb10e59a36d0d98867690b4b8781d5bc9186fc67885a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/hook/cmake_prefix_path.sh",
+      "sha256": "ee9849def404b669097010f38735aa521e0731366a319b6e1abe996c793494b2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/hook/ld_library_path_lib.dsv",
+      "sha256": "038195297fbe5e22d78680bf0f2b1b182fea46aaececf77d84daadad1fdfa665"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/hook/ld_library_path_lib.ps1",
+      "sha256": "c6e5dc5fc7ca92a59dec3b4107c761602c03e4ca0b4211ec2634efc3b43ef84e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/hook/ld_library_path_lib.sh",
+      "sha256": "535fe00314bc8acdb36d1057e32d60c215005141a8c30a99bf665a29fed4e222"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/hook/pythonpath.dsv",
+      "sha256": "070ebe43e03af540d1d1e1a820dcdba2b6fac511fcecc16664eea6fc0e9a6691"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/hook/pythonpath.ps1",
+      "sha256": "151b30bbc3f8389f5b3125f0a8f6512625f04d77be5c317187b409f8640b0cc9"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/hook/pythonpath.sh",
+      "sha256": "15a6191c43b0d92b5c726b638e710e045a711c8683875cfdead77f9e759e27aa"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/launch/navigation.launch.py",
+      "sha256": "5ceba0f6d23568e7ed377c475b5c4a50c293d3faea661d7de6e55c8ddba860d3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/local_setup.bash",
+      "sha256": "41b30b6c107da94a2478e43953b8cbd0d920f5e8fc1ea847c61a213623d623b0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/local_setup.dsv",
+      "sha256": "6ac7ea3a2b93656de9fa145204a1144967bc83bbb5bec7f0405402d9424c884f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/local_setup.sh",
+      "sha256": "8b6dd0ef4402d4f52a8e138196e1e198425ea579caeeaf91665481d8bef8cc73"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/local_setup.zsh",
+      "sha256": "56942873096201f4e7fe5e7b9bd87e56cc42ced33fadb53fbc25766fd9149c81"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/package.bash",
+      "sha256": "05869e33b391378ea0fb6f65ff3bd5f3a5db9096df6ec9b5b8d2789f3ed25a17"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/package.dsv",
+      "sha256": "4263b2f1977207b9d5cdd91175dbe68a1e85136e4d5e2d352a1d2d33cc43a2ef"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/package.ps1",
+      "sha256": "457890d0db82040a5a5850bea2c259f6955e50c9c9223fd24cc45d3ec733ae24"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/package.sh",
+      "sha256": "e4776639f45358c5a4d2792280dee0bee0144fe197ceece9c6c226c5de9c923a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/package.xml",
+      "sha256": "c8aa4fbc9a6ae49209bfa064ac877ba32379d0810dcce7db0629e3621e14f7f5"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/package.zsh",
+      "sha256": "5acec0836c0780d853d1813375a6b469221f7de1d93dbb779162963b7cfb10bb"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/rust/Cargo.toml",
+      "sha256": "18750021a540f0af5d4f72f3b8871802c9d6bb0da3347e81b047f892e3b3b828"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/rust/build.rs",
+      "sha256": "6dfaa71a8472f521dd3d8863c00aa7f8f4cd98171b0a6e05230d25d9d736848b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/rust/src/lib.rs",
+      "sha256": "cf0d2dbf2af7ec2fa3afe06d856b0c62e2198706940642f945425899cd3b5800"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/rust/src/srv/rmw.rs",
+      "sha256": "e528c56f8e5e409dbcd644fc171bce8d2907043f6eb005e19692cdfdca5274e2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/rust/src/srv.rs",
+      "sha256": "10494bf87e514fb422aeba59d2e37425744e205593b595faaae40979df132bfd"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/srv/AuthorizePath.idl",
+      "sha256": "908be76fc43434bb066380bd557e08d8b747295f126fb3acaacb1f3b91fb3822"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/srv/AuthorizePath.json",
+      "sha256": "871030e6c3d8c288f4a39aec433a976fc7500d0f03c133bebe43e23be8710112"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_navigation/share/dino_navigation/srv/AuthorizePath.srv",
+      "sha256": "a0d1e3081cadbc22bb3bf365bd2560aebcdc9589053334895b9ca43279ac5801"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/lib/dino_sensors/estimator_io.py",
+      "sha256": "8cd33d7912f983243c2b91176b59265fcb231cc6e759c3c396b1cda97179dbf3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/lib/dino_sensors/scan_filter.py",
+      "sha256": "ad1a64c74a4a687332d7d73cf7c873509f51f51c3df9dd86fab4ebc2c3efda6b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/lib/dino_sensors/sensor_math.py",
+      "sha256": "4efe7f0acb5e8d28329975cd5c2f7f3d6c0f9b4cd95df416366245cb7f9ea557"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/cmake/dino_sensorsConfig-version.cmake",
+      "sha256": "5df7fb3481e154840dd6ac6d1b6eb53c81ed9cadd5e7a00398962383332be7ea"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/cmake/dino_sensorsConfig.cmake",
+      "sha256": "a1bfba271a2cf292c0eee7548b40371da27a2ebe4e9523de69100893108c040d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/config/sensors.json",
+      "sha256": "94528531df7d203c42924704d051a9618a8da9e989d96b1be3351f9ead4a9220"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/environment/ament_prefix_path.dsv",
+      "sha256": "c4797d0a0670c70b4d3bcb5b7d47563635c7950595603f3af66f70af546ad57e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/environment/ament_prefix_path.sh",
+      "sha256": "6658f14efe913e291c0bf2c74059a9e14fb8abdb5a31628bef61d3b41e206679"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/environment/path.dsv",
+      "sha256": "3f2cdf6234ea2525c1670c140b6a03700d98a2408e7a232107791fa96c08b58b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/environment/path.sh",
+      "sha256": "abe10a0452bc4b93f665fc343a7e6d32fe3f3a2b6beb90d338044a71d2583f18"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/generated/bridge.yaml",
+      "sha256": "df82a4b70d077e5480034eda534b2a49de9da972a2a560de944c4aa513d6875d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/generated/contract.json",
+      "sha256": "279d90d6a331060324977b2323b9b29161829dd9b71165a86ab5ec986b5e2044"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/generated/dino_sensors.urdf",
+      "sha256": "d2a88a1737be124b82294954a4186116f0072a9368063093cddc0ffc9ff4c855"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/generated/ekf.yaml",
+      "sha256": "23163bf56df9da9ba1e25bfdae252fdddf96ccc094dd69361f51671546a4d355"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/generated/runtime_dual.sdf",
+      "sha256": "d8d05b08c48cccccc7e9a07fba085901ed375078c6206dc58d77466481c70d26"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/generated/runtime_single.sdf",
+      "sha256": "281194300430780392f8b04847c7c3b9bb14cfeffd4d04fb892cd9111233237b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/generated/self_geometry.json",
+      "sha256": "d11bc66d54a7754e6d5cad640e188dd95bda7df51b9941ceb4bfe16ccc066110"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/generated/validation_dual.sdf",
+      "sha256": "e8962e0abf52fecfe7b800e4ee4725cfd8593482853ffd9958d2fa80637baef4"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/generated/validation_single.sdf",
+      "sha256": "7c2c09c3a376c59de48fe60b20399ee0f0181083b4457c0ae2e2137cd986ea3a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/hook/cmake_prefix_path.dsv",
+      "sha256": "7ab2eb0a25c282f9a5bf62596b4c098865cd3a8aa5740601a9efa8620acd69d3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/hook/cmake_prefix_path.ps1",
+      "sha256": "0c7394c1d89765deec81cb10e59a36d0d98867690b4b8781d5bc9186fc67885a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/hook/cmake_prefix_path.sh",
+      "sha256": "ee9849def404b669097010f38735aa521e0731366a319b6e1abe996c793494b2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/launch/sensors.launch.py",
+      "sha256": "43d9104351d235bb32f05327ceb635477205c5293c43d71599ad2d72b33e0afc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/local_setup.bash",
+      "sha256": "41b30b6c107da94a2478e43953b8cbd0d920f5e8fc1ea847c61a213623d623b0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/local_setup.dsv",
+      "sha256": "6ad75ff450f5a555a1f924d149574bfaad8dc1f9defc27954c15231e0754ce42"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/local_setup.sh",
+      "sha256": "03a6597875aeb6d2b681b8bb932d7936ea27c218c66cdf650ea7b3e731115b46"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/local_setup.zsh",
+      "sha256": "56942873096201f4e7fe5e7b9bd87e56cc42ced33fadb53fbc25766fd9149c81"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/package.bash",
+      "sha256": "20db9f34e1b44e08ea35a7a3519d87debc5ea624ee7fa8a46cef93152cbe1885"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/package.dsv",
+      "sha256": "7172bb1a4022977eb412321d5295aea48f3291d3db69710601c777e3b20015a3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/package.ps1",
+      "sha256": "bbf8d3d4975c249cd8a95c565620102832d21765abe671f91f359d6efe6f756b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/package.sh",
+      "sha256": "ba9c6b167e1c8cc7add5dcddabc116a26de36105673d1509d7b0f6b5f137946b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/package.xml",
+      "sha256": "37639cbd4d23354a7872d2ae96eff7055d67c03d942acf3f3fbb37c280a2ab11"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_sensors/share/dino_sensors/package.zsh",
+      "sha256": "60f90c4629d647a96b6ba5e3ac68606bfb31d49464d4d28ba2149887c172d420"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/lib/dino_slam/export_map.py",
+      "sha256": "d64fd52ac8a2b1c183433343611a9e29eadadf674029da1fcfeccddd2b19e8c5"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/lib/dino_slam/map_contract.py",
+      "sha256": "04023af5604614244085905f62b717f499ba165d93f4837060b8302df69326bc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/lib/dino_slam/scan_gate.py",
+      "sha256": "62ca983b0d1bca664ef49a93be9312d162552b0f636aebbb773914b579073799"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/lib/dino_slam/scan_quality.py",
+      "sha256": "855987055c6cf5e56ce849315d54b832e48a12ed493b5d39cd9cba4d0a8c5513"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/cmake/dino_slamConfig-version.cmake",
+      "sha256": "5df7fb3481e154840dd6ac6d1b6eb53c81ed9cadd5e7a00398962383332be7ea"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/cmake/dino_slamConfig.cmake",
+      "sha256": "7823883caa5aee4ecb911035e9806002511e5eb98e6d3bc533671eee86ebf703"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/config/mapping.yaml",
+      "sha256": "9bd194e20b794ca6a3de912357da4d64198df5461cfc27d1a6d9207bb3afcee1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/config/policy.json",
+      "sha256": "8d0e42129226caaec0f638df38457b576861a6df4d234dcbba37a48224deee9e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/environment/ament_prefix_path.dsv",
+      "sha256": "c4797d0a0670c70b4d3bcb5b7d47563635c7950595603f3af66f70af546ad57e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/environment/ament_prefix_path.sh",
+      "sha256": "6658f14efe913e291c0bf2c74059a9e14fb8abdb5a31628bef61d3b41e206679"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/environment/path.dsv",
+      "sha256": "3f2cdf6234ea2525c1670c140b6a03700d98a2408e7a232107791fa96c08b58b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/environment/path.sh",
+      "sha256": "abe10a0452bc4b93f665fc343a7e6d32fe3f3a2b6beb90d338044a71d2583f18"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/generated/features.sdf",
+      "sha256": "650c518f51c88dc9c67091450eb87b11fb8b6369298c9bc40857781da7fa30ef"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/generated/open.sdf",
+      "sha256": "2c0985854de6b0c62babbac69367186a1f837e95490c573468bf89cb9b56f3f2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/generated/scene_contract.json",
+      "sha256": "ced3f846b53aa9b3872b5b34888164e007cff44b9e492320c3d49cef1b7ac1bc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/hook/cmake_prefix_path.dsv",
+      "sha256": "7ab2eb0a25c282f9a5bf62596b4c098865cd3a8aa5740601a9efa8620acd69d3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/hook/cmake_prefix_path.ps1",
+      "sha256": "0c7394c1d89765deec81cb10e59a36d0d98867690b4b8781d5bc9186fc67885a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/hook/cmake_prefix_path.sh",
+      "sha256": "ee9849def404b669097010f38735aa521e0731366a319b6e1abe996c793494b2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/launch/mode.launch.py",
+      "sha256": "b12917ce707257a4a8def2bed7c9e097bae96bb29f79496af238b19b02b52a9f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/launch/simulation.launch.py",
+      "sha256": "b9200a210f147aba7519e42a65ba06fba35e0c28b8166251dbe7080b42aaf38e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/local_setup.bash",
+      "sha256": "41b30b6c107da94a2478e43953b8cbd0d920f5e8fc1ea847c61a213623d623b0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/local_setup.dsv",
+      "sha256": "c77580a7e82496b48cffbcc2530782189e24fa41dafde0ac6595902ca3212fdd"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/local_setup.sh",
+      "sha256": "59c5037f4cb7f176c4b336be92b8c4eaa924f5cfdea67b47af1c74b4987d2a8e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/local_setup.zsh",
+      "sha256": "56942873096201f4e7fe5e7b9bd87e56cc42ced33fadb53fbc25766fd9149c81"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/package.bash",
+      "sha256": "422fba1b0d8971a4a427b1621eb171af77262a7d9903fc232deeeb3d5e5adc11"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/package.dsv",
+      "sha256": "be1b148f75303c12db84936d01ed9da48aab6de61b85aea71f6813a676012dcf"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/package.ps1",
+      "sha256": "dca5d5fd9a8e2bc8cde8e041221181ccd1cb345fea952f3683b0926a6725499c"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/package.sh",
+      "sha256": "2372df95dac2bde04412fc28079dbe815918286a825878d3fcfb716b491b473d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/package.xml",
+      "sha256": "8f425d8e96a482d4c6cc7c30dde47eb77945d14cc86ef34201abe2108f35ffb2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/install/dino_slam/share/dino_slam/package.zsh",
+      "sha256": "b75bc1dda721f2064aa4edeace271e5d3c311d34fc0997634ac5c54d331ceccc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/CMakeLists.txt",
+      "sha256": "bfb100486f956c9fc79d46e5b5f81ef5e53cbbde7e6237d842585fbd038c0a33"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/README.md",
+      "sha256": "6f5d57df80ebf2937a8224f47d5e8bbd137c664b02a1260829fa8a1319215a06"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/config/control.json",
+      "sha256": "fe65c54c46a143569e89bb674ede7045cd8c4d674f454962180b9813e391c9b7"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/generated/bridge.yaml",
+      "sha256": "f9b46431522a816040b6f9e4643b321074be99cffbe5b0d2c731a3afd2cc65bd"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/generated/bridge_full.yaml",
+      "sha256": "df82a4b70d077e5480034eda534b2a49de9da972a2a560de944c4aa513d6875d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/generated/contract.json",
+      "sha256": "47da4a0b08eb389d637875266f432bbca5636b3ccb6d21ecb61b8c8bac3629e1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/generated/dino_drive.urdf",
+      "sha256": "c1bc47f8316917324cf50c10922c372cbbe4ae981bd5480ec85831526757f833"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/generated/drive_full.sdf",
+      "sha256": "009196b5d3a1c909bebed550f88e3441251d11c9dafd971a06408f2bc63e7a42"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/generated/drive_physics.sdf",
+      "sha256": "bd733ff4a146f725855189758ccdaf6ecdfca5003ec1a721a217b724e9ab3bce"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/generated/footprint_rear_axle.json",
+      "sha256": "f33363dcb4a5245f9d3ced89cb1060bbbb19b62b04fdbd37b57e13514694863a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/launch/drive.launch.py",
+      "sha256": "fc2302ed454f31fde5cb5bf32adbde8f900917a2d437c65dd721770d53fbdbc0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/package.xml",
+      "sha256": "b849f1a99df4da70888a854500dcb7302eca36c47e549a64fa5445f3bd82a99d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/scripts/build.sh",
+      "sha256": "272f59df35712aad608e48040447d49fc431d57aaa7893b5986b7a28b08bf336"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/scripts/drive_node.py",
+      "sha256": "87a511538b9ab86096a1ce77a333dd4c04142b409292f068bf2c180a15b6a75f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/scripts/generate.py",
+      "sha256": "d579bbf46bbe2e5ca3ae56aa3ce86774f2f19e1f72daa243e12ef4cb8c0db926"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/scripts/kinematics.py",
+      "sha256": "6b9ed881bdb9b98f733ef82ddadaf7939920a773b32e38c0841224b2998d704f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/scripts/run.sh",
+      "sha256": "dc64b232ded5c39ca6dff6cf6ac39fd3060d1d659399b94492b13d31530bdc65"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/scripts/stationary_gate.py",
+      "sha256": "ffc2072ffba34a5069ae3e93d0f76b9d58f49b597137c219b7266eb0fe0e3971"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/src/ackermann_system.cc",
+      "sha256": "ed612078a5303ac88c07d2bfb86c58eb02235c9fe64bf268f2d72333f5299ef4"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/tests/analyze.py",
+      "sha256": "f204bffe582922242458b7084bb0f0b985d8c58605d2bc6acfff8abaf386156c"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/tests/run_suite.py",
+      "sha256": "093125392e8ea28fd377d151dbdeadc1a25f8e85d8f740fe03b254c65598fa0d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_control/tests/test_kinematics.py",
+      "sha256": "778f7f93d7c844ab15bae4bf9217e424673554ec564ab0362a5a498f961501ab"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/CMakeLists.txt",
+      "sha256": "b4977e2336cbeb57bd9cc9e1700f21e57d2791931b28983b105ced99506a8b57"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/LICENSE-ASSETS.md",
+      "sha256": "e82e955ea8867263c2b952d0640fc6238f1d32ea131b8e84cd16b2b59f08782b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/config/bridge.yaml",
+      "sha256": "b8df1527b8353c5bbfc329d25a9fe88fa363f8cca5aaa9bbfa3743bd4a63f014"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/config/geometry.json",
+      "sha256": "9f4a528f53b8d59641b98908c96c79144e2e884cd2fec056030534d1a185b5ca"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/config/gui.config",
+      "sha256": "a2b77c7c0cc0fc6598eb40222c4df995e9fd8be38e321962c3484df23c673615"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/config/source_mesh_manifest.json",
+      "sha256": "2212fc7047ed961ce57b41f6edc94fc6debd1dbdb0fbd66f1716edfae68e9286"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/launch/inspect.launch.py",
+      "sha256": "d78a305dee4dd363a788bc67200e780b287583b223f9eb91b272f58b1e2ae54a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/FL_0.stl",
+      "sha256": "25bb409aed32243c826c041eeabc0797c7f2af74e0a8c723e0105a0eb553a324"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/FL_1.stl",
+      "sha256": "62640bcbf787a9c1891b46c797b3588cb3733563872095ff1ba007c6baf01de5"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/FL_2.stl",
+      "sha256": "ed7f26af86486293e47e4249c34fecbc4ba8d1f97f79aef30e27b329b761fea1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/FL_3.stl",
+      "sha256": "aa83fbd46d4e8ae403a12e616328d0a48e42a4c89c60211835e8ec2666923d96"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/FR_0.stl",
+      "sha256": "c0245ec4e28b6165e4a6f47ad08877b31d19ce2678de1489b6e4f80943729d73"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/FR_1.stl",
+      "sha256": "ef7f7f7e7ccb08385a9dcfab33276fa842f9fcc13629cede2f53d79a53772829"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/FR_2.stl",
+      "sha256": "9dd779fd687552e09fdf80794971d9ae5f08a0590e0a19ea993771a10eba8553"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/FR_3.stl",
+      "sha256": "73efedee74026a0d8800a5725765414545339b494a8e9a6c48432828122d603c"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/RL_0.stl",
+      "sha256": "8deaa105b1e7856db8d42d49bd6c5c435280da58888c37e5cc7fb453121162f4"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/RL_1.stl",
+      "sha256": "9fc2126bd4b90693e4808214e61ae63b1d5be612076056d5ee3d191d6ecc492f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/RL_2.stl",
+      "sha256": "b0fe76e6c857003b208bf192dfdb1ff35573b1cb83544ac339e75acad54fcd6d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/RL_3.stl",
+      "sha256": "5e27d23987d35a1663d25668e6beefefe6742d379a07ac0451e392ef1b859101"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/RR_0.stl",
+      "sha256": "9b1ee0f607901eca758fbdbee0e3e5740f6336e344263a4aafdf65069e7917f0"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/RR_1.stl",
+      "sha256": "2e51ed79ab55a4b8d3b0ba0720aaeca2f9649065b86356e0edb7bed77a21debc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/RR_2.stl",
+      "sha256": "c60b9004fb458b109dc41d8df135d72a41c0956f2a914ffc35439d69e8855364"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/RR_3.stl",
+      "sha256": "5b1230669c7541bc01b9303b416a214335e328ceaf8d8c532fcb39dacc94563d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/body_0.stl",
+      "sha256": "e9ffa665839768a024838dbd8ce602ffc7c16aa3bb1b1dd70bc685ae35c85645"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/body_1.stl",
+      "sha256": "bcaae4b21b5faaeadfe4b6acaf9ceb021042479f5d21c8a80d197decd112d76b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/body_2.stl",
+      "sha256": "e964041308455942917fce1c491485f33a39a6fed917f19d584f7173d15b83e8"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/collision/body_3.stl",
+      "sha256": "cb576a5ac3a5236d0d6c9617b592da4b74cd1b0ae40ae0b3ec88d155ee573083"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/visual/FL.dae",
+      "sha256": "46d0aa328f3a6292dcde440f2db84ec8105af3d2fbdb8983623ceb5ee1b9f8f8"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/visual/FR.dae",
+      "sha256": "2a4049176490cb6d27df58e1d123c5ea52451967ca6fe4f3295134d28da43c01"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/visual/RL.dae",
+      "sha256": "220d612d6aa2e8d01bf3b34588aa6182bd325b5cad8f1fb5c029596bc9cedb84"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/visual/RR.dae",
+      "sha256": "c820d5eedc4b95928e488746979fa90eb135c063a66350f2c519116f4b3def05"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/visual/body.dae",
+      "sha256": "f46f56ab2c09a23d649b756fff5e15b89e8aa9ef9a02b8bc6149e25052f0bdf8"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/meshes/visual/wheel.dae",
+      "sha256": "6ae4c223642a5fe33eaf0ead8561f31f1225306589a0f3a4225ddd757bed1fcb"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/models/dino/model.config",
+      "sha256": "70deb6dda458821c30cce1ad24f8d7f910ba865e7bf1be6c69ac7760d480de3f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/models/dino/model.sdf",
+      "sha256": "6bab169fb8c4c8826b71a6a5919defcd54d0bdb776f3ec4c2832a32a9176fc64"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/package.xml",
+      "sha256": "6310a84bb333453959d3054f7084eb63e5fef1a5dac17dc4b67e0cb7181cddac"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/reference_fixes/Dino_ackermann_syntax_paths_only.sdf",
+      "sha256": "36a8223943c2e78840c5541f0810353a9f7f39444206423687b7e49fd71971d1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/reference_fixes/legacy_sdf.patch",
+      "sha256": "57cc0adeea979e96ec68c2433205cf0964a3cc17af9d269019c6c0077c2b4799"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/reference_fixes/original_Dino.urdf",
+      "sha256": "c3542853eb1c4cda96840d24265d7d5a058acb797771f2859e3a9e16eff014c3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/reference_fixes/original_Dino_ackermann.sdf",
+      "sha256": "5aca520d7449352321b7a8a20b850bd8da8d8282d9863af11bf5798def75f343"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/rviz/dino.rviz",
+      "sha256": "98ab532bc0deb16de9c12ba3cd27011ee03f21a80cb91b86d5d66579a1b7f03e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/scripts/build_isolated.sh",
+      "sha256": "0180c757c56e4d2af5e78f32a712bf44e0d3d29938a01b667e500b215245b77d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/scripts/generate_resources.py",
+      "sha256": "babea63a5feae4c7d4178eb0ef09686d4d6479468f3cab59ad6ecd01a9abbb87"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/scripts/inspect.sh",
+      "sha256": "08f8fdc4b64c7507b2efaeeb84e68aa953a3487b411a0d29a38a604563cb71e1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/tests/runtime_probe.py",
+      "sha256": "35fcf0e87470af64ad2c893f14c1129d50075259435778835dbf12cdfd6ffe52"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/tests/static_audit.py",
+      "sha256": "8c00cc64562aa7cb309acb53947517116da1851e18aa22a3a6c881ead41153d1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/urdf/dino.urdf",
+      "sha256": "e8e1eb12e5b55050d3a28060f884ed43dfd68cb138f99235da05d804861a030d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/urdf/dino.urdf.xacro",
+      "sha256": "e8e1eb12e5b55050d3a28060f884ed43dfd68cb138f99235da05d804861a030d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/urdf/dino_display_original.urdf",
+      "sha256": "baa2d836fde6991a9b139b208546dcecc88e34ecc8ab8631121c56f7fcdb2b25"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_description/worlds/dino_validation.sdf",
+      "sha256": "f308d0d5270167c60ea9c995eef00d613af5f903e1ab7371f05b0a27b43c13f3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/CMakeLists.txt",
+      "sha256": "59beae02b471c43d2f6870d0323aace20d69a365d11497a85050f170c9644f8a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/config/policy.json",
+      "sha256": "169b7629cb59ebee1d88b08dd215052572ab396036d581eae1b912a27ef4d6b6"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/generated/contract.json",
+      "sha256": "785f285670db19676c35beeba1419271f3ef473ff4ad24b87dcb95eeba21424d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/generated/nav2.yaml",
+      "sha256": "0e631660dba46d0e3fa844d058f875d451bec04a786b768fad74e82adfbfe16f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/launch/navigation.launch.py",
+      "sha256": "5ceba0f6d23568e7ed377c475b5c4a50c293d3faea661d7de6e55c8ddba860d3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/package.xml",
+      "sha256": "c8aa4fbc9a6ae49209bfa064ac877ba32379d0810dcce7db0629e3621e14f7f5"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/scripts/arbiter.py",
+      "sha256": "c9cc2ed1bb4c19aa720de1607c585d0e68eae81840efb98a234498c88dad8a20"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/scripts/build.sh",
+      "sha256": "ddfe73d472830b3452418753d56dd14819560f800f58a0d52b4671dcda4f1d17"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/scripts/execute_path.py",
+      "sha256": "c53132309f4376c73714f53a10fb430bde4d793d32404fe430b705d429d8c79d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/scripts/generate.py",
+      "sha256": "8ea65c8fa4c5dd10ffa86015a9e6086bba9a080925d747e37d4cb1d1ca546587"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/scripts/navigation_math.py",
+      "sha256": "74ee0321cb3fe8204484e9ad2c923cc2de5632ba4ae41cd7a27867aecf0fd3de"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/scripts/tf_fault_proxy.py",
+      "sha256": "bf550af2f0660a63e66befa929455f6cf482d9fa89e7a838616bc5894ed57432"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/srv/AuthorizePath.srv",
+      "sha256": "a0d1e3081cadbc22bb3bf365bd2560aebcdc9589053334895b9ca43279ac5801"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/tests/analyze.py",
+      "sha256": "4f36be721598f2c704bd65d07c581ddce9e4a8ef6e05549424a85b24ffc7736a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/tests/run_probe.py",
+      "sha256": "3b1268c323772b1037b4466449e7a4d7f0feac09b39921966dd911c3335509b6"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/tests/run_suite.py",
+      "sha256": "10fe2fe9793659d65577730d25842373c6d3220cb515350a864b6d92973ee6ca"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_navigation/tests/test_navigation_math.py",
+      "sha256": "34d345dee8cf90d760922c2d8b8415580e027b5f980db0daf6573dd2be1d62e4"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/CMakeLists.txt",
+      "sha256": "e1d9efa66f6e6bad3068a0e48351a91ffff56a9914831e94611bb0f99c9d9d60"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/README.md",
+      "sha256": "d15f2c7302bfdcf6f473ed44bde3b3df2ee0e34202c7a65e55f0e4647d3b501b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/config/sensors.json",
+      "sha256": "94528531df7d203c42924704d051a9618a8da9e989d96b1be3351f9ead4a9220"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/generated/bridge.yaml",
+      "sha256": "df82a4b70d077e5480034eda534b2a49de9da972a2a560de944c4aa513d6875d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/generated/contract.json",
+      "sha256": "279d90d6a331060324977b2323b9b29161829dd9b71165a86ab5ec986b5e2044"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/generated/dino_sensors.urdf",
+      "sha256": "d2a88a1737be124b82294954a4186116f0072a9368063093cddc0ffc9ff4c855"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/generated/ekf.yaml",
+      "sha256": "23163bf56df9da9ba1e25bfdae252fdddf96ccc094dd69361f51671546a4d355"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/generated/runtime_dual.sdf",
+      "sha256": "d8d05b08c48cccccc7e9a07fba085901ed375078c6206dc58d77466481c70d26"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/generated/runtime_single.sdf",
+      "sha256": "281194300430780392f8b04847c7c3b9bb14cfeffd4d04fb892cd9111233237b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/generated/self_geometry.json",
+      "sha256": "d11bc66d54a7754e6d5cad640e188dd95bda7df51b9941ceb4bfe16ccc066110"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "sha256": "e8962e0abf52fecfe7b800e4ee4725cfd8593482853ffd9958d2fa80637baef4"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_single.sdf",
+      "sha256": "7c2c09c3a376c59de48fe60b20399ee0f0181083b4457c0ae2e2137cd986ea3a"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/launch/sensors.launch.py",
+      "sha256": "43d9104351d235bb32f05327ceb635477205c5293c43d71599ad2d72b33e0afc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/package.xml",
+      "sha256": "37639cbd4d23354a7872d2ae96eff7055d67c03d942acf3f3fbb37c280a2ab11"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/scripts/build.sh",
+      "sha256": "2f55dbad1e85ccfc000828fe359e9c10e69c2809ebcc1862690b5f3310269885"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/scripts/estimator_io.py",
+      "sha256": "8cd33d7912f983243c2b91176b59265fcb231cc6e759c3c396b1cda97179dbf3"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/scripts/generate.py",
+      "sha256": "6e1db2073139be4274544f7047f538f6d2bd0324f348c13b7035e418156ce1eb"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/scripts/run.sh",
+      "sha256": "a024344781d5b6a665855ae12d69c5d9a5d708139793add6bc2f0f286e30f253"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/scripts/scan_filter.py",
+      "sha256": "ad1a64c74a4a687332d7d73cf7c873509f51f51c3df9dd86fab4ebc2c3efda6b"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/scripts/sensor_math.py",
+      "sha256": "4efe7f0acb5e8d28329975cd5c2f7f3d6c0f9b4cd95df416366245cb7f9ea557"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/tests/analyze.py",
+      "sha256": "2e921627fc2e99ec94d1a83ee42a7891246740dc0efb72ceaf48a3a8623adbe1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/tests/plot_evidence.py",
+      "sha256": "47c33f9f732df8f52e0d8d79f0bd5bcd7f0426dde5a9efa1ebc692294722468d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/tests/run_probe.py",
+      "sha256": "dbab657e01d7e02a43e85a6ecee494afb9daba4b9632535ff0e62118f8968577"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/tests/test_estimator_guard.py",
+      "sha256": "325a53c42a62aed5a1a14cd1ab2c6bb55977a7152a5d663f2f77a3ca55364083"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_sensors/tests/test_geometry.py",
+      "sha256": "d6fccb71c0f5940d7f537f6bc77b6008f2912bf32125bffa8a0daf8d2859554c"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/CMakeLists.txt",
+      "sha256": "19a721e00ffc531637f42f4798255465535ec0b6de9d284eb14bbc0c5ad7bc0d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/config/mapping.yaml",
+      "sha256": "9bd194e20b794ca6a3de912357da4d64198df5461cfc27d1a6d9207bb3afcee1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/config/policy.json",
+      "sha256": "8d0e42129226caaec0f638df38457b576861a6df4d234dcbba37a48224deee9e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/generated/features.sdf",
+      "sha256": "650c518f51c88dc9c67091450eb87b11fb8b6369298c9bc40857781da7fa30ef"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/generated/open.sdf",
+      "sha256": "2c0985854de6b0c62babbac69367186a1f837e95490c573468bf89cb9b56f3f2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/generated/scene_contract.json",
+      "sha256": "ced3f846b53aa9b3872b5b34888164e007cff44b9e492320c3d49cef1b7ac1bc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/launch/mode.launch.py",
+      "sha256": "b12917ce707257a4a8def2bed7c9e097bae96bb29f79496af238b19b02b52a9f"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/launch/simulation.launch.py",
+      "sha256": "b9200a210f147aba7519e42a65ba06fba35e0c28b8166251dbe7080b42aaf38e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/package.xml",
+      "sha256": "8f425d8e96a482d4c6cc7c30dde47eb77945d14cc86ef34201abe2108f35ffb2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/scripts/bounded_launch.py",
+      "sha256": "d302bd5676417751bc292e124f4f28a114ebefa1b23f1e2eed00ca52528f3549"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/scripts/build.sh",
+      "sha256": "8965296c13e2dfb6ac8661fc6d2213b58460fff394782ef82c3c2153231e4499"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/scripts/export_map.py",
+      "sha256": "d64fd52ac8a2b1c183433343611a9e29eadadf674029da1fcfeccddd2b19e8c5"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/scripts/generate.py",
+      "sha256": "bbe8f820a781e50b4c1897af47ed343b0a1f9d09e25090553b48aa298052233d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/scripts/map_contract.py",
+      "sha256": "04023af5604614244085905f62b717f499ba165d93f4837060b8302df69326bc"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/scripts/run.sh",
+      "sha256": "fd0814303d831b770e554b909a25ec0165dcc1f4ec186f53767fdc9754bdbdaf"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/scripts/scan_gate.py",
+      "sha256": "62ca983b0d1bca664ef49a93be9312d162552b0f636aebbb773914b579073799"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/scripts/scan_quality.py",
+      "sha256": "855987055c6cf5e56ce849315d54b832e48a12ed493b5d39cd9cba4d0a8c5513"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/tests/analyze.py",
+      "sha256": "94e3995bcc74e3e545b4daceaeb9221e78237382e85f7879ebbe160ace60c957"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/tests/plot_results.py",
+      "sha256": "bc9877451bf30e71455a3c8ac10a17e115ef25753432c3cb3ae98bb7df3e32c4"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/tests/run_probe.py",
+      "sha256": "78a02cc1a7fe732cb5a0f352f465e4baad8ed4e673569673cbe429d24c00511e"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/dino_slam/tests/test_contract.py",
+      "sha256": "19e603011d9dbae50faff97173228b0366d00930f48b3450846e88693911cfe8"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/env_smoke_test/CMakeLists.txt",
+      "sha256": "d1e50be94e7a8670a90c01b8d3009c683e5892ec2006d973ab38cc59405ddd9d"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/env_smoke_test/package.xml",
+      "sha256": "cf585f6e4b78b7e3784b10532511d5dae096a47f6669551cc5c63f9121e434c2"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/env_smoke_test/src/publisher.cpp",
+      "sha256": "9142753e421d0364ce2d83dc488ff35a218d770969c33e800c991b2cf2ae19c1"
+    },
+    {
+      "path": "native_20261108/ros2_ws/src/env_smoke_test/test/test_ros_transport.cpp",
+      "sha256": "df1e6d8d370dea12ab765bbed2e46e5ac6ab5bf6a237a0653b240851ed8d8c76"
+    },
+    {
+      "path": "native_20261108/run.sh",
+      "sha256": "8eadfb35945f5971d26e7b4ecb02a8a3f3d1c7a93adb7bb506bcb289683ada90"
+    },
+    {
+      "path": "native_20261108/scripts/env.sh",
+      "sha256": "7db021031460d0ec4e08e0ac1ca1f655870792b9f19b244f1ce523530a940702"
+    },
+    {
+      "path": "native_20261108/task_bt/README.md",
+      "sha256": "dac8f1a9f8551d160bdfea877c0ae7a356ad68f344205863749826f29c126fe9"
+    },
+    {
+      "path": "native_20261108/task_bt/run.sh",
+      "sha256": "c338bffad713ff6a59a787e2b33edadcca09e13ce1bcd69b23401a2200a7b9d4"
+    }
+  ],
+  "asset_references": [
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/visual/body.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/body.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/body_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/body_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/body_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/body_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/visual/FL.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/FL.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/FL_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/FL_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/FL_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/FL_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/visual/wheel.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/wheel.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/visual/FR.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/FR.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/FR_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/FR_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/FR_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/FR_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/visual/wheel.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/wheel.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/visual/RL.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/RL.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/RL_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/RL_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/RL_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/RL_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/visual/wheel.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/wheel.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/visual/RR.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/RR.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/RR_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/RR_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/RR_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/collision/RR_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/ros2_ws/src/dino_sensors/generated/validation_dual.sdf",
+      "uri": "model://dino_description/meshes/visual/wheel.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/wheel.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_farm_demo_v1",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/visual/body.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/body.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/body_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/body_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/body_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/body_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/body_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/visual/FL.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/FL.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/FL_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/FL_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/FL_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/FL_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FL_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/visual/wheel.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/wheel.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/visual/FR.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/FR.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/FR_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/FR_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/FR_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/FR_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/FR_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/visual/wheel.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/wheel.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/visual/RL.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/RL.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/RL_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/RL_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/RL_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/RL_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RL_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/visual/wheel.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/wheel.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/visual/RR.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/RR.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/RR_0.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_0.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/RR_1.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_1.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/RR_2.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_2.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/collision/RR_3.stl",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/collision/RR_3.stl",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_sensor_smoke.sdf",
+      "uri": "model://dino_description/meshes/visual/wheel.dae",
+      "resolved": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_description/share/dino_description/meshes/visual/wheel.dae",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/bark.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/bark.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/glass.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/glass.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/gravel.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/gravel.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/materials/textures/gravel.png",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/materials/textures/gravel.png",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/leaf_dark.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/leaf_dark.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/leaf_light.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/leaf_light.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/leaf_mid.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/leaf_mid.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/metal.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/metal.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/mulch.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/mulch.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/roof.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/roof.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/shed_wall.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/shed_wall.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/soil.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/soil.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/stone.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/stone.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/turf.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/turf.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/materials/textures/turf.png",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/materials/textures/turf.png",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/verge.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/verge.obj",
+      "valid": true
+    },
+    {
+      "source": "native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/model.sdf",
+      "uri": "model://dino_farm_demo_v1/meshes/wood.obj",
+      "resolved": "/home/ceihao/robot_project/native_20261108/farm_scene/gazebo/models/dino_farm_demo_v1/meshes/wood.obj",
+      "valid": true
+    }
+  ],
+  "missing_resources": [],
+  "hardware": {
+    "kernel": {
+      "command": [
+        "uname",
+        "-r"
+      ],
+      "exit_code": 0,
+      "stdout": "7.0.0-42-generic",
+      "stderr": ""
+    },
+    "cpu": {
+      "command": [
+        "lscpu",
+        "-J"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n   \"lscpu\": [\n      {\n         \"field\": \"Architecture:\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU op-mode(s):\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"48 bits physical, 48 bits virtual\"\n      },{\n         \"field\": \"Byte Order:\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU(s):\",\n         \"data\": \"16\"\n      },{\n         \"field\": \"On-line CPU(s) list:\",\n         \"data\": \"0-15\"\n      },{\n         \"field\": \"Vendor ID:\",\n         \"data\": \"AuthenticAMD\"\n      },{\n         \"field\": \"Model name:\",\n         \"data\": \"AMD Ryzen 7 5800H with Radeon Graphics\"\n      },{\n         \"field\": \"CPU family:\",\n         \"data\": \"25\"\n      },{\n         \"field\": \"Model:\",\n         \"data\": \"80\"\n      },{\n         \"field\": \"Thread(s) per core:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Core(s) per socket:\",\n         \"data\": \"8\"\n      },{\n         \"field\": \"Socket(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"Stepping:\",\n         \"data\": \"0\"\n      },{\n         \"field\": \"Frequency boost:\",\n         \"data\": \"enabled\"\n      },{\n         \"field\": \"CPU(s) scaling MHz:\",\n         \"data\": \"52%\"\n      },{\n         \"field\": \"CPU max MHz:\",\n         \"data\": \"4465.2612\"\n      },{\n         \"field\": \"CPU min MHz:\",\n         \"data\": \"403.4880\"\n      },{\n         \"field\": \"BogoMIPS:\",\n         \"data\": \"6388.14\"\n      },{\n         \"field\": \"Flags:\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm debug_swap\"\n      },{\n         \"field\": \"Virtualization:\",\n         \"data\": \"AMD-V\"\n      },{\n         \"field\": \"L1d cache:\",\n         \"data\": \"256 KiB (8 instances)\"\n      },{\n         \"field\": \"L1i cache:\",\n         \"data\": \"256 KiB (8 instances)\"\n      },{\n         \"field\": \"L2 cache:\",\n         \"data\": \"4 MiB (8 instances)\"\n      },{\n         \"field\": \"L3 cache:\",\n         \"data\": \"16 MiB (1 instance)\"\n      },{\n         \"field\": \"NUMA node(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"NUMA node0 CPU(s):\",\n         \"data\": \"0-15\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Ghostwrite:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Indirect target selection:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Old microcode:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Mitigation; Safe RET\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsa:\",\n         \"data\": \"Mitigation; Clear CPU buffers\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Vmscape:\",\n         \"data\": \"Mitigation; IBPB before exit to userspace\"\n      }\n   ]\n}",
+      "stderr": ""
+    },
+    "gpu": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version,memory.total",
+        "--format=csv,noheader"
+      ],
+      "exit_code": 0,
+      "stdout": "NVIDIA GeForce RTX 3070 Laptop GPU, 595.99.02, 8192 MiB",
+      "stderr": ""
+    },
+    "memory": {
+      "command": [
+        "free",
+        "-b"
+      ],
+      "exit_code": 0,
+      "stdout": "total        used        free      shared  buff/cache   available\nMem:     16606302208  6476222464  1941549056   107892736  7918522368 10130079744\nSwap:     4294963200           0  4294963200",
+      "stderr": ""
+    },
+    "compiler": {
+      "command": [
+        "g++",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+      "stderr": ""
+    }
+  },
+  "native_package_binding": {
+    "command": [
+      "bash",
+      "--noprofile",
+      "--norc",
+      "-c",
+      "source /home/ceihao/robot_project/native_20261108/scripts/env.sh\nros2 pkg prefix dino_sensors"
+    ],
+    "exit_code": 0,
+    "stdout": "/home/ceihao/robot_project/native_20261108/ros2_ws/install/dino_sensors",
+    "stderr": ""
+  },
+  "source_roots": {
+    "legacy": "/home/ceihao/robot_project/native_20261108/ros2_ws/src",
+    "new": "/home/ceihao/robot_project/optimization_v2/ws/src"
+  },
+  "legacy_bt": {
+    "status": "ISOLATED_NOT_A_FULL_TASK_ENTRY",
+    "replacement": "project_baseline/baseline_bt + core tests; S14 adds complete task layer"
+  },
+  "model_limitations": [
+    "Original steering torque 10 Nm is not adequate in historical grounded steering tests.",
+    "Derived simulation model uses 300 Nm; not a real actuator calibration.",
+    "S01 verifies stationary sensors and components, not full autonomous mowing."
+  ]
+}

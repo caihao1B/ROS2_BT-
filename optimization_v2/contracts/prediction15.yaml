@@ -1,0 +1,21 @@
+schema: S15-PREDICTION-CONTRACT/1
+online_domain: 119
+raw_simulator_domain: 121
+independent_evaluation_domain: 120
+input: /s09/objects
+output: /s15/forecasts
+risk: /s15/risk
+frame: odom
+future_labels_online: false
+horizon_s: 3.2
+risk_horizon_s: 2.0
+cap_upper_bound_mps: 0.12
+reasons:
+  PREDICTED_CONFLICT_WAIT: 预测包络相交，取消导航和工具后有界等待
+  PREDICTED_CONFLICT_SLOW: 预测风险收紧速度至不超过 0.06 m/s
+  PREDICTED_CLEAR: 在本次有效预测时域内未触发新增限制
+  PREDICTION_STALE_FALLBACK: 预测过期，退回原当前观测安全基线
+  PREDICTION_TRANSPORT_FALLBACK: 推理通道失联，退回原当前观测安全基线
+  PREDICTION_UNCERTAINTY_FALLBACK: 预测协方差过大，不用该目标预测解除原安全条件
+  PREDICTION_WAIT_EXHAUSTED: 原等待或合计恢复预算耗尽，保存残余后停止
+proxy: mode_envelope_mass_not_calibrated_collision_probability

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>project_baseline</name>
+  <version>0.1.0</version>
+  <description>Local baseline verification and isolated dependency probes for robot optimization.</description>
+  <maintainer email="local@example.invalid">Local project maintainer</maintainer>
+  <license>Proprietary</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend><depend>std_msgs</depend><depend>behaviortree_cpp</depend>
+  <depend>fields2cover</depend><depend>libmetis-dev</depend>
+  <exec_depend>rclpy</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

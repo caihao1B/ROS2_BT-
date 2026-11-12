@@ -1,0 +1,95 @@
+{
+  "schema": "ROBOT-PUBLICATION-BUILD/1",
+  "scope": "Clean source-tree build with existing locked Ubuntu/Jazzy system dependencies; not a fresh-machine autonomy qualification",
+  "packages": [
+    {
+      "identifier": "chassis_bridge",
+      "rc": 0
+    },
+    {
+      "identifier": "coverage_partition",
+      "rc": 0
+    },
+    {
+      "identifier": "coverage_planner",
+      "rc": 0
+    },
+    {
+      "identifier": "global_pose_manager",
+      "rc": 0
+    },
+    {
+      "identifier": "gnss_supervisor",
+      "rc": 0
+    },
+    {
+      "identifier": "localization_guard",
+      "rc": 0
+    },
+    {
+      "identifier": "map_manager",
+      "rc": 0
+    },
+    {
+      "identifier": "mission_interfaces",
+      "rc": 0
+    },
+    {
+      "identifier": "motion_prediction",
+      "rc": 0
+    },
+    {
+      "identifier": "navigation_adapter",
+      "rc": 0
+    },
+    {
+      "identifier": "object_fusion",
+      "rc": 0
+    },
+    {
+      "identifier": "prediction_risk_guard",
+      "rc": 0
+    },
+    {
+      "identifier": "project_baseline",
+      "rc": 0
+    },
+    {
+      "identifier": "robot_description",
+      "rc": 0
+    },
+    {
+      "identifier": "scenario_world",
+      "rc": 0
+    },
+    {
+      "identifier": "sensor_sim_adapter",
+      "rc": 0
+    },
+    {
+      "identifier": "terrain_perception",
+      "rc": 0
+    },
+    {
+      "identifier": "mission_bt",
+      "rc": 0
+    },
+    {
+      "identifier": "tool_sim",
+      "rc": 0
+    },
+    {
+      "identifier": "work_ledger",
+      "rc": 0
+    }
+  ],
+  "exit_code": 0,
+  "seconds": 366.513527,
+  "events_log_sha256": "c9134d7c0b0078cb94940f3b245f971493c89628ed9aa2312a7f04cc840631c7",
+  "warnings": [
+    "PCL FLANN CMake policy warnings",
+    "pcap feature disabled",
+    "Actor15 misleading-indentation style warnings"
+  ],
+  "source_inventory_sha256": "c0b4b86ecccb8478fc28c9e26f305e86def9e613cd51ec77091e8f5410434542"
+}

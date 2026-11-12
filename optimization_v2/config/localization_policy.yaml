@@ -1,0 +1,9 @@
+schema: S05-POLICY/1
+revision: s05.1
+cloud: {voxel_m: 0.20, range_min_m: 1.0, range_max_m: 40.0, max_points: 2500, min_points: 150, normal_eigen_min: 0.005, frontend_hz: 5.0, settle_s: 4.0, ground_stride: 1, ground_band_m: 0.18}
+icp: {min_inlier_ratio: 0.15, max_translation_step_m: 0.5, max_rotation_step_rad: 0.35, pose_variance_floor: 0.00001, angular_variance_floor: 0.00001}
+imu: {gravity_mps2: 9.80665, gravity_norm_tolerance: 0.25, tilt_variance: 0.001, gyro_variance: 0.0001, max_wheel_accel_for_tilt: 0.2}
+wheel: {velocity_variance: 0.0025, rolling_constraint_variance: 0.0025, mismatch_mps: 0.08, mismatch_hold_s: 0.3, recovery_mps: 0.04, recovery_hold_s: 1.5, degraded_variance: 4.0}
+safety: {imu_age_s: 0.25, icp_age_s: 0.6, icp_stop_s: 2.0, startup_s: 8.0, degraded_speed_mps: 0.20, normal_speed_mps: 0.45, fused_age_s: 0.25}
+limits: {case_disk_bytes: 268435456, owned_rss_bytes: 8589934592}
+qualification: {nominal_ate_rmse_m: 1.0, slip_fused_to_wheel_max_ratio: 0.8, continuity_step_m: 0.15, slope_pitch_rmse_rad: 0.05}

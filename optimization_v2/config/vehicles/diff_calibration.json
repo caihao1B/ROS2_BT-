@@ -1,0 +1,45 @@
+{
+  "schema": "S03-DIFF-TRACK-CALIBRATION/1",
+  "source_run": "optimization_v2/results/S03/development_diff2",
+  "source_truth_sha256": "4796b06adbc5a5c526a8bc8d6e50fa0be12033f3b46b80386981dc13cfbe938f",
+  "nominal_track_m": 0.62,
+  "fit_formula": "T_effective = T_nominal * commanded_yaw_rate / measured_yaw_rate",
+  "bidirectional_fits_m": [
+    0.5400113600741439,
+    0.5400120915823854
+  ],
+  "selected_effective_track_m": 0.54,
+  "evidence": {
+    "left": {
+      "v_mps": 0.5999969692824103,
+      "w_rad_s": 0.27554975876724086,
+      "lateral_p95_mps": 0.0001655970855343747,
+      "radius_m": 2.177454162786013,
+      "expected_radius_m": 2.5,
+      "odom_delta_error_m": 1.9678686240273653,
+      "checks": {
+        "speed": true,
+        "yaw": true,
+        "radius": true,
+        "odometry": false
+      },
+      "passed": false
+    },
+    "right": {
+      "v_mps": 0.5999969688567874,
+      "w_rad_s": -0.2755493855035258,
+      "lateral_p95_mps": 0.00016559707334160012,
+      "radius_m": 2.177457110856486,
+      "expected_radius_m": 2.5,
+      "odom_delta_error_m": 1.9588534176500993,
+      "checks": {
+        "speed": true,
+        "yaw": true,
+        "radius": true,
+        "odometry": false
+      },
+      "passed": false
+    }
+  },
+  "interpretation": "Gazebo cylinder/contact model calibration; not a real hardware calibration"
+}

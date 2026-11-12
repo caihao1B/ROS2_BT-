@@ -1,0 +1,9 @@
+schema: S14-MISSIONS/1
+plan_path: optimization_v2/plans/validated/mission_plan.json
+seed: 41
+hard_sim_limit_s: 1800
+normal_plan_limit_s: 1440
+spray: {zone: A, cluster: 0, vehicle: diff, controller: DWB, required_points: 21}
+mow: {zone: B, cluster: 0, vehicle: ackermann, controller: RPP, required_area_m2: 16.35945787959566, completion_fraction: 0.95}
+inspection: {tool_mode: OFF, completion_credit: 0}
+scope: S12 explicitly resized task domains; original large-field residual remains outside these missions

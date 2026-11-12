@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "UNCOMPLETED",
+        "task_id": "smoke_point_1",
+        "key": "93735c60bdcf20544599e3862861a677c1f779b3a384eca1e4c2d4adbc5fede4:smoke_point_1",
+        "required_quantity": 2.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.508546499494763,
+          1.4524268951230714
+        ]
+      }
+    }
+  ]
+}

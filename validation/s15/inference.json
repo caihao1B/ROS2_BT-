@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "scope": "S15_COMPONENT_INFERENCE_ONLY",
+  "future_prefix_invariant": true,
+  "neighbor_conditioning_changes_output": true,
+  "stop_go_changes_distribution": true,
+  "distribution_patch_equivalent": true,
+  "clock_rewind_rejected": true,
+  "probability_covariance": [
+    {
+      "model": "imm",
+      "modes": 4,
+      "minimum_eigenvalue": 0.003769136816004207,
+      "probability_sum": 1.0
+    },
+    {
+      "model": "learned",
+      "modes": 25,
+      "minimum_eigenvalue": 0.010039526796048564,
+      "probability_sum": 0.9999999199062586
+    }
+  ],
+  "first_inference_ms": 7.187677998444997,
+  "full_unused_grid_ms": 41.450848992099054,
+  "distribution_only_ms": 4.6856730041326955,
+  "patch_hashes": {
+    "gmm_original": "3b991e84eb9b46a6675f0fedd03523e56da79b8e945781046f2855760d581ece",
+    "gmm_adapted": "7a94b46366e9765d08624879a5ca42782373cf1bdcb9240b4d3b6bf3fb2f763b",
+    "decoder_original": "4fe46a1d95e62f24a8664f3367bf09d1791cd2698c36fc9de1ecbc72e3528c7d",
+    "decoder_adapted": "2befb2db4d7d9d9f7d5a7f7dfb021a616138d77f05099b6ae2a04ac79037a9e8"
+  },
+  "module_keys": [
+    "PEDESTRIAN->PEDESTRIAN/edge_encoder",
+    "PEDESTRIAN/decoder/initial_h",
+    "PEDESTRIAN/decoder/proj_to_GMM_corrs",
+    "PEDESTRIAN/decoder/proj_to_GMM_log_pis",
+    "PEDESTRIAN/decoder/proj_to_GMM_log_sigmas",
+    "PEDESTRIAN/decoder/proj_to_GMM_mus",
+    "PEDESTRIAN/decoder/rnn_cell",
+    "PEDESTRIAN/decoder/state_action",
+    "PEDESTRIAN/edge_influence_encoder",
+    "PEDESTRIAN/hx_to_z",
+    "PEDESTRIAN/hxy_to_z",
+    "PEDESTRIAN/node_future_encoder",
+    "PEDESTRIAN/node_future_encoder/initial_c",
+    "PEDESTRIAN/node_future_encoder/initial_h",
+    "PEDESTRIAN/node_history_encoder",
+    "PEDESTRIAN/p_z_x"
+  ]
+}

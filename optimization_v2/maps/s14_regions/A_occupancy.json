@@ -1,0 +1,377 @@
+{
+  "collision_volume": {
+    "ceiling_m": 1.1,
+    "vehicles": {
+      "diff": {
+        "body_and_payload_top_m": 0.9,
+        "tilt_allowance_m": 0.05927231323246028,
+        "ground_uncertainty_m": 0.061000000000000006,
+        "ceiling_m": 1.05
+      },
+      "ackermann": {
+        "body_and_payload_top_m": 0.9,
+        "tilt_allowance_m": 0.12203049003193284,
+        "ground_uncertainty_m": 0.061000000000000006,
+        "ceiling_m": 1.1
+      }
+    },
+    "mounting_allowance_m": 0.1,
+    "scope": "ground-relative collision projection only; full SLAM cloud retained"
+  },
+  "planes": [
+    {
+      "station": "A0",
+      "frame": 0,
+      "normal": [
+        -8.138867269735783e-05,
+        -9.355687507195398e-05,
+        1.0
+      ],
+      "offset": -0.004683821927756071,
+      "support": 3166,
+      "ground_points": 4662,
+      "obstacle_points": 298,
+      "overhead_points": 810
+    },
+    {
+      "station": "A0",
+      "frame": 1,
+      "normal": [
+        2.884351670218166e-05,
+        -4.394757343106903e-05,
+        1.0
+      ],
+      "offset": -0.00467193778604269,
+      "support": 3151,
+      "ground_points": 4649,
+      "obstacle_points": 297,
+      "overhead_points": 816
+    },
+    {
+      "station": "A0",
+      "frame": 2,
+      "normal": [
+        1.264457114302786e-05,
+        7.393440682790242e-06,
+        1.0
+      ],
+      "offset": -0.004658908117562532,
+      "support": 3155,
+      "ground_points": 4638,
+      "obstacle_points": 276,
+      "overhead_points": 819
+    },
+    {
+      "station": "A0",
+      "frame": 3,
+      "normal": [
+        -3.0472130674752407e-05,
+        5.968205641693203e-06,
+        1.0
+      ],
+      "offset": -0.004651167429983616,
+      "support": 3182,
+      "ground_points": 4686,
+      "obstacle_points": 285,
+      "overhead_points": 818
+    },
+    {
+      "station": "A0",
+      "frame": 4,
+      "normal": [
+        3.1519492040388286e-05,
+        -1.1573608389880974e-05,
+        1.0
+      ],
+      "offset": -0.004613097757101059,
+      "support": 3176,
+      "ground_points": 4652,
+      "obstacle_points": 303,
+      "overhead_points": 812
+    },
+    {
+      "station": "A1",
+      "frame": 0,
+      "normal": [
+        1.6259917174465954e-05,
+        -3.1831779779167846e-05,
+        1.0
+      ],
+      "offset": -0.004746547434478998,
+      "support": 3059,
+      "ground_points": 4509,
+      "obstacle_points": 332,
+      "overhead_points": 858
+    },
+    {
+      "station": "A1",
+      "frame": 1,
+      "normal": [
+        -7.994006591616198e-05,
+        -2.6693907784647308e-05,
+        1.0
+      ],
+      "offset": -0.004748026840388775,
+      "support": 3101,
+      "ground_points": 4542,
+      "obstacle_points": 326,
+      "overhead_points": 850
+    },
+    {
+      "station": "A1",
+      "frame": 2,
+      "normal": [
+        -5.4669802921125665e-05,
+        2.9484926926670596e-06,
+        1.0
+      ],
+      "offset": -0.004720039200037718,
+      "support": 3081,
+      "ground_points": 4518,
+      "obstacle_points": 327,
+      "overhead_points": 861
+    },
+    {
+      "station": "A1",
+      "frame": 3,
+      "normal": [
+        7.508734597649891e-06,
+        -6.185910751810297e-05,
+        1.0
+      ],
+      "offset": -0.004657294135540724,
+      "support": 3126,
+      "ground_points": 4550,
+      "obstacle_points": 344,
+      "overhead_points": 851
+    },
+    {
+      "station": "A1",
+      "frame": 4,
+      "normal": [
+        -2.9558403184637427e-05,
+        -5.542842700378969e-05,
+        1.0
+      ],
+      "offset": -0.004784293472766876,
+      "support": 3122,
+      "ground_points": 4564,
+      "obstacle_points": 349,
+      "overhead_points": 859
+    },
+    {
+      "station": "A2",
+      "frame": 0,
+      "normal": [
+        -0.00012217780749779195,
+        -0.00016705351299606264,
+        1.0
+      ],
+      "offset": -0.004917765036225319,
+      "support": 2963,
+      "ground_points": 4410,
+      "obstacle_points": 232,
+      "overhead_points": 451
+    },
+    {
+      "station": "A2",
+      "frame": 1,
+      "normal": [
+        -0.00010437648597871885,
+        -7.179631211329252e-05,
+        1.0
+      ],
+      "offset": -0.004879815969616175,
+      "support": 2948,
+      "ground_points": 4402,
+      "obstacle_points": 228,
+      "overhead_points": 451
+    },
+    {
+      "station": "A2",
+      "frame": 2,
+      "normal": [
+        2.8863655643363018e-06,
+        -6.043995017535053e-05,
+        1.0
+      ],
+      "offset": -0.004737989977002144,
+      "support": 2962,
+      "ground_points": 4425,
+      "obstacle_points": 231,
+      "overhead_points": 448
+    },
+    {
+      "station": "A2",
+      "frame": 3,
+      "normal": [
+        2.9811619242536835e-05,
+        3.475032281130552e-05,
+        1.0
+      ],
+      "offset": -0.004781452938914299,
+      "support": 2986,
+      "ground_points": 4411,
+      "obstacle_points": 253,
+      "overhead_points": 461
+    },
+    {
+      "station": "A2",
+      "frame": 4,
+      "normal": [
+        -7.423164788633585e-06,
+        -6.5300168898829725e-06,
+        1.0
+      ],
+      "offset": -0.0047156610526144505,
+      "support": 2995,
+      "ground_points": 4451,
+      "obstacle_points": 232,
+      "overhead_points": 455
+    },
+    {
+      "station": "A3",
+      "frame": 0,
+      "normal": [
+        -4.404552964842878e-05,
+        -3.290592076155008e-06,
+        1.0
+      ],
+      "offset": -0.004776448477059603,
+      "support": 3131,
+      "ground_points": 4681,
+      "obstacle_points": 168,
+      "overhead_points": 577
+    },
+    {
+      "station": "A3",
+      "frame": 1,
+      "normal": [
+        9.266450069844723e-05,
+        -4.2670211541917524e-07,
+        1.0
+      ],
+      "offset": -0.004751712083816528,
+      "support": 3164,
+      "ground_points": 4708,
+      "obstacle_points": 164,
+      "overhead_points": 578
+    },
+    {
+      "station": "A3",
+      "frame": 2,
+      "normal": [
+        3.461673259153031e-05,
+        7.036974420771003e-05,
+        1.0
+      ],
+      "offset": -0.004768789745867252,
+      "support": 3125,
+      "ground_points": 4668,
+      "obstacle_points": 168,
+      "overhead_points": 578
+    },
+    {
+      "station": "A3",
+      "frame": 3,
+      "normal": [
+        7.536321936640888e-05,
+        7.350212399614975e-05,
+        1.0
+      ],
+      "offset": -0.0047333016991615295,
+      "support": 3133,
+      "ground_points": 4690,
+      "obstacle_points": 179,
+      "overhead_points": 586
+    },
+    {
+      "station": "A3",
+      "frame": 4,
+      "normal": [
+        -8.787272963672876e-05,
+        -5.6034186854958534e-05,
+        1.0
+      ],
+      "offset": -0.0047523160465061665,
+      "support": 3163,
+      "ground_points": 4711,
+      "obstacle_points": 184,
+      "overhead_points": 579
+    },
+    {
+      "station": "A4",
+      "frame": 0,
+      "normal": [
+        -2.460704490658827e-05,
+        2.6858253477257676e-05,
+        1.0
+      ],
+      "offset": -0.0047570024617016315,
+      "support": 3142,
+      "ground_points": 4644,
+      "obstacle_points": 254,
+      "overhead_points": 831
+    },
+    {
+      "station": "A4",
+      "frame": 1,
+      "normal": [
+        0.0001175494835479185,
+        2.968764192701201e-06,
+        1.0
+      ],
+      "offset": -0.004770457744598389,
+      "support": 3173,
+      "ground_points": 4663,
+      "obstacle_points": 255,
+      "overhead_points": 830
+    },
+    {
+      "station": "A4",
+      "frame": 2,
+      "normal": [
+        -4.585160058923066e-05,
+        -7.009164983173832e-05,
+        1.0
+      ],
+      "offset": -0.004734735004603863,
+      "support": 3151,
+      "ground_points": 4650,
+      "obstacle_points": 260,
+      "overhead_points": 819
+    },
+    {
+      "station": "A4",
+      "frame": 3,
+      "normal": [
+        2.227642289653886e-05,
+        6.65860206936486e-05,
+        1.0
+      ],
+      "offset": -0.004771120846271515,
+      "support": 3142,
+      "ground_points": 4624,
+      "obstacle_points": 261,
+      "overhead_points": 827
+    },
+    {
+      "station": "A4",
+      "frame": 4,
+      "normal": [
+        2.9099388484610245e-05,
+        -3.7141006032470614e-05,
+        1.0
+      ],
+      "offset": -0.004766760393977165,
+      "support": 3154,
+      "ground_points": 4640,
+      "obstacle_points": 288,
+      "overhead_points": 836
+    }
+  ],
+  "free_cells": 221747,
+  "occupied_cells": 473,
+  "unknown_cells": 118405,
+  "policy": "Three observed frames; occupied wins; uncertain hits remain unknown; only measured ground rays clear; overhead exclusion never clears ground"
+}

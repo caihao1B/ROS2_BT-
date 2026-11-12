@@ -1,7 +1,0 @@
-string snapshot_json
----
-bool replace_route
-string ordered_segment_entries_json
-float32 improvement
-string score_breakdown_json
-string message

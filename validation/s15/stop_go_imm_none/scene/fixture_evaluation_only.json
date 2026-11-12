@@ -1,0 +1,44 @@
+{
+  "scenario": "stop_go",
+  "split": "test",
+  "actors": [
+    {
+      "name": "s15_person",
+      "knots": [
+        [
+          0.0,
+          1.7,
+          -2.0
+        ],
+        [
+          10.0,
+          1.7,
+          -2.0
+        ],
+        [
+          19.0,
+          1.7,
+          -0.7
+        ],
+        [
+          25.0,
+          1.7,
+          -0.7
+        ],
+        [
+          40.0,
+          1.7,
+          2.2
+        ],
+        [
+          65.0,
+          1.7,
+          2.2
+        ]
+      ]
+    }
+  ],
+  "source": "SIMULATOR_ONLY_NOT_PREDICTOR_INPUT",
+  "articulated_gait": false,
+  "interaction": "scripted yield; no social response dynamics"
+}

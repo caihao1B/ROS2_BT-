@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "app initialized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no JavaScript errors",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "wheel covariance changes estimate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "16cm rejected despite NIS passing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "10cm passes two gates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no loop retains odometric endpoint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "weighted loop solves normal equations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "translation composition",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rotation composition and unchanged local pose",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "regional branch tab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "keyboard tab navigation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "source search filters accurately",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "all 32 source files visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quiz explanation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chapter anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chapter navigation scrolls to content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "copy controls present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no page overflow at 1100",
+      "passed": true,
+      "detail": "1085 / 1085"
+    },
+    {
+      "name": "no page overflow at 760",
+      "passed": true,
+      "detail": "745 / 745"
+    },
+    {
+      "name": "no page overflow at 390",
+      "passed": true,
+      "detail": "375 / 375"
+    },
+    {
+      "name": "no page overflow at 320",
+      "passed": true,
+      "detail": "305 / 305"
+    },
+    {
+      "name": "no late JavaScript errors",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

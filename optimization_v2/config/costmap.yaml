@@ -1,0 +1,12 @@
+schema: S09-COSTMAP/1
+frame: odom
+resolution_m: 0.15
+size_m: 30.0
+unknown_value: -1
+lethal_value: 100
+stale_source_s: 0.6
+track_unknown_space: true
+clearing: Three observed ground frames; expired unseen cells become UNKNOWN, never
+  FREE
+global_boundary_source: S02 workspaces + connector + explicit S09 commissioning apron transformed using S08 admitted
+  pose only; NOT world.sdf

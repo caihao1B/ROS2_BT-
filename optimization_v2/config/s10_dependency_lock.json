@@ -1,0 +1,17 @@
+{
+  "packages": {
+    "ros-jazzy-rclcpp-action": "28.1.22-1noble.20260912.162328",
+    "ros-jazzy-rosidl-default-generators": "1.6.1-1noble.20260911.052510",
+    "libsqlite3-dev": "3.45.1-1ubuntu2.9",
+    "python3-numpy": "1:1.26.4+ds-6ubuntu1",
+    "ros-jazzy-gz-sim-vendor": "0.0.13-1noble.20260905.073557",
+    "nlohmann-json3-dev": "3.11.3-1"
+  },
+  "sqlite": "3.45.1",
+  "shapely": "2.1.2",
+  "geos": "3.13.1",
+  "numpy": "1.26.4",
+  "python": "3.12.3",
+  "venv": "/home/ceihao/robot_project/optimization_v2/venvs/scene",
+  "new_system_packages_installed": []
+}

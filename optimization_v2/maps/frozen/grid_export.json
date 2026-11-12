@@ -1,0 +1,14 @@
+{
+  "args": [
+    "rtabmap-export",
+    "--map",
+    "--opt",
+    "2",
+    "--output",
+    "navigation",
+    "--output_dir",
+    "/home/ceihao/robot_project/optimization_v2/maps/frozen",
+    "/home/ceihao/robot_project/optimization_v2/maps/frozen/map.db"
+  ],
+  "exit_code": 0
+}

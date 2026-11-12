@@ -1,0 +1,123 @@
+{
+  "schema": "S03-VEHICLE/1",
+  "id": "diff",
+  "revision": "s03.2",
+  "kind": "differential",
+  "body": {
+    "size": [
+      0.82,
+      0.6,
+      0.24
+    ],
+    "center": [
+      0.06,
+      0,
+      0.34
+    ],
+    "mass": 60
+  },
+  "support": {
+    "caster_x": 0.34,
+    "radius": 0.06,
+    "mass": 0.4,
+    "friction": 0.005
+  },
+  "wheel": {
+    "radius": 0.16,
+    "width": 0.08,
+    "mass": 2.5,
+    "track": 0.62,
+    "friction": 1.0,
+    "effort_Nm": 40
+  },
+  "wheelbase": 0.0,
+  "calibration": {
+    "effective_track_m": 0.54,
+    "evidence": "diff_calibration.json",
+    "scope": "Gazebo contact model only"
+  },
+  "footprint": [
+    [
+      -0.5,
+      -0.4
+    ],
+    [
+      0.55,
+      -0.4
+    ],
+    [
+      0.55,
+      0.4
+    ],
+    [
+      -0.5,
+      0.4
+    ]
+  ],
+  "steering": {
+    "joint_limit_rad": 0.6,
+    "rate_rad_s": 0.6,
+    "effort_Nm": 40,
+    "gain": 6.0,
+    "max_curvature": 0.0
+  },
+  "limits": {
+    "max_speed": 1.2,
+    "reverse": 0.3,
+    "yaw_rate": 0.8,
+    "acceleration": 0.5,
+    "deceleration": 0.8,
+    "yaw_acceleration": 0.8
+  },
+  "qualification_candidates": {
+    "work_mps": 0.6,
+    "transit_mps": [
+      0.3,
+      0.6,
+      0.9,
+      1.2
+    ],
+    "connector_mps": 0.8,
+    "slope_mps": 0.4,
+    "slope_deg": 5
+  },
+  "encoder": {
+    "ticks_per_revolution": 4096,
+    "steering_resolution_rad": 0.001
+  },
+  "safety": {
+    "command_wall_s": 0.4,
+    "command_sim_s": 0.2,
+    "feedback_wall_s": 0.5,
+    "actuator_wall_s": 0.35,
+    "actuator_sim_s": 0.35,
+    "clock_wall_s": 0.2,
+    "stopped_v_mps": 0.01,
+    "stopped_w_rad_s": 0.02,
+    "stop_delay_s": 2.0,
+    "alignment_error_rad": 0.05,
+    "alignment_speed_mps": 0.1,
+    "steering_tracking_timeout_s": 3.0
+  },
+  "tool": {
+    "vehicle": "diff",
+    "mount_xyz": [
+      0.42,
+      0,
+      0.4
+    ],
+    "collision_size": [
+      0.16,
+      0.3,
+      0.16
+    ],
+    "mass_kg": 5,
+    "virtual_effect_radius_m": 0.2,
+    "docking_error_m": 0.08,
+    "service_duration_sim_s": 2.0,
+    "requires_stopped": true,
+    "evidence_scope": "virtual geometric capability; fluid deposition and action feedback are deferred to S10"
+  },
+  "config_hash": "7a19a8923d1cfbf4adbba3a7296edcd257b9911b2c8220365711cc7575b9f967",
+  "total_mass_kg": 70.4
+}

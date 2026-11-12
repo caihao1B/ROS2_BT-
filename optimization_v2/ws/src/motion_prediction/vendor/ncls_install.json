@@ -1,0 +1,76 @@
+{
+  "version": "1",
+  "pip_version": "24.0",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/40/03/f5d0b979c6a1f8a8a11ba115a7c5b145671f092372a4ede164dc2597c466/ncls-0.0.70-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=205779656889931338a7fa4c58a1466643a61dd5593c843f55cc7018b33a0331",
+          "hashes": {
+            "sha256": "205779656889931338a7fa4c58a1466643a61dd5593c843f55cc7018b33a0331"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "ncls",
+        "version": "0.0.70",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "A fast interval tree-like implementation in C, wrapped for the Python ecosystem.",
+        "description": "# Nested containment list\n\n## Deprecation notice\n\nWhile I'll continue maintaining this library I suggest you change to [ruranges](https://github.com/pyranges/ruranges/) which is a more lightweight and faster library with many more operations than NCLS.\n\n## NCLS\n\n[![Build Status](https://travis-ci.org/biocore-ntnu/ncls.svg?branch=master)](https://travis-ci.org/hunt-genes/ncls) [![PyPI version](https://badge.fury.io/py/ncls.svg)](https://badge.fury.io/py/ncls)\n\nThe Nested Containment List is a datastructure for interval overlap queries,\nlike the interval tree. It is usually an order of magnitude faster than the\ninterval tree both for building and query lookups.\n\nThe implementation here is a revived version of the one used in the now defunct\nPyGr library, which died of bitrot. I have made it less memory-consuming and\ncreated wrapper functions which allows batch-querying the NCLS for further speed\ngains.\n\nIt was implemented to be the cornerstone of the PyRanges project, but I have made\nit available to the Python community as a stand-alone library. Enjoy.\n\nOriginal Paper: https://academic.oup.com/bioinformatics/article/23/11/1386/199545\nCite: http://dx.doi.org/10.1093/bioinformatics/btz615\n\n## Cite\n\nIf you use this library in published research cite\n\nhttp://dx.doi.org/10.1093/bioinformatics/btz615\n\n## Install\n\n```\npip install ncls\n```\n\n## Usage\n\n```python\nfrom ncls import NCLS\n\nimport pandas as pd\n\nstarts = pd.Series(range(0, 5))\nends = starts + 100\nids = starts\n\nsubject_df = pd.DataFrame({\"Start\": starts, \"End\": ends}, index=ids)\n\nprint(subject_df)\n#    Start  End\n# 0      0  100\n# 1      1  101\n# 2      2  102\n# 3      3  103\n# 4      4  104\n\nncls = NCLS(starts.values, ends.values, ids.values)\n\n# python API, slower\nit = ncls.find_overlap(0, 2)\nfor i in it:\n    print(i)\n# (0, 100, 0)\n# (1, 101, 1)\n\nstarts_query = pd.Series([1, 3])\nends_query = pd.Series([52, 14])\nindexes_query = pd.Series([10000, 100])\n\nquery_df = pd.DataFrame({\"Start\": starts_query.values, \"End\": ends_query.values}, index=indexes_query.values)\n\nquery_df\n#        Start  End\n# 10000      1   52\n# 100        3   14\n\n\n# everything done in C/Cython; faster\nl_idxs, r_idxs = ncls.all_overlaps_both(starts_query.values, ends_query.values, indexes_query.values)\nl_idxs, r_idxs\n# (array([10000, 10000, 10000, 10000, 10000,   100,   100,   100,   100,\n#          100]), array([0, 1, 2, 3, 4, 0, 1, 2, 3, 4]))\n\nprint(query_df.loc[l_idxs])\n#        Start  End\n# 10000      1   52\n# 10000      1   52\n# 10000      1   52\n# 10000      1   52\n# 10000      1   52\n# 100        3   14\n# 100        3   14\n# 100        3   14\n# 100        3   14\n# 100        3   14\nprint(subject_df.loc[r_idxs])\n#    Start  End\n# 0      0  100\n# 1      1  101\n# 2      2  102\n# 3      3  103\n# 4      4  104\n# 0      0  100\n# 1      1  101\n# 2      2  102\n# 3      3  103\n# 4      4  104\n\n# return intervals in python (slow/mem-consuming)\nintervals = ncls.intervals()\nintervals\n# [(0, 100, 0), (1, 101, 1), (2, 102, 2), (3, 103, 3), (4, 104, 4)]\n```\n\nThere is also an experimental floating point version of the NCLS called FNCLS.\nSee the examples folder.\n\n## Benchmark\n\nTest file of 100 million intervals (created by subsetting gencode gtf with replacement):\n\n| Library | Function | Time (s) | Memory (GB) |\n| --- | --- | --- | --- |\n| bx-python | build | 161.7 | 2.5 |\n| ncls | build | 3.15 | 0.5 |\n| bx-python | overlap | 148.4 | 4.3 |\n| ncls | overlap | 7.2 | 0.5 |\n\nBuilding is 50 times faster and overlap queries are 20 times faster. Memory\nusage is one fifth and one ninth.\n\n## Original paper\n\n> Alexander V. Alekseyenko, Christopher J. Lee; Nested Containment List (NCList): a new algorithm for accelerating interval query of genome alignment and interval databases, Bioinformatics, Volume 23, Issue 11, 1 June 2007, Pages 1386–1393, https://doi.org/10.1093/bioinformatics/btl647\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "ncls",
+          "interval-tree",
+          "genomics"
+        ],
+        "author_email": "Endre Bakken Stovner <endbak@pm.me>",
+        "license": "MIT",
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "Development Status :: 4 - Beta",
+          "Environment :: Other Environment",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: POSIX :: Linux",
+          "Operating System :: MacOS :: MacOS X",
+          "Topic :: Scientific/Engineering"
+        ],
+        "requires_dist": [
+          "numpy",
+          "black; extra == \"dev\"",
+          "bumpver; extra == \"dev\"",
+          "isort; extra == \"dev\"",
+          "pip-tools; extra == \"dev\"",
+          "pytest; extra == \"dev\""
+        ],
+        "project_url": [
+          "Homepage, http://github.com/pyranges/ncls"
+        ],
+        "provides_extra": [
+          "dev"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.12.3",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "7.0.0-42-generic",
+    "platform_system": "Linux",
+    "platform_version": "#42~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Oct 19 14:43:01 UTC 2",
+    "python_full_version": "3.12.3",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.12",
+    "sys_platform": "linux"
+  }
+}

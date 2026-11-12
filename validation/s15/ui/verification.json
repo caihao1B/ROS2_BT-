@@ -1,0 +1,27 @@
+{
+  "schema": "S15-DISPLAY-ONLY-REVALIDATION/1",
+  "original_matrix_run": "test_20261112_165536_2291112",
+  "gui_run": "demo_20261112_174641_2370190",
+  "changed_source_keys": [
+    "optimization_v2/config/rviz/prediction.rviz"
+  ],
+  "original_matrix_reexecuted": false,
+  "nonvisual_source_unchanged": true,
+  "original_receipt_sha256": "c9b385bbf1d438853c1c13018a655a6dee773ad7bd3710a31f773e2709061e6d",
+  "before_sha256": "ef07d756aab5966d2f580daf41588db04ef08be6522dbc3940dda0502d0a9cb6",
+  "after_sha256": "f757f67284bdcbc591b456d39a2d40646c0978779716f2bc1017c2902bb27d46",
+  "actual_gui_safe": true,
+  "actual_gui_completed": true,
+  "visual_review": {
+    "reviewer": "assistant",
+    "user_manual_status": "NOT_CHECKED",
+    "visible_cloud_tracks_modes_probabilities": true,
+    "display_status": "S15 MarkerArray Status: Ok",
+    "screenshot_path": "optimization_v2/results/S15/demo_20261112_174641_2370190/turning_learned_none/rviz_verified.png",
+    "screenshot_sha256": "9c3a702b468df52e3ad050bfd4cba315749d9f12dc2d3640612f8ebf8943469e",
+    "observed_at_utc": "2026-11-12T09:51:41.302223+00:00",
+    "notes": "Actual owned RViz window title matches this run. Green terrain, tracked person, purple future branches and Trajectron++ p=0.13 visible. Earlier capture during TF warmup retained separately."
+  },
+  "explanation": "RViz focal point already used map coordinates. Change display frame only; prediction, risk and control remain odom.",
+  "passed": true
+}

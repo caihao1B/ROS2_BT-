@@ -1,0 +1,4 @@
+<library path="measured_controller">
+  <class type="s13::MeasuredController" base_class_type="nav2_core::Controller"><description>Synchronize observed TF and measure installed Nav2 controller.</description></class>
+  <class type="s13::StaticMapPlanner" base_class_type="nav2_core::GlobalPlanner"><description>Smac geometry with latest-TF static map semantics.</description></class>
+</library>

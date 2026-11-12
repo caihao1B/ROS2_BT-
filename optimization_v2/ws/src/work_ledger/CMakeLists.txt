@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(work_ledger)
+find_package(ament_cmake REQUIRED)
+find_package(mission_interfaces REQUIRED)
+ament_package()

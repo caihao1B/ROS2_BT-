@@ -1,0 +1,7 @@
+{
+  "type": "FeatureCollection",
+  "name": "S09_authorized_diagnostic_apron",
+  "coordinate_reference": "S02 prior world metric coordinates; frozen map = world - [28,14,0]",
+  "purpose": "S09 stationary commissioning only; operational work boundaries remain S02 A/B; S13 must bind task-specific navigation permissions",
+  "features": [{"type":"Feature","properties":{"id":"diagnostic_apron","kind":"navigation_permission","obstacle_geometry_included":false},"geometry":{"type":"Polygon","coordinates":[[[25,11],[44,11],[44,26],[25,26],[25,11]]]}}]
+}

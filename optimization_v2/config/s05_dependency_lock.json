@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-09",
+  "packages": {
+    "ros-jazzy-robot-localization": "3.8.3-1noble.20260915.182602",
+    "ros-jazzy-rtabmap": "0.23.13-1noble.20261002.101311",
+    "ros-jazzy-rtabmap-odom": "0.23.13-1noble.20261003.101824",
+    "ros-jazzy-rtabmap-msgs": "0.23.13-1noble.20261003.085826",
+    "libeigen3-dev": "3.4.0-4build0.1",
+    "ros-jazzy-libpointmatcher": "1.4.2-1noble.20260225.135343",
+    "python3-scipy": "1.11.4-6build1",
+    "python3-numpy": "1:1.26.4+ds-6ubuntu1",
+    "python3-yaml": "6.0.1-2build2"
+  },
+  "frontend": "rtabmap_odom/icp_odometry, single active ICP; libpointmatcher registration",
+  "source_reference_urls": [
+    "https://github.com/introlab/rtabmap_ros/blob/0.23.13/rtabmap_odom/src/OdometryROS.cpp",
+    "https://github.com/cra-ros-pkg/robot_localization/blob/3.8.3/src/ekf.cpp"
+  ]
+}

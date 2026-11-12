@@ -1,0 +1,221 @@
+{
+  "schema": "S14-SURVEY-STATIONS/1",
+  "stations": {
+    "A0": {
+      "region": "A",
+      "prior_pose": [
+        28.58,
+        47.0,
+        0.0
+      ],
+      "vehicle": "diff",
+      "role": "train",
+      "seed": 41,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "A1": {
+      "region": "A",
+      "prior_pose": [
+        34.15016317,
+        46.50427919,
+        0.0
+      ],
+      "vehicle": "diff",
+      "role": "train",
+      "seed": 42,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "A2": {
+      "region": "A",
+      "prior_pose": [
+        34.58,
+        57.0,
+        0.0
+      ],
+      "vehicle": "diff",
+      "role": "train",
+      "seed": 43,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "A3": {
+      "region": "A",
+      "prior_pose": [
+        28.58,
+        55.0,
+        0.0
+      ],
+      "vehicle": "diff",
+      "role": "train",
+      "seed": 44,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "A4": {
+      "region": "A",
+      "prior_pose": [
+        30.58,
+        51.72,
+        0.0
+      ],
+      "vehicle": "diff",
+      "role": "train",
+      "seed": 45,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "A5": {
+      "region": "A",
+      "prior_pose": [
+        30.58,
+        47.0,
+        1.5707963267948966
+      ],
+      "vehicle": "diff",
+      "role": "heldout",
+      "seed": 61,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "A6": {
+      "region": "A",
+      "prior_pose": [
+        34.58,
+        53.0,
+        3.141592653589793
+      ],
+      "vehicle": "diff",
+      "role": "heldout",
+      "seed": 62,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "A7": {
+      "region": "A",
+      "prior_pose": [
+        30.58,
+        55.0,
+        -1.5707963267948966
+      ],
+      "vehicle": "diff",
+      "role": "heldout",
+      "seed": 63,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "A8": {
+      "region": "A",
+      "prior_pose": [
+        26.58,
+        51.0,
+        0.7
+      ],
+      "vehicle": "diff",
+      "role": "heldout",
+      "seed": 64,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "B0": {
+      "region": "B",
+      "prior_pose": [
+        120.05672671943172,
+        51.799607180654256,
+        0.2617993878
+      ],
+      "vehicle": "ackermann",
+      "role": "train",
+      "seed": 41,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "B1": {
+      "region": "B",
+      "prior_pose": [
+        132.45556846550778,
+        56.03521148515949,
+        0.2617993878
+      ],
+      "vehicle": "ackermann",
+      "role": "train",
+      "seed": 42,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "B2": {
+      "region": "B",
+      "prior_pose": [
+        135.18111985394702,
+        60.99518814408079,
+        0.2617993878
+      ],
+      "vehicle": "ackermann",
+      "role": "train",
+      "seed": 43,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "B3": {
+      "region": "B",
+      "prior_pose": [
+        121.55983610503367,
+        58.64508355750217,
+        0.2617993878
+      ],
+      "vehicle": "ackermann",
+      "role": "train",
+      "seed": 44,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "B4": {
+      "region": "B",
+      "prior_pose": [
+        127.56011054037444,
+        56.624473293140746,
+        0.2617993878
+      ],
+      "vehicle": "ackermann",
+      "role": "train",
+      "seed": 45,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "B5": {
+      "region": "B",
+      "prior_pose": [
+        126.6935857646208,
+        53.67887653423118,
+        1.5707963267948966
+      ],
+      "vehicle": "ackermann",
+      "role": "heldout",
+      "seed": 61,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "B6": {
+      "region": "B",
+      "prior_pose": [
+        134.89250504787955,
+        57.75141043328649,
+        3.141592653589793
+      ],
+      "vehicle": "ackermann",
+      "role": "heldout",
+      "seed": 62,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "B7": {
+      "region": "B",
+      "prior_pose": [
+        128.10137809853376,
+        59.26210934509212,
+        -1.5707963267948966
+      ],
+      "vehicle": "ackermann",
+      "role": "heldout",
+      "seed": 63,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    },
+    "B8": {
+      "region": "B",
+      "prior_pose": [
+        120.7104111704369,
+        56.57358091385887,
+        0.7
+      ],
+      "vehicle": "ackermann",
+      "role": "heldout",
+      "seed": 64,
+      "source": "existing S12 legal path samples; placement used by simulator only"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "base_plan_revision": "93735c60bdcf20544599e3862861a677c1f779b3a384eca1e4c2d4adbc5fede4",
+  "plan_revision": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3",
+  "atlas_revision": "08f41cfa9d26e0a3b7f7d4780e0e4c390b832d8779ccf28118e4c663f7897fd3",
+  "files": {
+    "mission_plan.json": "0e8907af44a80deffa69a0e2d90bead51c9413389a21c14f179e4ff21c2c7259",
+    "execution_B1.json": "234f82ff13957af4ae65bfdd6f85cde4b8b7a7609721fbfa83a191565ca303c4",
+    "routing_observation.npz": "7069811b08698e850c662d376f9b39bdb0cf347d860d50e80aabf57d0abd612b",
+    "routing_observation_context.json": "3e7f603115d4f3bba840513479e9292958766b0996d661d3874b3012d3de95e5"
+  }
+}

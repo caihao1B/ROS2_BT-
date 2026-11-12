@@ -1,0 +1,12 @@
+schema: S13-INSPECTION/1
+seed: 41
+source: optimization_v2/maps/prior/connector.geojson
+frame: survey
+registration_to_map: {translation: [-28.0, -14.0, 0.0], yaw: 0.0}
+qualified_segment: {start_arc_m: 0.0, end_arc_m: 6.0}
+checkpoint_arc_m: [2.0, 4.0, 6.0]
+checkpoint_data: [estimated_pose, camera_png, lidar_point_count, sensor_age, image_sha256]
+maximum_sensor_age_s: 0.3
+full_road_qualified: false
+tool_state: OFF
+permission: continuous authorized connector polygon; no use of simulation ground truth

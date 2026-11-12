@@ -1,0 +1,1200 @@
+{
+  "source": "optimization_v2/results/S14/demo_20261112_131025_1926381/nominal_spray_cluster/decisions.jsonl",
+  "sha256": "72280c709660f42874486589fd5852f24b44746aa1001a63f9fb3e508155184c",
+  "windows": [
+    {
+      "interrupted_t": 127.715,
+      "records": [
+        {
+          "t": 127.715,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "STALE_GEOMETRY_STOP",
+          "global_reason": "MAP_STALE_BOUNDED_HEADING"
+        },
+        {
+          "t": 127.725,
+          "platform_valid": false,
+          "costmaps_ready": false,
+          "tool_stopped": true,
+          "perception_reason": "STALE_GEOMETRY_STOP",
+          "global_reason": "MAP_STALE_BOUNDED_HEADING"
+        },
+        {
+          "t": 127.745,
+          "platform_valid": false,
+          "costmaps_ready": false,
+          "tool_stopped": true,
+          "perception_reason": "STALE_GEOMETRY_STOP",
+          "global_reason": "MAP_STALE_BOUNDED_HEADING"
+        },
+        {
+          "t": 127.955,
+          "platform_valid": false,
+          "costmaps_ready": false,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_STALE_BOUNDED_HEADING"
+        },
+        {
+          "t": 128.155,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 128.365,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 128.575,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 128.775,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 128.985,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 129.195,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 129.395,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 129.605,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 129.805,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 130.015,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 130.215,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 130.425,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 130.635,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 130.835,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 131.045,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 131.245,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 131.455,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 131.665,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 131.875,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 132.085,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 132.295,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 132.495,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 132.705,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 132.915,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 133.115,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 133.335,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 133.545,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 133.745,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 133.955,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 134.165,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 134.365,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 134.575,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 134.775,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 134.985,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 135.195,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 135.395,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 135.615,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 135.825,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 136.025,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 136.235,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 136.445,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 136.645,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 136.855,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 137.065,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "STALE_GEOMETRY_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 137.285,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 137.485,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 137.695,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 137.895,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 138.115,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 138.325,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 138.525,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 138.735,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 138.945,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 139.145,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 139.355,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 139.555,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 139.715,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 139.925,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 140.135,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 140.335,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 140.555,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 140.765,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 140.965,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 141.175,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 141.385,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "STALE_GEOMETRY_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 141.585,
+          "platform_valid": false,
+          "costmaps_ready": false,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 141.805,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 142.015,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 142.215,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 142.425,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 142.645,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        }
+      ]
+    },
+    {
+      "interrupted_t": 241.625,
+      "records": [
+        {
+          "t": 241.625,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "STALE_GEOMETRY_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 241.835,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 242.055,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 242.265,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 242.465,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 242.675,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 242.895,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 243.105,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 243.305,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 243.515,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 243.715,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 243.935,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 244.145,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 244.355,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 244.555,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 244.765,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 244.965,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 245.175,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 245.395,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 245.605,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 245.805,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 246.015,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 246.225,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 246.425,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 246.635,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 246.835,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 247.045,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 247.245,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 247.455,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 247.675,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 247.885,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 248.085,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 248.295,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 248.495,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 248.715,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 248.925,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 249.145,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 249.355,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 249.555,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 249.775,
+          "platform_valid": false,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 249.985,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 250.195,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 250.395,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 250.605,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 250.805,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 251.015,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 251.215,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 251.425,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 251.635,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 251.835,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 252.045,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 252.245,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 252.455,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 252.665,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 252.865,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 253.075,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 253.275,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 253.485,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 253.625,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 253.835,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 254.045,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 254.245,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 254.455,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 254.665,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 254.865,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 255.075,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 255.275,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 255.485,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 255.695,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 255.895,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 256.095,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 256.315,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        },
+        {
+          "t": 256.525,
+          "platform_valid": true,
+          "costmaps_ready": true,
+          "tool_stopped": true,
+          "perception_reason": "OBSERVED_GEOMETRY_AVAILABLE",
+          "global_reason": "MAP_AND_GNSS_AGREE"
+        }
+      ]
+    }
+  ]
+}

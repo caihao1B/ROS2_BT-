@@ -1,0 +1,22 @@
+{
+  "case": "nominal_spray_cluster",
+  "purpose": "Independent offline scoring only; no truth sent online",
+  "evaluated_from_sim_s": 9.763,
+  "position_samples": 12732,
+  "position_error_p95_m": 0.011388275622951704,
+  "position_error_max_m": 0.05519468647829988,
+  "follow_path_samples": 0,
+  "follow_path_cross_track_p95_m": null,
+  "follow_path_cross_track_max_m": null,
+  "obstacle_contacts": {},
+  "mission_state": "SUCCEEDED",
+  "coverage_fraction": null,
+  "confirmed_points": 21,
+  "required_points": 21,
+  "confirmed_area_m2": 0.0,
+  "required_area_m2": 0.0,
+  "sim_seconds": 1283.063,
+  "stopped_confirmed": true,
+  "database_unchanged": true,
+  "task_level_replans": 1
+}

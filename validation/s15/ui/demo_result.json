@@ -1,0 +1,355 @@
+{
+  "run_id": "demo_20261112_174641_2370190",
+  "status": "PASS",
+  "mode": "demo",
+  "seed": 41,
+  "manual_status": "NOT_CHECKED",
+  "scope": "S15_PREDICTION_AND_TWO_POINT_CLOSED_LOOP",
+  "cases": {
+    "turning_learned_none": {
+      "scope": "TWO_POINT_DYNAMIC_BENCHMARK_NOT_FULL_CLUSTER",
+      "scenario": "turning",
+      "method": "learned",
+      "fault": "none",
+      "benchmark_task_sha": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7",
+      "fixture_sha": "51a54c2290b428095cdeb355f078bd3345e39ce5b6ef01d1fbf83fa2a3e9db50",
+      "safe": true,
+      "completed": true,
+      "mission_state": "SUCCEEDED",
+      "reason": "FEEDBACK_COMPLETE",
+      "required_points": 2,
+      "confirmed_points": 2,
+      "sim_seconds_including_stop": 71.46,
+      "wall_seconds": 199.0335468530102,
+      "prediction_wait_s": 12.16,
+      "all_wait_s": 28.33,
+      "replans": 0,
+      "prediction_resumes": 1,
+      "observation_resumes": 1,
+      "stop_confirmed": true,
+      "independent_gate_preserved": true,
+      "prediction_gate_zero": true,
+      "owner_audit_valid": true,
+      "obstacle_contacts": {},
+      "database_unchanged": true,
+      "predictions": 174,
+      "learned_person_forecasts": 121,
+      "imm_forecasts": 119,
+      "latency_p95_ms": 45.34598929676576,
+      "cpu_mean_ms": 17.933204178160942,
+      "timeout_fraction": 0.0,
+      "risk_reasons": {
+        "PREDICTION_ODOM_FALLBACK": 167,
+        "PREDICTION_TRANSPORT_FALLBACK": 66,
+        "PREDICTED_CLEAR": 3092,
+        "PREDICTION_STALE_FALLBACK": 724,
+        "PREDICTED_CONFLICT_WAIT": 760,
+        "PREDICTED_CONFLICT_SLOW": 60
+      },
+      "fault_observed": false,
+      "fault_window_fallback": true,
+      "risk_misses": {
+        "eligible": 0,
+        "missed": 0,
+        "fraction": null,
+        "scope": "observed_future_vs_current_robot_footprint; no counterfactual guarantee"
+      },
+      "max_owned_rss_bytes": 5051105280,
+      "owned_cpu_seconds": 1514.8199999999997,
+      "nonzero_cleanup_exits": {
+        "server": -11
+      },
+      "passed": true
+    }
+  },
+  "checks": {
+    "S15-C01": "NOT_RUN",
+    "S15-C02": "NOT_RUN",
+    "S15-C03": "NOT_RUN",
+    "S15-C04": "NOT_RUN"
+  },
+  "command": [
+    "/home/ceihao/robot_project/optimization_v2/ws/src/motion_prediction/scripts/stage15.py",
+    "demo",
+    "--sim-seconds",
+    "240",
+    "--wall-timeout",
+    "600",
+    "--case",
+    "prediction_turning",
+    "--seed",
+    "41"
+  ],
+  "inference": {
+    "passed": true,
+    "scope": "S15_COMPONENT_INFERENCE_ONLY",
+    "future_prefix_invariant": true,
+    "neighbor_conditioning_changes_output": true,
+    "stop_go_changes_distribution": true,
+    "distribution_patch_equivalent": true,
+    "clock_rewind_rejected": true,
+    "probability_covariance": [
+      {
+        "model": "imm",
+        "modes": 4,
+        "minimum_eigenvalue": 0.003769136816004207,
+        "probability_sum": 1.0
+      },
+      {
+        "model": "learned",
+        "modes": 25,
+        "minimum_eigenvalue": 0.010039526796048564,
+        "probability_sum": 0.9999999199062586
+      }
+    ],
+    "first_inference_ms": 13.76890399842523,
+    "full_unused_grid_ms": 45.858562996727414,
+    "distribution_only_ms": 5.042221993790008,
+    "patch_hashes": {
+      "gmm_original": "3b991e84eb9b46a6675f0fedd03523e56da79b8e945781046f2855760d581ece",
+      "gmm_adapted": "7a94b46366e9765d08624879a5ca42782373cf1bdcb9240b4d3b6bf3fb2f763b",
+      "decoder_original": "4fe46a1d95e62f24a8664f3367bf09d1791cd2698c36fc9de1ecbc72e3528c7d",
+      "decoder_adapted": "2befb2db4d7d9d9f7d5a7f7dfb021a616138d77f05099b6ae2a04ac79037a9e8"
+    },
+    "module_keys": [
+      "PEDESTRIAN->PEDESTRIAN/edge_encoder",
+      "PEDESTRIAN/decoder/initial_h",
+      "PEDESTRIAN/decoder/proj_to_GMM_corrs",
+      "PEDESTRIAN/decoder/proj_to_GMM_log_pis",
+      "PEDESTRIAN/decoder/proj_to_GMM_log_sigmas",
+      "PEDESTRIAN/decoder/proj_to_GMM_mus",
+      "PEDESTRIAN/decoder/rnn_cell",
+      "PEDESTRIAN/decoder/state_action",
+      "PEDESTRIAN/edge_influence_encoder",
+      "PEDESTRIAN/hx_to_z",
+      "PEDESTRIAN/hxy_to_z",
+      "PEDESTRIAN/node_future_encoder",
+      "PEDESTRIAN/node_future_encoder/initial_c",
+      "PEDESTRIAN/node_future_encoder/initial_h",
+      "PEDESTRIAN/node_history_encoder",
+      "PEDESTRIAN/p_z_x"
+    ]
+  },
+  "risk_contracts": true,
+  "dataset_valid": true,
+  "dataset_manifest_sha": "cc112f12055996208293a1d071594f7d0a4eaf72892b6e71a0339180afbb922a",
+  "offline": {
+    "schema": "S15-OFFLINE-SCORES/1",
+    "scope": "actual simulated observations; observed future labels only offline; no ground-truth features",
+    "dataset_manifest_sha": "cc112f12055996208293a1d071594f7d0a4eaf72892b6e71a0339180afbb922a",
+    "no_prediction_metric": "causal CV scoring reference only; no future forecast sent to controller",
+    "summary": {
+      "train": {
+        "no_prediction": {
+          "windows": 120,
+          "weighted_ade_m": 0.09042813030808582,
+          "weighted_fde_m": 0.17241265700524608,
+          "min_ade_m": 0.09042813030808582,
+          "min_fde_m": 0.17241265700524608,
+          "mean_nll": -1.453298984772736,
+          "moment_ellipse_coverage95": 0.9989583333333333,
+          "wall_ms": 0.09768793291489904,
+          "cpu_ms": 0.09677036666670598,
+          "latency_p95_ms": 0.14667544892290607
+        },
+        "imm": {
+          "windows": 120,
+          "weighted_ade_m": 0.14493966685880658,
+          "weighted_fde_m": 0.29382730584605044,
+          "min_ade_m": 0.07087135123727799,
+          "min_fde_m": 0.13056935249359355,
+          "mean_nll": -0.630379919326148,
+          "moment_ellipse_coverage95": 1.0,
+          "wall_ms": 1.5338226749008754,
+          "cpu_ms": 1.5341025249999882,
+          "latency_p95_ms": 1.682644406537292
+        },
+        "learned": {
+          "windows": 120,
+          "weighted_ade_m": 0.4864473504829878,
+          "weighted_fde_m": 0.9736372332203286,
+          "min_ade_m": 0.16050382475525485,
+          "min_fde_m": 0.2304264756322161,
+          "mean_nll": 0.6837641293503649,
+          "moment_ellipse_coverage95": 0.765625,
+          "wall_ms": 5.895603324582528,
+          "cpu_ms": 5.89483734166667,
+          "latency_p95_ms": 6.752371043694438
+        }
+      },
+      "val": {
+        "no_prediction": {
+          "windows": 141,
+          "weighted_ade_m": 0.07820969384229076,
+          "weighted_fde_m": 0.14196922571077358,
+          "min_ade_m": 0.07820969384229076,
+          "min_fde_m": 0.14196922571077358,
+          "mean_nll": -1.5210578073436314,
+          "moment_ellipse_coverage95": 1.0,
+          "wall_ms": 0.10545346749688875,
+          "cpu_ms": 0.10451402127661798,
+          "latency_p95_ms": 0.18187299428973347
+        },
+        "imm": {
+          "windows": 141,
+          "weighted_ade_m": 0.1434612271309605,
+          "weighted_fde_m": 0.2906618216933066,
+          "min_ade_m": 0.059992469884258666,
+          "min_fde_m": 0.10439752320475604,
+          "mean_nll": -0.6564049604156734,
+          "moment_ellipse_coverage95": 1.0,
+          "wall_ms": 1.5614705960305924,
+          "cpu_ms": 1.5615912624113537,
+          "latency_p95_ms": 2.0972640049876645
+        },
+        "learned": {
+          "windows": 141,
+          "weighted_ade_m": 0.5769273582237204,
+          "weighted_fde_m": 1.150597581883893,
+          "min_ade_m": 0.1662171445724925,
+          "min_fde_m": 0.23631053729001172,
+          "mean_nll": 0.9521353682257684,
+          "moment_ellipse_coverage95": 0.6781914893617021,
+          "wall_ms": 6.666361665557938,
+          "cpu_ms": 6.664657007092112,
+          "latency_p95_ms": 7.039117001113482
+        }
+      },
+      "test": {
+        "no_prediction": {
+          "windows": 128,
+          "weighted_ade_m": 0.08281379218621693,
+          "weighted_fde_m": 0.15742922991097613,
+          "min_ade_m": 0.08281379218621693,
+          "min_fde_m": 0.15742922991097613,
+          "mean_nll": -1.519564974419088,
+          "moment_ellipse_coverage95": 1.0,
+          "wall_ms": 0.09845920283169107,
+          "cpu_ms": 0.09739763281245428,
+          "latency_p95_ms": 0.16761019651312375
+        },
+        "imm": {
+          "windows": 128,
+          "weighted_ade_m": 0.13176441529448124,
+          "weighted_fde_m": 0.2681464544539237,
+          "min_ade_m": 0.05737045059492281,
+          "min_fde_m": 0.10034577077539025,
+          "mean_nll": -0.6596952170233045,
+          "moment_ellipse_coverage95": 1.0,
+          "wall_ms": 1.5635644456324371,
+          "cpu_ms": 1.5625677890625385,
+          "latency_p95_ms": 2.094480644154828
+        },
+        "learned": {
+          "windows": 128,
+          "weighted_ade_m": 0.5626680925681811,
+          "weighted_fde_m": 1.1166461178087634,
+          "min_ade_m": 0.14618881855075952,
+          "min_fde_m": 0.20906094151688148,
+          "mean_nll": 0.7102086140374414,
+          "moment_ellipse_coverage95": 0.69921875,
+          "wall_ms": 7.500238671923398,
+          "cpu_ms": 7.494079867187475,
+          "latency_p95_ms": 7.286572401062585
+        }
+      }
+    },
+    "calibration_diagnostic": {
+      "no_prediction": {
+        "train_only_moment_scale": 0.3998070496954415,
+        "applied_online": false,
+        "val_coverage95": 0.975177304964539,
+        "test_coverage95": 0.98828125
+      },
+      "imm": {
+        "train_only_moment_scale": 0.08995289068705323,
+        "applied_online": false,
+        "val_coverage95": 0.9583333333333334,
+        "test_coverage95": 0.9619140625
+      },
+      "learned": {
+        "train_only_moment_scale": 2.7429226178015544,
+        "applied_online": false,
+        "val_coverage95": 0.9406028368794326,
+        "test_coverage95": 0.9384765625
+      }
+    },
+    "episodes": [
+      {
+        "episode_id": "train_turning",
+        "split": "train",
+        "windows": 33,
+        "source_sha": "4e4e66f10ec9ee03463de52c4abc6597c9b5fb3cc11df1bf1e176a5e016037cd"
+      },
+      {
+        "episode_id": "train_stop_go",
+        "split": "train",
+        "windows": 16,
+        "source_sha": "2cd3157e4ec8c8a94c251b3ce415f23fb72a4ac2c768a8d043b49ed7897535fd"
+      },
+      {
+        "episode_id": "train_yield",
+        "split": "train",
+        "windows": 55,
+        "source_sha": "ae519a0765ce4fcbb98c660e02483d67c59b76dcd11bcc4becb9fd46d803416e"
+      },
+      {
+        "episode_id": "train_occlusion",
+        "split": "train",
+        "windows": 16,
+        "source_sha": "70bd435871e30cd5416a4d4d95b070aae3db188e8570c2a25ab1b826e8736102"
+      },
+      {
+        "episode_id": "val_turning",
+        "split": "val",
+        "windows": 31,
+        "source_sha": "5ef33f203f31cb2e791aebf0914ed27e0f806e1b2d1955954a9709b50ef481fe"
+      },
+      {
+        "episode_id": "val_stop_go",
+        "split": "val",
+        "windows": 24,
+        "source_sha": "de5dc63faf62cf866d939042317e34386f07d4d0a6b2df8019ac72716137ff52"
+      },
+      {
+        "episode_id": "val_yield",
+        "split": "val",
+        "windows": 61,
+        "source_sha": "538a707c07771f56ae3c5c6ba6cda12a7e552f68d7ea9c62984a16e510c89cdb"
+      },
+      {
+        "episode_id": "val_occlusion",
+        "split": "val",
+        "windows": 25,
+        "source_sha": "89c55691da084cbd65d6adebdbca1d2cb99e5d1229ebcd8068dadcaaa8cb21d5"
+      },
+      {
+        "episode_id": "test_turning",
+        "split": "test",
+        "windows": 32,
+        "source_sha": "1e03c6a0d0b79571eb6697978b48911ab34e74322f6afa3a613ce13ba4f2b4c6"
+      },
+      {
+        "episode_id": "test_stop_go",
+        "split": "test",
+        "windows": 20,
+        "source_sha": "5548bc6fa011b09068e3a57f3d4b38eb1960b3c9162ef08d1b52bcb129537805"
+      },
+      {
+        "episode_id": "test_yield",
+        "split": "test",
+        "windows": 56,
+        "source_sha": "ce97e507afcf00dd668bdfd1d425a402eed8408670f0a89b5c0f52d3c7a3c274"
+      },
+      {
+        "episode_id": "test_occlusion",
+        "split": "test",
+        "windows": 20,
+        "source_sha": "746820a2df419a138746b431ed68a1a38e9ed4e2f4ddc90aa4c22ead778186a8"
+      }
+    ],
+    "network_finetuned": false
+  },
+  "wall_seconds": 259.7528491760022,
+  "next_step_verdict": "暂不能凭本轮进入 S16"
+}

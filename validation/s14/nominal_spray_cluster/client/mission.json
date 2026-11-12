@@ -1,0 +1,304 @@
+{
+  "t": 1279.213,
+  "state": "SUCCEEDED",
+  "reason": "FEEDBACK_COMPLETE",
+  "case": "nominal_spray_cluster",
+  "scope": "FULL_CLUSTER",
+  "cluster": "A1",
+  "plan_revision": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3",
+  "required_points": 21,
+  "confirmed_points": 21,
+  "remaining_point_keys": [],
+  "required_area_m2": 0.0,
+  "confirmed_area_m2": 0.0,
+  "coverage_fraction": null,
+  "done": [
+    "A1_3",
+    "A1_7",
+    "A1_11",
+    "A1_15",
+    "A1_19",
+    "A1_23",
+    "A1_25",
+    "A1_27",
+    "A1_31",
+    "A1_35",
+    "A1_39",
+    "A1_43",
+    "A1_45",
+    "A1_47",
+    "A1_51",
+    "A1_55",
+    "A1_59",
+    "A1_63",
+    "A1_67",
+    "A1_71",
+    "A1_73",
+    "A1_return"
+  ],
+  "pending": [],
+  "deferred": [],
+  "tool_results": [
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_3",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.000000000000007,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_7",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.037000000000006,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_11",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0200000000000102,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_15",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0209999999999866,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_19",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0360000000000014,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_23",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0360000000000014,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_25",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0360000000000014,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_27",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0360000000000014,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_31",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0850000000000364,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_35",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_39",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0000000000002274,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_43",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0000000000001137,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_45",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_47",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_51",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_55",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_59",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0000000000002274,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_63",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_67",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_71",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0000000000002274,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:A1_73",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.0,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    }
+  ],
+  "residual": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "credit": {
+    "type": "GeometryCollection",
+    "geometries": []
+  },
+  "uncertainty_pending": false
+}

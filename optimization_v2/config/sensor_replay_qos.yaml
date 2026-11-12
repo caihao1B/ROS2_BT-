@@ -1,0 +1,17 @@
+# The minimal SequentialWriter records CDR and types, not DDS discovery QoS.
+# Restore latched calibration/TF behavior explicitly during isolated replay.
+/tf_static:
+  reliability: reliable
+  durability: transient_local
+  history: keep_last
+  depth: 1
+/s04/stereo/left/camera_info:
+  reliability: reliable
+  durability: transient_local
+  history: keep_last
+  depth: 1
+/s04/stereo/right/camera_info:
+  reliability: reliable
+  durability: transient_local
+  history: keep_last
+  depth: 1

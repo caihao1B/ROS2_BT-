@@ -1,0 +1,4072 @@
+[
+  {
+    "id": "point_14_11",
+    "xy": [
+      29.0,
+      23.0
+    ],
+    "unit": 1,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_10_12",
+    "xy": [
+      21.0,
+      25.0
+    ],
+    "unit": 18,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_11_12",
+    "xy": [
+      23.0,
+      25.0
+    ],
+    "unit": 20,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_12_12",
+    "xy": [
+      25.0,
+      25.0
+    ],
+    "unit": 22,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_13_12",
+    "xy": [
+      27.0,
+      25.0
+    ],
+    "unit": 24,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_14_12",
+    "xy": [
+      29.0,
+      25.0
+    ],
+    "unit": 26,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_15_12",
+    "xy": [
+      31.0,
+      25.0
+    ],
+    "unit": 28,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_16_12",
+    "xy": [
+      33.0,
+      25.0
+    ],
+    "unit": 30,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_17_12",
+    "xy": [
+      35.0,
+      25.0
+    ],
+    "unit": 32,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_18_12",
+    "xy": [
+      37.0,
+      25.0
+    ],
+    "unit": 34,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_19_12",
+    "xy": [
+      39.0,
+      25.0
+    ],
+    "unit": 36,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_12",
+    "xy": [
+      41.0,
+      25.0
+    ],
+    "unit": 38,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_7_13",
+    "xy": [
+      15.0,
+      27.0
+    ],
+    "unit": 74,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_8_13",
+    "xy": [
+      17.0,
+      27.0
+    ],
+    "unit": 76,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_9_13",
+    "xy": [
+      19.0,
+      27.0
+    ],
+    "unit": 78,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_10_13",
+    "xy": [
+      21.0,
+      27.0
+    ],
+    "unit": 80,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_11_13",
+    "xy": [
+      23.0,
+      27.0
+    ],
+    "unit": 82,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_12_13",
+    "xy": [
+      25.0,
+      27.0
+    ],
+    "unit": 84,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_13_13",
+    "xy": [
+      27.0,
+      27.0
+    ],
+    "unit": 86,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_14_13",
+    "xy": [
+      29.0,
+      27.0
+    ],
+    "unit": 88,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_15_13",
+    "xy": [
+      31.0,
+      27.0
+    ],
+    "unit": 90,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_16_13",
+    "xy": [
+      33.0,
+      27.0
+    ],
+    "unit": 92,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_17_13",
+    "xy": [
+      35.0,
+      27.0
+    ],
+    "unit": 94,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_18_13",
+    "xy": [
+      37.0,
+      27.0
+    ],
+    "unit": 96,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_19_13",
+    "xy": [
+      39.0,
+      27.0
+    ],
+    "unit": 98,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_13",
+    "xy": [
+      41.0,
+      27.0
+    ],
+    "unit": 100,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_21_13",
+    "xy": [
+      43.0,
+      27.0
+    ],
+    "unit": 102,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_22_13",
+    "xy": [
+      45.0,
+      27.0
+    ],
+    "unit": 104,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_23_13",
+    "xy": [
+      47.0,
+      27.0
+    ],
+    "unit": 106,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_24_13",
+    "xy": [
+      49.0,
+      27.0
+    ],
+    "unit": 108,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_6_14",
+    "xy": [
+      13.0,
+      29.0
+    ],
+    "unit": 151,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_7_14",
+    "xy": [
+      15.0,
+      29.0
+    ],
+    "unit": 153,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_8_14",
+    "xy": [
+      17.0,
+      29.0
+    ],
+    "unit": 155,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_9_14",
+    "xy": [
+      19.0,
+      29.0
+    ],
+    "unit": 157,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_10_14",
+    "xy": [
+      21.0,
+      29.0
+    ],
+    "unit": 159,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_11_14",
+    "xy": [
+      23.0,
+      29.0
+    ],
+    "unit": 161,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_12_14",
+    "xy": [
+      25.0,
+      29.0
+    ],
+    "unit": 163,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_13_14",
+    "xy": [
+      27.0,
+      29.0
+    ],
+    "unit": 165,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_14_14",
+    "xy": [
+      29.0,
+      29.0
+    ],
+    "unit": 167,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_15_14",
+    "xy": [
+      31.0,
+      29.0
+    ],
+    "unit": 169,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_16_14",
+    "xy": [
+      33.0,
+      29.0
+    ],
+    "unit": 171,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_17_14",
+    "xy": [
+      35.0,
+      29.0
+    ],
+    "unit": 173,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_18_14",
+    "xy": [
+      37.0,
+      29.0
+    ],
+    "unit": 175,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_19_14",
+    "xy": [
+      39.0,
+      29.0
+    ],
+    "unit": 177,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_14",
+    "xy": [
+      41.0,
+      29.0
+    ],
+    "unit": 179,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_21_14",
+    "xy": [
+      43.0,
+      29.0
+    ],
+    "unit": 181,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_22_14",
+    "xy": [
+      45.0,
+      29.0
+    ],
+    "unit": 183,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_23_14",
+    "xy": [
+      47.0,
+      29.0
+    ],
+    "unit": 185,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_24_14",
+    "xy": [
+      49.0,
+      29.0
+    ],
+    "unit": 187,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_7_15",
+    "xy": [
+      15.0,
+      31.0
+    ],
+    "unit": 232,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_8_15",
+    "xy": [
+      17.0,
+      31.0
+    ],
+    "unit": 234,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_9_15",
+    "xy": [
+      19.0,
+      31.0
+    ],
+    "unit": 236,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_10_15",
+    "xy": [
+      21.0,
+      31.0
+    ],
+    "unit": 238,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_11_15",
+    "xy": [
+      23.0,
+      31.0
+    ],
+    "unit": 240,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_12_15",
+    "xy": [
+      25.0,
+      31.0
+    ],
+    "unit": 242,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_13_15",
+    "xy": [
+      27.0,
+      31.0
+    ],
+    "unit": 244,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_14_15",
+    "xy": [
+      29.0,
+      31.0
+    ],
+    "unit": 246,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_15_15",
+    "xy": [
+      31.0,
+      31.0
+    ],
+    "unit": 248,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_16_15",
+    "xy": [
+      33.0,
+      31.0
+    ],
+    "unit": 250,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_17_15",
+    "xy": [
+      35.0,
+      31.0
+    ],
+    "unit": 252,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_18_15",
+    "xy": [
+      37.0,
+      31.0
+    ],
+    "unit": 254,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_19_15",
+    "xy": [
+      39.0,
+      31.0
+    ],
+    "unit": 256,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_15",
+    "xy": [
+      41.0,
+      31.0
+    ],
+    "unit": 258,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_21_15",
+    "xy": [
+      43.0,
+      31.0
+    ],
+    "unit": 260,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_22_15",
+    "xy": [
+      45.0,
+      31.0
+    ],
+    "unit": 262,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_23_15",
+    "xy": [
+      47.0,
+      31.0
+    ],
+    "unit": 264,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_24_15",
+    "xy": [
+      49.0,
+      31.0
+    ],
+    "unit": 266,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_25_15",
+    "xy": [
+      51.0,
+      31.0
+    ],
+    "unit": 268,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_7_16",
+    "xy": [
+      15.0,
+      33.0
+    ],
+    "unit": 311,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_8_16",
+    "xy": [
+      17.0,
+      33.0
+    ],
+    "unit": 313,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_9_16",
+    "xy": [
+      19.0,
+      33.0
+    ],
+    "unit": 315,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_10_16",
+    "xy": [
+      21.0,
+      33.0
+    ],
+    "unit": 317,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_11_16",
+    "xy": [
+      23.0,
+      33.0
+    ],
+    "unit": 319,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_12_16",
+    "xy": [
+      25.0,
+      33.0
+    ],
+    "unit": 321,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_13_16",
+    "xy": [
+      27.0,
+      33.0
+    ],
+    "unit": 323,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_14_16",
+    "xy": [
+      29.0,
+      33.0
+    ],
+    "unit": 325,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_15_16",
+    "xy": [
+      31.0,
+      33.0
+    ],
+    "unit": 327,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_16_16",
+    "xy": [
+      33.0,
+      33.0
+    ],
+    "unit": 329,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_17_16",
+    "xy": [
+      35.0,
+      33.0
+    ],
+    "unit": 331,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_18_16",
+    "xy": [
+      37.0,
+      33.0
+    ],
+    "unit": 333,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_19_16",
+    "xy": [
+      39.0,
+      33.0
+    ],
+    "unit": 335,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_16",
+    "xy": [
+      41.0,
+      33.0
+    ],
+    "unit": 337,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_21_16",
+    "xy": [
+      43.0,
+      33.0
+    ],
+    "unit": 339,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_22_16",
+    "xy": [
+      45.0,
+      33.0
+    ],
+    "unit": 341,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_23_16",
+    "xy": [
+      47.0,
+      33.0
+    ],
+    "unit": 343,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_24_16",
+    "xy": [
+      49.0,
+      33.0
+    ],
+    "unit": 345,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_25_16",
+    "xy": [
+      51.0,
+      33.0
+    ],
+    "unit": 347,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_8_17",
+    "xy": [
+      17.0,
+      35.0
+    ],
+    "unit": 391,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_9_17",
+    "xy": [
+      19.0,
+      35.0
+    ],
+    "unit": 393,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_10_17",
+    "xy": [
+      21.0,
+      35.0
+    ],
+    "unit": 395,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_11_17",
+    "xy": [
+      23.0,
+      35.0
+    ],
+    "unit": 397,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_12_17",
+    "xy": [
+      25.0,
+      35.0
+    ],
+    "unit": 399,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_13_17",
+    "xy": [
+      27.0,
+      35.0
+    ],
+    "unit": 401,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_14_17",
+    "xy": [
+      29.0,
+      35.0
+    ],
+    "unit": 403,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_15_17",
+    "xy": [
+      31.0,
+      35.0
+    ],
+    "unit": 405,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_16_17",
+    "xy": [
+      33.0,
+      35.0
+    ],
+    "unit": 407,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_17_17",
+    "xy": [
+      35.0,
+      35.0
+    ],
+    "unit": 409,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_18_17",
+    "xy": [
+      37.0,
+      35.0
+    ],
+    "unit": 411,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_19_17",
+    "xy": [
+      39.0,
+      35.0
+    ],
+    "unit": 413,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_17",
+    "xy": [
+      41.0,
+      35.0
+    ],
+    "unit": 415,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_21_17",
+    "xy": [
+      43.0,
+      35.0
+    ],
+    "unit": 417,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_22_17",
+    "xy": [
+      45.0,
+      35.0
+    ],
+    "unit": 419,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_23_17",
+    "xy": [
+      47.0,
+      35.0
+    ],
+    "unit": 421,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_24_17",
+    "xy": [
+      49.0,
+      35.0
+    ],
+    "unit": 423,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_25_17",
+    "xy": [
+      51.0,
+      35.0
+    ],
+    "unit": 425,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_26_17",
+    "xy": [
+      53.0,
+      35.0
+    ],
+    "unit": 427,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_9_18",
+    "xy": [
+      19.0,
+      37.0
+    ],
+    "unit": 471,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_18",
+    "xy": [
+      21.0,
+      37.0
+    ],
+    "unit": 473,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_18",
+    "xy": [
+      23.0,
+      37.0
+    ],
+    "unit": 475,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_18",
+    "xy": [
+      25.0,
+      37.0
+    ],
+    "unit": 477,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_18",
+    "xy": [
+      27.0,
+      37.0
+    ],
+    "unit": 479,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_18",
+    "xy": [
+      29.0,
+      37.0
+    ],
+    "unit": 481,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_18",
+    "xy": [
+      31.0,
+      37.0
+    ],
+    "unit": 483,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_18",
+    "xy": [
+      33.0,
+      37.0
+    ],
+    "unit": 485,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_17_18",
+    "xy": [
+      35.0,
+      37.0
+    ],
+    "unit": 487,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_18_18",
+    "xy": [
+      37.0,
+      37.0
+    ],
+    "unit": 489,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_19_18",
+    "xy": [
+      39.0,
+      37.0
+    ],
+    "unit": 491,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_18",
+    "xy": [
+      41.0,
+      37.0
+    ],
+    "unit": 493,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_21_18",
+    "xy": [
+      43.0,
+      37.0
+    ],
+    "unit": 495,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_22_18",
+    "xy": [
+      45.0,
+      37.0
+    ],
+    "unit": 497,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_23_18",
+    "xy": [
+      47.0,
+      37.0
+    ],
+    "unit": 499,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_24_18",
+    "xy": [
+      49.0,
+      37.0
+    ],
+    "unit": 501,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_25_18",
+    "xy": [
+      51.0,
+      37.0
+    ],
+    "unit": 503,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_26_18",
+    "xy": [
+      53.0,
+      37.0
+    ],
+    "unit": 505,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_9_19",
+    "xy": [
+      19.0,
+      39.0
+    ],
+    "unit": 548,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_19",
+    "xy": [
+      21.0,
+      39.0
+    ],
+    "unit": 550,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_19",
+    "xy": [
+      23.0,
+      39.0
+    ],
+    "unit": 552,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_19",
+    "xy": [
+      25.0,
+      39.0
+    ],
+    "unit": 554,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_19",
+    "xy": [
+      27.0,
+      39.0
+    ],
+    "unit": 556,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_19",
+    "xy": [
+      29.0,
+      39.0
+    ],
+    "unit": 558,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_19",
+    "xy": [
+      31.0,
+      39.0
+    ],
+    "unit": 560,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_19",
+    "xy": [
+      33.0,
+      39.0
+    ],
+    "unit": 562,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_17_19",
+    "xy": [
+      35.0,
+      39.0
+    ],
+    "unit": 564,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_18_19",
+    "xy": [
+      37.0,
+      39.0
+    ],
+    "unit": 566,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_19_19",
+    "xy": [
+      39.0,
+      39.0
+    ],
+    "unit": 568,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_19",
+    "xy": [
+      41.0,
+      39.0
+    ],
+    "unit": 570,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_21_19",
+    "xy": [
+      43.0,
+      39.0
+    ],
+    "unit": 572,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_22_19",
+    "xy": [
+      45.0,
+      39.0
+    ],
+    "unit": 574,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_23_19",
+    "xy": [
+      47.0,
+      39.0
+    ],
+    "unit": 576,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_24_19",
+    "xy": [
+      49.0,
+      39.0
+    ],
+    "unit": 578,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_25_19",
+    "xy": [
+      51.0,
+      39.0
+    ],
+    "unit": 580,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_26_19",
+    "xy": [
+      53.0,
+      39.0
+    ],
+    "unit": 582,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_27_19",
+    "xy": [
+      55.0,
+      39.0
+    ],
+    "unit": 584,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_10_20",
+    "xy": [
+      21.0,
+      41.0
+    ],
+    "unit": 626,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_20",
+    "xy": [
+      23.0,
+      41.0
+    ],
+    "unit": 628,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_20",
+    "xy": [
+      25.0,
+      41.0
+    ],
+    "unit": 630,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_20",
+    "xy": [
+      27.0,
+      41.0
+    ],
+    "unit": 632,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_20",
+    "xy": [
+      29.0,
+      41.0
+    ],
+    "unit": 634,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_20",
+    "xy": [
+      31.0,
+      41.0
+    ],
+    "unit": 636,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_20",
+    "xy": [
+      33.0,
+      41.0
+    ],
+    "unit": 638,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_17_20",
+    "xy": [
+      35.0,
+      41.0
+    ],
+    "unit": 640,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_18_20",
+    "xy": [
+      37.0,
+      41.0
+    ],
+    "unit": 642,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_19_20",
+    "xy": [
+      39.0,
+      41.0
+    ],
+    "unit": 644,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_20",
+    "xy": [
+      41.0,
+      41.0
+    ],
+    "unit": 646,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_21_20",
+    "xy": [
+      43.0,
+      41.0
+    ],
+    "unit": 648,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_22_20",
+    "xy": [
+      45.0,
+      41.0
+    ],
+    "unit": 650,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_23_20",
+    "xy": [
+      47.0,
+      41.0
+    ],
+    "unit": 652,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_24_20",
+    "xy": [
+      49.0,
+      41.0
+    ],
+    "unit": 654,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_25_20",
+    "xy": [
+      51.0,
+      41.0
+    ],
+    "unit": 656,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_26_20",
+    "xy": [
+      53.0,
+      41.0
+    ],
+    "unit": 658,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_27_20",
+    "xy": [
+      55.0,
+      41.0
+    ],
+    "unit": 660,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_10_21",
+    "xy": [
+      21.0,
+      43.0
+    ],
+    "unit": 699,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_21",
+    "xy": [
+      23.0,
+      43.0
+    ],
+    "unit": 701,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_21",
+    "xy": [
+      25.0,
+      43.0
+    ],
+    "unit": 703,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_21",
+    "xy": [
+      27.0,
+      43.0
+    ],
+    "unit": 705,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_21",
+    "xy": [
+      29.0,
+      43.0
+    ],
+    "unit": 707,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_21",
+    "xy": [
+      31.0,
+      43.0
+    ],
+    "unit": 709,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_21",
+    "xy": [
+      33.0,
+      43.0
+    ],
+    "unit": 711,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_17_21",
+    "xy": [
+      35.0,
+      43.0
+    ],
+    "unit": 713,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_18_21",
+    "xy": [
+      37.0,
+      43.0
+    ],
+    "unit": 715,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_19_21",
+    "xy": [
+      39.0,
+      43.0
+    ],
+    "unit": 717,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_20_21",
+    "xy": [
+      41.0,
+      43.0
+    ],
+    "unit": 719,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_21_21",
+    "xy": [
+      43.0,
+      43.0
+    ],
+    "unit": 721,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_22_21",
+    "xy": [
+      45.0,
+      43.0
+    ],
+    "unit": 723,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_23_21",
+    "xy": [
+      47.0,
+      43.0
+    ],
+    "unit": 725,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_24_21",
+    "xy": [
+      49.0,
+      43.0
+    ],
+    "unit": 727,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_25_21",
+    "xy": [
+      51.0,
+      43.0
+    ],
+    "unit": 729,
+    "clearance_screen": "PASS",
+    "cluster": 1
+  },
+  {
+    "id": "point_26_21",
+    "xy": [
+      53.0,
+      43.0
+    ],
+    "unit": 731,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 1
+  },
+  {
+    "id": "point_10_22",
+    "xy": [
+      21.0,
+      45.0
+    ],
+    "unit": 770,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_22",
+    "xy": [
+      23.0,
+      45.0
+    ],
+    "unit": 772,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_22",
+    "xy": [
+      25.0,
+      45.0
+    ],
+    "unit": 774,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_22",
+    "xy": [
+      27.0,
+      45.0
+    ],
+    "unit": 776,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_22",
+    "xy": [
+      29.0,
+      45.0
+    ],
+    "unit": 778,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_22",
+    "xy": [
+      31.0,
+      45.0
+    ],
+    "unit": 780,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_22",
+    "xy": [
+      33.0,
+      45.0
+    ],
+    "unit": 782,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_17_22",
+    "xy": [
+      35.0,
+      45.0
+    ],
+    "unit": 784,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_18_22",
+    "xy": [
+      37.0,
+      45.0
+    ],
+    "unit": 786,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_22",
+    "xy": [
+      39.0,
+      45.0
+    ],
+    "unit": 788,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_22",
+    "xy": [
+      41.0,
+      45.0
+    ],
+    "unit": 790,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_22",
+    "xy": [
+      43.0,
+      45.0
+    ],
+    "unit": 792,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_22",
+    "xy": [
+      45.0,
+      45.0
+    ],
+    "unit": 794,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_22",
+    "xy": [
+      47.0,
+      45.0
+    ],
+    "unit": 796,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_22",
+    "xy": [
+      49.0,
+      45.0
+    ],
+    "unit": 798,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_22",
+    "xy": [
+      51.0,
+      45.0
+    ],
+    "unit": 800,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_9_23",
+    "xy": [
+      19.0,
+      47.0
+    ],
+    "unit": 840,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_23",
+    "xy": [
+      21.0,
+      47.0
+    ],
+    "unit": 842,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_23",
+    "xy": [
+      23.0,
+      47.0
+    ],
+    "unit": 844,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_23",
+    "xy": [
+      25.0,
+      47.0
+    ],
+    "unit": 846,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_23",
+    "xy": [
+      27.0,
+      47.0
+    ],
+    "unit": 848,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_23",
+    "xy": [
+      29.0,
+      47.0
+    ],
+    "unit": 850,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_23",
+    "xy": [
+      31.0,
+      47.0
+    ],
+    "unit": 852,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_23",
+    "xy": [
+      33.0,
+      47.0
+    ],
+    "unit": 854,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_17_23",
+    "xy": [
+      35.0,
+      47.0
+    ],
+    "unit": 856,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_23",
+    "xy": [
+      37.0,
+      47.0
+    ],
+    "unit": 858,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_23",
+    "xy": [
+      39.0,
+      47.0
+    ],
+    "unit": 860,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_23",
+    "xy": [
+      41.0,
+      47.0
+    ],
+    "unit": 862,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_23",
+    "xy": [
+      43.0,
+      47.0
+    ],
+    "unit": 864,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_23",
+    "xy": [
+      45.0,
+      47.0
+    ],
+    "unit": 866,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_23",
+    "xy": [
+      47.0,
+      47.0
+    ],
+    "unit": 868,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_23",
+    "xy": [
+      49.0,
+      47.0
+    ],
+    "unit": 870,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_23",
+    "xy": [
+      51.0,
+      47.0
+    ],
+    "unit": 872,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_8_24",
+    "xy": [
+      17.0,
+      49.0
+    ],
+    "unit": 912,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_9_24",
+    "xy": [
+      19.0,
+      49.0
+    ],
+    "unit": 914,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_24",
+    "xy": [
+      21.0,
+      49.0
+    ],
+    "unit": 916,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_24",
+    "xy": [
+      23.0,
+      49.0
+    ],
+    "unit": 918,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_24",
+    "xy": [
+      25.0,
+      49.0
+    ],
+    "unit": 920,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_24",
+    "xy": [
+      27.0,
+      49.0
+    ],
+    "unit": 922,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_24",
+    "xy": [
+      29.0,
+      49.0
+    ],
+    "unit": 924,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_24",
+    "xy": [
+      31.0,
+      49.0
+    ],
+    "unit": 926,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_24",
+    "xy": [
+      33.0,
+      49.0
+    ],
+    "unit": 928,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_17_24",
+    "xy": [
+      35.0,
+      49.0
+    ],
+    "unit": 930,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_24",
+    "xy": [
+      37.0,
+      49.0
+    ],
+    "unit": 932,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_24",
+    "xy": [
+      39.0,
+      49.0
+    ],
+    "unit": 934,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_24",
+    "xy": [
+      41.0,
+      49.0
+    ],
+    "unit": 936,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_24",
+    "xy": [
+      43.0,
+      49.0
+    ],
+    "unit": 938,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_24",
+    "xy": [
+      45.0,
+      49.0
+    ],
+    "unit": 940,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_24",
+    "xy": [
+      47.0,
+      49.0
+    ],
+    "unit": 942,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_24",
+    "xy": [
+      49.0,
+      49.0
+    ],
+    "unit": 944,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_7_25",
+    "xy": [
+      15.0,
+      51.0
+    ],
+    "unit": 987,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_8_25",
+    "xy": [
+      17.0,
+      51.0
+    ],
+    "unit": 989,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_9_25",
+    "xy": [
+      19.0,
+      51.0
+    ],
+    "unit": 991,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_25",
+    "xy": [
+      21.0,
+      51.0
+    ],
+    "unit": 993,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_25",
+    "xy": [
+      23.0,
+      51.0
+    ],
+    "unit": 995,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_25",
+    "xy": [
+      25.0,
+      51.0
+    ],
+    "unit": 997,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_25",
+    "xy": [
+      27.0,
+      51.0
+    ],
+    "unit": 999,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_25",
+    "xy": [
+      29.0,
+      51.0
+    ],
+    "unit": 1001,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_25",
+    "xy": [
+      31.0,
+      51.0
+    ],
+    "unit": 1003,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_25",
+    "xy": [
+      33.0,
+      51.0
+    ],
+    "unit": 1005,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_17_25",
+    "xy": [
+      35.0,
+      51.0
+    ],
+    "unit": 1007,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_25",
+    "xy": [
+      37.0,
+      51.0
+    ],
+    "unit": 1009,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_25",
+    "xy": [
+      39.0,
+      51.0
+    ],
+    "unit": 1011,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_25",
+    "xy": [
+      41.0,
+      51.0
+    ],
+    "unit": 1013,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_25",
+    "xy": [
+      43.0,
+      51.0
+    ],
+    "unit": 1015,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_25",
+    "xy": [
+      45.0,
+      51.0
+    ],
+    "unit": 1017,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_25",
+    "xy": [
+      47.0,
+      51.0
+    ],
+    "unit": 1019,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_25",
+    "xy": [
+      49.0,
+      51.0
+    ],
+    "unit": 1021,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_25",
+    "xy": [
+      51.0,
+      51.0
+    ],
+    "unit": 1023,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_7_26",
+    "xy": [
+      15.0,
+      53.0
+    ],
+    "unit": 1065,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_8_26",
+    "xy": [
+      17.0,
+      53.0
+    ],
+    "unit": 1067,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_9_26",
+    "xy": [
+      19.0,
+      53.0
+    ],
+    "unit": 1069,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_26",
+    "xy": [
+      21.0,
+      53.0
+    ],
+    "unit": 1071,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_26",
+    "xy": [
+      23.0,
+      53.0
+    ],
+    "unit": 1073,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_26",
+    "xy": [
+      25.0,
+      53.0
+    ],
+    "unit": 1075,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_26",
+    "xy": [
+      27.0,
+      53.0
+    ],
+    "unit": 1077,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_26",
+    "xy": [
+      29.0,
+      53.0
+    ],
+    "unit": 1079,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_26",
+    "xy": [
+      31.0,
+      53.0
+    ],
+    "unit": 1081,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_26",
+    "xy": [
+      33.0,
+      53.0
+    ],
+    "unit": 1083,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_17_26",
+    "xy": [
+      35.0,
+      53.0
+    ],
+    "unit": 1085,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_26",
+    "xy": [
+      37.0,
+      53.0
+    ],
+    "unit": 1087,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_26",
+    "xy": [
+      39.0,
+      53.0
+    ],
+    "unit": 1089,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_26",
+    "xy": [
+      41.0,
+      53.0
+    ],
+    "unit": 1091,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_26",
+    "xy": [
+      43.0,
+      53.0
+    ],
+    "unit": 1093,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_26",
+    "xy": [
+      45.0,
+      53.0
+    ],
+    "unit": 1095,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_26",
+    "xy": [
+      47.0,
+      53.0
+    ],
+    "unit": 1097,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_26",
+    "xy": [
+      49.0,
+      53.0
+    ],
+    "unit": 1099,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_26",
+    "xy": [
+      51.0,
+      53.0
+    ],
+    "unit": 1101,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_7_27",
+    "xy": [
+      15.0,
+      55.0
+    ],
+    "unit": 1143,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_8_27",
+    "xy": [
+      17.0,
+      55.0
+    ],
+    "unit": 1145,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_9_27",
+    "xy": [
+      19.0,
+      55.0
+    ],
+    "unit": 1147,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_27",
+    "xy": [
+      21.0,
+      55.0
+    ],
+    "unit": 1149,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_27",
+    "xy": [
+      23.0,
+      55.0
+    ],
+    "unit": 1151,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_27",
+    "xy": [
+      25.0,
+      55.0
+    ],
+    "unit": 1153,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_27",
+    "xy": [
+      27.0,
+      55.0
+    ],
+    "unit": 1155,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_27",
+    "xy": [
+      29.0,
+      55.0
+    ],
+    "unit": 1157,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_27",
+    "xy": [
+      31.0,
+      55.0
+    ],
+    "unit": 1159,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_27",
+    "xy": [
+      33.0,
+      55.0
+    ],
+    "unit": 1161,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_17_27",
+    "xy": [
+      35.0,
+      55.0
+    ],
+    "unit": 1163,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_27",
+    "xy": [
+      37.0,
+      55.0
+    ],
+    "unit": 1165,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_27",
+    "xy": [
+      39.0,
+      55.0
+    ],
+    "unit": 1167,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_27",
+    "xy": [
+      41.0,
+      55.0
+    ],
+    "unit": 1169,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_27",
+    "xy": [
+      43.0,
+      55.0
+    ],
+    "unit": 1171,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_27",
+    "xy": [
+      45.0,
+      55.0
+    ],
+    "unit": 1173,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_27",
+    "xy": [
+      47.0,
+      55.0
+    ],
+    "unit": 1175,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_27",
+    "xy": [
+      49.0,
+      55.0
+    ],
+    "unit": 1177,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_27",
+    "xy": [
+      51.0,
+      55.0
+    ],
+    "unit": 1179,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_7_28",
+    "xy": [
+      15.0,
+      57.0
+    ],
+    "unit": 1221,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_8_28",
+    "xy": [
+      17.0,
+      57.0
+    ],
+    "unit": 1223,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_9_28",
+    "xy": [
+      19.0,
+      57.0
+    ],
+    "unit": 1225,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_28",
+    "xy": [
+      21.0,
+      57.0
+    ],
+    "unit": 1227,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_28",
+    "xy": [
+      23.0,
+      57.0
+    ],
+    "unit": 1229,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_28",
+    "xy": [
+      25.0,
+      57.0
+    ],
+    "unit": 1231,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_28",
+    "xy": [
+      27.0,
+      57.0
+    ],
+    "unit": 1233,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_28",
+    "xy": [
+      29.0,
+      57.0
+    ],
+    "unit": 1235,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_28",
+    "xy": [
+      31.0,
+      57.0
+    ],
+    "unit": 1237,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_28",
+    "xy": [
+      33.0,
+      57.0
+    ],
+    "unit": 1239,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_17_28",
+    "xy": [
+      35.0,
+      57.0
+    ],
+    "unit": 1241,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_28",
+    "xy": [
+      37.0,
+      57.0
+    ],
+    "unit": 1243,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_28",
+    "xy": [
+      39.0,
+      57.0
+    ],
+    "unit": 1245,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_28",
+    "xy": [
+      41.0,
+      57.0
+    ],
+    "unit": 1247,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_28",
+    "xy": [
+      43.0,
+      57.0
+    ],
+    "unit": 1249,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_28",
+    "xy": [
+      45.0,
+      57.0
+    ],
+    "unit": 1251,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_28",
+    "xy": [
+      47.0,
+      57.0
+    ],
+    "unit": 1253,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_28",
+    "xy": [
+      51.0,
+      57.0
+    ],
+    "unit": 1255,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_8_29",
+    "xy": [
+      17.0,
+      59.0
+    ],
+    "unit": 1297,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_9_29",
+    "xy": [
+      19.0,
+      59.0
+    ],
+    "unit": 1299,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_29",
+    "xy": [
+      21.0,
+      59.0
+    ],
+    "unit": 1301,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_29",
+    "xy": [
+      23.0,
+      59.0
+    ],
+    "unit": 1303,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_29",
+    "xy": [
+      25.0,
+      59.0
+    ],
+    "unit": 1305,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_29",
+    "xy": [
+      27.0,
+      59.0
+    ],
+    "unit": 1307,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_29",
+    "xy": [
+      29.0,
+      59.0
+    ],
+    "unit": 1309,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_29",
+    "xy": [
+      31.0,
+      59.0
+    ],
+    "unit": 1311,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_16_29",
+    "xy": [
+      33.0,
+      59.0
+    ],
+    "unit": 1313,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_17_29",
+    "xy": [
+      35.0,
+      59.0
+    ],
+    "unit": 1315,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_29",
+    "xy": [
+      37.0,
+      59.0
+    ],
+    "unit": 1317,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_29",
+    "xy": [
+      39.0,
+      59.0
+    ],
+    "unit": 1319,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_29",
+    "xy": [
+      41.0,
+      59.0
+    ],
+    "unit": 1321,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_29",
+    "xy": [
+      43.0,
+      59.0
+    ],
+    "unit": 1323,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_29",
+    "xy": [
+      45.0,
+      59.0
+    ],
+    "unit": 1325,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_29",
+    "xy": [
+      47.0,
+      59.0
+    ],
+    "unit": 1327,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_29",
+    "xy": [
+      49.0,
+      59.0
+    ],
+    "unit": 1329,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_29",
+    "xy": [
+      51.0,
+      59.0
+    ],
+    "unit": 1331,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_8_30",
+    "xy": [
+      17.0,
+      61.0
+    ],
+    "unit": 1373,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_9_30",
+    "xy": [
+      19.0,
+      61.0
+    ],
+    "unit": 1375,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_30",
+    "xy": [
+      21.0,
+      61.0
+    ],
+    "unit": 1377,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_30",
+    "xy": [
+      23.0,
+      61.0
+    ],
+    "unit": 1379,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_30",
+    "xy": [
+      25.0,
+      61.0
+    ],
+    "unit": 1381,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_30",
+    "xy": [
+      27.0,
+      61.0
+    ],
+    "unit": 1383,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_30",
+    "xy": [
+      29.0,
+      61.0
+    ],
+    "unit": 1385,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_30",
+    "xy": [
+      31.0,
+      61.0
+    ],
+    "unit": 1387,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_16_30",
+    "xy": [
+      33.0,
+      61.0
+    ],
+    "unit": 1389,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_17_30",
+    "xy": [
+      35.0,
+      61.0
+    ],
+    "unit": 1391,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_30",
+    "xy": [
+      37.0,
+      61.0
+    ],
+    "unit": 1393,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_30",
+    "xy": [
+      39.0,
+      61.0
+    ],
+    "unit": 1395,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_30",
+    "xy": [
+      41.0,
+      61.0
+    ],
+    "unit": 1397,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_30",
+    "xy": [
+      43.0,
+      61.0
+    ],
+    "unit": 1399,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_30",
+    "xy": [
+      45.0,
+      61.0
+    ],
+    "unit": 1401,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_30",
+    "xy": [
+      47.0,
+      61.0
+    ],
+    "unit": 1403,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_30",
+    "xy": [
+      49.0,
+      61.0
+    ],
+    "unit": 1405,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_30",
+    "xy": [
+      51.0,
+      61.0
+    ],
+    "unit": 1407,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_8_31",
+    "xy": [
+      17.0,
+      63.0
+    ],
+    "unit": 1450,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_9_31",
+    "xy": [
+      19.0,
+      63.0
+    ],
+    "unit": 1452,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_31",
+    "xy": [
+      21.0,
+      63.0
+    ],
+    "unit": 1454,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_31",
+    "xy": [
+      23.0,
+      63.0
+    ],
+    "unit": 1456,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_31",
+    "xy": [
+      25.0,
+      63.0
+    ],
+    "unit": 1458,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_31",
+    "xy": [
+      27.0,
+      63.0
+    ],
+    "unit": 1460,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_31",
+    "xy": [
+      29.0,
+      63.0
+    ],
+    "unit": 1462,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_31",
+    "xy": [
+      31.0,
+      63.0
+    ],
+    "unit": 1464,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_16_31",
+    "xy": [
+      33.0,
+      63.0
+    ],
+    "unit": 1466,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_17_31",
+    "xy": [
+      35.0,
+      63.0
+    ],
+    "unit": 1468,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_31",
+    "xy": [
+      37.0,
+      63.0
+    ],
+    "unit": 1470,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_31",
+    "xy": [
+      39.0,
+      63.0
+    ],
+    "unit": 1472,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_31",
+    "xy": [
+      41.0,
+      63.0
+    ],
+    "unit": 1474,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_31",
+    "xy": [
+      43.0,
+      63.0
+    ],
+    "unit": 1476,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_31",
+    "xy": [
+      45.0,
+      63.0
+    ],
+    "unit": 1478,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_31",
+    "xy": [
+      47.0,
+      63.0
+    ],
+    "unit": 1480,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_31",
+    "xy": [
+      49.0,
+      63.0
+    ],
+    "unit": 1482,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_31",
+    "xy": [
+      51.0,
+      63.0
+    ],
+    "unit": 1484,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_26_31",
+    "xy": [
+      53.0,
+      63.0
+    ],
+    "unit": 1486,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_8_32",
+    "xy": [
+      17.0,
+      65.0
+    ],
+    "unit": 1526,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_9_32",
+    "xy": [
+      19.0,
+      65.0
+    ],
+    "unit": 1528,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_32",
+    "xy": [
+      21.0,
+      65.0
+    ],
+    "unit": 1530,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_32",
+    "xy": [
+      23.0,
+      65.0
+    ],
+    "unit": 1532,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_32",
+    "xy": [
+      25.0,
+      65.0
+    ],
+    "unit": 1534,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_32",
+    "xy": [
+      27.0,
+      65.0
+    ],
+    "unit": 1536,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_32",
+    "xy": [
+      29.0,
+      65.0
+    ],
+    "unit": 1538,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_32",
+    "xy": [
+      31.0,
+      65.0
+    ],
+    "unit": 1540,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_16_32",
+    "xy": [
+      33.0,
+      65.0
+    ],
+    "unit": 1542,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_17_32",
+    "xy": [
+      35.0,
+      65.0
+    ],
+    "unit": 1544,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_32",
+    "xy": [
+      37.0,
+      65.0
+    ],
+    "unit": 1546,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_32",
+    "xy": [
+      39.0,
+      65.0
+    ],
+    "unit": 1548,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_32",
+    "xy": [
+      41.0,
+      65.0
+    ],
+    "unit": 1550,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_32",
+    "xy": [
+      43.0,
+      65.0
+    ],
+    "unit": 1552,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_32",
+    "xy": [
+      45.0,
+      65.0
+    ],
+    "unit": 1554,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_32",
+    "xy": [
+      47.0,
+      65.0
+    ],
+    "unit": 1556,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_24_32",
+    "xy": [
+      49.0,
+      65.0
+    ],
+    "unit": 1558,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_25_32",
+    "xy": [
+      51.0,
+      65.0
+    ],
+    "unit": 1560,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_9_33",
+    "xy": [
+      19.0,
+      67.0
+    ],
+    "unit": 1601,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_10_33",
+    "xy": [
+      21.0,
+      67.0
+    ],
+    "unit": 1603,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_11_33",
+    "xy": [
+      23.0,
+      67.0
+    ],
+    "unit": 1605,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_12_33",
+    "xy": [
+      25.0,
+      67.0
+    ],
+    "unit": 1607,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_33",
+    "xy": [
+      27.0,
+      67.0
+    ],
+    "unit": 1609,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_33",
+    "xy": [
+      29.0,
+      67.0
+    ],
+    "unit": 1611,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_33",
+    "xy": [
+      31.0,
+      67.0
+    ],
+    "unit": 1613,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_16_33",
+    "xy": [
+      33.0,
+      67.0
+    ],
+    "unit": 1615,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_17_33",
+    "xy": [
+      35.0,
+      67.0
+    ],
+    "unit": 1617,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_33",
+    "xy": [
+      37.0,
+      67.0
+    ],
+    "unit": 1619,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_33",
+    "xy": [
+      39.0,
+      67.0
+    ],
+    "unit": 1621,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_33",
+    "xy": [
+      41.0,
+      67.0
+    ],
+    "unit": 1623,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_33",
+    "xy": [
+      43.0,
+      67.0
+    ],
+    "unit": 1625,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_22_33",
+    "xy": [
+      45.0,
+      67.0
+    ],
+    "unit": 1627,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_23_33",
+    "xy": [
+      47.0,
+      67.0
+    ],
+    "unit": 1629,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_12_34",
+    "xy": [
+      25.0,
+      69.0
+    ],
+    "unit": 1669,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_13_34",
+    "xy": [
+      27.0,
+      69.0
+    ],
+    "unit": 1671,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 0
+  },
+  {
+    "id": "point_14_34",
+    "xy": [
+      29.0,
+      69.0
+    ],
+    "unit": 1673,
+    "clearance_screen": "PASS",
+    "cluster": 0
+  },
+  {
+    "id": "point_15_34",
+    "xy": [
+      31.0,
+      69.0
+    ],
+    "unit": 1675,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_16_34",
+    "xy": [
+      33.0,
+      69.0
+    ],
+    "unit": 1677,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_17_34",
+    "xy": [
+      35.0,
+      69.0
+    ],
+    "unit": 1679,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_34",
+    "xy": [
+      37.0,
+      69.0
+    ],
+    "unit": 1681,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_34",
+    "xy": [
+      39.0,
+      69.0
+    ],
+    "unit": 1683,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_20_34",
+    "xy": [
+      41.0,
+      69.0
+    ],
+    "unit": 1685,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_21_34",
+    "xy": [
+      43.0,
+      69.0
+    ],
+    "unit": 1687,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_15_35",
+    "xy": [
+      31.0,
+      71.0
+    ],
+    "unit": 1718,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_16_35",
+    "xy": [
+      33.0,
+      71.0
+    ],
+    "unit": 1720,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_17_35",
+    "xy": [
+      35.0,
+      71.0
+    ],
+    "unit": 1722,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_35",
+    "xy": [
+      37.0,
+      71.0
+    ],
+    "unit": 1724,
+    "clearance_screen": "PASS",
+    "cluster": 2
+  },
+  {
+    "id": "point_19_35",
+    "xy": [
+      39.0,
+      71.0
+    ],
+    "unit": 1726,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  },
+  {
+    "id": "point_18_36",
+    "xy": [
+      37.0,
+      73.0
+    ],
+    "unit": 1746,
+    "clearance_screen": "NEEDS_ORIENTED_ROUTE_CHECK",
+    "cluster": 2
+  }
+]

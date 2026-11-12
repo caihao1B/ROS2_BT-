@@ -1,0 +1,23 @@
+{
+  "optimization_v2/assets/perception/nanodet.onnx": "4b82da9944b88577175ee23a459dce2e26e6e4be573def65b1055dc2d9720186",
+  "optimization_v2/assets/perception/person/model.config": "413e06f05598f816bb70332fdca95acfadfa544f8f7f781874c2644f94e78f84",
+  "optimization_v2/assets/perception/person/model.sdf": "edebb13dae917fb3f07814e5182d0fca7cdcc61fde918d8b69815391e07b3e59",
+  "optimization_v2/assets/perception/person/fuel_metadata.json": "1e3ca6d40e5a63cd73a74011bc0a3c1d8a9c19301df94691135ff74872c85877",
+  "optimization_v2/assets/perception/person/meshes/walking.dae": "e2ae109264af6d8a625523a72e30a5ffa1a4ec34278f9bf1e10e614fa074c379",
+  "optimization_v2/assets/perception/person/thumbnails/3.png": "6fcee6e58e40187e356584966e4b3c2686b675fe7087b8488f3a90a1666e1063",
+  "optimization_v2/assets/perception/person/thumbnails/4.png": "52a605096d8614a79a59757ccb38ddbcf9f9708ec1ca5572491be81b486bd6f6",
+  "optimization_v2/assets/perception/person/thumbnails/1.png": "ed82e25b8db081e9f81e273bd5e54efbe499c30438aa50704a6e31663cbb8978",
+  "optimization_v2/assets/perception/person/thumbnails/5.png": "191c24476270ea58952cd0cc5aa145a2463eb39d9bca8a929e79c16f68d7cdd1",
+  "optimization_v2/assets/perception/person/thumbnails/2.png": "2723f451b4368031f427ff04d06f754660edc7d0e23bf3ca7ef6515ed7cc32df",
+  "optimization_v2/assets/perception/person/materials/textures/jeans_basic_diffuse.png": "c4b2f9126873078ecf8a3678e28622196fa6cb47e131b6067d6ffe81919b0ca6",
+  "optimization_v2/assets/perception/person/materials/textures/male02_diffuse_black-unmodified.png": "d3ef0f625df4d5cea6c9cd89e00b9e86c3b488d63672f9ed5b1327a17abd60dc",
+  "optimization_v2/assets/perception/person/materials/textures/male02_diffuse_black.png": "37c166c53575369f57cf233e775f87ef225b3fe9f66ff7ba34b3abb12dcd46be",
+  "optimization_v2/assets/perception/person/materials/textures/eyebrow001-unmodified.png": "bd9d94033a85c16af38fb135f5fed4ab2e1a26982db952826e58a2672c8c9a9c",
+  "optimization_v2/assets/perception/person/materials/textures/eyebrow001.png": "b2b15dd52470d6d073d18ebf56bcb1f3b45567cd42a2c75557c0ed2adc0f1ec1",
+  "optimization_v2/assets/perception/person/materials/textures/tshirt02_texture.png": "932e21f76307fda21692a3b4db03fcddc68127d410b4ccbf9fb5cf95ecfbc1b1",
+  "optimization_v2/assets/perception/person/materials/textures/young_lightskinned_male_diffuse.png": "4233a4e1e2d423daf8e5aa25521df93253be54b0ab6490147afae39b076f4fcb",
+  "optimization_v2/assets/perception/person/materials/textures/green_eye.png": "97b79fb62dde7211c142ce398b9506d42a74bdc478230e90ec69377ffdce4e22",
+  "optimization_v2/assets/perception/person/materials/textures/tshirt02_normals.png": "f31407a3f8ae20736f8f9693906f6ad64569032bc4afd0798c305526fa51d33d",
+  "optimization_v2/assets/perception/person/materials/textures/teeth.png": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43",
+  "optimization_v2/assets/perception/person/materials/textures/jeans01_normals.png": "2aa953834fa0bcf240fe069dc1ef283d801573e077bc5f9da04847370e9837d1"
+}

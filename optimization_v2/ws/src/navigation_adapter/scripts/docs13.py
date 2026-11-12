@@ -1,0 +1,6 @@
+from common13 import *
+def write_results(out,data):
+ p=ROOT/'docs/optimization_v2/S13/RESULTS.md';lines=['# S13 本轮实测结果','',f"状态：**{data['status']}**；人工：NOT_CHECKED。",'',f"运行目录：`{out}`",'',f"命令：`{' '.join(data['command'])}`",'',f"现实耗时：{data.get('wall_seconds',0):.1f} s。工具 OFF，整簇作业未执行。",'', '| 案例 | 实际动作完成 | 跟踪 P95 / 最大 m | 方向最大 rad | 停车最大 s | 计算 P95 ms | 物理/安全 | 时延目标 |','|---|---:|---:|---:|---:|---:|---|---|']
+ for n,r in data.get('cases',{}).items():lines.append(f"| {n} | {r['completed']} | {r['tracking_p95_m']} / {r['tracking_max_m']} | {r['heading_max_rad']} | {r['max_stop_delay_s']} | {r['compute_p95_ms']} | {'PASS' if r['passed'] else 'FAIL'} | {'PASS' if r['compute_p95_target_met'] else 'FAIL'} |")
+ lines+=['', '近距低障碍独立检查：`'+json.dumps(data.get('near_field_check',{}),ensure_ascii=False)+'`','', '检查：`'+json.dumps(data['checks'],ensure_ascii=False)+'`','',data.get('error','各正式检查通过；人工尚未查看。'),'',data['next_step_verdict'],'','`metrics.json` 包含资源峰值、动作退出码、停车事件与检查点；`runtime.json` 保存命令/PID/退出码/数据库不变性；独立物理轨迹在 `tracking.json`。本报告不把过程中的诊断失败隐藏为成功。', '', '依赖为 ROS 2 Jazzy/Nav2 1.3.13，Gazebo Harmonic；精确 deb 版本在 `optimization_v2/references/S13/dependency_lock.json`。']
+ p.write_text('\n'.join(lines)+'\n')

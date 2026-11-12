@@ -1,0 +1,113 @@
+{
+  "schema": "S13-REGIONAL-REGISTRATION/1",
+  "source_map_revision": "1ede22acc13a2c6e47ce9cc22c001478f1d1f8fa3b3404483a323b23b4c32477",
+  "gnss_alignment_sha256": "5d4a878522029775268396d57f76daacd628e88519b3f6573d6256aeead5a54a",
+  "scope": "connector first 6 m, local 8 m corridor only; not a full-map deformation correction",
+  "train": [
+    {
+      "source": "optimization_v2/results/S13/dev_inspection_diff1",
+      "source_sha256": "230ee90e17dc8d39fa618cc3ac460ffc02be8a76d598c9921a7863a532195e26",
+      "samples": 74,
+      "map_xy": [
+        20.541157685047036,
+        28.087749047307078
+      ],
+      "site_xy": [
+        20.99014557670089,
+        28.006897898019368
+      ],
+      "map_scatter_p95_m": 0.01151544090724033,
+      "gnss_scatter_p95_m": 0.05733568801752925
+    },
+    {
+      "source": "optimization_v2/results/S13/registration_observations/3",
+      "source_sha256": "5d0c7b73005556053689cfcb04f43cef49919270f15b8028f4f0ecaa755690b6",
+      "samples": 71,
+      "map_xy": [
+        23.265395177859588,
+        26.766696220265562
+      ],
+      "site_xy": [
+        23.72032042129649,
+        26.660078874630827
+      ],
+      "map_scatter_p95_m": 0.011234305993344768,
+      "gnss_scatter_p95_m": 0.05368532673254336
+    },
+    {
+      "source": "optimization_v2/results/S13/registration_observations/6",
+      "source_sha256": "00f0cc95057b4adf0e5fa917048b71c3501579c039b1111703d5739b9f9a1208",
+      "samples": 71,
+      "map_xy": [
+        25.940745083873587,
+        25.518643723059846
+      ],
+      "site_xy": [
+        26.39067066956351,
+        25.388324482647164
+      ],
+      "map_scatter_p95_m": 0.011254421533807105,
+      "gnss_scatter_p95_m": 0.05847134590924525
+    }
+  ],
+  "heldout": [
+    {
+      "source": "optimization_v2/results/S13/registration_observations/1.5",
+      "source_sha256": "d3deecd0dbe28c1f754e85fe1e887d5f4d2a01fbcd9da7bcac8aca84f0192aba",
+      "samples": 73,
+      "map_xy": [
+        21.910726933624517,
+        27.422684453329772
+      ],
+      "site_xy": [
+        22.35236639398301,
+        27.329754503298364
+      ],
+      "map_scatter_p95_m": 0.011861948327766367,
+      "gnss_scatter_p95_m": 0.0555061119817405
+    },
+    {
+      "source": "optimization_v2/results/S13/registration_observations/4.5",
+      "source_sha256": "2fab28f4603db90c88bc4a107aea3482a4d9598d288748b2c75046e5e273d47f",
+      "samples": 72,
+      "map_xy": [
+        24.56300792558418,
+        26.147394243766236
+      ],
+      "site_xy": [
+        25.01596869639301,
+        26.035619150293766
+      ],
+      "map_scatter_p95_m": 0.01075772298239735,
+      "gnss_scatter_p95_m": 0.0549622149166984
+    }
+  ],
+  "rotation_yaw_rad": -0.007368489074330439,
+  "translation_xy_m": [
+    0.25450309838264573,
+    0.06610724022593217
+  ],
+  "train_residuals_m": [
+    0.012988907866377897,
+    0.0038674508242156967,
+    0.009306042663821167
+  ],
+  "heldout_residuals_m": [
+    0.014673878654951317,
+    0.007503492262896015
+  ],
+  "passed": true,
+  "additional_position_sigma_m": 0.04,
+  "additional_yaw_sigma_rad": 0.005,
+  "source": "observed fixed GNSS antenna positions minus lever arm, paired with frozen SLAM matches; no evaluation truth",
+  "site_extent_xy": [
+    [
+      20.99014557670089,
+      25.388324482647164
+    ],
+    [
+      26.39067066956351,
+      28.006897898019368
+    ]
+  ]
+}

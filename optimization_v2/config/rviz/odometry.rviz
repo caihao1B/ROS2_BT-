@@ -1,0 +1,58 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Background Color: 28; 38; 48
+    Fixed Frame: odom
+    Frame Rate: 20
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Metre grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 40
+    - Class: rviz_default_plugins/TF
+      Name: Unique local TF
+      Enabled: true
+      Show Names: true
+      Marker Scale: 0.3
+    - Class: rviz_default_plugins/Path
+      Name: Wheel only - orange
+      Enabled: true
+      Topic: {Value: /s05/path/wheel, Depth: 2}
+      Color: 255; 161; 61
+      Line Style: Billboards
+      Line Width: 0.06
+    - Class: rviz_default_plugins/Path
+      Name: Wheel + IMU - cyan
+      Enabled: true
+      Topic: {Value: /s05/path/wheel_imu, Depth: 2}
+      Color: 52; 202; 237
+      Line Style: Billboards
+      Line Width: 0.05
+    - Class: rviz_default_plugins/Path
+      Name: Wheel + IMU + pure ICP - green
+      Enabled: true
+      Topic: {Value: /s05/path/fused, Depth: 2}
+      Color: 97; 231; 114
+      Line Style: Billboards
+      Line Width: 0.04
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Observed 3D lidar
+      Enabled: true
+      Topic: {Value: /s04/lidar/points, Reliability Policy: Best Effort, Depth: 2}
+      Style: Points
+      Size (Pixels): 1
+      Color Transformer: AxisColor
+      Axis: Z
+      Position Transformer: XYZ
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 18
+      Focal Point: {X: 0, Y: 3, Z: 0}
+      Pitch: 1.2
+      Yaw: 0.1
+Window Geometry: {Width: 1280, Height: 850, X: 40, Y: 60}

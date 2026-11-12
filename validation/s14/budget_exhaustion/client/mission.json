@@ -1,0 +1,68 @@
+{
+  "t": 7.06,
+  "state": "PARTIAL",
+  "reason": "BUDGET_STOP",
+  "case": "budget_exhaustion",
+  "scope": "SMOKE",
+  "cluster": "A1",
+  "plan_revision": "93735c60bdcf20544599e3862861a677c1f779b3a384eca1e4c2d4adbc5fede4",
+  "required_points": 2,
+  "confirmed_points": 0,
+  "remaining_point_keys": [
+    "93735c60bdcf20544599e3862861a677c1f779b3a384eca1e4c2d4adbc5fede4:smoke_point_0",
+    "93735c60bdcf20544599e3862861a677c1f779b3a384eca1e4c2d4adbc5fede4:smoke_point_1"
+  ],
+  "required_area_m2": 0.0,
+  "confirmed_area_m2": 0.0,
+  "coverage_fraction": null,
+  "done": [],
+  "pending": [
+    {
+      "id": "smoke_point_0",
+      "kind": "POINT_SERVICE",
+      "poses": [
+        [
+          2.5,
+          1.3,
+          0.15
+        ]
+      ],
+      "target": [
+        2.915283852733138,
+        1.3627640156389118
+      ],
+      "task_id": "smoke_point_0",
+      "planned_s": 10.0,
+      "steering_events": []
+    },
+    {
+      "id": "smoke_point_1",
+      "kind": "POINT_SERVICE",
+      "poses": [
+        [
+          3.0932626467616253,
+          1.3896628794841597,
+          0.15
+        ]
+      ],
+      "target": [
+        3.508546499494763,
+        1.4524268951230714
+      ],
+      "task_id": "smoke_point_1",
+      "planned_s": 10.0,
+      "steering_events": []
+    }
+  ],
+  "deferred": [],
+  "tool_results": [],
+  "residual": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "credit": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "uncertainty_pending": false
+}

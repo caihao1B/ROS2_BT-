@@ -1,0 +1,10 @@
+{
+  "reviewer": "assistant",
+  "user_manual_status": "NOT_CHECKED",
+  "visible_cloud_tracks_modes_probabilities": true,
+  "display_status": "S15 MarkerArray Status: Ok",
+  "screenshot_path": "optimization_v2/results/S15/demo_20261112_174641_2370190/turning_learned_none/rviz_verified.png",
+  "screenshot_sha256": "9c3a702b468df52e3ad050bfd4cba315749d9f12dc2d3640612f8ebf8943469e",
+  "observed_at_utc": "2026-11-12T09:51:41.302223+00:00",
+  "notes": "Actual owned RViz window title matches this run. Green terrain, tracked person, purple future branches and Trajectron++ p=0.13 visible. Earlier capture during TF warmup retained separately."
+}

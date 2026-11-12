@@ -1,0 +1,838 @@
+{
+  "case": "mow_smoke",
+  "pose_name": "zone_a",
+  "seconds": 180,
+  "seed": 41,
+  "success": true,
+  "gui": false,
+  "vehicle": "ackermann",
+  "sim_seconds_observed": 44.88,
+  "tool_shutdown": {
+    "state": "STOPPED",
+    "tool_on_requested": false
+  },
+  "shutdown_clock_paused": true,
+  "commands": [
+    {
+      "role": "server",
+      "args": [
+        "gz",
+        "sim",
+        "--force-version",
+        "8",
+        "-s",
+        "--headless-rendering",
+        "--seed",
+        "41",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/world.sdf"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091258,
+      "start_ticks": "8087096",
+      "uid": 1000,
+      "argv": "/usr/bin/env ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim --force-version 8 -s --headless-rendering --seed 41 /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/world.sdf ",
+      "exit_code": -11
+    },
+    {
+      "role": "online_bridge",
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+        "/s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg",
+        "/s03/front_scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan",
+        "/s10/tool/command@std_msgs/msg/String]gz.msgs.StringMsg",
+        "/s10/tool/fault@std_msgs/msg/String]gz.msgs.StringMsg",
+        "/s10/tool/raw_feedback@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s13/near/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked",
+        "--ros-args",
+        "-r",
+        "/clock:=/s13/clock_input",
+        "-r",
+        "/s13/near/points:=/s13/near/raw"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091279,
+      "start_ticks": "8087306",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock /s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg /s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg /s03/front_scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan /s10/tool/command@std_msgs/msg/String]gz.msgs.StringMsg /s10/tool/fault@std_msgs/msg/String]gz.msgs.StringMsg /s10/tool/raw_feedback@std_msgs/msg/String[gz.msgs.StringMsg /s13/near/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked --ros-args -r /clock:=/s13/clock_input -r /s13/near/points:=/s13/near/raw ",
+      "exit_code": 0
+    },
+    {
+      "role": "raw_bridge",
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+        "/s04/raw/lidar/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked",
+        "/s04/raw/left@sensor_msgs/msg/Image[gz.msgs.Image",
+        "/s04/raw/right@sensor_msgs/msg/Image[gz.msgs.Image",
+        "/s04/raw/imu@sensor_msgs/msg/Imu[gz.msgs.IMU",
+        "/s04/raw/gnss@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat",
+        "/s04/raw/joints@std_msgs/msg/String[gz.msgs.StringMsg",
+        "--ros-args",
+        "-r",
+        "/clock:=/s13/clock_input"
+      ],
+      "domain": 121,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091280,
+      "start_ticks": "8087306",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock /s04/raw/lidar/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked /s04/raw/left@sensor_msgs/msg/Image[gz.msgs.Image /s04/raw/right@sensor_msgs/msg/Image[gz.msgs.Image /s04/raw/imu@sensor_msgs/msg/Imu[gz.msgs.IMU /s04/raw/gnss@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat /s04/raw/joints@std_msgs/msg/String[gz.msgs.StringMsg --ros-args -r /clock:=/s13/clock_input ",
+      "exit_code": 0
+    },
+    {
+      "role": "clock_online",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091281,
+      "start_ticks": "8087306",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay ",
+      "exit_code": 0
+    },
+    {
+      "role": "clock_raw",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay"
+      ],
+      "domain": 121,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091282,
+      "start_ticks": "8087306",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay ",
+      "exit_code": 0
+    },
+    {
+      "role": "evaluation_bridge",
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts",
+        "/s10/evaluation/effect@std_msgs/msg/String[gz.msgs.StringMsg"
+      ],
+      "domain": 120,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091283,
+      "start_ticks": "8087306",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg /s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts /s10/evaluation/effect@std_msgs/msg/String[gz.msgs.StringMsg ",
+      "exit_code": 0
+    },
+    {
+      "role": "tool_evaluator",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/evaluator10.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/tool_evaluation",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/tool.json"
+      ],
+      "domain": 120,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091284,
+      "start_ticks": "8087307",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/evaluator10.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/tool_evaluation --config /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "evaluator",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/evaluation"
+      ],
+      "domain": 120,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091285,
+      "start_ticks": "8087307",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/evaluation ",
+      "exit_code": 0
+    },
+    {
+      "role": "drive",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/drive_extension.py",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/vehicle.json",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/drive"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091286,
+      "start_ticks": "8087307",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/drive_extension.py --config /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/vehicle.json --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/drive ",
+      "exit_code": 0
+    },
+    {
+      "role": "generator_motion",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py",
+        "--vehicle",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/vehicle.json",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/generation_motion",
+        "--seed",
+        "41",
+        "--streams",
+        "motion"
+      ],
+      "domain": 121,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091287,
+      "start_ticks": "8087307",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py --vehicle /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/vehicle.json --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/generation_motion --seed 41 --streams motion ",
+      "exit_code": 0
+    },
+    {
+      "role": "generator_vision",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py",
+        "--vehicle",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/vehicle.json",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/generation_vision",
+        "--seed",
+        "41",
+        "--streams",
+        "vision"
+      ],
+      "domain": 121,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091288,
+      "start_ticks": "8087307",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py --vehicle /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/vehicle.json --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/generation_vision --seed 41 --streams vision ",
+      "exit_code": 0
+    },
+    {
+      "role": "near_field",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/near_field13.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/near_field"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091289,
+      "start_ticks": "8087307",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/near_field13.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/near_field ",
+      "exit_code": 0
+    },
+    {
+      "role": "cloud",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/cloud_filter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/cloud"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091290,
+      "start_ticks": "8087307",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/cloud_filter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/cloud ",
+      "exit_code": 0
+    },
+    {
+      "role": "icp",
+      "args": [
+        "/opt/ros/jazzy/lib/rtabmap_odom/icp_odometry",
+        "--ros-args",
+        "-r",
+        "__node:=s05_icp",
+        "-r",
+        "__ns:=/s05/icp",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/icp.yaml",
+        "-r",
+        "scan_cloud:=/s05/icp/cloud",
+        "-r",
+        "scan:=/s05/unused_scan",
+        "-r",
+        "odom:=/s05/icp/raw",
+        "-r",
+        "odom_info:=/s05/icp/info",
+        "-r",
+        "/tf:=/s05/internal/icp_tf",
+        "--log-level",
+        "warn"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091291,
+      "start_ticks": "8087307",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/rtabmap_odom/icp_odometry --ros-args -r __node:=s05_icp -r __ns:=/s05/icp --params-file /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/icp.yaml -r scan_cloud:=/s05/icp/cloud -r scan:=/s05/unused_scan -r odom:=/s05/icp/raw -r odom_info:=/s05/icp/info -r /tf:=/s05/internal/icp_tf --log-level warn ",
+      "exit_code": 0
+    },
+    {
+      "role": "icp_gate",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/icp_gate.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/icp_gate"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091292,
+      "start_ticks": "8087308",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/icp_gate.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/icp_gate ",
+      "exit_code": 0
+    },
+    {
+      "role": "inputs",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/input_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/inputs"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091297,
+      "start_ticks": "8087308",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/input_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/inputs ",
+      "exit_code": 0
+    },
+    {
+      "role": "fused",
+      "args": [
+        "/opt/ros/jazzy/lib/robot_localization/ekf_node",
+        "--ros-args",
+        "-r",
+        "__node:=s05_fused",
+        "-r",
+        "__ns:=/s05/fused",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/fused.yaml",
+        "-r",
+        "odometry/filtered:=/s05/raw/fused",
+        "--log-level",
+        "warn",
+        "-r",
+        "/tf:=/s05/internal/fused_tf"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091298,
+      "start_ticks": "8087308",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/robot_localization/ekf_node --ros-args -r __node:=s05_fused -r __ns:=/s05/fused --params-file /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/fused.yaml -r odometry/filtered:=/s05/raw/fused --log-level warn -r /tf:=/s05/internal/fused_tf ",
+      "exit_code": 0
+    },
+    {
+      "role": "wheel_imu",
+      "args": [
+        "/opt/ros/jazzy/lib/robot_localization/ekf_node",
+        "--ros-args",
+        "-r",
+        "__node:=s05_wheel_imu",
+        "-r",
+        "__ns:=/s05/wheel_imu",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/wheel_imu.yaml",
+        "-r",
+        "odometry/filtered:=/s05/raw/wheel_imu",
+        "--log-level",
+        "warn",
+        "-r",
+        "/tf:=/s05/internal/wheel_imu_tf"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091299,
+      "start_ticks": "8087308",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/robot_localization/ekf_node --ros-args -r __node:=s05_wheel_imu -r __ns:=/s05/wheel_imu --params-file /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/wheel_imu.yaml -r odometry/filtered:=/s05/raw/wheel_imu --log-level warn -r /tf:=/s05/internal/wheel_imu_tf ",
+      "exit_code": 0
+    },
+    {
+      "role": "odom_output",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/odom_output.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/odom_output"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091300,
+      "start_ticks": "8087308",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/odom_output.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/odom_output ",
+      "exit_code": 0
+    },
+    {
+      "role": "health",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/localization_guard/lib/localization_guard/health_guard",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/health.yaml"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091301,
+      "start_ticks": "8087309",
+      "uid": 1000,
+      "argv": "",
+      "exit_code": 0
+    },
+    {
+      "role": "mapping_inputs",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_preprocessor.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/mapping_inputs"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091302,
+      "start_ticks": "8087309",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_preprocessor.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/mapping_inputs ",
+      "exit_code": 0
+    },
+    {
+      "role": "sensor_diagnostic",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/capture14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/sensor_diagnostic"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091303,
+      "start_ticks": "8087310",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/capture14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/sensor_diagnostic ",
+      "exit_code": 0
+    },
+    {
+      "role": "slam",
+      "args": [
+        "/opt/ros/jazzy/lib/rtabmap_slam/rtabmap",
+        "--ros-args",
+        "-r",
+        "__node:=s07_slam",
+        "-r",
+        "__ns:=/s07/rtabmap",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/config/slam_localization.yaml",
+        "-p",
+        "database_path:=/home/ceihao/robot_project/optimization_v2/maps/frozen/map.db",
+        "-r",
+        "rgbd_image:=/s07/inputs/stereo",
+        "-r",
+        "scan_cloud:=/s07/inputs/cloud",
+        "-r",
+        "odom:=/s07/inputs/odom",
+        "-r",
+        "/tf:=/s07/internal/rtabmap_tf"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091304,
+      "start_ticks": "8087310",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/rtabmap_slam/rtabmap --ros-args -r __node:=s07_slam -r __ns:=/s07/rtabmap --params-file /home/ceihao/robot_project/optimization_v2/config/slam_localization.yaml -p database_path:=/home/ceihao/robot_project/optimization_v2/maps/frozen/map.db -r rgbd_image:=/s07/inputs/stereo -r scan_cloud:=/s07/inputs/cloud -r odom:=/s07/inputs/odom -r /tf:=/s07/internal/rtabmap_tf ",
+      "exit_code": 0
+    },
+    {
+      "role": "quality",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_quality.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/quality",
+        "--request",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/request.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091323,
+      "start_ticks": "8087311",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_quality.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/quality --request /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/request.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "source_adapter",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/gnss_supervisor/scripts/source_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/sources",
+        "--case",
+        "normal"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091327,
+      "start_ticks": "8087311",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/gnss_supervisor/scripts/source_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/sources --case normal ",
+      "exit_code": 0
+    },
+    {
+      "role": "manager",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/gnss_supervisor/lib/gnss_supervisor/gnss_supervisor",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "policy_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/manager.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091337,
+      "start_ticks": "8087312",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/gnss_supervisor/lib/gnss_supervisor/gnss_supervisor --ros-args -p use_sim_time:=true -p policy_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/manager.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "terrain",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/terrain_s13",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/terrain.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091340,
+      "start_ticks": "8087313",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/terrain_s13 --ros-args -p use_sim_time:=true -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/terrain.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "fusion",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/object_fusion/scripts/fusion_node.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/fusion",
+        "--case",
+        "mow_smoke"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091341,
+      "start_ticks": "8087313",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/object_fusion/scripts/fusion_node.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/fusion --case mow_smoke ",
+      "exit_code": 0
+    },
+    {
+      "role": "cost_adapter",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/terrain_perception/scripts/costmap_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/cost_adapter",
+        "--vehicle",
+        "ackermann"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091353,
+      "start_ticks": "8087314",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/terrain_perception/scripts/costmap_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/cost_adapter --vehicle ackermann ",
+      "exit_code": 0
+    },
+    {
+      "role": "prior_cost",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/prior_cost13.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/prior_cost",
+        "--vehicle",
+        "ackermann"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091354,
+      "start_ticks": "8087314",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/prior_cost13.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/prior_cost --vehicle ackermann ",
+      "exit_code": 0
+    },
+    {
+      "role": "controller",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_controller/controller_server",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/config/nav2_ackermann.yaml",
+        "-r",
+        "cmd_vel:=/s13/nav_cmd"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091361,
+      "start_ticks": "8087315",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_controller/controller_server --ros-args --params-file /home/ceihao/robot_project/optimization_v2/config/nav2_ackermann.yaml -r cmd_vel:=/s13/nav_cmd ",
+      "exit_code": 0
+    },
+    {
+      "role": "planner",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_planner/planner_server",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/config/nav2_ackermann.yaml"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091382,
+      "start_ticks": "8087317",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_planner/planner_server --ros-args --params-file /home/ceihao/robot_project/optimization_v2/config/nav2_ackermann.yaml ",
+      "exit_code": 0
+    },
+    {
+      "role": "navigator",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_bt_navigator/bt_navigator",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/config/nav2_ackermann.yaml"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091412,
+      "start_ticks": "8087318",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_bt_navigator/bt_navigator --ros-args --params-file /home/ceihao/robot_project/optimization_v2/config/nav2_ackermann.yaml ",
+      "exit_code": 0
+    },
+    {
+      "role": "nav_lifecycle",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "autostart:=true",
+        "-p",
+        "node_names:=[controller_server,planner_server,bt_navigator]",
+        "-p",
+        "bond_timeout:=5.0"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091426,
+      "start_ticks": "8087319",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args -p use_sim_time:=true -p autostart:=true -p node_names:=[controller_server,planner_server,bt_navigator] -p bond_timeout:=5.0 ",
+      "exit_code": 0
+    },
+    {
+      "role": "ledger",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/ledger14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/ledger",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/tool.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091438,
+      "start_ticks": "8087321",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/ledger14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/ledger --config /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "tool_online",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/online_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/tool_online",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/tool.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091446,
+      "start_ticks": "8087322",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/online_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/tool_online --config /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "motion",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/command_gate",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/gate.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091818,
+      "start_ticks": "8087471",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/command_gate --ros-args -p use_sim_time:=true -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/gate.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "mission_bt",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/mission_bt",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/decision_policy.json",
+        "-p",
+        "tree_file:=/home/ceihao/robot_project/optimization_v2/behavior_trees/mission.xml",
+        "-p",
+        "log_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/decisions.jsonl"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091819,
+      "start_ticks": "8087472",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/mission_bt --ros-args -p use_sim_time:=true -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/decision_policy.json -p tree_file:=/home/ceihao/robot_project/optimization_v2/behavior_trees/mission.xml -p log_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/decisions.jsonl ",
+      "exit_code": 0
+    },
+    {
+      "role": "client",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/worker14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/client",
+        "--vehicle",
+        "ackermann",
+        "--controller",
+        "RPP",
+        "--case",
+        "mow_smoke",
+        "--seconds",
+        "180"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091820,
+      "start_ticks": "8087472",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/worker14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/client --vehicle ackermann --controller RPP --case mow_smoke --seconds 180 ",
+      "exit_code": 0
+    },
+    {
+      "role": "tool_server",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/tool_sim/lib/tool_sim/tool_action_server",
+        "--ros-args",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/tool.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091821,
+      "start_ticks": "8087472",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/tool_sim/lib/tool_sim/tool_action_server --ros-args -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "observer",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/observer13.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/online",
+        "--seconds",
+        "180"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2091822,
+      "start_ticks": "8087473",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/observer13.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/mow_smoke/online --seconds 180 ",
+      "exit_code": 0
+    },
+    {
+      "role": "initial_hint",
+      "args": [
+        "ros2",
+        "topic",
+        "pub",
+        "--once",
+        "/s07/rtabmap/initialpose",
+        "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "{\"header\": {\"frame_id\": \"map\"}, \"pose\": {\"pose\": {\"position\": {\"x\": 2.0, \"y\": 1.8000000000000007, \"z\": 0.0}, \"orientation\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.12467473338522769, \"w\": 0.992197667229329}}, \"covariance\": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25]}}"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_mow_smoke",
+      "pid": 2092009,
+      "start_ticks": "8088950",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /opt/ros/jazzy/bin/ros2 topic pub --once /s07/rtabmap/initialpose geometry_msgs/msg/PoseWithCovarianceStamped {\"header\": {\"frame_id\": \"map\"}, \"pose\": {\"pose\": {\"position\": {\"x\": 2.0, \"y\": 1.8000000000000007, \"z\": 0.0}, \"orientation\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.12467473338522769, \"w\": 0.992197667229329}}, \"covariance\": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25]}} ",
+      "exit_code": 0
+    }
+  ],
+  "events": [
+    {
+      "t": 4.08,
+      "event": "initial_hint",
+      "pose": [
+        2.0,
+        1.8000000000000007,
+        0.0,
+        0.0,
+        0.0,
+        0.12467473338522769,
+        0.992197667229329
+      ],
+      "source": "declared coarse operator prior"
+    }
+  ],
+  "wall_seconds": 126.65903432400228,
+  "database_before": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82",
+  "database_after": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82",
+  "database_unchanged": true
+}

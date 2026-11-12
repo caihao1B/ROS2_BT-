@@ -1,0 +1,44 @@
+{
+  "scenario": "turning",
+  "split": "test",
+  "actors": [
+    {
+      "name": "s15_person",
+      "knots": [
+        [
+          0.0,
+          2.0,
+          -2.0
+        ],
+        [
+          10.0,
+          2.0,
+          -2.0
+        ],
+        [
+          22.0,
+          1.5,
+          0.0
+        ],
+        [
+          29.0,
+          2.7,
+          0.1
+        ],
+        [
+          39.0,
+          4.0,
+          1.7
+        ],
+        [
+          65.0,
+          4.0,
+          1.7
+        ]
+      ]
+    }
+  ],
+  "source": "SIMULATOR_ONLY_NOT_PREDICTOR_INPUT",
+  "articulated_gait": false,
+  "interaction": "scripted yield; no social response dynamics"
+}

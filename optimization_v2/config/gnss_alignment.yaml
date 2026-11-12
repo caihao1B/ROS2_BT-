@@ -1,0 +1,46 @@
+schema: S08-SURVEY/1
+map_id: 647148fb-975d-4efb-9c8d-8e5b5b8e42a9
+frame_epoch: 953db17e-8310-4a7a-9b4d-f95a19c32218
+map_revision: 1ede22acc13a2c6e47ce9cc22c001478f1d1f8fa3b3404483a323b23b4c32477
+calibration_revision: d916deafb95eb82ab3c02c787d0b2ff7aa1b351774ad1a5b5e2b46851bea1943
+datum_llh:
+- 31.2304
+- 121.4737
+- 10.0
+survey_kind: SIMULATED_SITE_CONTROL_POINTS_NOT_ROBOT_TRUTH
+control_points:
+- enu:
+  - 28.0
+  - 14.0
+  - 0.0
+  map:
+  - 0.0
+  - 0.0
+  - 0.0
+- enu:
+  - 48.0
+  - 14.0
+  - 0.0
+  map:
+  - 20.0
+  - 0.0
+  - 0.0
+- enu:
+  - 28.0
+  - 34.0
+  - 0.0
+  map:
+  - 0.0
+  - 20.0
+  - 0.0
+translation_sigma_m: 0.02
+yaw_sigma_rad: 0.001
+antenna_base_m:
+- -0.1
+- 0.0
+- 0.8
+heading_source: validated RTAB map orientation plus S05 relative rotation; single
+  antenna has NO stationary yaw
+scope: Datum and three surveyed markers are declared simulation site priors. No evaluation
+  trajectory or true robot spawn is used. Field deployment requires independently
+  surveyed corresponding controls; map nonrigid distortion is NOT corrected.

@@ -1,0 +1,10 @@
+schema: S05-TF/1
+revision: s05.1
+dynamic: {odom_to_base_link: s05_local_odometry}
+static: {base_link_to_sensor_frames: s04_sensor_fanout}
+disabled: {rtabmap_icp_publish_tf: false, wheel_imu_ekf_publish_tf: false, wheel_baseline_publish_tf: false}
+chassis_tf_remap: {from: /tf, to: /s05/internal/chassis_tf}
+other_tf_remaps: {fused_ekf: /s05/internal/fused_tf, icp: /s05/internal/icp_tf, wheel_imu: /s05/internal/wheel_imu_tf}
+planning_pose: {topic: /s05/planning_pose, frame: odom, projection: x_y_yaw, publishes_tf: false}
+epoch: {topic: /s05/epoch, on_clock_rewind: stop_clear_and_reset_estimators, public_reset_service: /s05/reset_epoch}
+truth_boundary: {online: 119, sensor_generator: 121, evaluator: 120, security_sandbox: false}

@@ -1,0 +1,320 @@
+{
+  "schema": "S15-OBSERVED-DATASET/1",
+  "created_at": "2026-11-12T08:24:30.044277+00:00",
+  "status": "FROZEN",
+  "simulator_binding": {
+    "optimization_v2/ws/src/motion_prediction/scripts/scene15.py": "fa70a3f0e7a616262167d0fb7d3f0d84932b00f9a2223ecde9bb8764d0071c6c",
+    "optimization_v2/ws/src/motion_prediction/scripts/runtime15.py": "4b7753c40518fd86f4a1b17bf79cc698a1e8b326e8803e199b4a286297d923ba",
+    "optimization_v2/ws/src/motion_prediction/scripts/dataset15.py": "ec2923ffa32b3b165adc4bcb84f28220c79288e66e0542c1d1e79027281d95c2",
+    "optimization_v2/ws/src/motion_prediction/src/Actor15.cc": "fd4296b61809b3ded70b28dcb7084bb5982bce2c1d9a8be5753f5d9598888a3f",
+    "optimization_v2/ws/install/motion_prediction/lib/libs15_actor.so": "e3124528bcf83e4358f507c0550b2a70f97d2362f65267a5b042319eff19d3c5",
+    "optimization_v2/results/S14/latest.json": "a12c14f5fe05ded70806a66e3fb8a81abe2704419d9c831b360692878112418c"
+  },
+  "episodes": [
+    {
+      "episode_id": "train_turning",
+      "scenario": "turning",
+      "split": "train",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_train_turning_2239786",
+      "sim_seconds": 48.45,
+      "wall_seconds": 140.86842824800988,
+      "fixture_hash": "ec1edc8c2a769665f0e0b1ad642e77ea1f0f2230146a3fb580f5e7425a13bad1",
+      "runtime_sha": "f64a7b0f18ccfc78f287239cf9f078da3d853db43862a763245ee66e7c04b917",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/train_turning/observations.jsonl.gz",
+        "sha256": "4e4e66f10ec9ee03463de52c4abc6597c9b5fb3cc11df1bf1e176a5e016037cd",
+        "bytes": 226897
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/train_turning/truth_audit.jsonl.gz",
+        "sha256": "f35b915fa369ff983c76c4b10be7f843b869d5aaaf4d24a1c2e6d2ec454196b1",
+        "bytes": 7008
+      }
+    },
+    {
+      "episode_id": "train_stop_go",
+      "scenario": "stop_go",
+      "split": "train",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_train_stop_go_2239786",
+      "sim_seconds": 48.411,
+      "wall_seconds": 134.4050877300033,
+      "fixture_hash": "6a73b45ec195352a6a26719b3033ae5e911b05dfc812b68e474a765e51ab10b3",
+      "runtime_sha": "d4f878fba55c4a8e07e2ab8d2c586b62879622f514a640d70d0f83dd6db3aea2",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/train_stop_go/observations.jsonl.gz",
+        "sha256": "2cd3157e4ec8c8a94c251b3ce415f23fb72a4ac2c768a8d043b49ed7897535fd",
+        "bytes": 232725
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/train_stop_go/truth_audit.jsonl.gz",
+        "sha256": "dafd8c119e6563d19de844f76237865ae2bc79e27c15b42ff696abab6f61a83a",
+        "bytes": 4089
+      }
+    },
+    {
+      "episode_id": "train_yield",
+      "scenario": "yield",
+      "split": "train",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_train_yield_2239786",
+      "sim_seconds": 48.45,
+      "wall_seconds": 134.4553768390033,
+      "fixture_hash": "e48ea3bc0ec1c98619dd8767f0a2579ff1cd65faf2256e504e26ce2ed6148ff0",
+      "runtime_sha": "79604d82b68b95a8e84e143d4933c84c21c9e0e4cb3a0a2e02bbf90f3aa0bc9f",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/train_yield/observations.jsonl.gz",
+        "sha256": "ae519a0765ce4fcbb98c660e02483d67c59b76dcd11bcc4becb9fd46d803416e",
+        "bytes": 275904
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/train_yield/truth_audit.jsonl.gz",
+        "sha256": "a530c2c7a5243c3e090e2c7e6759a4c0fec423bb836f40c00b7abffc177a5802",
+        "bytes": 12947
+      }
+    },
+    {
+      "episode_id": "train_occlusion",
+      "scenario": "occlusion",
+      "split": "train",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_train_occlusion_2239786",
+      "sim_seconds": 48.425,
+      "wall_seconds": 134.1730257950112,
+      "fixture_hash": "3678ff0d8a62858ba06493582c90dbe10fa493e9f967a1e176e088f030a9718d",
+      "runtime_sha": "818c0535fcf1ff9d91e046c7152bddf5afb5b63d77d1e37af2ea369a986628c6",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/train_occlusion/observations.jsonl.gz",
+        "sha256": "70bd435871e30cd5416a4d4d95b070aae3db188e8570c2a25ab1b826e8736102",
+        "bytes": 234888
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/train_occlusion/truth_audit.jsonl.gz",
+        "sha256": "7d754e05f0109bd4af4552570c05d0439ba01ad28068f2eb775aa5f728963b91",
+        "bytes": 4115
+      }
+    },
+    {
+      "episode_id": "val_turning",
+      "scenario": "turning",
+      "split": "val",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_val_turning_2239786",
+      "sim_seconds": 48.45,
+      "wall_seconds": 135.55451410499518,
+      "fixture_hash": "cca48c1e02400327c99f790da83772fb05fce8a918363e6117b7f256b8639d5f",
+      "runtime_sha": "80defa612675315c4d4d922c6bf408e2bf553903ecc7953bd0c639e4129c02c9",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/val_turning/observations.jsonl.gz",
+        "sha256": "5ef33f203f31cb2e791aebf0914ed27e0f806e1b2d1955954a9709b50ef481fe",
+        "bytes": 227403
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/val_turning/truth_audit.jsonl.gz",
+        "sha256": "645b73dabe90a2b2958d3206eba0c9b272192ea3d55913c37377a35dfa270a44",
+        "bytes": 8084
+      }
+    },
+    {
+      "episode_id": "val_stop_go",
+      "scenario": "stop_go",
+      "split": "val",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_val_stop_go_2239786",
+      "sim_seconds": 48.45,
+      "wall_seconds": 135.63793942099437,
+      "fixture_hash": "de0db9ed7b92e215e802026f8104ca6a45e11239f74e961dbe3b58dc60154986",
+      "runtime_sha": "6cc0e2b8d339baed67a6c4aadb520d903798ca42988f24341955d80620de80ea",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/val_stop_go/observations.jsonl.gz",
+        "sha256": "de5dc63faf62cf866d939042317e34386f07d4d0a6b2df8019ac72716137ff52",
+        "bytes": 230674
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/val_stop_go/truth_audit.jsonl.gz",
+        "sha256": "6a04ec46ed695413e045f7f54897fc4933e31019a57398e36ba50f4ea4467c85",
+        "bytes": 4736
+      }
+    },
+    {
+      "episode_id": "val_yield",
+      "scenario": "yield",
+      "split": "val",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_val_yield_2239786",
+      "sim_seconds": 48.45,
+      "wall_seconds": 134.58997683199414,
+      "fixture_hash": "37e8d50b65c49531fd9b2b00fc4462628699eb59a1c466f729ec386f633dcafb",
+      "runtime_sha": "0fcfd7b4fdf9188489d146fcbf40113eacf9e2443c1acdce2f2fe597e692255a",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/val_yield/observations.jsonl.gz",
+        "sha256": "538a707c07771f56ae3c5c6ba6cda12a7e552f68d7ea9c62984a16e510c89cdb",
+        "bytes": 280300
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/val_yield/truth_audit.jsonl.gz",
+        "sha256": "770d026bfc103f3e17f8569737fd90d4ed56067ceea72f6dc00e119d7bfa4729",
+        "bytes": 13751
+      }
+    },
+    {
+      "episode_id": "val_occlusion",
+      "scenario": "occlusion",
+      "split": "val",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_val_occlusion_2239786",
+      "sim_seconds": 48.45,
+      "wall_seconds": 134.48098357900744,
+      "fixture_hash": "93cc3b14e4d747f697ac462b0f2ed6fc24da32954cdbd3996cfe1f1caa0ad206",
+      "runtime_sha": "c2338a15d48d7390f89608eea4d73a8d86e826e2c3495de5be44d0852e4095ea",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/val_occlusion/observations.jsonl.gz",
+        "sha256": "89c55691da084cbd65d6adebdbca1d2cb99e5d1229ebcd8068dadcaaa8cb21d5",
+        "bytes": 259114
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/val_occlusion/truth_audit.jsonl.gz",
+        "sha256": "c4d504d9ac01aed4a4f572fc8cda79eb1743952b4f3bc518645f41feb1e24ae2",
+        "bytes": 4669
+      }
+    },
+    {
+      "episode_id": "test_turning",
+      "scenario": "turning",
+      "split": "test",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_test_turning_2239786",
+      "sim_seconds": 48.436,
+      "wall_seconds": 134.85078466299456,
+      "fixture_hash": "51a54c2290b428095cdeb355f078bd3345e39ce5b6ef01d1fbf83fa2a3e9db50",
+      "runtime_sha": "9f3c22a6ca24793d5e4c40caac958f5d687eea8d7e0571f853282b1b17e2b7a8",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/test_turning/observations.jsonl.gz",
+        "sha256": "1e03c6a0d0b79571eb6697978b48911ab34e74322f6afa3a613ce13ba4f2b4c6",
+        "bytes": 211812
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/test_turning/truth_audit.jsonl.gz",
+        "sha256": "9fb302c3dd3c2b67ddb50f44769200edf1aef9645cc5b3c2b601169977aa8fdf",
+        "bytes": 7118
+      }
+    },
+    {
+      "episode_id": "test_stop_go",
+      "scenario": "stop_go",
+      "split": "test",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_test_stop_go_2239786",
+      "sim_seconds": 48.45,
+      "wall_seconds": 135.1267121790006,
+      "fixture_hash": "2535eef0129b822671c02386287e6d5eabed9b6e0c729c940059b04ca8273893",
+      "runtime_sha": "da4d5bd30c28344b59e12f21ec5dba4d102fc4475916cbf9c8edd1caeb725eaf",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/test_stop_go/observations.jsonl.gz",
+        "sha256": "5548bc6fa011b09068e3a57f3d4b38eb1960b3c9162ef08d1b52bcb129537805",
+        "bytes": 226487
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/test_stop_go/truth_audit.jsonl.gz",
+        "sha256": "9162d671384f997a043b1101de6a39b338aba62a1944407abb3decdc63858c20",
+        "bytes": 4113
+      }
+    },
+    {
+      "episode_id": "test_yield",
+      "scenario": "yield",
+      "split": "test",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_test_yield_2239786",
+      "sim_seconds": 48.45,
+      "wall_seconds": 135.04753729200456,
+      "fixture_hash": "0099a9927603388ab307066d44efa5feb30e4b7d489dabbd7fc9953cb5f968ee",
+      "runtime_sha": "e76d4388bb7ee3c56b3de3a15526f66506076a3ba26df2ca37b4a8c4d3a9b331",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/test_yield/observations.jsonl.gz",
+        "sha256": "ce97e507afcf00dd668bdfd1d425a402eed8408670f0a89b5c0f52d3c7a3c274",
+        "bytes": 272355
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/test_yield/truth_audit.jsonl.gz",
+        "sha256": "1f0924fa4d918d8ef3eb28ed0c83df3571845ff6ffcb2b02658580c4abc415a2",
+        "bytes": 13031
+      }
+    },
+    {
+      "episode_id": "test_occlusion",
+      "scenario": "occlusion",
+      "split": "test",
+      "seed": 41,
+      "source_run": "optimization_v2/results/S15/collection_test_occlusion_2239786",
+      "sim_seconds": 48.45,
+      "wall_seconds": 134.4197720959928,
+      "fixture_hash": "260c1170cb5e7f1fd25307138e15dcb98dd14e0baa14b741df03b284f6eb31ee",
+      "runtime_sha": "deb2591e06bb96f950c18199528283d540ae4d79dfee928f0543b2f602036d2f",
+      "online_inputs": [
+        "/s09/objects"
+      ],
+      "truth_access": "offline evaluator only",
+      "observations": {
+        "path": "optimization_v2/datasets/prediction/test_occlusion/observations.jsonl.gz",
+        "sha256": "746820a2df419a138746b431ed68a1a38e9ed4e2f4ddc90aa4c22ead778186a8",
+        "bytes": 276802
+      },
+      "truth_audit": {
+        "path": "optimization_v2/datasets/prediction/test_occlusion/truth_audit.jsonl.gz",
+        "sha256": "8bfa036cf94336ed5bbb5887d5ba0ba0ec417de1071b0f56ab36f28f32a43134",
+        "bytes": 3848
+      }
+    }
+  ],
+  "split_rule": "entire independent scenario/trajectory episode; no sliding-window split",
+  "network_training": false,
+  "train_usage": "domain statistics and uncertainty calibration only; pretrained network frozen",
+  "coordinate_frame": "odom",
+  "future_labels_online": false
+}

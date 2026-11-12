@@ -1,0 +1,1012 @@
+{
+  "provenance": "optimization_v2/results/S14/demo_20261112_072951_1516566/nominal_mow_cluster",
+  "cfg": {
+    "schema": "S10-TOOL/1",
+    "scope": "SIMULATION_DIAGNOSTIC_ONLY",
+    "operations": [
+      "POINT_SERVICE",
+      "START_WORK",
+      "STOP_WORK"
+    ],
+    "working_min_rad_s": 8.0,
+    "working_confirm_sim_s": 0.2,
+    "stopped_max_rad_s": 0.1,
+    "stopped_confirm_sim_s": 0.2,
+    "feedback_age_sim_s": 0.1,
+    "feedback_age_wall_s": 0.5,
+    "feedback_gap_s": 0.1,
+    "pose_skew_s": 0.04,
+    "context_age_s": 0.15,
+    "command_sim_s": 0.2,
+    "command_wall_s": 0.35,
+    "clock_wall_s": 0.2,
+    "stop_timeout_s": 2.0,
+    "rotor_target_rad_s": 12.0,
+    "rotor_accel_rad_s2": 40.0,
+    "sensor_delay_s": 0.02,
+    "rotor_mass_kg": 0.05,
+    "spray_stopped_v": 0.01,
+    "spray_stopped_w": 0.02,
+    "work_min_speed": 0.02,
+    "work_max_speed": 0.12,
+    "work_max_yaw_rate": 0.097,
+    "pose_erosion_m": 0.06,
+    "yaw_erosion_rad": 0.025,
+    "area_epsilon_m2": 1e-05,
+    "completion_fraction": 0.95,
+    "simulation_seed": 41,
+    "capability_provenance": "S03 virtual tool geometry unchanged; conservative S08 speed; field95 feedback/stop/pairing thresholds retained. Pose erosion is an engineering test budget, not a certified confidence bound.",
+    "ledger_precision_m": 0.005,
+    "vehicle": "ackermann",
+    "tool": {
+      "vehicle": "ackermann",
+      "mount_xyz": [
+        0.5,
+        0,
+        0.19
+      ],
+      "collision_size": [
+        0.7,
+        1.0,
+        0.1
+      ],
+      "mass_kg": 8,
+      "virtual_effective_width_m": 0.9,
+      "nominal_overlap_m": 0.1,
+      "requires_stopped": false,
+      "evidence_scope": "width inside physical deck; real cutting effectiveness is not claimed"
+    },
+    "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8",
+    "session": "demo_20261112_072951_1516566_nominal_mow_cluster",
+    "map_id": "26ee605c-462a-5d0a-8aad-8d92d7c0827c",
+    "map_revision": "4c010703c2f80e19654699cec63498972bc9852bebdfc3ad77667297d0ab8813",
+    "frame_epoch": "d187adba-bfbd-5899-8800-01a791bffe35",
+    "plan_revision": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f"
+  },
+  "goal": {
+    "area": [
+      [
+        99.0,
+        40.03282165527344
+      ],
+      [
+        98.0,
+        40.50341033935547
+      ],
+      [
+        97.0,
+        40.9739990234375
+      ],
+      [
+        96.94474792480469,
+        41.0
+      ],
+      [
+        96.1605453491211,
+        41.36903381347656
+      ],
+      [
+        96.0,
+        41.904178619384766
+      ],
+      [
+        95.97125244140625,
+        42.0
+      ],
+      [
+        95.67125701904297,
+        43.0
+      ],
+      [
+        96.0,
+        43.0
+      ],
+      [
+        97.0,
+        43.0
+      ],
+      [
+        98.0,
+        43.0
+      ],
+      [
+        99.0,
+        43.0
+      ],
+      [
+        100.0,
+        43.0
+      ],
+      [
+        101.0,
+        43.0
+      ],
+      [
+        102.0,
+        43.0
+      ],
+      [
+        103.0,
+        43.0
+      ],
+      [
+        103.45863342285156,
+        43.0
+      ],
+      [
+        103.0,
+        42.184654235839844
+      ],
+      [
+        102.89613342285156,
+        42.0
+      ],
+      [
+        102.44029235839844,
+        41.189613342285156
+      ],
+      [
+        102.0,
+        41.01839065551758
+      ],
+      [
+        101.95271301269531,
+        41.0
+      ],
+      [
+        101.0,
+        40.62950134277344
+      ],
+      [
+        100.0,
+        40.2406120300293
+      ],
+      [
+        99.38127899169922,
+        40.0
+      ],
+      [
+        99.21070861816406,
+        39.93366622924805
+      ],
+      [
+        99.06974792480469,
+        40.0
+      ]
+    ],
+    "frame": "map",
+    "frame_epoch": "d187adba-bfbd-5899-8800-01a791bffe35",
+    "idempotency_key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+    "map_id": "26ee605c-462a-5d0a-8aad-8d92d7c0827c",
+    "map_revision": "4c010703c2f80e19654699cec63498972bc9852bebdfc3ad77667297d0ab8813",
+    "operation": 2,
+    "plan_revision": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f",
+    "requested_quantity": 16.35945492387691,
+    "segment_id": "B1_1",
+    "target": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "task_id": "B1_1",
+    "timeout_sim_s": 150.0,
+    "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+  },
+  "attempt": "33902127541744-6662",
+  "samples": [
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 0.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.0,
+        "request_on": false,
+        "rpm_rad_s": -0.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2072,
+        "t": 103.214,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.22,
+        "tool_xy": [
+          101.69395269889445,
+          40.486038623528295
+        ],
+        "yaw": -2.861152125793584,
+        "v": -0.0017591387782091566,
+        "w": 0.0022294593480431213,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.22
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 0.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.0,
+        "request_on": true,
+        "rpm_rad_s": 0.72,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2073,
+        "t": 103.263,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.26,
+        "tool_xy": [
+          101.69398173920068,
+          40.48603470177809
+        ],
+        "yaw": -2.8611290569289394,
+        "v": -0.0006705051914295214,
+        "w": 0.0005753453948859157,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.263
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 0.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.0,
+        "request_on": true,
+        "rpm_rad_s": 2.72,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2074,
+        "t": 103.313,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.32,
+        "tool_xy": [
+          101.69518610903556,
+          40.483486839427286
+        ],
+        "yaw": -2.8611818782988863,
+        "v": -0.0006198750563919926,
+        "w": -0.0005861077396388946,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.32
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 0.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.0,
+        "request_on": true,
+        "rpm_rad_s": 4.73,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2075,
+        "t": 103.363,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.36,
+        "tool_xy": [
+          101.69529052237591,
+          40.48354021504367
+        ],
+        "yaw": -2.861226928597575,
+        "v": -0.002877659172964706,
+        "w": -0.0011228608034268754,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.363
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 0.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.0,
+        "request_on": true,
+        "rpm_rad_s": 6.68,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2076,
+        "t": 103.412,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.42,
+        "tool_xy": [
+          101.69538825920715,
+          40.48355818591552
+        ],
+        "yaw": -2.861207689499728,
+        "v": -0.0020176974901647167,
+        "w": 0.0012007214012420423,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.42
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 0.723,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.0118,
+        "request_on": true,
+        "rpm_rad_s": 8.69,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2077,
+        "t": 103.462,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.46,
+        "tool_xy": [
+          101.6954800483974,
+          40.4834826191491
+        ],
+        "yaw": -2.8610456326336378,
+        "v": -0.0016821399664129772,
+        "w": 0.0040521882464655355,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.462
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 0.89,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.0523,
+        "request_on": true,
+        "rpm_rad_s": 10.68,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2078,
+        "t": 103.512,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.52,
+        "tool_xy": [
+          101.69553154463702,
+          40.483517916406996
+        ],
+        "yaw": -2.8611026479647363,
+        "v": -0.00042394115279286793,
+        "w": 0.0016139267105470076,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.52
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.0995,
+        "request_on": true,
+        "rpm_rad_s": 11.99,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2079,
+        "t": 103.561,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.56,
+        "tool_xy": [
+          101.69566721767681,
+          40.483548006183014
+        ],
+        "yaw": -2.8610892770964225,
+        "v": -0.0034675128461229597,
+        "w": 0.00033456264039107686,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.561
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.1495,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2080,
+        "t": 103.611,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.62,
+        "tool_xy": [
+          101.69581704845228,
+          40.4835733556827
+        ],
+        "yaw": -2.8610571244920964,
+        "v": -0.0024983881893772594,
+        "w": 0.0010940858805951496,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.62
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.1995,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2081,
+        "t": 103.661,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.66,
+        "tool_xy": [
+          101.69593897042793,
+          40.483647198840956
+        ],
+        "yaw": -2.8611302297538863,
+        "v": -0.0034399832757534103,
+        "w": -0.0018214899349552353,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.661
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.2495,
+        "request_on": true,
+        "rpm_rad_s": 12.01,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2082,
+        "t": 103.711,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.72,
+        "tool_xy": [
+          101.69417979183486,
+          40.484058687291096
+        ],
+        "yaw": -2.8610823068114244,
+        "v": -0.001689166910138199,
+        "w": 0.0035001865116547105,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.72
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.2985,
+        "request_on": true,
+        "rpm_rad_s": 11.99,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2083,
+        "t": 103.76,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.76,
+        "tool_xy": [
+          101.6941937864341,
+          40.48400477939345
+        ],
+        "yaw": -2.860970916568583,
+        "v": 3.699205836861582e-05,
+        "w": 0.002786637209584038,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.76
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.3485,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2084,
+        "t": 103.81,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.82,
+        "tool_xy": [
+          101.69405317182114,
+          40.48397429094103
+        ],
+        "yaw": -2.8609902901346445,
+        "v": 0.00392832449873358,
+        "w": -0.0009989266450822474,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.82
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.3985,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2085,
+        "t": 103.86,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.86,
+        "tool_xy": [
+          101.69354443349403,
+          40.48381779452244
+        ],
+        "yaw": -2.860965570125921,
+        "v": 0.013304724950810906,
+        "w": 0.0005369474481114967,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.86
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.4475,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2086,
+        "t": 103.909,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.92,
+        "tool_xy": [
+          101.69377675952283,
+          40.483430643917664
+        ],
+        "yaw": -2.8616448483835693,
+        "v": 0.03751940506372885,
+        "w": -0.0043064810077042,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.92
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.4975,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2087,
+        "t": 103.959,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 103.96,
+        "tool_xy": [
+          101.69139005894293,
+          40.4829200492254
+        ],
+        "yaw": -2.8619809657154267,
+        "v": 0.060872705847271114,
+        "w": -0.008407194260485902,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 103.96
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.5475,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2088,
+        "t": 104.009,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 104.02,
+        "tool_xy": [
+          101.68640137584711,
+          40.48180412274561
+        ],
+        "yaw": -2.8625863995065544,
+        "v": 0.08874407287854115,
+        "w": -0.012484069813940738,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 104.02
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.5965,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2089,
+        "t": 104.058,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 104.06,
+        "tool_xy": [
+          101.6828171037601,
+          40.48110491875861
+        ],
+        "yaw": -2.863139389931743,
+        "v": 0.09095893844022891,
+        "w": -0.013850491034461189,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 104.06
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.6465,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2090,
+        "t": 104.108,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 104.12,
+        "tool_xy": [
+          101.67697298765653,
+          40.47988214335412
+        ],
+        "yaw": -2.8639571950083056,
+        "v": 0.0993395103830438,
+        "w": -0.0135544828414546,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 104.12
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.6965,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2091,
+        "t": 104.158,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 104.16,
+        "tool_xy": [
+          101.6727258992889,
+          40.47900300776031
+        ],
+        "yaw": -2.8645834487649164,
+        "v": 0.1081392513904338,
+        "w": -0.015651684101598753,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 104.16
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.7465,
+        "request_on": true,
+        "rpm_rad_s": 11.99,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2092,
+        "t": 104.208,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 104.221,
+        "tool_xy": [
+          101.66616156234684,
+          40.47771460075659
+        ],
+        "yaw": -2.8656847578498983,
+        "v": 0.10907764657759933,
+        "w": -0.01912917139142912,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 104.221
+    },
+    {
+      "feedback": {
+        "kind": "feedback",
+        "attempt": "33902127541744-6662",
+        "boot": "33902127541744",
+        "flow": 1.0,
+        "healthy": true,
+        "key": "4870899357ae0796057616467b6d11195d3df48405c01ec05765fcaf48f93b4f:B1_1",
+        "meter": 0.7955,
+        "request_on": true,
+        "rpm_rad_s": 12.0,
+        "schema": "S10-TOOL-OBS/1",
+        "sensor_epoch": "demo_20261112_072951_1516566_nominal_mow_cluster",
+        "seq": 2093,
+        "t": 104.257,
+        "tool_revision": "d29f88a3ba9bff12f13ea6498688a71edb98925749d6c944242199b3a9c99af8"
+      },
+      "context": {
+        "kind": "context",
+        "t": 104.26,
+        "tool_xy": [
+          101.66226638546202,
+          40.47712909298999
+        ],
+        "yaw": -2.866598140403216,
+        "v": 0.10019478809098145,
+        "w": -0.023395821494951053,
+        "localization": true,
+        "perception": true,
+        "target_ok": true,
+        "max_speed": 0.12,
+        "segment": "COVERAGE",
+        "segment_id": "B1_1",
+        "target_condition_source": "diagnostic operator preset; not near-field camera recognition"
+      },
+      "now": 104.26
+    }
+  ]
+}

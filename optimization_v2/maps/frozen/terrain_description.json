@@ -1,0 +1,11 @@
+{
+  "resolution_m": 0.5,
+  "origin_xy_m": [
+    -27.5,
+    -17.0
+  ],
+  "observed_cells": 30609,
+  "unknown": "NaN; never filled with prior geometry",
+  "method": "Lower 30% observed height per cell, minimum 3 points; finite-neighbour slope; preliminary surface, not traversability certification",
+  "ground_caveat": "Lowest observed return is not guaranteed ground when occluded; S09 must perform online terrain/obstacle reasoning"
+}

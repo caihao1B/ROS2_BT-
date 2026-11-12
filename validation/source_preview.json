@@ -1,0 +1,32 @@
+{
+  "schema": "ROBOT-PUBLICATION-PREVIEW/1",
+  "scope": "Two stationary chassis and actual 3D world loaded from restored publication tree; no navigation or work completion claim",
+  "runs": [
+    {
+      "scope": "SCENE_PREVIEW_ONLY",
+      "vehicle": "diff",
+      "world": "/home/ceihao/robot_project/delivery/publication_snapshot/preview_runs/20261112_180300_2383866/preview.sdf",
+      "wall_limit_s": 10.0,
+      "navigation": false,
+      "acceptance_receipt": false,
+      "status": "PREVIEW_FINISHED",
+      "wall_s": 10.170865680003772,
+      "exit_codes": {
+        "server": 0
+      }
+    },
+    {
+      "scope": "SCENE_PREVIEW_ONLY",
+      "vehicle": "ackermann",
+      "world": "/home/ceihao/robot_project/delivery/publication_snapshot/preview_runs/20261112_180311_2383849/preview.sdf",
+      "wall_limit_s": 10.0,
+      "navigation": false,
+      "acceptance_receipt": false,
+      "status": "PREVIEW_FINISHED",
+      "wall_s": 10.121684937999817,
+      "exit_codes": {
+        "server": 0
+      }
+    }
+  ]
+}

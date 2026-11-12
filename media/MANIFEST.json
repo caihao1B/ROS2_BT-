@@ -1,0 +1,62 @@
+[
+  {
+    "file": "chassis_diff.png",
+    "source": "optimization_v2/results/S03/demo_20261109_145006_80260/diff_connector/gazebo.png",
+    "sha256": "80b57e182d0611756d93377874f808628ea203d5ecdcf45ce2955e90976af441",
+    "scope": "Actual S03 chassis Gazebo screenshot; not evidence of S14/S15 completion"
+  },
+  {
+    "file": "chassis_ackermann.png",
+    "source": "optimization_v2/results/S03/demo_20261109_145217_81091/ackermann_connector/gazebo.png",
+    "sha256": "4e23c102ad40b0e4bfede49eadffbd4b37b5d3a5759b565027f92d13d85c1b6d",
+    "scope": "Actual S03 chassis Gazebo screenshot; not evidence of S14/S15 completion"
+  },
+  {
+    "file": "project_overview.svg",
+    "source": "optimization_v2/plans/s14_registered/mission_plan.json",
+    "sha256": "d0009c284566ce21a53ff59fb8f931f2dcdde178f513a60e6eed3590f501b364",
+    "scope": "Public-prior and offline task partition diagram; not actual work credit"
+  },
+  {
+    "file": "s14_spray_actual.png",
+    "source": "delivery/validation_work/s14_a1_current/quality.png",
+    "sha256": "c567a4ee57ba538ee54588936eba71a34b75831b1f5655b5275e858894fbaf35",
+    "source_run": "demo_20261112_133927_1978303/nominal_spray_cluster",
+    "scope": "Actual A1 21/21 plus return, 1283.063 simulation seconds; separate from complete S14 stage acceptance"
+  },
+  {
+    "file": "s14_mow_actual.png",
+    "source": "delivery/validation_work/s14_b1_current/quality.png",
+    "sha256": "92154f3c02753c8a1fe97cf62f3a8d6421f4d6e1b7185c1e3c128384b819fd23",
+    "source_run": "test_20261112_143553_2062800/nominal_mow_cluster",
+    "scope": "Actual B1 completed, 99.4915% coverage of original 16.3594578796 m2; 1531.663 simulation seconds including stop"
+  },
+  {
+    "file": "s15_camera_actual.jpg",
+    "source": "optimization_v2/results/S15/collection_train_yield_2239786/fusion/camera_020.jpg",
+    "sha256": "a97510eed82ad794b319dee654cfd802140d5e4828f6e3d869f05e6c8f5c3cf6",
+    "source_run": "collection_train_yield_2239786",
+    "scope": "Actual stereo camera / NanoDet image from training collection; rigid walking-pose meshes; includes a visible false-positive tree detection, not a claim of detector perfection"
+  },
+  {
+    "file": "s15_prediction_actual.png",
+    "source": "/home/ceihao/robot_project/optimization_v2/results/S15/test_20261112_165536_2291112/prediction_examples.json",
+    "source_run": "test_20261112_165536_2291112",
+    "sha256": "8ae1d62ea7b2fe0b20022c53540b9406d942490002f075e6cf9949e1d66ecba7",
+    "scope": "Actual test observations and pinned model outputs; playback of offline examples, not live control video; plots clipped to +/-3m around current observation"
+  },
+  {
+    "file": "s15_prediction_actual.gif",
+    "source": "/home/ceihao/robot_project/optimization_v2/results/S15/test_20261112_165536_2291112/prediction_examples.json",
+    "source_run": "test_20261112_165536_2291112",
+    "sha256": "a2abee6269ed849bc31e6f39ab699d7699f22f07821326abdbbfaa9f33387504",
+    "scope": "Actual test observations and pinned model outputs; playback of offline examples, not live control video; plots clipped to +/-3m around current observation"
+  },
+  {
+    "file": "s15_rviz_actual.png",
+    "source": "optimization_v2/results/S15/demo_20261112_174641_2370190/turning_learned_none/rviz_verified.png",
+    "source_run": "demo_20261112_174641_2370190",
+    "sha256": "9c3a702b468df52e3ad050bfd4cba315749d9f12dc2d3640612f8ebf8943469e",
+    "scope": "Actual RViz GUI demonstration after display-frame-only correction; not a replacement of formal headless matrix"
+  }
+]

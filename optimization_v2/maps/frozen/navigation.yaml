@@ -1,0 +1,7 @@
+image: navigation.pgm
+resolution: 0.2
+origin: [-29.6856, -18.7405, 0.0]
+negate: 0
+occupied_thresh: 0.5
+free_thresh: 0.196
+

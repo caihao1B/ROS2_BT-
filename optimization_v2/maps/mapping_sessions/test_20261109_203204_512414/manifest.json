@@ -1,0 +1,128 @@
+{
+  "schema": "S06-MAPPING/1",
+  "map_id": "59111e4b-5bfd-4102-ab8f-84fbda10750d",
+  "mode": "MAPPING",
+  "frame": "map",
+  "frame_epoch": "953db17e-8310-4a7a-9b4d-f95a19c32218",
+  "source": "Actual noisy stereo and GPU lidar measurements; not SDF geometry conversion",
+  "database_version": "0.23.13",
+  "local_pose_source": "/s05/odometry",
+  "global_tf_owner": "s06_slam",
+  "bindings": [
+    {
+      "path": "optimization_v2/results/S06/full_route_04/mapping.db",
+      "sha256": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82"
+    },
+    {
+      "path": "optimization_v2/results/S06/full_route_04/db_graph.json",
+      "sha256": "40707b948111e6f7d8ff447643bb37ed608b5d94de4b30bff72a9176cbdd7400"
+    },
+    {
+      "path": "optimization_v2/results/S06/full_route_04/map_optimized_cloud.ply",
+      "sha256": "d946ea90b4cfc6a0eae879d2479e6a471825a628567bf41bfd48026d54fa388d"
+    },
+    {
+      "path": "optimization_v2/results/S06/full_route_04/map_odometry_cloud.ply",
+      "sha256": "77365b89c45c0a8b069b6c0f0270dc2a4ef34974df9194396684a488f284b2bd"
+    },
+    {
+      "path": "optimization_v2/results/S06/full_route_04/scene/world.sdf",
+      "sha256": "2c11c2b51184e4ab70c1074252f8612a723efdd2a52429493984f37f1bc10941"
+    },
+    {
+      "path": "optimization_v2/results/S06/full_route_04/scene/vehicle.json",
+      "sha256": "5bd5f3f65a77f2d1e4bbc771d098aaa2231085f7d5089cb9749b239ed1178a51"
+    },
+    {
+      "path": "optimization_v2/results/S06/full_route_04/scene/sensor_manifest.json",
+      "sha256": "653ee7222c7602b0faab31543dcce26e7bddfd7c6bdeab60c3d154e1668c67fe"
+    },
+    {
+      "path": "optimization_v2/results/S06/full_route_04/scene/brick.png",
+      "sha256": "11eee95f8be9abcf48b9b18363a358d56f7da3e66aadeabce29aee00eceebb25"
+    },
+    {
+      "path": "optimization_v2/results/S06/full_route_04/scene/bark.png",
+      "sha256": "7e655ee543b904323c861acaf68c47bd2965f90d169741d9ed3f6ee001b768dc"
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/scripts/s06_common.py",
+      "sha256": "659506bfd4fdcf53f204a1a4907ebcc127fafa8ae3e0c61b8c96b115bcfba7d4"
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/scripts/mapping_scene.py",
+      "sha256": "e025d9f3494e8d155870aa93ba361bdaba791eedff247ff981714b3defb56204"
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/scripts/mapping_inputs.py",
+      "sha256": "c94031b39da56acfc3100c62ba96bd8bb39dd4033bfd622fb4d4e231e4b82d2e"
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/scripts/mapping_observer.py",
+      "sha256": "226a809ff501a298911ebbbb16de95df0cc0935a88e0dbb288da65db3febdd51"
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/scripts/mapping_motion.py",
+      "sha256": "bca3969bcc04098f95bf28c3320bd5ef6111ed2ac9962d62e1bbe1a5a4c07a92"
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/scripts/mapping_runtime.py",
+      "sha256": "40e3472bf8495a998d4cbe82fd05d46da4738169cd1b1808dc35669e51ae798c"
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/src/graph_probe.cpp",
+      "sha256": "e53d49fd97bff132a48f639883bd268a73aa70df4e02f94f082e4036edf43eef"
+    },
+    {
+      "path": "optimization_v2/ws/src/map_manager/src/mapping_manager.cpp",
+      "sha256": "844ced2c73d1111e414f1bf15fc560ab14bba1d9884f030edebb855f7c2dfd5f"
+    },
+    {
+      "path": "optimization_v2/config/slam_mapping.yaml",
+      "sha256": "84d0a89eccad62bc5ea2c3162cb871a943af189f60bfb2627865562272920a3d"
+    },
+    {
+      "path": "optimization_v2/config/routes/mapping_routes.yaml",
+      "sha256": "e1f9112e86fe378c15ed4e84835298e69bc4a8b8f73916160ea1f8bd6fd172b0"
+    },
+    {
+      "path": "optimization_v2/config/sensors.yaml",
+      "sha256": "d916deafb95eb82ab3c02c787d0b2ff7aa1b351774ad1a5b5e2b46851bea1943"
+    },
+    {
+      "path": "optimization_v2/config/local_estimator.yaml",
+      "sha256": "8261ede9d1b6e3b21dd5badcd596fca50d5463ea35b6d6dd4024556176fa5835"
+    },
+    {
+      "path": "optimization_v2/config/icp_odometry.yaml",
+      "sha256": "854fe4d216e7b4f6a1e34b4150c11f8248bcec06719343d923e01d3f3386692d"
+    },
+    {
+      "path": "optimization_v2/config/localization_policy.yaml",
+      "sha256": "5edaa64b0f12ea3ff63da3b559f885a6d2b476241936a056b426fc841cb74077"
+    },
+    {
+      "path": "optimization_v2/config/s06_dependency_lock.json",
+      "sha256": "24c508070cd963dd2834620011d5a936ce32522812d025360cf97b60f8c41b38"
+    },
+    {
+      "path": "optimization_v2/ws/install/map_manager/lib/map_manager/mapping_manager",
+      "sha256": "f038e4dac432b9aa7261d358ace2558b432816dfce6eca5a4822ed7d892d033c"
+    },
+    {
+      "path": "optimization_v2/ws/install/map_manager/lib/map_manager/graph_probe",
+      "sha256": "8a6571ec450ff09acdb978391c8e02f4d448ec35d2f1f7c8b25afb74c125060c"
+    },
+    {
+      "path": "optimization_v2/ws/src/sensor_sim_adapter/scripts/fanout.py",
+      "sha256": "4b92b9595a078be8f33afa39ed5a3178e766fca8fac00cf9051bf7d8e9494417"
+    },
+    {
+      "path": "optimization_v2/results/S05/latest.json",
+      "sha256": "b2055ac6c551a53cf91f4effe7534e3cfe6baa47af55410b1503a91457ceefdc"
+    }
+  ],
+  "db_sha256": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82",
+  "sqlite_integrity": "ok",
+  "manual_status": "NOT_CHECKED"
+}

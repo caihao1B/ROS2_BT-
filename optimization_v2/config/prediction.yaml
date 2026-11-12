@@ -1,0 +1,43 @@
+schema: S15-PREDICTION/1
+input_topic: /s09/objects
+frame: odom
+horizon_s: 3.2
+dt_s: 0.4
+history_steps: 8
+inference_period_sim_s: 0.4
+inference_timeout_wall_s: 0.25
+forecast_max_age_sim_s: 0.6
+max_objects: 6
+cpu_threads: 1
+imm:
+  stay_probability: 0.94
+  acceleration_sigma: 0.45
+  turn_rate: 0.4
+risk:
+  # Disk enclosing the complete qualified 1.10 x 0.72 m diff chassis.
+  robot_radius_m: 0.66
+  clearance_m: 0.15
+  confidence_sigma: 2.4477
+  max_prediction_sigma_m: 2.0
+  # Braking decisions use the first 2 s; all 3.2 s remain visible and scored.
+  risk_horizon_s: 2.0
+  stop_envelope_mass: 0.35
+  slow_envelope_mass: 0.15
+  slow_cap_mps: 0.06
+  clear_hold_s: 1.0
+  max_wait_s: 45.0
+  combined_resume_limit: 12
+selection:
+  preregistered_before_test: true
+  minimum_test_windows: 20
+  require_no_obstacle_contacts: true
+  require_no_new_failed_tasks: true
+  max_latency_p95_ms: 200.0
+  max_timeout_fraction: 0.05
+  max_task_time_ratio_vs_none: 1.10
+  learned_weighted_ade_ratio_vs_imm: 0.95
+  nominal_coverage95_min: 0.80
+  nominal_coverage95_max: 1.0
+  risk_miss_fraction_max: 0.05
+  insufficient_evidence: disabled
+  default_before_qualification: no_prediction

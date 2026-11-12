@@ -1,0 +1,27 @@
+normal: []
+gnss_outage:
+- start: 25
+  end: 43
+  gnss: dropout
+- start: 50
+  end: 58
+  gnss: float
+false_fixed_and_loss:
+- start: 25
+  end: 38
+  gnss: false_fixed
+  bias_enu:
+  - 1.2
+  - -0.8
+  - 0.0
+- start: 48
+  end: 64
+  gnss: dropout
+  map: dropout
+map_degradation:
+- start: 25
+  end: 29
+  map: dropout
+- start: 40
+  end: 54
+  map: mismatch

@@ -1,0 +1,3 @@
+<library path="ackermann_planner14">
+  <class type="s14::AckermannPlanner" base_class_type="nav2_core::GlobalPlanner"><description>Dubins Hybrid-A* with fixed map geometry and latest TF.</description></class>
+</library>

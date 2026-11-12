@@ -1,0 +1,35 @@
+{
+  "resources": [
+    {
+      "path": "assets/meshes/connector.obj",
+      "sha256": "2c4c53226d7e62fc1a98549a63ebf0372c69afdbbf120f496370294d8ddbb5fe"
+    },
+    {
+      "path": "assets/meshes/grade_10.obj",
+      "sha256": "2534f25ba5612675b4636c999b0a26aa2e4c91250e61cbf92dcc9f98a1d28d86"
+    },
+    {
+      "path": "assets/meshes/grade_18.obj",
+      "sha256": "89d88498aa2e876592458e953af71c5df015d4fa173f4fece23a0cbd4424f935"
+    },
+    {
+      "path": "assets/meshes/grade_5.obj",
+      "sha256": "7084b23b889847fe8ee1e7aff807a135e344134476c5f1dd7a8aaba6f715b8d3"
+    },
+    {
+      "path": "assets/meshes/mowing_workspace.obj",
+      "sha256": "bfcbbc6fd3c837aea230b47947fc9412bb65f2f5b6122fdee8cff546e648985e"
+    },
+    {
+      "path": "assets/meshes/spray_workspace.obj",
+      "sha256": "4c4b4228d49ea9975e0485a75b253016c4414cc69a93d2d9031b7f5657503be0"
+    },
+    {
+      "path": "assets/worlds/irregular_farm.sdf",
+      "sha256": "d43c5014ecce50ee0ba1aa8207159d398224c9c2277f8a75108835a2be45ffc8"
+    }
+  ],
+  "seed": 41,
+  "variant": "base",
+  "license": "Original generated geometry; no remote model downloads"
+}

@@ -1,0 +1,115 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Background Color: 28; 38; 48
+    Fixed Frame: odom
+    Frame Rate: 20
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Name: Metre grid
+    Enabled: true
+    Cell Size: 1
+    Plane Cell Count: 40
+  - Class: rviz_default_plugins/TF
+    Name: Unique local TF
+    Enabled: true
+    Show Names: true
+    Marker Scale: 0.3
+  - Class: rviz_default_plugins/PointCloud2
+    Name: Raw observed lidar (toggle)
+    Enabled: false
+    Topic:
+      Value: /s04/perception/points
+      Reliability Policy: Best Effort
+      Durability Policy: Volatile
+      Depth: 5
+    Size (Pixels): 2
+    Style: Points
+    Color Transformer: AxisColor
+    Position Transformer: XYZ
+  - Class: rviz_default_plugins/PointCloud2
+    Name: Measured terrain green / hazard red
+    Enabled: true
+    Topic:
+      Value: /s09/terrain/colored
+      Reliability Policy: Reliable
+      Depth: 2
+    Style: Points
+    Size (Pixels): 3
+    Color Transformer: RGB8
+    Position Transformer: XYZ
+  - Class: rviz_default_plugins/MarkerArray
+    Name: Observed tracks and IDs
+    Enabled: true
+    Topic:
+      Value: /s09/objects/markers
+      Reliability Policy: Reliable
+      Depth: 2
+  - Class: rviz_default_plugins/Image
+    Name: Actual camera detections
+    Enabled: true
+    Topic:
+      Value: /s09/camera/annotated
+      Reliability Policy: Reliable
+      Depth: 2
+  - Class: rviz_default_plugins/Path
+    Name: S13 planned route
+    Enabled: true
+    Topic:
+      Value: /s13/path
+      Reliability Policy: Reliable
+    Color: 255; 180; 40
+    Line Style: Billboards
+    Line Width: 0.035
+  - Class: rviz_default_plugins/Path
+    Name: S13 actual estimated track
+    Enabled: true
+    Topic:
+      Value: /s13/trace
+      Reliability Policy: Reliable
+    Color: 30; 240; 130
+    Line Style: Billboards
+    Line Width: 0.025
+  - Class: rviz_default_plugins/Polygon
+    Name: Actual vehicle footprint
+    Enabled: true
+    Topic:
+      Value: /local_costmap/published_footprint
+      Reliability Policy: Reliable
+      Depth: 2
+    Color: 70; 180; 255
+    Alpha: 1
+  - Class: rviz_default_plugins/Map
+    Name: Nav2 actual local costmap
+    Enabled: true
+    Topic:
+      Value: /local_costmap/costmap
+      Reliability Policy: Reliable
+      Durability Policy: Transient Local
+    Alpha: 0.45
+    Color Scheme: costmap
+  - Class: rviz_default_plugins/MarkerArray
+    Name: S15 actual future modes and probabilities
+    Enabled: true
+    Topic:
+      Value: /s15/predictions/markers
+      Reliability Policy: Reliable
+      Depth: 2
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 18
+      Focal Point:
+        X: 4
+        Y: 0
+        Z: 0.5
+      Pitch: 0.7
+      Yaw: 0.1
+Window Geometry:
+  Width: 1280
+  Height: 850
+  X: 40
+  Y: 60

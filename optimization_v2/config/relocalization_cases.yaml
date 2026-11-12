@@ -1,0 +1,36 @@
+schema: S07-CASES/1
+seed: 41
+poses:
+  zone_a:
+    spawn:
+    - 30.5
+    - 15.3
+    - 0.15
+    operator_hint:
+    - 2.0
+    - 2.0
+    - 0.0
+  connector:
+    spawn:
+    - 82.0
+    - 50.0
+    - 0.75
+    operator_hint:
+    - 55.0
+    - 35.0
+    - 0.6
+  zone_b:
+    spawn:
+    - 122.0
+    - 58.0
+    - -1.4
+    operator_hint:
+    - 95.0
+    - 45.0
+    - -1.57
+case_seconds: 80
+fault_seconds: 125
+wrong_initial_seconds: 90
+provenance: Spawn is simulator-only fixture; hints are declared coarse operator map
+  priors, not sampled truth; matching and independent observed surface quality remain
+  mandatory.

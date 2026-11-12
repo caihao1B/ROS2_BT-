@@ -1,0 +1,31 @@
+{
+  "schema": "ROBOT-DEVELOPMENT-EVIDENCE/1",
+  "stages": {
+    "S14": {
+      "status": "PASS",
+      "run_id": "test_20261112_143553_2062800",
+      "checks": {
+        "S14-C01": "PASS",
+        "S14-C02": "PASS",
+        "S14-C03": "PASS",
+        "S14-C04": "PASS"
+      },
+      "checked_at_utc": "2026-11-12T08:00:34.697788+00:00",
+      "development_receipt_sha256": "a12c14f5fe05ded70806a66e3fb8a81abe2704419d9c831b360692878112418c"
+    },
+    "S15": {
+      "status": "PASS",
+      "run_id": "test_20261112_165536_2291112",
+      "checks": {
+        "S15-C01": "PASS",
+        "S15-C02": "PASS",
+        "S15-C03": "PASS",
+        "S15-C04": "PASS"
+      },
+      "checked_at_utc": "2026-11-12T09:52:04.444582+00:00",
+      "development_receipt_sha256": "f5090f046b2148f589e4816144d95bb61d3afd10984ee3e10134bea6c9b4bac9"
+    }
+  },
+  "scope": "Observed development-machine acceptance; fresh clone needs build and requalification",
+  "active_acceptance_receipts_exported": false
+}

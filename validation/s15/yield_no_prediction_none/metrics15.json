@@ -1,0 +1,52 @@
+{
+  "scope": "TWO_POINT_DYNAMIC_BENCHMARK_NOT_FULL_CLUSTER",
+  "scenario": "yield",
+  "method": "no_prediction",
+  "fault": "none",
+  "benchmark_task_sha": "75110d27cc0db6b795888d3c68988fde8e2759a5849e8485327780e8952543e7",
+  "fixture_sha": "0099a9927603388ab307066d44efa5feb30e4b7d489dabbd7fc9953cb5f968ee",
+  "safe": true,
+  "completed": true,
+  "mission_state": "SUCCEEDED",
+  "reason": "FEEDBACK_COMPLETE",
+  "required_points": 2,
+  "confirmed_points": 2,
+  "sim_seconds_including_stop": 50.15,
+  "wall_seconds": 138.97786505099793,
+  "prediction_wait_s": 0,
+  "all_wait_s": 21.259999999999998,
+  "replans": 1,
+  "prediction_resumes": 0,
+  "observation_resumes": 0,
+  "stop_confirmed": true,
+  "independent_gate_preserved": true,
+  "prediction_gate_zero": true,
+  "owner_audit_valid": true,
+  "obstacle_contacts": {},
+  "database_unchanged": true,
+  "predictions": 124,
+  "learned_person_forecasts": 0,
+  "imm_forecasts": 0,
+  "latency_p95_ms": null,
+  "cpu_mean_ms": null,
+  "timeout_fraction": 0.0,
+  "risk_reasons": {
+    "PREDICTION_ODOM_FALLBACK": 129,
+    "PREDICTION_TRANSPORT_FALLBACK": 26,
+    "PREDICTION_DISABLED_BY_EXPERIMENT_FALLBACK": 3200
+  },
+  "fault_observed": false,
+  "fault_window_fallback": true,
+  "risk_misses": {
+    "eligible": 9,
+    "missed": 9,
+    "fraction": 1.0,
+    "scope": "observed_future_vs_current_robot_footprint; no counterfactual guarantee"
+  },
+  "max_owned_rss_bytes": 4556886016,
+  "owned_cpu_seconds": 936.6499999999997,
+  "nonzero_cleanup_exits": {
+    "server": -11
+  },
+  "passed": true
+}

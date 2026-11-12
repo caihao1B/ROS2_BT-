@@ -1,0 +1,229 @@
+{
+  "seed": 41,
+  "variant": "base",
+  "map_id": "3e38d2519fd250224e21d96152616954fc0b47e6450bd83aaa518d44e7419554",
+  "low_obstacles": [
+    {
+      "id": "unknown_low_0",
+      "center": [
+        25.96430620699873,
+        23.41921575589314,
+        0.04
+      ],
+      "size": [
+        0.9,
+        0.8,
+        0.08
+      ]
+    },
+    {
+      "id": "unknown_low_1",
+      "center": [
+        27.89981101729424,
+        26.124150030431814,
+        0.075
+      ],
+      "size": [
+        0.9,
+        0.8,
+        0.15
+      ]
+    },
+    {
+      "id": "unknown_low_2",
+      "center": [
+        30.02338170758578,
+        28.05703979719458,
+        0.15
+      ],
+      "size": [
+        0.9,
+        0.8,
+        0.3
+      ]
+    }
+  ],
+  "permanent": [
+    {
+      "id": "pump_house",
+      "center": [
+        35,
+        22,
+        1.25
+      ],
+      "size": [
+        3,
+        3,
+        2.5
+      ]
+    },
+    {
+      "id": "shed",
+      "center": [
+        137,
+        69,
+        1.5
+      ],
+      "size": [
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "utility",
+      "center": [
+        49,
+        57,
+        0.75
+      ],
+      "size": [
+        2,
+        2,
+        1.5
+      ]
+    }
+  ],
+  "actors": [
+    {
+      "id": "ped_0",
+      "center": [
+        31,
+        30,
+        0.9
+      ],
+      "amplitude": [
+        4,
+        1,
+        0
+      ],
+      "period": 28,
+      "phase": 0.04244758055678732,
+      "size": [
+        0.5,
+        0.5,
+        1.8
+      ]
+    },
+    {
+      "id": "ped_1",
+      "center": [
+        77,
+        47,
+        0.9
+      ],
+      "amplitude": [
+        3,
+        2,
+        0
+      ],
+      "period": 34,
+      "phase": -0.09316474883578174,
+      "size": [
+        0.5,
+        0.5,
+        1.8
+      ]
+    },
+    {
+      "id": "ped_2",
+      "center": [
+        129,
+        64,
+        0.9
+      ],
+      "amplitude": [
+        4,
+        1.5,
+        0
+      ],
+      "period": 31,
+      "phase": 0.1852993653014503,
+      "size": [
+        0.5,
+        0.5,
+        1.8
+      ]
+    },
+    {
+      "id": "ped_3",
+      "center": [
+        44,
+        58,
+        0.9
+      ],
+      "amplitude": [
+        3,
+        1,
+        0
+      ],
+      "period": 26,
+      "phase": 0.06114236718015792,
+      "size": [
+        0.5,
+        0.5,
+        1.8
+      ]
+    },
+    {
+      "id": "equipment",
+      "center": [
+        35,
+        34,
+        0.55
+      ],
+      "amplitude": [
+        5,
+        1.2,
+        0
+      ],
+      "period": 35,
+      "phase": 0.224967654043858,
+      "size": [
+        1.6,
+        0.9,
+        1.1
+      ]
+    }
+  ],
+  "terrain": [
+    {
+      "id": "grade_5",
+      "origin": [
+        39,
+        62,
+        0
+      ],
+      "length": 8,
+      "width": 3,
+      "slope_deg": 5,
+      "prior": "coarse"
+    },
+    {
+      "id": "grade_10",
+      "origin": [
+        120,
+        44,
+        0
+      ],
+      "length": 6,
+      "width": 3,
+      "slope_deg": 10,
+      "prior": "unknown"
+    },
+    {
+      "id": "grade_18",
+      "origin": [
+        138,
+        54,
+        0
+      ],
+      "length": 4,
+      "width": 3,
+      "slope_deg": 18,
+      "prior": "unknown"
+    }
+  ],
+  "fixture": false,
+  "policy": "SIMULATION_AND_EVALUATION_ONLY"
+}

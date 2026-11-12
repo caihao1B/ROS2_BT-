@@ -1,0 +1,815 @@
+{
+  "case": "nominal_spray_cluster",
+  "pose_name": "zone_a",
+  "seconds": 1800.0,
+  "seed": 41,
+  "success": true,
+  "gui": false,
+  "vehicle": "diff",
+  "sim_seconds_observed": 1282.613,
+  "tool_shutdown": {
+    "state": "STOPPED",
+    "tool_on_requested": false
+  },
+  "shutdown_clock_paused": true,
+  "commands": [
+    {
+      "role": "server",
+      "args": [
+        "gz",
+        "sim",
+        "--force-version",
+        "8",
+        "-s",
+        "--headless-rendering",
+        "--seed",
+        "41",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/world.sdf"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978569,
+      "start_ticks": "7683111",
+      "uid": 1000,
+      "argv": "/usr/bin/env ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim --force-version 8 -s --headless-rendering --seed 41 /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/world.sdf ",
+      "exit_code": -11
+    },
+    {
+      "role": "online_bridge",
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+        "/s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg",
+        "/s03/front_scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan",
+        "/s10/tool/command@std_msgs/msg/String]gz.msgs.StringMsg",
+        "/s10/tool/fault@std_msgs/msg/String]gz.msgs.StringMsg",
+        "/s10/tool/raw_feedback@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s13/near/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked",
+        "--ros-args",
+        "-r",
+        "/clock:=/s13/clock_input",
+        "-r",
+        "/s13/near/points:=/s13/near/raw"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978585,
+      "start_ticks": "7683322",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock /s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg /s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg /s03/front_scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan /s10/tool/command@std_msgs/msg/String]gz.msgs.StringMsg /s10/tool/fault@std_msgs/msg/String]gz.msgs.StringMsg /s10/tool/raw_feedback@std_msgs/msg/String[gz.msgs.StringMsg /s13/near/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked --ros-args -r /clock:=/s13/clock_input -r /s13/near/points:=/s13/near/raw ",
+      "exit_code": 0
+    },
+    {
+      "role": "raw_bridge",
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+        "/s04/raw/lidar/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked",
+        "/s04/raw/left@sensor_msgs/msg/Image[gz.msgs.Image",
+        "/s04/raw/right@sensor_msgs/msg/Image[gz.msgs.Image",
+        "/s04/raw/imu@sensor_msgs/msg/Imu[gz.msgs.IMU",
+        "/s04/raw/gnss@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat",
+        "/s04/raw/joints@std_msgs/msg/String[gz.msgs.StringMsg",
+        "--ros-args",
+        "-r",
+        "/clock:=/s13/clock_input"
+      ],
+      "domain": 121,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978586,
+      "start_ticks": "7683322",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock /s04/raw/lidar/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked /s04/raw/left@sensor_msgs/msg/Image[gz.msgs.Image /s04/raw/right@sensor_msgs/msg/Image[gz.msgs.Image /s04/raw/imu@sensor_msgs/msg/Imu[gz.msgs.IMU /s04/raw/gnss@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat /s04/raw/joints@std_msgs/msg/String[gz.msgs.StringMsg --ros-args -r /clock:=/s13/clock_input ",
+      "exit_code": 0
+    },
+    {
+      "role": "clock_online",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978587,
+      "start_ticks": "7683323",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay ",
+      "exit_code": 0
+    },
+    {
+      "role": "clock_raw",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay"
+      ],
+      "domain": 121,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978588,
+      "start_ticks": "7683323",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay ",
+      "exit_code": 0
+    },
+    {
+      "role": "evaluation_bridge",
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts",
+        "/s10/evaluation/effect@std_msgs/msg/String[gz.msgs.StringMsg"
+      ],
+      "domain": 120,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978589,
+      "start_ticks": "7683323",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg /s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts /s10/evaluation/effect@std_msgs/msg/String[gz.msgs.StringMsg ",
+      "exit_code": 0
+    },
+    {
+      "role": "tool_evaluator",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/evaluator10.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/tool_evaluation",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/tool.json"
+      ],
+      "domain": 120,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978590,
+      "start_ticks": "7683324",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/evaluator10.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/tool_evaluation --config /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "evaluator",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/evaluation"
+      ],
+      "domain": 120,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978591,
+      "start_ticks": "7683324",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/evaluation ",
+      "exit_code": 0
+    },
+    {
+      "role": "drive",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/drive_extension.py",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/vehicle.json",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/drive"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978592,
+      "start_ticks": "7683324",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/drive_extension.py --config /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/vehicle.json --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/drive ",
+      "exit_code": 0
+    },
+    {
+      "role": "generator_motion",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py",
+        "--vehicle",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/vehicle.json",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/generation_motion",
+        "--seed",
+        "41",
+        "--streams",
+        "motion"
+      ],
+      "domain": 121,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978593,
+      "start_ticks": "7683324",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py --vehicle /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/vehicle.json --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/generation_motion --seed 41 --streams motion ",
+      "exit_code": 0
+    },
+    {
+      "role": "generator_vision",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py",
+        "--vehicle",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/vehicle.json",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/generation_vision",
+        "--seed",
+        "41",
+        "--streams",
+        "vision"
+      ],
+      "domain": 121,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978594,
+      "start_ticks": "7683324",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py --vehicle /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/vehicle.json --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/generation_vision --seed 41 --streams vision ",
+      "exit_code": 0
+    },
+    {
+      "role": "near_field",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/near_field13.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/near_field"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978595,
+      "start_ticks": "7683324",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/near_field13.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/near_field ",
+      "exit_code": 0
+    },
+    {
+      "role": "cloud",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/cloud_filter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/cloud"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978596,
+      "start_ticks": "7683324",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/cloud_filter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/cloud ",
+      "exit_code": 0
+    },
+    {
+      "role": "icp",
+      "args": [
+        "/opt/ros/jazzy/lib/rtabmap_odom/icp_odometry",
+        "--ros-args",
+        "-r",
+        "__node:=s05_icp",
+        "-r",
+        "__ns:=/s05/icp",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/icp.yaml",
+        "-r",
+        "scan_cloud:=/s05/icp/cloud",
+        "-r",
+        "scan:=/s05/unused_scan",
+        "-r",
+        "odom:=/s05/icp/raw",
+        "-r",
+        "odom_info:=/s05/icp/info",
+        "-r",
+        "/tf:=/s05/internal/icp_tf",
+        "--log-level",
+        "warn"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978597,
+      "start_ticks": "7683324",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/rtabmap_odom/icp_odometry --ros-args -r __node:=s05_icp -r __ns:=/s05/icp --params-file /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/icp.yaml -r scan_cloud:=/s05/icp/cloud -r scan:=/s05/unused_scan -r odom:=/s05/icp/raw -r odom_info:=/s05/icp/info -r /tf:=/s05/internal/icp_tf --log-level warn ",
+      "exit_code": 0
+    },
+    {
+      "role": "icp_gate",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/icp_gate.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/icp_gate"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978607,
+      "start_ticks": "7683325",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/icp_gate.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/icp_gate ",
+      "exit_code": 0
+    },
+    {
+      "role": "inputs",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/input_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/inputs"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978610,
+      "start_ticks": "7683325",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/input_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/inputs ",
+      "exit_code": 0
+    },
+    {
+      "role": "fused",
+      "args": [
+        "/opt/ros/jazzy/lib/robot_localization/ekf_node",
+        "--ros-args",
+        "-r",
+        "__node:=s05_fused",
+        "-r",
+        "__ns:=/s05/fused",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/fused.yaml",
+        "-r",
+        "odometry/filtered:=/s05/raw/fused",
+        "--log-level",
+        "warn",
+        "-r",
+        "/tf:=/s05/internal/fused_tf"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978613,
+      "start_ticks": "7683325",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/robot_localization/ekf_node --ros-args -r __node:=s05_fused -r __ns:=/s05/fused --params-file /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/fused.yaml -r odometry/filtered:=/s05/raw/fused --log-level warn -r /tf:=/s05/internal/fused_tf ",
+      "exit_code": 0
+    },
+    {
+      "role": "wheel_imu",
+      "args": [
+        "/opt/ros/jazzy/lib/robot_localization/ekf_node",
+        "--ros-args",
+        "-r",
+        "__node:=s05_wheel_imu",
+        "-r",
+        "__ns:=/s05/wheel_imu",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/wheel_imu.yaml",
+        "-r",
+        "odometry/filtered:=/s05/raw/wheel_imu",
+        "--log-level",
+        "warn",
+        "-r",
+        "/tf:=/s05/internal/wheel_imu_tf"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978614,
+      "start_ticks": "7683326",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/robot_localization/ekf_node --ros-args -r __node:=s05_wheel_imu -r __ns:=/s05/wheel_imu --params-file /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/wheel_imu.yaml -r odometry/filtered:=/s05/raw/wheel_imu --log-level warn -r /tf:=/s05/internal/wheel_imu_tf ",
+      "exit_code": 0
+    },
+    {
+      "role": "odom_output",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/odom_output.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/odom_output"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978617,
+      "start_ticks": "7683326",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/odom_output.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/odom_output ",
+      "exit_code": 0
+    },
+    {
+      "role": "health",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/localization_guard/lib/localization_guard/health_guard",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/health.yaml"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978618,
+      "start_ticks": "7683327",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/localization_guard/lib/localization_guard/health_guard --ros-args --params-file /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/health.yaml ",
+      "exit_code": 0
+    },
+    {
+      "role": "mapping_inputs",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_preprocessor.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/mapping_inputs"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978631,
+      "start_ticks": "7683327",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_preprocessor.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/mapping_inputs ",
+      "exit_code": 0
+    },
+    {
+      "role": "sensor_diagnostic",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/capture14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/sensor_diagnostic"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978640,
+      "start_ticks": "7683328",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/capture14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/sensor_diagnostic ",
+      "exit_code": 0
+    },
+    {
+      "role": "slam",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/regional_localizer14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/quality",
+        "--request",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/request.json"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978644,
+      "start_ticks": "7683329",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/regional_localizer14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/quality --request /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/request.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "source_adapter",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/regional_source14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/sources",
+        "--case",
+        "normal"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978654,
+      "start_ticks": "7683330",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/regional_source14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/sources --case normal ",
+      "exit_code": 0
+    },
+    {
+      "role": "manager",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/gnss_supervisor/lib/gnss_supervisor/gnss_supervisor",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "policy_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/manager.json"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978662,
+      "start_ticks": "7683330",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/gnss_supervisor/lib/gnss_supervisor/gnss_supervisor --ros-args -p use_sim_time:=true -p policy_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/manager.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "terrain",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/terrain14",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/terrain.json"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978737,
+      "start_ticks": "7683339",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/terrain14 --ros-args -p use_sim_time:=true -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/terrain.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "fusion",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/object_fusion/scripts/fusion_node.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/fusion",
+        "--case",
+        "nominal_spray_cluster"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978740,
+      "start_ticks": "7683339",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/object_fusion/scripts/fusion_node.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/fusion --case nominal_spray_cluster ",
+      "exit_code": 0
+    },
+    {
+      "role": "cost_adapter",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/terrain_perception/scripts/costmap_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/cost_adapter",
+        "--vehicle",
+        "diff"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978743,
+      "start_ticks": "7683339",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/terrain_perception/scripts/costmap_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/cost_adapter --vehicle diff ",
+      "exit_code": 0
+    },
+    {
+      "role": "prior_cost",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/regional_prior14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/prior_cost",
+        "--vehicle",
+        "diff"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978749,
+      "start_ticks": "7683340",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/regional_prior14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/prior_cost --vehicle diff ",
+      "exit_code": 0
+    },
+    {
+      "role": "controller",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_controller/controller_server",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/registered_nav2.yaml",
+        "-r",
+        "cmd_vel:=/s13/nav_cmd"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978826,
+      "start_ticks": "7683396",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_controller/controller_server --ros-args --params-file /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/registered_nav2.yaml -r cmd_vel:=/s13/nav_cmd ",
+      "exit_code": 0
+    },
+    {
+      "role": "planner",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_planner/planner_server",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/registered_nav2.yaml"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978829,
+      "start_ticks": "7683396",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_planner/planner_server --ros-args --params-file /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/registered_nav2.yaml ",
+      "exit_code": 0
+    },
+    {
+      "role": "navigator",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_bt_navigator/bt_navigator",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/registered_nav2.yaml"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978834,
+      "start_ticks": "7683398",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_bt_navigator/bt_navigator --ros-args --params-file /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/registered_nav2.yaml ",
+      "exit_code": 0
+    },
+    {
+      "role": "nav_lifecycle",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "autostart:=true",
+        "-p",
+        "node_names:=[controller_server,planner_server,bt_navigator]",
+        "-p",
+        "bond_timeout:=5.0"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978835,
+      "start_ticks": "7683398",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args -p use_sim_time:=true -p autostart:=true -p node_names:=[controller_server,planner_server,bt_navigator] -p bond_timeout:=5.0 ",
+      "exit_code": 0
+    },
+    {
+      "role": "ledger",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/ledger14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/ledger",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/tool.json"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978838,
+      "start_ticks": "7683399",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/ledger14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/ledger --config /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "tool_online",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/online_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/tool_online",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/tool.json"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978840,
+      "start_ticks": "7683400",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/online_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/tool_online --config /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "motion",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/command_gate",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/gate.json"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978968,
+      "start_ticks": "7683432",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/command_gate --ros-args -p use_sim_time:=true -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/gate.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "mission_bt",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/mission_bt",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/decision_policy.json",
+        "-p",
+        "tree_file:=/home/ceihao/robot_project/optimization_v2/behavior_trees/mission.xml",
+        "-p",
+        "log_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/decisions.jsonl"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978969,
+      "start_ticks": "7683433",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/mission_bt --ros-args -p use_sim_time:=true -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/decision_policy.json -p tree_file:=/home/ceihao/robot_project/optimization_v2/behavior_trees/mission.xml -p log_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/decisions.jsonl ",
+      "exit_code": 0
+    },
+    {
+      "role": "client",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/worker14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/client",
+        "--vehicle",
+        "diff",
+        "--controller",
+        "DWB",
+        "--case",
+        "nominal_spray_cluster",
+        "--seconds",
+        "1800.0"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978970,
+      "start_ticks": "7683434",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/worker14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/client --vehicle diff --controller DWB --case nominal_spray_cluster --seconds 1800.0 ",
+      "exit_code": 0
+    },
+    {
+      "role": "tool_server",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/tool_sim/lib/tool_sim/tool_action_server",
+        "--ros-args",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/tool.json"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978971,
+      "start_ticks": "7683434",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/tool_sim/lib/tool_sim/tool_action_server --ros-args -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "observer",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/observer13.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/online",
+        "--seconds",
+        "1800.0"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1978972,
+      "start_ticks": "7683435",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/observer13.py --out /home/ceihao/robot_project/optimization_v2/results/S14/demo_20261112_133927_1978303/nominal_spray_cluster/online --seconds 1800.0 ",
+      "exit_code": 0
+    },
+    {
+      "role": "initial_hint",
+      "args": [
+        "ros2",
+        "topic",
+        "pub",
+        "--once",
+        "/s07/rtabmap/initialpose",
+        "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "{\"header\": {\"frame_id\": \"map\"}, \"pose\": {\"pose\": {\"position\": {\"x\": 5.650163169999999, \"y\": 33.00427919, \"z\": 0.0}, \"orientation\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.04997916927067833, \"w\": 0.9987502603949663}}, \"covariance\": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25]}}"
+      ],
+      "domain": 119,
+      "partition": "s13_demo_20261112_133927_1978303_nominal_spray_cluster",
+      "pid": 1979347,
+      "start_ticks": "7684986",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /opt/ros/jazzy/bin/ros2 topic pub --once /s07/rtabmap/initialpose geometry_msgs/msg/PoseWithCovarianceStamped {\"header\": {\"frame_id\": \"map\"}, \"pose\": {\"pose\": {\"position\": {\"x\": 5.650163169999999, \"y\": 33.00427919, \"z\": 0.0}, \"orientation\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.04997916927067833, \"w\": 0.9987502603949663}}, \"covariance\": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25]}} ",
+      "exit_code": 0
+    }
+  ],
+  "events": [
+    {
+      "t": 4.08,
+      "event": "initial_hint",
+      "pose": [
+        5.650163169999999,
+        33.00427919,
+        0.0,
+        0.0,
+        0.0,
+        0.04997916927067833,
+        0.9987502603949663
+      ],
+      "source": "declared coarse operator prior"
+    }
+  ],
+  "wall_seconds": 3265.763107544997,
+  "database_before": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82",
+  "database_after": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82",
+  "database_unchanged": true,
+  "regional_binding": {
+    "region": "A",
+    "map_id": "2b77c891-b9c6-5242-8495-981c5d5d5fcf",
+    "frame_epoch": "765f47d9-f391-51e4-9db6-6dab80b7102a",
+    "atlas_revision": "08f41cfa9d26e0a3b7f7d4780e0e4c390b832d8779ccf28118e4c663f7897fd3",
+    "plan_revision": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3"
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "commit": "ef0165a93ee5ba8cdc14f9b999b3e00070cd8588",
+  "files": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d80c56cbf385b2f9b20933c360e3814e433a73a",
+      "size": 1088,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/1d80c56cbf385b2f9b20933c360e3814e433a73a"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ee5e80329175a2848f8e2fb1bb087f706d564e3",
+      "size": 16533,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/7ee5e80329175a2848f8e2fb1bb087f706d564e3"
+    },
+    {
+      "path": "experiments/pedestrians/models/eth_attention_radius_3/config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2769ef611561db53e65f06cc6f2af6f8e4412705",
+      "size": 1907,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/2769ef611561db53e65f06cc6f2af6f8e4412705"
+    },
+    {
+      "path": "trajectron/environment/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ad06818fc7f04afba5e11a4a0f8335335af9de0",
+      "size": 333,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/9ad06818fc7f04afba5e11a4a0f8335335af9de0"
+    },
+    {
+      "path": "trajectron/environment/data_structures.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ffdc6fa416233eb2c6d3011c2aeb43b31bff6cb",
+      "size": 10246,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/5ffdc6fa416233eb2c6d3011c2aeb43b31bff6cb"
+    },
+    {
+      "path": "trajectron/environment/data_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "675f198f544edac7d9c0c3a33420666d2204df07",
+      "size": 858,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/675f198f544edac7d9c0c3a33420666d2204df07"
+    },
+    {
+      "path": "trajectron/environment/environment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22ddd14433feae4630a18ada5fbe65d0a7f77525",
+      "size": 2775,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/22ddd14433feae4630a18ada5fbe65d0a7f77525"
+    },
+    {
+      "path": "trajectron/environment/map.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1b527d51a88ba201d9e0d2c12a3f6d68c763dca",
+      "size": 7933,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/d1b527d51a88ba201d9e0d2c12a3f6d68c763dca"
+    },
+    {
+      "path": "trajectron/environment/node.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2db820eb1b979b63ed9ff286c2576f847cbc5f70",
+      "size": 9923,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/2db820eb1b979b63ed9ff286c2576f847cbc5f70"
+    },
+    {
+      "path": "trajectron/environment/node_type.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a44917a22d964ef2f5c2a1ad4f819c8375d89fae",
+      "size": 1086,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/a44917a22d964ef2f5c2a1ad4f819c8375d89fae"
+    },
+    {
+      "path": "trajectron/environment/scene.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2991482787fb694734078f45cbf3322126c912f3",
+      "size": 9509,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/2991482787fb694734078f45cbf3322126c912f3"
+    },
+    {
+      "path": "trajectron/environment/scene_graph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1113bd4d1fc316be9fedfc9eae6bed6a3a160ec7",
+      "size": 19384,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/1113bd4d1fc316be9fedfc9eae6bed6a3a160ec7"
+    },
+    {
+      "path": "trajectron/model/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "910c40af5690f3346edc6d07fc171a8387550d01",
+      "size": 80,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/910c40af5690f3346edc6d07fc171a8387550d01"
+    },
+    {
+      "path": "trajectron/model/components/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "116a37caf6d826f957e32764569f8655345b851b",
+      "size": 194,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/116a37caf6d826f957e32764569f8655345b851b"
+    },
+    {
+      "path": "trajectron/model/components/additive_attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93623242b30b0a5468213ee502aea8b4fc662ef2",
+      "size": 3370,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/93623242b30b0a5468213ee502aea8b4fc662ef2"
+    },
+    {
+      "path": "trajectron/model/components/discrete_latent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3f8688ba2b9a49e52049f6927a345067770b0d3",
+      "size": 4935,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/b3f8688ba2b9a49e52049f6927a345067770b0d3"
+    },
+    {
+      "path": "trajectron/model/components/gmm2d.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fb48364516cc7a383c426d08c881896c4b180e9",
+      "size": 7518,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/6fb48364516cc7a383c426d08c881896c4b180e9"
+    },
+    {
+      "path": "trajectron/model/components/graph_attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc8d89a035a0a22b31047382780617c78e0c7a8c",
+      "size": 2191,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/fc8d89a035a0a22b31047382780617c78e0c7a8c"
+    },
+    {
+      "path": "trajectron/model/components/map_encoder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27d6e1d36d3e97059ebbc6b0cf7f941e5780ff55",
+      "size": 1110,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/27d6e1d36d3e97059ebbc6b0cf7f941e5780ff55"
+    },
+    {
+      "path": "trajectron/model/dataset/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a01f88e8c0b458a98d606abeb002a75d59ea41fe",
+      "size": 170,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/a01f88e8c0b458a98d606abeb002a75d59ea41fe"
+    },
+    {
+      "path": "trajectron/model/dataset/dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef361826c7a39334209596e7283a950bd29a215d",
+      "size": 2925,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/ef361826c7a39334209596e7283a950bd29a215d"
+    },
+    {
+      "path": "trajectron/model/dataset/homography_warper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "885ab5f9a3246d5801c719eee95e89cc78c77104",
+      "size": 19897,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/885ab5f9a3246d5801c719eee95e89cc78c77104"
+    },
+    {
+      "path": "trajectron/model/dataset/preprocessing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8a0e8fcbcecaa0db9552bca14fe5a69cc3db60d",
+      "size": 11073,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/c8a0e8fcbcecaa0db9552bca14fe5a69cc3db60d"
+    },
+    {
+      "path": "trajectron/model/dynamics/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f506d4361501d2663702ad6e9a2b138ef3a4eea",
+      "size": 135,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/8f506d4361501d2663702ad6e9a2b138ef3a4eea"
+    },
+    {
+      "path": "trajectron/model/dynamics/dynamic.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b03e13fd1e08b4737428f5a9a1922c8b1abf488",
+      "size": 776,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/6b03e13fd1e08b4737428f5a9a1922c8b1abf488"
+    },
+    {
+      "path": "trajectron/model/dynamics/linear.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b55e640b7a8266adc3ecaf9f48fe49a64a6266f",
+      "size": 231,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/9b55e640b7a8266adc3ecaf9f48fe49a64a6266f"
+    },
+    {
+      "path": "trajectron/model/dynamics/single_integrator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "984f5fa686638218fb85c67e07b01e96df736573",
+      "size": 2762,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/984f5fa686638218fb85c67e07b01e96df736573"
+    },
+    {
+      "path": "trajectron/model/dynamics/unicycle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a83c42743e865158a9ab6a9f8d3751c86c4cd75",
+      "size": 9237,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/1a83c42743e865158a9ab6a9f8d3751c86c4cd75"
+    },
+    {
+      "path": "trajectron/model/mgcvae.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8760d6d9b4fd023e2f0592d409aa4b2d073d4362",
+      "size": 58313,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/8760d6d9b4fd023e2f0592d409aa4b2d073d4362"
+    },
+    {
+      "path": "trajectron/model/model_registrar.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "111a8ab3e9c1ef060302509a30b30af308c90294",
+      "size": 2568,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/111a8ab3e9c1ef060302509a30b30af308c90294"
+    },
+    {
+      "path": "trajectron/model/model_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d516b3b07def2e10a5f63c8ff8e21849c8ebd3c",
+      "size": 4535,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/0d516b3b07def2e10a5f63c8ff8e21849c8ebd3c"
+    },
+    {
+      "path": "trajectron/model/trajectron.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1806702c4eb7f16a584b3648564c51b195143764",
+      "size": 7942,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/1806702c4eb7f16a584b3648564c51b195143764"
+    },
+    {
+      "path": "trajectron/utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b50caf009b7aef11a37d20e7a1083abdcc846467",
+      "size": 143,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/b50caf009b7aef11a37d20e7a1083abdcc846467"
+    },
+    {
+      "path": "trajectron/utils/matrix_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87c4efac3a6e1cf7bbce42c5cec2ba2a4075b1bf",
+      "size": 1223,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/87c4efac3a6e1cf7bbce42c5cec2ba2a4075b1bf"
+    },
+    {
+      "path": "trajectron/utils/os_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "038342680208d2be56d3dcd19bf8771ff46d42ae",
+      "size": 479,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/038342680208d2be56d3dcd19bf8771ff46d42ae"
+    },
+    {
+      "path": "trajectron/utils/trajectory_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e355822cfa05e6985e0452cc6dcfd6eef8c4c50f",
+      "size": 1812,
+      "url": "https://api.github.com/repos/StanfordASL/Trajectron-plus-plus/git/blobs/e355822cfa05e6985e0452cc6dcfd6eef8c4c50f"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+schema: S13-COMMISSIONING/1
+seed: 41
+working_speed_cap_mps: 0.12
+fixture:
+  anchor_survey: [30.5, 15.3, 0.15]
+  motion_permission: optimization_v2/config/perception_test_area.geojson
+  source: S12 B1 initial COVERAGE for diff / initial TURN for Ackermann
+  maximum_fragment_chord_m: 2.0
+  tool_on: false
+  credited_area_m2: 0
+  purpose: controller and action interface qualification using registered S12 geometry
+production_plan_online_authorized: false
+frozen_occupancy: optimization_v2/maps/frozen/navigation.yaml
+occupancy_fusion: known static free fills current unknown; static or live lethal wins; three fresh terrain confirmations enter persistent memory until observed free; boundaries and dynamic tracks keep their own lifecycle
+near_field_supplement: measured downward optical channel, 1 cm noise, 2 percent dropout, 40 ms delay; perception only
+blind_spot_limitation: the body-occluded region is not certified observable; no claim of universal obstacle detection

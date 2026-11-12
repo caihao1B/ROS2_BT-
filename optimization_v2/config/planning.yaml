@@ -1,0 +1,30 @@
+schema: S12-PLANNING/1
+revision: s12.1
+seed: 41
+k: 3
+normal_budget_s: 1440.0
+hard_budget_s: 1800.0
+scope_policy: explicit_versioned_task_resize_preserve_original_obligations
+# Each candidate defines an entire continuous task domain, then the S11 algorithm partitions it.
+scale_candidates: [0.40, 0.25, 0.20]
+max_scope_iterations: 3
+max_rebalance_iterations: 3
+safety_margin_m: 0.08
+path_step_m: 0.08
+sweep_numerical_margin_m: 0.002
+work_spacing_m: 0.65
+swath_endpoint_overrun_m: 0.35
+whole_zone_headland_m: 4.22
+turn_candidate_count: 80
+minimum_work_segment_m: 0.02
+startup_seconds: 1.0
+shutdown_seconds: 2.5
+spray_dwell_seconds: 2.0
+spray_docking_seconds: 1.0
+time_reserve_fraction: 0.15
+cluster_setup_seconds: 10.0
+coverage_fraction: 0.95
+max_connector_seconds: 2.0
+max_connector_nodes: 800
+frame: prior_local_enu
+online_execution_allowed: false

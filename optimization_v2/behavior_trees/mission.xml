@@ -1,0 +1,11 @@
+<root BTCPP_format="4" main_tree_to_execute="Mission">
+  <BehaviorTree ID="Mission">
+    <ReactiveSequence name="TaskAndSafetySupervisor">
+      <Decide name="EvidenceBudgetAndHysteresis"/>
+      <SubTree ID="ClusterExecution" _autoremap="true"/>
+    </ReactiveSequence>
+  </BehaviorTree>
+  <BehaviorTree ID="ClusterExecution">
+    <Dispatch name="CancelConfirmThenDispatch"/>
+  </BehaviorTree>
+</root>

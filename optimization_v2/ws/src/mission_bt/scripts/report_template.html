@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S14 · 行为树与作业证据</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,"Noto Sans CJK SC",sans-serif;color:#183047;background:#edf2f6}*{box-sizing:border-box}body{max-width:1280px;margin:24px auto;padding:0 20px 32px}h1{font-size:28px;margin:8px 0}h2{font-size:19px;margin:0 0 12px}p{line-height:1.7;margin:8px 0}.muted{color:#526678;font-size:14px}.banner{border-left:5px solid #bc5b20;background:#fff4e9;padding:12px 16px;margin:16px 0}.panel{background:white;border:1px solid #d9e2ea;border-radius:12px;padding:20px;margin:14px 0}.grid{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}.card{background:#f3f6f9;padding:12px;border-radius:8px}.card b{display:block;font-size:22px;margin-top:5px}.card span{font-size:13px;color:#526678}select,button,input{font:inherit}select{max-width:100%;padding:7px;border:1px solid #b2c0ce;border-radius:6px}button{padding:6px 12px;border:1px solid #b2c0ce;border-radius:6px;background:#fff;cursor:pointer}input{vertical-align:middle;accent-color:#157b87}#stamp{font-variant-numeric:tabular-nums;display:inline-block;min-width:85px}.state{display:inline-block;padding:6px 9px;margin:4px;border-radius:5px;background:#edf2f6;font-size:12px}.RUNNING{background:#ceeee0;color:#145338}.SUCCESS{background:#dceaff;color:#1a417e}.FAILURE{background:#fee0e0;color:#862626}#reason{font-weight:bold;font-size:18px;color:#114e65;margin:12px 0}.code{font:12px ui-monospace,monospace;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px ui-monospace,monospace;max-height:400px;overflow:auto;background:#f5f7fa;padding:12px;border-radius:6px}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:8px 5px;border-bottom:1px solid #e2e8ef;text-align:left;vertical-align:top}th{color:#526678;font-weight:500}.selected{background:#e4f2ee}svg{width:100%;height:340px;background:#f8fafc;border:1px solid #e2e8ef;border-radius:6px}summary{cursor:pointer;color:#345d7a;padding:8px 0}#checks{max-height:none}a{color:#146ca5}#timeline{max-height:200px;overflow:auto}@media(max-width:900px){.grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}body{padding:0 12px}h1{font-size:23px}}
+</style>
+<header><p class="muted">S14 / 真实 Gazebo · Nav2 · 工具反馈账本</p><h1>可解释行为树与完整作业闭环</h1><p id="summary"></p><p class="muted">ABSTRACT_TOOL_SIM · 当前观测基线，尚未接入 S15 预测 · 人工验收：NOT_CHECKED</p></header>
+<div class="banner">SMOKE 是短任务证据。完整簇必须用原固定分母验收；安全停车与故障测试通过均不代表整簇完成。PARTIAL 不能作为 S15 的通过前置。</div>
+<section class="panel"><label for="case">选择实测案例　</label><select id="case"></select><div class="cards" id="cards"></div><p id="outcome"></p><details><summary>查看数值、物理效果与定位原始指标</summary><pre id="metrics"></pre></details></section>
+<section class="panel"><h2>同步回放：决策 · 行为树 · 估计位姿</h2><button id="play">播放</button> <input aria-label="决策时间" id="time" type="range" min="0" value="0" style="width:65%"> <span id="stamp"></span><div id="tree"></div><p class="muted">节点颜色来自实际 BT 状态。橙色箭头是该决策时刻最近的已记录估计位姿；不插入仿真真值。</p></section>
+<div class="grid"><section class="panel"><h2>为什么选择这个动作</h2><div id="reason"></div><div class="code" id="reason-code"></div><table><tbody id="evidence"></tbody></table><h2 style="margin-top:22px">候选行动与成本</h2><table><thead><tr><th>行动</th><th>估计秒</th><th>可行 / 选中</th></tr></thead><tbody id="candidates"></tbody></table><p class="muted">成本是决策估计，完成量只取反馈账本。无已验证局部路径时，绕行候选不可用。</p><details><summary>原始证据、阈值和候选拒绝原因</summary><pre id="decision"></pre></details></section>
+<section class="panel"><h2>轨迹与最终作业残余</h2><svg id="map" viewBox="0 0 600 400" aria-label="map 坐标下的实测轨迹及残余"></svg><p class="muted">蓝：本次估计轨迹；橙：回放时刻位置；绿：最终有效覆盖；红：最终残余 / 待服务点。坐标为 map，单位米。覆盖和残余显示任务结束状态，不随滑条倒算。</p><p id="pose-state" class="code"></p><p id="residual"></p><h2 style="margin-top:20px">该时刻最近的执行事件</h2><div id="timeline"></div></section></div>
+<section class="panel"><h2>区域地图与独立配准验证</h2><p class="muted">地图由带噪声的训练测点激光与 GNSS 构建；留出点不参与建图。适用范围为 A1/B1。此项通过不能代替完整簇验收。</p><details><summary>查看测量图与版本</summary><img src="registration_validation.png" alt="区域地图和独立测点误差" style="width:100%;height:auto"><img src="navigation_validation.png" alt="测量生成的二维导航底图与固定任务路径" style="width:100%;height:auto"><pre id="registration"></pre></details></section>
+<section class="panel"><h2>验收与原始证据</h2><pre id="checks"></pre><p id="links"></p><p class="muted">本目录还包含 commands.jsonl、source_snapshot.json、input_bindings.json 与定位诊断数据。故障案例的测试通过与 mission 的 PARTIAL 是不同字段。</p></section>
+<script>
+const data=__PAYLOAD__;
+const $=s=>document.querySelector(s),names=Object.keys(data.cases||{}),sel=$('#case'),slider=$('#time');
+const labels={decision_story:'短任务：喷洒与决策恢复（SMOKE）',mow_smoke:'短任务：反馈割草（SMOKE）',nominal_spray_cluster:'完整 A1：21 点喷洒',nominal_mow_cluster:'完整 B1：条带割草',budget_exhaustion:'故障：预算不足',persistent_block:'故障：持续观测失联',tool_loss:'故障：工具反馈丢失'};
+const reasons={SENSOR_ADMISSION_WAIT:'等待定位、地形、底盘和工具同时准入',STARTUP_ADMISSION_TIMEOUT:'起点观测超时：停止并保留完整任务',INPUT_STALE:'黑板输入超龄：撤销执行许可',SAFETY_STOP:'安全条件不满足：停止',BUDGET_STOP:'剩余预算不足以完成下一动作并停车',SHORT_OBSTRUCTION_WAIT:'短时阻塞：先等待，避免反复重规划',CLEAR_HYSTERESIS_WAIT:'观测恢复：等待连续稳定确认',LOCAL_DETOUR:'已验证绕行路径的成本更低',GLOBAL_REPLAN:'持续阻塞：预算允许重新查询全局路径',DEFER_OBLIGATION:'当前任务延后，原分母与残余保留',BLOCK_RETRY_EXHAUSTED:'阻塞或重试预算耗尽：受控停止',RESIDUAL_PATCH:'对实际账本残余执行补扫',PATCH_LIMIT:'没有可准入的补扫或达到次数上限',NEXT_OBLIGATION:'观测合格：执行下一条固定义务',FEEDBACK_COMPLETE:'反馈完成：收尾确认'};
+const actions={WAIT:'等待',DETOUR:'局部绕行',REPLAN:'全局重规划',DEFER:'延后',PATCH:'补扫',STOP:'停止',EXECUTE:'执行',COMPLETE:'完成'};
+let current=null,project=null,playing=null;
+function fmt(x,n=2){return typeof x==='number'&&Number.isFinite(x)?x.toFixed(n):'—'}
+function cellRow(parent,values,cls=''){let tr=document.createElement('tr');tr.className=cls;values.forEach(v=>{let e=document.createElement('td');e.textContent=String(v);tr.append(e)});parent.append(tr)}
+$('#summary').textContent=`${data.status} · ${data.next_step_verdict||'本轮测试进行中'}`;
+$('#registration').textContent=JSON.stringify(data.registration||{},null,2);
+$('#checks').textContent=JSON.stringify({run_id:data.run_id,checks:data.checks},null,2);
+names.forEach(n=>{let o=document.createElement('option');o.value=n;o.textContent=labels[n]||n;sel.append(o)});
+function stopPlay(){clearInterval(playing);playing=null;$('#play').textContent='播放'}
+function draw(){
+ stopPlay();current=data.cases[sel.value];if(!current)return;
+ const m=current.mission||{};$('#cards').innerHTML='';
+ const metrics=[['任务结果',m.state||'NOT_RUN'],[m.required_points?'反馈确认点数':'有效覆盖率',m.required_points?`${m.confirmed_points}/${m.required_points}`:(m.required_area_m2?`${fmt(100*m.coverage_fraction)}%`:'—')],['仿真耗时 / 上限',`${fmt(current.sim_seconds,1)} / ${current.sim_limit_s} s`],['工具停车确认',current.stopped_confirmed?'已确认':'未确认']];
+ metrics.forEach(([k,v])=>{let e=document.createElement('div');e.className='card';let label=document.createElement('span');label.textContent=k;let value=document.createElement('b');value.textContent=v;e.append(label,value);$('#cards').append(e)});
+ $('#outcome').textContent=`${current.scope||'未标注范围'} · ${m.reason||'无结果'}${m.required_area_m2?` · 反馈面积 ${fmt(m.confirmed_area_m2,4)} / 原固定 ${fmt(m.required_area_m2,4)} m²`:''}`;
+ $('#metrics').textContent=JSON.stringify({scope:current.scope,state:m.state,reason:m.reason,sim_seconds:current.sim_seconds,wall_seconds:current.wall_seconds,points:`${m.confirmed_points||0}/${m.required_points||0}`,required_area_m2:m.required_area_m2,confirmed_area_m2:m.confirmed_area_m2,coverage_fraction:m.coverage_fraction,stopped:current.stopped_confirmed,ownership:current.ownership_ok,raw_physical_effects:current.physical_effects,localization:current.localization,regional_binding:current.regional_binding,reused_from:current.reused_from||null},null,2);
+ $('#links').innerHTML='';[['决策 JSONL','decisions.jsonl'],['任务结果','client/mission.json'],['未完成几何','client/residual.geojson'],['反馈 SQLite','ledger/ledger.sqlite'],['运行与退出码','runtime.json']].forEach(([label,path])=>{let a=document.createElement('a');a.textContent=label;a.href=sel.value+'/'+path;$('#links').append(a,document.createTextNode('　'))});
+ slider.max=Math.max(0,(current.decisions||[]).length-1);slider.value=slider.max;drawMap();update();
+}
+function drawMap(){
+ const m=current.mission||{},pts=(current.trace||[]).map(x=>x.pose.slice(0,2));
+ const targets=(m.pending||[]).concat(m.deferred||[]).filter(j=>j.kind==='POINT_SERVICE').map(j=>j.target);
+ const rings=g=>!g?.coordinates?[]:g.type==='Polygon'?g.coordinates:g.type==='MultiPolygon'?g.coordinates.flat():[];
+ const red=rings(m.residual),green=rings(m.credit),all=pts.concat(targets,red.flat(),green.flat());let svg=$('#map');svg.innerHTML='';project=null;
+ $('#residual').textContent=`固定任务 ${m.cluster||''}；待执行 ${m.pending?.length||0}；延后 ${m.deferred?.length||0}；原始分母保留。`;
+ if(!all.length){svg.innerHTML='<text x="20" y="40">没有已记录定位轨迹或任务几何</text>';return;}
+ const xs=all.map(p=>p[0]),ys=all.map(p=>p[1]),pad=Math.max(.25,Math.min(1,Math.max(Math.max(...xs)-Math.min(...xs),Math.max(...ys)-Math.min(...ys))*.08)),xmin=Math.min(...xs)-pad,xmax=Math.max(...xs)+pad,ymin=Math.min(...ys)-pad,ymax=Math.max(...ys)+pad,scale=Math.min(540/(xmax-xmin),300/(ymax-ymin));
+ project=p=>[30+(p[0]-xmin)*scale,370-(p[1]-ymin)*scale];
+ function el(tag,attrs){let e=document.createElementNS('http://www.w3.org/2000/svg',tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));svg.append(e);return e}
+ function line(ps,color,fill='none'){el('polyline',{points:ps.map(project).map(p=>p.join(',')).join(' '),stroke:color,'stroke-width':2,fill})}
+ red.forEach(r=>line(r,'#dc2626','#fee2e2'));green.forEach(r=>line(r,'#059669','#a7f3d0'));line(pts,'#2563eb');targets.forEach(p=>{let [x,y]=project(p);el('circle',{cx:x,cy:y,r:4,fill:'#dc2626'})});
+ el('path',{id:'current-pose',d:'M 13 0 L -8 -7 L -4 0 L -8 7 Z',fill:'#e66b0e',stroke:'#7c3506','stroke-width':1,visibility:'hidden'});
+ let label=el('text',{x:20,y:24,fill:'#526678','font-size':16});label.textContent=`map：x [${fmt(xmin)}, ${fmt(xmax)}]，y [${fmt(ymin)}, ${fmt(ymax)}] m`;
+}
+function update(){
+ if(!current)return;const d=(current.decisions||[])[+slider.value],e=d?.evidence||{},th=d?.thresholds||{},t=d?.t||0;
+ $('#decision').textContent=JSON.stringify(d||{reason:'没有决策记录'},null,2);$('#stamp').textContent=d?`${fmt(t)} s`:'';
+ $('#reason').textContent=reasons[d?.reason_code]||d?.reason_code||'没有决策记录';$('#reason-code').textContent=d?`${d.reason_code} → ${actions[d.action]||d.action}`:'';
+ const evidence=$('#evidence');evidence.innerHTML='';
+ [['定位 / GNSS',`${e.map_reason||'—'} / ${e.gnss_reason||'—'}`],['导航代价图准入',e.costmaps_ready===true?'有效':e.costmaps_ready===false?'未就绪 / 起点不可通行':'未记录'],['创新距离',`${fmt(e.innovation_m,3)} m（上游原限 0.150 m）`],['预算 / 停车保留',`${fmt(e.remaining_s,1)} / ${fmt(th.stop_reserve_s,1)} s`],['阻塞 / 持续门限',`${fmt(d?.blocked_duration_s,1)} / ${fmt(th.persistent_block_s,1)} s`],['重规划次数 / 上限',`${e.replans??'—'} / ${th.max_replans??'—'}`],['执行义务',e.obligation||'无'],['工具状态',e.tool_phase||'—'],['感知原因',e.perception_reason||'—']].forEach(v=>cellRow(evidence,v));
+ const candidates=$('#candidates');candidates.innerHTML='';(d?.candidates||[]).forEach(c=>cellRow(candidates,[actions[c.action]||c.action,c.cost_s>=1e6?'未生成':fmt(c.cost_s,1),`${c.feasible?'可行':'不可行'}${c.selected?' · 选中':''}`],c.selected?'selected':''));
+ let snapshot=(current.tree||[]).filter(x=>x.t<=t).at(-1),box=$('#tree');box.innerHTML='';(snapshot?.nodes||[]).forEach(n=>{let s=document.createElement('span');s.className='state '+n.status;s.textContent=n.node+': '+n.status;box.append(s)});
+ let sample=(current.trace||[]).filter(x=>x.t<=t).at(-1),marker=$('#current-pose');
+ if(sample&&project&&marker){let p=sample.pose,[x,y]=project(p),heading=Math.atan2(2*(p[6]*p[5]+p[3]*p[4]),1-2*(p[4]*p[4]+p[5]*p[5]));marker.setAttribute('transform',`translate(${x} ${y}) rotate(${-heading*180/Math.PI})`);marker.setAttribute('visibility','visible');marker.dataset.t=sample.t;$('#pose-state').textContent=`最近记录 t=${fmt(sample.t)} s；x=${fmt(p[0],3)}, y=${fmt(p[1],3)} m；年龄 ${fmt(t-sample.t)} s；导航准入 ${e.platform_valid===true?'有效':'无效 / 未提供'}`;}
+ else{if(marker)marker.setAttribute('visibility','hidden');$('#pose-state').textContent='此时尚无估计位姿记录；任务不应开始。'}
+ let timeline=$('#timeline');timeline.innerHTML='';(current.events||[]).filter(x=>x.t<=t&&x.event!=='mission_ownership').slice(-4).reverse().forEach(x=>{let p=document.createElement('p');p.className='code';p.textContent=`${fmt(x.t)} s · ${x.event}${x.id?' · '+x.id:''}${x.error?' · '+x.error:''}`;timeline.append(p)});
+}
+sel.addEventListener('change',draw);slider.addEventListener('input',update);$('#play').addEventListener('click',()=>{if(playing){stopPlay();return;}if(+slider.value>=+slider.max)slider.value=0;$('#play').textContent='暂停';playing=setInterval(()=>{slider.value=Math.min(+slider.max,+slider.value+1);update();if(+slider.value>=+slider.max)stopPlay()},180)});draw();
+</script></html>

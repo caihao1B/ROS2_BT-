@@ -1,0 +1,12 @@
+{
+  "status": "VALIDATED",
+  "online_execution_allowed": false,
+  "plan_revision": "93735c60bdcf20544599e3862861a677c1f779b3a384eca1e4c2d4adbc5fede4",
+  "files": {
+    "clusters.geojson": "0b930874aab1b8115c6dd4ac145c314c6ecdd4a5fe4efce7f6bc89d7ea2d898a",
+    "mission_plan.json": "8f2c3213efd9a6ea11fb48342865ea7e1b5e46c394fd9ee3ed209fd740a81ce8",
+    "routes.geojson": "e028b85179884b8fe93d28bfe65607e3857b7022a0d9c036273a04b57e79ebb0",
+    "task_scope.geojson": "37e6fdcfb53617cb3cf90722e2f82db62ff3e21abe37afea8df548e9fbddad02",
+    "time_budget.csv": "369014131eb6c11dab26bf27b9889f5713e35077b1d0c670c95a8cd7928e0ab0"
+  }
+}

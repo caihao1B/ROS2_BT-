@@ -1,0 +1,11 @@
+{
+  "no_missing_data": true,
+  "scenarios": true,
+  "real_modes": true,
+  "time_changes": true,
+  "case_switch": true,
+  "actual_bt": true,
+  "rendered": true,
+  "passed": true,
+  "exit_code": 0
+}

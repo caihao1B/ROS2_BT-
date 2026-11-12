@@ -1,0 +1,1107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.10">
+  <world name="irregular_farm">
+    <physics name="default" type="ignored">
+      <max_step_size>0.002</max_step_size>
+      <real_time_factor>1</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands" />
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster" />
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact" />
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre</render_engine>
+    </plugin>
+    <gravity>0 0 -9.81</gravity>
+    <scene>
+      <ambient>0.6 0.6 0.6 1</ambient>
+      <background>0.68 0.81 0.91 1</background>
+      <shadows>false</shadows>
+    </scene>
+    <light name="sun" type="directional">
+      <pose>0 0 50 0 0 0</pose>
+      <diffuse>.8 .8 .8 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <direction>-.3 -.4 -1</direction>
+    </light>
+    <model name="ground">
+      <static>true</static>
+      <pose>80 56 -0.1 0 0 0</pose>
+      <link name="body">
+        <visual name="ground_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>160 112 0.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.32 .39 .24 1</ambient>
+            <diffuse>.32 .39 .24 1</diffuse>
+          </material>
+        </visual>
+        <collision name="ground">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>160 112 0.2</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="spray_workspace">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="body">
+        <visual name="spray_workspace_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/ceihao/robot_project/optimization_v2/assets/meshes/spray_workspace.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.57 .67 .29 1</ambient>
+            <diffuse>.57 .67 .29 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="mowing_workspace">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="body">
+        <visual name="mowing_workspace_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/ceihao/robot_project/optimization_v2/assets/meshes/mowing_workspace.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.23 .53 .30 1</ambient>
+            <diffuse>.23 .53 .30 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="connector">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="body">
+        <visual name="connector_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/ceihao/robot_project/optimization_v2/assets/meshes/connector.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.63 .58 .46 1</ambient>
+            <diffuse>.63 .58 .46 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="pump_house">
+      <static>true</static>
+      <pose>35 22 1.25 0 0 0</pose>
+      <link name="body">
+        <visual name="pump_house_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>3 3 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.62 .65 .69 1</ambient>
+            <diffuse>.62 .65 .69 1</diffuse>
+          </material>
+        </visual>
+        <collision name="pump_house">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>3 3 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="shed">
+      <static>true</static>
+      <pose>137 69 1.5 0 0 0</pose>
+      <link name="body">
+        <visual name="shed_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>5 4 3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.62 .65 .69 1</ambient>
+            <diffuse>.62 .65 .69 1</diffuse>
+          </material>
+        </visual>
+        <collision name="shed">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>5 4 3</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="utility">
+      <static>true</static>
+      <pose>49 57 0.75 0 0 0</pose>
+      <link name="body">
+        <visual name="utility_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2 2 1.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.62 .65 .69 1</ambient>
+            <diffuse>.62 .65 .69 1</diffuse>
+          </material>
+        </visual>
+        <collision name="utility">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2 2 1.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="unknown_low_0">
+      <static>true</static>
+      <pose>25.96430620699873 23.41921575589314 0.04 0 0 0</pose>
+      <link name="body">
+        <visual name="unknown_low_0_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.9 0.8 0.08</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.92 .35 .07 1</ambient>
+            <diffuse>.92 .35 .07 1</diffuse>
+          </material>
+        </visual>
+        <collision name="unknown_low_0">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.9 0.8 0.08</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="unknown_low_1">
+      <static>true</static>
+      <pose>27.89981101729424 26.124150030431814 0.075 0 0 0</pose>
+      <link name="body">
+        <visual name="unknown_low_1_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.9 0.8 0.15</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.92 .35 .07 1</ambient>
+            <diffuse>.92 .35 .07 1</diffuse>
+          </material>
+        </visual>
+        <collision name="unknown_low_1">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.9 0.8 0.15</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="unknown_low_2">
+      <static>true</static>
+      <pose>30.02338170758578 28.05703979719458 0.15 0 0 0</pose>
+      <link name="body">
+        <visual name="unknown_low_2_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.9 0.8 0.3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.92 .35 .07 1</ambient>
+            <diffuse>.92 .35 .07 1</diffuse>
+          </material>
+        </visual>
+        <collision name="unknown_low_2">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.9 0.8 0.3</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="grade_5">
+      <static>true</static>
+      <pose>39 62 0 0 0 0</pose>
+      <link name="body">
+        <visual name="terrain_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/ceihao/robot_project/optimization_v2/assets/meshes/grade_5.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.51 .43 .25 1</ambient>
+            <diffuse>.51 .43 .25 1</diffuse>
+          </material>
+        </visual>
+        <collision name="terrain">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/ceihao/robot_project/optimization_v2/assets/meshes/grade_5.obj</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="grade_10">
+      <static>true</static>
+      <pose>120 44 0 0 0 0</pose>
+      <link name="body">
+        <visual name="terrain_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/ceihao/robot_project/optimization_v2/assets/meshes/grade_10.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.51 .43 .25 1</ambient>
+            <diffuse>.51 .43 .25 1</diffuse>
+          </material>
+        </visual>
+        <collision name="terrain">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/ceihao/robot_project/optimization_v2/assets/meshes/grade_10.obj</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="grade_18">
+      <static>true</static>
+      <pose>138 54 0 0 0 0</pose>
+      <link name="body">
+        <visual name="terrain_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/ceihao/robot_project/optimization_v2/assets/meshes/grade_18.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.51 .43 .25 1</ambient>
+            <diffuse>.51 .43 .25 1</diffuse>
+          </material>
+        </visual>
+        <collision name="terrain">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/ceihao/robot_project/optimization_v2/assets/meshes/grade_18.obj</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <plugin filename="libs02_motion.so" name="s02::ScriptedMotion">
+      <actor>
+        <name>ped_0</name>
+        <center>31 30 0.9</center>
+        <amplitude>4 1 0</amplitude>
+        <period>28</period>
+        <phase>0.04244758055678732</phase>
+      </actor>
+      <actor>
+        <name>ped_1</name>
+        <center>77 47 0.9</center>
+        <amplitude>3 2 0</amplitude>
+        <period>34</period>
+        <phase>-0.09316474883578174</phase>
+      </actor>
+      <actor>
+        <name>ped_2</name>
+        <center>129 64 0.9</center>
+        <amplitude>4 1.5 0</amplitude>
+        <period>31</period>
+        <phase>0.1852993653014503</phase>
+      </actor>
+      <actor>
+        <name>ped_3</name>
+        <center>44 58 0.9</center>
+        <amplitude>3 1 0</amplitude>
+        <period>26</period>
+        <phase>0.06114236718015792</phase>
+      </actor>
+      <actor>
+        <name>equipment</name>
+        <center>35 34 0.55</center>
+        <amplitude>5 1.2 0</amplitude>
+        <period>35</period>
+        <phase>0.224967654043858</phase>
+      </actor>
+    </plugin>
+    <model name="ped_0">
+      <static>false</static>
+      <pose>31.169739338868887 30.084793221952122 0.9 0 0 0</pose>
+      <link name="body">
+        <gravity>false</gravity>
+        <inertial>
+          <mass>70</mass>
+          <inertia>
+            <ixx>14.0</ixx>
+            <iyy>14.0</iyy>
+            <izz>7.0</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <visual name="torso_visual">
+          <pose>0 0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.44 0.3 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="torso">
+          <pose>0 0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.44 0.3 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="head_visual">
+          <pose>0 0 0.65 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.16</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>.85 .64 .43 1</ambient>
+            <diffuse>.85 .64 .43 1</diffuse>
+          </material>
+        </visual>
+        <collision name="head">
+          <pose>0 0 0.65 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.16</radius>
+            </sphere>
+          </geometry>
+        </collision>
+        <visual name="leg_-0.14_visual">
+          <pose>0 -0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.12 .15 .2 1</ambient>
+            <diffuse>.12 .15 .2 1</diffuse>
+          </material>
+        </visual>
+        <collision name="leg_-0.14">
+          <pose>0 -0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="leg_0.14_visual">
+          <pose>0 0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.12 .15 .2 1</ambient>
+            <diffuse>.12 .15 .2 1</diffuse>
+          </material>
+        </visual>
+        <collision name="leg_0.14">
+          <pose>0 0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="arm_-0.24_visual">
+          <pose>0 -0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="arm_-0.24">
+          <pose>0 -0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="arm_0.24_visual">
+          <pose>0 0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="arm_0.24">
+          <pose>0 0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="ped_1">
+      <static>false</static>
+      <pose>76.72090989771843 46.62949363593809 0.9 0 0 0</pose>
+      <link name="body">
+        <gravity>false</gravity>
+        <inertial>
+          <mass>70</mass>
+          <inertia>
+            <ixx>14.0</ixx>
+            <iyy>14.0</iyy>
+            <izz>7.0</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <visual name="torso_visual">
+          <pose>0 0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.44 0.3 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="torso">
+          <pose>0 0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.44 0.3 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="head_visual">
+          <pose>0 0 0.65 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.16</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>.85 .64 .43 1</ambient>
+            <diffuse>.85 .64 .43 1</diffuse>
+          </material>
+        </visual>
+        <collision name="head">
+          <pose>0 0 0.65 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.16</radius>
+            </sphere>
+          </geometry>
+        </collision>
+        <visual name="leg_-0.14_visual">
+          <pose>0 -0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.12 .15 .2 1</ambient>
+            <diffuse>.12 .15 .2 1</diffuse>
+          </material>
+        </visual>
+        <collision name="leg_-0.14">
+          <pose>0 -0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="leg_0.14_visual">
+          <pose>0 0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.12 .15 .2 1</ambient>
+            <diffuse>.12 .15 .2 1</diffuse>
+          </material>
+        </visual>
+        <collision name="leg_0.14">
+          <pose>0 0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="arm_-0.24_visual">
+          <pose>0 -0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="arm_-0.24">
+          <pose>0 -0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="arm_0.24_visual">
+          <pose>0 0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="arm_0.24">
+          <pose>0 0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="ped_2">
+      <static>false</static>
+      <pose>129.73696312915206 64.54326037004455 0.9 0 0 0</pose>
+      <link name="body">
+        <gravity>false</gravity>
+        <inertial>
+          <mass>70</mass>
+          <inertia>
+            <ixx>14.0</ixx>
+            <iyy>14.0</iyy>
+            <izz>7.0</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <visual name="torso_visual">
+          <pose>0 0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.44 0.3 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="torso">
+          <pose>0 0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.44 0.3 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="head_visual">
+          <pose>0 0 0.65 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.16</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>.85 .64 .43 1</ambient>
+            <diffuse>.85 .64 .43 1</diffuse>
+          </material>
+        </visual>
+        <collision name="head">
+          <pose>0 0 0.65 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.16</radius>
+            </sphere>
+          </geometry>
+        </collision>
+        <visual name="leg_-0.14_visual">
+          <pose>0 -0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.12 .15 .2 1</ambient>
+            <diffuse>.12 .15 .2 1</diffuse>
+          </material>
+        </visual>
+        <collision name="leg_-0.14">
+          <pose>0 -0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="leg_0.14_visual">
+          <pose>0 0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.12 .15 .2 1</ambient>
+            <diffuse>.12 .15 .2 1</diffuse>
+          </material>
+        </visual>
+        <collision name="leg_0.14">
+          <pose>0 0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="arm_-0.24_visual">
+          <pose>0 -0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="arm_-0.24">
+          <pose>0 -0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="arm_0.24_visual">
+          <pose>0 0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="arm_0.24">
+          <pose>0 0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="ped_3">
+      <static>false</static>
+      <pose>44.183312835922614 58.12198019686966 0.9 0 0 0</pose>
+      <link name="body">
+        <gravity>false</gravity>
+        <inertial>
+          <mass>70</mass>
+          <inertia>
+            <ixx>14.0</ixx>
+            <iyy>14.0</iyy>
+            <izz>7.0</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <visual name="torso_visual">
+          <pose>0 0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.44 0.3 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="torso">
+          <pose>0 0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.44 0.3 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="head_visual">
+          <pose>0 0 0.65 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.16</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>.85 .64 .43 1</ambient>
+            <diffuse>.85 .64 .43 1</diffuse>
+          </material>
+        </visual>
+        <collision name="head">
+          <pose>0 0 0.65 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.16</radius>
+            </sphere>
+          </geometry>
+        </collision>
+        <visual name="leg_-0.14_visual">
+          <pose>0 -0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.12 .15 .2 1</ambient>
+            <diffuse>.12 .15 .2 1</diffuse>
+          </material>
+        </visual>
+        <collision name="leg_-0.14">
+          <pose>0 -0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="leg_0.14_visual">
+          <pose>0 0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.12 .15 .2 1</ambient>
+            <diffuse>.12 .15 .2 1</diffuse>
+          </material>
+        </visual>
+        <collision name="leg_0.14">
+          <pose>0 0.14 -0.55 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.14 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="arm_-0.24_visual">
+          <pose>0 -0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="arm_-0.24">
+          <pose>0 -0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="arm_0.24_visual">
+          <pose>0 0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.08 .35 .85 1</ambient>
+            <diffuse>.08 .35 .85 1</diffuse>
+          </material>
+        </visual>
+        <collision name="arm_0.24">
+          <pose>0 0.24 0.08 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.12 0.65</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="equipment">
+      <static>false</static>
+      <pose>36.115374156838016 34.521888737867364 0.55 0 0 0</pose>
+      <link name="body">
+        <gravity>false</gravity>
+        <inertial>
+          <mass>70</mass>
+          <inertia>
+            <ixx>14.0</ixx>
+            <iyy>14.0</iyy>
+            <izz>7.0</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <visual name="cart_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>1.6 0.9 0.7</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>.95 .61 .08 1</ambient>
+            <diffuse>.95 .61 .08 1</diffuse>
+          </material>
+        </visual>
+        <collision name="cart">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>1.6 0.9 0.7</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wheel_-0.5_-0.45_visual">
+          <pose>-0.5 -0.45 -0.35 1.5707963267948966 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.2</radius>
+              <length>0.12</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>.08 .09 .10 1</ambient>
+            <diffuse>.08 .09 .10 1</diffuse>
+          </material>
+        </visual>
+        <collision name="wheel_-0.5_-0.45">
+          <pose>-0.5 -0.45 -0.35 1.5707963267948966 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.2</radius>
+              <length>0.12</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="wheel_-0.5_0.45_visual">
+          <pose>-0.5 0.45 -0.35 1.5707963267948966 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.2</radius>
+              <length>0.12</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>.08 .09 .10 1</ambient>
+            <diffuse>.08 .09 .10 1</diffuse>
+          </material>
+        </visual>
+        <collision name="wheel_-0.5_0.45">
+          <pose>-0.5 0.45 -0.35 1.5707963267948966 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.2</radius>
+              <length>0.12</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="wheel_0.5_-0.45_visual">
+          <pose>0.5 -0.45 -0.35 1.5707963267948966 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.2</radius>
+              <length>0.12</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>.08 .09 .10 1</ambient>
+            <diffuse>.08 .09 .10 1</diffuse>
+          </material>
+        </visual>
+        <collision name="wheel_0.5_-0.45">
+          <pose>0.5 -0.45 -0.35 1.5707963267948966 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.2</radius>
+              <length>0.12</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="wheel_0.5_0.45_visual">
+          <pose>0.5 0.45 -0.35 1.5707963267948966 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.2</radius>
+              <length>0.12</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>.08 .09 .10 1</ambient>
+            <diffuse>.08 .09 .10 1</diffuse>
+          </material>
+        </visual>
+        <collision name="wheel_0.5_0.45">
+          <pose>0.5 0.45 -0.35 1.5707963267948966 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.2</radius>
+              <length>0.12</length>
+            </cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="validation_probe">
+      <static>true</static>
+      <pose>20 25 1.1 0 0 0</pose>
+      <link name="body">
+        <sensor name="lidar" type="gpu_lidar">
+          <topic>/s02/probe/lidar</topic>
+          <update_rate>10</update_rate>
+          <always_on>true</always_on>
+          <lidar>
+            <scan>
+              <horizontal>
+                <samples>512</samples>
+                <resolution>1</resolution>
+                <min_angle>-1.2</min_angle>
+                <max_angle>1.2</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>64</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.3</min_angle>
+                <max_angle>0.2</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.08</min>
+              <max>40</max>
+              <resolution>0.01</resolution>
+            </range>
+          </lidar>
+        </sensor>
+        <sensor name="camera" type="camera">
+          <topic>/s02/probe/image</topic>
+          <pose>0 0 0 0 .08 0</pose>
+          <update_rate>5</update_rate>
+          <always_on>true</always_on>
+          <camera>
+            <horizontal_fov>1.4</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>360</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.05</near>
+              <far>100</far>
+            </clip>
+          </camera>
+        </sensor>
+      </link>
+    </model>
+  </world>
+</sdf>

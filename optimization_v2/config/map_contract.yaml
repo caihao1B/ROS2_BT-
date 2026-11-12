@@ -1,0 +1,29 @@
+schema: S07-CONTRACT/1
+frame: map
+base_frame: base_link
+source_stage: S06
+quality:
+  min_surface_points: 100
+  min_overlap_fraction: 0.55
+  max_surface_p95_m: 0.3
+  correspondence_gate_m: 0.35
+  max_xy_variance: 0.25
+  max_yaw_variance: 0.04
+manager:
+  confirmation_count: 3
+  confirmation_span_s: 1.5
+  max_observation_age_s: 1.5
+  lost_after_s: 3.5
+  stable_translation_m: 0.1
+  stable_yaw_rad: 0.025
+  map_jump_translation_m: 0.15
+  map_jump_yaw_rad: 0.035
+scoring:
+  max_xy_rmse_m: 1.5
+  max_yaw_rmse_deg: 6.0
+  max_acquisition_sim_s: 45.0
+  stop_speed_mps: 0.01
+  stop_yaw_rps: 0.02
+  stop_delay_s: 2.0
+note: Fixed map accuracy includes measured S06 map bias; no per-case fit; absolute
+  georegistration belongs to S08.

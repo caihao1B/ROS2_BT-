@@ -1,0 +1,34 @@
+{
+  "scenario": "occlusion",
+  "split": "test",
+  "actors": [
+    {
+      "name": "s15_person",
+      "knots": [
+        [
+          0.0,
+          2.0,
+          -2.0
+        ],
+        [
+          8.0,
+          2.0,
+          -2.0
+        ],
+        [
+          38.0,
+          2.0,
+          2.0
+        ],
+        [
+          65.0,
+          2.0,
+          2.0
+        ]
+      ]
+    }
+  ],
+  "source": "SIMULATOR_ONLY_NOT_PREDICTOR_INPUT",
+  "articulated_gait": false,
+  "interaction": "scripted yield; no social response dynamics"
+}

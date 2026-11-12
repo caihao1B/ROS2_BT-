@@ -1,7 +1,0 @@
-nav_msgs/Path nominal_path
-geometry_msgs/PolygonStamped blocked_region
-float32 margin
----
-nav_msgs/Path detour_path
-bool success
-string message

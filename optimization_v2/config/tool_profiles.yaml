@@ -1,0 +1,22 @@
+schema: S03-TOOL-GEOMETRY/1
+revision: s03.1
+frame: base_link
+spray:
+  vehicle: diff
+  mount_xyz: [0.42, 0, 0.40]
+  collision_size: [0.16, 0.30, 0.16]
+  mass_kg: 5
+  virtual_effect_radius_m: 0.20
+  docking_error_m: 0.08
+  service_duration_sim_s: 2.0
+  requires_stopped: true
+  evidence_scope: virtual geometric capability; fluid deposition and action feedback are deferred to S10
+mower:
+  vehicle: ackermann
+  mount_xyz: [0.50, 0, 0.19]
+  collision_size: [0.70, 1.0, 0.10]
+  mass_kg: 8
+  virtual_effective_width_m: 0.90
+  nominal_overlap_m: 0.10
+  requires_stopped: false
+  evidence_scope: width inside physical deck; real cutting effectiveness is not claimed

@@ -1,0 +1,838 @@
+{
+  "case": "budget_exhaustion",
+  "pose_name": "zone_a",
+  "seconds": 25,
+  "seed": 41,
+  "success": false,
+  "gui": false,
+  "vehicle": "diff",
+  "sim_seconds_observed": 10.71,
+  "tool_shutdown": {
+    "state": "STOPPED",
+    "tool_on_requested": false
+  },
+  "shutdown_clock_paused": true,
+  "commands": [
+    {
+      "role": "server",
+      "args": [
+        "gz",
+        "sim",
+        "--force-version",
+        "8",
+        "-s",
+        "--headless-rendering",
+        "--seed",
+        "41",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/world.sdf"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203908,
+      "start_ticks": "8492327",
+      "uid": 1000,
+      "argv": "/usr/bin/env ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim --force-version 8 -s --headless-rendering --seed 41 /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/world.sdf ",
+      "exit_code": -11
+    },
+    {
+      "role": "online_bridge",
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+        "/s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg",
+        "/s03/front_scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan",
+        "/s10/tool/command@std_msgs/msg/String]gz.msgs.StringMsg",
+        "/s10/tool/fault@std_msgs/msg/String]gz.msgs.StringMsg",
+        "/s10/tool/raw_feedback@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s13/near/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked",
+        "--ros-args",
+        "-r",
+        "/clock:=/s13/clock_input",
+        "-r",
+        "/s13/near/points:=/s13/near/raw"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203924,
+      "start_ticks": "8492538",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock /s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg /s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg /s03/front_scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan /s10/tool/command@std_msgs/msg/String]gz.msgs.StringMsg /s10/tool/fault@std_msgs/msg/String]gz.msgs.StringMsg /s10/tool/raw_feedback@std_msgs/msg/String[gz.msgs.StringMsg /s13/near/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked --ros-args -r /clock:=/s13/clock_input -r /s13/near/points:=/s13/near/raw ",
+      "exit_code": 0
+    },
+    {
+      "role": "raw_bridge",
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+        "/s04/raw/lidar/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked",
+        "/s04/raw/left@sensor_msgs/msg/Image[gz.msgs.Image",
+        "/s04/raw/right@sensor_msgs/msg/Image[gz.msgs.Image",
+        "/s04/raw/imu@sensor_msgs/msg/Imu[gz.msgs.IMU",
+        "/s04/raw/gnss@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat",
+        "/s04/raw/joints@std_msgs/msg/String[gz.msgs.StringMsg",
+        "--ros-args",
+        "-r",
+        "/clock:=/s13/clock_input"
+      ],
+      "domain": 121,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203925,
+      "start_ticks": "8492538",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock /s04/raw/lidar/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked /s04/raw/left@sensor_msgs/msg/Image[gz.msgs.Image /s04/raw/right@sensor_msgs/msg/Image[gz.msgs.Image /s04/raw/imu@sensor_msgs/msg/Imu[gz.msgs.IMU /s04/raw/gnss@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat /s04/raw/joints@std_msgs/msg/String[gz.msgs.StringMsg --ros-args -r /clock:=/s13/clock_input ",
+      "exit_code": 0
+    },
+    {
+      "role": "clock_online",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203926,
+      "start_ticks": "8492539",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay ",
+      "exit_code": 0
+    },
+    {
+      "role": "clock_raw",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay"
+      ],
+      "domain": 121,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203927,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/clock_relay ",
+      "exit_code": 0
+    },
+    {
+      "role": "evaluation_bridge",
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts",
+        "/s10/evaluation/effect@std_msgs/msg/String[gz.msgs.StringMsg"
+      ],
+      "domain": 120,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203928,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg /s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts /s10/evaluation/effect@std_msgs/msg/String[gz.msgs.StringMsg ",
+      "exit_code": 0
+    },
+    {
+      "role": "tool_evaluator",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/evaluator10.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/tool_evaluation",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/tool.json"
+      ],
+      "domain": 120,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203929,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/evaluator10.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/tool_evaluation --config /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "evaluator",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/evaluation"
+      ],
+      "domain": 120,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203930,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/evaluation ",
+      "exit_code": 0
+    },
+    {
+      "role": "drive",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/drive_extension.py",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/vehicle.json",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/drive"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203931,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/drive_extension.py --config /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/vehicle.json --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/drive ",
+      "exit_code": 0
+    },
+    {
+      "role": "generator_motion",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py",
+        "--vehicle",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/vehicle.json",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/generation_motion",
+        "--seed",
+        "41",
+        "--streams",
+        "motion"
+      ],
+      "domain": 121,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203932,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py --vehicle /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/vehicle.json --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/generation_motion --seed 41 --streams motion ",
+      "exit_code": 0
+    },
+    {
+      "role": "generator_vision",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py",
+        "--vehicle",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/vehicle.json",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/generation_vision",
+        "--seed",
+        "41",
+        "--streams",
+        "vision"
+      ],
+      "domain": 121,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203933,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/sensors.py --vehicle /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/vehicle.json --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/generation_vision --seed 41 --streams vision ",
+      "exit_code": 0
+    },
+    {
+      "role": "near_field",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/near_field13.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/near_field"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203934,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/near_field13.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/near_field ",
+      "exit_code": 0
+    },
+    {
+      "role": "cloud",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/cloud_filter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/cloud"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203935,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/cloud_filter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/cloud ",
+      "exit_code": 0
+    },
+    {
+      "role": "icp",
+      "args": [
+        "/opt/ros/jazzy/lib/rtabmap_odom/icp_odometry",
+        "--ros-args",
+        "-r",
+        "__node:=s05_icp",
+        "-r",
+        "__ns:=/s05/icp",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/icp.yaml",
+        "-r",
+        "scan_cloud:=/s05/icp/cloud",
+        "-r",
+        "scan:=/s05/unused_scan",
+        "-r",
+        "odom:=/s05/icp/raw",
+        "-r",
+        "odom_info:=/s05/icp/info",
+        "-r",
+        "/tf:=/s05/internal/icp_tf",
+        "--log-level",
+        "warn"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203936,
+      "start_ticks": "8492540",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/rtabmap_odom/icp_odometry --ros-args -r __node:=s05_icp -r __ns:=/s05/icp --params-file /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/icp.yaml -r scan_cloud:=/s05/icp/cloud -r scan:=/s05/unused_scan -r odom:=/s05/icp/raw -r odom_info:=/s05/icp/info -r /tf:=/s05/internal/icp_tf --log-level warn ",
+      "exit_code": 0
+    },
+    {
+      "role": "icp_gate",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/icp_gate.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/icp_gate"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203937,
+      "start_ticks": "8492541",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/icp_gate.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/icp_gate ",
+      "exit_code": 0
+    },
+    {
+      "role": "inputs",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/input_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/inputs"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203939,
+      "start_ticks": "8492541",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/input_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/inputs ",
+      "exit_code": 0
+    },
+    {
+      "role": "fused",
+      "args": [
+        "/opt/ros/jazzy/lib/robot_localization/ekf_node",
+        "--ros-args",
+        "-r",
+        "__node:=s05_fused",
+        "-r",
+        "__ns:=/s05/fused",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/fused.yaml",
+        "-r",
+        "odometry/filtered:=/s05/raw/fused",
+        "--log-level",
+        "warn",
+        "-r",
+        "/tf:=/s05/internal/fused_tf"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203943,
+      "start_ticks": "8492541",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/robot_localization/ekf_node --ros-args -r __node:=s05_fused -r __ns:=/s05/fused --params-file /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/fused.yaml -r odometry/filtered:=/s05/raw/fused --log-level warn -r /tf:=/s05/internal/fused_tf ",
+      "exit_code": 0
+    },
+    {
+      "role": "wheel_imu",
+      "args": [
+        "/opt/ros/jazzy/lib/robot_localization/ekf_node",
+        "--ros-args",
+        "-r",
+        "__node:=s05_wheel_imu",
+        "-r",
+        "__ns:=/s05/wheel_imu",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/wheel_imu.yaml",
+        "-r",
+        "odometry/filtered:=/s05/raw/wheel_imu",
+        "--log-level",
+        "warn",
+        "-r",
+        "/tf:=/s05/internal/wheel_imu_tf"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203944,
+      "start_ticks": "8492542",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/robot_localization/ekf_node --ros-args -r __node:=s05_wheel_imu -r __ns:=/s05/wheel_imu --params-file /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/wheel_imu.yaml -r odometry/filtered:=/s05/raw/wheel_imu --log-level warn -r /tf:=/s05/internal/wheel_imu_tf ",
+      "exit_code": 0
+    },
+    {
+      "role": "odom_output",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/odom_output.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/odom_output"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203947,
+      "start_ticks": "8492542",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/odom_output.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/odom_output ",
+      "exit_code": 0
+    },
+    {
+      "role": "health",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/localization_guard/lib/localization_guard/health_guard",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/health.yaml"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203959,
+      "start_ticks": "8492543",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/localization_guard/lib/localization_guard/health_guard --ros-args --params-file /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/health.yaml ",
+      "exit_code": 0
+    },
+    {
+      "role": "mapping_inputs",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_preprocessor.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/mapping_inputs"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203960,
+      "start_ticks": "8492543",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_preprocessor.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/mapping_inputs ",
+      "exit_code": 0
+    },
+    {
+      "role": "sensor_diagnostic",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/capture14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/sensor_diagnostic"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203971,
+      "start_ticks": "8492544",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/capture14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/sensor_diagnostic ",
+      "exit_code": 0
+    },
+    {
+      "role": "slam",
+      "args": [
+        "/opt/ros/jazzy/lib/rtabmap_slam/rtabmap",
+        "--ros-args",
+        "-r",
+        "__node:=s07_slam",
+        "-r",
+        "__ns:=/s07/rtabmap",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/config/slam_localization.yaml",
+        "-p",
+        "database_path:=/home/ceihao/robot_project/optimization_v2/maps/frozen/map.db",
+        "-r",
+        "rgbd_image:=/s07/inputs/stereo",
+        "-r",
+        "scan_cloud:=/s07/inputs/cloud",
+        "-r",
+        "odom:=/s07/inputs/odom",
+        "-r",
+        "/tf:=/s07/internal/rtabmap_tf"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203982,
+      "start_ticks": "8492545",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/rtabmap_slam/rtabmap --ros-args -r __node:=s07_slam -r __ns:=/s07/rtabmap --params-file /home/ceihao/robot_project/optimization_v2/config/slam_localization.yaml -p database_path:=/home/ceihao/robot_project/optimization_v2/maps/frozen/map.db -r rgbd_image:=/s07/inputs/stereo -r scan_cloud:=/s07/inputs/cloud -r odom:=/s07/inputs/odom -r /tf:=/s07/internal/rtabmap_tf ",
+      "exit_code": 0
+    },
+    {
+      "role": "quality",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_quality.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/quality",
+        "--request",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/request.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203985,
+      "start_ticks": "8492545",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/global_pose_manager/scripts/localization_quality.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/quality --request /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/request.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "source_adapter",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/gnss_supervisor/scripts/source_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/sources",
+        "--case",
+        "normal"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203988,
+      "start_ticks": "8492546",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/gnss_supervisor/scripts/source_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/sources --case normal ",
+      "exit_code": 0
+    },
+    {
+      "role": "manager",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/gnss_supervisor/lib/gnss_supervisor/gnss_supervisor",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "policy_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/manager.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2203992,
+      "start_ticks": "8492547",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/gnss_supervisor/lib/gnss_supervisor/gnss_supervisor --ros-args -p use_sim_time:=true -p policy_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/manager.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "terrain",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/terrain_s13",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/terrain.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204000,
+      "start_ticks": "8492547",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/navigation_adapter/lib/navigation_adapter/terrain_s13 --ros-args -p use_sim_time:=true -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/terrain.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "fusion",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/object_fusion/scripts/fusion_node.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/fusion",
+        "--case",
+        "budget_exhaustion"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204014,
+      "start_ticks": "8492548",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/object_fusion/scripts/fusion_node.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/fusion --case budget_exhaustion ",
+      "exit_code": 0
+    },
+    {
+      "role": "cost_adapter",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/terrain_perception/scripts/costmap_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/cost_adapter",
+        "--vehicle",
+        "diff"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204018,
+      "start_ticks": "8492549",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/terrain_perception/scripts/costmap_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/cost_adapter --vehicle diff ",
+      "exit_code": 0
+    },
+    {
+      "role": "prior_cost",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/prior_cost13.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/prior_cost",
+        "--vehicle",
+        "diff"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204029,
+      "start_ticks": "8492550",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/prior_cost13.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/prior_cost --vehicle diff ",
+      "exit_code": 0
+    },
+    {
+      "role": "controller",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_controller/controller_server",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/config/nav2_diff.yaml",
+        "-r",
+        "cmd_vel:=/s13/nav_cmd"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204030,
+      "start_ticks": "8492550",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_controller/controller_server --ros-args --params-file /home/ceihao/robot_project/optimization_v2/config/nav2_diff.yaml -r cmd_vel:=/s13/nav_cmd ",
+      "exit_code": 0
+    },
+    {
+      "role": "planner",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_planner/planner_server",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/config/nav2_diff.yaml"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204034,
+      "start_ticks": "8492551",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_planner/planner_server --ros-args --params-file /home/ceihao/robot_project/optimization_v2/config/nav2_diff.yaml ",
+      "exit_code": 0
+    },
+    {
+      "role": "navigator",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_bt_navigator/bt_navigator",
+        "--ros-args",
+        "--params-file",
+        "/home/ceihao/robot_project/optimization_v2/config/nav2_diff.yaml"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204043,
+      "start_ticks": "8492552",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_bt_navigator/bt_navigator --ros-args --params-file /home/ceihao/robot_project/optimization_v2/config/nav2_diff.yaml ",
+      "exit_code": 0
+    },
+    {
+      "role": "nav_lifecycle",
+      "args": [
+        "/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "autostart:=true",
+        "-p",
+        "node_names:=[controller_server,planner_server,bt_navigator]",
+        "-p",
+        "bond_timeout:=5.0"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204049,
+      "start_ticks": "8492553",
+      "uid": 1000,
+      "argv": "/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args -p use_sim_time:=true -p autostart:=true -p node_names:=[controller_server,planner_server,bt_navigator] -p bond_timeout:=5.0 ",
+      "exit_code": 0
+    },
+    {
+      "role": "ledger",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/ledger14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/ledger",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/tool.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204059,
+      "start_ticks": "8492554",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/ledger14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/ledger --config /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "tool_online",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/online_adapter.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/tool_online",
+        "--config",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/tool.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204061,
+      "start_ticks": "8492554",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/tool_sim/scripts/online_adapter.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/tool_online --config /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "motion",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/command_gate",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/gate.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204387,
+      "start_ticks": "8492684",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/command_gate --ros-args -p use_sim_time:=true -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/gate.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "mission_bt",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/mission_bt",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/decision_policy.json",
+        "-p",
+        "tree_file:=/home/ceihao/robot_project/optimization_v2/behavior_trees/mission.xml",
+        "-p",
+        "log_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/decisions.jsonl"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204389,
+      "start_ticks": "8492685",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/mission_bt/lib/mission_bt/mission_bt --ros-args -p use_sim_time:=true -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/decision_policy.json -p tree_file:=/home/ceihao/robot_project/optimization_v2/behavior_trees/mission.xml -p log_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/decisions.jsonl ",
+      "exit_code": 0
+    },
+    {
+      "role": "client",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/worker14.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/client",
+        "--vehicle",
+        "diff",
+        "--controller",
+        "DWB",
+        "--case",
+        "budget_exhaustion",
+        "--seconds",
+        "25"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204398,
+      "start_ticks": "8492686",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python /home/ceihao/robot_project/optimization_v2/ws/src/mission_bt/scripts/worker14.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/client --vehicle diff --controller DWB --case budget_exhaustion --seconds 25 ",
+      "exit_code": 1
+    },
+    {
+      "role": "tool_server",
+      "args": [
+        "/home/ceihao/robot_project/optimization_v2/ws/install/tool_sim/lib/tool_sim/tool_action_server",
+        "--ros-args",
+        "-p",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/tool.json"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204401,
+      "start_ticks": "8492686",
+      "uid": 1000,
+      "argv": "/home/ceihao/robot_project/optimization_v2/ws/install/tool_sim/lib/tool_sim/tool_action_server --ros-args -p config_file:=/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/scene/tool.json ",
+      "exit_code": 0
+    },
+    {
+      "role": "observer",
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/observer13.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/online",
+        "--seconds",
+        "25"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204407,
+      "start_ticks": "8492687",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /home/ceihao/robot_project/optimization_v2/ws/src/navigation_adapter/scripts/observer13.py --out /home/ceihao/robot_project/optimization_v2/results/S14/test_20261112_143553_2062800/budget_exhaustion/online --seconds 25 ",
+      "exit_code": 0
+    },
+    {
+      "role": "initial_hint",
+      "args": [
+        "ros2",
+        "topic",
+        "pub",
+        "--once",
+        "/s07/rtabmap/initialpose",
+        "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "{\"header\": {\"frame_id\": \"map\"}, \"pose\": {\"pose\": {\"position\": {\"x\": 2.0, \"y\": 1.8000000000000007, \"z\": 0.0}, \"orientation\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.12467473338522769, \"w\": 0.992197667229329}}, \"covariance\": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25]}}"
+      ],
+      "domain": 119,
+      "partition": "s13_test_20261112_143553_2062800_budget_exhaustion",
+      "pid": 2204648,
+      "start_ticks": "8494113",
+      "uid": 1000,
+      "argv": "/usr/bin/python3 /opt/ros/jazzy/bin/ros2 topic pub --once /s07/rtabmap/initialpose geometry_msgs/msg/PoseWithCovarianceStamped {\"header\": {\"frame_id\": \"map\"}, \"pose\": {\"pose\": {\"position\": {\"x\": 2.0, \"y\": 1.8000000000000007, \"z\": 0.0}, \"orientation\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.12467473338522769, \"w\": 0.992197667229329}}, \"covariance\": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25]}} ",
+      "exit_code": 0
+    }
+  ],
+  "events": [
+    {
+      "t": 4.08,
+      "event": "initial_hint",
+      "pose": [
+        2.0,
+        1.8000000000000007,
+        0.0,
+        0.0,
+        0.0,
+        0.12467473338522769,
+        0.992197667229329
+      ],
+      "source": "declared coarse operator prior"
+    }
+  ],
+  "wall_seconds": 38.01439192500402,
+  "database_before": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82",
+  "database_after": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82",
+  "database_unchanged": true
+}

@@ -1,0 +1,10 @@
+{
+  "packages": {
+    "libpcl-dev": "1.14.0+dfsg-1",
+    "python3-opencv": "4.6.0+dfsg-13.1ubuntu1",
+    "ros-jazzy-nav2-costmap-2d": "1.3.13-1noble.20260921.024946",
+    "ros-jazzy-pcl-conversions": "2.6.5-1noble.20260912.165932",
+    "libeigen3-dev": "3.4.0-4build0.1",
+    "libprotobuf-dev": "3.21.12-8.2ubuntu0.4"
+  }
+}

@@ -1,0 +1,23 @@
+model: NanoDet-m-plus-1.5x_416
+source: https://github.com/opencv/opencv_zoo/tree/main/models/object_detection_nanodet
+download: https://media.githubusercontent.com/media/opencv/opencv_zoo/main/models/object_detection_nanodet/object_detection_nanodet_2022nov.onnx
+path: optimization_v2/assets/perception/nanodet.onnx
+sha256: 4b82da9944b88577175ee23a459dce2e26e6e4be573def65b1055dc2d9720186
+license: Apache-2.0
+license_path: optimization_v2/ws/src/object_fusion/vendor/nanodet/LICENSE
+backend: OpenCV DNN CPU, two threads, verified 4.6.0
+score_threshold: 0.35
+nms_iou: 0.6
+input_size:
+- 416
+- 416
+max_rate_hz: 5.0
+unknown_policy: Unrecognized geometry remains UNKNOWN_OBSTACLE; never use simulator
+  labels
+classes:
+  0: person
+  1: bicycle
+  2: car
+  3: motorcycle
+  5: bus
+  7: truck

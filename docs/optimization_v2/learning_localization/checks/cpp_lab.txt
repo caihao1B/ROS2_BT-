@@ -1,0 +1,5 @@
+SYNTHETIC_TEACHING_ONLY
+map->base: 2.195967, 1.132104, 0.274533
+recovered map->odom: 0.400000, -0.200000, 0.174533
+16cm GNSS residual NIS=6.243902; distance gate rejects
+PASS: transform composition and innovation gates

@@ -1,0 +1,24 @@
+{
+  "map_version": "s02.2",
+  "map_id": "3e38d2519fd250224e21d96152616954fc0b47e6450bd83aaa518d44e7419554",
+  "variant": "base",
+  "coordinate_system": {
+    "frame": "map",
+    "axes": "ENU",
+    "units": "m",
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "geodetic_datum": null
+  },
+  "world_bounds": [
+    0,
+    0,
+    160,
+    112
+  ],
+  "cluster_assignment": null,
+  "clearance_status": "S03_NOT_TESTED"
+}

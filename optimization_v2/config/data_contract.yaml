@@ -1,0 +1,23 @@
+schema: S04-DATA/1
+revision: s04.1
+clock: {source: /clock, domain: 119, stamp: acquisition_simulation_time, delivery_delay: never_rewrite_acquisition_stamp, rewind: clear_pending_and_require_new_epoch}
+domains: {online: 119, evaluator: 120, sensor_generator_input: 121}
+boundary: {kind: ROS_graph_and_explicit_allowlist, security_sandbox: false, operating_system_access_control: not_claimed, online_truth_topics: forbidden}
+raw_prefix: /s04/raw/
+online_prefix: /s04/
+qos: {sensor: best_effort_volatile_keep_last_10, images: best_effort_volatile_keep_last_3, calibration: reliable_transient_local_1, diagnostics: reliable_10, tf_static: reliable_transient_local_1}
+bounded_internal_queues: {raw_motion_generator_depth: 20, fanout_depth: 20, audit_motion_depth: 100, audit_pointcloud_depth: 30, image_save_jobs: 4, audit_queue_is_not_control_queue: true}
+messages:
+  lidar: {topic: /s04/lidar/points, type: sensor_msgs/msg/PointCloud2, frame: lidar_link, units: metre, fields: [x, y, z, intensity, ring], covariance: range_sigma_in_sensor_manifest, point_time: absent}
+  left: {topic: /s04/stereo/left/image_rect, type: sensor_msgs/msg/Image, frame: left_optical, encoding: rgb8}
+  right: {topic: /s04/stereo/right/image_rect, type: sensor_msgs/msg/Image, frame: right_optical, encoding: rgb8}
+  camera_info: {type: sensor_msgs/msg/CameraInfo, distortion: zero_plumb_bob, right_projection: Tx=-fx*baseline, optical_axes: right_down_forward}
+  imu: {topic: /s04/imu/data, type: sensor_msgs/msg/Imu, frame: imu_link, units: rad_per_second_and_metre_per_second_squared, gravity: included, orientation_covariance_0: -1}
+  wheel: {topic: /s04/wheel/twist, type: geometry_msgs/msg/TwistWithCovarianceStamped, frame: base_link, units: metre_per_second_and_rad_per_second, lateral_velocity: unobserved_large_covariance}
+  joints: {topic: /s04/wheel/joint_states, type: sensor_msgs/msg/JointState, units: rad_and_rad_per_second}
+  gnss: {topic: /s04/gnss/fix, type: sensor_msgs/msg/NavSatFix, frame: gnss_link, units: WGS84_degrees_and_ellipsoid_height_metres, covariance: local_ENU_square_metres, heading: not_observed}
+  gnss_quality: {topic: /s04/gnss/quality, type: std_msgs/msg/String, fields: [stamp, reported_mode], warning: fixed_is_not_an_integrity_guarantee}
+  diagnostics: {topic: /s04/diagnostics, type: diagnostic_msgs/msg/DiagnosticArray}
+branches:
+  localization: [/s04/localization/points, /s04/localization/imu, /s04/localization/wheel, /s04/localization/gnss]
+  perception: [/s04/perception/points, /s04/perception/left, /s04/perception/right, /s04/perception/pair]

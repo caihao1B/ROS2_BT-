@@ -1,0 +1,21 @@
+{
+  "schema": "S07-DEPS/1",
+  "packages": {
+    "ros-jazzy-rtabmap": "0.23.13-1noble.20261002.101311",
+    "ros-jazzy-rtabmap-slam": "0.23.13-1noble.20261003.101914",
+    "ros-jazzy-rtabmap-msgs": "0.23.13-1noble.20261003.085826",
+    "ros-jazzy-rtabmap-sync": "0.23.13-1noble.20261003.092241",
+    "ros-jazzy-rtabmap-conversions": "0.23.13-1noble.20261003.090652",
+    "ros-jazzy-rtabmap-odom": "0.23.13-1noble.20261003.101824",
+    "ros-jazzy-robot-localization": "3.8.3-1noble.20260915.182602",
+    "ros-jazzy-libpointmatcher": "1.4.2-1noble.20260225.135343",
+    "libopencv-dev": "4.6.0+dfsg-13.1ubuntu1",
+    "ros-jazzy-gtsam": "4.2.0-4noble.20260225.055319",
+    "ros-jazzy-tf2-ros": "0.36.23-1noble.20260915.173839",
+    "ros-jazzy-geometry-msgs": "5.3.8-1noble.20260911.102920",
+    "ros-jazzy-nav-msgs": "5.3.8-1noble.20260911.110342"
+  },
+  "ros": "jazzy",
+  "gazebo": "Harmonic 8",
+  "reference_tag": "0.23.13"
+}

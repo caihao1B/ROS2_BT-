@@ -1,0 +1,16 @@
+schema: S14-POLICY/1
+prediction_source: CURRENT_OBSERVATIONS_ONLY
+startup_timeout_s: 90.0
+stop_reserve_s: 8.0
+short_wait_s: 3.0
+persistent_block_s: 12.0
+max_block_s: 45.0
+clear_hold_s: 1.0
+minimum_hold_s: 1.0
+max_replans: 2
+max_deferrals: 3
+max_patches: 2
+context_age_s: 0.3
+context_wall_s: 0.5
+risk_stop: 1.0
+action_timeout_s: 150.0

@@ -1,0 +1,46 @@
+{
+  "source": "optimization_v2/results/S14/demo_20261112_084400_1582964/ackermann_navigation_probe/diagnostics/global_costmap.npz",
+  "source_sha256": "7069811b08698e850c662d376f9b39bdb0cf347d860d50e80aabf57d0abd612b",
+  "stamp": 28.45,
+  "status": {
+    "confirmation_count": 9,
+    "correction": [
+      97.00692212691985,
+      43.28519641904459,
+      -0.00013140167577774535,
+      5.867850698621367e-05,
+      0.0019396347955263132,
+      0.11864927310390448,
+      0.9929343303389242
+    ],
+    "gnss_age": 0.0400000000000027,
+    "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+    "gps_count": 113,
+    "has_transform": true,
+    "heading_age": 0.3240000000000016,
+    "innovation_limit_m": 0.15,
+    "innovation_m": 0.023872663558496484,
+    "jump_count": 0,
+    "map_age": 0.3240000000000016,
+    "map_reason": "GEOMETRIC_MATCH",
+    "max_speed": 0.12,
+    "navigation_allowed": true,
+    "nis": 0.16761884275797045,
+    "nis_limit": 9.21,
+    "plan_revalidation_required": false,
+    "reason": "MAP_AND_GNSS_AGREE",
+    "source": "MAP",
+    "state": "TRUSTED_MAP",
+    "t": 28.44,
+    "v": 0.10175099575624569,
+    "w": 0.05206467329507407,
+    "record_type": "status"
+  },
+  "binding": {
+    "atlas_revision": "08f41cfa9d26e0a3b7f7d4780e0e4c390b832d8779ccf28118e4c663f7897fd3",
+    "map_id": "2b77c891-b9c6-5242-8495-981c5d5d5fcf",
+    "frame_epoch": "765f47d9-f391-51e4-9db6-6dab80b7102a",
+    "plan_revision": "96fc24c3991fd642bb20f1c9fb9ea31e3cdd00f1419ccad40528b697d2cf6c8b"
+  },
+  "scope": "Real sensor-built costmap snapshot, not a future obstacle oracle; live safety always overrides offline routes"
+}

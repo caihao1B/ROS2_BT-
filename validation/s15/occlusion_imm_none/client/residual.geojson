@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "UNCOMPLETED",
+        "task_id": "s15_point_1",
+        "key": "3c533d990c0cf4ba8d20b6c789664f54fc02126ceab1e1324b4ae74174ef35f3:s15_point_1",
+        "required_quantity": 2.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.170163169999999,
+          32.50427919
+        ]
+      }
+    }
+  ]
+}
