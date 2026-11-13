@@ -1,0 +1,17 @@
+{
+  "unit_tests": {
+    "file": "optimization_v2/ws/src/showcase_demo/tests/mower_geometry_contract.py",
+    "passed": 6,
+    "exit_code": 0
+  },
+  "qualified_stage_source_bindings_checked": 1310,
+  "qualified_stage_source_binding_mismatches": [],
+  "v1_plan_versions_checked": 17,
+  "v1_plan_version_mismatches": [],
+  "strict_design_gate_exit_code": 3,
+  "strict_design_gate_expected_rejection": true,
+  "online_run": "NOT_RUN",
+  "simulation_started": false,
+  "s17": "PARTIAL",
+  "s18": "NOT_RUN"
+}

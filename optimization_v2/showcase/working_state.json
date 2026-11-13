@@ -1,0 +1,129 @@
+{
+  "updated": "2026-11-13 22:39:59.360103",
+  "active_batch_session": null,
+  "dashboard_session": 89383,
+  "dashboard": "http://127.0.0.1:8768",
+  "current": {
+    "run": "optimization_v2/results/S17/showcase_B1_inspection_20261113_215213",
+    "spec": {
+      "id": "showcase_B1_inspection_20261113_215213",
+      "vehicle": "ackermann",
+      "cluster": "B1",
+      "controller": "RPP",
+      "operation": "inspection",
+      "scope": "INDEPENDENT_SHOWCASE_ONLY",
+      "formal_credit": false,
+      "showcase_plan": "/home/ceihao/robot_project/optimization_v2/showcase/v1/mission_plan.json",
+      "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+      "seed": 17411,
+      "seconds": 1800,
+      "wall_limit_s": 1811,
+      "nominal_s": 1219.2532430172605,
+      "repair_probe": false,
+      "bounded_attempt": true,
+      "conservative_nominal_wall_s": 2306.8240782132007
+    }
+  },
+  "selected_pass_runs": [
+    "optimization_v2/results/S17/showcase_A1_work_20261113_185514",
+    "optimization_v2/results/S17/showcase_A2_work_20261113_190038",
+    "optimization_v2/results/S17/showcase_A3_work_20261113_190631",
+    "optimization_v2/results/S17/showcase_B1_work_20261113_191121",
+    "optimization_v2/results/S17/showcase_B2_work_20261113_192951",
+    "optimization_v2/results/S17/showcase_B3_work_20261113_203412"
+  ],
+  "remaining": [
+    "Human inspection / bounded repair of long-road absolute heading source; do not restore failed localization checkpoint directly",
+    "Complete both unchanged full-road obligations in a later explicitly budgeted round",
+    "Formal sixty-run matrix and full ablations deferred; no S18"
+  ],
+  "github_head": "990d51f78eb781c8c1d7d8172e86b9c6fe31be9b",
+  "scope": "No formal sixty runs, no S18; final recording budget 10800s, never reset charged failures",
+  "critical": "Do not change plan_showcase.py, original map/plan inputs or bound planner modules: v1 is frozen and in use. No heavy planning/build/scans during sim. Last actor C++ build v2 has hysteresis, exact build manifest. Runtime helper edits copied case-locally; never edit active overlay. Work and videos remain incomplete until actual run results.",
+  "recorded_failure_notes": "184640 startup stale, 184943 position-only false stall; both charged and retained. Startup guard and heading progress fixed. Current DWB 41 angle samples, same .025 goal tolerances. Current helper memory filters moving track history from supplemental static memory; live hazards remain hard. New full actor scenario intentionally distinct from original formal scene.",
+  "publication": "delivery/tools/prepare_showcase.py exists but NOT RUN; requires demo_acceptance/media. tools Github connector preferred. Full video may need compression <99 MB. No new GitHub publication this turn yet.",
+  "recent_notes": [
+    "B1 PASS 98.2227%, sim586.022s wall1087.763s; B2 PASS 98.7178%, wall1079.518s. Final charged3422.309s.",
+    "Monitor current_goal fixed after B1 active: follow gate action ID, respect inspection offsets. B2 uses corrected display. 12 monitor tests passed; actual progress/stop thresholds unchanged. Old B1 target overlay issue documented; original video retained.",
+    "export_videos now adds labeled six-second real archived manual-handoff screenshot; NOT yet executed. summarize now adds separate robot behavior/tool and actor counts.",
+    "delivery/tools/showcase_transport.py added. Authenticated connector blob/tree/commit/update_ref schemas discovered. Remote main verified ba0d774270c91923022e6e8012cb99b24a5d3fc2 at19:26 approx.",
+    "work_preview.png + provenance from actual B2 working camera captured and visually inspected; publisher includes it.",
+    "showcase.sh status now prints current motion monitor. Docs explicitly state prediction disabled and actor yield separate from robot replan.",
+    "Full road diff204730 PARTIAL, safety/loc/stop true,6/15parts. Repeated observation guards plusglobal2replans exhausted; actualactor yield andsensorconflict recorded. Chargedwall1503.905; cumulative7524.262s.",
+    "Added isolated inspection_recovery: reset12resumes/2replans only afterconfirmednewpart, aggregateevents retained, no60smonitor/reset orhealththreshold changes. Explicitinspectionresume validatesallsource hashes, originaljobs, suffix, carries6parts. Fullendpoint+footprint audit concatenatestruth episodes onlyoffline; nointerpolatedpositions. 20contracttests pass andprepare/composevalidated.",
+    "Active charged road_diff212338 --seconds900 from204730, nominalremaining538.338sim. No task denominatorchange. About54.6min finalbudgetleft atstart; road_ack stillremaining.",
+    "212338 inspection restart FAIL: scene inspection default overwrote resume spawn, child stopped safely but no qualifying active-navigation ownership audit. Charged88.98wall. Fixed isolatedscene conditional, offlineactualSDFspawn verified[81.44848,48.65703,1.17344]. No sourceattemptrelabeled.",
+    "212812 active correctedspawn, resumed6parts andnow10/15. It still usesoldrecovery becausecommon_showcase importpath shadowedpatchedinspection17; currentcaseuntouched. Futurecompose nowcreatesuniquelynamedshowcase_inspection17, logs actualexecutorpath. IntegrationtestwrittenNOTYETRUN untilsimends. Do notclaim currentperpartwindowresetvalidated.",
+    "Bounded-attempt optional flag forinspection permitsattemptwhen conservativeETAexceedsremainingwall butpreserveshardwallcap/fullroute/safetystandards. PlannednextAckusesremainingbudget; mayPARTIAL. Exporter nowaddsactualcurrent60sstall201908failureclip labelednocredit, summarizerhasnot_run_obligations, publisherstatusclearlyPARTIALifanymissing.",
+    "212812 endedFAIL despite safetytrue:13/15parts,positionP95.03876m,yawP95.20357rad>.05. Last45s observation admissionlost ABSOLUTE_HEADING_EXPIRED, stoppedconfirmed; not proofnofreepath. Sourcefailsresume localizationguard; doNOTresume it orclaimroaddiffPASS. Fullselectedvideo includes204730+212812 truthchain, originalfailed212338 notcredited.",
+    "20unitcontracts+actualisolatedmoduleimport+generatedSDFspawnintegration passed. NewAckcase215213 --bounded-attempt, session65765,remaining30.946wallminutes beforelaunch. Fulloriginalroute,hardwallremainingminus45sec; couldPARTIAL. NoS18. Exportvideos+finalreceipt+formalPARTIALintegrityrefresh+GitHubsyncstillpending.",
+    "Ack215213 finishedPARTIAL,WALL_BUDGET_STOP,13/21parts, safetytrue loctrue positionP95.02943 yawP95.00321,sim925.714 wall1786.418. Noresidualownedprocess. No terminalmanualsnapshot dueexternalstop; dashboardnewversionrecognizesfinishedmetrics anddoesnotclaimlastsnapshotfinalstopproof. ToolshutdownSTOPPED. Totalcharged10754.25856s179.238min; no more sim.",
+    "Parenttimer interrupted Ack offlineaudit afterruntimeexit. Offlineevaluate rerun successfully, newevaluation_source_sha256+runtime_termination andWALL_BUDGET_STOP preserveactualreason. Patchedfutureparentdisarmtimeronlyafterownedchildexits; oldbudgetrecordunchanged. No formalS17 credit.",
+    "export_videos runningselected8 obligations, expandsB3initial+final anddiffinitial+restart. Includesactual20190860sstallfailureclip labelednotcredited plusoldmanualstill. Publisher/finalizer written butNOTRUN receipts/publication yet. DashboardHTML nowChineseBTreason explanation,currentwindowlabel,finished-without-terminalUI fallback; server78199 cachesoldpage, mustrestartandvisualQAafterexport."
+  ],
+  "b3_findings": {
+    "initial": "showcase_B3_work_20261113_194812 PARTIAL 92.4213%, safe/loc, BUDGET_STOP at866.85sim; only7 valid samples on final lane due POSE_SKEW/confirmation interruptions; auto residual candidate cost142s but per-action online detour estimate exhausted local1020sim budget. Charged1630wall.",
+    "restart": "showcase_B3_work_20261113_201908 PARTIAL, safe/loc, actual monitor60s manual handoff, stoppedconfirmed. Verified ledger resume frominitial; no task credit added. Online Hybrid-A* failed first residual transit. AnalyticF2C route physically intersects observed obstacle; mustNOT blindly FollowPath.",
+    "diagnostic": "client/conservative_diagnostic_grid.npz and residual_route_diagnostic.png saved inside restart201908. Rawgrid300x420 .05 origin90,36. Start[103.466,45.290,-.225], target work3 start[99.527,43.670,0]. Body/startfree but allsinglelegDubins paths collide. Trying bounded two-hop lattice via safe measured grid; session51947.",
+    "new_code": "showcase_resume.py verifies db credit union then adapts original resume17 to independent plan; run_showcase --resume-from; evaluate_showcase verifies chain and execution_episodes; export expands all credited source videos; summarize aggregates cumulative clustertime≤1800 and verifies videos contain completechain. None changes formal plan/hash/thresholds. Parent originalB3 checkpoint remains valid for explicit restart; newest failedrestart unsafe flag wouldmake original prepare refuse, despite no tool work; preferoriginalverifiedcheckpoint if currentestimate unchanged, document failures.",
+    "new_repair": "residual_showcase.py now captures fresh admitted observed grid, blocks unknown and >=90, verifies full padded footprint; fixed original work lanes; six Dubins alternatives then bounded two-hop 1m/8-heading lattice search30wall. Validated with original motion domain. Qualified turn marked/showcase adapter uses existing qualified FollowPath with live collision checks. No safety/ledger gate relaxed. 3 residual contract tests passed; compose syntax validated.",
+    "active": "showcase_B3_work_20261113_203412 from original verified194812 checkpoint, --seconds600, charged. Runtime candidate 25.898m cost247.02sim, waypoint algorithm [103.5,42.5,pi/2], all padded body checks. Actually navigating reference parts; at107.81sim no replans/alarms. Must wait actual coverage >=95%, safety, loc, resume-chain hash validation.",
+    "time": "Before active restart ~88min final charged. 2 full road recordings remain. Never reset budget. B3 previous PARTIAL+current restart must both appear in final full video and cumulative cluster time. Failed201908 no work added stays charged/development journal (not necessarily full selected task video).",
+    "final": "203412 PASS97.2163%, realwall728.8316s; complete372.261sim+shutdown; resume_chain_verifiedtrue. Initial194812 PARTIAL+final203412 are samecreditedtask chain; exporter expands both. Failed201908 retained in budget/journal and confirmed real60sstallhandoff. ActualB3completion afterpatch ends atworklane withsafepark, originaldepot return happened beforepatch, doNOT claimfinalreturnafterpatch."
+  },
+  "active_restart_session": null,
+  "active_ack_session": null,
+  "selected_attempt_runs": [
+    "optimization_v2/results/S17/showcase_A1_work_20261113_185514",
+    "optimization_v2/results/S17/showcase_A2_work_20261113_190038",
+    "optimization_v2/results/S17/showcase_A3_work_20261113_190631",
+    "optimization_v2/results/S17/showcase_B1_work_20261113_191121",
+    "optimization_v2/results/S17/showcase_B2_work_20261113_192951",
+    "optimization_v2/results/S17/showcase_B3_work_20261113_203412",
+    "optimization_v2/results/S17/showcase_A1_inspection_20261113_212812",
+    "optimization_v2/results/S17/showcase_B1_inspection_20261113_215213"
+  ],
+  "active_media_session": null,
+  "publication_receipt": "delivery/showcase_publication_receipt.json",
+  "round_finished": true,
+  "demonstration_status": "PARTIAL",
+  "s17_status": "PARTIAL",
+  "s18_executed": false,
+  "simulations_stopped": true,
+  "delivered": {
+    "work_clusters": "6/6 PASS",
+    "road_diff": "FAIL heading criterion;13/15parts",
+    "road_ackermann": "PARTIAL wall budget;13/21parts;executed safety/localization pass",
+    "videos": [
+      "optimization_v2/showcase/media/full_demo.mp4",
+      "optimization_v2/showcase/media/showcase_short.mp4"
+    ],
+    "wall_minutes": 179.23764271053332,
+    "sim_minutes_all_charged": 91.62681666666667,
+    "github_commit": "990d51f78eb781c8c1d7d8172e86b9c6fe31be9b",
+    "synchronized_files": 157,
+    "remote_tree_verified": "469e8c7d39016b4339be0091adfda8a2c68682d1",
+    "formal_integrity_files": 41227
+  },
+  "mower_geometry_review": {
+    "status": "ANALYSIS_AND_DISPLAY_FIXED_ROUTE_REDESIGN_PENDING",
+    "report": "docs/optimization_v2/showcase/割草转弯半径与场地尺度核查.md",
+    "offline_candidate": "optimization_v2/showcase/mower_scale_v2c/candidate.json",
+    "candidate_representative_design_accepted": false,
+    "candidate_closed_loop": "NOT_RUN",
+    "current_default_plan_unchanged": true,
+    "simulation_started": false,
+    "budget_reset": false
+  },
+  "next_recording_scope": {
+    "kind": "individual_behavior_demonstration",
+    "coverage_95_required_for_demo": false,
+    "formal_s17_standard_unchanged": true,
+    "report": "docs/optimization_v2/showcase/分项行为录像与视觉升级判断.md",
+    "persistent_obstacles": "keep original denominator and residual; safe stop/manual check acceptable for behavior demonstration",
+    "target_following": "UNVERIFIED; clarification pending",
+    "visual_upgrade": "PROPOSED_NOT_EXECUTED",
+    "new_simulation_or_recording": "NOT_RUN",
+    "old_recording_budget_reset": false
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "schema": "MOWER-GEOMETRY-AUDIT/1",
+  "scope": "offline analysis, not closed-loop qualification",
+  "vehicle": {
+    "reference": "base_link / rear axle midpoint",
+    "wheelbase_m": 1.0,
+    "track_m": 0.7,
+    "footprint_length_m": 1.6,
+    "footprint_width_m": 1.04,
+    "body_size_m": [
+      1.5,
+      0.8,
+      0.24
+    ],
+    "tool_width_m": 0.9,
+    "inner_joint_limit_deg": 34.37746770784939,
+    "kinematic_joint_limit_radius_m": 1.811695947078102,
+    "commanded_min_radius_m": 2.0,
+    "planning_radius_m": 2.11,
+    "qualified_sim_measured_radius_m": [
+      2.000019601772863,
+      2.0000052643583057
+    ],
+    "planning_inner_steering_deg": 29.60445074600491,
+    "rear_axle_turn_diameter_m": 4.22,
+    "footprint_outer_circle_diameter_m": 5.867503728162428,
+    "outer_diameter_note": "constant-curvature full circle, configured footprint; excludes safety padding",
+    "physical_parameters_consistent": true,
+    "hardware_calibration": "NOT_CALIBRATED"
+  },
+  "demo": {
+    "task_area_m2": 4.104000013629286,
+    "task_bbox_m": [
+      126.68668381,
+      56.78009945,
+      129.21652492,
+      59.25611415
+    ],
+    "task_bbox_size_m": [
+      2.5298411100000067,
+      2.4760147000000003
+    ],
+    "permitted_motion_area_m2": 1120.0000001660858,
+    "clusters": [
+      {
+        "cluster": "B1",
+        "area_m2": 1.1130412217716352,
+        "work_length_m": 2.6014584348377667,
+        "tool_off_length_m": 41.252392944964505,
+        "tool_off_distance_fraction": 0.9406789061168772,
+        "individual_work_lengths_m": [
+          1.2519792177207876,
+          1.3494792171169792
+        ],
+        "nominal_sim_seconds": 468.301591140944,
+        "nominal_under_30_min": true
+      },
+      {
+        "cluster": "B2",
+        "area_m2": 1.9175386860924273,
+        "work_length_m": 3.9234720710457367,
+        "tool_off_length_m": 44.348740143005664,
+        "tool_off_distance_fraction": 0.9187219335702277,
+        "individual_work_lengths_m": [
+          1.9729709189471976,
+          1.9505011520985391
+        ],
+        "nominal_sim_seconds": 506.6120143169805,
+        "nominal_under_30_min": true
+      },
+      {
+        "cluster": "B3",
+        "area_m2": 1.0734201072087808,
+        "work_length_m": 3.92182147999209,
+        "tool_off_length_m": 54.45673462144811,
+        "tool_off_distance_fraction": 0.9328208550897109,
+        "individual_work_lengths_m": [
+          1.579536761094161,
+          1.1719706292672498,
+          1.1703140896306792
+        ],
+        "nominal_sim_seconds": 620.1315448282435,
+        "nominal_under_30_min": true
+      }
+    ],
+    "total_work_length_m": 10.446751985875594,
+    "total_tool_off_length_m": 140.05786770941828
+  },
+  "formal": {
+    "task_area_m2": 45.599999960352676,
+    "task_bbox_m": [
+      123.62227938,
+      53.93366484,
+      132.05508306,
+      62.18704716
+    ],
+    "task_bbox_size_m": [
+      8.432803679999992,
+      8.25338232
+    ],
+    "permitted_motion_area_m2": 1120.0000001660858,
+    "clusters": [
+      {
+        "cluster": "B1",
+        "area_m2": 16.35945787959566,
+        "work_length_m": 40.11571575012093,
+        "tool_off_length_m": 94.16581964822021,
+        "tool_off_distance_fraction": 0.7012566498355923,
+        "individual_work_lengths_m": [
+          3.246828937794384,
+          2.5372035293290898,
+          5.941145994709627,
+          4.943753586476289,
+          7.345875357435521,
+          7.35030363884657,
+          8.750604705529447
+        ],
+        "nominal_sim_seconds": 1389.5171178151445,
+        "nominal_under_30_min": true
+      },
+      {
+        "cluster": "B2",
+        "area_m2": 15.700109920352492,
+        "work_length_m": 38.389899112577005,
+        "tool_off_length_m": 99.8421312055501,
+        "tool_off_distance_fraction": 0.7222792790916367,
+        "individual_work_lengths_m": [
+          3.22294156102856,
+          2.5224480376424188,
+          6.328293519819152,
+          4.858853150391973,
+          7.131774392251864,
+          7.173134168414042,
+          7.1524542830289946
+        ],
+        "nominal_sim_seconds": 1433.9821810757974,
+        "nominal_under_30_min": true
+      },
+      {
+        "cluster": "B3",
+        "area_m2": 13.540432162146981,
+        "work_length_m": 36.261538055453016,
+        "tool_off_length_m": 98.43429618381055,
+        "tool_off_distance_fraction": 0.7307894616024967,
+        "individual_work_lengths_m": [
+          2.3927397452674106,
+          0.8321980650344437,
+          6.904055023968622,
+          5.454161597300309,
+          3.1892830532240843,
+          9.575651030283554,
+          7.913449540374595
+        ],
+        "nominal_sim_seconds": 1404.325141966841,
+        "nominal_under_30_min": true
+      }
+    ],
+    "total_work_length_m": 114.76715291815094,
+    "total_tool_off_length_m": 292.44224703758084
+  },
+  "screenshot_gray_lines": "planned reference, not measured trail",
+  "formal_s17_status": "PARTIAL",
+  "s18_executed": false,
+  "simulation_started": false,
+  "demo_design_warnings": [
+    "TASK_SHORTER_THAN_TURN_DIAMETER",
+    "TOOL_OFF_DISTANCE_DOMINATES_OVER_75_PERCENT"
+  ],
+  "candidate": {
+    "task_area_m2": 37.09499999999998,
+    "task_bbox_m": [
+      123.2,
+      55.5,
+      131.5,
+      60.3
+    ],
+    "task_bbox_size_m": [
+      8.299999999999997,
+      4.799999999999997
+    ],
+    "permitted_motion_area_m2": 194.25943409682156,
+    "clusters": [
+      {
+        "cluster": "B1",
+        "area_m2": 12.364999996981705,
+        "work_length_m": 23.642851590108478,
+        "tool_off_length_m": 73.25177809247957,
+        "tool_off_distance_fraction": 0.7559942004261863,
+        "individual_work_lengths_m": [
+          8.200613624057539,
+          7.538287113931744,
+          7.903950852119195
+        ],
+        "nominal_sim_seconds": 985.3985756433432,
+        "nominal_under_30_min": true
+      },
+      {
+        "cluster": "B2",
+        "area_m2": 12.365000014251116,
+        "work_length_m": 28.260334300257234,
+        "tool_off_length_m": 98.78312099939586,
+        "tool_off_distance_fraction": 0.7775537965840071,
+        "individual_work_lengths_m": [
+          7.243412923014662,
+          4.798201404286596,
+          2.0269915354665553,
+          2.1315787740543515,
+          4.746223123840261,
+          7.313926539594808
+        ],
+        "nominal_sim_seconds": 1314.297354302802,
+        "nominal_under_30_min": true
+      },
+      {
+        "cluster": "B3",
+        "area_m2": 12.364999990148885,
+        "work_length_m": 27.612039700521095,
+        "tool_off_length_m": 105.28247833903315,
+        "tool_off_distance_fraction": 0.7922258938303027,
+        "individual_work_lengths_m": [
+          7.657565288121978,
+          5.7262199885271725,
+          1.3419330304876498,
+          2.999702407628905,
+          3.7411940797088237,
+          6.145424906046564
+        ],
+        "nominal_sim_seconds": 1370.4520818914968,
+        "nominal_under_30_min": true
+      }
+    ],
+    "total_work_length_m": 79.51522559088681,
+    "total_tool_off_length_m": 277.31737743090855
+  },
+  "candidate_design_warnings": [
+    "TOOL_OFF_DISTANCE_DOMINATES_OVER_75_PERCENT"
+  ],
+  "candidate_representative_design_accepted": false,
+  "candidate_provenance_valid": true,
+  "candidate_revision_valid": true,
+  "candidate_checks": {
+    "partition": true,
+    "routes": true,
+    "budgets": true,
+    "coverage": true,
+    "reference_closed_loop_not_run": true,
+    "provenance": true,
+    "revision": true
+  },
+  "sources": {
+    "optimization_v2/ws/src/showcase_demo/scripts/mower_geometry_audit.py": "841d2842e887fc17582289185433a0dbe145e2541a7d09a7bcfc05cdb944d11c",
+    "optimization_v2/config/vehicles/ackermann.yaml": "918c6c4597aeae4594b82fbf94b3c382967ee2bfad290616b51f0ddc579c09f7",
+    "optimization_v2/config/vehicles/qualified_profiles.json": "95331de8c207f9a3413f22be706467b8e5fd82e4daeae1766afa8c34ef188e78",
+    "optimization_v2/config/tool_profiles.yaml": "4f86d550d64157b9f82c13db283dd96aad881a5c2e72c146d5086e48a6bd10be",
+    "optimization_v2/showcase/v1/mission_plan.json": "8e7587d635a7a21426fa627d2b25fc10deb4240b02c3a124dc1e7a8d4cd9fb8c",
+    "optimization_v2/plans/s17_full/mission_plan.json": "fb785e0c839ef85618187b368821700b09c491a4c1e9b1cd8e8d5302af638410",
+    "optimization_v2/showcase/mower_scale_v2c/candidate.json": "e0e6ec22213a39d38b751f7cdec3a9938493c30c685f5aa97ff73d2c40190f9d"
+  }
+}

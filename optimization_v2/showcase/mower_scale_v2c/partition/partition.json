@@ -1,0 +1,139 @@
+{
+  "algorithm": "equal area cumulative sweep bisection, convex flat parcel only",
+  "workload_proxy": "area / (cutting width * qualified speed); final timed routes include turns",
+  "verification": {
+    "passed": true,
+    "checks": {
+      "exactly_three": true,
+      "connected": true,
+      "complete": true,
+      "disjoint": true,
+      "adjacent": true
+    }
+  },
+  "cuts_y": [
+    55.5,
+    57.09432778499999,
+    58.623624205,
+    60.3
+  ],
+  "clusters": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                131.5,
+                57.0
+              ],
+              [
+                130.8,
+                55.5
+              ],
+              [
+                123.5,
+                55.5
+              ],
+              [
+                123.32917917,
+                57.09432778
+              ],
+              [
+                131.48315575,
+                57.09432778
+              ],
+              [
+                131.5,
+                57.0
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "cluster": 0,
+          "area_m2": 12.364999996981705
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                123.29708726,
+                58.62362421
+              ],
+              [
+                131.21006711,
+                58.62362421
+              ],
+              [
+                131.48315575,
+                57.09432778
+              ],
+              [
+                123.32917917,
+                57.09432778
+              ],
+              [
+                123.2,
+                58.3
+              ],
+              [
+                123.29708726,
+                58.62362421
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "cluster": 1,
+          "area_m2": 12.365000014251116
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                123.8,
+                60.3
+              ],
+              [
+                130.0,
+                60.3
+              ],
+              [
+                131.0,
+                59.8
+              ],
+              [
+                131.21006711,
+                58.62362421
+              ],
+              [
+                123.29708726,
+                58.62362421
+              ],
+              [
+                123.8,
+                60.3
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "cluster": 2,
+          "area_m2": 12.364999990148885
+        }
+      }
+    ]
+  }
+}

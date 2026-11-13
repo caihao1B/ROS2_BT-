@@ -1,0 +1,139 @@
+[
+  {
+    "angle_rad": 0.0,
+    "phase_m": 0.0,
+    "work_count": 3,
+    "feasible_directed_edges": 13,
+    "search_wall_s": 1.2996188199977041,
+    "reason": "NO_CLOSED_COLLISION_FREE_ROUTE"
+  },
+  {
+    "angle_rad": 0.0,
+    "phase_m": -0.15,
+    "work_count": 3,
+    "feasible_directed_edges": 16,
+    "search_wall_s": 1.2279489760003344,
+    "reason": "NO_CLOSED_COLLISION_FREE_ROUTE"
+  },
+  {
+    "angle_rad": 0.0,
+    "phase_m": 0.15,
+    "work_count": 4,
+    "feasible_directed_edges": 28,
+    "search_wall_s": 1.8752552419973654,
+    "reason": "NO_CLOSED_COLLISION_FREE_ROUTE"
+  },
+  {
+    "angle_rad": 0.2617993877991494,
+    "phase_m": 0.0,
+    "work_count": 7,
+    "feasible_directed_edges": 122,
+    "search_wall_s": 3.9520357930014143,
+    "reason": "NO_CLOSED_COLLISION_FREE_ROUTE"
+  },
+  {
+    "angle_rad": 0.2617993877991494,
+    "phase_m": -0.15,
+    "work_count": 7,
+    "feasible_directed_edges": 113,
+    "search_wall_s": 4.136389647999749,
+    "reason": "NO_CLOSED_COLLISION_FREE_ROUTE"
+  },
+  {
+    "angle_rad": 0.2617993877991494,
+    "phase_m": 0.15,
+    "work_count": 7,
+    "feasible_directed_edges": 123,
+    "search_wall_s": 3.937710185000469,
+    "reason": "NO_CLOSED_COLLISION_FREE_ROUTE"
+  },
+  {
+    "angle_rad": -0.2617993877991494,
+    "phase_m": 0.0,
+    "work_count": 7,
+    "feasible_directed_edges": 154,
+    "search_wall_s": 3.56407553399913,
+    "reason": "VALID",
+    "coverage_fraction": 0.9999999999999997,
+    "timing": {
+      "motion_s": 1192.3773378484207,
+      "work_motion_s": 247.2083891108163,
+      "tool_switch_s": 24.5,
+      "dwell_and_dock_s": 0.0,
+      "setup_s": 10.0,
+      "reserve_s": 184.0316006772631,
+      "total_s": 1410.9089385256837,
+      "length_m": 135.62598851652726,
+      "all_segments_valid": true,
+      "actual_sim_seconds": null
+    },
+    "order": [
+      12,
+      2,
+      11,
+      7,
+      4,
+      8,
+      1
+    ]
+  },
+  {
+    "angle_rad": -0.2617993877991494,
+    "phase_m": -0.15,
+    "work_count": 6,
+    "feasible_directed_edges": 111,
+    "search_wall_s": 2.638791796998703,
+    "reason": "VALID",
+    "coverage_fraction": 0.9999999999999997,
+    "timing": {
+      "motion_s": 1111.8672646111322,
+      "work_motion_s": 243.42077688158173,
+      "tool_switch_s": 21.0,
+      "dwell_and_dock_s": 0.0,
+      "setup_s": 10.0,
+      "reserve_s": 171.43008969166982,
+      "total_s": 1314.297354302802,
+      "length_m": 127.04345529965309,
+      "all_segments_valid": true,
+      "actual_sim_seconds": null
+    },
+    "order": [
+      4,
+      3,
+      10,
+      0,
+      9,
+      6
+    ]
+  },
+  {
+    "angle_rad": -0.2617993877991494,
+    "phase_m": 0.15,
+    "work_count": 7,
+    "feasible_directed_edges": 144,
+    "search_wall_s": 3.623101092998695,
+    "reason": "VALID",
+    "coverage_fraction": 0.9999999999999997,
+    "timing": {
+      "motion_s": 1194.5348465260124,
+      "work_motion_s": 249.25162362410663,
+      "tool_switch_s": 24.5,
+      "dwell_and_dock_s": 0.0,
+      "setup_s": 10.0,
+      "reserve_s": 184.35522697890187,
+      "total_s": 1413.3900735049142,
+      "length_m": 136.06857688786965,
+      "all_segments_valid": true,
+      "actual_sim_seconds": null
+    },
+    "order": [
+      12,
+      2,
+      11,
+      7,
+      4,
+      8,
+      1
+    ]
+  }
+]
