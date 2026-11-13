@@ -1,0 +1,236 @@
+[
+  {
+    "stage": "S01",
+    "files": [
+      "docs/optimization_v2/S01/TECHNICAL.md",
+      "docs/optimization_v2/S01/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S01/MANUAL_CHECK.md",
+      "docs/optimization_v2/S01/RESULTS.md",
+      "optimization_v2/lessons/S01/README.md",
+      "optimization_v2/lessons/S01/lesson.py",
+      "optimization_v2/lessons/S01/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S02",
+    "files": [
+      "docs/optimization_v2/S02/TECHNICAL.md",
+      "docs/optimization_v2/S02/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S02/MANUAL_CHECK.md",
+      "docs/optimization_v2/S02/RESULTS.md",
+      "optimization_v2/lessons/S02/README.md",
+      "optimization_v2/lessons/S02/lesson.py",
+      "optimization_v2/lessons/S02/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S03",
+    "files": [
+      "docs/optimization_v2/S03/TECHNICAL.md",
+      "docs/optimization_v2/S03/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S03/MANUAL_CHECK.md",
+      "docs/optimization_v2/S03/RESULTS.md",
+      "optimization_v2/lessons/S03/README.md",
+      "optimization_v2/lessons/S03/lesson.py",
+      "optimization_v2/lessons/S03/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S04",
+    "files": [
+      "docs/optimization_v2/S04/TECHNICAL.md",
+      "docs/optimization_v2/S04/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S04/MANUAL_CHECK.md",
+      "docs/optimization_v2/S04/RESULTS.md",
+      "optimization_v2/lessons/S04/README.md",
+      "optimization_v2/lessons/S04/lesson.py",
+      "optimization_v2/lessons/S04/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S05",
+    "files": [
+      "docs/optimization_v2/S05/TECHNICAL.md",
+      "docs/optimization_v2/S05/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S05/MANUAL_CHECK.md",
+      "docs/optimization_v2/S05/RESULTS.md",
+      "optimization_v2/lessons/S05/README.md",
+      "optimization_v2/lessons/S05/lesson.py",
+      "optimization_v2/lessons/S05/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S06",
+    "files": [
+      "docs/optimization_v2/S06/TECHNICAL.md",
+      "docs/optimization_v2/S06/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S06/MANUAL_CHECK.md",
+      "docs/optimization_v2/S06/RESULTS.md",
+      "optimization_v2/lessons/S06/README.md",
+      "optimization_v2/lessons/S06/lesson.py",
+      "optimization_v2/lessons/S06/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S07",
+    "files": [
+      "docs/optimization_v2/S07/TECHNICAL.md",
+      "docs/optimization_v2/S07/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S07/MANUAL_CHECK.md",
+      "docs/optimization_v2/S07/RESULTS.md",
+      "optimization_v2/lessons/S07/README.md",
+      "optimization_v2/lessons/S07/lesson.py",
+      "optimization_v2/lessons/S07/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S08",
+    "files": [
+      "docs/optimization_v2/S08/TECHNICAL.md",
+      "docs/optimization_v2/S08/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S08/MANUAL_CHECK.md",
+      "docs/optimization_v2/S08/RESULTS.md",
+      "optimization_v2/lessons/S08/README.md",
+      "optimization_v2/lessons/S08/lesson.py",
+      "optimization_v2/lessons/S08/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S09",
+    "files": [
+      "docs/optimization_v2/S09/TECHNICAL.md",
+      "docs/optimization_v2/S09/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S09/MANUAL_CHECK.md",
+      "docs/optimization_v2/S09/RESULTS.md",
+      "optimization_v2/lessons/S09/README.md",
+      "optimization_v2/lessons/S09/lesson.py",
+      "optimization_v2/lessons/S09/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S10",
+    "files": [
+      "docs/optimization_v2/S10/TECHNICAL.md",
+      "docs/optimization_v2/S10/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S10/MANUAL_CHECK.md",
+      "docs/optimization_v2/S10/RESULTS.md",
+      "optimization_v2/lessons/S10/README.md",
+      "optimization_v2/lessons/S10/lesson.py",
+      "optimization_v2/lessons/S10/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S11",
+    "files": [
+      "docs/optimization_v2/S11/TECHNICAL.md",
+      "docs/optimization_v2/S11/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S11/MANUAL_CHECK.md",
+      "docs/optimization_v2/S11/RESULTS.md",
+      "optimization_v2/lessons/S11/README.md",
+      "optimization_v2/lessons/S11/lesson.py",
+      "optimization_v2/lessons/S11/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S12",
+    "files": [
+      "docs/optimization_v2/S12/TECHNICAL.md",
+      "docs/optimization_v2/S12/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S12/MANUAL_CHECK.md",
+      "docs/optimization_v2/S12/RESULTS.md",
+      "optimization_v2/lessons/S12/README.md",
+      "optimization_v2/lessons/S12/lesson.py",
+      "optimization_v2/lessons/S12/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S13",
+    "files": [
+      "docs/optimization_v2/S13/TECHNICAL.md",
+      "docs/optimization_v2/S13/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S13/MANUAL_CHECK.md",
+      "docs/optimization_v2/S13/RESULTS.md",
+      "optimization_v2/lessons/S13/README.md",
+      "optimization_v2/lessons/S13/lesson.py",
+      "optimization_v2/lessons/S13/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S14",
+    "files": [
+      "docs/optimization_v2/S14/TECHNICAL.md",
+      "docs/optimization_v2/S14/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S14/MANUAL_CHECK.md",
+      "docs/optimization_v2/S14/RESULTS.md",
+      "optimization_v2/lessons/S14/README.md",
+      "optimization_v2/lessons/S14/lesson.py",
+      "optimization_v2/lessons/S14/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S15",
+    "files": [
+      "docs/optimization_v2/S15/TECHNICAL.md",
+      "docs/optimization_v2/S15/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S15/MANUAL_CHECK.md",
+      "docs/optimization_v2/S15/RESULTS.md",
+      "optimization_v2/lessons/S15/README.md",
+      "optimization_v2/lessons/S15/lesson.py",
+      "optimization_v2/lessons/S15/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S16",
+    "files": [
+      "docs/optimization_v2/S16/TECHNICAL.md",
+      "docs/optimization_v2/S16/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S16/MANUAL_CHECK.md",
+      "docs/optimization_v2/S16/RESULTS.md",
+      "optimization_v2/lessons/S16/README.md",
+      "optimization_v2/lessons/S16/lesson.py",
+      "optimization_v2/lessons/S16/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S17",
+    "files": [
+      "docs/optimization_v2/S17/TECHNICAL.md",
+      "docs/optimization_v2/S17/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S17/MANUAL_CHECK.md",
+      "docs/optimization_v2/S17/RESULTS.md",
+      "optimization_v2/lessons/S17/README.md",
+      "optimization_v2/lessons/S17/lesson.py",
+      "optimization_v2/lessons/S17/lesson.cpp"
+    ],
+    "missing": []
+  },
+  {
+    "stage": "S18",
+    "files": [
+      "docs/optimization_v2/S18/TECHNICAL.md",
+      "docs/optimization_v2/S18/CODE_WALKTHROUGH.md",
+      "docs/optimization_v2/S18/MANUAL_CHECK.md",
+      "docs/optimization_v2/S18/RESULTS.md",
+      "optimization_v2/lessons/S18/README.md",
+      "optimization_v2/lessons/S18/lesson.py",
+      "optimization_v2/lessons/S18/lesson.cpp"
+    ],
+    "missing": []
+  }
+]

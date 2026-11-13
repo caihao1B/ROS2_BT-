@@ -1,0 +1,61 @@
+[
+  {
+    "command": [
+      "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+      "/home/ceihao/robot_project/optimization_v2/ws/src/release_tools/tests/contracts18.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+      "/home/ceihao/robot_project/optimization_v2/ws/src/release_tools/tests/follow_contract18.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+      "/home/ceihao/robot_project/optimization_v2/ws/src/release_tools/tests/visual_contract18.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/bin/bash",
+      "--noprofile",
+      "--norc",
+      "/home/ceihao/robot_project/optimization_v2/run.sh",
+      "doctor"
+    ],
+    "exit_code": 0,
+    "environment": "minimal fresh shell; existing system packages and built workspace"
+  },
+  {
+    "command": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-O2",
+      "/home/ceihao/robot_project/optimization_v2/lessons/S18/lesson.cpp",
+      "-o",
+      "/home/ceihao/robot_project/optimization_v2/results/S18/delivery_20261114/lesson_cpp"
+    ],
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      "/home/ceihao/robot_project/optimization_v2/results/S18/delivery_20261114/lesson_cpp"
+    ],
+    "exit_code": 0,
+    "output": "PASS: 3 teaching cases; real project status is not inferred.\n"
+  },
+  {
+    "command": [
+      "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+      "/home/ceihao/robot_project/optimization_v2/lessons/S18/lesson.py"
+    ],
+    "exit_code": 0,
+    "output": "PASS: {'payload_bytes': 80, 'limit_bytes': 100, 'evicted': ['old'], 'entries': 2} ; original project evidence untouched\n"
+  }
+]

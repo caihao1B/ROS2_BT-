@@ -1,0 +1,40 @@
+{
+  "status": "RUNTIME_INPUT_BINDINGS_VALID",
+  "dependencies": {
+    "ROS_DISTRO": "jazzy",
+    "ROS_DOMAIN_ID": "119",
+    "GZ_PARTITION": "robot_optimization_v2"
+  },
+  "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+  "plan_revision": "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205",
+  "work_clusters": [
+    "A1",
+    "A2",
+    "A3",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "full_map_tasks_accepted": false,
+  "stage_receipts": {
+    "S01": "PASS",
+    "S02": "PASS",
+    "S03": "PASS",
+    "S04": "PASS",
+    "S05": "PASS",
+    "S06": "PASS",
+    "S07": "PASS",
+    "S08": "PASS",
+    "S09": "PASS",
+    "S10": "PASS",
+    "S11": "PASS",
+    "S12": "PASS",
+    "S13": "PASS",
+    "S14": "PASS",
+    "S15": "PASS",
+    "S16": "PASS",
+    "S17": "PARTIAL",
+    "S18": "PARTIAL"
+  },
+  "notice": "Version and input readiness only; S17 remains PARTIAL; no runtime was launched"
+}

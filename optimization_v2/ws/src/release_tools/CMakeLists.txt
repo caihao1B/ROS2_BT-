@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(release_tools)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY scripts tests DESTINATION share/${PROJECT_NAME} PATTERN "__pycache__" EXCLUDE)
+ament_package()

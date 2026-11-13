@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
+    "/home/ceihao/robot_project/optimization_v2/ws/src/acceptance_runner/scripts/one17.py",
+    "--spec",
+    "/home/ceihao/robot_project/optimization_v2/results/S17/release18_20261113_212444_574712/spec.json",
+    "--out",
+    "/home/ceihao/robot_project/optimization_v2/results/S17/release18_20261113_212444_574712",
+    "--wall",
+    "275",
+    "--seconds",
+    "180",
+    "--rtf",
+    "1.0",
+    "--resume-from",
+    "/home/ceihao/robot_project/optimization_v2/results/S17/release18_20261113_210953_977293"
+  ],
+  "exit_code": null,
+  "error": "owned release validation interrupted",
+  "wall_seconds": 94.15992420799739,
+  "formal_credit": false,
+  "cleanup": {
+    "owned": 0,
+    "processes": [],
+    "survivors": [],
+    "partition": "s13_S17_release18_20261113_212444_574712"
+  }
+}

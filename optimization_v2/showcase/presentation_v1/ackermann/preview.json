@@ -1,0 +1,7 @@
+{
+  "source": "actual Gazebo observer camera",
+  "sim_time": 2.0,
+  "image_sha256": "6252081c3c1a0fda2484d18a3f0dd5560b60a4a6ee519a502b7362dfe45c0795",
+  "scope": "UNARMED_PRESENTATION_ONLY",
+  "autonomy_input": false
+}

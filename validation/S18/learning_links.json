@@ -1,0 +1,6 @@
+{
+  "checked": 577,
+  "issues": [],
+  "passed": true,
+  "scope": "local Markdown link target and line bounds; remote URLs and semantic line meaning not fully verified"
+}

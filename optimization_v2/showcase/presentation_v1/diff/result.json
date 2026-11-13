@@ -1,0 +1,17 @@
+{
+  "vehicle": "diff",
+  "status": "PASS_STATIC_PREVIEW",
+  "error": null,
+  "wall_seconds": 6.737251672995626,
+  "partition": "s18_preview_20261113_211838_430688",
+  "process_exit_codes": {
+    "server": -11,
+    "bridge": 0,
+    "capture": 0
+  },
+  "commanded_motion": false,
+  "autonomous_qualification": "NOT_RUN",
+  "sensor_equivalence": "NOT_QUALIFIED",
+  "skin_physics_unchanged": true,
+  "note": "Parked actor fixture; observer camera is additional. Physics equality applies to skin.sdf only."
+}

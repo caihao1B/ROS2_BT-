@@ -1,0 +1,458 @@
+{
+  "source": "optimization_v2/results/S17/release18_20261113_210953_977293",
+  "cluster": "A1",
+  "plan_revision": "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205",
+  "mission": {
+    "t": 87.527,
+    "state": "PARTIAL",
+    "reason": "BUDGET_STOP",
+    "case": "nominal_spray_cluster",
+    "scope": "FULL_CLUSTER",
+    "cluster": "A1",
+    "plan_revision": "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205",
+    "required_points": 21,
+    "confirmed_points": 1,
+    "remaining_point_keys": [
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_11",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_15",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_19",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_23",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_25",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_27",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_31",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_35",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_39",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_43",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_45",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_47",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_51",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_55",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_59",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_63",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_67",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_7",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_71",
+      "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_73"
+    ],
+    "required_area_m2": 0.0,
+    "confirmed_area_m2": 0.0,
+    "coverage_fraction": null,
+    "done": [
+      "A1_3"
+    ],
+    "pending": [
+      {
+        "id": "A1_7",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            2.5799999999999983,
+            33.0,
+            0.0
+          ]
+        ],
+        "target": [
+          3.0,
+          33.0
+        ],
+        "task_id": "point_15_23",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_11",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            0.5799999999999983,
+            33.0,
+            0.0
+          ]
+        ],
+        "target": [
+          1.0,
+          33.0
+        ],
+        "task_id": "point_14_23",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_15",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            0.5799999999999983,
+            35.0,
+            0.0
+          ]
+        ],
+        "target": [
+          1.0,
+          35.0
+        ],
+        "task_id": "point_14_24",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_19",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            -1.4200000000000017,
+            35.0,
+            0.0
+          ]
+        ],
+        "target": [
+          -1.0,
+          35.0
+        ],
+        "task_id": "point_13_24",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_23",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            -1.4200000000000017,
+            37.0,
+            0.0
+          ]
+        ],
+        "target": [
+          -1.0,
+          37.0
+        ],
+        "task_id": "point_13_25",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_25",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            0.5799999999999983,
+            37.0,
+            0.0
+          ]
+        ],
+        "target": [
+          1.0,
+          37.0
+        ],
+        "task_id": "point_14_25",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_27",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            2.5799999999999983,
+            37.0,
+            0.0
+          ]
+        ],
+        "target": [
+          3.0,
+          37.0
+        ],
+        "task_id": "point_15_25",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_31",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            2.5799999999999983,
+            39.0,
+            0.0
+          ]
+        ],
+        "target": [
+          3.0,
+          39.0
+        ],
+        "task_id": "point_15_26",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_35",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            0.5799999999999983,
+            39.0,
+            0.0
+          ]
+        ],
+        "target": [
+          1.0,
+          39.0
+        ],
+        "task_id": "point_14_26",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_39",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            -1.4200000000000017,
+            39.0,
+            0.0
+          ]
+        ],
+        "target": [
+          -1.0,
+          39.0
+        ],
+        "task_id": "point_13_26",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_43",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            0.5799999999999983,
+            41.0,
+            0.0
+          ]
+        ],
+        "target": [
+          1.0,
+          41.0
+        ],
+        "task_id": "point_14_27",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_45",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            2.5799999999999983,
+            41.0,
+            0.0
+          ]
+        ],
+        "target": [
+          3.0,
+          41.0
+        ],
+        "task_id": "point_15_27",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_47",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            4.579999999999998,
+            41.0,
+            0.0
+          ]
+        ],
+        "target": [
+          5.0,
+          41.0
+        ],
+        "task_id": "point_16_27",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_51",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            6.579999999999998,
+            43.0,
+            0.0
+          ]
+        ],
+        "target": [
+          7.0,
+          43.0
+        ],
+        "task_id": "point_17_28",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_55",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            6.579999999999998,
+            41.0,
+            0.0
+          ]
+        ],
+        "target": [
+          7.0,
+          41.0
+        ],
+        "task_id": "point_17_27",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_59",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            6.579999999999998,
+            39.0,
+            0.0
+          ]
+        ],
+        "target": [
+          7.0,
+          39.0
+        ],
+        "task_id": "point_17_26",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_63",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            4.579999999999998,
+            39.0,
+            0.0
+          ]
+        ],
+        "target": [
+          5.0,
+          39.0
+        ],
+        "task_id": "point_16_26",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_67",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            4.579999999999998,
+            37.0,
+            0.0
+          ]
+        ],
+        "target": [
+          5.0,
+          37.0
+        ],
+        "task_id": "point_16_25",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_71",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            2.5799999999999983,
+            35.0,
+            0.0
+          ]
+        ],
+        "target": [
+          3.0,
+          35.0
+        ],
+        "task_id": "point_15_24",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_73",
+        "kind": "POINT_SERVICE",
+        "poses": [
+          [
+            4.579999999999998,
+            35.0,
+            0.0
+          ]
+        ],
+        "target": [
+          5.0,
+          35.0
+        ],
+        "task_id": "point_16_24",
+        "planned_s": 0.0,
+        "steering_events": []
+      },
+      {
+        "id": "A1_return",
+        "kind": "TRANSIT",
+        "poses": [
+          [
+            6.150163169999999,
+            32.50427919,
+            0.0
+          ]
+        ],
+        "planned_s": 20,
+        "task_id": "return",
+        "steering_events": []
+      }
+    ],
+    "deferred": [],
+    "tool_results": [
+      {
+        "key": "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205:A1_3",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "quantity": 2.000000000000007,
+        "remaining": 0.0,
+        "uncertain": false,
+        "residual": {
+          "type": "Polygon",
+          "coordinates": []
+        }
+      }
+    ],
+    "residual": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "credit": {
+      "type": "GeometryCollection",
+      "geometries": []
+    },
+    "uncertainty_pending": false
+  },
+  "restart_pose_prior": [
+    30.75533834989368,
+    46.91064481334311,
+    2.7364005126926596
+  ],
+  "restart_pose_source": "last sensor-based estimate; not truth",
+  "source_hashes": {
+    "optimization_v2/results/S17/release18_20261113_210953_977293/client/mission.json": "82824c05e517418877e9b8c463d0b21815acdff93ba5f7fe748b6fec103fb5bb",
+    "optimization_v2/results/S17/release18_20261113_210953_977293/runtime.json": "0ff19a81ac9565879dd8b395d92545cb14017b148a537e953a5e0d9ca15ba536",
+    "optimization_v2/results/S17/release18_20261113_210953_977293/cleanup14.json": "93c535ea773b97ff0ecb99b8c2f9a4f9c82a504f84d02025f5e06bdb6d2ce9eb",
+    "optimization_v2/results/S17/release18_20261113_210953_977293/ledger/ledger.sqlite": "c6722ae2ac3be8ce5d6a4ed310ad847f2fd8eec2d4da907b31b7f0c55ccfd3e1",
+    "optimization_v2/results/S17/release18_20261113_210953_977293/online/observations.jsonl": "0b4b797fd87fac7c34911cd84dc2325ba21d07ed9f9556658c21e31491abe6b7"
+  },
+  "copied_ledger_sha256": "d9aaeccca0df8021c6585662f25206366cafaa9ccb1df7ad6abf036a5d82c4e2"
+}

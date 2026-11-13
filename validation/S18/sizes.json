@@ -1,0 +1,38 @@
+{
+  "ws/src": {
+    "logical_bytes": 6269864,
+    "regular_files": 782
+  },
+  "ws/build": {
+    "logical_bytes": 281844491,
+    "regular_files": 2707
+  },
+  "ws/install": {
+    "logical_bytes": 42533546,
+    "regular_files": 622
+  },
+  "assets": {
+    "logical_bytes": 34215965,
+    "regular_files": 39
+  },
+  "maps": {
+    "logical_bytes": 182696937,
+    "regular_files": 39
+  },
+  "plans": {
+    "logical_bytes": 26614030,
+    "regular_files": 31
+  },
+  "results": {
+    "logical_bytes": 23115660459,
+    "regular_files": 120708
+  },
+  "venvs": {
+    "logical_bytes": 1411318056,
+    "regular_files": 30725
+  },
+  "showcase": {
+    "logical_bytes": 63844059,
+    "regular_files": 180
+  }
+}

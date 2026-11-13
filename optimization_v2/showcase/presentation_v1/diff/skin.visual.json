@@ -1,0 +1,32 @@
+{
+  "source": "optimization_v2/showcase/presentation_v1/diff/original/world.sdf",
+  "destination": "optimization_v2/showcase/presentation_v1/diff/skin.sdf",
+  "source_sha256": "1c9ed22b99f97e9b799355136f857edca44fc3910b40fdcf6b7ff4915ecb417c",
+  "destination_sha256": "706c0b162cd63d642791624d437a1022cdf2e8256f50d85905575e5922f89c7d",
+  "nonvisual_signature": "4d4bcc659e0b95264c9022bff9a4ef02c78fd1a7aca477ddaabcfca9738010db",
+  "nonvisual_unchanged": true,
+  "changed": [
+    "connector",
+    "grade_10",
+    "grade_18",
+    "grade_5",
+    "mowing_workspace",
+    "spray_workspace",
+    "vehicle shell, wheels, vents, reflectors, tool"
+  ],
+  "sensor_equivalence": "NOT_QUALIFIED",
+  "autonomous_motion": "NOT_RUN",
+  "assets": {
+    "optimization_v2/assets/presentation_v1/PROVENANCE.txt": "14c9f8ce6c2c311d7b38f62d883b636bd5af4925708978af1a70a27b441eb63e",
+    "optimization_v2/assets/presentation_v1/connector_uv.obj": "863db9f8a50ac4b8bb48d432b59be1e348645832ae5aa2d9f714f7cd3788988c",
+    "optimization_v2/assets/presentation_v1/grade_10_uv.obj": "c6424f6fb14c1428fc90472eb31070d96c0c5e15f034a93cc60d47e562e62c1c",
+    "optimization_v2/assets/presentation_v1/grade_18_uv.obj": "9c002499a5d019097226991e9b04fa14969c0820bb64285807c59dd1cbaaf576",
+    "optimization_v2/assets/presentation_v1/grade_5_uv.obj": "f67707b74b0ba65a9cf58630a42e83db4bac11d825514b0c5a6c5b133715fd0b",
+    "optimization_v2/assets/presentation_v1/grass.png": "3ab873c1806c2097384d3506a55d5313eb8b1e937408f986e50543c34dc0d8a5",
+    "optimization_v2/assets/presentation_v1/gravel.png": "057ba2307b33437a60cce059d15b1a48e940d348f9a50a757b4e743330bf8581",
+    "optimization_v2/assets/presentation_v1/mowing_workspace_uv.obj": "c35549f7e760b022fc27117d51a9f7e77b90c15eb5200ac523b2fe293722ec8f",
+    "optimization_v2/assets/presentation_v1/shell.obj": "76dfa384ea2729934971ff2513302af4758b7879381103a26a44605d1c049c15",
+    "optimization_v2/assets/presentation_v1/soil.png": "b72e8b4726ef811b8571ddb5f088434d797227845923d89c0630dec185e59577",
+    "optimization_v2/assets/presentation_v1/spray_workspace_uv.obj": "a94bfe898af1f086a7ab6146f991749559369ce5bfba83f16ab46c673397d22a"
+  }
+}

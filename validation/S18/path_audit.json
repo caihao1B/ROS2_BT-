@@ -1,0 +1,18 @@
+{
+  "external_mount_references": [
+    {
+      "path": "optimization_v2/ws/src/release_tools/scripts/audit18.py",
+      "line": 65,
+      "text": "                if '/media/' in line or '/mnt/' in line:",
+      "classification": "REVIEW_REFERENCE_NOT_AUTOMATIC_RUNTIME_DEPENDENCY"
+    },
+    {
+      "path": "optimization_v2/config/detector_lock.yaml",
+      "line": 3,
+      "text": "download: https://media.githubusercontent.com/media/opencv/opencv_zoo/main/models/object_detection_nanodet/object_detection_nanodet_2022nov.onnx",
+      "classification": "REVIEW_REFERENCE_NOT_AUTOMATIC_RUNTIME_DEPENDENCY"
+    }
+  ],
+  "symlinks": [],
+  "scope": "active source/config/assets/maps; historical outputs and third-party source excluded; runtime receipts audited separately"
+}

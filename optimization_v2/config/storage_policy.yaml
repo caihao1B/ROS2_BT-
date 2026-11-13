@@ -1,0 +1,12 @@
+schema: S18-STORAGE/1
+status: COMPONENT_READY_LEGACY_RECORDER_INTEGRATION_PENDING
+raw_case_payload_limit_bytes: 1073741824
+experience_payload_limit_bytes: 104857600
+protected:
+  - original models, databases and sensor-built maps
+  - all files referenced by stage receipts and active release manifests
+  - configuration locks, licenses, source and current evidence
+policy: only explicitly enrolled disposable chunks may rotate; never scan-delete old results
+legacy_recorders: not yet redirected; their existing outputs are not claimed bounded
+quota_scope: payload bytes; index metadata excluded and separately limited by entry count
+max_entries: 4096

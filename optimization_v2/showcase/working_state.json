@@ -88,7 +88,7 @@
   "round_finished": true,
   "demonstration_status": "PARTIAL",
   "s17_status": "PARTIAL",
-  "s18_executed": false,
+  "s18_executed": true,
   "simulations_stopped": true,
   "delivered": {
     "work_clusters": "6/6 PASS",
@@ -121,9 +121,28 @@
     "formal_s17_standard_unchanged": true,
     "report": "docs/optimization_v2/showcase/分项行为录像与视觉升级判断.md",
     "persistent_obstacles": "keep original denominator and residual; safe stop/manual check acceptable for behavior demonstration",
-    "target_following": "UNVERIFIED; clarification pending",
-    "visual_upgrade": "PROPOSED_NOT_EXECUTED",
-    "new_simulation_or_recording": "NOT_RUN",
+    "target_following": "Confirmed: same-direction front obstacle distance following; not yet integrated/qualified",
+    "visual_upgrade": "STATIC_GAZEBO_PREVIEW_READY; perception/motion NOT_QUALIFIED",
+    "new_simulation_or_recording": "S18 bounded live validation performed separately; new behavior videos NOT_RECORDED",
+    "old_recording_budget_reset": false
+  },
+  "s18_current_authorization": "2026-11-14 user authorized independent partial S18 delivery; full acceptance conditional on actual prerequisites",
+  "s18_status": "PARTIAL",
+  "s18_latest_scope": "Independent manual-validation launchers, delivery audit, offline following core, isolated presentation preview",
+  "s18_partial_delivery": {
+    "report": "optimization_v2/results/S18/delivery_20261114/index.html",
+    "receipt": "optimization_v2/results/S18/latest.json",
+    "checks": {
+      "C01": "PARTIAL",
+      "C02": "PARTIAL",
+      "C03": "PASS",
+      "C04": "PARTIAL"
+    },
+    "publication_receipt": "delivery/s18_partial_publication/receipt.json",
+    "behavior_following": "OFFLINE_CORE_ONLY",
+    "new_behavior_video": "NOT_RECORDED",
+    "probes_sim_seconds": 296.262,
+    "probes_wall_seconds": 583.2547618750032,
     "old_recording_budget_reset": false
   }
 }

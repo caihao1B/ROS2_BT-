@@ -1,0 +1,10 @@
+{
+  "cluster": "A1",
+  "vehicle": "diff",
+  "operation": "cluster",
+  "controller": "DWB",
+  "seed": 17023,
+  "scope": "S18_MANUAL_VALIDATION_NOT_FORMAL",
+  "formal_credit": false,
+  "id": "release18_20261113_212444_574712"
+}

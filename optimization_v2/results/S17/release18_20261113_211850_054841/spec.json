@@ -1,0 +1,10 @@
+{
+  "cluster": "B1",
+  "vehicle": "ackermann",
+  "operation": "cluster",
+  "controller": "RPP",
+  "seed": 17023,
+  "scope": "S18_MANUAL_VALIDATION_NOT_FORMAL",
+  "formal_credit": false,
+  "id": "release18_20261113_211850_054841"
+}

@@ -1,0 +1,7 @@
+{
+  "run_count": 5,
+  "sim_seconds": 296.262,
+  "wall_seconds": 583.2547618750032,
+  "scope": "S18 bounded validation probes, not formal matrix or old recording budget",
+  "old_recording_budget_reset": false
+}
