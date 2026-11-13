@@ -1,0 +1,16 @@
+{
+  "checks": [
+    {
+      "kind": "TURN",
+      "valid": false,
+      "samples": 419
+    },
+    {
+      "kind": "HEADLAND_WORK",
+      "valid": true,
+      "samples": 16
+    }
+  ],
+  "conservative_occupancy_cutoff": 90,
+  "scope": "observed grid only; padded vehicle footprint checked"
+}

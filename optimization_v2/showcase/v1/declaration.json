@@ -1,0 +1,17 @@
+{
+  "schema": "SHOWCASE-TASK/1",
+  "scope": "INDEPENDENT_DEMO_NOT_FORMAL_S17",
+  "parent_plan_revision": "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205",
+  "parent_atlas_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+  "domain_scale": {
+    "A": 0.32,
+    "B": 0.3
+  },
+  "scale_origin": "centroid of original continuous task polygon",
+  "k": 3,
+  "seed": 17041,
+  "original_map_unchanged": true,
+  "original_task_unchanged": true,
+  "recording_wall_budget_s": 10800,
+  "hard_cluster_sim_budget_s": 1800
+}

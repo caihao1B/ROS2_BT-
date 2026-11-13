@@ -1,0 +1,11 @@
+{
+  "frames": 1556,
+  "fps": 5.0,
+  "encoded_seconds": 311.2,
+  "source_wall_seconds": 311.25335434299996,
+  "repeated_wall_slots": 0,
+  "encoder_exit": 0,
+  "sim_last": 179.3,
+  "valid": true,
+  "no_generated_motion": true
+}

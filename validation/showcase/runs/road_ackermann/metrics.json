@@ -1,0 +1,149 @@
+{
+  "case": "showcase_B1_inspection_20261113_215213",
+  "cluster": "B1",
+  "seed": 17411,
+  "status": "PARTIAL",
+  "complete": false,
+  "safety": true,
+  "localization_pass": true,
+  "required_points": 0,
+  "confirmed_points": 0,
+  "required_area_m2": 0.0,
+  "confirmed_area_m2": 0.0,
+  "coverage_fraction": null,
+  "sim_seconds_including_stop": 925.714,
+  "wall_seconds": 1786.4178734769994,
+  "rtf": 0.5253706386205818,
+  "position_error_m": {
+    "n": 9153,
+    "p50": 0.011680080229497772,
+    "p95": 0.02943045919820471,
+    "maximum": 0.10216148310845709
+  },
+  "yaw_error_rad": {
+    "n": 9153,
+    "p50": 0.0008771314878734948,
+    "p95": 0.003209720534750104,
+    "maximum": 0.00892320392480661
+  },
+  "monitor": {
+    "clock_monotonic": true,
+    "last_sim_s": 925.714,
+    "obstacle_contacts": {},
+    "passed": true,
+    "tool_stopped": true,
+    "within_budget": true
+  },
+  "reason": "WALL_BUDGET_STOP",
+  "peak_rss_bytes": 4768849920,
+  "process_exit_codes": {
+    "server": -11,
+    "online_bridge": 0,
+    "raw_bridge": 0,
+    "clock_online": 0,
+    "clock_raw": 0,
+    "evaluation_bridge": 0,
+    "tool_evaluator": 0,
+    "evaluator": 0,
+    "showcase_camera_bridge": 0,
+    "showcase_recorder": 0,
+    "drive": 0,
+    "generator_motion": 0,
+    "generator_vision": 0,
+    "near_field": 0,
+    "cloud": 0,
+    "icp": 0,
+    "icp_gate": 0,
+    "inputs": 0,
+    "fused": 0,
+    "wheel_imu": 0,
+    "odom_output": 0,
+    "health": 0,
+    "mapping_inputs": 0,
+    "sensor_diagnostic": 0,
+    "slam": 0,
+    "source_adapter": 0,
+    "manager": 0,
+    "terrain": 0,
+    "fusion": 0,
+    "cost_adapter": 0,
+    "prior_cost": 0,
+    "controller": 0,
+    "planner": 0,
+    "navigator": 0,
+    "nav_lifecycle": 0,
+    "ledger": 0,
+    "tool_online": 0,
+    "motion": 0,
+    "mission_bt": 0,
+    "client": 1,
+    "tool_server": 0,
+    "observer": 0,
+    "initial_hint": 0
+  },
+  "navigation_contract": {
+    "command_limits_ok": true,
+    "truth_isolated": true,
+    "stop_thresholds_ok": true,
+    "max_stop_delay_s": 0.23100000000010823,
+    "compute_p95_ms": 0.9256539999999986,
+    "effective_compute_hz_sim": 38.119623565348256,
+    "compute_p95_target_met": true
+  },
+  "runtime_identity_valid": true,
+  "inspection_trajectory_audit": {
+    "passed": false,
+    "endpoint_tolerance_m": 0.175,
+    "endpoints": [
+      {
+        "target_world": [
+          122.00000000000001,
+          58.0
+        ],
+        "reached": true,
+        "minimum_error_m": 0.005052111490006555,
+        "time_s": 161.025
+      },
+      {
+        "target_world": [
+          49.0,
+          42.0
+        ],
+        "reached": false,
+        "minimum_error_m": 8.86351723301913,
+        "time_s": null
+      },
+      {
+        "target_world": [
+          34.0,
+          47.0
+        ],
+        "reached": false,
+        "minimum_error_m": 24.637876328120402,
+        "time_s": null
+      }
+    ],
+    "footprint_samples": 47531,
+    "outside_samples": 0,
+    "maximum_outside_area_m2": 0.0,
+    "first_outside": [],
+    "scope": "ordered real segment endpoints and physical footprint in authorized polygons; temporary chunk goals earn no work credit"
+  },
+  "scope": "INDEPENDENT_SHOWCASE_ONLY",
+  "formal_s17_credit": false,
+  "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+  "declared_demo_denominator": true,
+  "demo_version_valid": true,
+  "manual_handoff": {
+    "required": false,
+    "stopped_confirmed": false,
+    "reason": null
+  },
+  "execution_episodes": [
+    "optimization_v2/results/S17/showcase_B1_inspection_20261113_215213"
+  ],
+  "evaluation_source_sha256": "8a26541b66887b982d68bad8f3bdfbcd67f47676644dde9fcf0089c7981c424f",
+  "runtime_termination": "TimeoutError('case wall watchdog')",
+  "last_bt_reason": "NEXT_OBLIGATION",
+  "termination_scope": "external hard wall deadline; not evidence of an impassable route"
+}

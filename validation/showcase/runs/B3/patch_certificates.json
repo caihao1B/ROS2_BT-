@@ -1,0 +1,24 @@
+[
+  {
+    "cost_s": 247.02399040653543,
+    "expected_gain_m2": 0.0515651598904908,
+    "basis": "confirmed residual; fixed work lane; bounded analytic detour on observed occupancy",
+    "certificate": {
+      "observed_grid_sha256": "e0964a9df0fcc7692d94e13a3f2a47025cd7b2d6b4ae1bad83adc0a23c33643f",
+      "observed_t": 9.56,
+      "whole_padded_body_valid": true,
+      "unknown_forbidden": true,
+      "occupancy_cutoff": 90,
+      "minimum_radius_m": 2.11,
+      "via_map": [
+        103.49999999962748,
+        42.49999999962747,
+        1.5707963267948966
+      ],
+      "tested_nodes": 219,
+      "planning_wall_s": 11.791175305999786,
+      "length_m": 25.897965561851798,
+      "live_controller_collision_check_required": true
+    }
+  }
+]

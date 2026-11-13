@@ -1,0 +1,19 @@
+{
+  "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+  "completed_parts": [
+    "connector_0_reference_0",
+    "connector_0_reference_1",
+    "connector_0_reference_2",
+    "connector_0_reference_3",
+    "connector_1_reference_0",
+    "connector_1_reference_1",
+    "connector_1_reference_2",
+    "connector_1_reference_3",
+    "connector_1_reference_4",
+    "connector_1_reference_5",
+    "connector_1_reference_6",
+    "connector_1_reference_7",
+    "connector_1_reference_8"
+  ],
+  "no_work_credit": true
+}

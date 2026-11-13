@@ -1,0 +1,236 @@
+{
+  "scope": "INDEPENDENT_SHOWCASE_ONLY",
+  "formal_s17_credit": false,
+  "episodes": [
+    {
+      "run": "optimization_v2/results/S17/showcase_A1_work_20261113_185514",
+      "cluster": "A1",
+      "operation": "work",
+      "status": "PASS",
+      "source_sha256": "5a9763c2dfab06cace5f109c665abfd955627c47ddf838f4c259b355fcb56b96",
+      "duration_s": 281.6,
+      "sim_first": 0.1,
+      "sim_last": 168.0,
+      "terminal_sim_t": 163.9,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A2_work_20261113_190038",
+      "cluster": "A2",
+      "operation": "work",
+      "status": "PASS",
+      "source_sha256": "80bb6e7f2c79f4634d4ed103fcbd58b9c7e4db96be9c8b0abc2c8920980b1a57",
+      "duration_s": 311.2,
+      "sim_first": 0.30000000000000004,
+      "sim_last": 179.3,
+      "terminal_sim_t": 175.0,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A3_work_20261113_190631",
+      "cluster": "A3",
+      "operation": "work",
+      "status": "PASS",
+      "source_sha256": "7c71184095835e17bedb326bddc9dd81a8e08cc7871d17ddd7c5ed9d913df248",
+      "duration_s": 248.0,
+      "sim_first": 0.2,
+      "sim_last": 145.1,
+      "terminal_sim_t": 140.9,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B1_work_20261113_191121",
+      "cluster": "B1",
+      "operation": "work",
+      "status": "PASS",
+      "source_sha256": "2ae841a3555ab3622a6fc316e5977feb6a5a998c73f887a1f3489b614f50f444",
+      "duration_s": 1063.0,
+      "sim_first": 0.2,
+      "sim_last": 585.9,
+      "terminal_sim_t": 581.54,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B2_work_20261113_192951",
+      "cluster": "B2",
+      "operation": "work",
+      "status": "PASS",
+      "source_sha256": "a3756a2e50ae57bcfcc79a63d64915d60e6e01b40695f8f47bbfeadad4cc1f4f",
+      "duration_s": 1055.0,
+      "sim_first": 0.30000000000000004,
+      "sim_last": 578.6,
+      "terminal_sim_t": 574.52,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B3_work_20261113_194812",
+      "cluster": "B3",
+      "operation": "work",
+      "status": "PARTIAL",
+      "source_sha256": "129dc6aaf24ca089f5419dbfff4e586068be0785add2ca50518db33bda3b9aed",
+      "duration_s": 1604.8,
+      "sim_first": 0.2,
+      "sim_last": 871.4,
+      "terminal_sim_t": 866.85,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B3_work_20261113_203412",
+      "cluster": "B3",
+      "operation": "work",
+      "status": "PASS",
+      "source_sha256": "5ac042523509f3fd494368f8e57f59492e9d080cbb256229edff44fb3bed8b08",
+      "duration_s": 703.0,
+      "sim_first": 0.30000000000000004,
+      "sim_last": 376.4,
+      "terminal_sim_t": 372.261,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730",
+      "cluster": "A1",
+      "operation": "inspection",
+      "status": "PARTIAL",
+      "source_sha256": "fbe3b7c96f458a7a0853f6e40c8a30431d45285e80f1428eacc81851132ea4d9",
+      "duration_s": 1451.8,
+      "sim_first": 0.2,
+      "sim_last": 737.6,
+      "terminal_sim_t": 733.57,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A1_inspection_20261113_212812",
+      "cluster": "A1",
+      "operation": "inspection",
+      "status": "FAIL",
+      "source_sha256": "370d48293ba4583e6d682bd1dd812b2492cfa28daef7e4be370a1fee2105782b",
+      "duration_s": 1271.4,
+      "sim_first": 0.2,
+      "sim_last": 710.0,
+      "terminal_sim_t": 705.7,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B1_inspection_20261113_215213",
+      "cluster": "B1",
+      "operation": "inspection",
+      "status": "PARTIAL",
+      "source_sha256": "1ca7f347805a31361fc085095e53261205f3dcce94c11fd99aae9af9e6d41603",
+      "duration_s": 1761.2,
+      "sim_first": 0.4,
+      "sim_last": 925.7,
+      "terminal_sim_t": 924.0,
+      "complete_mission_timeline": true,
+      "repair_probe": false
+    }
+  ],
+  "full": {
+    "path": "optimization_v2/showcase/media/full_demo.mp4",
+    "sha256": "310495674bfc1a46d4778da4f87180215a9eb05eed344e099ab98e083b5122a5",
+    "nominal_wall_duration_s": 9751.0,
+    "speed": 1
+  },
+  "short": {
+    "path": "optimization_v2/showcase/media/showcase_short.mp4",
+    "sha256": "98bf6efc5b06022e57815df2d42c4a74ea72810b599faa624a20bf232c8ff7b4",
+    "overview_speed": 53,
+    "nominal_duration_s": 253.9811320754717,
+    "replays": [
+      {
+        "key": "tool_diff",
+        "path": "optimization_v2/showcase/media/tool_diff.mp4",
+        "source_run": "optimization_v2/results/S17/showcase_A1_work_20261113_185514",
+        "event_sim_t": 53.94,
+        "source_video_start_s": 81.6,
+        "speed": 1,
+        "duration_s": 8
+      },
+      {
+        "key": "replan",
+        "path": "optimization_v2/showcase/media/replan.mp4",
+        "source_run": "optimization_v2/results/S17/showcase_A2_work_20261113_190038",
+        "event_sim_t": 91.24,
+        "source_video_start_s": 149.6,
+        "speed": 1,
+        "duration_s": 8
+      },
+      {
+        "key": "tool_ackermann",
+        "path": "optimization_v2/showcase/media/tool_ackermann.mp4",
+        "source_run": "optimization_v2/results/S17/showcase_B1_work_20261113_191121",
+        "event_sim_t": 192.99,
+        "source_video_start_s": 336.8,
+        "speed": 1,
+        "duration_s": 8
+      },
+      {
+        "key": "residual_patch",
+        "path": "optimization_v2/showcase/media/residual_patch.mp4",
+        "source_run": "optimization_v2/results/S17/showcase_B3_work_20261113_194812",
+        "event_sim_t": 789.07,
+        "source_video_start_s": 1445.0,
+        "speed": 1,
+        "duration_s": 8
+      },
+      {
+        "key": "live_handoff",
+        "path": "optimization_v2/showcase/media/live_handoff.mp4",
+        "source_run": "optimization_v2/results/S17/showcase_B3_work_20261113_194812",
+        "event_sim_t": 866.85,
+        "source_video_start_s": 1591.2,
+        "speed": 1,
+        "duration_s": 8
+      },
+      {
+        "key": "interaction",
+        "path": "optimization_v2/showcase/media/interaction.mp4",
+        "source_run": "optimization_v2/results/S17/showcase_B3_work_20261113_194812",
+        "event_sim_t": 41.178,
+        "source_video_start_s": 65.0,
+        "speed": 1,
+        "duration_s": 8
+      },
+      {
+        "key": "observation_wait",
+        "path": "optimization_v2/showcase/media/observation_wait.mp4",
+        "source_run": "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730",
+        "event_sim_t": 105.35,
+        "source_video_start_s": 190.4,
+        "speed": 1,
+        "duration_s": 8
+      },
+      {
+        "key": "measured_stall_handoff",
+        "path": "optimization_v2/showcase/media/measured_stall_handoff.mp4",
+        "source_run": "optimization_v2/results/S17/showcase_B3_work_20261113_201908",
+        "source_sha256": "cd2999d6585ec2391b5d9d50558255fb7056b703958d2035a4f6db7042c90902",
+        "source_handoff_sha256": "389679350c8a1b759054ebfe6466e1949d285d97c5b3f2f201729f8b0e5f21f4",
+        "event_sim_t": 82.437,
+        "source_video_start_s": 133.8,
+        "speed": 1,
+        "duration_s": 8,
+        "task_credit": false
+      },
+      {
+        "key": "manual_handoff_record",
+        "path": "optimization_v2/showcase/media/manual_handoff_record.mp4",
+        "source_run": "optimization_v2/results/S17/showcase_repair_ackermann_20261113_181900",
+        "source_screenshot_sha256": "76b405e454f4f4a85ba29bd493d0f8b9970d3b9676df1da99cf72f8a521fe97d",
+        "source_handoff_sha256": "a4e26060d9d7e1d59859bd9f1f37d798d7feb41073c7bbd714d521fd490df763",
+        "kind": "labeled_archived_still",
+        "duration_s": 6
+      }
+    ]
+  },
+  "no_generated_scene_motion": true,
+  "frame_holds_for_wall_pacing_disclosed": true
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "S17-SHOWCASE-SCOPE/1",
+  "scope": "independent small six-cluster demonstration",
+  "formal_matrix_deferred": true,
+  "s17_status": "PARTIAL",
+  "s18": false,
+  "user_runtime_budget_wall_seconds": 10800,
+  "budget_interpretation": "Final demonstration runs and recording limited to three real hours in total; repair probes tracked separately. Simulated mission time also below three hours.",
+  "requirements": [
+    "algorithmic three connected clusters in each work area",
+    "diff point-service full demo denominator",
+    "Ackermann strip coverage full demo denominator",
+    "connector inspection",
+    "observed dynamic interaction",
+    "explainable BT",
+    "feedback-only effective work ledger",
+    "full recording and explicitly accelerated short video",
+    "GitHub synchronization"
+  ],
+  "original_inputs_preserved": [
+    "optimization_v2/maps/s17_full",
+    "optimization_v2/plans/s17_full",
+    "optimization_v2/evaluation/acceptance_matrix.yaml",
+    "optimization_v2/evaluation/seeds.json"
+  ],
+  "dynamic_interaction_evidence": "Actual local actor yield OR robot sensor-confirmed moving-object conflict/temporary inspection goal. Actor behavior and robot decisions reported separately; this demonstration does not establish prediction or causal performance benefit."
+}

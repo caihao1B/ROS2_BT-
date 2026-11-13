@@ -1,0 +1,38 @@
+{
+  "passed": false,
+  "endpoint_tolerance_m": 0.175,
+  "endpoints": [
+    {
+      "target_world": [
+        122.00000000000001,
+        58.0
+      ],
+      "reached": true,
+      "minimum_error_m": 0.005052111490006555,
+      "time_s": 161.025
+    },
+    {
+      "target_world": [
+        49.0,
+        42.0
+      ],
+      "reached": false,
+      "minimum_error_m": 8.86351723301913,
+      "time_s": null
+    },
+    {
+      "target_world": [
+        34.0,
+        47.0
+      ],
+      "reached": false,
+      "minimum_error_m": 24.637876328120402,
+      "time_s": null
+    }
+  ],
+  "footprint_samples": 47531,
+  "outside_samples": 0,
+  "maximum_outside_area_m2": 0.0,
+  "first_outside": [],
+  "scope": "ordered real segment endpoints and physical footprint in authorized polygons; temporary chunk goals earn no work credit"
+}

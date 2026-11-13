@@ -1,0 +1,17 @@
+{
+  "id": "showcase_A1_inspection_20261113_212812",
+  "vehicle": "diff",
+  "cluster": "A1",
+  "controller": "DWB",
+  "operation": "inspection",
+  "scope": "INDEPENDENT_SHOWCASE_ONLY",
+  "formal_credit": false,
+  "showcase_plan": "/home/ceihao/robot_project/optimization_v2/showcase/v1/mission_plan.json",
+  "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+  "seed": 17401,
+  "seconds": 900,
+  "wall_limit_s": 1890,
+  "nominal_s": 538.3379886482276,
+  "repair_probe": false,
+  "resume_from": "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730"
+}

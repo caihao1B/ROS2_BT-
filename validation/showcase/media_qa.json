@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-11-13 22:30:51.412979",
+  "full_duration_s": 9751.0,
+  "short_duration_s": 254.0,
+  "declared_overview_speed": 53,
+  "real_time_replays": true,
+  "visual_checks": [
+    "overview with speed label",
+    "actual tool feedback clip",
+    "observation recovery wait clip",
+    "actual 60.12 second stalled B3 handoff frame at 7 seconds",
+    "archived dashboard correctly identifies wall budget termination and unconfirmed last snapshot"
+  ],
+  "files": {
+    "optimization_v2/showcase/media/full_demo.mp4": "310495674bfc1a46d4778da4f87180215a9eb05eed344e099ab98e083b5122a5",
+    "optimization_v2/showcase/media/showcase_short.mp4": "98bf6efc5b06022e57815df2d42c4a74ea72810b599faa624a20bf232c8ff7b4",
+    "optimization_v2/showcase/media/measured_stall_confirmed_qa.png": "010d08b444ad4e6b2ec8c402e77199c099a9ca02759bc78beba55dd8da340964",
+    "optimization_v2/showcase/dashboard_final.png": "116f2d257633d10805069daf4ab19cc95ea514c36c07df1f4fc64f73fd5f9f27"
+  }
+}

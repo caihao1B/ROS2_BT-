@@ -1,0 +1,59 @@
+{
+  "t": 733.57,
+  "state": "MANUAL_CHECK_REQUIRED",
+  "terminal": true,
+  "requires_manual": true,
+  "reason": "BLOCK_RETRY_EXHAUSTED",
+  "bt_reason": "BLOCK_RETRY_EXHAUSTED",
+  "job": "connector_3",
+  "position_map": [
+    53.44857578252304,
+    34.65693301497737
+  ],
+  "goal_map": [
+    53.923054027069796,
+    35.874678873287394
+  ],
+  "completed_jobs": 1,
+  "remaining_jobs": 2,
+  "replans": 2,
+  "deferrals": 0,
+  "progress": {
+    "stalled_s": 4.57000000000005,
+    "manual": false,
+    "warning": false
+  },
+  "route_diagnosis": {
+    "code": "REFERENCE_OR_MAP_NOT_VALID",
+    "proves_map_blocked": false
+  },
+  "localization": {
+    "state": "STOPPED",
+    "reason": "ABSOLUTE_HEADING_EXPIRED",
+    "navigation_allowed": false
+  },
+  "perception": {
+    "fresh": true,
+    "boundary_valid": false,
+    "reason": "GEOMETRY_OR_GLOBAL_REFERENCE_STOP"
+  },
+  "tool": {
+    "phase": "IDLE",
+    "stopped_confirmed": true,
+    "active": false
+  },
+  "vehicle": {
+    "reason": "LEASE_OR_PLAN_STOP",
+    "measured_standstill": true,
+    "v": -0.0014422698098056762,
+    "w": -0.011743794410055268
+  },
+  "stop_confirmed": true,
+  "automatic_retry_after_manual": false,
+  "operator_checks": [
+    "检查当前障碍与可通行空间",
+    "检查定位、传感器时间及地图版本",
+    "确认车辆与工具已停止",
+    "处理后从保存进度显式恢复，禁止直接删除残余"
+  ]
+}

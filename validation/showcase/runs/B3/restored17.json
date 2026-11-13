@@ -1,0 +1,16 @@
+{
+  "done": [
+    "B3_0",
+    "B3_1",
+    "B3_2",
+    "B3_3",
+    "B3_4",
+    "B3_5",
+    "B3_6"
+  ],
+  "pending": [],
+  "confirmed_points": 0,
+  "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+  "source": "optimization_v2/results/S17/showcase_B3_work_20261113_194812",
+  "full_task_complete_claim": false
+}

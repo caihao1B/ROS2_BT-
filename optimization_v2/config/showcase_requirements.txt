@@ -1,0 +1,2 @@
+# Recording dependency in the existing isolated scene environment.
+imageio-ffmpeg==0.8.1

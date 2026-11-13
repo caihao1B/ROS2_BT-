@@ -1,0 +1,16 @@
+{
+  "id": "showcase_B1_work_20261113_191121",
+  "vehicle": "ackermann",
+  "cluster": "B1",
+  "controller": "RPP",
+  "operation": "work",
+  "scope": "INDEPENDENT_SHOWCASE_ONLY",
+  "formal_credit": false,
+  "showcase_plan": "/home/ceihao/robot_project/optimization_v2/showcase/v1/mission_plan.json",
+  "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+  "seed": 17411,
+  "seconds": 800,
+  "wall_limit_s": 1690,
+  "nominal_s": 468.301591140944,
+  "repair_probe": false
+}

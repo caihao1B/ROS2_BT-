@@ -1,0 +1,33 @@
+{
+  "scope": "SHOWCASE_ONLY",
+  "version": "bounded_local_yield_v2_hysteresis",
+  "original_actors_retained": [
+    {
+      "name": "ped_0",
+      "radius": 0.45
+    },
+    {
+      "name": "ped_1",
+      "radius": 0.45
+    },
+    {
+      "name": "ped_2",
+      "radius": 0.45
+    },
+    {
+      "name": "ped_3",
+      "radius": 0.45
+    },
+    {
+      "name": "equipment",
+      "radius": 0.9178779875342911
+    }
+  ],
+  "static_geometry_unchanged": true,
+  "periodic_intent_time_frozen_while_yielding": true,
+  "clear_hold_sim_s": 0.5,
+  "robot_truth_input": false,
+  "formal_original_scenario_pass": false,
+  "binary_sha256": "4aca434e6ee76bf1a0b248def8914f859dddad6a836dca53e42a98f9b3f62510",
+  "source_sha256": "6f2e04cb4ad76e041993a939764f2d4e967f7cae7494a505e8b0174c2a616ec9"
+}

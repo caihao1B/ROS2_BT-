@@ -1,0 +1,61 @@
+{
+  "t": 151.07,
+  "state": "MANUAL_CHECK_REQUIRED",
+  "terminal": true,
+  "requires_manual": true,
+  "reason": "SUPERVISOR_NO_PROGRESS_60S_MANUAL_CHECK",
+  "bt_reason": "SAFETY_STOP",
+  "job": "connector_0",
+  "position_map": [
+    54.23972029246326,
+    36.38382229134758
+  ],
+  "goal_map": [
+    49.74554201397294,
+    29.72257527079534
+  ],
+  "completed_jobs": 0,
+  "remaining_jobs": 1,
+  "replans": 2,
+  "deferrals": 0,
+  "progress": {
+    "stalled_s": 60.06999999999999,
+    "manual": true,
+    "warning": true
+  },
+  "route_diagnosis": {
+    "code": "POINT_CONNECTED_KINEMATICS_UNRESOLVED",
+    "point_connected": true,
+    "proves_map_blocked": false,
+    "scope": "current admitted grid only; unknown is forbidden, physical world outside observations is not proven blocked"
+  },
+  "localization": {
+    "state": "TRUSTED_MAP",
+    "reason": "MAP_AND_GNSS_AGREE",
+    "navigation_allowed": true
+  },
+  "perception": {
+    "fresh": true,
+    "boundary_valid": true,
+    "reason": "OBSERVED_GEOMETRY_AVAILABLE"
+  },
+  "tool": {
+    "phase": "IDLE",
+    "stopped_confirmed": true,
+    "active": false
+  },
+  "vehicle": {
+    "reason": "LEASE_OR_PLAN_STOP",
+    "measured_standstill": true,
+    "v": -0.002038704862937494,
+    "w": -0.0057544855298718245
+  },
+  "stop_confirmed": true,
+  "automatic_retry_after_manual": false,
+  "operator_checks": [
+    "检查当前障碍与可通行空间",
+    "检查定位、传感器时间及地图版本",
+    "确认车辆与工具已停止",
+    "处理后从保存进度显式恢复，禁止直接删除残余"
+  ]
+}

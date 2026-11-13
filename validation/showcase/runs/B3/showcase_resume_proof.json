@@ -1,0 +1,10 @@
+{
+  "source": "optimization_v2/results/S17/showcase_B3_work_20261113_194812",
+  "source_result_sha256": "f964167a87d5af15f0f9881666560ec7a914ce9af61b94d316b77e54fa1fca6a",
+  "source_spec_sha256": "7ca6b588180e916ed90d68491f5aa4c1c4349e93f58df57c0190d7b4e9d853e3",
+  "manifest_sha256": "3d115dd7e4d7aecd17ad562a8e33874323f84a1f805492ac1c9132dabe195db9",
+  "operator_restart": true,
+  "automatic_retry": false,
+  "ledger_union_verified": true,
+  "original_task_unchanged": true
+}

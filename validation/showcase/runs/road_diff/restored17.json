@@ -1,0 +1,13 @@
+{
+  "done": [
+    "connector_1"
+  ],
+  "pending": [
+    "connector_3",
+    "connector_5"
+  ],
+  "confirmed_points": 0,
+  "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+  "source": "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730",
+  "full_task_complete_claim": false
+}

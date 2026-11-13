@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<package format="3"><name>showcase_demo</name><version>0.1.0</version><description>Separate bounded functional showcase, never formal S17 acceptance.</description><maintainer email="maintainer@example.invalid">Robot project maintainer</maintainer><license>LicenseRef-Project-Unspecified</license><buildtool_depend>ament_cmake</buildtool_depend><depend>gz_sim_vendor</depend><depend>gz_plugin_vendor</depend><depend>gz_transport_vendor</depend><export><build_type>ament_cmake</build_type></export></package>

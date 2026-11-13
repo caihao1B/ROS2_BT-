@@ -1,0 +1,176 @@
+{
+  "updated_local": "2026-11-13 22:26:59.878575",
+  "runs": [
+    {
+      "run": "optimization_v2/results/S17/showcase_repair_ackermann_20261113_181900",
+      "status": "PARTIAL",
+      "safety": true,
+      "complete": false,
+      "reason": "SAFETY_STOP",
+      "wall_seconds": 288.4686502569998,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_probe_A1_work_20261113_182927",
+      "status": "PASS",
+      "safety": true,
+      "complete": true,
+      "reason": "FEEDBACK_COMPLETE",
+      "wall_seconds": 305.15949887099987,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_repair_ackermann_20261113_183555",
+      "status": "PASS",
+      "safety": true,
+      "complete": true,
+      "reason": "FEEDBACK_COMPLETE",
+      "wall_seconds": 484.67475371399996,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A1_work_20261113_184640",
+      "status": "FAIL",
+      "safety": false,
+      "complete": false,
+      "reason": "INPUT_STALE",
+      "wall_seconds": 37.02107812599979,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A1_work_20261113_184943",
+      "status": "PARTIAL",
+      "safety": true,
+      "complete": false,
+      "reason": "SAFETY_STOP",
+      "wall_seconds": 178.78248414000018,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B3_work_20261113_194812",
+      "status": "PARTIAL",
+      "safety": true,
+      "complete": false,
+      "reason": "BUDGET_STOP",
+      "wall_seconds": 1630.053243591,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B3_work_20261113_201908",
+      "status": "PARTIAL",
+      "safety": true,
+      "complete": false,
+      "reason": "SAFETY_STOP",
+      "wall_seconds": 172.21465164000074,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B3_work_20261113_203412",
+      "status": "PASS",
+      "safety": true,
+      "complete": true,
+      "reason": "FEEDBACK_COMPLETE",
+      "wall_seconds": 728.8315999839997,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730",
+      "status": "PARTIAL",
+      "safety": true,
+      "complete": false,
+      "reason": "BLOCK_RETRY_EXHAUSTED",
+      "wall_seconds": 1477.3353126969996,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A1_inspection_20261113_212338",
+      "status": "FAIL",
+      "safety": false,
+      "complete": false,
+      "reason": "BLOCK_RETRY_EXHAUSTED",
+      "wall_seconds": 66.98460913300005,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A1_inspection_20261113_212812",
+      "status": "FAIL",
+      "safety": true,
+      "complete": false,
+      "reason": "BLOCK_RETRY_EXHAUSTED",
+      "wall_seconds": 1297.2465296560003,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A1_work_20261113_185514",
+      "status": "PASS",
+      "safety": true,
+      "complete": true,
+      "reason": "FEEDBACK_COMPLETE",
+      "wall_seconds": 305.79159783399973,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A2_work_20261113_190038",
+      "status": "PASS",
+      "safety": true,
+      "complete": true,
+      "reason": "FEEDBACK_COMPLETE",
+      "wall_seconds": 336.21993529999963,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_A3_work_20261113_190631",
+      "status": "PASS",
+      "safety": true,
+      "complete": true,
+      "reason": "FEEDBACK_COMPLETE",
+      "wall_seconds": 272.6204000030002,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B1_work_20261113_191121",
+      "status": "PASS",
+      "safety": true,
+      "complete": true,
+      "reason": "FEEDBACK_COMPLETE",
+      "wall_seconds": 1087.762962443,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B2_work_20261113_192951",
+      "status": "PASS",
+      "safety": true,
+      "complete": true,
+      "reason": "FEEDBACK_COMPLETE",
+      "wall_seconds": 1079.5183272720005,
+      "formal_credit": false
+    },
+    {
+      "run": "optimization_v2/results/S17/showcase_B1_inspection_20261113_215213",
+      "status": "PARTIAL",
+      "safety": true,
+      "complete": false,
+      "reason": "WALL_BUDGET_STOP",
+      "wall_seconds": 1786.4178734769994,
+      "formal_credit": false
+    }
+  ],
+  "notes": [
+    "Blocked Ackermann run 181900 safely handed over after 60.07s stationary; point reachability existed, no geometric impossibility claim.",
+    "Probe A1 182927 completed 2/2 point services and return, initial recorder validated.",
+    "Ackermann dynamic segment 183555 passed after filtering moving-track history from supplementary terrain memory; no contact or boundary violation.",
+    "Final batch A1 184640 stopped before admission due to stale startup context; retained in final wall budget.",
+    "Final batch A1 184943 exposed a position-only monitor false positive during heading alignment; stopped safely. Added measured heading progress; retained in final wall budget.",
+    "During B1 recording, the read-only monitor displayed the first reference-part goal after the work transit had advanced. Corrected future episode display/diagnosis to use the gate active action and executed inspection target; 12 monitor contracts passed. Actual navigation paths and stop/progress thresholds unchanged; B1 original video is retained.",
+    "B3 initial work confirmed 92.4213%. Third work lane had only 7 valid feedback samples; many pose-skew and continuous-confirmation rejections. No rejected feedback was credited. Original BT generated a residual patch but stopped on the remaining-time budget.",
+    "Explicit B3 ledger restart 201908 verified saved work, but the F2C residual connection intersected observed obstacles and Hybrid-A* could not find the first transit. The current monitor actually stopped after 60s no progress; safe handoff and localization verified. This is retained as a charged failed attempt.",
+    "Added bounded observed-grid Dubins detour search for residual work only. Unknown and cost >=90 remain forbidden; full padded body and motion-domain validation required. Offline measured-grid diagnostic found a 29.5323m two-leg route in5.51s, via algorithmic1m/8-heading lattice; not a live pass. A new charged restart from the verified original B3 checkpoint is required; prior failed restart added no work and no significant vehicle travel.",
+    "B3 final203412 PASS,97.2163% coverage from verified original ledger and new observed-grid detour. Final residual work ended at work-lane safe park; original depot return happened before patch.",
+    "Fullroad diff204730 PARTIAL,6/15parts,safe/loc/stop, realactor yield+robotmovingconflict. Repeated observation interruption and global replan budget exhausted; no geometric no-path proof.",
+    "Inspection restart212338 failed to use saved deployment pose because original inspection setup overwrote restart prior. Navigation did not qualify; markedFAIL,chargedwallretained. Fixed scene priority and verified actualgeneratedSDF equals saved sensorpose. Current212812 running correct spawn.",
+    "While212812 ran, found Python module shadowing bypassed new per-part recovery hook. Case retained originalboundedrecovery; future compose uses unique module and actualexecutor logging. No livecase source edited, no false per-part-reset evidence credit.",
+    "212812 reached13/15parts butFAIL: positionP95.03876m,headingP95.20357rad exceeds.05rad, final45sabsoluteheadingexpiry andobservationrecovery timeout. Stop/tooloffconfirmed,nofootprintoutside. The oldpart-count hypothesis doesnotexplain this sourceoutage; resettingcounts cannotfixit. Unsafe-to-resume localization checkpoint refused."
+  ],
+  "s17": "PARTIAL",
+  "s18": "NOT_RUN"
+}

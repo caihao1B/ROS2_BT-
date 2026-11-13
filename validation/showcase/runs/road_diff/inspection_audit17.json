@@ -1,0 +1,45 @@
+{
+  "passed": false,
+  "endpoint_tolerance_m": 0.175,
+  "endpoints": [
+    {
+      "target_world": [
+        49.0,
+        42.0
+      ],
+      "reached": true,
+      "minimum_error_m": 0.0018446468957251975,
+      "time_s": 182.198
+    },
+    {
+      "target_world": [
+        122.00000000000001,
+        58.0
+      ],
+      "reached": false,
+      "minimum_error_m": 0.20550180414533367,
+      "time_s": null
+    },
+    {
+      "target_world": [
+        128.0,
+        58.0
+      ],
+      "reached": false,
+      "minimum_error_m": 6.18222537818769,
+      "time_s": null
+    }
+  ],
+  "footprint_samples": 73984,
+  "outside_samples": 0,
+  "maximum_outside_area_m2": 0.0,
+  "first_outside": [],
+  "scope": "ordered real segment endpoints and physical footprint in authorized polygons; temporary chunk goals earn no work credit",
+  "explicit_restart_chain": true,
+  "source_hashes": {
+    "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730/evaluation/truth.jsonl": "2e6b5109197135dd312763d1915786ef1d8d122b4a1d24635ca44db05f5cdcaa",
+    "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730/client/inspection_contract17.json": "29925de13c8e274afb69da74cda36c9295cd576554c0987a633727808053f03c",
+    "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730/client/events.jsonl": "969c9d46a7dd2e131dce326a6deba0da3803162f384cd913849dcb6a3abfc636"
+  },
+  "time_axis": "ordered episodes with one second separator; not a continuous simulation; no interpolated positions"
+}

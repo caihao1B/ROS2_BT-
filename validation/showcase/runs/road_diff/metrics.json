@@ -1,0 +1,156 @@
+{
+  "case": "showcase_A1_inspection_20261113_212812",
+  "cluster": "A1",
+  "seed": 17401,
+  "status": "FAIL",
+  "complete": false,
+  "safety": true,
+  "localization_pass": false,
+  "required_points": 0,
+  "confirmed_points": 0,
+  "required_area_m2": 0.0,
+  "confirmed_area_m2": 0.0,
+  "coverage_fraction": null,
+  "sim_seconds_including_stop": 710.176,
+  "wall_seconds": 1297.2465296560003,
+  "rtf": 0.5581669056367797,
+  "position_error_m": {
+    "n": 6941,
+    "p50": 0.0186833533433111,
+    "p95": 0.038759585851188896,
+    "maximum": 0.06541278969507673
+  },
+  "yaw_error_rad": {
+    "n": 6941,
+    "p50": 0.0018923941920509432,
+    "p95": 0.203567971550562,
+    "maximum": 0.5347229867906644
+  },
+  "monitor": {
+    "clock_monotonic": true,
+    "last_sim_s": 710.176,
+    "obstacle_contacts": {},
+    "passed": true,
+    "tool_stopped": true,
+    "within_budget": true
+  },
+  "reason": "BLOCK_RETRY_EXHAUSTED",
+  "peak_rss_bytes": 4753727488,
+  "process_exit_codes": {
+    "server": -11,
+    "online_bridge": 0,
+    "raw_bridge": 0,
+    "clock_online": 0,
+    "clock_raw": 0,
+    "evaluation_bridge": 0,
+    "tool_evaluator": 0,
+    "evaluator": 0,
+    "showcase_camera_bridge": 0,
+    "showcase_recorder": 0,
+    "drive": 0,
+    "generator_motion": 0,
+    "generator_vision": 0,
+    "near_field": 0,
+    "cloud": 0,
+    "icp": 0,
+    "icp_gate": 0,
+    "inputs": 0,
+    "fused": 0,
+    "wheel_imu": 0,
+    "odom_output": 0,
+    "health": 0,
+    "mapping_inputs": 0,
+    "sensor_diagnostic": 0,
+    "slam": 0,
+    "source_adapter": 0,
+    "manager": 0,
+    "terrain": 0,
+    "fusion": 0,
+    "cost_adapter": 0,
+    "prior_cost": 0,
+    "controller": 0,
+    "planner": 0,
+    "navigator": 0,
+    "nav_lifecycle": 0,
+    "ledger": 0,
+    "tool_online": 0,
+    "motion": 0,
+    "mission_bt": 0,
+    "client": 1,
+    "tool_server": 0,
+    "observer": 0,
+    "initial_hint": 0
+  },
+  "navigation_contract": {
+    "command_limits_ok": true,
+    "truth_isolated": true,
+    "stop_thresholds_ok": true,
+    "max_stop_delay_s": 0.410000000000025,
+    "compute_p95_ms": 37.411927399999996,
+    "effective_compute_hz_sim": 35.610204773200365,
+    "compute_p95_target_met": true
+  },
+  "runtime_identity_valid": true,
+  "inspection_trajectory_audit": {
+    "passed": false,
+    "endpoint_tolerance_m": 0.175,
+    "endpoints": [
+      {
+        "target_world": [
+          49.0,
+          42.0
+        ],
+        "reached": true,
+        "minimum_error_m": 0.0018446468957251975,
+        "time_s": 182.198
+      },
+      {
+        "target_world": [
+          122.00000000000001,
+          58.0
+        ],
+        "reached": false,
+        "minimum_error_m": 0.20550180414533367,
+        "time_s": null
+      },
+      {
+        "target_world": [
+          128.0,
+          58.0
+        ],
+        "reached": false,
+        "minimum_error_m": 6.18222537818769,
+        "time_s": null
+      }
+    ],
+    "footprint_samples": 73984,
+    "outside_samples": 0,
+    "maximum_outside_area_m2": 0.0,
+    "first_outside": [],
+    "scope": "ordered real segment endpoints and physical footprint in authorized polygons; temporary chunk goals earn no work credit",
+    "explicit_restart_chain": true,
+    "source_hashes": {
+      "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730/evaluation/truth.jsonl": "2e6b5109197135dd312763d1915786ef1d8d122b4a1d24635ca44db05f5cdcaa",
+      "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730/client/inspection_contract17.json": "29925de13c8e274afb69da74cda36c9295cd576554c0987a633727808053f03c",
+      "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730/client/events.jsonl": "969c9d46a7dd2e131dce326a6deba0da3803162f384cd913849dcb6a3abfc636"
+    },
+    "time_axis": "ordered episodes with one second separator; not a continuous simulation; no interpolated positions"
+  },
+  "scope": "INDEPENDENT_SHOWCASE_ONLY",
+  "formal_s17_credit": false,
+  "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+  "declared_demo_denominator": true,
+  "demo_version_valid": true,
+  "manual_handoff": {
+    "required": true,
+    "stopped_confirmed": true,
+    "reason": "BLOCK_RETRY_EXHAUSTED"
+  },
+  "operational_outcome": "SAFE_MANUAL_HANDOFF",
+  "resume_chain_verified": true,
+  "resumed_from": "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730",
+  "execution_episodes": [
+    "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730",
+    "optimization_v2/results/S17/showcase_A1_inspection_20261113_212812"
+  ]
+}

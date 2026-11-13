@@ -1,0 +1,10 @@
+{
+  "source": "optimization_v2/results/S17/showcase_A1_inspection_20261113_204730",
+  "source_result_sha256": "dce28e700bf710d90ea019f9db0323fde35646d29ba99cf5391f6c22c3b3b54d",
+  "source_spec_sha256": "c66c526cf9dd3e1e712c374675cd35c87adc3481755bf3c4e899866c7dc92998",
+  "manifest_sha256": "32774b9483a218c2c286d7b8cbb923fb8cc6e3463a63ef39807c80549c9c282d",
+  "operator_restart": true,
+  "automatic_retry": false,
+  "ledger_union_verified": true,
+  "original_task_unchanged": true
+}

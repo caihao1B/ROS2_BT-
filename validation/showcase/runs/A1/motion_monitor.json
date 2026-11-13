@@ -1,0 +1,55 @@
+{
+  "t": 163.9,
+  "state": "COMPLETED",
+  "terminal": true,
+  "requires_manual": false,
+  "reason": "FEEDBACK_COMPLETE",
+  "bt_reason": "FEEDBACK_COMPLETE",
+  "job": null,
+  "position_map": [
+    5.742881983414751,
+    32.8606089077122
+  ],
+  "goal_map": null,
+  "completed_jobs": 3,
+  "remaining_jobs": 0,
+  "replans": 0,
+  "deferrals": 0,
+  "progress": {
+    "stalled_s": 0.0,
+    "manual": false
+  },
+  "route_diagnosis": {
+    "code": "NOT_REQUESTED",
+    "proves_map_blocked": false
+  },
+  "localization": {
+    "state": "TRUSTED_MAP",
+    "reason": "MAP_AND_GNSS_AGREE",
+    "navigation_allowed": true
+  },
+  "perception": {
+    "fresh": true,
+    "boundary_valid": true,
+    "reason": "OBSERVED_GEOMETRY_AVAILABLE"
+  },
+  "tool": {
+    "phase": "IDLE",
+    "stopped_confirmed": true,
+    "active": false
+  },
+  "vehicle": {
+    "reason": "LEASE_OR_PLAN_STOP",
+    "measured_standstill": true,
+    "v": 0.0008844485469007642,
+    "w": -0.002932311365129146
+  },
+  "stop_confirmed": true,
+  "automatic_retry_after_manual": false,
+  "operator_checks": [
+    "检查当前障碍与可通行空间",
+    "检查定位、传感器时间及地图版本",
+    "确认车辆与工具已停止",
+    "处理后从保存进度显式恢复，禁止直接删除残余"
+  ]
+}

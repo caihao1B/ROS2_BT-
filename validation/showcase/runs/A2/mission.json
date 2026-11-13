@@ -1,0 +1,57 @@
+{
+  "t": 175.02,
+  "state": "SUCCEEDED",
+  "reason": "FEEDBACK_COMPLETE",
+  "case": "nominal_spray_cluster",
+  "scope": "FULL_CLUSTER",
+  "cluster": "A2",
+  "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+  "required_points": 2,
+  "confirmed_points": 2,
+  "remaining_point_keys": [],
+  "required_area_m2": 0.0,
+  "confirmed_area_m2": 0.0,
+  "coverage_fraction": null,
+  "done": [
+    "A2_3",
+    "A2_7",
+    "A2_return"
+  ],
+  "pending": [],
+  "deferred": [],
+  "tool_results": [
+    {
+      "key": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc:A2_3",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.000000000000007,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "key": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc:A2_7",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "quantity": 2.069999999999993,
+      "remaining": 0.0,
+      "uncertain": false,
+      "residual": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    }
+  ],
+  "residual": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "credit": {
+    "type": "GeometryCollection",
+    "geometries": []
+  },
+  "uncertainty_pending": false
+}

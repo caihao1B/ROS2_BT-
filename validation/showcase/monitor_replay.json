@@ -1,0 +1,11 @@
+{
+  "scope": "OFFLINE_REPLAY_OF_RECORDED_SENSOR_ESTIMATES",
+  "not_a_new_physical_run": true,
+  "source": "optimization_v2/results/S17/showcase_repair_ackermann_20261113_181900/online/observations.jsonl",
+  "source_sha256": "5cd91b00a445462085d014f9f77ef2fdb342f3e2ea8881059bb18c2ffea7cd8b",
+  "algorithm_sha256": "be17e01b4238078fa740667a7b760db3bcf0b41320846bf3d77d63eb1b8a990e",
+  "samples": 1457,
+  "first_manual_sim_t": 151.011,
+  "passed": true,
+  "meaning": "current position-and-heading monitor still detects the recorded genuinely stationary Ackermann case"
+}

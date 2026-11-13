@@ -1,0 +1,7 @@
+{
+  "plan_revision": "8502b79c797a2d8aafbe4ad664b6de42dd58863beb218734502c39c2065dbdbc",
+  "path": "optimization_v2/showcase/v1/mission_plan.json",
+  "sha256": "8e7587d635a7a21426fa627d2b25fc10deb4240b02c3a124dc1e7a8d4cd9fb8c",
+  "scope": "INDEPENDENT_DEMO_NOT_FORMAL_S17",
+  "closed_loop_status": "NOT_RUN"
+}

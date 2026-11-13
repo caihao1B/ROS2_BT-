@@ -1,0 +1,18 @@
+{
+  "t": 151.07,
+  "position_map": [
+    54.23972029246326,
+    36.38382229134758
+  ],
+  "goal_map": [
+    49.74554201397294,
+    29.72257527079534
+  ],
+  "diagnosis": {
+    "code": "POINT_CONNECTED_KINEMATICS_UNRESOLVED",
+    "point_connected": true,
+    "proves_map_blocked": false,
+    "scope": "current admitted grid only; unknown is forbidden, physical world outside observations is not proven blocked"
+  },
+  "scope": "observed occupancy, no simulator truth"
+}
