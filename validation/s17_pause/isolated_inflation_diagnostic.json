@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "lethal": true,
+    "inflation": true,
+    "explicit_ground_clears_old_lethal": true,
+    "unknown_not_free": true,
+    "stale_is_unknown": true,
+    "frame_mismatch_is_unknown": true,
+    "fresh_recovers": true
+  },
+  "passed": true,
+  "exit_code": 0
+}

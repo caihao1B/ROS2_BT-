@@ -1,0 +1,20 @@
+schema: S16-ABLATION/1
+seed: 41
+groups: [full, event, cache]
+replay_splits: [val, test]
+replay_repeats: 3
+order: cyclic_rotation_by_repeat_and_episode
+full: Real Trajectron++ every observation frame with an eligible person history.
+event: Same causal event schedule; fresh IMM at non-events; learned at events.
+cache: Same causal events; admitted prototype may select fresh IMM; miss uses learned.
+scenarios: [turning, stop_go, yield, occlusion]
+closed_loop: [turning, stop_go, yield, occlusion]
+case_sim_seconds: 100
+snapshot_source: train episodes only; no online label learning
+minimum_cpu_saving_fraction: 0.05
+max_ade_ratio_vs_event: 1.05
+max_ade_increase_m: 0.02
+max_wrong_hit_fraction: 0.05
+max_task_time_ratio_vs_event: 1.10
+minimum_conflict_exposures: 1
+minimum_test_hits: 20

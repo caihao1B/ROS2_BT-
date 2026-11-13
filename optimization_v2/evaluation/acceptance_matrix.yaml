@@ -1,0 +1,992 @@
+schema: S17-MATRIX/1
+frozen_seed_root: 41
+scope: All six original S12 resized task domains; does not claim coverage of out_of_scope
+  large-field residual.
+simulation_limit_s: 1800
+nominal_plan_limit_s: 1440
+prediction_default: no_prediction
+memory_default: false
+thresholds:
+  position_p95_m: 0.15
+  yaw_p95_rad: 0.05
+  spray_fraction: 1.0
+  mow_fraction: 0.95
+  obstacle_contacts: 0
+formal:
+- id: A1_seed41001
+  cluster: A1
+  seed: 41001
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41001
+  cluster: A2
+  seed: 41001
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41001
+  cluster: A3
+  seed: 41001
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41001
+  cluster: B1
+  seed: 41001
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41001
+  cluster: B2
+  seed: 41001
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41001
+  cluster: B3
+  seed: 41001
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A1_seed41098
+  cluster: A1
+  seed: 41098
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41098
+  cluster: A2
+  seed: 41098
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41098
+  cluster: A3
+  seed: 41098
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41098
+  cluster: B1
+  seed: 41098
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41098
+  cluster: B2
+  seed: 41098
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41098
+  cluster: B3
+  seed: 41098
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A1_seed41195
+  cluster: A1
+  seed: 41195
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41195
+  cluster: A2
+  seed: 41195
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41195
+  cluster: A3
+  seed: 41195
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41195
+  cluster: B1
+  seed: 41195
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41195
+  cluster: B2
+  seed: 41195
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41195
+  cluster: B3
+  seed: 41195
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A1_seed41292
+  cluster: A1
+  seed: 41292
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41292
+  cluster: A2
+  seed: 41292
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41292
+  cluster: A3
+  seed: 41292
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41292
+  cluster: B1
+  seed: 41292
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41292
+  cluster: B2
+  seed: 41292
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41292
+  cluster: B3
+  seed: 41292
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A1_seed41389
+  cluster: A1
+  seed: 41389
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41389
+  cluster: A2
+  seed: 41389
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41389
+  cluster: A3
+  seed: 41389
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41389
+  cluster: B1
+  seed: 41389
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41389
+  cluster: B2
+  seed: 41389
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41389
+  cluster: B3
+  seed: 41389
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A1_seed41486
+  cluster: A1
+  seed: 41486
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41486
+  cluster: A2
+  seed: 41486
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41486
+  cluster: A3
+  seed: 41486
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41486
+  cluster: B1
+  seed: 41486
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41486
+  cluster: B2
+  seed: 41486
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41486
+  cluster: B3
+  seed: 41486
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A1_seed41583
+  cluster: A1
+  seed: 41583
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41583
+  cluster: A2
+  seed: 41583
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41583
+  cluster: A3
+  seed: 41583
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41583
+  cluster: B1
+  seed: 41583
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41583
+  cluster: B2
+  seed: 41583
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41583
+  cluster: B3
+  seed: 41583
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A1_seed41680
+  cluster: A1
+  seed: 41680
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41680
+  cluster: A2
+  seed: 41680
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41680
+  cluster: A3
+  seed: 41680
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41680
+  cluster: B1
+  seed: 41680
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41680
+  cluster: B2
+  seed: 41680
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41680
+  cluster: B3
+  seed: 41680
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A1_seed41777
+  cluster: A1
+  seed: 41777
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41777
+  cluster: A2
+  seed: 41777
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41777
+  cluster: A3
+  seed: 41777
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41777
+  cluster: B1
+  seed: 41777
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41777
+  cluster: B2
+  seed: 41777
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41777
+  cluster: B3
+  seed: 41777
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A1_seed41874
+  cluster: A1
+  seed: 41874
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A2_seed41874
+  cluster: A2
+  seed: 41874
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: A3_seed41874
+  cluster: A3
+  seed: 41874
+  vehicle: diff
+  controller: DWB
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B1_seed41874
+  cluster: B1
+  seed: 41874
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B2_seed41874
+  cluster: B2
+  seed: 41874
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+- id: B3_seed41874
+  cluster: B3
+  seed: 41874
+  vehicle: ackermann
+  controller: RPP
+  geometry: base
+  fault: none
+  scope: FULL_CLUSTER
+  requirement:
+  - R03
+  - R04
+  - R05
+  - R06
+  - R08
+geometries:
+- base
+- notch
+- hole
+connector:
+- id: connector_diff
+  vehicle: diff
+  requirement:
+  - R01
+  - R03
+- id: connector_ackermann
+  vehicle: ackermann
+  requirement:
+  - R01
+  - R03
+faults:
+- id: fault_dynamic_crossing
+  fault: dynamic_crossing
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+- id: fault_persistent_block
+  fault: persistent_block
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+- id: fault_low_obstacle
+  fault: low_obstacle
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+- id: fault_slope
+  fault: slope
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+- id: fault_gnss_false_fixed
+  fault: gnss_false_fixed
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+- id: fault_gnss_occlusion
+  fault: gnss_occlusion
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+- id: fault_localization_loss
+  fault: localization_loss
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+- id: fault_sensor_delay
+  fault: sensor_delay
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+- id: fault_tool_loss
+  fault: tool_loss
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+- id: fault_mission_restart
+  fault: mission_restart
+  seed: 42001
+  requirement:
+  - R04
+  - R05
+  - R07
+ablations:
+- id: partition
+  groups:
+  - kmeans_repaired
+  - darp
+  - metis_time
+  level: offline_geometry_and_time
+- id: controller_diff
+  groups:
+  - DWB
+  - RPP
+  - MPPI
+  level: paired_closed_loop
+- id: controller_ackermann
+  groups:
+  - RPP
+  - MPPI
+  level: paired_closed_loop
+- id: localization
+  groups:
+  - wheel_imu
+  - lidar
+  - visual
+  - gnss
+  level: paired_closed_loop
+- id: prediction
+  groups:
+  - none
+  - imm
+  - learned
+  level: paired_closed_loop
+- id: memory
+  groups:
+  - full
+  - event
+  - cache
+  level: paired_closed_loop
+- id: coverage
+  groups:
+  - offline_repair
+  - pure_online
+  level: paired_closed_loop
+requirements:
+  R01: Continuous irregular geometry, holes/notches and two chassis connector inspection
+  R02: Three connected workload clusters with paired algorithm comparison
+  R03: Footprint, curvature, speed and nominal time
+  R04: Independent localization errors and failure stop
+  R05: Feedback-only idempotent work ledger and original residual
+  R06: 60 complete cluster trials; stop included in 1800 seconds
+  R07: Observed injected faults and safe bounded response
+  R08: Hashes, fixed seeds, resumable nonduplicating score and hardware/RTF

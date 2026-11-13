@@ -1,0 +1,23 @@
+schema: S16-MEMORY/1
+enabled: false
+reason: Candidate experiment only; S15 predictive policies remain unqualified.
+max_store_bytes: 100000000
+max_prototypes: 256
+max_audit_rows: 256
+max_record_bytes: 4096
+ttl_s: 604800
+half_life_s: 172800
+minimum_decayed_quality: 0.5
+similarity_rms_max: 0.65
+query_timeout_ms: 10
+minimum_direction_cosine: 0.70710678
+max_speed_mps: 2.0
+max_acceleration_mps2: 2.0
+max_sigma_m: 0.25
+minimum_clearance_m: 2.0
+max_context_age_s: 0.3
+max_observation_age_s: 0.3
+event_period_s: 1.2
+event_velocity_delta_mps: 0.15
+train_imm_ade_max_m: 0.3
+feature_scales: [0.3, 0.3, 0.4, 0.25, 0.25, 0.25, 0.25, 0.4, 0.4, 0.5, 0.1, 0.2, 0.5, 1.0, 1.0, 0.15, 0.2]

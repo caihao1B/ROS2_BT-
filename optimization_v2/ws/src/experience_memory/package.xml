@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<package format="3"><name>experience_memory</name><version>0.1.0</version><description>Bounded contextual model-selection memory and measured ablation.</description><maintainer email="maintainer@example.invalid">Robot project maintainers</maintainer><license>LicenseRef-Project-Unspecified</license><buildtool_depend>ament_cmake</buildtool_depend><export><build_type>ament_cmake</build_type></export></package>

@@ -4,7 +4,7 @@
 
 项目重点是把 **传感器 → 定位与感知 → 规划 → 可解释行为树 → 导航控制 → 工具反馈账本** 连成可检验的闭环。在线算法接收带误差的模拟观测；仿真真值仅用于独立评分。喷洒与割草执行器抽象为动作接口，后续可独立接入机械臂、近景视觉或 VLA。
 
-> 开发机正式验收：S14 PASS、S15 PASS。S15 的默认策略为 `no_prediction`；未达收益门槛的预测候选保持禁用。新机器需安装、构建与重新验收。
+> 开发机阶段验收：S14 PASS、S15 PASS、S16 PASS；S17 PARTIAL（0/60 正式簇运行），S18 未执行。S15 的默认策略为 `no_prediction`；未达收益门槛的预测候选保持禁用。新机器需安装、构建与重新验收。
 
 ![场地与当前任务分簇示意](media/project_overview.svg)
 
@@ -14,6 +14,20 @@
 </table>
 
 底盘图来自 S03 的真实 Gazebo 验收截图；后续阶段增加传感器、定位和导航接口。上方总览图展示公开先验和算法分簇，不计作实际完成量。
+
+
+## 2026-11-13 开发检查点
+
+按用户要求暂停以切换系统。本次同步 **S16/S17 源码、配置、学习文档与精简诊断证据**；完整 S17 资格点云、地图大输入和原始运行日志保留在开发机，尚未作为可移植发布包交付。原 S14/S15 资产包仍保留。不要把仓库源码更新或组件测试当作 S17 PASS。
+
+- 16 组组件及教学检查通过。修复地图坐标系障碍记忆、授权边界重复膨胀和巡检剩余工时。
+- 差速动态短段曾 PASS：338.987 仿真秒，位置误差 P95 2.32 cm，零接触、零越界；该例早于最新记忆修复，新版差速仍待复验。
+- 最新阿克曼动态短段 PARTIAL：196.121 仿真秒，P95 1.96 cm，零接触、零越界，第二段无路径。完整连接路、六簇 60 次、规定故障和配对消融尚未全部完成。
+- 诊断图中通道的圆模型连通不能证明阿克曼可行；当前安装版 Hybrid-A* 多种离线搜索仍失败，保留原始结果继续排查。
+
+![实际代价地图与阿克曼足迹](validation/s17_pause/actual_navmap.png)
+
+恢复入口：[暂停检查点与续做提示词](docs/optimization_v2/S17/PAUSE_RESUME_20261113.md) · [技术原理](docs/optimization_v2/S17/TECHNICAL.md) · [核心代码](docs/optimization_v2/S17/CODE_WALKTHROUGH.md) · [实测结果](docs/optimization_v2/S17/RESULTS.md)。精简证据及发布范围见 [检查点清单](validation/s17_pause/checkpoint.json)。
 
 ## 系统结构
 
@@ -173,4 +187,4 @@ bash optimization_v2/stepctl.sh open S14
 
 学习入口：[S14 技术原理](docs/optimization_v2/S14/TECHNICAL.md)、[S14 核心代码](docs/optimization_v2/S14/CODE_WALKTHROUGH.md)、[S15 技术原理](docs/optimization_v2/S15/TECHNICAL.md)、[S15 核心代码](docs/optimization_v2/S15/CODE_WALKTHROUGH.md)、[S15 手工查验](docs/optimization_v2/S15/MANUAL_CHECK.md)。
 
-动态多模态预测由 S15 管理；经验缓存、六簇综合验收和完整移植交付分别属于尚未实施的 S16、S17、S18。项目面向仿真研究和工程学习，未作实车商业认证。
+动态多模态预测由 S15 管理；S16 经验检索与算力对照已实施，S17 六簇综合验收正在修复，S18 完整移植交付未执行。项目面向仿真研究和工程学习，未作实车商业认证。
