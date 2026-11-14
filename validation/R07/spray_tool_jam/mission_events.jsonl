@@ -1,0 +1,38 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_PLAN_HINT"}
+{"t": 14.704, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 14.706, "event": "NAV_GOAL", "point": "point_7_14", "target": [-5.5, 29.5], "attempt": 0}
+{"t": 14.74, "event": "NAV_SUCCESS", "point": "point_7_14"}
+{"t": 16.242, "event": "DOCKING_SETTLED_CHECK", "point": "point_7_14", "distance_m": 0.004332745339600447, "attempt": 0}
+{"t": 20.424, "event": "TOOL_RESULT", "point": "point_7_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0500000000000007, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 0.0, "meter_after": 3.2717}
+{"t": 20.472, "event": "TOOL_RESULT", "point": "point_7_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0500000000000007, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2717, "meter_after": 3.2717}
+{"t": 20.472, "event": "IDEMPOTENT_REPLAY", "result": {"point": "point_7_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0500000000000007, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2717, "meter_after": 3.2717}}
+{"t": 20.472, "event": "NAV_GOAL", "point": "point_8_14", "target": [-2.5, 29.5], "attempt": 0}
+{"t": 28.56, "event": "BT_INTERRUPTS_NAV", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 28.56, "event": "NAV_CANCEL_ACK", "accepted": true}
+{"t": 29.88, "event": "RETRY_DECISION", "action": "EXECUTE", "reason": "NEXT_OBLIGATION"}
+{"t": 29.88, "event": "RESUME_AFTER_OBSERVATION_CLEAR", "point": "point_8_14"}
+{"t": 29.88, "event": "NAV_GOAL", "point": "point_8_14", "target": [-2.5, 29.5], "attempt": 0}
+{"t": 38.04, "event": "NAV_SUCCESS", "point": "point_8_14"}
+{"t": 39.54, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_14", "distance_m": 0.09746726968809392, "attempt": 0}
+{"t": 39.54, "event": "REDOCK_NAV_GOAL", "point": "point_8_14", "distance_m": 0.09746726968809392, "attempt": 0}
+{"t": 41.036, "event": "REDOCK_NAV_SUCCESS", "point": "point_8_14"}
+{"t": 42.63, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_14", "distance_m": 0.051651281778275035, "attempt": 1}
+{"t": 43.582, "event": "TOOL_RESULT", "point": "point_8_14", "state": "FAILED", "reason": "TOOL_HEALTH", "confirmed": 0.0, "remaining": 3.0, "uncertainty": false, "replayed": false, "meter_before": 3.2717, "meter_after": 3.3773}
+{"t": 43.62, "event": "RESIDUAL_RETRY", "point": "point_8_14"}
+{"t": 47.174, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_14", "distance_m": 0.035078307858797744, "attempt": 0}
+{"t": 51.286, "event": "TOOL_RESULT", "point": "point_8_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0500000000000043, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 3.3773, "meter_after": 6.585}
+{"t": 51.33, "event": "NAV_GOAL", "point": "point_8_15", "target": [-2.5, 32.5], "attempt": 0}
+{"t": 80.43, "event": "NAV_SUCCESS", "point": "point_8_15"}
+{"t": 81.93, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_15", "distance_m": 0.061189718241339175, "attempt": 0}
+{"t": 84.574, "event": "TOOL_RESULT", "point": "point_8_15", "state": "PARTIAL", "reason": "NOT_DOCKED", "confirmed": 1.5999999999999943, "remaining": 1.4000000000000057, "uncertainty": false, "replayed": false, "meter_before": 6.585, "meter_after": 8.3887}
+{"t": 84.6, "event": "RESIDUAL_RETRY", "point": "point_8_15"}
+{"t": 86.1, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_15", "distance_m": 0.06102495308250915, "attempt": 0}
+{"t": 86.1, "event": "REDOCK_NAV_GOAL", "point": "point_8_15", "distance_m": 0.06102495308250915, "attempt": 0}
+{"t": 87.708, "event": "REDOCK_NAV_SUCCESS", "point": "point_8_15"}
+{"t": 89.52, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_15", "distance_m": 0.06919244605225368, "attempt": 1}
+{"t": 89.52, "event": "REDOCK_NAV_GOAL", "point": "point_8_15", "distance_m": 0.06919244605225368, "attempt": 1}
+{"t": 99.614, "event": "REDOCK_NAV_SUCCESS", "point": "point_8_15"}
+{"t": 101.114, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_15", "distance_m": 0.03818976263970323, "attempt": 2}
+{"t": 103.63, "event": "TOOL_RESULT", "point": "point_8_15", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0999999999999943, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 8.3887, "meter_after": 10.0443}
+{"t": 103.65, "event": "SUBSET_FINISHED", "selected": 3, "completed": 3, "original_total": 56}
+{"t": 105.666, "event": "FINAL_TOOL_STOP", "state": "STOPPED"}

@@ -85,7 +85,32 @@ bash optimization_v2/three_tasks/advance.sh R05 open
 bash optimization_v2/three_tasks/advance.sh R06 open
 ```
 
-当前正在实施 R07 点喷专用闭环。原 S17/S18 仍为 PARTIAL，新三任务未宣告全地图完成；下方视频仍是旧独立演示版本。
+R07 已通过三点服务闭环和工具故障恢复，R08 巡迹正在开发。原 S17/S18 仍为 PARTIAL，新三任务未宣告全地图完成；下方视频仍是旧独立演示版本。
+
+## 三任务改造 R07：点服务闭环通过；R08 巡迹为 PARTIAL
+
+R07 的正常与工具故障案例均在实际 Gazebo / ROS / Nav2 中完成原 A1 顺序前三点，15 项组件检查通过。正常案例用时 85.742 秒仿真、237.021 秒墙钟，地图定位 XY RMSE 3.59 cm；故障案例 105.666 秒仿真、282.759 秒墙钟，RMSE 2.87 cm。工具 JAM、非零部分完成、真实重新停靠和同键残余续作均保留反馈记录。实际工具与车体停止、唯一出口、正常退出、原数据库不变检查通过。
+
+![R07 实际点服务轨迹与定位误差](media/r07_task.png)
+
+**范围：** PASS 是三点组件集成，A1 原 56 点中的其余 53 点未完成；A2/A3 和原全图任务仍保留。R07 不代表全簇、整图或真实药剂精度验收。新增近地实际传感器与未知区域保守代价，按观测位置重新停靠，没有通过放宽原 8 cm 工具准入来获得通过。
+
+R08 已建立独立巡迹车、原 88.48 m 路线 FollowPath、观测几何跟踪和保持距离的接口。完整连接路、真实前车跟随/停车/恢复、当前观测验证的绕行仍未全部通过，故保持 **PARTIAL**，R09 及后续未开始。没有工具执行器，不产生点喷或割草作业信用。
+
+|阶段|手工检查|技术原理与核心代码|实际结果|
+|---|---|---|---|
+|R07 PASS（限定三点集成）|[命令](docs/three_tasks/R07/MANUAL.md)|[原理](docs/three_tasks/R07/TECHNICAL.md) · [代码](docs/three_tasks/R07/CODE.md)|[结果](docs/three_tasks/R07/RESULTS.md) · [回执](validation/R07/latest.json)|
+|R08 PARTIAL|[命令与续作提示](docs/three_tasks/R08/MANUAL.md)|[原理](docs/three_tasks/R08/TECHNICAL.md) · [代码](docs/three_tasks/R08/CODE.md)|[结果与未完成项](docs/three_tasks/R08/RESULTS.md) · [回执](validation/R08/latest.json)|
+
+```bash
+cd /home/ceihao/robot_project
+bash optimization_v2/three_tasks/advance.sh status
+bash optimization_v2/three_tasks/advance.sh R07 check
+bash optimization_v2/three_tasks/advance.sh R07 open
+bash optimization_v2/three_tasks/advance.sh R08 open
+```
+
+原 S17/S18 继续保持 PARTIAL。仓库同步本轮源码、配置、学习文档和精简证据；完整大数据、构建产物和逐帧证据保留在开发机，尚不是 R12 的可移植发行包。下方视频来自原独立演示，不是新三车任务的完成录像。
 
 ## 独立小规模演示与实际录制
 

@@ -1,0 +1,48 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_ROUTE_HINT"}
+{"t": 17.954, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 20.402, "event": "FOLLOW_PATH_GOAL", "start_index": 0, "poses": 151, "selected_length_m": 14.996622437502234}
+{"t": 21.002, "event": "BT_INTERRUPTS_PATH", "action": "CANCEL", "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED"}
+{"t": 21.002, "event": "FOLLOW_PATH_CANCEL_ACK", "accepted": true}
+{"t": 21.48, "event": "AWAIT_FRESH_BT_AFTER_PATH_RESULT", "interrupted": true, "minimum_context_stamp": 21.48, "allowed_next": ["EXECUTE", "FOLLOW", "REPLAN", "HUMAN", "STOP"]}
+{"t": 21.514, "event": "RESUME_REMAINING_ROUTE", "index": 1}
+{"t": 21.514, "event": "FOLLOW_PATH_GOAL", "start_index": 1, "poses": 150, "selected_length_m": 14.996622437502234}
+{"t": 22.016, "event": "BT_INTERRUPTS_PATH", "action": "CANCEL", "reason": "SAME_DIRECTION_CLEARANCE_CONTROL"}
+{"t": 22.016, "event": "FOLLOW_PATH_CANCEL_ACK", "accepted": true}
+{"t": 22.23, "event": "AWAIT_FRESH_BT_AFTER_PATH_RESULT", "interrupted": true, "minimum_context_stamp": 22.23, "allowed_next": ["EXECUTE", "FOLLOW", "REPLAN", "HUMAN", "STOP"]}
+{"t": 22.48, "event": "RESUME_REMAINING_ROUTE", "index": 2}
+{"t": 22.48, "event": "FOLLOW_PATH_GOAL", "start_index": 2, "poses": 149, "selected_length_m": 14.996622437502234}
+{"t": 23.586, "event": "BT_INTERRUPTS_PATH", "action": "CANCEL", "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED"}
+{"t": 23.586, "event": "FOLLOW_PATH_CANCEL_ACK", "accepted": true}
+{"t": 24.12, "event": "AWAIT_FRESH_BT_AFTER_PATH_RESULT", "interrupted": true, "minimum_context_stamp": 24.12, "allowed_next": ["EXECUTE", "FOLLOW", "REPLAN", "HUMAN", "STOP"]}
+{"t": 24.492, "event": "RESUME_REMAINING_ROUTE", "index": 5}
+{"t": 24.492, "event": "FOLLOW_PATH_GOAL", "start_index": 5, "poses": 146, "selected_length_m": 14.996622437502234}
+{"t": 24.994, "event": "BT_INTERRUPTS_PATH", "action": "CANCEL", "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED"}
+{"t": 24.994, "event": "FOLLOW_PATH_CANCEL_ACK", "accepted": true}
+{"t": 25.32, "event": "AWAIT_FRESH_BT_AFTER_PATH_RESULT", "interrupted": true, "minimum_context_stamp": 25.32, "allowed_next": ["EXECUTE", "FOLLOW", "REPLAN", "HUMAN", "STOP"]}
+{"t": 25.362, "event": "RESUME_REMAINING_ROUTE", "index": 6}
+{"t": 25.362, "event": "FOLLOW_PATH_GOAL", "start_index": 6, "poses": 145, "selected_length_m": 14.996622437502234}
+{"t": 26.198, "event": "BT_INTERRUPTS_PATH", "action": "CANCEL", "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED"}
+{"t": 26.198, "event": "FOLLOW_PATH_CANCEL_ACK", "accepted": true}
+{"t": 26.7, "event": "AWAIT_FRESH_BT_AFTER_PATH_RESULT", "interrupted": true, "minimum_context_stamp": 26.7, "allowed_next": ["EXECUTE", "FOLLOW", "REPLAN", "HUMAN", "STOP"]}
+{"t": 27.064, "event": "RESUME_REMAINING_ROUTE", "index": 8}
+{"t": 27.064, "event": "FOLLOW_PATH_GOAL", "start_index": 8, "poses": 143, "selected_length_m": 14.996622437502234}
+{"t": 27.698, "event": "BT_INTERRUPTS_PATH", "action": "CANCEL", "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED"}
+{"t": 27.698, "event": "FOLLOW_PATH_CANCEL_ACK", "accepted": true}
+{"t": 27.99, "event": "AWAIT_FRESH_BT_AFTER_PATH_RESULT", "interrupted": true, "minimum_context_stamp": 27.99, "allowed_next": ["EXECUTE", "FOLLOW", "REPLAN", "HUMAN", "STOP"]}
+{"t": 28.088, "event": "RESUME_REMAINING_ROUTE", "index": 9}
+{"t": 28.088, "event": "FOLLOW_PATH_GOAL", "start_index": 9, "poses": 142, "selected_length_m": 14.996622437502234}
+{"t": 28.77, "event": "BT_INTERRUPTS_PATH", "action": "CANCEL", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 28.77, "event": "FOLLOW_PATH_CANCEL_ACK", "accepted": true}
+{"t": 29.16, "event": "AWAIT_FRESH_BT_AFTER_PATH_RESULT", "interrupted": true, "minimum_context_stamp": 29.16, "allowed_next": ["EXECUTE", "FOLLOW", "REPLAN", "HUMAN", "STOP"]}
+{"t": 29.192, "event": "RESUME_REMAINING_ROUTE", "index": 10}
+{"t": 29.192, "event": "FOLLOW_PATH_GOAL", "start_index": 10, "poses": 141, "selected_length_m": 14.996622437502234}
+{"t": 29.764, "event": "BT_INTERRUPTS_PATH", "action": "CANCEL", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 29.764, "event": "FOLLOW_PATH_CANCEL_ACK", "accepted": true}
+{"t": 30.21, "event": "AWAIT_FRESH_BT_AFTER_PATH_RESULT", "interrupted": true, "minimum_context_stamp": 30.21, "allowed_next": ["EXECUTE", "FOLLOW", "REPLAN", "HUMAN", "STOP"]}
+{"t": 30.242, "event": "RESUME_REMAINING_ROUTE", "index": 11}
+{"t": 30.242, "event": "FOLLOW_PATH_GOAL", "start_index": 11, "poses": 140, "selected_length_m": 14.996622437502234}
+{"t": 30.744, "event": "BT_INTERRUPTS_PATH", "action": "CANCEL", "reason": "SAME_DIRECTION_CLEARANCE_CONTROL"}
+{"t": 30.744, "event": "FOLLOW_PATH_CANCEL_ACK", "accepted": true}
+{"t": 30.744, "event": "AWAIT_FRESH_BT_AFTER_PATH_RESULT", "interrupted": true, "minimum_context_stamp": 30.744, "allowed_next": ["EXECUTE", "FOLLOW", "REPLAN", "HUMAN", "STOP"]}
+{"t": 30.784, "event": "PLANNER_QUERY_RESULT", "status": 4, "poses": 87, "candidate_admission": "NOT_ADMITTED_WITHOUT_CURRENT_OBSERVED_DETOUR_VALIDATION"}
+{"t": 30.784, "event": "TASK_STOP", "error": "RuntimeError('LIVE_DETOUR_INTEGRATION_PENDING')", "manual_reason": "LIVE_DETOUR_INTEGRATION_PENDING"}

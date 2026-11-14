@@ -1,0 +1,1197 @@
+{
+  "stage": "R08",
+  "automated_status": "PARTIAL",
+  "summary": {
+    "passed": false,
+    "cases": {
+      "nominal": {
+        "passed": false,
+        "checks": {
+          "runtime_clean": false,
+          "original_database_unchanged": true,
+          "selected_route_completed": false,
+          "no_unexpected_contact": true,
+          "map_rmse_under_15cm": true,
+          "cross_track_under_50cm": true,
+          "measured_progress": false,
+          "stopped": true,
+          "unique_actuator": true,
+          "no_tool_owner": true,
+          "unique_tf": true,
+          "source_binding": true,
+          "task_version": true
+        },
+        "case": "nominal",
+        "task_result": {
+          "passed": false,
+          "error": "RuntimeError('LIVE_DETOUR_INTEGRATION_PENDING')",
+          "manual_reason": "LIVE_DETOUR_INTEGRATION_PENDING",
+          "t": 44.412,
+          "selected_length_m": 2.999311146696442,
+          "original_length_m": 88.48099013627925,
+          "full_route_selected": false,
+          "remaining_original_m": 87.28126579549225,
+          "route_index": 12,
+          "final_gate": {
+            "t": 44.4,
+            "allowed": false,
+            "mode": "STOP",
+            "v": 0.0,
+            "w": 0.0,
+            "reasons": [
+              "NAV_COMMAND_STALE",
+              "OBSTRUCTED"
+            ],
+            "stopped": true,
+            "tool_stopped": true,
+            "nav_idle": true,
+            "progress_m": 1.2403498715346477
+          },
+          "ownership": {
+            "/tf": [
+              "s05_local_odometry",
+              "s08_global_pose_manager"
+            ],
+            "/s03/actuator/request": [
+              "r08_actuator_gate"
+            ],
+            "/s10/tool/command": []
+          },
+          "wall_seconds": 116.80185752399848,
+          "scope": "Inspection navigation; no spray/mow credit"
+        },
+        "map_xy_rmse_m": 0.01970465438763608,
+        "maximum_cross_track_m": 0.005100900643670318,
+        "maximum_actual_progress_m": 1.177904480864324,
+        "follow_decisions": 0,
+        "minimum_observed_follow_gap_m": null,
+        "unexpected_contacts": {},
+        "full_connector_passed": false,
+        "formal_credit": false,
+        "scope": "Selected inspection route only; full R08 additionally requires all declared behavior cases"
+      },
+      "leader": {
+        "passed": false,
+        "checks": {
+          "runtime_clean": false,
+          "original_database_unchanged": true,
+          "selected_route_completed": false,
+          "no_unexpected_contact": true,
+          "map_rmse_under_15cm": true,
+          "cross_track_under_50cm": true,
+          "measured_progress": false,
+          "stopped": true,
+          "unique_actuator": true,
+          "no_tool_owner": true,
+          "unique_tf": true,
+          "source_binding": true,
+          "task_version": true,
+          "observed_follow": true,
+          "stop_resume": true,
+          "tracking_no_fixture": true
+        },
+        "case": "leader",
+        "task_result": {
+          "passed": false,
+          "error": "RuntimeError('LIVE_DETOUR_INTEGRATION_PENDING')",
+          "manual_reason": "LIVE_DETOUR_INTEGRATION_PENDING",
+          "t": 30.784,
+          "selected_length_m": 14.996622437502234,
+          "original_length_m": 88.48099013627925,
+          "full_route_selected": false,
+          "remaining_original_m": 87.38124282283071,
+          "route_index": 11,
+          "final_gate": {
+            "t": 30.78,
+            "allowed": false,
+            "mode": "STOP",
+            "v": 0.0,
+            "w": 0.0,
+            "reasons": [
+              "OBSTRUCTED"
+            ],
+            "stopped": true,
+            "tool_stopped": true,
+            "nav_idle": true,
+            "progress_m": 1.1626620718640173
+          },
+          "ownership": {
+            "/tf": [
+              "s05_local_odometry",
+              "s08_global_pose_manager"
+            ],
+            "/s03/actuator/request": [
+              "r08_actuator_gate"
+            ],
+            "/s10/tool/command": []
+          },
+          "wall_seconds": 81.43921603700437,
+          "scope": "Inspection navigation; no spray/mow credit"
+        },
+        "map_xy_rmse_m": 0.019932913506699446,
+        "maximum_cross_track_m": 0.008603910174689724,
+        "maximum_actual_progress_m": 1.12630175057164,
+        "follow_decisions": 33,
+        "minimum_observed_follow_gap_m": 3.8467875887889824,
+        "unexpected_contacts": {},
+        "full_connector_passed": false,
+        "formal_credit": false,
+        "scope": "Selected inspection route only; full R08 additionally requires all declared behavior cases"
+      }
+    },
+    "pending": [
+      "Observed live detour validation and its real obstacle case remain unimplemented/unqualified.",
+      "Original complete 88.48 m connector not yet passed.",
+      "Observed leader follow/stop/resume not yet passed."
+    ],
+    "next": null,
+    "scope": "R08 working checkpoint; no downstream admission until original behavior scope passes"
+  },
+  "artifacts": [
+    {
+      "path": "optimization_v2/three_tasks/editions/R08/mission.json",
+      "sha256": "f8f69ae5c4a814dc19c7c19044443f1b951b2512bc75c99ec4696b2550586a24"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R08/manager.json",
+      "sha256": "b1661059fcab016f107c9834b3c22f456c99b2ae8a1f3b40192f9a538b554d9a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R08/nav2.yaml",
+      "sha256": "598027d8682110f6d5ade6595ec1720dd1bfff62a7806679f283f08810e71da3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R08/terrain.json",
+      "sha256": "f3a78426e75e01eb8bdf9d4c30f3703953404cd00083115c4849d0dfccf72d6a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R07/latest.json",
+      "sha256": "d1ed430f8a9f5cfd56ff8a1ee78081d88e411b19d9e5172afd6fe7a635718f69"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/tests.log",
+      "sha256": "da5acced5cf13be657da09445618b6c0452eb9a1c8a60ca743a7bac48529412e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/report.html",
+      "sha256": "4c56f24e3b4cedf9cc93cbd9d9a5111fa33b9069460d4f01a3bb91004d995823"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/nav_shutdown.json",
+      "sha256": "2d89faff75bb7e056d1ca0b56c2ebdd0930492938059cccf59af9acb40a34512"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/tracker.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mission.json",
+      "sha256": "f8f69ae5c4a814dc19c7c19044443f1b951b2512bc75c99ec4696b2550586a24"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generator_motion.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generator_vision.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/spec.json",
+      "sha256": "1a28481ab7a9684c6c4c83ddb5e5834380ef69c9ec07f3db91dac1ec28caa662"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/evaluator.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/inspection_trace.jsonl",
+      "sha256": "99707a9f2a2617268328e67f3c5f876441419759c195b8e0fd54014e01a95ace"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/diagnostics.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/terrain.log",
+      "sha256": "0c76486fb380187e04e47d8136c11866c40825195e00719360e9ed808be4a429"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/decisions.jsonl",
+      "sha256": "6a60e22aca9ceb885fd9a4034ff81ca7e8107c5b3bfd84608c557eba00931c66"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/online_bridge.log",
+      "sha256": "9d84ab64402c6965ce964a9025f037c71634c257e78cca97cf0a6ac6ddf86398"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/control.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/live.json",
+      "sha256": "f8082a775a3b2fe053847b5ec5e6b6a995d02f17ee0aace4c83710a68e63f87e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/nav_startup.log",
+      "sha256": "a8280aee72b5619bdbc929ea7717efcce29f454c11ecaee93f5623286cc553c4"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/controller_server.log",
+      "sha256": "c8afe23cb3f10566f084c0fa5b14f1ffbb3e73508a8d5790cab6c371b56d79e2"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/wheel_imu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mission_events.jsonl",
+      "sha256": "6bab538740aec63af25e8e01597bdf28c1bea4d550b283e39e5c242c23608466"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/risk.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/slam_initial.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/icp.log",
+      "sha256": "17820c3e9a82d5edc1a98e335f0c02503ed74280e1cc0e0c56c1f2714cb08618"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/observer.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/bt.log",
+      "sha256": "a581d1df30a7a14fd118bf972dc1adbaaf47fb18875232efaa8ab8d5b4cca8ef"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/map_server.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/planner_server.log",
+      "sha256": "f48cf9174637a72b1f47580a5b1be0c0d80e0a0f99bcdde373c415645dca0d9b"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/shutdown_compat.json",
+      "sha256": "55fa16ce515680bf6e95f92be1f9de215f80f76229641977e7e09f1e264b1145"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/icp_motion_guess.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/inputs.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/fused.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/observer_ready",
+      "sha256": "1003405183c03a0885cac8e3371fa03464f4a4234b71eb90981d9e9ddc7c9c42"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/global_sources.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/trajectory.npz",
+      "sha256": "12cd76f1e87a7fb63c51a6bbf038e8f6ee43a396d4b6491df00c56f7577fa67e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/cloud.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mission_result.json",
+      "sha256": "dbf54f7dee7babafc7f86fea88439574b0ce55be74f673f5858cd6e913770e44"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/request.json",
+      "sha256": "1787fc5672d60f152ebf0cf91a5f677792cc25fd3b3e23ff6a4e987ff62795f7"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/analysis_r08.json",
+      "sha256": "3b1e14c7cc84240e6451463d3e5c8da2a8583baa2c733f29032b30ee4ed82bf3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/evaluation_bridge.log",
+      "sha256": "e1932999520ffa3427e130ed5733c02148f15108c0346082795341951a24bf8d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/bt_navigator.log",
+      "sha256": "4600872265e625a59a135e663bc73ed500457586d1d96c4abea14df13f77819f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/raw_bridge.log",
+      "sha256": "d430349b62b80a906902d35680146c269a4c8aa02bf3ea5a5cd38e61ff087fe8"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/fanout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/server.log",
+      "sha256": "2d76a2eee358ca367cb6a3986381c2515cbebe6201944e16a857900d42b215fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/bt.json",
+      "sha256": "98265989daf77ef986626f416a885de5c2e6879abc559650d4cd1593b6706a34"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/global_manager.log",
+      "sha256": "b3feb5a7f8be6328f9c2f21c3e695c498da6a33a83e06262258af0c9859dd3a5"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/lifecycle_manager.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/runtime.json",
+      "sha256": "b98c0b548b89b0f0a76a06647d5104bbbf263cba204284060d18dbdf36d4eb19"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/odom_output.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/reference.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/icp_gate.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/cloud_30.700.npz",
+      "sha256": "1a3a55393f2bab0afefa6d95ed5680a214148cc725f3155a1658bb842c39874f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/cloud_10.500.npz",
+      "sha256": "ad8776b38651bf62a9382d3bb640a3a156e27bbdf6fde483b4156ea229d3375e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/frames.jsonl",
+      "sha256": "6b83118dc781d053703304af5c4ec37bb8877bebf91ae2ab1dcd0225fe2d5f96"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/ready",
+      "sha256": "bfc1e7bc31bca16b85264f6c2997341bc09d33c8caebc6faa9e43653b0f90805"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/cloud_40.900.npz",
+      "sha256": "1d92a443bdc3b6e3dc0a6abf0c77b932c6dde58a113d72e52bbd0e34a8992662"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/cloud_5.500.npz",
+      "sha256": "e1023f0d9f05ac711d34082771b2ca1e97106bdc5982d945da2917e8b09c3a7b"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/cloud_20.600.npz",
+      "sha256": "504e57bf8c38c875b92a5142ff5334065f05f7c4131454c493a23dbc8e31c9a2"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/cloud_35.700.npz",
+      "sha256": "f514446f29868d984fc5c412c853f33c76f7fbaf58fae5e9c6f172a85b9cef5f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/cloud_25.600.npz",
+      "sha256": "6b461797007692cf20b9b41e8d4642b3d8a7a82a5f203f674a01b3eecdbe50d3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/cloud_15.600.npz",
+      "sha256": "a8ac7302c45fd2c55645206b8da7942a2e851e67b49cc167869a3ab46f451be8"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs/cloud_46.100.npz",
+      "sha256": "20f4ca8f7216df0f2bf9a86e3783be957fcb343d83edc3d31923a673e309b144"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/near/ready",
+      "sha256": "0cf50cc8516000b3a2eb7df68e15d3e62811479e0b6ee9a7f1543abf6621ea93"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/near/near.jsonl",
+      "sha256": "67abf6dbe4d619554b65866766fb58cdeff0dfe10f8a33775416ffc89c6bdffb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/global_sources/ready",
+      "sha256": "2aded0c5f3e6a9e5c6a648c1063bda07ded539d751886cd7f2e7051c765f483d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/global_sources/sources.jsonl",
+      "sha256": "0e88a7c0f2d219b9b57deaa969250fe359975d67bc423ac08d170b66cb07bdb4"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/odom_output/ready",
+      "sha256": "2bbbc25148ac689449317a6e92e886a455dba271c08f41f03f1c6854e9afb7df"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/odom_output/result.json",
+      "sha256": "769b18d5127ddba62afb35b57466182a8aa7244605a31ab926ed358d1a511f3e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/cloud/ready",
+      "sha256": "8ab5ec63465886b654e635194cc2dcf09567cb2d0688532e40582257b762d1ed"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/cloud/geometry.jsonl",
+      "sha256": "09fdddcac67f846f9e0a9862c5c03ab1bc06ee6d79c2d2cb856b4378caa91c38"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/icp_motion_guess/ready",
+      "sha256": "afa4545274c6a1d1e4ee01063ff945672fe94c7d77de010a4c85c89c3801a717"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generation_vision/ready",
+      "sha256": "dd8081fe29bca85b7ef4b082fa2fa5312227d20aaf19ddd1d83a642623dd49d3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generation_vision/generation.jsonl",
+      "sha256": "bd99b3af6bdad0cd61d1b90b7db7de5b2761f15753e80d7a1f8d990e32e32818"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generation_vision/result.json",
+      "sha256": "4132c0f091db0ab71b582ecd436d7e1cbd99cec63822ea6bed627ec16cedbb09"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/evaluation/ready",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/evaluation/contacts.json",
+      "sha256": "b3db5f708ed381533ed8ed522acaff846c93c138891cf2173cd7f498c3a9af4e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/evaluation/truth.jsonl",
+      "sha256": "dea297907fce0e959e2117d75317e77ef17fbbdb54d55334c0c9ad7ef53847ae"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/diagnostics/ready",
+      "sha256": "1a9ad4f1a2e44fba965db99ce9e428c71d6f90696f168b1e06b9701c270e7017"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/diagnostics/costmap.jsonl",
+      "sha256": "de178e804b0c2cbccc68b3b7b80916234a21c2171b64381e8f09096be1678335"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/diagnostics/terrain.jsonl",
+      "sha256": "fd31b962b58e9e8bb8fcf2350679a72f34da2335c0798a99bc25c347d629268a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/vehicle.json",
+      "sha256": "0d897d20099d5e7c6684f31d4fb963cd5548ea04e771077f5b05f4d757335cdf"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/icp.yaml",
+      "sha256": "0d9a2a604dbba7cb251ea5ee562e5bece8b21885823190499dae4eebd5baf749"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/wheel_imu.yaml",
+      "sha256": "36a884b88c64b148248b33be902b67140d6135751cfc27b1cf48258272a9357a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/sensor_manifest.json",
+      "sha256": "0b5cec500848f35ae7fdc3f89f103fdd1c575015d15e17bd8b4092d13bda4029"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/assembly.json",
+      "sha256": "b5acb4effaafce4c005e1d37d15c94a6735b72c8bbc07dc7e09ceeaea665da3f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/fused.yaml",
+      "sha256": "b19f26bd11896d1a60ded127748ed562e48a8a59eb3a83610f8e7e47f1c5fd1c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/world.sdf",
+      "sha256": "8ec73c456702e5d3805aa803efde8336da4ad13766be4df1dc06eef8c82bd30f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/fixture.json",
+      "sha256": "836659ecd9429b7312adaaba10b75747d8f266c49359aec820c47f21c5b871cb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generation_motion/ready",
+      "sha256": "dd8081fe29bca85b7ef4b082fa2fa5312227d20aaf19ddd1d83a642623dd49d3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generation_motion/generation.jsonl",
+      "sha256": "00f94398033210b9859e767053844e96ce4fbb1bd2d4eee90bdabc9b4cc27d71"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generation_motion/result.json",
+      "sha256": "aed618858563ef82295ad78906408e9a48e9748668d88e0222ef53802ed1e423"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/quality/ready",
+      "sha256": "30220806326997db5d34d2eedec24b4839d3b85ca001e09394928cf1c38cc564"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/quality/live.json",
+      "sha256": "7b33f006a2d5eb6a8746da8a1072ce150e54a7f6949cdde915cd94744c6a32fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/quality/evidence.jsonl",
+      "sha256": "8d75a21cd6deb88f17afc72d7a39f9e92303e909ad9f99decce89cfa184a7b08"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/quality/result.json",
+      "sha256": "2ce75fda2f04a260202151232a551160d9b8320d9b29278bf8f57050b9b91500"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/risk/ready",
+      "sha256": "092fa7ce4173f6620339b2adf408d4b2ac42cc7f3fe8339b7755dc709c86da7a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/risk/live.json",
+      "sha256": "80bc4e6f3915f2c3219986be98f7d0335b22f7c3c564f4d352702b91fdacd4d7"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/risk/risk.jsonl",
+      "sha256": "19814a48f5e276c53d62420790ccf3da42f203c012868732a8ed66b2c28857ca"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/icp_gate/ready",
+      "sha256": "643b83b3028572ea5779eb6c0240c98edc423c11dc0f8e2a77b6c6bd6b4fd2be"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/icp_gate/quality.jsonl",
+      "sha256": "401e9af8dac318747e9d3b2e1c8e2e3eacfe8b05ae24e19bdfa829f83e41c5ff"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/inputs/ready",
+      "sha256": "42cd1f1e4f0016702b5290e549074505306fb8c97f6c546683547fd9fc0eb331"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/inputs/inputs.jsonl",
+      "sha256": "cf0d39078304b9e44908986508c22448dc545cb1e2e6fdac164094e27e4af946"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/inputs/result.json",
+      "sha256": "9b091485e82b1a2ecd82b4a73fa642018ec699f3043fc95e6d10eaf386909cad"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/input_adapter.py",
+      "sha256": "ee9943638ea6a70682f875663fa1e66cbb1cd01670decfb182a61bbcbcdb2048"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/adaptation.json",
+      "sha256": "57df5c1126dd083cb8b386de8cfa0a91e55e326806a908cc15aca0f4e0416a56"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/adapter.py",
+      "sha256": "14de986abb943fb6f16d800335c634450b6d6d9ddde204f7cad38a299a3a99cb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/fanout.py",
+      "sha256": "4b92b9595a078be8f33afa39ed5a3178e766fca8fac00cf9051bf7d8e9494417"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/cloud_filter.py",
+      "sha256": "6bf765842f361cc9dadf35665f5f86605107dda3c2fc925f707ed82e41a53b8f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/icp_gate.py",
+      "sha256": "860cbc67ee367d962dd0ceda43ba984df223cb2b93a7febc7c8a7a817e8b47c7"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/common.py",
+      "sha256": "b2b7c2d023298548f5a2cb9b023e496156c9232504a51677b93848f22b2efc60"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/quality.py",
+      "sha256": "cdbbb71d960b27c1c7de3e635d58d6d11a9492c22ad005b1353069a5a2d08bfb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/regional_math.py",
+      "sha256": "55baf00b8adabbe7a1541f5cbb64ca43ded67f930a8fa11041f156852c6de93a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/preprocessor.py",
+      "sha256": "4166b4b4d4570e32e2327ab1f7ce2fb35ec15faf5644d7ea050f44ccdd624396"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/control/gate.jsonl",
+      "sha256": "2bdda3839cd2f7318bedb0e8f61756653aceca395c2e2fedd6419d9570ea5dfd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/control/ready",
+      "sha256": "fe3a824c3a3f4cdcb9b6d001389e9c98e7c21f613a412ceb9cae1404ee01dbab"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/reference/ready",
+      "sha256": "05a1cb3b7cfa626d12f3a6bd908e116efc7d46b4274f722beb09433f55d77b37"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/reference/live.json",
+      "sha256": "84a9613797de0b7aaf937a36b85a11f3b82a54b77901d3d589d1af66f5fb4f73"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/reference/reference.jsonl",
+      "sha256": "6ce82bfee7bca588d07305f40a9cd838ae366fcc16757694e6d24613a5ebadf0"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/tracking/ready",
+      "sha256": "de82b8c4e506804276487059eea2b4f081ced8ef4735271bb964b4abb50e6dcb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/tracking/live.json",
+      "sha256": "2a2790eda0a07b1d3e8d463108f098ad9bc0444815468383691a57dd5c558d0a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/tracking/tracks.jsonl",
+      "sha256": "b327d370276bdaf4b18379f3550d4e6d1eb192cefd87ba82d6bfbfddede360e4"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/nav_shutdown.json",
+      "sha256": "2d89faff75bb7e056d1ca0b56c2ebdd0930492938059cccf59af9acb40a34512"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/tracker.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mission.json",
+      "sha256": "f8f69ae5c4a814dc19c7c19044443f1b951b2512bc75c99ec4696b2550586a24"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/generator_motion.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/generator_vision.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/spec.json",
+      "sha256": "ef6e3d3c925de89f346f18a819978233260b0db4898902a4db3aac4210f33649"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/evaluator.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/inspection_trace.jsonl",
+      "sha256": "2e0e33434bb4b3e1aa97437f7da49832e107de88f2446abfbcaadce66cad6262"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/diagnostics.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/terrain.log",
+      "sha256": "fd3e40ecdf119ec1fc10234e4a4c653d228012c98bba1e49f45444ef58f79a26"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/decisions.jsonl",
+      "sha256": "8b5d272bd21b24b752aa3b845c494187bcc20c9ba9d0f769201b1127ab8c7360"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/online_bridge.log",
+      "sha256": "233cfb40735703f465268f1973e38e9c74e80cda6dbc5a00d71e4d5fcc084bb6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/control.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/live.json",
+      "sha256": "6ea25c9d71ea548d04cb8f3cc9287bfe1c2d7f4726b64db9955dc95145fa1961"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/nav_startup.log",
+      "sha256": "a8280aee72b5619bdbc929ea7717efcce29f454c11ecaee93f5623286cc553c4"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/controller_server.log",
+      "sha256": "b8e4405a51f0f724d6b0d375ca6452888f20e98ee43e47ad80ea770ad641b3cc"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/wheel_imu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mission_events.jsonl",
+      "sha256": "dedbba648776de02da643e3a3766a0b60d652981916fbc59548e0923264c5fdb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/risk.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/slam_initial.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/icp.log",
+      "sha256": "40cdfcab086e34a14d59abe5bf11913ccd47eac5738c01257a8ebccacac2eb73"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/observer.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/bt.log",
+      "sha256": "23d3803fedf7e3a61e1482a6c9c00fb0d585d1d446762de44b5ef6c4f30d603e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/map_server.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/planner_server.log",
+      "sha256": "0f6246c8b619dcbc3fb685725c0bc030c039e4affc412b2c07200646a38267de"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mapping_inputs.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/shutdown_compat.json",
+      "sha256": "55fa16ce515680bf6e95f92be1f9de215f80f76229641977e7e09f1e264b1145"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/icp_motion_guess.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/inputs.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/fused.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/observer_ready",
+      "sha256": "1003405183c03a0885cac8e3371fa03464f4a4234b71eb90981d9e9ddc7c9c42"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/global_sources.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/trajectory.npz",
+      "sha256": "f1af84a98eee78c838e3faff4d56acab546ddc4c78da6c90e6659a2a3cdd7e15"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/cloud.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mission_result.json",
+      "sha256": "532614b5a4afc3d5b993bd0a6a51e9bf537bf4c6ae8f849befc416ce25b57fe9"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/request.json",
+      "sha256": "1787fc5672d60f152ebf0cf91a5f677792cc25fd3b3e23ff6a4e987ff62795f7"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/analysis_r08.json",
+      "sha256": "d3c2419468807948521587d242daacda985c5901cc249f6d85f87c2b0fbaa099"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/evaluation_bridge.log",
+      "sha256": "ad5e91e21cf816ec2221bdf8c07bd102649265ca77685c0f97a38de056ce1a0b"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/bt_navigator.log",
+      "sha256": "651bdbe630d2ac1942c3e8a7415731c9f0f6d45140ef8cea4eab913055b136bb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/raw_bridge.log",
+      "sha256": "c6d045be9b72146e7c5b598f18887dc6a4629833bce09be2abf0c6f2ce8a41af"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/fanout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/server.log",
+      "sha256": "2d76a2eee358ca367cb6a3986381c2515cbebe6201944e16a857900d42b215fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/bt.json",
+      "sha256": "7757daeb46b5ab9ff5d4223d73478776fbab72331b3ff5fbe2ca8458900855c8"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/global_manager.log",
+      "sha256": "9d6eb7dc3adf67cc74fa099201d719dbcac70f2406d7458c307d72b6d097a09a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/lifecycle_manager.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/runtime.json",
+      "sha256": "c7a636d8018eb89d2bc997cc3d7471ce10800a4f4d79e654a144c01879bdf1f9"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/odom_output.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/reference.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/icp_gate.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mapping_inputs/cloud_5.700.npz",
+      "sha256": "189b3f8217f48aef03a0b6ec622b2f8c9eeddd99af18bd5acac92af6fcf025dd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mapping_inputs/frames.jsonl",
+      "sha256": "52d7be9e1f8374669a7493d8c8a4473978aae1d67c7187f32a6f9e34930f99bb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mapping_inputs/ready",
+      "sha256": "bfc1e7bc31bca16b85264f6c2997341bc09d33c8caebc6faa9e43653b0f90805"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mapping_inputs/cloud_10.800.npz",
+      "sha256": "4f45e4d2b429dab26a625e21439255d11559e44523ce699bc5af54cfdfaea269"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mapping_inputs/cloud_25.900.npz",
+      "sha256": "1e3534a3c5f0c07635e1cf9e480b34e2b2216d392262165e9494f9409db427e9"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mapping_inputs/cloud_15.800.npz",
+      "sha256": "30beaa482fc536e3b6cc956a9ffb16d518407d135a05ee02d42df224fc0b2a54"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mapping_inputs/cloud_31.000.npz",
+      "sha256": "3550c80a42dcd45ef4d7b4e4216437b8405114b94d023a353cd25adab3b2e376"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/mapping_inputs/cloud_20.800.npz",
+      "sha256": "caeecf61101960fabd8d144b5a9eaa975f3089a5414a6079fc95c6ed665f3f01"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/near/ready",
+      "sha256": "0cf50cc8516000b3a2eb7df68e15d3e62811479e0b6ee9a7f1543abf6621ea93"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/near/near.jsonl",
+      "sha256": "7d95b16138051d968a954f4af9f1792d9ff67dbdef4b48e056686bc1da7142ec"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/global_sources/ready",
+      "sha256": "2aded0c5f3e6a9e5c6a648c1063bda07ded539d751886cd7f2e7051c765f483d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/global_sources/sources.jsonl",
+      "sha256": "42c5564d9323dad6f4b58deede6bf9545295ed1eec569eb95d8cf2cd9aabd00d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/odom_output/ready",
+      "sha256": "2bbbc25148ac689449317a6e92e886a455dba271c08f41f03f1c6854e9afb7df"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/odom_output/result.json",
+      "sha256": "769b18d5127ddba62afb35b57466182a8aa7244605a31ab926ed358d1a511f3e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/cloud/ready",
+      "sha256": "8ab5ec63465886b654e635194cc2dcf09567cb2d0688532e40582257b762d1ed"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/cloud/geometry.jsonl",
+      "sha256": "0bb0d2b71d4ebeec5c402a677f0549eef1354e5cd1b11cce289dca807850a5b1"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/icp_motion_guess/ready",
+      "sha256": "afa4545274c6a1d1e4ee01063ff945672fe94c7d77de010a4c85c89c3801a717"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/generation_vision/ready",
+      "sha256": "dd8081fe29bca85b7ef4b082fa2fa5312227d20aaf19ddd1d83a642623dd49d3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/generation_vision/generation.jsonl",
+      "sha256": "cefabf0dd564fc6916461cdc193ca782062c5b736a24811d93f443458b0eb98e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/generation_vision/result.json",
+      "sha256": "2306ce387007f5498b5d8454cb6993585d49c6e9fcd8b1e4bd131b93c0814c09"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/evaluation/ready",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/evaluation/contacts.json",
+      "sha256": "75a1d06ba82056edf0c2e6626ce2303552fe2d2d770f9ad906a9e47f827968cd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/evaluation/truth.jsonl",
+      "sha256": "cd692007037ea86fc010d3ab06c91375a9848a732b4ba0dfd8d6d752dcf01696"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/diagnostics/ready",
+      "sha256": "1a9ad4f1a2e44fba965db99ce9e428c71d6f90696f168b1e06b9701c270e7017"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/diagnostics/costmap.jsonl",
+      "sha256": "65e995db7fccb47a5baa3210dd98503dc769f69d09d1cfed80714e54bbf596c0"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/diagnostics/terrain.jsonl",
+      "sha256": "4963e87d408e4ab94d5d16af421303c4819ea5ec21cb8e6b117ca65d6c331645"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/scene/vehicle.json",
+      "sha256": "0d897d20099d5e7c6684f31d4fb963cd5548ea04e771077f5b05f4d757335cdf"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/scene/icp.yaml",
+      "sha256": "0d9a2a604dbba7cb251ea5ee562e5bece8b21885823190499dae4eebd5baf749"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/scene/wheel_imu.yaml",
+      "sha256": "36a884b88c64b148248b33be902b67140d6135751cfc27b1cf48258272a9357a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/scene/sensor_manifest.json",
+      "sha256": "0b5cec500848f35ae7fdc3f89f103fdd1c575015d15e17bd8b4092d13bda4029"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/scene/assembly.json",
+      "sha256": "b5acb4effaafce4c005e1d37d15c94a6735b72c8bbc07dc7e09ceeaea665da3f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/scene/fused.yaml",
+      "sha256": "b19f26bd11896d1a60ded127748ed562e48a8a59eb3a83610f8e7e47f1c5fd1c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/scene/world.sdf",
+      "sha256": "174a3628e55a5d2ae51bea51f18b8938d8b5c69870bdb7fe3f24fd9404a55fd4"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/scene/fixture.json",
+      "sha256": "4731309229a1c256ec180c41593326442665c5e4094f3f339c62dc9cb40b27b9"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/generation_motion/ready",
+      "sha256": "dd8081fe29bca85b7ef4b082fa2fa5312227d20aaf19ddd1d83a642623dd49d3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/generation_motion/generation.jsonl",
+      "sha256": "f463a215d4c5293474b338ccd9f57055700a8fd8e3c0f7cde8fa715a0160e573"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/generation_motion/result.json",
+      "sha256": "536b1eb30c72d8aa52c9d1488c4025a68b95a795b807174b8dedb026ae3ae1d3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/quality/ready",
+      "sha256": "30220806326997db5d34d2eedec24b4839d3b85ca001e09394928cf1c38cc564"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/quality/live.json",
+      "sha256": "6d09f0febb338f6847a3166324f7cb552a918cdaa5a204c7a383c9aa8bf92f3f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/quality/evidence.jsonl",
+      "sha256": "b673f03882781924f064450edfce2c3944aa5b3977e26b27a2df6761dd647bb0"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/quality/result.json",
+      "sha256": "1abc81b2c413d069c161891437d2bfedec59814e32b95b68b3bed788235725a1"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/risk/ready",
+      "sha256": "092fa7ce4173f6620339b2adf408d4b2ac42cc7f3fe8339b7755dc709c86da7a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/risk/live.json",
+      "sha256": "a29e1a5b6419ce2521c72c97593a699cf529e3be06323c81db7cc2fca8c8520b"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/risk/risk.jsonl",
+      "sha256": "0c1d083cdb58b023523175d6bc3f84a91e3b738cf14460c103c622815c80a65a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/icp_gate/ready",
+      "sha256": "643b83b3028572ea5779eb6c0240c98edc423c11dc0f8e2a77b6c6bd6b4fd2be"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/icp_gate/quality.jsonl",
+      "sha256": "66693447c513fb11b8624bc93ef778abf3467e19fcf80c3a56bbb9a756bd10ac"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/inputs/ready",
+      "sha256": "42cd1f1e4f0016702b5290e549074505306fb8c97f6c546683547fd9fc0eb331"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/inputs/inputs.jsonl",
+      "sha256": "34a9c77965e486443550e6a6d3ea311f7620f6c05d1ea1d622389d07c2e9813d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/inputs/result.json",
+      "sha256": "6705aad642b41d173e010cb2f750bcf51f575bcb8af0998a08eff52f260652b2"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/input_adapter.py",
+      "sha256": "ee9943638ea6a70682f875663fa1e66cbb1cd01670decfb182a61bbcbcdb2048"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/adaptation.json",
+      "sha256": "57df5c1126dd083cb8b386de8cfa0a91e55e326806a908cc15aca0f4e0416a56"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/adapter.py",
+      "sha256": "14de986abb943fb6f16d800335c634450b6d6d9ddde204f7cad38a299a3a99cb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/fanout.py",
+      "sha256": "4b92b9595a078be8f33afa39ed5a3178e766fca8fac00cf9051bf7d8e9494417"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/cloud_filter.py",
+      "sha256": "6bf765842f361cc9dadf35665f5f86605107dda3c2fc925f707ed82e41a53b8f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/icp_gate.py",
+      "sha256": "860cbc67ee367d962dd0ceda43ba984df223cb2b93a7febc7c8a7a817e8b47c7"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/common.py",
+      "sha256": "b2b7c2d023298548f5a2cb9b023e496156c9232504a51677b93848f22b2efc60"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/quality.py",
+      "sha256": "cdbbb71d960b27c1c7de3e635d58d6d11a9492c22ad005b1353069a5a2d08bfb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/regional_math.py",
+      "sha256": "55baf00b8adabbe7a1541f5cbb64ca43ded67f930a8fa11041f156852c6de93a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/overlay/preprocessor.py",
+      "sha256": "4166b4b4d4570e32e2327ab1f7ce2fb35ec15faf5644d7ea050f44ccdd624396"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/control/gate.jsonl",
+      "sha256": "02bc67fa633304cc2242444557eb7215fa3b312b308ec1d59c7691b1913be442"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/control/ready",
+      "sha256": "fe3a824c3a3f4cdcb9b6d001389e9c98e7c21f613a412ceb9cae1404ee01dbab"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/reference/ready",
+      "sha256": "05a1cb3b7cfa626d12f3a6bd908e116efc7d46b4274f722beb09433f55d77b37"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/reference/live.json",
+      "sha256": "db4c6dc12d9941a4d34295fe2dd24350d2c6900f301c440784e20e7e52071031"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/reference/reference.jsonl",
+      "sha256": "391708debbf2ebfe8ba27c90db3168018071f531f0a0d9f3264f39b0c5ee339a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/tracking/ready",
+      "sha256": "de82b8c4e506804276487059eea2b4f081ced8ef4735271bb964b4abb50e6dcb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/tracking/live.json",
+      "sha256": "4067bca27d2c567918dd0463c96eb5a3d793afde7866b2555ba901979374110c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_063829_532536/tracking/tracks.jsonl",
+      "sha256": "d3851a06b53946a9d6f9131f3587177c208de3bc243d7412762ba80bff52ebcc"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/diagnostics_r08.py",
+      "sha256": "8792f43775d814b89083e01a1c7bd2de5cda34a8c94321778235994bbc93c2e2"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/analyze_r08.py",
+      "sha256": "fbd83c1d60928827e1cc75b0f193a7516de5d92d530fa541c82b05e6425d1ceb"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/startup_r08.py",
+      "sha256": "0840c673601c3a34309b36bb2b33845f2a7fad1b68158957cce02c6e51f6869e"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/runtime_r08.py",
+      "sha256": "b24518b1323437771dff6b8e7ba5b924159c96ae16fc743b884f454ae0084d8b"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/control_r08.py",
+      "sha256": "b13cd730a66f9cf15cfe8c7ed473d4c1b7884721a6776a64f25efa01824edf97"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/tracker_r08.py",
+      "sha256": "1ca1e5fbe89f5a343cb2c869a6951eb0de783466837f668a0c06c7b84f801510"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/regional_r08.py",
+      "sha256": "ed2d6f2a5f12d008e2c097f4bd1691bcb08b27d67ed49b842e39c5fb87e34f95"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/mission_r08.py",
+      "sha256": "1ab08eb2a559e1168e41eac0132d321e6e9db321e823a9243272a7527834c32e"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/path_envelope_r08.py",
+      "sha256": "e46a59d630bd8b1c33e1e830eed52300bb3066d87f6b90a284bb7e97c343a1a5"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/prepare_r08.py",
+      "sha256": "772de3e4b05039784d71d9c27e087e3fb0d3940728d76204488d20bece005891"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/stage_r08.py",
+      "sha256": "f20ea8213eb46a453af799974bb2a26d723914e79cb23d621b1741cf2dcad9c8"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/scene_r08.py",
+      "sha256": "d3851a877ae42d02cdb8398489bb8225056ca3db233d11cdb5d8c49c9c1fd41b"
+    },
+    {
+      "path": "docs/three_tasks/R08/TECHNICAL.md",
+      "sha256": "6deb30c4be266cad8c9ea63b71d4817cb3d1cf2e4f20fc5e627e689befbdc471"
+    },
+    {
+      "path": "docs/three_tasks/R08/CODE.md",
+      "sha256": "ed158f4c4fd33bac11d78128293c4dc9ef5e9cc4f9f35e72b4d565475cff2ec8"
+    },
+    {
+      "path": "docs/three_tasks/R08/MANUAL.md",
+      "sha256": "56d1fa5f6064921736dfdd41756c7fae618cf2a096f4bf1ccba377436a67153f"
+    },
+    {
+      "path": "docs/three_tasks/R08/RESULTS.md",
+      "sha256": "b0a79423215893309770918d56fdd2152880bcf42805a9c9ae211c493ebb35f3"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/tests/test_startup_r08.py",
+      "sha256": "230c6e1bc29ed59ab535365ed8e4b83fc3875b5348355b8b0d24d02295afed00"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/tests/test_envelope_r08.py",
+      "sha256": "1e0a5a993638bd18cc98d0c8579bf52b8b0b444192ed7aca27b3242937c7a8a7"
+    }
+  ],
+  "next_step": null,
+  "formal_credit": false,
+  "original_S17": "PARTIAL",
+  "original_S18": "PARTIAL",
+  "created_utc": "20261114_064038_984425"
+}

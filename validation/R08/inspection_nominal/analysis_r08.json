@@ -1,0 +1,66 @@
+{
+  "passed": false,
+  "checks": {
+    "runtime_clean": false,
+    "original_database_unchanged": true,
+    "selected_route_completed": false,
+    "no_unexpected_contact": true,
+    "map_rmse_under_15cm": true,
+    "cross_track_under_50cm": true,
+    "measured_progress": false,
+    "stopped": true,
+    "unique_actuator": true,
+    "no_tool_owner": true,
+    "unique_tf": true,
+    "source_binding": true,
+    "task_version": true
+  },
+  "case": "nominal",
+  "task_result": {
+    "passed": false,
+    "error": "RuntimeError('LIVE_DETOUR_INTEGRATION_PENDING')",
+    "manual_reason": "LIVE_DETOUR_INTEGRATION_PENDING",
+    "t": 44.412,
+    "selected_length_m": 2.999311146696442,
+    "original_length_m": 88.48099013627925,
+    "full_route_selected": false,
+    "remaining_original_m": 87.28126579549225,
+    "route_index": 12,
+    "final_gate": {
+      "t": 44.4,
+      "allowed": false,
+      "mode": "STOP",
+      "v": 0.0,
+      "w": 0.0,
+      "reasons": [
+        "NAV_COMMAND_STALE",
+        "OBSTRUCTED"
+      ],
+      "stopped": true,
+      "tool_stopped": true,
+      "nav_idle": true,
+      "progress_m": 1.2403498715346477
+    },
+    "ownership": {
+      "/tf": [
+        "s05_local_odometry",
+        "s08_global_pose_manager"
+      ],
+      "/s03/actuator/request": [
+        "r08_actuator_gate"
+      ],
+      "/s10/tool/command": []
+    },
+    "wall_seconds": 116.80185752399848,
+    "scope": "Inspection navigation; no spray/mow credit"
+  },
+  "map_xy_rmse_m": 0.01970465438763608,
+  "maximum_cross_track_m": 0.005100900643670318,
+  "maximum_actual_progress_m": 1.177904480864324,
+  "follow_decisions": 0,
+  "minimum_observed_follow_gap_m": null,
+  "unexpected_contacts": {},
+  "full_connector_passed": false,
+  "formal_credit": false,
+  "scope": "Selected inspection route only; full R08 additionally requires all declared behavior cases"
+}

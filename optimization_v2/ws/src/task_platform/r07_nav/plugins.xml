@@ -1,0 +1,1 @@
+<library path="r07_exact_goal"><class name="r07::ExactGoalPlanner" type="r07::ExactGoalPlanner" base_class_type="nav2_core::GlobalPlanner"><description>Smac2D with collision checked exact service terminal</description></class></library>

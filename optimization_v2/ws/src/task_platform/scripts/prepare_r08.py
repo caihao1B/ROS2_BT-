@@ -1,0 +1,15 @@
+"""Independent inspection contract; R07 remains immutable."""
+from common import *
+import copy,math,yaml,shutil
+
+def build():
+ require('R07');out=edition('R08');out.mkdir(parents=True,exist_ok=True);cfg=copy.deepcopy(read(edition('R07')/'mission.json'));v=read(edition('R04')/'vehicles/inspection.json');rig=read(edition('R05')/'inspection/sensors.json');route=read(edition('R03')/'mission.json')['task_plans']['inspection'][0]
+ poses=route['segments'][0]['poses'];length=sum(math.dist(a[:2],b[:2]) for a,b in zip(poses,poses[1:]));cfg.update(schema='R08-INSPECTION/1',task='inspection',vehicle=v,rig=rig,clusters=[],route_world=poses,route_map=[[x-28,y-14,h] for x,y,h in poses],original_route_length_m=length,tool_capability='ABSENT',startup_stability=dict(min_samples=5,min_span_s=.9,max_translation_spread_m=.06,max_yaw_spread_rad=.01,continuous_stable_s=1.,reject_prehint_capture=True),task_budget_s=1800.,speed_cap_mps=.4,navigation_controller='Native RPP / FollowPath',navigation_goal_xy_m=.12,point_path_policy='Follow original connector; cancel and await a fresh BT context before bounded replanning',current_unknown_clearance_policy='physical footprint only; padding is never treated as occupied',scope='Original complete connector retained; selected prefixes and leader fixture separately declared; no tool or work-credit publisher',qualification_required=['complete_original_connector','observed_leader_follow_stop_resume','observed_detour_or_bounded_manual_hold'])
+ cfg['near_sensor']['vertical']=64
+ cfg['near_sensor']['sampling_reason']='0.20 m mount: denser real vertical rays resolve measured forward ground gaps; no unknown clearing beyond current footprint'
+ cfg['near_sensor']['units']=[dict(name='front',xyz=[.284,0,.20],yaw=0.),dict(name='rear',xyz=[-.284,0,.20],yaw=math.pi),dict(name='left',xyz=[0,.245,.20],yaw=math.pi/2),dict(name='right',xyz=[0,-.245,.20],yaw=-math.pi/2)]
+ cfg.pop('version',None);cfg['version']=canonical(cfg);dump(out/'mission.json',cfg)
+ nav=yaml.safe_load((edition('R07')/'nav2.yaml').read_text());cc=nav['controller_server']['ros__parameters'];cc['controller_plugins']=['RPP'];cc['RPP'].update(desired_linear_vel=.4,lookahead_dist=.65,min_lookahead_dist=.35,max_lookahead_dist=.9);cc['goal'].update(xy_goal_tolerance=.12,stateful=False)
+ for name in ['local_costmap','global_costmap']:nav[name][name]['ros__parameters']['footprint']=str(v['footprint'])
+ nav['bt_navigator']['ros__parameters']['default_nav_to_pose_bt_xml']=str(edition('R07')/'navigate.xml');(out/'nav2.yaml').write_text(yaml.safe_dump(nav,sort_keys=False))
+ terrain=read(edition('R07')/'terrain.json');m=rig['self_filter'];terrain.update(lidar_xyz=rig['lidar']['xyz'],self_mask=[m['x_min'],m['x_max'],m['y_min'],m['y_max']],self_z_max=m['z_max']);terrain['profiles']['diff'].update(footprint=v['footprint'],clearance_m=.065,tool_width_m=0.,vehicle_config_sha256=v['config_hash']);dump(out/'terrain.json',terrain);dump(out/'manager.json',read(edition('R07')/'manager.json'));return out

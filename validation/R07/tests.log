@@ -1,0 +1,6 @@
+...............
+----------------------------------------------------------------------
+Ran 15 tests in 15.499s
+
+OK
+{"real_planner_plugin": true, "straight_samples": 62, "max_gap_m": 0.049673213211175966, "exact_endpoint": [1.03, 0.02], "blocked_status": 6}

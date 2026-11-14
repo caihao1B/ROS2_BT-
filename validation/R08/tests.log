@@ -1,0 +1,17 @@
+test_clearance_margin_is_not_occupied (test_envelope_r08.ObservedEnvelope.test_clearance_margin_is_not_occupied) ... ok
+test_current_occupied_footprint_unknown_only (test_envelope_r08.ObservedEnvelope.test_current_occupied_footprint_unknown_only) ... ok
+test_known_continuation (test_envelope_r08.ObservedEnvelope.test_known_continuation) ... ok
+test_measured_lethal_inside_current_never_cleared (test_envelope_r08.ObservedEnvelope.test_measured_lethal_inside_current_never_cleared) ... ok
+test_pose_rotation (test_envelope_r08.ObservedEnvelope.test_pose_rotation) ... ok
+test_unknown_future_never_admitted (test_envelope_r08.ObservedEnvelope.test_unknown_future_never_admitted) ... ok
+test_angular_drift_rejected (test_startup_r08.StartupStability.test_angular_drift_rejected) ... ok
+test_nonfinite_rejected (test_startup_r08.StartupStability.test_nonfinite_rejected) ... ok
+test_short_window_rejected (test_startup_r08.StartupStability.test_short_window_rejected) ... ok
+test_slow_translation_drift_rejected (test_startup_r08.StartupStability.test_slow_translation_drift_rejected) ... ok
+test_stable_observed_window (test_startup_r08.StartupStability.test_stable_observed_window) ... ok
+test_wrapped_heading_not_false_jump (test_startup_r08.StartupStability.test_wrapped_heading_not_false_jump) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK

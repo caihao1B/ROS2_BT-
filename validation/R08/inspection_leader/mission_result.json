@@ -1,0 +1,37 @@
+{
+  "passed": false,
+  "error": "RuntimeError('LIVE_DETOUR_INTEGRATION_PENDING')",
+  "manual_reason": "LIVE_DETOUR_INTEGRATION_PENDING",
+  "t": 30.784,
+  "selected_length_m": 14.996622437502234,
+  "original_length_m": 88.48099013627925,
+  "full_route_selected": false,
+  "remaining_original_m": 87.38124282283071,
+  "route_index": 11,
+  "final_gate": {
+    "t": 30.78,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "OBSTRUCTED"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 1.1626620718640173
+  },
+  "ownership": {
+    "/tf": [
+      "s05_local_odometry",
+      "s08_global_pose_manager"
+    ],
+    "/s03/actuator/request": [
+      "r08_actuator_gate"
+    ],
+    "/s10/tool/command": []
+  },
+  "wall_seconds": 81.43921603700437,
+  "scope": "Inspection navigation; no spray/mow credit"
+}
