@@ -1,0 +1,129 @@
+{
+  "schema": "R02-VEHICLE/1",
+  "id": "ackermann",
+  "revision": "r04.1",
+  "kind": "ackermann",
+  "body": {
+    "size": [
+      2.78,
+      2.77,
+      0.32
+    ],
+    "center": [
+      0.819,
+      0,
+      0.978218021463
+    ],
+    "mass": 974.9
+  },
+  "wheel": {
+    "radius": 0.33150052146263664,
+    "width": 0.167956,
+    "mass": 49.0043,
+    "track": 1.8,
+    "friction": 1.0,
+    "lateral_friction": 1.0,
+    "effort_Nm": 600
+  },
+  "wheelbase": 1.638,
+  "calibration": {
+    "effective_track_m": 1.8,
+    "drive_track_m": 1.8,
+    "scope": "initial geometric values; physics calibration evaluated separately",
+    "gain_from_R02": 1.0,
+    "source_analysis_sha256": "0596c4a44a76f839fe679af4659e8b6d371f2e6106078b2275fc5e2e25006697"
+  },
+  "footprint": [
+    [
+      -0.571,
+      -1.385
+    ],
+    [
+      2.2089999999999996,
+      -1.385
+    ],
+    [
+      2.2089999999999996,
+      1.385
+    ],
+    [
+      -0.571,
+      1.385
+    ]
+  ],
+  "steering": {
+    "joint_limit_rad": 0.7853981633974483,
+    "rate_rad_s": 0.6,
+    "effort_Nm": 600,
+    "gain": 6.0,
+    "max_curvature": 0.33351800356763767
+  },
+  "limits": {
+    "max_speed": 1.0,
+    "reverse": 0.3,
+    "yaw_rate": 0.8,
+    "acceleration": 0.5,
+    "deceleration": 0.8,
+    "yaw_acceleration": 0.8
+  },
+  "qualification_candidates": {
+    "work_mps": 0.5,
+    "transit_mps": [
+      0.3,
+      0.6,
+      0.8
+    ],
+    "connector_mps": 0.6,
+    "slope_mps": 0.3,
+    "slope_deg": 5
+  },
+  "encoder": {
+    "ticks_per_revolution": 4096,
+    "steering_resolution_rad": 0.001
+  },
+  "safety": {
+    "command_wall_s": 0.4,
+    "command_sim_s": 0.2,
+    "feedback_wall_s": 0.5,
+    "actuator_wall_s": 0.35,
+    "actuator_sim_s": 0.35,
+    "clock_wall_s": 0.2,
+    "stopped_v_mps": 0.01,
+    "stopped_w_rad_s": 0.02,
+    "stop_delay_s": 2.0,
+    "alignment_error_rad": 0.05,
+    "alignment_speed_mps": 0.1,
+    "steering_tracking_timeout_s": 3.0
+  },
+  "task_id": "mowing",
+  "label": "Project Dino front-Ackermann primitive adaptation",
+  "tool": {
+    "kind": "mower",
+    "mount_xyz": [
+      0.819,
+      0,
+      0.16
+    ],
+    "mass_kg": 10,
+    "collision_size": [
+      0.85,
+      1.6,
+      0.12
+    ],
+    "effective_width_m": 1.6,
+    "dwell_seconds": 0.0
+  },
+  "physical_contract": {
+    "reference_ground_clearance_m": 0.818218021463,
+    "body_frame": "rear axle ground projection",
+    "declared_outer_length_m": 2.78,
+    "declared_outer_width_m": 2.77,
+    "nominal_bicycle_radius_m": 2.998338888164996,
+    "spin_in_place_allowed": false,
+    "hardware_equivalence": false,
+    "geometry_source": "local Dino SDF",
+    "dynamics_scope": "Gazebo rigid contact + bounded joint velocity actuator; not hardware torque/power validation"
+  },
+  "config_hash": "52410d437f633b24dc1e2da3c06cd9a6727071cb7e2f2a08682cdd996b64c8ce",
+  "upstream_vehicle_hash": "dc94cc49d65dee330d153b60ee21bb8deef5989eb63ca2a24f3c6cbba886b984"
+}

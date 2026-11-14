@@ -1,0 +1,65 @@
+{
+  "error": null,
+  "forced": [],
+  "processes": [
+    {
+      "role": "server",
+      "pid": 115655,
+      "args": [
+        "gz",
+        "sim",
+        "--force-version",
+        "8",
+        "-s",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/scene/world.sdf"
+      ],
+      "exit": 0
+    },
+    {
+      "role": "online_bridge",
+      "pid": 115670,
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+        "/s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg"
+      ],
+      "exit": 0
+    },
+    {
+      "role": "evaluation_bridge",
+      "pid": 115671,
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts"
+      ],
+      "exit": 0
+    },
+    {
+      "role": "evaluator",
+      "pid": 115672,
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/evaluation"
+      ],
+      "exit": 0
+    },
+    {
+      "role": "driver",
+      "pid": 115673,
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/driver_r02.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207"
+      ],
+      "exit": 0
+    }
+  ],
+  "wall_seconds": 90.19295694900211,
+  "session": "spray_20261114_025512_076207",
+  "passed": true
+}

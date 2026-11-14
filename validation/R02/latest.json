@@ -1,0 +1,603 @@
+{
+  "stage": "R02",
+  "automated_status": "PASS",
+  "summary": {
+    "passed": true,
+    "tests_exit": 0,
+    "tests": 6,
+    "vehicles": {
+      "spray": {
+        "task": "spray",
+        "passed": true,
+        "errors": [],
+        "phases": {
+          "straight": {
+            "samples": 195,
+            "speed_mps": 0.3999999999999532,
+            "yaw_rate_rad_s": 4.3133214956100785e-19,
+            "travel_m": 1.4919999999997358,
+            "yaw_change_rad": 9.960483053204929e-19,
+            "signed_forward_m": 1.4919999999997358
+          },
+          "left": {
+            "samples": 1100,
+            "speed_mps": 0.405726608562482,
+            "yaw_rate_rad_s": 0.2653511653468937,
+            "travel_m": 8.816330602345907,
+            "yaw_change_rad": 5.7659595626203215,
+            "center": [
+              2.896937915279626,
+              1.530821742983922
+            ],
+            "radius_m": 1.5290203698687233,
+            "radial_rmse_m": 1.532926946201726e-05,
+            "expected_radius_m": 1.2499999999999998,
+            "relative_radius_error": 0.22321629589497882
+          },
+          "right": {
+            "samples": 1098,
+            "speed_mps": 0.40572660856044146,
+            "yaw_rate_rad_s": -0.2653511653460145,
+            "travel_m": 8.820322149601479,
+            "yaw_change_rad": -5.768486876905702,
+            "center": [
+              2.4743826307852492,
+              -1.497722461931892
+            ],
+            "radius_m": 1.529020842772228,
+            "radial_rmse_m": 2.158231359172301e-05,
+            "expected_radius_m": 1.2499999999999998,
+            "relative_radius_error": 0.22321667421778257
+          },
+          "reverse": {
+            "samples": 191,
+            "speed_mps": 0.19999999999993417,
+            "yaw_rate_rad_s": 3.1147579957971994e-09,
+            "travel_m": 0.7439999999997525,
+            "yaw_change_rad": 1.15868997509227e-08,
+            "signed_forward_m": -0.7439999999997524
+          },
+          "spin": {
+            "samples": 140,
+            "speed_mps": 4.675840454883605e-10,
+            "yaw_rate_rad_s": 0.41461156263196847,
+            "travel_m": 1.272760773978e-09,
+            "yaw_change_rad": 1.128572673484479
+          }
+        },
+        "stopped": true,
+        "vehicle_hash": "14e85e0201bd6e3e648a35bde854871c76f3a6b57c0bb627db9c04ba4aa9864d",
+        "sim_seconds": 86.167,
+        "truth_evaluation_only": true
+      },
+      "inspection": {
+        "task": "inspection",
+        "passed": true,
+        "errors": [],
+        "phases": {
+          "straight": {
+            "samples": 195,
+            "speed_mps": 0.39999999999817687,
+            "yaw_rate_rad_s": 2.2752872633007853e-19,
+            "travel_m": 1.491999999993311,
+            "yaw_change_rad": 8.065848453432772e-19,
+            "signed_forward_m": 1.491999999993311
+          },
+          "left": {
+            "samples": 1100,
+            "speed_mps": 0.4017895389401681,
+            "yaw_rate_rad_s": 0.28919971627388635,
+            "travel_m": 8.730886939863925,
+            "yaw_change_rad": 6.284309832385339,
+            "center": [
+              2.385942534878325,
+              1.3942169729475213
+            ],
+            "radius_m": 1.389317058388375,
+            "radial_rmse_m": 4.560682396650057e-10,
+            "expected_radius_m": 1.2499999999999998,
+            "relative_radius_error": 0.11145364671070013
+          },
+          "right": {
+            "samples": 1098,
+            "speed_mps": 0.4017895389389388,
+            "yaw_rate_rad_s": -0.289199716273034,
+            "travel_m": 8.734904783901964,
+            "yaw_change_rad": -6.287201831951945,
+            "center": [
+              4.027022820515283,
+              -0.8474195469770187
+            ],
+            "radius_m": 1.389317058064097,
+            "radial_rmse_m": 1.3431287657028696e-10,
+            "expected_radius_m": 1.2499999999999998,
+            "relative_radius_error": 0.11145364645127787
+          },
+          "reverse": {
+            "samples": 191,
+            "speed_mps": 0.1999999999989932,
+            "yaw_rate_rad_s": 0.0,
+            "travel_m": 0.7439999999961067,
+            "yaw_change_rad": 0.0,
+            "signed_forward_m": -0.7439999999961066
+          },
+          "spin": {
+            "samples": 140,
+            "speed_mps": 0.0,
+            "yaw_rate_rad_s": 0.4518748957303764,
+            "travel_m": 0.0,
+            "yaw_change_rad": 1.2300034661788117
+          }
+        },
+        "stopped": true,
+        "vehicle_hash": "e08e7524017e74dadada05878bad517ea90f94b8305e0d99612e46deca099995",
+        "sim_seconds": 86.167,
+        "truth_evaluation_only": true
+      },
+      "mowing": {
+        "task": "mowing",
+        "passed": true,
+        "errors": [],
+        "phases": {
+          "straight": {
+            "samples": 195,
+            "speed_mps": 0.39999999999218167,
+            "yaw_rate_rad_s": 1.344437108128142e-19,
+            "travel_m": 1.491999999971021,
+            "yaw_change_rad": 4.985050917828946e-19,
+            "signed_forward_m": 1.491999999971021
+          },
+          "left": {
+            "samples": 1504,
+            "speed_mps": 0.5873473762330124,
+            "yaw_rate_rad_s": 0.1958910486510354,
+            "travel_m": 17.46478874165999,
+            "yaw_change_rad": 5.824817450703851,
+            "center": [
+              2.3872496946493516,
+              2.998584151402273
+            ],
+            "radius_m": 2.9983389083152963,
+            "radial_rmse_m": 4.284514283488636e-08,
+            "expected_radius_m": 2.998338888164996,
+            "relative_radius_error": 6.7204879439231036e-09
+          },
+          "right": {
+            "samples": 1511,
+            "speed_mps": 0.5873473762331386,
+            "yaw_rate_rad_s": -0.19589104865106932,
+            "travel_m": 17.340615295360926,
+            "yaw_change_rad": -5.783193049443759,
+            "center": [
+              1.3034931717570917,
+              -2.9003147015178152
+            ],
+            "radius_m": 2.998339129138735,
+            "radial_rmse_m": 1.5383756072037848e-06,
+            "expected_radius_m": 2.998338888164996,
+            "relative_radius_error": 8.036908027975187e-08
+          },
+          "reverse": {
+            "samples": 191,
+            "speed_mps": 0.19999999999607332,
+            "yaw_rate_rad_s": 1.4665669994206882e-10,
+            "travel_m": 0.7437999999748441,
+            "yaw_change_rad": 1.7100525569746505e-06,
+            "signed_forward_m": -0.7437999999738273
+          },
+          "spin": {
+            "samples": 141,
+            "speed_mps": 0.0,
+            "yaw_rate_rad_s": 0.0,
+            "travel_m": 0.0,
+            "yaw_change_rad": 0.0
+          }
+        },
+        "stopped": true,
+        "vehicle_hash": "dc94cc49d65dee330d153b60ee21bb8deef5989eb63ca2a24f3c6cbba886b984",
+        "sim_seconds": 102.162,
+        "truth_evaluation_only": true
+      }
+    },
+    "static": {
+      "spray": {
+        "passed": true,
+        "road_samples": 161,
+        "outside_or_obstacle_samples": 0,
+        "road_min_footprint_clearance_m": 2.652707615605386,
+        "road_max_centerline_curvature": 0.09220144377255413,
+        "turn_outer_radius_m": 0.5977039400907442,
+        "minimum_full_turn_diameter_m": 1.1954078801814885,
+        "turn_room_exists_in_zone_B": true,
+        "full_strip_plan_accepted": false
+      },
+      "inspection": {
+        "passed": true,
+        "road_samples": 161,
+        "outside_or_obstacle_samples": 0,
+        "road_min_footprint_clearance_m": 2.7806710425410666,
+        "road_max_centerline_curvature": 0.09220144377255413,
+        "turn_outer_radius_m": 0.33277770358003256,
+        "minimum_full_turn_diameter_m": 0.6655554071600651,
+        "turn_room_exists_in_zone_B": true,
+        "full_strip_plan_accepted": false
+      },
+      "mowing": {
+        "passed": true,
+        "road_samples": 161,
+        "outside_or_obstacle_samples": 0,
+        "road_min_footprint_clearance_m": 1.4167826778691743,
+        "road_max_centerline_curvature": 0.09220144377255413,
+        "turn_outer_radius_m": 4.908496797238391,
+        "minimum_full_turn_diameter_m": 9.816993594476783,
+        "turn_room_exists_in_zone_B": true,
+        "full_strip_plan_accepted": false
+      }
+    },
+    "scope": "Primitive physical geometry, turning, forward/reverse and stop; navigation and work not accepted here",
+    "next": "R03 task routes and headlands"
+  },
+  "artifacts": [
+    {
+      "path": "optimization_v2/three_tasks/editions/R02/references.json",
+      "sha256": "3e15762821ee738b86c210aa9403818b488baf763bd119db3dfd1b0c570e5879"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R02/models/spray.sdf",
+      "sha256": "b4be704a2889d755f49b19d0274877241ade19cbef6916cddd436dc24b631cde"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R02/models/mowing.sdf",
+      "sha256": "5bd5e395002650b1aa84c90f72499561ea46849a6602f14ea1b5b144feee477e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R02/models/inspection.sdf",
+      "sha256": "3ab8be920abeceb7e7c4520fed6a70267ec1277bee9fd71bc73794e1ebdefa8d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R02/vehicles/inspection.json",
+      "sha256": "adbcb2201276103575b786d0abcd9582a77809d812c1d2924df870983cc95e8e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R02/vehicles/spray.json",
+      "sha256": "59e660c9ecf4542cb61269d0b0b765c3a132a17aba98851a97b9140abc1ad760"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R02/vehicles/mowing.json",
+      "sha256": "34db13d8045c32c638cf91114a66a3c70c33ebf622f771ff2448081cf363dfed"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/static_contracts.json",
+      "sha256": "2bcb1d0e6ac61a14938145ee5e41596def32304c36ba56ba9394a671435767a2"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/tests.log",
+      "sha256": "ce058feb787dc7f6ccc85683cb9a5bb93cef403601c4432bb2957b716cf08009"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/report.html",
+      "sha256": "36cacdf6e82889d3ffb5a74b27f902658c305364833373a0b8eef374235e15f7"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/dimensions.png",
+      "sha256": "7250f658f5905fc64951bec05102ce5a6ea96887d6e9d76dee4dac44b0926a50"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/trajectories.png",
+      "sha256": "f1d948caace758678c03ddb2a9d75e54c9667cc5e204ae940417bc91e00f7ad7"
+    },
+    {
+      "path": "optimization_v2/three_tasks/build/platform/libr02_drive.so",
+      "sha256": "560a1a614eeedc16b493ffff4ce472fff27d7650a0b8844153a5bebdd1eb9948"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/latest.json",
+      "sha256": "8c3ed687da6a7f6f7f94ccf57dec2317e410a30e922fa82d3cfd2520f2ff3983"
+    },
+    {
+      "path": "optimization_v2/assets/worlds/irregular_farm.sdf",
+      "sha256": "d43c5014ecce50ee0ba1aa8207159d398224c9c2277f8a75108835a2be45ffc8"
+    },
+    {
+      "path": "ros2_ws/src/dino_description/models/dino/model.sdf",
+      "sha256": "6bab169fb8c4c8826b71a6a5919defcd54d0bdb776f3ec4c2832a32a9176fc64"
+    },
+    {
+      "path": "optimization_v2/ws/src/robot_description/scripts/generate.py",
+      "sha256": "22dca0363eabb5b8e9498772fe570fa8745cb51442d7164d5b18e6c7d53b2eca"
+    },
+    {
+      "path": "optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
+      "sha256": "ae741550f4d74cad9dbae480106cf9d3af65e197166f8236db2a33ae698b02a5"
+    },
+    {
+      "path": "optimization_v2/maps/prior/terrain_coarse.geojson",
+      "sha256": "17de23e84bba66954fdd13b7711e6e04cd7c2faf733d29852599221e493a3178"
+    },
+    {
+      "path": "optimization_v2/maps/prior/workspaces.geojson",
+      "sha256": "2e3f8af626bfd169047e1ad367e7862761cd8cebbb4d156426458d11b285f5ea"
+    },
+    {
+      "path": "optimization_v2/maps/prior/connector.geojson",
+      "sha256": "52732dfe82324ba878870f9ff7e4ca8142f24e16fc2bfde29424eafec39eecae"
+    },
+    {
+      "path": "optimization_v2/maps/prior/permanent.geojson",
+      "sha256": "26acfb478963d1f0d48dd6a1bbf4dd9246646bdd1daf79b48ac726afaf2ecefc"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/spec.json",
+      "sha256": "c6384600c06fe5d28ff8dcc6f1cc7ad7c5c21fe9edbab25a2dacc4b12ac26fc5"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/evaluator.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/driver_ready",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/analysis.json",
+      "sha256": "83f126069e231d0c5ff96b32f90f3f47aa72d389b83382e6c9fe0e46eb77f7fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/driver.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/online_bridge.log",
+      "sha256": "71ae7811183f2fe4898ebe26387ba69e4641456a468205210ab813a8814dc20b"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/online.jsonl",
+      "sha256": "070a274d5a2dfc90b29237a77f7e04c99c0341cec8f8a068a1c13cdac07631c2"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/shutdown_compat.json",
+      "sha256": "55fa16ce515680bf6e95f92be1f9de215f80f76229641977e7e09f1e264b1145"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/evaluation_bridge.log",
+      "sha256": "db83f782d8909d9bb69171fd975cc61d22b38f15c5555bb5f09719cc18b443d5"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/server.log",
+      "sha256": "2d76a2eee358ca367cb6a3986381c2515cbebe6201944e16a857900d42b215fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/runtime.json",
+      "sha256": "9995a178aea2ce5e5a8bec00c265d2cd70bbad9ad93313c938fd164be5c8487c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/driver_result.json",
+      "sha256": "bfdd79668f1a3d19077ebda6d0b35b7e12f9f38fa88b55e220be7f76b508fefe"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/evaluation/ready",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/evaluation/contacts.json",
+      "sha256": "dc95a43a2312578ad8563146e946a3f79178053e8b5feacb33d2c5a4ff1aec84"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/evaluation/truth.jsonl",
+      "sha256": "5d22f4369cd10fc07b95d2ef4d6a8c38222ce1d59b490d9f95c0c6013f4d354c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/scene/vehicle.json",
+      "sha256": "59e660c9ecf4542cb61269d0b0b765c3a132a17aba98851a97b9140abc1ad760"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/scene/world.sdf",
+      "sha256": "2bb02935b956174c9b660f1e7ad9b1fbd0dffeba01de5c3b25371ea6d7913995"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/spec.json",
+      "sha256": "fac097e236369ea66d07c6e9dd01fa3963ec229f0c0fbe25be461571d11d208d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/evaluator.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/driver_ready",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/analysis.json",
+      "sha256": "9cce55e779eabdac5da5530f69eadc6300c2494c0e251ce7a67f158503ff9f10"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/driver.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/online_bridge.log",
+      "sha256": "d124d5c6f713a0b977c60476af69abc4e2e966bd12b733f8a7cb7dcb4fb13d87"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/online.jsonl",
+      "sha256": "3ac9210b0c2108df76a586db0bceb8d0775064f9e06b67456d68a3cff531677e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/shutdown_compat.json",
+      "sha256": "55fa16ce515680bf6e95f92be1f9de215f80f76229641977e7e09f1e264b1145"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/evaluation_bridge.log",
+      "sha256": "fff450fb4d43b9c71d758b7ae0b61af5aa495c058c287976aa14efb87f44ac9d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/server.log",
+      "sha256": "2d76a2eee358ca367cb6a3986381c2515cbebe6201944e16a857900d42b215fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/runtime.json",
+      "sha256": "e782f503e519964ab66137494bfb088e0e1cb467d0ced94269a2d2b109458283"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/driver_result.json",
+      "sha256": "0a375ca9841ae967f4d721acdf6ee450d3dd3a5af1972f0c9bcb2c00bb9c6721"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/evaluation/ready",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/evaluation/contacts.json",
+      "sha256": "023476017d30711d207aae140ab4c098eb2203db2062880b81300f8217d8f7e7"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/evaluation/truth.jsonl",
+      "sha256": "87a1cf90246d582d112bd1489f548f650d855226baeaac35cd92d801cc9fa78a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/scene/vehicle.json",
+      "sha256": "adbcb2201276103575b786d0abcd9582a77809d812c1d2924df870983cc95e8e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/scene/world.sdf",
+      "sha256": "64dc0cda26b977612f94670cfaa1c88412118c4270acf80245a561dc66d40c7c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/spec.json",
+      "sha256": "b39192670aa5cf2dcd92286e59cfda79707dd1c569af14b1c85709a20c7c26c9"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/evaluator.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/driver_ready",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/analysis.json",
+      "sha256": "0596c4a44a76f839fe679af4659e8b6d371f2e6106078b2275fc5e2e25006697"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/driver.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/online_bridge.log",
+      "sha256": "f7395fa8181a7b41c9b3fce159ffa06bc9381d91befb62e2db53d89b27ba36ab"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/online.jsonl",
+      "sha256": "39befcae88446a232596f52b0efeca0d5ca3b030b25188743e1c5de6aa93644f"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/shutdown_compat.json",
+      "sha256": "55fa16ce515680bf6e95f92be1f9de215f80f76229641977e7e09f1e264b1145"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/evaluation_bridge.log",
+      "sha256": "7224780b4f43782ce11179c8951b3c97cbfb46e9ebc1a432b39e9cae81f6712b"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/server.log",
+      "sha256": "2d76a2eee358ca367cb6a3986381c2515cbebe6201944e16a857900d42b215fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/runtime.json",
+      "sha256": "bb274b11ba1bb56f45dcd53fd8ce16be0d2fb8f8141d2714930d1ffdf191c134"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/driver_result.json",
+      "sha256": "6f361240f1f4e28edc0ed2b6a8d283662653f14e17245a831cf9713599f9e2f2"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/evaluation/ready",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/evaluation/contacts.json",
+      "sha256": "ab9ef21f421999a93864b05706d4e234355baa0ed493899e75fe608ba63730f8"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/evaluation/truth.jsonl",
+      "sha256": "6b8b17b4283610187395fb5fc763a8168cdfaeb11fa2b48b9769dc75adc73067"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/scene/vehicle.json",
+      "sha256": "34db13d8045c32c638cf91114a66a3c70c33ebf622f771ff2448081cf363dfed"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/scene/world.sdf",
+      "sha256": "9fb5f5da08a6698844728981af7185260bb30ed71e825b5d9cdcef778f7ca78a"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/CMakeLists.txt",
+      "sha256": "be5b19db60e859dd14cf2d3ce5fbb202cd92763c97abebe323fafdb4581a0cef"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/package.xml",
+      "sha256": "a74a34672e99b8068e006bdab9c94d23624093141520636248e98398e64ef0e6"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/probe_r02.py",
+      "sha256": "0daf69c51a6df2cb776076c6c079757c39408e7b27aa123d57ed36c7d16a1926"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/geometry_r02.py",
+      "sha256": "06ca604651e722bcc8b6f8505685c9ec24434c504c67975a0ed4859614315bf6"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/analyze_r02.py",
+      "sha256": "6e20d43e5ca5038c83ac4263144353c0f7e0c7d8442644b84ef8b029241f3f1a"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/common.py",
+      "sha256": "e9ad013f19620a43b8e8628fcb118d94ab10f8d6ed5aa25666338f66ff8b00f5"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/stage_r02.py",
+      "sha256": "964927d6a0ed9c77cfbe747e28b0a9469d2e944225f29081463414b08bd55228"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/driver_r02.py",
+      "sha256": "b5c33389cdaf10b1dc062b193705a38b1633c7a6f80b7aa6333c31b17feef0bc"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/dispatch.py",
+      "sha256": "8a8ff76e4c2d7e51a1b2e2659459bb872473c1a5952531bc2738787ab5177766"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/src/VehicleDrive.cc",
+      "sha256": "7e4ef90fa8efb81926ad57b52945f0c849d74380eb6cac8be0f548e70ebb2940"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/tests/test_r02.py",
+      "sha256": "49e0803671a7fe9017c51d0a2fdf5a127b7ea5174fdd418465f8132e7be2421e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/advance.sh",
+      "sha256": "142670af88c50b2da2ec6f23714881673fce092d9a28347c66542af704782ff0"
+    },
+    {
+      "path": "docs/three_tasks/R02/TECHNICAL.md",
+      "sha256": "8177e481fa72a52e4c67f0744de0a8e6b8e809e2c8e7466b0cdc02608afaa880"
+    },
+    {
+      "path": "docs/three_tasks/R02/MANUAL_CHECK.md",
+      "sha256": "eb50aae77dd4a4077b3f15d78e7744ccb1721370009787b114aefa1403a45b68"
+    },
+    {
+      "path": "docs/three_tasks/R02/CODE_WALKTHROUGH.md",
+      "sha256": "e3f11e01f2a07c7043465909d108c7604e47e142112086ac476b160cc1dde90b"
+    },
+    {
+      "path": "docs/three_tasks/R02/RESULTS.md",
+      "sha256": "2fcae5410809dd6c19f224351c5be830237f2ac8c59a99ee9210c851ee1e35b5"
+    }
+  ],
+  "next_step": "R03",
+  "formal_credit": false,
+  "original_S17": "PARTIAL",
+  "original_S18": "PARTIAL",
+  "created_utc": "20261114_030202_682578"
+}

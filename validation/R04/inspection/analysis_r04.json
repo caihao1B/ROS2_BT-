@@ -1,0 +1,316 @@
+{
+  "passed": true,
+  "task": "inspection",
+  "vehicle_hash": "104d07a36ef510be47544277750b5afa2cd3699e27cd12a523f1e8a2f10d2dfe",
+  "checks": {
+    "runtime_clean": true,
+    "completed": true,
+    "speed_0.3_speed": true,
+    "speed_0.3_acceleration": true,
+    "stop_speed_0.3_brake": true,
+    "speed_0.6_speed": true,
+    "speed_0.6_acceleration": true,
+    "stop_speed_0.6_brake": true,
+    "speed_0.8_speed": true,
+    "speed_0.8_acceleration": true,
+    "stop_speed_0.8_brake": true,
+    "left_holdout_speed": true,
+    "left_holdout_turn": true,
+    "left_holdout_acceleration": true,
+    "stop_left_holdout_brake": true,
+    "right_holdout_speed": true,
+    "right_holdout_turn": true,
+    "right_holdout_acceleration": true,
+    "stop_right_holdout_brake": true,
+    "reverse_curve_speed": true,
+    "reverse_curve_turn": true,
+    "reverse_curve_acceleration": true,
+    "stop_reverse_curve_brake": true,
+    "reverse_straight_speed": true,
+    "reverse_straight_acceleration": true,
+    "stop_reverse_straight_brake": true,
+    "before_loss_speed": true,
+    "before_loss_acceleration": true,
+    "command_loss_brake": true,
+    "command_loss_latched": true,
+    "latched_reject_latched": true,
+    "resume_speed": true,
+    "resume_acceleration": true,
+    "final_stop_brake": true,
+    "final_stopped": true
+  },
+  "phases": {
+    "settle": {
+      "start": 0.0,
+      "end": 2.0
+    },
+    "arm_speed_0.3": {
+      "start": 2.0,
+      "end": 2.7
+    },
+    "speed_0.3": {
+      "start": 2.7,
+      "end": 9.7,
+      "signed_speed": 0.2999999999986327,
+      "yaw_rate": 3.060110134447028e-19,
+      "limited_acceleration_abs_p99": 0.5000000000000027
+    },
+    "stop_speed_0.3": {
+      "start": 9.7,
+      "end": 12.7,
+      "stop_delay_s": 0.39500000000000135,
+      "stop_distance_m": 0.06029922741963967,
+      "distance_budget_m": 0.15625
+    },
+    "arm_speed_0.6": {
+      "start": 12.7,
+      "end": 13.399999999999999
+    },
+    "speed_0.6": {
+      "start": 13.399999999999999,
+      "end": 20.4,
+      "signed_speed": 0.5999999999976533,
+      "yaw_rate": -1.7009048294870974e-19,
+      "limited_acceleration_abs_p99": 0.5000000000000238
+    },
+    "stop_speed_0.6": {
+      "start": 20.4,
+      "end": 23.4,
+      "stop_delay_s": 0.7515000000000001,
+      "stop_distance_m": 0.22769925498583454,
+      "distance_budget_m": 0.32499999999999996
+    },
+    "arm_speed_0.8": {
+      "start": 23.4,
+      "end": 24.099999999999998
+    },
+    "speed_0.8": {
+      "start": 24.099999999999998,
+      "end": 31.099999999999998,
+      "signed_speed": 0.7999999999963763,
+      "yaw_rate": -2.4447013184626863e-19,
+      "limited_acceleration_abs_p99": 0.5000000000000661
+    },
+    "stop_speed_0.8": {
+      "start": 31.099999999999998,
+      "end": 34.099999999999994,
+      "stop_delay_s": 1.0100000000000016,
+      "stop_distance_m": 0.3972040731425146,
+      "distance_budget_m": 0.5000000000000001
+    },
+    "arm_left_holdout": {
+      "start": 34.099999999999994,
+      "end": 34.8
+    },
+    "left_holdout": {
+      "start": 34.8,
+      "end": 54.8,
+      "signed_speed": 0.6000880212865032,
+      "yaw_rate": 0.2699999788415566,
+      "center": [
+        11.374371019992273,
+        2.2135752034341465
+      ],
+      "radius_m": 2.226080270564328,
+      "radial_rmse_m": 5.808394207439704e-10,
+      "expected_radius": 2.222222222222222,
+      "relative_radius_error": 0.0017361217539477725,
+      "limited_acceleration_abs_p99": 0.5000000000000632
+    },
+    "stop_left_holdout": {
+      "start": 54.8,
+      "end": 57.8,
+      "stop_delay_s": 0.7530000000000001,
+      "stop_distance_m": 0.23925699063770914,
+      "distance_budget_m": 0.32499999999999996
+    },
+    "arm_right_holdout": {
+      "start": 57.8,
+      "end": 58.5
+    },
+    "right_holdout": {
+      "start": 58.5,
+      "end": 78.5,
+      "signed_speed": 0.6000880212719509,
+      "yaw_rate": -0.26999997884126037,
+      "center": [
+        7.866836555364036,
+        -0.5058224715364865
+      ],
+      "radius_m": 2.2260802701745823,
+      "radial_rmse_m": 1.1477376187827563e-09,
+      "expected_radius": 2.222222222222222,
+      "relative_radius_error": 0.0017361215785622885,
+      "limited_acceleration_abs_p99": 0.5000000000000632
+    },
+    "stop_right_holdout": {
+      "start": 78.5,
+      "end": 81.5,
+      "stop_delay_s": 0.765500000000003,
+      "stop_distance_m": 0.23865595653785832,
+      "distance_budget_m": 0.32499999999999996
+    },
+    "arm_reverse_curve": {
+      "start": 81.5,
+      "end": 82.2
+    },
+    "reverse_curve": {
+      "start": 82.2,
+      "end": 100.2,
+      "signed_speed": -0.25001555489064203,
+      "yaw_rate": -0.11249952101320977,
+      "center": [
+        7.7650092660828705,
+        3.947727824121734
+      ],
+      "radius_m": 2.2260895313740616,
+      "radial_rmse_m": 3.4092253395312964e-12,
+      "expected_radius": 2.2222222222222223,
+      "relative_radius_error": 0.001740289118327576,
+      "limited_acceleration_abs_p99": 0.4999999999999815
+    },
+    "stop_reverse_curve": {
+      "start": 100.2,
+      "end": 103.2,
+      "stop_delay_s": 0.30800000000000693,
+      "stop_distance_m": 0.03796640954707599,
+      "distance_budget_m": 0.1390625
+    },
+    "arm_reverse_straight": {
+      "start": 103.2,
+      "end": 103.9
+    },
+    "reverse_straight": {
+      "start": 103.9,
+      "end": 109.9,
+      "signed_speed": -0.2499999999989968,
+      "yaw_rate": 0.0,
+      "limited_acceleration_abs_p99": 0.5000000000000999
+    },
+    "stop_reverse_straight": {
+      "start": 109.9,
+      "end": 112.9,
+      "stop_delay_s": 0.3189999999999884,
+      "stop_distance_m": 0.04168722286198747,
+      "distance_budget_m": 0.1390625
+    },
+    "arm_loss": {
+      "start": 112.9,
+      "end": 113.60000000000001
+    },
+    "before_loss": {
+      "start": 113.60000000000001,
+      "end": 119.60000000000001,
+      "signed_speed": 0.7999999999966924,
+      "yaw_rate": 0.0,
+      "limited_acceleration_abs_p99": 0.5000000000001197
+    },
+    "command_loss": {
+      "start": 119.60000000000001,
+      "end": 123.60000000000001,
+      "stop_delay_s": 1.347999999999999,
+      "stop_distance_m": 0.6683992733618657,
+      "distance_budget_m": 0.78
+    },
+    "latched_reject": {
+      "start": 123.60000000000001,
+      "end": 126.60000000000001
+    },
+    "rearm": {
+      "start": 126.60000000000001,
+      "end": 127.30000000000001
+    },
+    "resume": {
+      "start": 127.30000000000001,
+      "end": 132.3,
+      "signed_speed": 0.29999999999856536,
+      "yaw_rate": 0.0,
+      "limited_acceleration_abs_p99": 0.500000000000319
+    },
+    "final_stop": {
+      "start": 132.3,
+      "end": 135.3,
+      "stop_delay_s": 0.3884999999999934,
+      "stop_distance_m": 0.061499227419631805,
+      "distance_budget_m": 0.15625
+    }
+  },
+  "braking": [
+    {
+      "phase": "stop_speed_0.3",
+      "start": 9.7,
+      "end": 12.7,
+      "stop_delay_s": 0.39500000000000135,
+      "stop_distance_m": 0.06029922741963967,
+      "distance_budget_m": 0.15625
+    },
+    {
+      "phase": "stop_speed_0.6",
+      "start": 20.4,
+      "end": 23.4,
+      "stop_delay_s": 0.7515000000000001,
+      "stop_distance_m": 0.22769925498583454,
+      "distance_budget_m": 0.32499999999999996
+    },
+    {
+      "phase": "stop_speed_0.8",
+      "start": 31.099999999999998,
+      "end": 34.099999999999994,
+      "stop_delay_s": 1.0100000000000016,
+      "stop_distance_m": 0.3972040731425146,
+      "distance_budget_m": 0.5000000000000001
+    },
+    {
+      "phase": "stop_left_holdout",
+      "start": 54.8,
+      "end": 57.8,
+      "stop_delay_s": 0.7530000000000001,
+      "stop_distance_m": 0.23925699063770914,
+      "distance_budget_m": 0.32499999999999996
+    },
+    {
+      "phase": "stop_right_holdout",
+      "start": 78.5,
+      "end": 81.5,
+      "stop_delay_s": 0.765500000000003,
+      "stop_distance_m": 0.23865595653785832,
+      "distance_budget_m": 0.32499999999999996
+    },
+    {
+      "phase": "stop_reverse_curve",
+      "start": 100.2,
+      "end": 103.2,
+      "stop_delay_s": 0.30800000000000693,
+      "stop_distance_m": 0.03796640954707599,
+      "distance_budget_m": 0.1390625
+    },
+    {
+      "phase": "stop_reverse_straight",
+      "start": 109.9,
+      "end": 112.9,
+      "stop_delay_s": 0.3189999999999884,
+      "stop_distance_m": 0.04168722286198747,
+      "distance_budget_m": 0.1390625
+    },
+    {
+      "phase": "command_loss",
+      "start": 119.60000000000001,
+      "end": 123.60000000000001,
+      "stop_delay_s": 1.347999999999999,
+      "stop_distance_m": 0.6683992733618657,
+      "distance_budget_m": 0.78
+    },
+    {
+      "phase": "final_stop",
+      "start": 132.3,
+      "end": 135.3,
+      "stop_delay_s": 0.3884999999999934,
+      "stop_distance_m": 0.061499227419631805,
+      "distance_budget_m": 0.15625
+    }
+  ],
+  "sim_seconds": 135.948,
+  "wall_seconds": 140.05742068999825,
+  "truth_evaluation_only": true,
+  "scope": "flat rigid contact dynamics; no terrain, localization, obstacle or hardware certification"
+}

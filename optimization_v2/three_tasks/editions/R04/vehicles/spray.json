@@ -1,0 +1,129 @@
+{
+  "schema": "R02-VEHICLE/1",
+  "id": "diff",
+  "revision": "r04.1",
+  "kind": "differential",
+  "body": {
+    "size": [
+      0.9874,
+      0.5709,
+      0.26
+    ],
+    "center": [
+      0,
+      0,
+      0.26
+    ],
+    "mass": 42.0
+  },
+  "wheel": {
+    "radius": 0.1651,
+    "width": 0.1143,
+    "mass": 2.0,
+    "track": 0.555,
+    "friction": 0.5,
+    "lateral_friction": 0.5,
+    "effort_Nm": 40
+  },
+  "wheelbase": 0.512,
+  "calibration": {
+    "effective_track_m": 0.6693017525214848,
+    "drive_track_m": 0.6693017525214848,
+    "scope": "Gazebo flat contact calibration only; R02 .4 m/s, curvature .8; independently validated at R04 .6 m/s curvature .45",
+    "gain_from_R02": 1.205949103642315,
+    "source_analysis_sha256": "83f126069e231d0c5ff96b32f90f3f47aa72d389b83382e6c9fe0e46eb77f7fd"
+  },
+  "footprint": [
+    [
+      -0.495,
+      -0.335
+    ],
+    [
+      0.495,
+      -0.335
+    ],
+    [
+      0.495,
+      0.335
+    ],
+    [
+      -0.495,
+      0.335
+    ]
+  ],
+  "steering": {
+    "joint_limit_rad": 0.0,
+    "rate_rad_s": 0.6,
+    "effort_Nm": 40,
+    "gain": 6.0,
+    "max_curvature": 0.0
+  },
+  "limits": {
+    "max_speed": 1.0,
+    "reverse": 0.3,
+    "yaw_rate": 0.8,
+    "acceleration": 0.5,
+    "deceleration": 0.8,
+    "yaw_acceleration": 0.8
+  },
+  "qualification_candidates": {
+    "work_mps": 0.4,
+    "transit_mps": [
+      0.3,
+      0.6,
+      0.8
+    ],
+    "connector_mps": 0.6,
+    "slope_mps": 0.3,
+    "slope_deg": 5
+  },
+  "encoder": {
+    "ticks_per_revolution": 4096,
+    "steering_resolution_rad": 0.001
+  },
+  "safety": {
+    "command_wall_s": 0.4,
+    "command_sim_s": 0.2,
+    "feedback_wall_s": 0.5,
+    "actuator_wall_s": 0.35,
+    "actuator_sim_s": 0.35,
+    "clock_wall_s": 0.2,
+    "stopped_v_mps": 0.01,
+    "stopped_w_rad_s": 0.02,
+    "stop_delay_s": 2.0,
+    "alignment_error_rad": 0.05,
+    "alignment_speed_mps": 0.1,
+    "steering_tracking_timeout_s": 3.0
+  },
+  "task_id": "spray",
+  "label": "Husky A200 dimension reference",
+  "tool": {
+    "kind": "spray",
+    "mount_xyz": [
+      0.0,
+      0,
+      0.45
+    ],
+    "mass_kg": 2,
+    "collision_size": [
+      0.2,
+      0.2,
+      0.12
+    ],
+    "effective_width_m": 0.0,
+    "dwell_seconds": 3.0
+  },
+  "physical_contract": {
+    "reference_ground_clearance_m": 0.13,
+    "body_frame": "axle-midpoint ground projection",
+    "declared_outer_length_m": 0.99,
+    "declared_outer_width_m": 0.67,
+    "nominal_bicycle_radius_m": 0,
+    "spin_in_place_allowed": true,
+    "hardware_equivalence": false,
+    "geometry_source": "manufacturer dimensions and official ROS description",
+    "dynamics_scope": "Gazebo rigid contact + bounded joint velocity actuator; not hardware torque/power validation"
+  },
+  "config_hash": "bf4dd6590ad5adbaf93906d836001fea90477c0448aa49fa671003112abd8d26",
+  "upstream_vehicle_hash": "14e85e0201bd6e3e648a35bde854871c76f3a6b57c0bb627db9c04ba4aa9864d"
+}

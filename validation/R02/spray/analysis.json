@@ -1,0 +1,129 @@
+{
+  "task": "spray",
+  "passed": true,
+  "errors": [],
+  "phases": {
+    "straight": {
+      "samples": 195,
+      "speed_mps": 0.3999999999999532,
+      "yaw_rate_rad_s": 4.3133214956100785e-19,
+      "travel_m": 1.4919999999997358,
+      "yaw_change_rad": 9.960483053204929e-19,
+      "signed_forward_m": 1.4919999999997358
+    },
+    "left": {
+      "samples": 1100,
+      "speed_mps": 0.405726608562482,
+      "yaw_rate_rad_s": 0.2653511653468937,
+      "travel_m": 8.816330602345907,
+      "yaw_change_rad": 5.7659595626203215,
+      "center": [
+        2.896937915279626,
+        1.530821742983922
+      ],
+      "radius_m": 1.5290203698687233,
+      "radial_rmse_m": 1.532926946201726e-05,
+      "expected_radius_m": 1.2499999999999998,
+      "relative_radius_error": 0.22321629589497882
+    },
+    "right": {
+      "samples": 1098,
+      "speed_mps": 0.40572660856044146,
+      "yaw_rate_rad_s": -0.2653511653460145,
+      "travel_m": 8.820322149601479,
+      "yaw_change_rad": -5.768486876905702,
+      "center": [
+        2.4743826307852492,
+        -1.497722461931892
+      ],
+      "radius_m": 1.529020842772228,
+      "radial_rmse_m": 2.158231359172301e-05,
+      "expected_radius_m": 1.2499999999999998,
+      "relative_radius_error": 0.22321667421778257
+    },
+    "reverse": {
+      "samples": 191,
+      "speed_mps": 0.19999999999993417,
+      "yaw_rate_rad_s": 3.1147579957971994e-09,
+      "travel_m": 0.7439999999997525,
+      "yaw_change_rad": 1.15868997509227e-08,
+      "signed_forward_m": -0.7439999999997524
+    },
+    "spin": {
+      "samples": 140,
+      "speed_mps": 4.675840454883605e-10,
+      "yaw_rate_rad_s": 0.41461156263196847,
+      "travel_m": 1.272760773978e-09,
+      "yaw_change_rad": 1.128572673484479
+    }
+  },
+  "stopped": true,
+  "runtime": {
+    "error": null,
+    "forced": [],
+    "processes": [
+      {
+        "role": "server",
+        "pid": 115655,
+        "args": [
+          "gz",
+          "sim",
+          "--force-version",
+          "8",
+          "-s",
+          "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/scene/world.sdf"
+        ],
+        "exit": 0
+      },
+      {
+        "role": "online_bridge",
+        "pid": 115670,
+        "args": [
+          "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+          "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+          "/s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg",
+          "/s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg"
+        ],
+        "exit": 0
+      },
+      {
+        "role": "evaluation_bridge",
+        "pid": 115671,
+        "args": [
+          "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+          "/s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg",
+          "/s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts"
+        ],
+        "exit": 0
+      },
+      {
+        "role": "evaluator",
+        "pid": 115672,
+        "args": [
+          "/usr/bin/python3",
+          "/home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
+          "--out",
+          "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207/evaluation"
+        ],
+        "exit": 0
+      },
+      {
+        "role": "driver",
+        "pid": 115673,
+        "args": [
+          "/usr/bin/python3",
+          "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/driver_r02.py",
+          "--out",
+          "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/spray_20261114_025512_076207"
+        ],
+        "exit": 0
+      }
+    ],
+    "wall_seconds": 90.19295694900211,
+    "session": "spray_20261114_025512_076207",
+    "passed": true
+  },
+  "vehicle_hash": "14e85e0201bd6e3e648a35bde854871c76f3a6b57c0bb627db9c04ba4aa9864d",
+  "sim_seconds": 86.167,
+  "truth_evaluation_only": true
+}

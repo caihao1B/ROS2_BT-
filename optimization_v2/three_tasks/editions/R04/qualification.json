@@ -1,0 +1,37 @@
+{
+  "stage": "R04",
+  "passed": true,
+  "vehicles": {
+    "spray": {
+      "vehicle_hash": "bf4dd6590ad5adbaf93906d836001fea90477c0448aa49fa671003112abd8d26",
+      "flat_transit_max_mps": 0.8,
+      "selected_transit_mps": 0.6,
+      "selected_work_mps": 0.4,
+      "reverse_mps": 0.25,
+      "slope_qualified": false,
+      "full_navigation_qualified": false,
+      "analysis_sha256": "f272b99fa169f6898c5be25bd6b278199fc035b671c26f400624dc221c20cf2c"
+    },
+    "inspection": {
+      "vehicle_hash": "104d07a36ef510be47544277750b5afa2cd3699e27cd12a523f1e8a2f10d2dfe",
+      "flat_transit_max_mps": 0.8,
+      "selected_transit_mps": 0.6,
+      "selected_work_mps": 0.4,
+      "reverse_mps": 0.25,
+      "slope_qualified": false,
+      "full_navigation_qualified": false,
+      "analysis_sha256": "604e8495ed3a7802041c5d92873cabf031f58164ea04f8a5bfef00e559229346"
+    },
+    "mowing": {
+      "vehicle_hash": "52410d437f633b24dc1e2da3c06cd9a6727071cb7e2f2a08682cdd996b64c8ce",
+      "flat_transit_max_mps": 0.8,
+      "selected_transit_mps": 0.6,
+      "selected_work_mps": 0.5,
+      "reverse_mps": 0.25,
+      "slope_qualified": false,
+      "full_navigation_qualified": false,
+      "analysis_sha256": "d32dec8bdadf361889d25599ba0ae6d0ef6a7facd2ea0f13e6af36bda631303d"
+    }
+  },
+  "upstream_plan_sha256": "1bf3f7090caa57c76700f775c5b9dae74619a0f9adb0de820ed59449ec4fd524"
+}

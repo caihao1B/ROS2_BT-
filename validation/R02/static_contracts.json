@@ -1,0 +1,35 @@
+{
+  "spray": {
+    "passed": true,
+    "road_samples": 161,
+    "outside_or_obstacle_samples": 0,
+    "road_min_footprint_clearance_m": 2.652707615605386,
+    "road_max_centerline_curvature": 0.09220144377255413,
+    "turn_outer_radius_m": 0.5977039400907442,
+    "minimum_full_turn_diameter_m": 1.1954078801814885,
+    "turn_room_exists_in_zone_B": true,
+    "full_strip_plan_accepted": false
+  },
+  "inspection": {
+    "passed": true,
+    "road_samples": 161,
+    "outside_or_obstacle_samples": 0,
+    "road_min_footprint_clearance_m": 2.7806710425410666,
+    "road_max_centerline_curvature": 0.09220144377255413,
+    "turn_outer_radius_m": 0.33277770358003256,
+    "minimum_full_turn_diameter_m": 0.6655554071600651,
+    "turn_room_exists_in_zone_B": true,
+    "full_strip_plan_accepted": false
+  },
+  "mowing": {
+    "passed": true,
+    "road_samples": 161,
+    "outside_or_obstacle_samples": 0,
+    "road_min_footprint_clearance_m": 1.4167826778691743,
+    "road_max_centerline_curvature": 0.09220144377255413,
+    "turn_outer_radius_m": 4.908496797238391,
+    "minimum_full_turn_diameter_m": 9.816993594476783,
+    "turn_room_exists_in_zone_B": true,
+    "full_strip_plan_accepted": false
+  }
+}

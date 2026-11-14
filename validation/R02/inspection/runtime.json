@@ -1,0 +1,75 @@
+{
+  "error": null,
+  "forced": [],
+  "processes": [
+    {
+      "role": "server",
+      "pid": 115825,
+      "args": [
+        "gz",
+        "sim",
+        "--force-version",
+        "8",
+        "-s",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/scene/world.sdf"
+      ],
+      "domain": "119",
+      "partition": "r02_inspection_20261114_025737_129443",
+      "exit": 0
+    },
+    {
+      "role": "online_bridge",
+      "pid": 115840,
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+        "/s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg"
+      ],
+      "domain": "119",
+      "partition": "r02_inspection_20261114_025737_129443",
+      "exit": 0
+    },
+    {
+      "role": "evaluation_bridge",
+      "pid": 115841,
+      "args": [
+        "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+        "/s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg",
+        "/s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts"
+      ],
+      "domain": "120",
+      "partition": "r02_inspection_20261114_025737_129443",
+      "exit": 0
+    },
+    {
+      "role": "evaluator",
+      "pid": 115842,
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443/evaluation"
+      ],
+      "domain": "120",
+      "partition": "r02_inspection_20261114_025737_129443",
+      "exit": 0
+    },
+    {
+      "role": "driver",
+      "pid": 115843,
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/driver_r02.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/inspection_20261114_025737_129443"
+      ],
+      "domain": "119",
+      "partition": "r02_inspection_20261114_025737_129443",
+      "exit": 0
+    }
+  ],
+  "wall_seconds": 90.20105605600111,
+  "session": "inspection_20261114_025737_129443",
+  "passed": true
+}

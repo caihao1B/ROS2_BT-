@@ -1,0 +1,15 @@
+{
+  "husky": [
+    "https://www.clearpathrobotics.com/wp-content/uploads/2013/08/HUSKY_DATA_SHEET-v2_editeda.pdf",
+    "https://github.com/husky/husky/blob/noetic-devel/husky_description/urdf/husky.urdf.xacro"
+  ],
+  "jackal": [
+    "https://docs.clearpathrobotics.com/docs_robots/outdoor_robots/jackal/user_manual_jackal/",
+    "https://github.com/jackal/jackal/blob/noetic-devel/jackal_description/urdf/jackal.urdf.xacro"
+  ],
+  "dino": {
+    "path": "ros2_ws/src/dino_description/models/dino/model.sdf",
+    "sha256": "6bab169fb8c4c8826b71a6a5919defcd54d0bdb776f3ec4c2832a32a9176fc64"
+  },
+  "scope": "Numerical geometry references only, not vendor hardware validation"
+}

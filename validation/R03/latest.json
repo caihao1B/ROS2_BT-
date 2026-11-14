@@ -1,0 +1,456 @@
+{
+  "stage": "R03",
+  "automated_status": "PASS",
+  "summary": {
+    "passed": true,
+    "checks": {
+      "source_world_unchanged": true,
+      "manifest_version": true,
+      "three_independent_tasks": true,
+      "not_execution_or_formal_credit": true,
+      "spray_plan_count": true,
+      "A1": true,
+      "A2": true,
+      "A3": true,
+      "point_services_exactly_once": true,
+      "mowing_plan_count": true,
+      "B1": true,
+      "B2": true,
+      "B3": true,
+      "inspection_plan_count": true,
+      "road": true,
+      "A_three_connected_partition_and_scope": true,
+      "B_three_connected_partition_and_scope": true
+    },
+    "plans": {
+      "A1": {
+        "checks": {
+          "version": true,
+          "vehicle": true,
+          "budget": true,
+          "connected": true,
+          "finite": true,
+          "footprint": true,
+          "curvature": true,
+          "gear": true,
+          "tool": true,
+          "endpoint": true
+        },
+        "samples": 2557,
+        "max_curvature": 0.0,
+        "reverse_m": 0.0,
+        "estimate_s": 1384.754875495219,
+        "motion_m": 170.48528137423858,
+        "planned_fraction": null,
+        "point_count": 56
+      },
+      "A2": {
+        "checks": {
+          "version": true,
+          "vehicle": true,
+          "budget": true,
+          "connected": true,
+          "finite": true,
+          "footprint": true,
+          "curvature": true,
+          "gear": true,
+          "tool": true,
+          "endpoint": true
+        },
+        "samples": 2448,
+        "max_curvature": 0.0,
+        "reverse_m": 0.0,
+        "estimate_s": 1358.5636066537209,
+        "motion_m": 175.45584412271572,
+        "planned_fraction": null,
+        "point_count": 56
+      },
+      "A3": {
+        "checks": {
+          "version": true,
+          "vehicle": true,
+          "budget": true,
+          "connected": true,
+          "finite": true,
+          "footprint": true,
+          "curvature": true,
+          "gear": true,
+          "tool": true,
+          "endpoint": true
+        },
+        "samples": 2411,
+        "max_curvature": 0.0,
+        "reverse_m": 0.0,
+        "estimate_s": 1299.8005062346022,
+        "motion_m": 158.48528137423858,
+        "planned_fraction": null,
+        "point_count": 52
+      },
+      "B1": {
+        "checks": {
+          "version": true,
+          "vehicle": true,
+          "budget": true,
+          "connected": true,
+          "finite": true,
+          "footprint": true,
+          "curvature": true,
+          "gear": true,
+          "tool": true,
+          "endpoint": true,
+          "all_swaths": true,
+          "planned_cut_accounting": true
+        },
+        "samples": 2229,
+        "max_curvature": 0.3227675648868153,
+        "reverse_m": 40.12777783736276,
+        "estimate_s": 856.5541483794915,
+        "motion_m": 217.80360657546743,
+        "planned_fraction": 0.9612102062396825,
+        "point_count": null
+      },
+      "B2": {
+        "checks": {
+          "version": true,
+          "vehicle": true,
+          "budget": true,
+          "connected": true,
+          "finite": true,
+          "footprint": true,
+          "curvature": true,
+          "gear": true,
+          "tool": true,
+          "endpoint": true,
+          "all_swaths": true,
+          "planned_cut_accounting": true
+        },
+        "samples": 2467,
+        "max_curvature": 0.32276753013276266,
+        "reverse_m": 44.067603078602666,
+        "estimate_s": 983.7209259393674,
+        "motion_m": 239.46662186723296,
+        "planned_fraction": 0.9736253640724114,
+        "point_count": null
+      },
+      "B3": {
+        "checks": {
+          "version": true,
+          "vehicle": true,
+          "budget": true,
+          "connected": true,
+          "finite": true,
+          "footprint": true,
+          "curvature": true,
+          "gear": true,
+          "tool": true,
+          "endpoint": true,
+          "all_swaths": true,
+          "planned_cut_accounting": true
+        },
+        "samples": 2413,
+        "max_curvature": 0.32276748605479094,
+        "reverse_m": 38.42864284997764,
+        "estimate_s": 935.4461064371025,
+        "motion_m": 234.16985986250742,
+        "planned_fraction": 0.9613448991346019,
+        "point_count": null
+      },
+      "road": {
+        "checks": {
+          "version": true,
+          "vehicle": true,
+          "budget": true,
+          "connected": true,
+          "finite": true,
+          "footprint": true,
+          "curvature": true,
+          "gear": true,
+          "tool": true,
+          "endpoint": true
+        },
+        "samples": 886,
+        "max_curvature": 0.0,
+        "reverse_m": 0.0,
+        "estimate_s": 244.3353961172485,
+        "motion_m": 88.48099013627927,
+        "planned_fraction": null,
+        "point_count": null
+      }
+    },
+    "total_estimated_sim_seconds": 7063.175565256752,
+    "scope": "Offline feasibility of independent tasks; dynamic travel time and closed-loop execution pending R04–R10",
+    "tests_exit": 0,
+    "tests": 7
+  },
+  "artifacts": [
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/mission.json",
+      "sha256": "1bf3f7090caa57c76700f775c5b9dae74619a0f9adb0de820ed59449ec4fd524"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/planned_cut.geojson",
+      "sha256": "8795eef26a86b81cc00bed4bc41369bf8a6bafe4a45a7876f36b12461c163b4c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/routes/backend_commands.jsonl",
+      "sha256": "df05f0a5b22ffd7eeb99019e9e7c462e4781a77c575b0c7f12408ec32b0043af"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/routes/whole_zone_swaths_request.json",
+      "sha256": "3ca916a54116e83ce669c5f5604512dba3fa9abf66e7662aba5a8e2ccbca9a47"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/routes/whole_zone_swaths_result.json",
+      "sha256": "c2c21a64a76b5fddfc43e43316e596777098fe5a580eab46d8439a1a8e15cbd4"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/partition/clusters.geojson",
+      "sha256": "f4c121b3df4df06c867b7b8443822db8a08e8c66b829dc978db27097cbe60768"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/partition/csr.json",
+      "sha256": "262c206c6164ef598ac656dbebddc3f3094d8aa74cd7ecd485c3ea0282daff80"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/partition/metis.json",
+      "sha256": "461de83cf6030e3db9c99605a9896c1258da650f4386a8a302bc3cd2744787e1"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/partition/partition.json",
+      "sha256": "e04a8d75556fcb0f6191fc02b2fb95943c1b7dcbfbac70e8eecd6eb049354917"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/partition/metis_command.json",
+      "sha256": "c0cd103a6e68b87acb73f0206f7c1ed2b59bb26036ae3e3c4679821f50ef5397"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/routes/rs_2/rs_request.json",
+      "sha256": "5e46a7e74ef1d579ce35a78a1193ed4ee914f1e97ba7ea4bd58dc5037964dd07"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/routes/rs_2/rs_response.json",
+      "sha256": "99b37944aa33d7c7060f9fbfafcf5c65a0c320e0f1e4a10dab35e57dbbb63182"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/routes/rs_0/rs_request.json",
+      "sha256": "d1a966d9fae7a1aea2fa66fcb45eb7e128bd524b76838e9087c73d610160daca"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/routes/rs_0/rs_response.json",
+      "sha256": "bf77d46ad6cc0f4a2f990b73e7a060a2789f677669359c917fbec9a6af8be231"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/routes/rs_1/rs_request.json",
+      "sha256": "a140656bfe85210839801bcf38508e1ca8186fdea92f9caea94571f13671e9bd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/routes/rs_1/rs_response.json",
+      "sha256": "f5a390cca692eb25e141c916faa8051ed6028f6b29f8ebaf97a5cba4e70fdbe6"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/routes/tsp_1_result.json",
+      "sha256": "18c3d34a4ac0d61983e6ab0fd05ff8f41aea72076fcc81189d03af4849a75ca1"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/routes/tsp_2_request.json",
+      "sha256": "659d38fb165aebe5d4a406dabb85c25ae88beed1bb14b91c3925061074fd2b92"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/routes/tsp_0_result.json",
+      "sha256": "34000d155750c19c2d9477f99642e4e08daca9c0feda68bf0a1c32f879929016"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/routes/tsp_1_request.json",
+      "sha256": "1b3dfee32821868e97d07d8739cdae5d7bdf782756da9c0db5588b7017914680"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/routes/backend_commands.jsonl",
+      "sha256": "e72f3fb9871c8a821b6f10b42525749b36b6e3ced86ad95ff755e2971aea6e15"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/routes/tsp_0_request.json",
+      "sha256": "a3c810afcc47bb17777fdc6549229c3cbadd0b2eeb07c25e8bb50014e1a45c27"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/routes/tsp_2_result.json",
+      "sha256": "436dc5bb2bf7e5259fc224a2dade3c50fd7fa91f58d81ba6f542e7d187a269ad"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/partition/clusters.geojson",
+      "sha256": "0629388552c78573e5279a61f73a7aa7866c8b9a1e843d28e6b688123160077e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/partition/csr.json",
+      "sha256": "ff8b0b99d1a335708dbc93668d0289db209f216e8e657b0bcee3fbb38ea55632"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/partition/metis.json",
+      "sha256": "b48da0c4e621524dbcb6e2f5f11940acc7b8f8c7146950dea908962192475eba"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/partition/partition.json",
+      "sha256": "837e163b5063fce37d5486cfe821094dd0ff915b8e2c5e93f7bcda0cf71d6eef"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/partition/metis_command.json",
+      "sha256": "a0951063e67eb52cbfcaa663b84dee6b375fbfb51dbc118e92ab292915c17236"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R02/latest.json",
+      "sha256": "2f80f282e89acf17222869855cc3e33d6cc13533083e34b45d15a54dd9cc79eb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R03/validation.json",
+      "sha256": "2f6126bd38b1cd15993ff83cc2392f8a1e569d893f4ec6ee97a73804601c36fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R03/tests.log",
+      "sha256": "aa3d8f2421a28990020ba613c418a5cc0bbe8e0e8a940e27a217381e2fffdd37"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R03/report.html",
+      "sha256": "f4dd4cd389ba666a5027f3b9ad439fef40905d23eef6e9b35a24a41805132835"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R03/task_map.png",
+      "sha256": "eadb0bdd003ec96b04aa0e078b13a1d75d24036716bef4f37c6d33aa3f68ecde"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R03/workload.png",
+      "sha256": "1878af578f10183d624bb41ec4b6f39a62ceb5986cfbc4a51f281a92dc270534"
+    },
+    {
+      "path": "optimization_v2/three_tasks/build/r03/r03_reeds_shepp",
+      "sha256": "69c9e786ccb037a726cc2b1ed9e94259947d5fb9648741fbab451f0719002253"
+    },
+    {
+      "path": "offline_coverage/motion.py",
+      "sha256": "66e234bb6f812773365cd9189639fd18fbda621c2029ac5f582f76718d367fed"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_partition/scripts/stage11.py",
+      "sha256": "fcc94ea53eb62a56f2131bd50e8185f4029079a1c7f850b290b76c2a8cb9d701"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_partition/scripts/partition11.py",
+      "sha256": "e654921ca2a15e22c51fab7b7094d57015216477b6e437c898016455bb46a20c"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_partition/scripts/products11.py",
+      "sha256": "b27773d4434e92ac7dde5af37d3fddbe060e964cda10466b53ef2e0ba84e938b"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_partition/scripts/geometry11.py",
+      "sha256": "0bca4b9508a5af743546ff7187163637fbb18c558c0f8df6f74e1adbed8b44c5"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_partition/scripts/common11.py",
+      "sha256": "5c2ba19354a0c2b2d581b0a472cbb31cb6ed88d5409cafe71f61b9a3108fa0aa"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_partition/scripts/report11.py",
+      "sha256": "473f8122d91ac4a6bc235a25d4a5511a281b3843ebfc5f689eef60aabf6264ce"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_partition/scripts/darp_adapter.py",
+      "sha256": "970c9172e1c4789ba8035ab7e36f10ca0556268b86c80c8ad9d1f5cb12b2d77b"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/mowing12.py",
+      "sha256": "a37cdce0b107cfb4fcde6095c0e1fd7643e835a674b9208330b2ac3993985099"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/docs12.py",
+      "sha256": "c2d7c025a613dfa52d9b754f5f6c6ca178b71aac906909ed65c0ff50c0c35989"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/stage12.py",
+      "sha256": "15e7a743e87c79e2475f6fff942571cc6f77df73eb1cec5649c6f7a761a02da0"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/connector12.py",
+      "sha256": "e55568f5fb42a8c74839ac58505a73df49777b0d1df1dacf565aba37c3b9e63c"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/faults12.py",
+      "sha256": "fab1b37170742f0b0359941f12a240c5a254ced74d4ee4ccc0b3a6e57c76f418"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/contracts12.py",
+      "sha256": "30ee22b01a5a5db4cbba13d34d51f3953d748c8368207f7981109d5520740c8c"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/planning12.py",
+      "sha256": "bdba9c9611637abcb8f348c00d5275f151f237fd135395d3b7689ffe283f2452"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/motion12.py",
+      "sha256": "0c4ba5c2cea366f936dc20a095237667941c9ad6fdaf346797d1b5c86dc79a39"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/report12.py",
+      "sha256": "92d97fecc2cab3a4978dabaf72bcd1a61bff8767987f25d4807ec4a0ea939007"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/products12.py",
+      "sha256": "d3224871a3336c5d1db226d6f99d176caef6c6713a935b674caff821d8e22473"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/spray12.py",
+      "sha256": "3d153e94f9030c59a1326ba40bcd36ad019eae9b26600044a0c3d50615a10f01"
+    },
+    {
+      "path": "optimization_v2/ws/src/coverage_planner/scripts/common12.py",
+      "sha256": "6fc97cbac55ee29c5c6bb63ce07b5330508e7476968aa973b6c23e1b4c54cab1"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/planning_r03.py",
+      "sha256": "a2602a00134c47226d575f9935a54f0d3cf306679a5a5b134671a98f9c1e39a1"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/reeds_r03.py",
+      "sha256": "fd2f74e56b40e2c8b5e380d7dc764b77b47f178cd10d27c0f5d581bcd4f5bbd3"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/stage_r03.py",
+      "sha256": "966d8828e9f6b3658caaffe92ac9077054b18270cf312ae911a55daed215b035"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/verify_r03.py",
+      "sha256": "0cc5acc6729890a7e7f61c6f5103e93fcde6b2667560955a9c8a459aee32ed0b"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/r03_backend/CMakeLists.txt",
+      "sha256": "d6cfce3c33337e2cf1bab584e857cae13f6d8080e96542b25f532e7274acac46"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/r03_backend/reeds_shepp.cpp",
+      "sha256": "4f981f8a9344e3c201f232e0b6c4ba0b3d92cb595fe316a1b5e5c833b3fc7da1"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/tests/test_r03.py",
+      "sha256": "2ab4887507441f6c11892761b5f80a06a2be03b8829f5613d3339224d3edb531"
+    },
+    {
+      "path": "docs/three_tasks/R03/TECHNICAL.md",
+      "sha256": "4e80f89780234e6b4599381fdfea96e3ba4b4bec1814161075d88785ff71c27c"
+    },
+    {
+      "path": "docs/three_tasks/R03/MANUAL_CHECK.md",
+      "sha256": "858d26f3f6a6324c56ee24788e8dfd5231bd2851a00923462707146fab04c8f2"
+    },
+    {
+      "path": "docs/three_tasks/R03/CODE_WALKTHROUGH.md",
+      "sha256": "6de8e345918a3d7df41369ec11a7086bc2e8c24efd2e58413ad24ac18e3a708a"
+    },
+    {
+      "path": "docs/three_tasks/R03/RESULTS.md",
+      "sha256": "edc117197efd25fc200c08ca3c48350a6a735fbe29ab2b353f693ce2dfa8990b"
+    }
+  ],
+  "next_step": "R04",
+  "formal_credit": false,
+  "original_S17": "PARTIAL",
+  "original_S18": "PARTIAL",
+  "created_utc": "20261114_031700_403280"
+}

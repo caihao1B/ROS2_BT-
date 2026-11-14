@@ -1,0 +1,390 @@
+{
+  "schema": "R03-INDEPENDENT-TASKS/1",
+  "map_source": {
+    "path": "optimization_v2/assets/worlds/irregular_farm.sdf",
+    "sha256": "d43c5014ecce50ee0ba1aa8207159d398224c9c2277f8a75108835a2be45ffc8"
+  },
+  "partitions": {
+    "A": {
+      "verification": {
+        "passed": true,
+        "checks": {
+          "exactly_k_nonempty": true,
+          "graph_connected": true,
+          "geometry_connected": true,
+          "cluster_adjacency_connected": true,
+          "omission": true,
+          "overlap": true,
+          "outside": true,
+          "assignment_geometry": true,
+          "points_unique": true
+        },
+        "missing_m2": 0.0,
+        "overlap_m2": 0.0,
+        "outside_m2": 0.0,
+        "difference_ratio": 0.0,
+        "graph_components": [
+          1,
+          1,
+          1
+        ],
+        "geometry_components": [
+          1,
+          1,
+          1
+        ],
+        "adjacency": [
+          [
+            0,
+            1,
+            8.75776548
+          ],
+          [
+            0,
+            2,
+            37.96254365
+          ],
+          [
+            1,
+            2,
+            27.480955639999998
+          ]
+        ],
+        "assigned_unit_count": 726,
+        "unique_point_count": 164
+      },
+      "metrics": {
+        "max_estimate_s": 670.4926176097808,
+        "loads_s": [
+          650.481258646757,
+          670.4926176097808,
+          651.375504151075
+        ],
+        "imbalance": 1.01983850975411,
+        "weighted_cut": 7420,
+        "cut_length_m": 74.20126477,
+        "partition_wall_s": 0.010639056999934837,
+        "geometry_build_wall_s": 0.2935033769972506,
+        "verify_and_export_wall_s": 0.06446875199617352,
+        "speed_mps": 0.4,
+        "width_spacing_m": 1.4,
+        "optimistic_total_lower_bound_s": 492.0,
+        "hard_budget_lower_bound_infeasible": false,
+        "estimated_budget_status": "ESTIMATE_ONLY_NOT_VALIDATED",
+        "lower_bound_scope": "ideal straight parallel work swaths, zero turn/transit/wait; not a general motion theorem",
+        "actual_task_sim_seconds": null
+      },
+      "assignment_sha256": "0f1ba932a2ba42536f946a9eb605a4a85183a90d6bec5df8ec11be3ca5bc620a"
+    },
+    "B": {
+      "verification": {
+        "passed": true,
+        "checks": {
+          "exactly_k_nonempty": true,
+          "graph_connected": true,
+          "geometry_connected": true,
+          "cluster_adjacency_connected": true,
+          "omission": true,
+          "overlap": true,
+          "outside": true,
+          "assignment_geometry": true,
+          "points_unique": true
+        },
+        "missing_m2": 0.0,
+        "overlap_m2": 0.0,
+        "outside_m2": 0.0,
+        "difference_ratio": 0.0,
+        "graph_components": [
+          1,
+          1,
+          1
+        ],
+        "geometry_components": [
+          1,
+          1,
+          1
+        ],
+        "adjacency": [
+          [
+            0,
+            2,
+            28.475837430000013
+          ],
+          [
+            1,
+            2,
+            18.82818522000001
+          ]
+        ],
+        "assigned_unit_count": 313,
+        "unique_point_count": 0
+      },
+      "metrics": {
+        "max_estimate_s": 354.7273281399515,
+        "loads_s": [
+          350.99037154860474,
+          344.53355722270055,
+          354.7273281399515
+        ],
+        "imbalance": 1.0132641855145856,
+        "weighted_cut": 5971,
+        "cut_length_m": 47.30402265000002,
+        "partition_wall_s": 0.008992684000986628,
+        "geometry_build_wall_s": 0.1276768509997055,
+        "verify_and_export_wall_s": 0.02752314200188266,
+        "speed_mps": 0.5,
+        "width_spacing_m": 1.4,
+        "optimistic_total_lower_bound_s": 837.7093807330898,
+        "hard_budget_lower_bound_infeasible": false,
+        "estimated_budget_status": "ESTIMATE_ONLY_NOT_VALIDATED",
+        "lower_bound_scope": "ideal straight parallel work swaths, zero turn/transit/wait; not a general motion theorem",
+        "actual_task_sim_seconds": null
+      },
+      "assignment_sha256": "33c62ac19cc694c77c3b24c601d88ed74dbe806d446cdf333c744c7b7f766758"
+    }
+  },
+  "formal_inputs_unchanged": true,
+  "execution_allowed": false,
+  "unknown_low_obstacles_used": false,
+  "hidden_truth_used": false,
+  "version": "1f131cc76780f99001e66a3c1eb03a92548a9ebd31d465593f6d092ca6571edf",
+  "tasks": {
+    "spray": [
+      {
+        "cluster": "A1",
+        "task": "spray",
+        "method": "ortools",
+        "start": [
+          22.5,
+          43.5,
+          0.0
+        ],
+        "end": [
+          22.5,
+          43.5,
+          -1.5707963267948966
+        ],
+        "point_count": 56,
+        "planned_point_count": 56,
+        "unplanned_point_ids": [],
+        "motion_m": 170.48528137423858,
+        "work_m": 0.0,
+        "tool_off_m": 170.48528137423858,
+        "estimated_seconds": 1384.754875495219,
+        "budget_s": 1800,
+        "vehicle_hash": "14e85e0201bd6e3e648a35bde854871c76f3a6b57c0bb627db9c04ba4aa9864d",
+        "frame": "prior_local_enu",
+        "execution_allowed": false,
+        "speed_qualification_pending": "R04",
+        "localization_qualification_pending": "R05",
+        "scope": "independent R03 task; original formal obligations preserved",
+        "version": "ec0deed78da4353f9a33a87d41a7e64db0e317dd1aa13f2b8239d79bff515c85"
+      },
+      {
+        "cluster": "A2",
+        "task": "spray",
+        "method": "ortools",
+        "start": [
+          22.5,
+          25.5,
+          0.0
+        ],
+        "end": [
+          22.5,
+          25.5,
+          -2.356194490192345
+        ],
+        "point_count": 56,
+        "planned_point_count": 56,
+        "unplanned_point_ids": [],
+        "motion_m": 175.45584412271572,
+        "work_m": 0.0,
+        "tool_off_m": 175.45584412271572,
+        "estimated_seconds": 1358.5636066537209,
+        "budget_s": 1800,
+        "vehicle_hash": "14e85e0201bd6e3e648a35bde854871c76f3a6b57c0bb627db9c04ba4aa9864d",
+        "frame": "prior_local_enu",
+        "execution_allowed": false,
+        "speed_qualification_pending": "R04",
+        "localization_qualification_pending": "R05",
+        "scope": "independent R03 task; original formal obligations preserved",
+        "version": "030a47783c92d0a32c4854e4c4cdbdc7ce8b58f27c0b68549ddd283097c3f178"
+      },
+      {
+        "cluster": "A3",
+        "task": "spray",
+        "method": "ortools",
+        "start": [
+          31.5,
+          40.5,
+          0.0
+        ],
+        "end": [
+          31.5,
+          40.5,
+          -2.356194490192345
+        ],
+        "point_count": 52,
+        "planned_point_count": 52,
+        "unplanned_point_ids": [],
+        "motion_m": 158.48528137423858,
+        "work_m": 0.0,
+        "tool_off_m": 158.48528137423858,
+        "estimated_seconds": 1299.8005062346022,
+        "budget_s": 1800,
+        "vehicle_hash": "14e85e0201bd6e3e648a35bde854871c76f3a6b57c0bb627db9c04ba4aa9864d",
+        "frame": "prior_local_enu",
+        "execution_allowed": false,
+        "speed_qualification_pending": "R04",
+        "localization_qualification_pending": "R05",
+        "scope": "independent R03 task; original formal obligations preserved",
+        "version": "4bdc608875127d8c29573abce1a44f08cd52e7ce10d9038b506f5d9102c800d7"
+      }
+    ],
+    "mowing": [
+      {
+        "cluster": "B1",
+        "task": "mowing",
+        "method": "Fields2Cover whole-zone swaths + OMPL Reeds-Shepp / Dubins with full-body checks",
+        "start": [
+          110.25344445444406,
+          50.3848589598888,
+          0.2617993877991483
+        ],
+        "end": [
+          129.3971592205411,
+          43.91930865100343,
+          0.26179938779915046
+        ],
+        "all_swaths_connected": true,
+        "unconnected_swath_ids": [],
+        "work_area_m2": 195.99438340335297,
+        "planned_cut_m2": 188.3918016929563,
+        "planned_fraction": 0.9612102062396825,
+        "swath_spacing_m": 1.4,
+        "turn_radius_m": 3.0983388881649963,
+        "global_swath_angle": 0.2617993877991494,
+        "motion_m": 217.80360657546743,
+        "work_m": 139.31683049953767,
+        "tool_off_m": 78.48677607592975,
+        "estimated_seconds": 856.5541483794915,
+        "budget_s": 1800,
+        "vehicle_hash": "dc94cc49d65dee330d153b60ee21bb8deef5989eb63ca2a24f3c6cbba886b984",
+        "frame": "prior_local_enu",
+        "execution_allowed": false,
+        "speed_qualification_pending": "R04",
+        "localization_qualification_pending": "R05",
+        "scope": "independent R03 task; original formal obligations preserved",
+        "version": "566f40c089781ac08fb9272bbf9e1eb63d84d394b9a61408ef7b690de789d355"
+      },
+      {
+        "cluster": "B2",
+        "task": "mowing",
+        "method": "Fields2Cover whole-zone swaths + OMPL Reeds-Shepp / Dubins with full-body checks",
+        "start": [
+          116.86451767931625,
+          66.65015721733755,
+          0.26179938779914025
+        ],
+        "end": [
+          130.24318553447523,
+          62.98802720206103,
+          0.26179938779915757
+        ],
+        "all_swaths_connected": true,
+        "unconnected_swath_ids": [],
+        "work_area_m2": 192.22790837990868,
+        "planned_cut_m2": 187.15796728126674,
+        "planned_fraction": 0.9736253640724114,
+        "swath_spacing_m": 1.4,
+        "turn_radius_m": 3.0983388881649963,
+        "global_swath_angle": 0.2617993877991494,
+        "motion_m": 239.46662186723296,
+        "work_m": 136.03218054209404,
+        "tool_off_m": 103.43444132513892,
+        "estimated_seconds": 983.7209259393674,
+        "budget_s": 1800,
+        "vehicle_hash": "dc94cc49d65dee330d153b60ee21bb8deef5989eb63ca2a24f3c6cbba886b984",
+        "frame": "prior_local_enu",
+        "execution_allowed": false,
+        "speed_qualification_pending": "R04",
+        "localization_qualification_pending": "R05",
+        "scope": "independent R03 task; original formal obligations preserved",
+        "version": "3c61d5dad745da739e88a930226a813bfe769c6c595fbc5dbcb2ae37b7b00458"
+      },
+      {
+        "cluster": "B3",
+        "task": "mowing",
+        "method": "Fields2Cover whole-zone swaths + OMPL Reeds-Shepp / Dubins with full-body checks",
+        "start": [
+          117.35616502958243,
+          52.28802720206104,
+          0.26179938779914835
+        ],
+        "end": [
+          113.79346150111674,
+          52.78279032131127,
+          -2.879793265790641
+        ],
+        "all_swaths_connected": true,
+        "unconnected_swath_ids": [],
+        "work_area_m2": 198.17427474830524,
+        "planned_cut_m2": 190.51382816898237,
+        "planned_fraction": 0.9613448991346019,
+        "swath_spacing_m": 1.4,
+        "turn_radius_m": 3.0983388881649963,
+        "global_swath_angle": 0.2617993877991494,
+        "motion_m": 234.16985986250742,
+        "work_m": 142.59960454611996,
+        "tool_off_m": 91.57025531638746,
+        "estimated_seconds": 935.4461064371025,
+        "budget_s": 1800,
+        "vehicle_hash": "dc94cc49d65dee330d153b60ee21bb8deef5989eb63ca2a24f3c6cbba886b984",
+        "frame": "prior_local_enu",
+        "execution_allowed": false,
+        "speed_qualification_pending": "R04",
+        "localization_qualification_pending": "R05",
+        "scope": "independent R03 task; original formal obligations preserved",
+        "version": "a9629968989a0e5ecbe7874c1b98eac1a20e2f1309d6b6cf293492f5e12dbe4e"
+      }
+    ],
+    "inspection": [
+      {
+        "task": "inspection",
+        "cluster": "road",
+        "start": [
+          49.0,
+          42.0,
+          -0.46364050993828665
+        ],
+        "end": [
+          122.00000000000001,
+          58.0,
+          -0.5191383415873561
+        ],
+        "motion_m": 88.48099013627927,
+        "estimated_seconds": 244.3353961172485,
+        "budget_s": 1800,
+        "vehicle_hash": "e08e7524017e74dadada05878bad517ea90f94b8305e0d99612e46deca099995",
+        "frame": "prior_local_enu",
+        "execution_allowed": false,
+        "work_credit": false,
+        "version": "d8739f3491c965322b4e758dbf3952217d1d3b75446c70bc7d4f370ee87fb61c"
+      }
+    ]
+  },
+  "scope_changes": {
+    "A": {
+      "original_free_area_m2": 1645.9823216118089,
+      "new_task_area_m2": 1472.6055260198245,
+      "reserved_or_excluded_m2": 173.37679559198432,
+      "reason": "explicit boundary buffer"
+    },
+    "B": {
+      "original_free_area_m2": 1120.0000000000002,
+      "new_task_area_m2": 586.3965665131628,
+      "reserved_or_excluded_m2": 533.6034334868373,
+      "reason": "shared physical headland; not credited as cut work"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # ROS 2 农田自主作业机器人
 
-在同一张三维农田地图上，将点喷、巡迹、割草组织为三个独立任务。当前复用原有差速和阿克曼轻量底盘，后续分别建立车辆尺寸与运动学契约。两个连续不规则作业区通过曲线道路连接，各工作区由算法划分为三个连通簇。
+在同一张三维农田地图上，将点喷、巡迹、割草组织为三个独立任务。新增 Husky A200 尺寸参考点喷车、Jackal 尺寸参考巡迹车和项目 Dino 前轮阿克曼底盘，均先采用简化物理模型。两个连续不规则作业区通过曲线道路连接，各工作区由算法划分为三个连通簇。
 
 项目重点是把 **传感器 → 定位与感知 → 规划 → 可解释行为树 → 导航控制 → 工具反馈账本** 连成可检验的闭环。在线算法接收带误差的模拟观测；仿真真值仅用于独立评分。喷洒与割草执行器抽象为动作接口，后续可独立接入机械臂、近景视觉或 VLA。
 
@@ -18,7 +18,7 @@
 
 ## 三任务改造 R01：启动与退出通过（2026-11-14）
 
-新增 `spray / inspection / mowing` 三套独立配置、哈希版本和结果目录，共用原地图与正式计划。**R01 PASS 只表示任务启动、定位准入和有序停止通过；S17/S18 仍为 PARTIAL。** 三种新的车辆几何与专用行为树尚未实施。
+新增 `spray / inspection / mowing` 三套独立配置、哈希版本和结果目录，共用原地图与正式计划。**R01 PASS 只表示任务启动、定位准入和有序停止通过；S17/S18 仍为 PARTIAL。** R01 使用原底盘；新几何、离线路径和动力学见下方 R02–R04，专用任务闭环仍在推进。
 
 新入口对当前锁定的 Gazebo 8.15.0 使用仅限 server 进程的退出兼容修复；三个任务实测 server=0、工具 STOPPED、无残余进程。17 项 Python 检查及 C++ 并发停止对照通过。RViz 视角已修正；本机有析构缺陷的 ImageDisplay 面板默认不加载，摄像头传感器、视觉感知及图像话题继续运行。先前两次 GUI 失败保留，不改成通过。
 
@@ -33,6 +33,35 @@ bash /home/ceihao/robot_project/optimization_v2/three_tasks/run.sh stop inspecti
 ![R01 巡迹启动的真实 RViz 画面](media/r01_rviz.png)
 
 这张图展示传感器点云、障碍、路径和车体轮廓，不是全道路完成或跟随验收。新入口与后文 S18 历史入口分开；兼容修复没有改写历史结果。仓库发布源码、配置与精简证据，完整冻结输入和生产兼容库仍绑定开发机，不能视为全新机器可直接运行的完整安装包。
+
+## 三任务改造 R02–R04：几何、离线路径、动力学通过
+
+三阶段均有独立自动回执，原地图、正式任务和历史验收不变。**这不是三任务自主执行完成或新录像验收；S17/S18 仍为 PARTIAL。**
+
+- R02：三车实际轮关节与接触物理，Dino 后轴理论/实测转弯半径约 2.998 m；车身外侧完整转圈直径约 9.82 m。
+- R03：连续任务多边形经工作量加权 METIS 划为三个连通簇；点喷比较 OR-Tools TSP 与 2-opt；割草采用 Fields2Cover 条带与 OMPL Reeds-Shepp / Dubins 连接，显式停车换向并关闭工具。七项任务预计合计 117.72 分钟，各簇不超过 30 分钟，实际工时待闭环验证。
+- R04：平地速度、制动、正反转弯和命令断流实测。差速侧滑校准使用独立留出工况验证；0.8 m/s 断流后按原看门狗安全停车，恢复 DRIVE 不会自行解锁。
+
+![R03 独立任务路径与算法三簇](media/r03_task_map.png)
+
+图中灰色区域包含地头和本版未纳入的边缘义务。B 原可用 1120 m²，本版内侧任务 586.40 m²；其余 533.60 m² **未计入割草完成量**。规划覆盖比例约 96–97% 仅针对新内侧任务区，不能宣称原全区达到 95%。路线经过整车轮廓检查，动态障碍留给在线感知。
+
+![R04 实测速度和停车](media/r04_dynamics.png)
+
+|阶段|手工命令与技术说明|验收记录|
+|---|---|---|
+|R02|[手工检查](docs/three_tasks/R02/MANUAL_CHECK.md) · [原理](docs/three_tasks/R02/TECHNICAL.md) · [代码](docs/three_tasks/R02/CODE_WALKTHROUGH.md)|[结果](docs/three_tasks/R02/RESULTS.md) · [回执](validation/R02/latest.json)|
+|R03|[手工检查](docs/three_tasks/R03/MANUAL_CHECK.md) · [原理](docs/three_tasks/R03/TECHNICAL.md) · [代码](docs/three_tasks/R03/CODE_WALKTHROUGH.md)|[结果](docs/three_tasks/R03/RESULTS.md) · [回执](validation/R03/latest.json)|
+|R04|[手工检查](docs/three_tasks/R04/MANUAL_CHECK.md) · [原理](docs/three_tasks/R04/TECHNICAL.md) · [代码](docs/three_tasks/R04/CODE_WALKTHROUGH.md)|[结果](docs/three_tasks/R04/RESULTS.md) · [回执](validation/R04/latest.json)|
+
+```bash
+cd /home/ceihao/robot_project
+bash optimization_v2/three_tasks/advance.sh status
+bash optimization_v2/three_tasks/advance.sh R03 open
+bash optimization_v2/three_tasks/advance.sh R04 open
+```
+
+仓库提供新增源码、配置、规划摘要、实际结果与图；完整逐帧日志/本机二进制仍由本机回执绑定，尚不是 R12 可移植发行包。R05 正在单独复验新安装外参下的传感器与 RTAB 定位，未宣告通过。
 
 ## 独立小规模演示与实际录制
 

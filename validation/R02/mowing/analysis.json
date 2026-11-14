@@ -1,0 +1,139 @@
+{
+  "task": "mowing",
+  "passed": true,
+  "errors": [],
+  "phases": {
+    "straight": {
+      "samples": 195,
+      "speed_mps": 0.39999999999218167,
+      "yaw_rate_rad_s": 1.344437108128142e-19,
+      "travel_m": 1.491999999971021,
+      "yaw_change_rad": 4.985050917828946e-19,
+      "signed_forward_m": 1.491999999971021
+    },
+    "left": {
+      "samples": 1504,
+      "speed_mps": 0.5873473762330124,
+      "yaw_rate_rad_s": 0.1958910486510354,
+      "travel_m": 17.46478874165999,
+      "yaw_change_rad": 5.824817450703851,
+      "center": [
+        2.3872496946493516,
+        2.998584151402273
+      ],
+      "radius_m": 2.9983389083152963,
+      "radial_rmse_m": 4.284514283488636e-08,
+      "expected_radius_m": 2.998338888164996,
+      "relative_radius_error": 6.7204879439231036e-09
+    },
+    "right": {
+      "samples": 1511,
+      "speed_mps": 0.5873473762331386,
+      "yaw_rate_rad_s": -0.19589104865106932,
+      "travel_m": 17.340615295360926,
+      "yaw_change_rad": -5.783193049443759,
+      "center": [
+        1.3034931717570917,
+        -2.9003147015178152
+      ],
+      "radius_m": 2.998339129138735,
+      "radial_rmse_m": 1.5383756072037848e-06,
+      "expected_radius_m": 2.998338888164996,
+      "relative_radius_error": 8.036908027975187e-08
+    },
+    "reverse": {
+      "samples": 191,
+      "speed_mps": 0.19999999999607332,
+      "yaw_rate_rad_s": 1.4665669994206882e-10,
+      "travel_m": 0.7437999999748441,
+      "yaw_change_rad": 1.7100525569746505e-06,
+      "signed_forward_m": -0.7437999999738273
+    },
+    "spin": {
+      "samples": 141,
+      "speed_mps": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "travel_m": 0.0,
+      "yaw_change_rad": 0.0
+    }
+  },
+  "stopped": true,
+  "runtime": {
+    "error": null,
+    "forced": [],
+    "processes": [
+      {
+        "role": "server",
+        "pid": 115937,
+        "args": [
+          "gz",
+          "sim",
+          "--force-version",
+          "8",
+          "-s",
+          "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/scene/world.sdf"
+        ],
+        "domain": "119",
+        "partition": "r02_mowing_20261114_025907_332937",
+        "exit": 0
+      },
+      {
+        "role": "online_bridge",
+        "pid": 115954,
+        "args": [
+          "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+          "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+          "/s03/encoders@std_msgs/msg/String[gz.msgs.StringMsg",
+          "/s03/actuator/request@std_msgs/msg/String]gz.msgs.StringMsg"
+        ],
+        "domain": "119",
+        "partition": "r02_mowing_20261114_025907_332937",
+        "exit": 0
+      },
+      {
+        "role": "evaluation_bridge",
+        "pid": 115955,
+        "args": [
+          "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+          "/s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg",
+          "/s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts"
+        ],
+        "domain": "120",
+        "partition": "r02_mowing_20261114_025907_332937",
+        "exit": 0
+      },
+      {
+        "role": "evaluator",
+        "pid": 115956,
+        "args": [
+          "/usr/bin/python3",
+          "/home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
+          "--out",
+          "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937/evaluation"
+        ],
+        "domain": "120",
+        "partition": "r02_mowing_20261114_025907_332937",
+        "exit": 0
+      },
+      {
+        "role": "driver",
+        "pid": 115957,
+        "args": [
+          "/usr/bin/python3",
+          "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/driver_r02.py",
+          "--out",
+          "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R02/mowing_20261114_025907_332937"
+        ],
+        "domain": "119",
+        "partition": "r02_mowing_20261114_025907_332937",
+        "exit": 0
+      }
+    ],
+    "wall_seconds": 106.25206947900006,
+    "session": "mowing_20261114_025907_332937",
+    "passed": true
+  },
+  "vehicle_hash": "dc94cc49d65dee330d153b60ee21bb8deef5989eb63ca2a24f3c6cbba886b984",
+  "sim_seconds": 102.162,
+  "truth_evaluation_only": true
+}

@@ -1,0 +1,11 @@
+test_all_three_profiles_are_versioned (__main__.Contracts.test_all_three_profiles_are_versioned) ... ok
+test_declared_footprint_covers_body_tool_and_steered_wheels (__main__.Contracts.test_declared_footprint_covers_body_tool_and_steered_wheels) ... ok
+test_dino_cannot_spin_in_place_contract (__main__.Contracts.test_dino_cannot_spin_in_place_contract) ... ok
+test_driver_does_not_subscribe_truth (__main__.Contracts.test_driver_does_not_subscribe_truth) ... ok
+test_physical_wheels_not_visual_dummies (__main__.Contracts.test_physical_wheels_not_visual_dummies) ... ok
+test_steering_geometry_respects_inner_wheel_limit (__main__.Contracts.test_steering_geometry_respects_inner_wheel_limit) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.007s
+
+OK

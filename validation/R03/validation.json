@@ -1,0 +1,179 @@
+{
+  "passed": true,
+  "checks": {
+    "source_world_unchanged": true,
+    "manifest_version": true,
+    "three_independent_tasks": true,
+    "not_execution_or_formal_credit": true,
+    "spray_plan_count": true,
+    "A1": true,
+    "A2": true,
+    "A3": true,
+    "point_services_exactly_once": true,
+    "mowing_plan_count": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "inspection_plan_count": true,
+    "road": true,
+    "A_three_connected_partition_and_scope": true,
+    "B_three_connected_partition_and_scope": true
+  },
+  "plans": {
+    "A1": {
+      "checks": {
+        "version": true,
+        "vehicle": true,
+        "budget": true,
+        "connected": true,
+        "finite": true,
+        "footprint": true,
+        "curvature": true,
+        "gear": true,
+        "tool": true,
+        "endpoint": true
+      },
+      "samples": 2557,
+      "max_curvature": 0.0,
+      "reverse_m": 0.0,
+      "estimate_s": 1384.754875495219,
+      "motion_m": 170.48528137423858,
+      "planned_fraction": null,
+      "point_count": 56
+    },
+    "A2": {
+      "checks": {
+        "version": true,
+        "vehicle": true,
+        "budget": true,
+        "connected": true,
+        "finite": true,
+        "footprint": true,
+        "curvature": true,
+        "gear": true,
+        "tool": true,
+        "endpoint": true
+      },
+      "samples": 2448,
+      "max_curvature": 0.0,
+      "reverse_m": 0.0,
+      "estimate_s": 1358.5636066537209,
+      "motion_m": 175.45584412271572,
+      "planned_fraction": null,
+      "point_count": 56
+    },
+    "A3": {
+      "checks": {
+        "version": true,
+        "vehicle": true,
+        "budget": true,
+        "connected": true,
+        "finite": true,
+        "footprint": true,
+        "curvature": true,
+        "gear": true,
+        "tool": true,
+        "endpoint": true
+      },
+      "samples": 2411,
+      "max_curvature": 0.0,
+      "reverse_m": 0.0,
+      "estimate_s": 1299.8005062346022,
+      "motion_m": 158.48528137423858,
+      "planned_fraction": null,
+      "point_count": 52
+    },
+    "B1": {
+      "checks": {
+        "version": true,
+        "vehicle": true,
+        "budget": true,
+        "connected": true,
+        "finite": true,
+        "footprint": true,
+        "curvature": true,
+        "gear": true,
+        "tool": true,
+        "endpoint": true,
+        "all_swaths": true,
+        "planned_cut_accounting": true
+      },
+      "samples": 2229,
+      "max_curvature": 0.3227675648868153,
+      "reverse_m": 40.12777783736276,
+      "estimate_s": 856.5541483794915,
+      "motion_m": 217.80360657546743,
+      "planned_fraction": 0.9612102062396825,
+      "point_count": null
+    },
+    "B2": {
+      "checks": {
+        "version": true,
+        "vehicle": true,
+        "budget": true,
+        "connected": true,
+        "finite": true,
+        "footprint": true,
+        "curvature": true,
+        "gear": true,
+        "tool": true,
+        "endpoint": true,
+        "all_swaths": true,
+        "planned_cut_accounting": true
+      },
+      "samples": 2467,
+      "max_curvature": 0.32276753013276266,
+      "reverse_m": 44.067603078602666,
+      "estimate_s": 983.7209259393674,
+      "motion_m": 239.46662186723296,
+      "planned_fraction": 0.9736253640724114,
+      "point_count": null
+    },
+    "B3": {
+      "checks": {
+        "version": true,
+        "vehicle": true,
+        "budget": true,
+        "connected": true,
+        "finite": true,
+        "footprint": true,
+        "curvature": true,
+        "gear": true,
+        "tool": true,
+        "endpoint": true,
+        "all_swaths": true,
+        "planned_cut_accounting": true
+      },
+      "samples": 2413,
+      "max_curvature": 0.32276748605479094,
+      "reverse_m": 38.42864284997764,
+      "estimate_s": 935.4461064371025,
+      "motion_m": 234.16985986250742,
+      "planned_fraction": 0.9613448991346019,
+      "point_count": null
+    },
+    "road": {
+      "checks": {
+        "version": true,
+        "vehicle": true,
+        "budget": true,
+        "connected": true,
+        "finite": true,
+        "footprint": true,
+        "curvature": true,
+        "gear": true,
+        "tool": true,
+        "endpoint": true
+      },
+      "samples": 886,
+      "max_curvature": 0.0,
+      "reverse_m": 0.0,
+      "estimate_s": 244.3353961172485,
+      "motion_m": 88.48099013627927,
+      "planned_fraction": null,
+      "point_count": null
+    }
+  },
+  "total_estimated_sim_seconds": 7063.175565256752,
+  "scope": "Offline feasibility of independent tasks; dynamic travel time and closed-loop execution pending R04–R10"
+}
