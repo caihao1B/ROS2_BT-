@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "injection_process_success": true,
+    "physical_unhealthy_samples": true,
+    "no_flow_while_unhealthy": true,
+    "tool_health_result_recorded": true,
+    "residual_retry_recorded": true
+  },
+  "unhealthy_samples": 52,
+  "scope": "Additional independent physical fault check on recorded data"
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "observed_trigger_t": 40.26,
+  "observed_progress_m": 0.30060105048919594,
+  "output": "data: true\n\n",
+  "stderr": "",
+  "fixture_sha256": "31dd0e7a0d3868e72cb3ec8064fd43f242ef6ca0e9d0f3436e2a8224580bc5e3",
+  "truth_used_online": false
+}

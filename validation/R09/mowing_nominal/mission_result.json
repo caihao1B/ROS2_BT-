@@ -1,19 +1,19 @@
 {
-  "passed": false,
-  "terminal": "HUMAN_REQUIRED",
-  "controlled_hold": true,
-  "error": "RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')",
-  "t": 74.144,
+  "passed": true,
+  "terminal": "COMPLETED",
+  "controlled_hold": false,
+  "error": null,
+  "t": 197.692,
   "selected_segments": 5,
   "original_segments": 34,
-  "completed_segments": [],
-  "remaining_selected": [
+  "completed_segments": [
     "B1:segment:0",
     "B1:segment:1",
     "B1:segment:2",
     "B1:segment:3",
     "B1:segment:4"
   ],
+  "remaining_selected": [],
   "not_selected": [
     "B1:segment:5",
     "B1:segment:6",
@@ -50,27 +50,74 @@
       "segment": "B1:segment:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 4.419975000000008,
-      "remaining": 6.141515281674188,
+      "confirmed": 9.818862499999994,
+      "remaining": 0.7426277816742015,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 6.397312499999998,
+      "remaining": 12.457526927513072,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 7.440487499999993,
+      "remaining": 11.414351927513078,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 13.051274999999999,
+      "remaining": 5.803564427513072,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 14.716962499999992,
+      "remaining": 4.137876927513078,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 14.716962499999992,
+      "remaining": 4.137876927513078,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.399724999999986,
+      "remaining": 1.4551144275130845,
       "uncertain": false
     }
   ],
-  "replans": 1,
+  "replans": 0,
   "final_gate": {
-    "t": 74.13,
+    "t": 197.67,
     "allowed": false,
     "mode": "STOP",
     "v": 0.0,
     "w": 0.0,
     "reasons": [
       "NAV_COMMAND_STALE",
-      "TOOL_STATE_FOR_SEGMENT",
-      "OBSTRUCTED"
+      "TOOL_STATE_FOR_SEGMENT"
     ],
     "stopped": true,
     "tool_stopped": true,
     "nav_idle": true,
-    "progress_m": 2.8683848052345926
+    "progress_m": 27.723157977893518
   },
   "ownership": {
     "/tf": [
@@ -84,6 +131,6 @@
       "s10_tool_action_server"
     ]
   },
-  "wall_seconds": 193.68119303500862,
+  "wall_seconds": 525.716589240008,
   "scope": "Selected path segments executed; tool area and residual are separate ledger evidence, never inferred from arrival"
 }

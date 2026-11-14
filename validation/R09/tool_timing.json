@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "future_not_accepted_before_clock": true,
+    "same_feedback_accepted_when_clock_arrives": true,
+    "wall_age_not_reset_by_buffer": true,
+    "stale_sensor_time_rejected": true,
+    "foreign_session_rejected": true,
+    "valid_current_feedback_recovers": true
+  },
+  "process_exit": 0,
+  "scope": "Native receiver component timing test on isolated ROS domain 123; synthetic feedback, no physical task credit"
+}

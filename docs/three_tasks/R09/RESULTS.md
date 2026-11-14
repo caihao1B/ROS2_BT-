@@ -1,18 +1,29 @@
 # R09 实测结果
 
-**PARTIAL：暂不能进入 R10。** 最终准入以阶段回执哈希检查为准。原 S17/S18 保持 PARTIAL。
+**PASS：可以进入 R10。** 最终准入以阶段回执哈希检查为准。原 S17/S18 保持 PARTIAL。
 
 |案例|通过|抵达段/选择段/原 B1 段|反馈面积 m²|选择区域残余 m²|仿真 s|墙钟 s|定位 RMSE m|
 |---|---|---|---|---|---|---|---|
-|nominal|False|0/5/34|4.420|23.534|74.14|208.6|0.0535|
+|nominal|True|5/5/34|26.584|1.370|197.69|538.2|0.0574|
+|blocked|True|0/5/34|2.598|25.356|62.73|177.3|0.0497|
 
 ## nominal
 
-会话：`mowing_20261114_131457_243866`。终态：`HUMAN_REQUIRED`；原因：`RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')`。
+会话：`mowing_20261114_141045_985350`。终态：`COMPLETED`；原因：`None`。
+
+实际倒车距离：7.360 m。原 B1 工作面积：195.994 m²，原分母不随本次选段缩小。
+
+未完成选择段：`[]`。非预期接触：`{}`。失败检查：`[]`。
+
+规划查询次数 0。账本确认面积不超过隔离的实际工具作用面积，转场和倒车期间工具需物理停止。详细量见 `analysis_r09.json`、`coverage.geojson` 与 SQLite 账本。
+
+## blocked
+
+会话：`mowing_20261114_140747_354583`。终态：`HUMAN_REQUIRED`；原因：`RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')`。
 
 实际倒车距离：0.000 m。原 B1 工作面积：195.994 m²，原分母不随本次选段缩小。
 
-未完成选择段：`['B1:segment:0', 'B1:segment:1', 'B1:segment:2', 'B1:segment:3', 'B1:segment:4']`。非预期接触：`{}`。失败检查：`['selected_segments_traversed', 'two_work_strips', 'actual_reverse_travel', 'tools_off_during_turns']`。
+未完成选择段：`['B1:segment:0', 'B1:segment:1', 'B1:segment:2', 'B1:segment:3', 'B1:segment:4']`。非预期接触：`{}`。失败检查：`[]`。
 
 规划查询次数 1。账本确认面积不超过隔离的实际工具作用面积，转场和倒车期间工具需物理停止。详细量见 `analysis_r09.json`、`coverage.geojson` 与 SQLite 账本。
 

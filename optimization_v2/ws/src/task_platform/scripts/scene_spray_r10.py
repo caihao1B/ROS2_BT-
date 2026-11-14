@@ -24,6 +24,6 @@ def compose(out,task,session,rtf=.6,cluster='A1'):
     for tag,val in [('ixx',.0001),('iyy',.0001),('izz',.0002),('ixy',0),('ixz',0),('iyz',0)]:el(ii,tag,val)
     j=el(v,'joint',name='s10_motor_joint',type='revolute');el(j,'parent','tool_link');el(j,'child','s10_rotor');axis=el(j,'axis');el(axis,'xyz','0 0 1');lim=el(axis,'limit')
     for k,val in [('lower',-1e16),('upper',1e16),('effort',10),('velocity',30)]:el(lim,k,val)
-    plugin=el(v,'plugin',filename='libs10_tool.so',name='s10::ToolActuator');el(plugin,'config',json.dumps(tool));write(out/'world.sdf',root)
+    plugin=el(v,'plugin',filename='libs10_tool_r09.so',name='s10::ToolActuator');el(plugin,'config',json.dumps(tool));write(out/'world.sdf',root)
     dump(out/'assembly.json',dict(base_vehicle_hash=c['config_hash'],added_rotor_mass_kg=tool['rotor_mass_kg'],purpose='abstract physical work feedback fixture; no arm',near_sensor=cfg['near_sensor']))
     return c

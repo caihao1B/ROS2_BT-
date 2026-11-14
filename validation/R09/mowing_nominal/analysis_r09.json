@@ -1,5 +1,5 @@
 {
-  "passed": false,
+  "passed": true,
   "checks": {
     "runtime_clean": true,
     "original_database_unchanged": true,
@@ -14,28 +14,28 @@
     "curvature_bounded": true,
     "source_bound": true,
     "task_version_bound": true,
-    "selected_segments_traversed": false,
-    "two_work_strips": false,
-    "actual_reverse_travel": false,
-    "tools_off_during_turns": false
+    "selected_segments_traversed": true,
+    "two_work_strips": true,
+    "actual_reverse_travel": true,
+    "tools_off_during_turns": true
   },
   "case": "nominal",
   "task_result": {
-    "passed": false,
-    "terminal": "HUMAN_REQUIRED",
-    "controlled_hold": true,
-    "error": "RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')",
-    "t": 74.144,
+    "passed": true,
+    "terminal": "COMPLETED",
+    "controlled_hold": false,
+    "error": null,
+    "t": 197.692,
     "selected_segments": 5,
     "original_segments": 34,
-    "completed_segments": [],
-    "remaining_selected": [
+    "completed_segments": [
       "B1:segment:0",
       "B1:segment:1",
       "B1:segment:2",
       "B1:segment:3",
       "B1:segment:4"
     ],
+    "remaining_selected": [],
     "not_selected": [
       "B1:segment:5",
       "B1:segment:6",
@@ -72,27 +72,74 @@
         "segment": "B1:segment:0",
         "state": "CANCELLED",
         "reason": "USER_CANCEL",
-        "confirmed": 4.419975000000008,
-        "remaining": 6.141515281674188,
+        "confirmed": 9.818862499999994,
+        "remaining": 0.7426277816742015,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 6.397312499999998,
+        "remaining": 12.457526927513072,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 7.440487499999993,
+        "remaining": 11.414351927513078,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 13.051274999999999,
+        "remaining": 5.803564427513072,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 14.716962499999992,
+        "remaining": 4.137876927513078,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 14.716962499999992,
+        "remaining": 4.137876927513078,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 17.399724999999986,
+        "remaining": 1.4551144275130845,
         "uncertain": false
       }
     ],
-    "replans": 1,
+    "replans": 0,
     "final_gate": {
-      "t": 74.13,
+      "t": 197.67,
       "allowed": false,
       "mode": "STOP",
       "v": 0.0,
       "w": 0.0,
       "reasons": [
         "NAV_COMMAND_STALE",
-        "TOOL_STATE_FOR_SEGMENT",
-        "OBSTRUCTED"
+        "TOOL_STATE_FOR_SEGMENT"
       ],
       "stopped": true,
       "tool_stopped": true,
       "nav_idle": true,
-      "progress_m": 2.8683848052345926
+      "progress_m": 27.723157977893518
     },
     "ownership": {
       "/tf": [
@@ -106,30 +153,41 @@
         "s10_tool_action_server"
       ]
     },
-    "wall_seconds": 193.68119303500862,
+    "wall_seconds": 525.716589240008,
     "scope": "Selected path segments executed; tool area and residual are separate ledger evidence, never inferred from arrival"
   },
   "jobs": [
     {
-      "key": "5f4af1f30be16e631627d9f4d2d612c6b63e7aec019e6639fbe2a8ccec3ead05:B1:segment:0",
+      "key": "16810c484d320666be161569e0ed65505864862eff375c124cc6a988d1b6e261:B1:segment:0",
       "status": "CANCELLED",
-      "confirmed_m2": 4.419975000000008,
+      "confirmed_m2": 9.818862499999994,
       "requested_m2": 10.561490281674196,
-      "remaining_m2": 6.141515281674188,
+      "remaining_m2": 0.7426277816742015,
       "uncertain": false,
-      "physical_area_m2": 5.629221139517163,
+      "physical_area_m2": 13.054694587186217,
       "credit_outside_physical_3cm_m2": 0.0,
-      "credit_geometry_area_m2": 4.419975000000008
+      "credit_geometry_area_m2": 9.818862499999994
+    },
+    {
+      "key": "16810c484d320666be161569e0ed65505864862eff375c124cc6a988d1b6e261:B1:segment:4",
+      "status": "CANCELLED",
+      "confirmed_m2": 17.399724999999986,
+      "requested_m2": 18.85483942751307,
+      "remaining_m2": 1.4551144275130845,
+      "uncertain": false,
+      "physical_area_m2": 21.371238327247728,
+      "credit_outside_physical_3cm_m2": 0.0,
+      "credit_geometry_area_m2": 17.399724999999986
     }
   ],
-  "map_xy_rmse_m": 0.05350503053998574,
-  "actual_reverse_distance_m": 0.0,
+  "map_xy_rmse_m": 0.05739863972900038,
+  "actual_reverse_distance_m": 7.360351604527931,
   "selected_requested_area_m2": 27.953981706793993,
-  "selected_confirmed_union_m2": 4.419975000000007,
-  "selected_fraction": 0.15811611549154614,
-  "selected_residual_m2": 23.53400670679398,
+  "selected_confirmed_union_m2": 26.584258333333274,
+  "selected_fraction": 0.9510007773551694,
+  "selected_residual_m2": 1.3697233734606726,
   "original_cluster_area_m2": 195.99438340335297,
-  "original_cluster_confirmed_fraction": 0.022551539096422882,
+  "original_cluster_confirmed_fraction": 0.1356378579411809,
   "original_clusters": 3,
   "unexpected_contacts": {},
   "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",

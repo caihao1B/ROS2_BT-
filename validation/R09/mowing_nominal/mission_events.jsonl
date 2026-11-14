@@ -1,10 +1,65 @@
 {"t": 8.002, "event": "COARSE_PUBLIC_CLUSTER_HINT"}
-{"t": 26.9, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
-{"t": 26.9, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": ""}
-{"t": 27.478, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:0", "requested_area_m2": 10.561490281674196}
-{"t": 27.48, "event": "SEGMENT_GOAL", "segment": "B1:segment:0", "kind": "COVERAGE", "direction": 1, "original_poses": 75, "remaining_poses": 75, "tool_expected": true}
-{"t": 62.026, "event": "TOOL_RESULT", "segment": "B1:segment:0", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 4.419975000000008, "remaining": 6.141515281674188, "uncertain": false}
-{"t": 62.07, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
-{"t": 74.144, "event": "ACK_PLANNER_RESULT", "attempt": 1, "status": 4, "candidate_poses": 23, "claim": "bounded current observed search only; no global impossibility claim"}
-{"t": 74.144, "event": "TASK_STOP", "error": "RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')", "terminal": "HUMAN_REQUIRED"}
-{"t": 74.144, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
+{"t": 38.676, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 38.676, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": ""}
+{"t": 39.224, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:0", "requested_area_m2": 10.561490281674196}
+{"t": 39.226, "event": "SEGMENT_GOAL", "segment": "B1:segment:0", "kind": "COVERAGE", "direction": 1, "original_poses": 75, "remaining_poses": 75, "tool_expected": true}
+{"t": 76.33, "event": "TOOL_RESULT", "segment": "B1:segment:0", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 9.818862499999994, "remaining": 0.7426277816742015, "uncertain": false}
+{"t": 76.35, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
+{"t": 76.35, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:0", "xy_error_m": 0.045930878459453615, "yaw_error_rad": 0.006613048947151533}
+{"t": 76.35, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
+{"t": 76.35, "event": "SEGMENT_GOAL", "segment": "B1:segment:1", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 8, "remaining_poses": 8, "tool_expected": false}
+{"t": 81.21, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:1"}
+{"t": 81.21, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:1", "xy_error_m": 0.04779837974780855, "yaw_error_rad": 0.06941829321835025}
+{"t": 81.21, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:1"}
+{"t": 81.21, "event": "SEGMENT_GOAL", "segment": "B1:segment:2", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 63, "remaining_poses": 63, "tool_expected": false}
+{"t": 86.316, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 86.7, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:2"}
+{"t": 87.438, "event": "SEGMENT_GOAL", "segment": "B1:segment:2", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 63, "remaining_poses": 54, "tool_expected": false}
+{"t": 89.316, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 89.702, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:2"}
+{"t": 90.618, "event": "SEGMENT_GOAL", "segment": "B1:segment:2", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 63, "remaining_poses": 51, "tool_expected": false}
+{"t": 102.222, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 102.6, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:2"}
+{"t": 103.734, "event": "SEGMENT_GOAL", "segment": "B1:segment:2", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 63, "remaining_poses": 23, "tool_expected": false}
+{"t": 112.51, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 112.77, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:2"}
+{"t": 113.926, "event": "SEGMENT_GOAL", "segment": "B1:segment:2", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 63, "remaining_poses": 5, "tool_expected": false}
+{"t": 118.17, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:2"}
+{"t": 118.17, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:2", "xy_error_m": 0.03915797305056304, "yaw_error_rad": 0.02033662021915889}
+{"t": 118.17, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:2"}
+{"t": 118.17, "event": "SEGMENT_GOAL", "segment": "B1:segment:3", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 8, "remaining_poses": 8, "tool_expected": false}
+{"t": 122.85, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:3"}
+{"t": 122.85, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:3", "xy_error_m": 0.04837740667305335, "yaw_error_rad": 0.05298308309802208}
+{"t": 122.85, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:3"}
+{"t": 123.364, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:4", "requested_area_m2": 18.85483942751307}
+{"t": 123.364, "event": "SEGMENT_GOAL", "segment": "B1:segment:4", "kind": "COVERAGE", "direction": 1, "original_poses": 127, "remaining_poses": 127, "tool_expected": true}
+{"t": 142.124, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 142.68, "event": "TOOL_RESULT", "segment": "B1:segment:4", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 6.397312499999998, "remaining": 12.457526927513072, "uncertain": false}
+{"t": 142.71, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}
+{"t": 143.964, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:4", "requested_area_m2": 18.85483942751307}
+{"t": 143.964, "event": "SEGMENT_GOAL", "segment": "B1:segment:4", "kind": "COVERAGE", "direction": 1, "original_poses": 127, "remaining_poses": 86, "tool_expected": true}
+{"t": 147.972, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "PERCEPTION_ADMISSION_WAIT"}
+{"t": 148.538, "event": "TOOL_RESULT", "segment": "B1:segment:4", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 7.440487499999993, "remaining": 11.414351927513078, "uncertain": false}
+{"t": 148.562, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}
+{"t": 149.108, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:4", "requested_area_m2": 18.85483942751307}
+{"t": 149.11, "event": "SEGMENT_GOAL", "segment": "B1:segment:4", "kind": "COVERAGE", "direction": 1, "original_poses": 127, "remaining_poses": 79, "tool_expected": true}
+{"t": 173.198, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "PERCEPTION_ADMISSION_WAIT"}
+{"t": 173.766, "event": "TOOL_RESULT", "segment": "B1:segment:4", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 13.051274999999999, "remaining": 5.803564427513072, "uncertain": false}
+{"t": 173.792, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}
+{"t": 174.328, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:4", "requested_area_m2": 18.85483942751307}
+{"t": 174.328, "event": "SEGMENT_GOAL", "segment": "B1:segment:4", "kind": "COVERAGE", "direction": 1, "original_poses": 127, "remaining_poses": 40, "tool_expected": true}
+{"t": 179.732, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "PERCEPTION_ADMISSION_WAIT"}
+{"t": 180.3, "event": "TOOL_RESULT", "segment": "B1:segment:4", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 14.716962499999992, "remaining": 4.137876927513078, "uncertain": false}
+{"t": 180.33, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}
+{"t": 180.886, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:4", "requested_area_m2": 18.85483942751307}
+{"t": 180.888, "event": "SEGMENT_GOAL", "segment": "B1:segment:4", "kind": "COVERAGE", "direction": 1, "original_poses": 127, "remaining_poses": 29, "tool_expected": true}
+{"t": 181.288, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "NEXT_OBLIGATION"}
+{"t": 181.842, "event": "TOOL_RESULT", "segment": "B1:segment:4", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 14.716962499999992, "remaining": 4.137876927513078, "uncertain": false}
+{"t": 181.86, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}
+{"t": 182.424, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:4", "requested_area_m2": 18.85483942751307}
+{"t": 182.424, "event": "SEGMENT_GOAL", "segment": "B1:segment:4", "kind": "COVERAGE", "direction": 1, "original_poses": 127, "remaining_poses": 29, "tool_expected": true}
+{"t": 195.666, "event": "TOOL_RESULT", "segment": "B1:segment:4", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 17.399724999999986, "remaining": 1.4551144275130845, "uncertain": false}
+{"t": 195.69, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}
+{"t": 195.69, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:4", "xy_error_m": 0.049988768321045825, "yaw_error_rad": 0.01070161185531976}
+{"t": 195.69, "event": "SELECTED_SEGMENTS_TRAVERSED", "selected": 5, "original": 34, "coverage_completion": "read feedback ledger separately"}
+{"t": 197.692, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}

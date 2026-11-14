@@ -88,5 +88,6 @@
   "collision_ceiling_m": 1.2,
   "qualified_speed_mps": 0.4,
   "protective_half_width_m": 1.485,
-  "protective_front_m": 2.609
+  "protective_front_m": 2.609,
+  "self_uncertainty_margin_m": 0.05
 }

@@ -21,3 +21,11 @@ C++ 继续使用原 Nav2 RPP、Smac Hybrid、真实底盘关节插件、S10 工�
 C++ 工具 ActionServer 负责实际模拟电机命令、反馈门槛、动作取消和停止确认；Python 账本把反馈转换成可审计的数量。导航段到达后取消仍在运行的工作动作，若确认面积不足，状态保留 PARTIAL/CANCELLED；不得改写为工具 SUCCEEDED。
 
 `regional_r09.py` 是独立的 Dino 区域匹配入口，复用原地图、实测点云匹配和独立 GNSS 监督原则；`stability_r09.py` 在原离散度条件上增加更长的样本跨度。`diagnostics_r09.py` 只记录适配 Dino 车身范围的地形与点云证据，不发布运动命令或定位输入。
+
+`r09_backend/self_filter.hpp` 把“实体车身内自回波”与“过滤余量环带内的低位真实回波”分开。`terrain_r09.py` 生成并编译独立 `r09_terrain`，保留原 R08 可执行文件与证据。`footprint_r09.body_polygon` 用后轴原点做车体变换；`ledger_core_r09.add_area` 删除零面积几何后做反馈面积并集，异常帧不增加工作量。
+
+`tool_build_r09.py` 从原 S10 工具服务生成独立 `r09_tool_action_server`。C++ `drain()` 只取已经抵达当前 `/clock` 的反馈，再交给原转速/持续时间判断；传感器时间戳与实际接收墙钟分别保留。实例仍使用原工具服务节点名与唯一工具命令出口，新增二进制和生成源文件纳入本次运行哈希。反馈超时保持故障，绝不因为缓冲就确认作业量。
+
+生成的 `ToolActuator.cc` 仅把原固定采样周期替换为配置 `feedback_period_s`（本阶段 0.02 秒）；独立 `libs10_tool_r09.so` 保留物理关节、命令租约、停机与故障注入。`runtime_r09.py` 为工具启独立桥接进程，避免与四个高密度近地通道争用同一桥接回调。`tool_timing_r09.py` 在 ROS 域 123 对真实 C++ 接收节点做六项合成消息时序检查；它是组件检查，不计作机器人实际作业通过。
+
+`scene_r09.py` 输出受阻用的实体模型文件；`runtime_r09.py` 仅在测试编排边界，通过 Gazebo 创建服务放置这个模型，并保存实体创建回执。在线 `mission_r09.py` 不读取模型文件或坐标，只使用地图匹配、传感器风险和真实 Nav2 搜索结果。`analyze_r09.py` 要求实体创建成功，避免未注入故障的运行被记作受阻通过。

@@ -14,7 +14,7 @@
 |巡迹|Jackal 尺寸参考的差速底盘|FollowPath 跟踪原 88.48 m 连接路；前车跟随、停车恢复、观测绕行、受阻上报|
 |割草|项目 Dino 前阿克曼底盘|Fields2Cover 条带，满足整车轮廓的 Reeds–Shepp/Dubins 地头连接；关闭工具后换向或转场|
 
-这些是几何参考和实际仿真动力学，不宣称与对应商品整机等价。Dino 后轴最小转弯半径约 3 m，整车外侧转圈直径约 9.82 m；规划同时检查车体轮廓，不能只检查中心线。割草有效幅宽 1.6 m。
+这些是几何参考和实际仿真动力学，不宣称与对应商品整机等价。Dino 后轴最小转弯半径约 3 m，整车外侧转圈直径约 9.82 m；规划同时检查车体轮廓，不能只检查中心线。割草有效幅宽 1.6 m，正常前进指令 0.35 m/s、倒车上限 0.25 m/s。
 
 ## 技术结构
 
@@ -40,7 +40,7 @@ flowchart LR
 - **离线规划：** 工作量加权 METIS 连通分簇；OR-Tools TSP / 2-opt 点服务顺序；Fields2Cover 与 OMPL 生成条带和满足转弯半径的地头段。
 - **在线导航：** Nav2 Smac 规划器、RPP 跟踪；阿克曼方向、速度和曲率由唯一控制出口约束。任务行为树使用实际 BehaviorTree.CPP，记录决策原因、输入证据、门限和未选择的候选动作。
 - **动态交互：** 当前点云跟踪提供同向跟随、短时横穿保护与观测活动区绕行。使用 CV 未来协方差及有限时长的活动位置记忆，不宣称学会行人意图。历史 S15 学习型预测候选未达收益门槛，继续禁用。
-- **有效作业：** 实际模拟工具电机/流量反馈驱动事务账本；面积按保守工具足迹求交、并集，重复经过不重复计数。原始任务分母与残余同时保存。
+- **有效作业：** 实际模拟工具电机/流量反馈驱动事务账本；面积按保守工具足迹求交、并集，重复经过不重复计数。原始任务分母与残余同时保存。R09/R10 的工具物理反馈采样为 50 Hz，独立桥接并按原采集时间配对，反馈与停车门限保持不变。
 
 ## 当前可验证范围
 
@@ -48,12 +48,13 @@ flowchart LR
 |---|---|---|
 |R07|PASS|[结果](docs/three_tasks/R07/RESULTS.md) · [命令](docs/three_tasks/R07/MANUAL.md) · [原理](docs/three_tasks/R07/TECHNICAL.md) · [代码](docs/three_tasks/R07/CODE.md)|
 |R08|PASS|[结果](docs/three_tasks/R08/RESULTS.md) · [命令](docs/three_tasks/R08/MANUAL.md) · [原理](docs/three_tasks/R08/TECHNICAL.md) · [代码](docs/three_tasks/R08/CODE.md)|
-|R09|IN_PROGRESS（未封存）|[结果](docs/three_tasks/R09/RESULTS.md) · [命令](docs/three_tasks/R09/MANUAL.md) · [原理](docs/three_tasks/R09/TECHNICAL.md) · [代码](docs/three_tasks/R09/CODE.md)|
-|R10|NOT_RUN|[结果](docs/three_tasks/R10/RESULTS.md) · [命令](docs/three_tasks/R10/MANUAL.md) · [原理](docs/three_tasks/R10/TECHNICAL.md) · [代码](docs/three_tasks/R10/CODE.md)|
+|R09|PASS|[结果](docs/three_tasks/R09/RESULTS.md) · [命令](docs/three_tasks/R09/MANUAL.md) · [原理](docs/three_tasks/R09/TECHNICAL.md) · [代码](docs/three_tasks/R09/CODE.md)|
+|R10|IN_PROGRESS（未封存）|[结果](docs/three_tasks/R10/RESULTS.md) · [命令](docs/three_tasks/R10/MANUAL.md) · [原理](docs/three_tasks/R10/TECHNICAL.md) · [代码](docs/three_tasks/R10/CODE.md)|
 
 ![巡迹真实轨迹与交互案例](media/r08_inspection.png)
+![割草真实轨迹与反馈面积](media/r09_mowing.png)
 
-R01–R06 已分别完成启动退出、几何、离线路径、动力学、短程定位和 BT 协议验收。R07 PASS 限定原 A1 前三个点及工具故障恢复；R08 必须包含完整连接路及三个交互案例；R09 组件案例限定原 B1 前五段；R10 另外检查完整 A1、连接路和 B1 路线及声明的故障案例。具体完成量以对应结果文件为准，已准备代码不等于已通过。
+R01–R06 已分别完成启动退出、几何、离线路径、动力学、短程定位和 BT 协议验收。R07 PASS 限定原 A1 前三个点及工具故障恢复；R08 必须包含完整连接路及三个交互案例；R09 组件案例限定原 B1 前五段；R10 另外检查完整 A1、连接路和 B1 路线及声明的故障案例。具体完成量以对应结果文件为准，已准备代码不等于已通过。R09 持续障碍用例在完成定位后放置实体障碍；启动即被大障碍遮挡的重定位尚未通过。割草搜索若找到替代路线但尚需覆盖重排，会保留残余并明确上报，不把候选路径记成已经绕行。
 
 **原 S17/S18 继续保持 PARTIAL。** 不执行六十次正式矩阵，不把未运行的 A2/A3/B2/B3 推定为通过。条带段抵达与工具有效面积是两个指标；原 95% 标准保留，未确认面积不会清零。原 B 区可用 1120 m²，本版内侧任务 586.40 m²，其余 533.60 m² 保留为未计入的地头及边缘义务。
 

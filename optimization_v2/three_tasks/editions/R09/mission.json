@@ -104455,6 +104455,8 @@
     "continuous_stable_s": 3.0,
     "reject_prehint_capture": true,
     "basis": "robust map-to-odom corrections",
+    "admission_window_s": 7.0,
+    "max_admission_gap_s": 0.6,
     "correction_filter_window_s": 4.2,
     "correction_filter_max_samples": 25
   },
@@ -104489,5 +104491,5 @@
     "default_segment_limit": 5,
     "original_denominator_preserved": true
   },
-  "version": "799f6425c8d1044cc9b37777839a3c1335b8d4c21a7657a536c7bd126933d601"
+  "version": "16810c484d320666be161569e0ed65505864862eff375c124cc6a988d1b6e261"
 }

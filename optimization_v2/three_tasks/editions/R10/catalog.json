@@ -1,0 +1,23 @@
+{
+  "schema": "R10-INDEPENDENT-ACCEPTANCE/1",
+  "formal_S17_S18": "PARTIAL",
+  "normal_required": [
+    "spray_full_A1",
+    "inspection_full_connector",
+    "mowing_full_B1"
+  ],
+  "fault_required": [
+    "spray_tool_jam",
+    "inspection_follow_stop_resume",
+    "inspection_detour",
+    "inspection_persistent_block",
+    "mowing_persistent_block"
+  ],
+  "original_denominators": {
+    "A1_points": 56,
+    "B1_segments": 34,
+    "connector_m": 88.48099013627927
+  },
+  "scope": "Independent normal and bounded-fault acceptance, no sixty-run matrix and no extrapolation to untested A2/A3/B2/B3",
+  "version": "75b06f29eb91bd396461f334c7d251cdc2ab43ce7b278e309d26e38436df49b8"
+}

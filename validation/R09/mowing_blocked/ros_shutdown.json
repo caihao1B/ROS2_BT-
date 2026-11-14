@@ -1,0 +1,250 @@
+{
+  "physical_stop_gate": "worker retains original thresholds",
+  "phases": [
+    {
+      "phase": "producers_and_consumers",
+      "role": "evaluation_bridge",
+      "exit": 0,
+      "elapsed_wall_s": 0.15302296400477644,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "tool_bridge",
+      "exit": 0,
+      "elapsed_wall_s": 0.21226417100115214,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "raw_bridge",
+      "exit": 0,
+      "elapsed_wall_s": 0.21231704100500792,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "online_bridge",
+      "exit": 0,
+      "elapsed_wall_s": 0.26268425400485285,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "terrain",
+      "exit": 0,
+      "elapsed_wall_s": 0.26281499599281233,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "bt",
+      "exit": 0,
+      "elapsed_wall_s": 0.2628765260014916,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "bt_navigator",
+      "exit": 0,
+      "elapsed_wall_s": 0.26293044300109614,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "lifecycle_manager",
+      "exit": 0,
+      "elapsed_wall_s": 0.31332657000166364,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "global_manager",
+      "exit": 0,
+      "elapsed_wall_s": 0.36362764399382286,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "map_server",
+      "exit": 0,
+      "elapsed_wall_s": 0.3637191360030556,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "controller_server",
+      "exit": 0,
+      "elapsed_wall_s": 0.3637618780048797,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "tool_server",
+      "exit": 0,
+      "elapsed_wall_s": 0.36381369999435265,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "evaluator",
+      "exit": 0,
+      "elapsed_wall_s": 0.41400498400616925,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "global_sources",
+      "exit": 0,
+      "elapsed_wall_s": 0.4140970339940395,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "planner_server",
+      "exit": 0,
+      "elapsed_wall_s": 0.41415611999400426,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "tool_evaluator",
+      "exit": 0,
+      "elapsed_wall_s": 0.46440271800383925,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "diagnostics",
+      "exit": 0,
+      "elapsed_wall_s": 0.46444427300593816,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "cloud",
+      "exit": 0,
+      "elapsed_wall_s": 0.5145935119944625,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "inputs",
+      "exit": 0,
+      "elapsed_wall_s": 0.5146259189932607,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "slam_initial",
+      "exit": 0,
+      "elapsed_wall_s": 0.5146749470004579,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "reference",
+      "exit": 0,
+      "elapsed_wall_s": 0.5146996709954692,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "risk",
+      "exit": 0,
+      "elapsed_wall_s": 0.5147218100028113,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "control",
+      "exit": 0,
+      "elapsed_wall_s": 0.5147431819932535,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "generator_motion",
+      "exit": 0,
+      "elapsed_wall_s": 0.5648664399923291,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "generator_vision",
+      "exit": 0,
+      "elapsed_wall_s": 0.5648892780009191,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "icp_gate",
+      "exit": 0,
+      "elapsed_wall_s": 0.5649129539960995,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "odom_output",
+      "exit": 0,
+      "elapsed_wall_s": 0.5649320209922735,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "icp_motion_guess",
+      "exit": 0,
+      "elapsed_wall_s": 0.5649498300044797,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "mapping_inputs",
+      "exit": 0,
+      "elapsed_wall_s": 0.5649656839959789,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "tool_observer",
+      "exit": 0,
+      "elapsed_wall_s": 0.5649823059939081,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "ledger",
+      "exit": 0,
+      "elapsed_wall_s": 0.5649990679958137,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "fanout",
+      "exit": 0,
+      "elapsed_wall_s": 0.6151300789933885,
+      "forced": false
+    },
+    {
+      "phase": "estimators_after_inputs_closed",
+      "role": "fused",
+      "exit": 0,
+      "elapsed_wall_s": 0.1504303989931941,
+      "forced": false
+    },
+    {
+      "phase": "estimators_after_inputs_closed",
+      "role": "wheel_imu",
+      "exit": 0,
+      "elapsed_wall_s": 0.15046985899971332,
+      "forced": false
+    },
+    {
+      "phase": "estimators_after_inputs_closed",
+      "role": "icp",
+      "exit": 0,
+      "elapsed_wall_s": 0.20059577199572232,
+      "forced": false
+    }
+  ]
+}

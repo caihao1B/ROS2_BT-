@@ -1,0 +1,18 @@
+test_front_corner_is_rotated_about_rear_axle (test_footprint_r09.RearAxleFootprint.test_front_corner_is_rotated_about_rear_axle) ... ok
+test_padding_is_not_part_of_current_body (test_footprint_r09.RearAxleFootprint.test_padding_is_not_part_of_current_body) ... ok
+test_quarter_turn_preserves_rear_axle_origin (test_footprint_r09.RearAxleFootprint.test_quarter_turn_preserves_rear_axle_origin) ... ok
+test_partial_stop_keeps_original_residual (test_ledger_r09.Accounting.test_partial_stop_keeps_original_residual) ... ok
+test_stationary_overlap_does_not_double_area_and_width_is_bound (test_ledger_r09.Accounting.test_stationary_overlap_does_not_double_area_and_width_is_bound) ... ok
+test_turn_and_fault_never_credit (test_ledger_r09.Accounting.test_turn_and_fault_never_credit) ... ok
+test_mixed_boundary_intersection_does_not_crash_or_credit_lines (test_ledger_r09.BoundaryGeometry.test_mixed_boundary_intersection_does_not_crash_or_credit_lines) ... ok
+test_only_touching_boundary_creates_no_area (test_ledger_r09.BoundaryGeometry.test_only_touching_boundary_creates_no_area) ... ok
+test_long_measured_stability_admitted (test_stability_r09.Stability.test_long_measured_stability_admitted) ... ok
+test_lower_rate_valid_measurements_still_need_eighteen (test_stability_r09.Stability.test_lower_rate_valid_measurements_still_need_eighteen) ... ok
+test_missing_epoch_over_freshness_bound_rejected (test_stability_r09.Stability.test_missing_epoch_over_freshness_bound_rejected) ... ok
+test_motion_between_matching_modes_rejected (test_stability_r09.Stability.test_motion_between_matching_modes_rejected) ... ok
+test_short_stable_window_is_not_enough_for_dino (test_stability_r09.Stability.test_short_stable_window_is_not_enough_for_dino) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.192s
+
+OK

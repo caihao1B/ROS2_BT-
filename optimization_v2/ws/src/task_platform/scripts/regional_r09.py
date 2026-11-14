@@ -67,7 +67,7 @@ def main():
      evidence['raw_pose']=evidence['pose'];evidence['pose']=[*smooth,0.,0.,0.,math.sin(syaw/2),math.cos(syaw/2)];scatter=np.median(np.abs(shifts-ms),axis=0)*1.4826;cov[0,0]+=scatter[0]**2;cov[1,1]+=scatter[1]**2;evidence['covariance']=cov.reshape(-1).tolist();evidence['temporal_filter']=dict(method='median map-to-odom correction',samples=len(corrections),span_s=t-corrections[0][0],robust_scatter_m=scatter.tolist(),original_capture_stamp=t)
 
      admission_corrections.append((t,ms.copy(),mh))
-     while admission_corrections and t-admission_corrections[0][0]>4.2:admission_corrections.popleft()
+     while admission_corrections and t-admission_corrections[0][0]>7.0:admission_corrections.popleft()
      if not state['bootstrap']:
       stable,metrics=stable_corrections(admission_corrections)
       metrics['basis']='actual robust map-to-odom output, not raw outlier extrema'
@@ -77,7 +77,7 @@ def main():
       else:state['stable_since']=None
       evidence['startup_stability']=dict(metrics,admitted=state['bootstrap'],stable_since=state['stable_since'])
       if not state['bootstrap']:evidence.update(valid=False,reason='STARTUP_CORRECTION_STABILITY_PENDING')
-    elif not state['bootstrap']:state['stable_since']=None
+    elif not state['bootstrap'] and (not admission_corrections or t-admission_corrections[-1][0]>.6):state['stable_since']=None
 
    else:evidence=dict(t=t,valid=False,reason=reason,matches=matches,processing_wall_s=time.monotonic()-start)
    evidence.update(map_id=atlas['map_id'],map_revision=atlas['revision'],rig_revision=rig['revision'],quality_source='S14/S17 sensor-derived frozen cloud; RTAB local ICP + wheel/IMU; held-out map matching; independent GNSS supervisor',backend='regional_surface_map',truth_used=False)

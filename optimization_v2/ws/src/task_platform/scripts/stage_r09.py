@@ -5,7 +5,9 @@ from analyze_r09 import analyze
 
 def main(command,args):
  require('R08');out=APP/'results/R09';out.mkdir(parents=True,exist_ok=True)
- if command=='build':build();return 0
+ if command=='build':
+  from terrain_r09 import build_terrain
+  build();build_terrain();return 0
  if command=='test':
   case=args[0] if args else 'nominal';limit=int(args[1]) if len(args)>1 else 5
   if case not in ['nominal','blocked'] or limit<0:raise ValueError('test nominal|blocked [segment_count; 0=all original B1 segments]')
@@ -14,6 +16,10 @@ def main(command,args):
  with (out/'tests.log').open('w') as f:r=subprocess.run([str(BASE/'venvs/scene/bin/python'),'-m','unittest','discover','-s',str(PKG/'tests'),'-p','*_r09.py','-v'],cwd=ROOT,stdout=f,stderr=subprocess.STDOUT,timeout=45)
  paths={case:ROOT/read(out/('mowing_'+case+'_latest.json'))['path'] for case in ['nominal','blocked'] if (out/('mowing_'+case+'_latest.json')).exists()};cases={k:analyze(v) for k,v in paths.items()};pending=[k+' has not passed' for k in ['nominal','blocked'] if not cases.get(k,{}).get('passed')]
  if r.returncode:pending.append('component checks failed')
+ native=subprocess.run([str(APP/'build/r09/r09_self_filter_test')],capture_output=True,text=True,timeout=10);dump(out/'native_tests.json',dict(exit=native.returncode,output=native.stdout,stderr=native.stderr))
+ if native.returncode:pending.append('native self-filter checks failed')
+ env=os.environ.copy();env['ROS_DOMAIN_ID']='123';timing=subprocess.run(['/usr/bin/python3',str(PKG/'scripts/tool_timing_r09.py')],env=env,capture_output=True,text=True,timeout=15)
+ if timing.returncode:pending.append('native tool clock timing checks failed')
  import matplotlib;matplotlib.use('Agg')
  import matplotlib.pyplot as plt
  import numpy as np
@@ -39,6 +45,6 @@ def main(command,args):
     axes[1].add_patch(PathPatch(DrawingPath(vertices,codes),facecolor=colors[feature['properties']['kind']],edgecolor='none',alpha=.9,label=None if labeled else feature['properties']['kind']));labeled=True
   axes[1].autoscale_view()
  axes[1].axis('equal');axes[1].grid(alpha=.3);axes[1].legend();axes[1].set(title='Selected work / feedback credit / residual',xlabel='Site X [m]',ylabel='Site Y [m]');fig.tight_layout();figure=out/'mowing.png';fig.savefig(figure,dpi=150);plt.close(fig)
- summary=dict(passed=not pending,cases=cases,pending=pending,scope='Selected original swaths and headland segments, real feedback accounting, bounded blocked hold; no full B1 or formal S17 credit');report=render('R09','R09 / Ackermann mowing and feedback ledger',summary,[figure]);files=list(edition('R09').rglob('*'))+[APP/'results/R08/latest.json',out/'tests.log',figure,report]
+ summary=dict(passed=not pending,cases=cases,pending=pending,scope='Selected original swaths and headland segments, real feedback accounting, bounded blocked hold; no full B1 or formal S17 credit');report=render('R09','R09 / Ackermann mowing and feedback ledger',summary,[figure]);files=list(edition('R09').rglob('*'))+[APP/'results/R08/latest.json',out/'tests.log',out/'native_tests.json',APP/'build/r09/r09_terrain',APP/'build/r09/r09_self_filter_test',APP/'build/r09/r09_tool_action_server',APP/'build/r09/libs10_tool_r09.so',out/'tool_timing/result.json',figure,report]
  for path in paths.values():files+=list(path.rglob('*'))
- sources=list((PKG/'scripts').glob('*_r09.py'))+list((PKG/'tests').glob('*_r09.py'))+list((ROOT/'docs/three_tasks/R09').glob('*.md'));d=seal('R09',summary,files,sources,'R10');print(json.dumps(dict(status=d['automated_status'],pending=pending)));return 0 if not pending else 2
+ sources=list((PKG/'r09_backend').glob('*'))+list((PKG/'scripts').glob('*_r09.py'))+list((PKG/'tests').glob('*_r09.py'))+list((ROOT/'docs/three_tasks/R09').glob('*.md'));d=seal('R09',summary,files,sources,'R10');print(json.dumps(dict(status=d['automated_status'],pending=pending)));return 0 if not pending else 2

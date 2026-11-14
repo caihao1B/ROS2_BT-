@@ -1,6 +1,6 @@
 {
   "schema": "S10-TOOL/1",
-  "scope": "Actual simulated rotor feedback and conservative estimated footprint union; no cutting effectiveness claim; R04 qualified .5 m/s bounds new .4 m/s work setting",
+  "scope": "Actual simulated rotor feedback and conservative estimated footprint union; no cutting effectiveness claim; R04 qualified .5 m/s bounds .35 m/s command and .4 m/s observed speed limit",
   "operations": [
     "POINT_SERVICE",
     "START_WORK",
@@ -35,6 +35,7 @@
   "simulation_seed": 41,
   "capability_provenance": "S03 virtual tool geometry unchanged; conservative S08 speed; field95 feedback/stop/pairing thresholds retained. Pose erosion is an engineering test budget, not a certified confidence bound.",
   "ledger_precision_m": 0.005,
+  "feedback_period_s": 0.02,
   "vehicle": "ackermann",
   "tool": {
     "vehicle": "ackermann",
@@ -58,6 +59,6 @@
   "map_id": "4e4b85d7-ccf3-58ed-925b-1efba3fa6262",
   "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
   "frame_epoch": "00a4a255-85c4-5f56-a644-851f97bf5b71",
-  "plan_revision": "799f6425c8d1044cc9b37777839a3c1335b8d4c21a7657a536c7bd126933d601",
-  "tool_revision": "59bd8b46f1c1488b5ac29263bc72931b982a9f22a83782af44af185a7aad2f8d"
+  "plan_revision": "16810c484d320666be161569e0ed65505864862eff375c124cc6a988d1b6e261",
+  "tool_revision": "4d7fa5103a0dc11adcbd5a453d524ad030db94a9b385db720e817a37be40e067"
 }
