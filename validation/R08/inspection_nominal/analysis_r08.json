@@ -1,14 +1,16 @@
 {
-  "passed": false,
+  "passed": true,
   "checks": {
-    "runtime_clean": false,
+    "runtime_clean": true,
     "original_database_unchanged": true,
-    "selected_route_completed": false,
     "no_unexpected_contact": true,
     "map_rmse_under_15cm": true,
-    "cross_track_under_50cm": true,
-    "measured_progress": false,
+    "physical_footprint_inside_authorized_area": true,
     "stopped": true,
+    "active_path_cross_track_under_50cm": true,
+    "executed_references_authorized": true,
+    "selected_route_completed": true,
+    "measured_progress": true,
     "unique_actuator": true,
     "no_tool_owner": true,
     "unique_tf": true,
@@ -17,29 +19,31 @@
   },
   "case": "nominal",
   "task_result": {
-    "passed": false,
-    "error": "RuntimeError('LIVE_DETOUR_INTEGRATION_PENDING')",
-    "manual_reason": "LIVE_DETOUR_INTEGRATION_PENDING",
-    "t": 44.412,
-    "selected_length_m": 2.999311146696442,
+    "passed": true,
+    "terminal": "COMPLETED",
+    "controlled_hold": false,
+    "error": null,
+    "manual_reason": null,
+    "t": 343.642,
+    "selected_length_m": 88.48099013627925,
     "original_length_m": 88.48099013627925,
-    "full_route_selected": false,
-    "remaining_original_m": 87.28126579549225,
-    "route_index": 12,
+    "full_route_selected": true,
+    "remaining_original_m": 0.099977027539083,
+    "route_index": 884,
+    "replans": 1,
     "final_gate": {
-      "t": 44.4,
+      "t": 343.62,
       "allowed": false,
       "mode": "STOP",
       "v": 0.0,
       "w": 0.0,
       "reasons": [
-        "NAV_COMMAND_STALE",
-        "OBSTRUCTED"
+        "NAV_COMMAND_STALE"
       ],
       "stopped": true,
       "tool_stopped": true,
       "nav_idle": true,
-      "progress_m": 1.2403498715346477
+      "progress_m": 91.72659231332568
     },
     "ownership": {
       "/tf": [
@@ -51,16 +55,19 @@
       ],
       "/s10/tool/command": []
     },
-    "wall_seconds": 116.80185752399848,
-    "scope": "Inspection navigation; no spray/mow credit"
+    "wall_seconds": 893.1436295809981,
+    "scope": "Inspection navigation; residuals remain; no spray/mow credit"
   },
-  "map_xy_rmse_m": 0.01970465438763608,
-  "maximum_cross_track_m": 0.005100900643670318,
-  "maximum_actual_progress_m": 1.177904480864324,
+  "map_xy_rmse_m": 0.05172607891630109,
+  "maximum_cross_track_m": 1.9365555658087665,
+  "maximum_active_path_cross_track_m": 0.09378873461391309,
+  "maximum_actual_progress_m": 88.32195701025182,
   "follow_decisions": 0,
   "minimum_observed_follow_gap_m": null,
+  "minimum_physical_follow_gap_m": null,
+  "leader_stop_assessment": {},
   "unexpected_contacts": {},
-  "full_connector_passed": false,
+  "full_connector_passed": true,
   "formal_credit": false,
-  "scope": "Selected inspection route only; full R08 additionally requires all declared behavior cases"
+  "scope": "Declared independent inspection case only; blocked-case PASS means controlled hold, never route completion"
 }

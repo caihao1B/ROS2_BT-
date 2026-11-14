@@ -79,12 +79,14 @@
     0.55
   ],
   "self_mask": [
-    -0.304,
-    0.304,
-    -0.265,
-    0.265
+    -0.264,
+    0.264,
+    -0.225,
+    0.225
   ],
   "self_z_max": 0.3,
   "collision_ceiling_m": 1.0,
-  "qualified_speed_mps": 0.4
+  "qualified_speed_mps": 0.4,
+  "protective_half_width_m": 0.315,
+  "protective_front_m": 1.4
 }

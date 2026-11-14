@@ -1,12 +1,17 @@
 """Read-only near-body evidence recorder. Never publishes control or estimator inputs."""
 import argparse,json,math,signal,time
 from pathlib import Path
+import numpy as np
+from collections import deque
+from sensor_msgs.msg import PointCloud2
+from sensor_msgs_py.point_cloud2 import read_points_numpy
+from rclpy.qos import qos_profile_sensor_data
 import rclpy
 from std_msgs.msg import String
 from nav_msgs.msg import Odometry,OccupancyGrid
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True);rclpy.init();n=rclpy.create_node('r08_readonly_diagnostics');st=dict(stop=False,pose=None,last=-100.);log=(a.out/'terrain.jsonl').open('w');grids=(a.out/'costmap.jsonl').open('w')
+ ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True);rclpy.init();n=rclpy.create_node('r08_readonly_diagnostics');st=dict(stop=False,pose=None,last=-100.,capture_last=-100.,captures=0);clouds={k:deque(maxlen=3) for k in ['combined','front','rear','left','right']};log=(a.out/'terrain.jsonl').open('w');grids=(a.out/'costmap.jsonl').open('w')
  def od(m):
   p=m.pose.pose;q=p.orientation;st['pose']=[p.position.x,p.position.y,math.atan2(2*(q.w*q.z+q.x*q.y),1-2*(q.y*q.y+q.z*q.z))]
  def body(x,y):
@@ -18,6 +23,13 @@ def main():
   for row in d['cells']:
    x,y=body(row[0],row[1])
    if -.5<x<1.2 and abs(y)<.6:rows.append(dict(body=[x,y],values=row))
+  if d['t']>18 and any(r['values'][8]==100 or r['values'][8]<0 for r in rows) and d['t']-st['capture_last']>1. and st['captures']<12:
+   arrays={};metadata=dict(terrain=d,odom_pose=st['pose'])
+   for key,queue in clouds.items():
+    if not queue:continue
+    cloud=min(queue,key=lambda m:abs(m.header.stamp.sec+m.header.stamp.nanosec*1e-9-d['t']));ct=cloud.header.stamp.sec+cloud.header.stamp.nanosec*1e-9
+    arrays[key]=read_points_numpy(cloud,field_names=['x','y','z'],skip_nans=True).reshape(-1,3);metadata[key+'_t']=ct
+   file=a.out/('capture_%02d'%st['captures']);np.savez(file.with_suffix('.npz'),**arrays);file.with_suffix('.json').write_text(json.dumps(metadata));st['captures']+=1;st['capture_last']=d['t']
   log.write(json.dumps(dict(t=d['t'],columns=d['columns'],plane=d['ground_plane'],pose=st['pose'],rows=rows))+'\n');log.flush()
  def grid(m):
   if st['pose'] is None:return
@@ -29,6 +41,7 @@ def main():
     x,y=body(m.info.origin.position.x+(i+.5)*m.info.resolution,m.info.origin.position.y+(j+.5)*m.info.resolution)
     if -.5<x<1.2 and abs(y)<.6:rows.append([x,y,value])
   grids.write(json.dumps(dict(t=m.header.stamp.sec+m.header.stamp.nanosec*1e-9,pose=st['pose'],bad=rows))+'\n');grids.flush()
+ for key,topic in [('combined','/s04/perception/points')]+[(k,'/r07/near_'+k+'/points') for k in ['front','rear','left','right']]:n.create_subscription(PointCloud2,topic,lambda m,k=key:clouds[k].append(m),qos_profile_sensor_data)
  n.create_subscription(Odometry,'/s05/odometry',od,10);n.create_subscription(String,'/s09/terrain/cells',cells,2);n.create_subscription(OccupancyGrid,'/local_costmap/costmap',grid,2)
  def stop(s,f):st['stop']=True
  for s in [signal.SIGINT,signal.SIGTERM]:signal.signal(s,stop)

@@ -1,3 +1,4 @@
+from rig_r08 import runtime_rig
 """R08 map matching: stable startup admission; unchanged native jump and GNSS gates."""
 import argparse,os,sys,json,math,time,signal,importlib.util
 from pathlib import Path
@@ -19,7 +20,7 @@ def stamp(m):return m.header.stamp.sec+m.header.stamp.nanosec*1e-9
 def yaw(q):return math.atan2(2*(q.w*q.z+q.x*q.y),1-2*(q.y*q.y+q.z*q.z))
 def dump(p,d):q=p.with_suffix('.tmp');q.write_text(json.dumps(d));q.replace(p)
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);ap.add_argument('--request',type=Path,required=True);a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True);manifest=verify_runtime_contract(read(a.request));binding=read(Path(os.environ['R05_BINDING']));rig=read(ROOT/binding['rig_path']);atlas=read(ROOT/binding['atlas_path']);cloudpath=ROOT/binding['reference_cloud_path'];points=np.loadtxt(cloudpath,skiprows=7);reference=math14.SurfaceMap(points);reference.prepare_normals();signatures={str(p):(p.stat().st_ino,p.stat().st_size,p.stat().st_mtime_ns,p.stat().st_ctime_ns) for p in [Path(os.environ['R05_BINDING']),ROOT/binding['rig_path'],ROOT/binding['vehicle_path'],ROOT/binding['atlas_path'],cloudpath]}
+ ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);ap.add_argument('--request',type=Path,required=True);a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True);manifest=verify_runtime_contract(read(a.request));binding=read(Path(os.environ['R05_BINDING']));rig=runtime_rig(a.out,read(ROOT/binding['rig_path']));atlas=read(ROOT/binding['atlas_path']);cloudpath=ROOT/binding['reference_cloud_path'];points=np.loadtxt(cloudpath,skiprows=7);reference=math14.SurfaceMap(points);reference.prepare_normals();signatures={str(p):(p.stat().st_ino,p.stat().st_size,p.stat().st_mtime_ns,p.stat().st_ctime_ns) for p in [a.out.parent/'mission.json',Path(os.environ['R05_BINDING']),ROOT/binding['rig_path'],ROOT/binding['vehicle_path'],ROOT/binding['atlas_path'],cloudpath]}
  rclpy.init();n=rclpy.create_node('r05_regional_localizer',parameter_overrides=[rclpy.parameter.Parameter('use_sim_time',value=True)]);pub=n.create_publisher(String,'/s07/localization/evidence',10);clouds=deque(maxlen=4);odoms=deque(maxlen=100);fixes=deque(maxlen=40);state=dict(t=0.,stop=False,hint=None,previous=None,contract_valid=True,hint_t=None,bootstrap=False,stable_since=None);log=(a.out/'evidence.jsonl').open('w');laststat=0.;corrections=deque(maxlen=7)
  n.create_subscription(Clock,'/clock',lambda m:state.update(t=m.clock.sec+m.clock.nanosec*1e-9),qos_profile_sensor_data);n.create_subscription(PointCloud2,'/s07/inputs/cloud',lambda m:clouds.append((time.monotonic(),m)),5);n.create_subscription(Odometry,'/s07/inputs/odom',lambda m:odoms.append(m),30);n.create_subscription(NavSatFix,'/s04/localization/gnss',lambda m:fixes.append(m),qos_profile_sensor_data)
  def hint(m):
@@ -46,7 +47,7 @@ def main():
    if coarse:seed=state['hint']
    else:
     pp,oo=previous;heading=pp[2]-oo[2];seed=[*(np.array(pp[:2])+math14.rotation(heading)@(local[:2]-oo[:2])),local[2]+heading]
-   raw=point_cloud2.read_points_numpy(m,field_names=['x','y','z'],skip_nans=True).reshape(-1,3);start=time.monotonic();matches=[reference.align(raw,[*seed[:2],seed[2]+d],coarse=True) for d in ([-.15,0,.15] if coarse else [0.])];good=[x for x in matches if x['valid']];valid=bool(good) and state['contract_valid'];reason='HELD_OUT_SURFACE_MATCH' if valid else 'MAP_MATCH_REJECTED'
+   raw=point_cloud2.read_points_numpy(m,field_names=['x','y','z'],skip_nans=True).reshape(-1,3);start=time.monotonic();matches=[reference.align(raw,[*seed[:2],seed[2]+d],coarse=coarse) for d in (np.linspace(-.15,.15,7) if coarse else [0.])];good=[x for x in matches if x['valid']];valid=bool(good) and state['contract_valid'];reason='HELD_OUT_SURFACE_MATCH' if valid else 'MAP_MATCH_REJECTED'
    if good:
     spread=max(math.dist(good[0]['pose'][:2],x['pose'][:2]) for x in good);angle=max(abs(math.atan2(math.sin(x['pose'][2]-good[0]['pose'][2]),math.cos(x['pose'][2]-good[0]['pose'][2]))) for x in good)
     if spread>.08 or angle>.015:valid=False;reason='AMBIGUOUS_INITIAL_MATCH'
@@ -57,7 +58,7 @@ def main():
      enu=geo.to_enu([fix.latitude,fix.longitude,fix.altitude],atlas['datum_llh'])-np.array(atlas['site_origin']);antenna=np.array(p[:2])+math14.rotation(h)@np.array(rig['gnss']['xyz'][:2]);delta=enu[:2]-antenna;C=np.array(fix.position_covariance).reshape(3,3)[:2,:2]+cov[:2,:2];residual=float(np.linalg.norm(delta));nis=float(delta@np.linalg.solve(C,delta));gnss_ok=residual<=.15 and nis<=9.21 and np.linalg.eigvalsh(C).min()>0
     else:gnss_ok=False
     if not gnss_ok:valid=False;reason='GNSS_MAP_INNOVATION_OR_FRESHNESS'
-    evidence=dict(t=t,received_t=state['t'],valid=bool(valid),reason=reason,pose=[*p[:2],0.,0.,0.,math.sin(h/2),math.cos(h/2)],covariance=cov.reshape(-1).tolist(),surface_points=best['heldout_points'],surface_overlap=best['overlap'],surface_p95_m=best['p95_m'],multistart_spread_m=spread,gnss_innovation_m=residual,gnss_nis=nis,initialization=coarse,processing_wall_s=time.monotonic()-start)
+    evidence=dict(t=t,received_t=state['t'],valid=bool(valid),reason=reason,pose=[*p[:2],0.,0.,0.,math.sin(h/2),math.cos(h/2)],covariance=cov.reshape(-1).tolist(),surface_points=best['heldout_points'],raw_surface_points=best['raw_surface_points'],mapped_candidate_points=best['mapped_candidate_points'],mapped_fraction=best['mapped_fraction'],overlap_scope=best['overlap_scope'],surface_overlap=best['overlap'],surface_p95_m=best['p95_m'],multistart_spread_m=spread,gnss_innovation_m=residual,gnss_nis=nis,initialization=coarse,processing_wall_s=time.monotonic()-start)
     if valid:
      state['previous']=(p,local)
      cyaw=math.atan2(math.sin(h-local[2]),math.cos(h-local[2]));shift=np.array(p[:2])-math14.rotation(cyaw)@local[:2];corrections.append((t,shift,cyaw))

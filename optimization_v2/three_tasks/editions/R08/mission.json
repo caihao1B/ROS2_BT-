@@ -131,13 +131,13 @@
     "upstream_vehicle_hash": "e08e7524017e74dadada05878bad517ea90f94b8305e0d99612e46deca099995"
   },
   "rig": {
-    "schema": "R05-SENSORS/1",
-    "revision": "fd50f48b23a3f62edad15546013889ad778bd0286b1def804a7f26b9b7bb30f0",
+    "schema": "R08-EFFECTIVE-SENSORS/1",
+    "revision": "e23ffc925027932c7066156ed55f64e4552fe7c4962f32e44377681374dbf63b",
     "physics_step_s": 0.001,
     "real_time_factor": 1.0,
     "lidar": {
-      "horizontal": 1024,
-      "vertical": 64,
+      "horizontal": 2048,
+      "vertical": 128,
       "rate_hz": 10,
       "vertical_min_rad": -0.35,
       "vertical_max_rad": 0.35,
@@ -229,7 +229,13 @@
       "localization_lidar_hz": 10,
       "perception_lidar_hz": 5,
       "perception_stride": 2,
-      "stereo_pair_queue": 6
+      "stereo_pair_queue": 6,
+      "perception_sampling": {
+        "max_rings": 64,
+        "max_azimuth": 512,
+        "near_channels": "all original independent rays",
+        "localization": "full 128 x 2048"
+      }
     },
     "limits": {
       "queue_bytes": 33554432,
@@ -256,7 +262,68 @@
       "y_max": 0.265,
       "z_max": 0.3
     },
-    "vehicle_hash": "104d07a36ef510be47544277750b5afa2cd3699e27cd12a523f1e8a2f10d2dfe"
+    "vehicle_hash": "104d07a36ef510be47544277750b5afa2cd3699e27cd12a523f1e8a2f10d2dfe",
+    "base_calibration_revision": "fd50f48b23a3f62edad15546013889ad778bd0286b1def804a7f26b9b7bb30f0",
+    "near_sensor": {
+      "horizontal": 128,
+      "vertical": 64,
+      "vertical_min": -1.3,
+      "vertical_max": 0.13,
+      "range_m": 3.6,
+      "units": [
+        {
+          "name": "front",
+          "xyz": [
+            0.259,
+            0,
+            0.2
+          ],
+          "pitch": 0.25,
+          "yaw": 0.0
+        },
+        {
+          "name": "rear",
+          "xyz": [
+            -0.259,
+            0,
+            0.2
+          ],
+          "pitch": 0.25,
+          "yaw": 3.141592653589793
+        },
+        {
+          "name": "left",
+          "xyz": [
+            0,
+            0.22,
+            0.2
+          ],
+          "pitch": 0.25,
+          "yaw": 1.5707963267948966
+        },
+        {
+          "name": "right",
+          "xyz": [
+            0,
+            -0.22,
+            0.2
+          ],
+          "pitch": 0.25,
+          "yaw": -1.5707963267948966
+        }
+      ],
+      "noise_m": 0.01,
+      "dropout": 0.02,
+      "delay_s": 0.04,
+      "main_perception_temporal_stride": 1,
+      "max_pair_skew_s": 0.12,
+      "pose_bracket_s": 0.08,
+      "motion_compensated": true,
+      "perception_epoch": "front_near_capture",
+      "far_returns_optional_unknown_preserved": true,
+      "sampling_reason": "Boundary mounts at 0.20 m, calibrated 0.25 rad downward pitch and supported internal ray angles observe rear/side clearance cells previously shadowed by the 0.05 m padded self filter; no unknown clearance exemption"
+    },
+    "sampling_change_reason": "Actual extra simulator rays for sparse frozen-map landmarks; no repeated-point inflation or relaxed quality gates"
   },
   "map_id": "4e4b85d7-ccf3-58ed-925b-1efba3fa6262",
   "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
@@ -2142,43 +2209,47 @@
     "horizontal": 128,
     "vertical": 64,
     "vertical_min": -1.3,
-    "vertical_max": -0.12,
+    "vertical_max": 0.13,
     "range_m": 3.6,
     "units": [
       {
         "name": "front",
         "xyz": [
-          0.284,
+          0.259,
           0,
           0.2
         ],
+        "pitch": 0.25,
         "yaw": 0.0
       },
       {
         "name": "rear",
         "xyz": [
-          -0.284,
+          -0.259,
           0,
           0.2
         ],
+        "pitch": 0.25,
         "yaw": 3.141592653589793
       },
       {
         "name": "left",
         "xyz": [
           0,
-          0.245,
+          0.22,
           0.2
         ],
+        "pitch": 0.25,
         "yaw": 1.5707963267948966
       },
       {
         "name": "right",
         "xyz": [
           0,
-          -0.245,
+          -0.22,
           0.2
         ],
+        "pitch": 0.25,
         "yaw": -1.5707963267948966
       }
     ],
@@ -2191,7 +2262,7 @@
     "motion_compensated": true,
     "perception_epoch": "front_near_capture",
     "far_returns_optional_unknown_preserved": true,
-    "sampling_reason": "0.20 m mount: denser real vertical rays resolve measured forward ground gaps; no unknown clearing beyond current footprint"
+    "sampling_reason": "Boundary mounts at 0.20 m, calibrated 0.25 rad downward pitch and supported internal ray angles observe rear/side clearance cells previously shadowed by the 0.05 m padded self filter; no unknown clearance exemption"
   },
   "clusters": [],
   "route_world": [
@@ -11074,5 +11145,46 @@
     "observed_leader_follow_stop_resume",
     "observed_detour_or_bounded_manual_hold"
   ],
-  "version": "ac81105bf7a6f57edd6ef39aebfd074937f7db47c26aa8028bd39d0b27809f99"
+  "localization_surface_window": {
+    "processing_range_m": 48.0,
+    "physical_sensor_range_m": 50.0,
+    "max_age_s": 1.5,
+    "unique_voxel_m": 0.06,
+    "source_voxel_m": 0.08,
+    "motion_compensation": "observed SE3 local odometry; no stale or duplicate rays"
+  },
+  "local_motion_integrity": {
+    "reference": "independent GNSS antenna displacement at matched epochs",
+    "nis_limit": 9.21,
+    "local_pose_fusion": false,
+    "unknown_motion": "reject ICP increment; no inferred wheel-slip authority"
+  },
+  "global_reference_checks": {
+    "jump_anchor": "current robot pose",
+    "gnss_comparison": "measured antenna at its captured odometry epoch",
+    "planar_query": "nearest eligible normal; held-out mapped landmark candidates; raw unmodeled objects retained by perception"
+  },
+  "detour_validation": "Current full-footprint executable prefix, live Nav2 collision checking, remaining prior candidate not certified",
+  "crossing_interlock": {
+    "horizon_s": 2.0,
+    "model": "current CV with propagated future acceleration covariance, not learned intent",
+    "acceleration_spectral_density_m2_s3": 0.8,
+    "motion_nis": 9.21,
+    "observed_motion_memory_s": 10.0,
+    "ego_hypotheses": [
+      "stationary",
+      "bounded_next_motion"
+    ],
+    "independent_of_fixture": true
+  },
+  "dynamic_activity": {
+    "history_s": 35.0,
+    "margin_m": 0.25,
+    "lookahead_m": 1.5,
+    "source": "observed crossing tracks only",
+    "prior_clearance": false
+  },
+  "ground_statistic": "Raw-ray weighted quantiles; confidence-separated spatial modes; strong voxel hazards retained",
+  "terrain_self_mask_margin_m": 0.01,
+  "version": "ecabeff14fd059c9152608e8fffb2816d870bd7b73dc31f39f18ab44665f00ad"
 }

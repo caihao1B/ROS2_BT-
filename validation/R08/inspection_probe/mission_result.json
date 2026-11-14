@@ -1,0 +1,22 @@
+{
+  "passed": false,
+  "diagnostic_only": true,
+  "formal_credit": false,
+  "valid_fraction_after_25s": 0.7426955702167767,
+  "t": 57.0,
+  "final_gate": {
+    "t": 56.97,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "NAV_COMMAND_STALE"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 0.039127632378045285
+  },
+  "scope": "Parked localization probe; no route or work completion"
+}

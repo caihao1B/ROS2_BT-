@@ -1,26 +1,29 @@
 {
-  "passed": false,
-  "error": "RuntimeError('LIVE_DETOUR_INTEGRATION_PENDING')",
-  "manual_reason": "LIVE_DETOUR_INTEGRATION_PENDING",
-  "t": 30.784,
+  "passed": true,
+  "terminal": "COMPLETED",
+  "controlled_hold": false,
+  "error": null,
+  "manual_reason": null,
+  "t": 108.532,
   "selected_length_m": 14.996622437502234,
   "original_length_m": 88.48099013627925,
   "full_route_selected": false,
-  "remaining_original_m": 87.38124282283071,
-  "route_index": 11,
+  "remaining_original_m": 73.58434672664208,
+  "route_index": 149,
+  "replans": 0,
   "final_gate": {
-    "t": 30.78,
+    "t": 108.51,
     "allowed": false,
     "mode": "STOP",
     "v": 0.0,
     "w": 0.0,
     "reasons": [
-      "OBSTRUCTED"
+      "NAV_COMMAND_STALE"
     ],
     "stopped": true,
     "tool_stopped": true,
     "nav_idle": true,
-    "progress_m": 1.1626620718640173
+    "progress_m": 15.085925749266403
   },
   "ownership": {
     "/tf": [
@@ -32,6 +35,6 @@
     ],
     "/s10/tool/command": []
   },
-  "wall_seconds": 81.43921603700437,
-  "scope": "Inspection navigation; no spray/mow credit"
+  "wall_seconds": 286.49436309799785,
+  "scope": "Inspection navigation; residuals remain; no spray/mow credit"
 }

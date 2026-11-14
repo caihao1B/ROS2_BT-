@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "checks": {
+    "runtime_clean": true,
+    "original_database_unchanged": true,
+    "no_unexpected_contact": true,
+    "map_rmse_under_15cm": true,
+    "physical_footprint_inside_authorized_area": true,
+    "stopped": true,
+    "active_path_cross_track_under_50cm": true,
+    "executed_references_authorized": true,
+    "selected_route_completed": true,
+    "measured_progress": true,
+    "unique_actuator": true,
+    "no_tool_owner": true,
+    "unique_tf": true,
+    "source_binding": true,
+    "task_version": true,
+    "observed_patch_admitted": true,
+    "rejoin_confirmed": true,
+    "actual_lateral_detour": true
+  },
+  "case": "detour",
+  "task_result": {
+    "passed": true,
+    "terminal": "COMPLETED",
+    "controlled_hold": false,
+    "error": null,
+    "manual_reason": null,
+    "t": 100.074,
+    "selected_length_m": 14.996622437502234,
+    "original_length_m": 88.48099013627925,
+    "full_route_selected": false,
+    "remaining_original_m": 73.58434672664208,
+    "route_index": 149,
+    "replans": 1,
+    "final_gate": {
+      "t": 100.05,
+      "allowed": false,
+      "mode": "STOP",
+      "v": 0.0,
+      "w": 0.0,
+      "reasons": [
+        "NAV_COMMAND_STALE"
+      ],
+      "stopped": true,
+      "tool_stopped": true,
+      "nav_idle": true,
+      "progress_m": 16.622912405987243
+    },
+    "ownership": {
+      "/tf": [
+        "s05_local_odometry",
+        "s08_global_pose_manager"
+      ],
+      "/s03/actuator/request": [
+        "r08_actuator_gate"
+      ],
+      "/s10/tool/command": []
+    },
+    "wall_seconds": 266.37195582200366,
+    "scope": "Inspection navigation; residuals remain; no spray/mow credit"
+  },
+  "map_xy_rmse_m": 0.035801891837234874,
+  "maximum_cross_track_m": 1.5653820283336817,
+  "maximum_active_path_cross_track_m": 0.15695151076639108,
+  "maximum_actual_progress_m": 14.885366918316366,
+  "follow_decisions": 0,
+  "minimum_observed_follow_gap_m": null,
+  "minimum_physical_follow_gap_m": null,
+  "leader_stop_assessment": {},
+  "unexpected_contacts": {},
+  "full_connector_passed": false,
+  "formal_credit": false,
+  "scope": "Declared independent inspection case only; blocked-case PASS means controlled hold, never route completion"
+}

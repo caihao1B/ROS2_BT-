@@ -1,0 +1,11 @@
+"""Independent acceptance configurations; protected R01-R09 records stay unchanged."""
+from common import *
+import copy,yaml
+
+def build():
+ require('R09');out=edition('R10');out.mkdir(parents=True,exist_ok=True);s=out/'spray';s.mkdir(exist_ok=True);cfg=copy.deepcopy(read(edition('R07')/'mission.json'));r8=read(edition('R08')/'mission.json')
+ for key in ['localization_surface_window','local_motion_integrity','global_reference_checks','ground_statistic']:cfg[key]=r8[key]
+ cfg.update(schema='R10-SPRAY-ACCEPTANCE/1',scope='Original A1 complete point list; updated R08 localization/terrain engine independently retested; prior R07 receipts retained');cfg.pop('version',None);cfg['version']=canonical(cfg);dump(s/'mission.json',cfg)
+ tool=read(edition('R07')/'tool.json');tool['plan_revision']=cfg['version'];tool.pop('tool_revision');tool['tool_revision']=canonical(tool);dump(s/'tool.json',tool)
+ nav=yaml.safe_load((edition('R07')/'nav2.yaml').read_text());nav['global_costmap']['global_costmap']['ros__parameters']['plugins']=['static','live_obstacles','inflation'];nav['global_costmap']['global_costmap']['ros__parameters']['live_obstacles']=dict(plugin='r08::ObservedPriorLayer',topic='/r07/risk_local',max_age=.6);(s/'nav2.yaml').write_text(yaml.safe_dump(nav,sort_keys=False));terrain=read(edition('R07')/'terrain.json');terrain.update(protective_half_width_m=max(abs(y) for x,y in cfg['vehicle']['footprint'])+.1,protective_front_m=1.4);dump(s/'terrain.json',terrain);dump(s/'manager.json',read(edition('R08')/'manager.json'))
+ catalog=dict(schema='R10-INDEPENDENT-ACCEPTANCE/1',formal_S17_S18='PARTIAL',normal_required=['spray_full_A1','inspection_full_connector','mowing_full_B1'],fault_required=['spray_tool_jam','inspection_follow_stop_resume','inspection_detour','inspection_persistent_block','mowing_persistent_block'],original_denominators=dict(A1_points=len(cfg['clusters'][0]['points']),B1_segments=len(read(edition('R09')/'mission.json')['clusters'][0]['segments']),connector_m=r8['original_route_length_m']),scope='Independent normal and bounded-fault acceptance, no sixty-run matrix and no extrapolation to untested A2/A3/B2/B3');catalog['version']=canonical(catalog);dump(out/'catalog.json',catalog);return out

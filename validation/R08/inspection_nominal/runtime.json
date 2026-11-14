@@ -1,11 +1,11 @@
 {
-  "passed": false,
-  "error": "RuntimeError('OBSERVER_NOT_COMPLETE')",
+  "passed": true,
+  "error": null,
   "forced": [],
   "processes": [
     {
       "role": "server",
-      "pid": 180349,
+      "pid": 250968,
       "args": [
         "gz",
         "sim",
@@ -14,15 +14,16 @@
         "-s",
         "--seed",
         "41",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/world.sdf"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/scene/world.sdf"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "online_bridge",
-      "pid": 180365,
+      "pid": 250991,
       "args": [
         "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
         "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
@@ -34,12 +35,13 @@
         "/r07/near_right/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "raw_bridge",
-      "pid": 180366,
+      "pid": 250992,
       "args": [
         "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
         "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
@@ -51,44 +53,63 @@
         "/s04/raw/joints@std_msgs/msg/String[gz.msgs.StringMsg"
       ],
       "domain": "121",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/fastdds.xml",
       "exit": 0
     },
     {
       "role": "evaluation_bridge",
-      "pid": 180367,
+      "pid": 250993,
       "args": [
         "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
         "/s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg",
-        "/s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts"
+        "/s03/evaluation/contacts@ros_gz_interfaces/msg/Contacts[gz.msgs.Contacts",
+        "/s09/evaluation/dynamic_poses@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V",
+        "/s02/evaluation/dynamic_poses@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V"
       ],
       "domain": "120",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "evaluator",
-      "pid": 180368,
+      "pid": 250994,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/evaluation"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/evaluation"
       ],
       "domain": "120",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
+      "exit": 0
+    },
+    {
+      "role": "actor_evaluator",
+      "pid": 250995,
+      "args": [
+        "/usr/bin/python3",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/actors_r08.py",
+        "--out",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/evaluation"
+      ],
+      "domain": "120",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "generator_motion",
-      "pid": 180369,
+      "pid": 250996,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/adapter.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/overlay/adapter.py",
         "--vehicle",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/vehicle.json",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/scene/vehicle.json",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generation_motion",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/generation_motion",
         "--seed",
         "41",
         "--profile",
@@ -97,19 +118,20 @@
         "motion"
       ],
       "domain": "121",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "generator_vision",
-      "pid": 180370,
+      "pid": 250997,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/adapter.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/overlay/adapter.py",
         "--vehicle",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/vehicle.json",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/scene/vehicle.json",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/generation_vision",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/generation_vision",
         "--seed",
         "41",
         "--profile",
@@ -118,38 +140,41 @@
         "vision"
       ],
       "domain": "121",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/fastdds.xml",
       "exit": 0
     },
     {
       "role": "fanout",
-      "pid": 180371,
+      "pid": 250998,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/near_r07.py",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/near_r08.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/near"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/near"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/fastdds.xml",
       "exit": 0
     },
     {
       "role": "cloud",
-      "pid": 180372,
+      "pid": 250999,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/cloud_filter.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/overlay/cloud_filter.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/cloud"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/cloud"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "icp",
-      "pid": 180373,
+      "pid": 251000,
       "args": [
         "/opt/ros/jazzy/lib/rtabmap_odom/icp_odometry",
         "--ros-args",
@@ -158,7 +183,7 @@
         "-r",
         "__ns:=/s05/icp",
         "--params-file",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/icp.yaml",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/scene/icp.yaml",
         "-r",
         "scan_cloud:=/s05/icp/cloud",
         "-r",
@@ -173,51 +198,55 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "icp_gate",
-      "pid": 180374,
+      "pid": 251001,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/icp_gate.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/overlay/icp_gate.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/icp_gate"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/icp_gate"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "inputs",
-      "pid": 180375,
+      "pid": 251002,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/overlay/input_adapter.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/overlay/input_adapter.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/inputs"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/inputs"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "odom_output",
-      "pid": 180376,
+      "pid": 251003,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/odom_output.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/odom_output"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/odom_output"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "fused",
-      "pid": 180377,
+      "pid": 251004,
       "args": [
         "/opt/ros/jazzy/lib/robot_localization/ekf_node",
         "--ros-args",
@@ -226,7 +255,7 @@
         "-r",
         "__ns:=/s05/fused",
         "--params-file",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/fused.yaml",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/scene/fused.yaml",
         "-r",
         "odometry/filtered:=/s05/raw/fused",
         "--log-level",
@@ -235,12 +264,13 @@
         "/tf:=/s05/internal/fused_tf"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "wheel_imu",
-      "pid": 180378,
+      "pid": 251005,
       "args": [
         "/opt/ros/jazzy/lib/robot_localization/ekf_node",
         "--ros-args",
@@ -249,7 +279,7 @@
         "-r",
         "__ns:=/s05/wheel_imu",
         "--params-file",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/scene/wheel_imu.yaml",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/scene/wheel_imu.yaml",
         "-r",
         "odometry/filtered:=/s05/raw/wheel_imu",
         "--log-level",
@@ -258,70 +288,75 @@
         "/tf:=/s05/internal/wheel_imu_tf"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "icp_motion_guess",
-      "pid": 180379,
+      "pid": 251006,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/guess_r07.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/icp_motion_guess"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/icp_motion_guess"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "mapping_inputs",
-      "pid": 180380,
+      "pid": 251007,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/map_inputs_r07.py",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/map_inputs_r08.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mapping_inputs"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/mapping_inputs"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/fastdds.xml",
       "exit": 0
     },
     {
       "role": "slam_initial",
-      "pid": 180381,
+      "pid": 251008,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/regional_r08.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/quality",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/quality",
         "--request",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/request.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/request.json"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "global_sources",
-      "pid": 180382,
+      "pid": 251009,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/sources_r07.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/global_sources",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/global_sources",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mission.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/mission.json"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "global_manager",
-      "pid": 180383,
+      "pid": 251010,
       "args": [
-        "/home/ceihao/robot_project/optimization_v2/ws/install/gnss_supervisor/lib/gnss_supervisor/gnss_supervisor",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r08/r08_global_manager",
         "--ros-args",
         "-p",
         "use_sim_time:=true",
@@ -329,29 +364,31 @@
         "policy_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/editions/R08/manager.json"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "reference",
-      "pid": 180384,
+      "pid": 251011,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/reference_r07.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/reference",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/reference",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mission.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/mission.json"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "terrain",
-      "pid": 180393,
+      "pid": 251012,
       "args": [
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r07/r07_terrain",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r08/r08_terrain",
         "--ros-args",
         "-p",
         "use_sim_time:=true",
@@ -359,63 +396,67 @@
         "config_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/editions/R08/terrain.json"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "risk",
-      "pid": 180394,
+      "pid": 251021,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/risk_r07.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/risk",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/risk",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mission.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/mission.json"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "control",
-      "pid": 180395,
+      "pid": 251022,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/control_r08.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/control",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/control",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mission.json",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/mission.json",
         "--session",
-        "inspection_20261114_063622_132179"
+        "inspection_20261114_122404_262658"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "bt",
-      "pid": 180396,
+      "pid": 251023,
       "args": [
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r07/r07_supervisor",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r08/r08_supervisor",
         "--ros-args",
         "-p",
         "use_sim_time:=true",
         "-p",
-        "config_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/bt.json",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/bt.json",
         "-p",
-        "tree_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/editions/R06/common.xml",
+        "tree_file:=/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/r08_backend/common.xml",
         "-p",
-        "log_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/decisions.jsonl"
+        "log_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/decisions.jsonl"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "map_server",
-      "pid": 180397,
+      "pid": 251026,
       "args": [
         "/opt/ros/jazzy/lib/nav2_map_server/map_server",
         "--ros-args",
@@ -429,12 +470,13 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "controller_server",
-      "pid": 180398,
+      "pid": 251027,
       "args": [
         "/opt/ros/jazzy/lib/nav2_controller/controller_server",
         "--ros-args",
@@ -448,12 +490,13 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "planner_server",
-      "pid": 180399,
+      "pid": 251028,
       "args": [
         "/opt/ros/jazzy/lib/nav2_planner/planner_server",
         "--ros-args",
@@ -467,12 +510,13 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "bt_navigator",
-      "pid": 180400,
+      "pid": 251031,
       "args": [
         "/opt/ros/jazzy/lib/nav2_bt_navigator/bt_navigator",
         "--ros-args",
@@ -486,12 +530,13 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "lifecycle_manager",
-      "pid": 180401,
+      "pid": 251032,
       "args": [
         "/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager",
         "--ros-args",
@@ -505,53 +550,57 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "tracker",
-      "pid": 180404,
+      "pid": 251033,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/tracker_r08.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/tracking",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/tracking",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/mission.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/mission.json"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "diagnostics",
-      "pid": 180409,
+      "pid": 251034,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/diagnostics_r08.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179/diagnostics"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658/diagnostics"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "observer",
-      "pid": 180410,
+      "pid": 251041,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/mission_r08.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_063622_132179"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
-      "exit": 2
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
+      "exit": 0
     },
     {
       "role": "nav_startup",
-      "pid": 181182,
+      "pid": 251925,
       "args": [
         "ros2",
         "service",
@@ -561,10 +610,11 @@
         "{command: 0}"
       ],
       "domain": "119",
-      "partition": "r08_inspection_20261114_063622_132179",
+      "partition": "r08_inspection_20261114_122404_262658",
+      "dds_profile": "DEFAULT",
       "exit": 0
     }
   ],
-  "wall_seconds": 126.33225688600214,
+  "wall_seconds": 904.6276065249986,
   "original_db_unchanged": true
 }

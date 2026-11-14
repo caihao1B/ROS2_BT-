@@ -1,9 +1,47 @@
+test_unique_motion_and_expiry (test_accumulation_r08.Window.test_unique_motion_and_expiry) ... ok
+test_detour_is_measured_against_its_actual_reference (test_activity_r08.ActiveReference.test_detour_is_measured_against_its_actual_reference) ... ok
+test_motion_on_rejected_candidate_is_not_authorized (test_activity_r08.ActiveReference.test_motion_on_rejected_candidate_is_not_authorized) ... ok
+test_clear_side_path_does_not_intersect_history (test_activity_r08.Activity.test_clear_side_path_does_not_intersect_history) ... ok
+test_observed_history_persists_through_turn (test_activity_r08.Activity.test_observed_history_persists_through_turn) ... ok
+test_rejoin_is_beyond_activity_not_within_it (test_activity_r08.Activity.test_rejoin_is_beyond_activity_not_within_it) ... ok
+test_risk_never_clears_unknown (test_activity_r08.Activity.test_risk_never_clears_unknown) ... ok
+test_static_track_does_not_create_activity (test_activity_r08.Activity.test_static_track_does_not_create_activity) ... ok
+test_unobserved_history_expires (test_activity_r08.Activity.test_unobserved_history_expires) ... ok
+test_noise_modes_and_coordinate_invariance (test_backend_r08.Backend.test_noise_modes_and_coordinate_invariance) ... ok
+test_crossing_before_contact (test_crossing_r08.Crossings.test_crossing_before_contact) ... ok
+test_person_moving_away (test_crossing_r08.Crossings.test_person_moving_away) ... ok
+test_separate_same_direction_follow_branch (test_crossing_r08.Crossings.test_separate_same_direction_follow_branch) ... ok
+test_future_process_noise_stops_before_curved_approach (test_crossing_r08.PredictionUncertainty.test_future_process_noise_stops_before_curved_approach) ... ok
+test_parallel_offset_track_is_not_assumed_to_be_a_leader (test_crossing_r08.PredictionUncertainty.test_parallel_offset_track_is_not_assumed_to_be_a_leader) ... ok
+test_small_static_velocity_noise_does_not_invent_moving_obstacle (test_crossing_r08.PredictionUncertainty.test_small_static_velocity_noise_does_not_invent_moving_obstacle) ... ok
+test_unconfirmed_velocity_is_not_used_as_precise_prediction (test_crossing_r08.PredictionUncertainty.test_unconfirmed_velocity_is_not_used_as_precise_prediction) ... ok
+test_deleted_track_memory_is_removed (test_crossing_r08.TurningMemory.test_deleted_track_memory_is_removed) ... ok
+test_memory_requires_observed_motion_and_expires (test_crossing_r08.TurningMemory.test_memory_requires_observed_motion_and_expires) ... ok
+test_previous_dynamic_object_is_protected_during_slow_turn (test_crossing_r08.TurningMemory.test_previous_dynamic_object_is_protected_during_slow_turn) ... ok
+test_bounded_search_does_not_claim_global_infeasible (test_detour_r08.ObservedDetour.test_bounded_search_does_not_claim_global_infeasible) ... ok
+test_narrow_gap_rejects_body_not_only_centerline (test_detour_r08.ObservedDetour.test_narrow_gap_rejects_body_not_only_centerline) ... ok
+test_obstacle_detour_has_clearance (test_detour_r08.ObservedDetour.test_obstacle_detour_has_clearance) ... ok
+test_unknown_start_is_not_force_cleared (test_detour_r08.ObservedDetour.test_unknown_start_is_not_force_cleared) ... ok
+test_unknown_wall_does_not_become_free (test_detour_r08.ObservedDetour.test_unknown_wall_does_not_become_free) ... ok
 test_clearance_margin_is_not_occupied (test_envelope_r08.ObservedEnvelope.test_clearance_margin_is_not_occupied) ... ok
 test_current_occupied_footprint_unknown_only (test_envelope_r08.ObservedEnvelope.test_current_occupied_footprint_unknown_only) ... ok
 test_known_continuation (test_envelope_r08.ObservedEnvelope.test_known_continuation) ... ok
 test_measured_lethal_inside_current_never_cleared (test_envelope_r08.ObservedEnvelope.test_measured_lethal_inside_current_never_cleared) ... ok
 test_pose_rotation (test_envelope_r08.ObservedEnvelope.test_pose_rotation) ... ok
 test_unknown_future_never_admitted (test_envelope_r08.ObservedEnvelope.test_unknown_future_never_admitted) ... ok
+test_false_lidar_motion_does_not_label_real_wheels_slipping (test_motion_r08.IndependentMotion.test_false_lidar_motion_does_not_label_real_wheels_slipping) ... ok
+test_matching_motion_is_admitted (test_motion_r08.IndependentMotion.test_matching_motion_is_admitted) ... ok
+test_stale_fix_cannot_adjudicate (test_motion_r08.IndependentMotion.test_stale_fix_cannot_adjudicate) ... ok
+test_true_wheel_spin_retains_supported_lidar (test_motion_r08.IndependentMotion.test_true_wheel_spin_retains_supported_lidar) ... ok
+test_in_place_rotation_sweep (test_prefix_r08.Prefix.test_in_place_rotation_sweep) ... ok
+test_inside_body_measured_obstacle_is_never_cleared (test_prefix_r08.Prefix.test_inside_body_measured_obstacle_is_never_cleared) ... ok
+test_observed_prefix_only_not_whole_plan (test_prefix_r08.Prefix.test_observed_prefix_only_not_whole_plan) ... ok
+test_unknown_safety_margin_blocks (test_prefix_r08.Prefix.test_unknown_safety_margin_blocks) ... ok
+test_actual_density_is_separate_revision (test_rig_r08.SamplingContract.test_actual_density_is_separate_revision) ... ok
+test_tampered_extrinsic_rejected_even_with_new_hash (test_rig_r08.SamplingContract.test_tampered_extrinsic_rejected_even_with_new_hash) ... ok
+test_unbound_change_rejected (test_rig_r08.SamplingContract.test_unbound_change_rejected) ... ok
+test_sigint_does_not_destroy_active_callback_context (test_shutdown_r08.CooperativeShutdown.test_sigint_does_not_destroy_active_callback_context) ... ok
+test_sigterm_does_not_destroy_active_callback_context (test_shutdown_r08.CooperativeShutdown.test_sigterm_does_not_destroy_active_callback_context) ... ok
 test_angular_drift_rejected (test_startup_r08.StartupStability.test_angular_drift_rejected) ... ok
 test_nonfinite_rejected (test_startup_r08.StartupStability.test_nonfinite_rejected) ... ok
 test_short_window_rejected (test_startup_r08.StartupStability.test_short_window_rejected) ... ok
@@ -12,6 +50,6 @@ test_stable_observed_window (test_startup_r08.StartupStability.test_stable_obser
 test_wrapped_heading_not_false_jump (test_startup_r08.StartupStability.test_wrapped_heading_not_false_jump) ... ok
 
 ----------------------------------------------------------------------
-Ran 12 tests in 0.001s
+Ran 50 tests in 3.136s
 
 OK

@@ -36,13 +36,16 @@ def main():
             if lastpose is not None:progress+=min(.1,math.dist(p[:2],lastpose[:2])+.25*abs(math.atan2(math.sin(p[2]-lastpose[2]),math.cos(p[2]-lastpose[2]))))
             lastpose=p
         hard_blocked=healthy and s.get('max_speed',0)<=0 or bool(worker.get('nav_failed'))
-        tracking=st['leader'] or {};leader=tracking.get('leader',{});leader_blocked=fresh(tracking,.35) and tracking.get('on_path',False)
-        blocked=hard_blocked or leader_blocked
+        tracking=st['leader'] or {};leader=tracking.get('leader',{});leader_blocked=fresh(tracking,.35) and tracking.get('on_path',False);crossing_blocked=fresh(tracking,.35) and tracking.get('predicted_conflict',False)
+        blocked=hard_blocked or leader_blocked or crossing_blocked
         contextseq+=1;context=dict(stamp=t,sequence=contextseq,session=a.session,task_version=c['version'],vehicle_hash=v['config_hash'],rig_revision=c['rig']['revision'],localized=localized,sensors_healthy=healthy,stopped=stopped,tool_stopped=tool_stopped,nav_idle=nav_idle,remaining_s=max(0,c['task_budget_s']-t),next_min_s=3.,blocked=blocked,complete=worker.get('complete',False),commanded_motion=workerfresh and worker.get('phase')=='NAVIGATING',progress_m=progress,replans=worker.get('replans',0),deferrals=worker.get('deferrals',0),alternative=worker.get('alternative',False),detour_valid=False,worker_fresh=workerfresh,loc_age=t-loc.get('t',-100),sensor_age=t-s.get('t',-100),reference_valid=loc.get('valid',False))
-        context.update(leader_on_path=leader_blocked,leader_same_direction=leader.get('same_direction',False),leader_confidence=leader.get('confidence',0.),leader_speed=leader.get('speed',0.),clearance_m=leader.get('gap',0.),ttc_s=leader.get('ttc',0.),path_valid=tracking.get('path_valid',False),leader_id=leader.get('id'),path_validation_scope='measured one-metre continuation envelope; native RPP checks each command')
+        prefix_valid=fresh(tracking,.35) and tracking.get('path_valid',False) and abs(tracking.get('path_epoch',-1)-worker.get('path_epoch',0))<.001
+        context['patch_active']=worker.get('patch_active',False)
+        context.update(predicted_conflict=crossing_blocked,crossing_evidence=tracking.get('crossing_evidence',[]))
+        context.update(leader_on_path=leader_blocked and not crossing_blocked,leader_same_direction=leader.get('same_direction',False),leader_confidence=leader.get('confidence',0.),leader_speed=leader.get('speed',0.),clearance_m=leader.get('gap',0.),ttc_s=leader.get('ttc',0.),path_valid=prefix_valid,leader_id=leader.get('id'),path_validation_scope='current full-footprint executable prefix; remaining candidate is not certified')
         btpub.publish(String(data=json.dumps(context)))
         reasons=[]
-        for ok,reason in [(localized,'LOCALIZATION'),(healthy,'PERCEPTION'),(fresh(bt,.15),'BT_STALE'),(workerfresh,'TASK_STALE'),(now-st['clock_wall']<.2,'CLOCK'),(now-st['cmd_wall']<.2,'NAV_COMMAND_STALE'),(tool_stopped,'TOOL_NOT_STOPPED'),(not hard_blocked and (not leader_blocked or (bt.get('action')=='FOLLOW' and leader.get('gap',0)>=2.)),'OBSTRUCTED')]:
+        for ok,reason in [(localized,'LOCALIZATION'),(healthy,'PERCEPTION'),(fresh(bt,.15),'BT_STALE'),(workerfresh,'TASK_STALE'),(now-st['clock_wall']<.2,'CLOCK'),(now-st['cmd_wall']<.2,'NAV_COMMAND_STALE'),(tool_stopped,'TOOL_NOT_STOPPED'),(not crossing_blocked and not hard_blocked and (not leader_blocked or (bt.get('action')=='FOLLOW' and leader.get('gap',0)>=2.) or (bt.get('action')=='DETOUR' and prefix_valid)),'OBSTRUCTED'),(not worker.get('patch_active',False) or prefix_valid,'PATCH_PREFIX')]:
             if not ok:reasons.append(reason)
         allowed=not reasons and bt.get('action') in ['EXECUTE','FOLLOW','DETOUR'] and worker.get('phase')=='NAVIGATING'
         vv=ww=0.;mode='STOP'

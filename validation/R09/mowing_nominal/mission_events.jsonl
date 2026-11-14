@@ -1,0 +1,10 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_CLUSTER_HINT"}
+{"t": 26.9, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 26.9, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": ""}
+{"t": 27.478, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:0", "requested_area_m2": 10.561490281674196}
+{"t": 27.48, "event": "SEGMENT_GOAL", "segment": "B1:segment:0", "kind": "COVERAGE", "direction": 1, "original_poses": 75, "remaining_poses": 75, "tool_expected": true}
+{"t": 62.026, "event": "TOOL_RESULT", "segment": "B1:segment:0", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 4.419975000000008, "remaining": 6.141515281674188, "uncertain": false}
+{"t": 62.07, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
+{"t": 74.144, "event": "ACK_PLANNER_RESULT", "attempt": 1, "status": 4, "candidate_poses": 23, "claim": "bounded current observed search only; no global impossibility claim"}
+{"t": 74.144, "event": "TASK_STOP", "error": "RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')", "terminal": "HUMAN_REQUIRED"}
+{"t": 74.144, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
