@@ -16,6 +16,7 @@ from rosgraph_msgs.msg import Clock
 from std_srvs.srv import Trigger
 from groups_mowing_r10 import execution_groups,passage,retry_exhausted
 from recovery_mowing_r10 import validate_candidate,yaw_error,observed_cursor
+from start_work_r10 import wait_startup,working_feedback_ready
 
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);out=ap.parse_args().out;cfg=json.loads((out/'mission.json').read_text());spec=json.loads((out/'spec.json').read_text());toolcfg=json.loads((out/'scene/tool.json').read_text());cluster=next(x for x in cfg['clusters'] if x['cluster']==spec['cluster']);allsegments=cluster['segments'];selected=allsegments[:spec['segment_limit']] if spec['segment_limit'] else allsegments;segments=execution_groups(selected,cfg['navigation_execution']['mode'])
@@ -73,14 +74,19 @@ def main():
  def begin_tool(s):
   nonlocal active_tool,tool_future
   g=ToolTask.Goal();g.operation=ToolTask.Goal.START_WORK;g.task_id='R09_'+cluster['cluster'];g.idempotency_key=cfg['version']+':'+s['id'];g.segment_id=s['id'];g.map_id=cfg['map_id'];g.map_revision=cfg['map_revision'];g.frame_epoch=cfg['frame_epoch'];g.plan_revision=cfg['version'];g.tool_revision=toolcfg['tool_revision'];g.target=pose(s['poses'][0]);wire=np.asarray(s['target_area'],dtype=np.float32).astype(float);g.target_area.points=[Point32(x=float(x),y=float(y),z=0.) for x,y in wire];g.requested_quantity=float(abs(np.dot(wire[:,0],np.roll(wire[:,1],-1))-np.dot(wire[:,1],np.roll(wire[:,0],-1)))/2);g.timeout_sim_s=300.
+  st['phase']='START_WORK';log('START_WORK_REQUEST',segment=s['id']);publish()
   active_tool=result(tool.send_goal_async(g),5)
   if not active_tool.accepted:active_tool=None;raise RuntimeError('TOOL_ACTION_REJECTED')
-  tool_future=active_tool.get_result_async();wait(lambda:tool_future.done() or bool(st['tool'] and st['tool'].get('working_confirmed')),8)
+  tool_future=active_tool.get_result_async()
+  interrupted=wait_startup(tick,lambda:st['t'],lambda:st['bt'],lambda:tool_future.done() or working_feedback_ready(st['tool'],st['t'],g.idempotency_key))
+  if interrupted:
+   log('BT_INTERRUPTS_START_WORK',action=(st['bt'] or {}).get('action'),reason=interrupted,segment=s['id']);stop_all();return False
   if tool_future.done():
    d=tool_finish_result()
-   if d['state']=='SUCCEEDED':st['work_complete']=True;return
+   if d['state']=='SUCCEEDED':st['work_complete']=True;return True
    raise RuntimeError('TOOL_ADMISSION_FAILED')
   log('TOOL_WORKING_CONFIRMED',segment=s['id'],requested_area_m2=g.requested_quantity)
+  return True
  def replan_evidence(s):
   # An alternative must retain the fixed swath entry and nonholonomic geometry.
   # No silent replacement of coverage work by a free-space drive.
@@ -175,7 +181,12 @@ def main():
      if st['replans']>=2:raise RuntimeError('ACK_BOUNDED_SEARCH_EXHAUSTED')
      replan_evidence(s);st['nav_failed']=True;barrier=st['t'];wait(lambda:(st['bt']or{}).get('evidence',{}).get('stamp',-1)>barrier,3);continue
     st['phase']='READY';wait(lambda:bool(st['gate'] and st['gate'].get('armed_direction')==s['direction'] and st['gate']['stopped'] and st['gate']['tool_stopped']),3);log('DIRECTION_ARMED_WHILE_STOPPED',direction=s['direction'],segment=s['id'])
-    if s['kind']=='COVERAGE' and not st['work_complete']:begin_tool(s)
+    if s['kind']=='COVERAGE' and not st['work_complete'] and not begin_tool(s):
+     attempts+=1
+     if retry_exhausted(attempts,len(s['members']),False):raise RuntimeError('SEGMENT_RETRY_BOUND')
+     st['phase']='OBSERVATION_HOLD';barrier=st['t']
+     wait(lambda:bool(st['bt'] and st['bt'].get('evidence',{}).get('stamp',-1)>barrier and st['bt']['action'] in ['EXECUTE','REPLAN','HUMAN','STOP']),55)
+     continue
     points=np.asarray(s['poses']);p=np.asarray(st['loc']['pose']);i=int(np.argmin(np.linalg.norm(points[:,:2]-p[:2],axis=1)))
     if math.dist(p[:2],points[i,:2])>.4:raise RuntimeError('SEGMENT_CAPTURE_OUTSIDE_QUALIFIED_CORRIDOR')
     goal=FollowPath.Goal();goal.controller_id='TurnRPP' if s['kind']=='TURN_TOOL_OFF' else 'RPP';goal.goal_checker_id='goal';goal.progress_checker_id='progress';goal.path.header.frame_id='map';goal.path.header.stamp=n.get_clock().now().to_msg();goal.path.poses=[pose(x) for x in points[min(max(0,i-2),len(points)-2):]];st.update(phase='NAVIGATING',nav_idle=False);active=result(nav.send_goal_async(goal),8)

@@ -1,0 +1,24 @@
+[
+  {
+    "run": "optimization_v2/three_tasks/results/R12/mowing_20261114_204129_401398",
+    "saved_exact_hash_sources": [
+      "optimization_v2/ws/src/task_platform/scripts/runtime_mowing_r10.py",
+      "optimization_v2/three_tasks/editions/R10/mowing/mission.json",
+      "optimization_v2/three_tasks/editions/R12/runtime_mowing.py",
+      "optimization_v2/three_tasks/editions/R10/mowing/tool.json"
+    ],
+    "unreconstructed_changed_inputs": [],
+    "method": "Deterministic reconstruction of intermediate source/config; every byte hash checked against original run bindings. Current unchanged dependencies remain in workspace."
+  },
+  {
+    "run": "optimization_v2/three_tasks/results/R12/mowing_20261114_204938_642664",
+    "saved_exact_hash_sources": [
+      "optimization_v2/ws/src/task_platform/scripts/runtime_mowing_r10.py",
+      "optimization_v2/three_tasks/editions/R10/mowing/mission.json",
+      "optimization_v2/three_tasks/editions/R12/runtime_mowing.py",
+      "optimization_v2/three_tasks/editions/R10/mowing/tool.json"
+    ],
+    "unreconstructed_changed_inputs": [],
+    "method": "Deterministic reconstruction of intermediate source/config; every byte hash checked against original run bindings. Current unchanged dependencies remain in workspace."
+  }
+]

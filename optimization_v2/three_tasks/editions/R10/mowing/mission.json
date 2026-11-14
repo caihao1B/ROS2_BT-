@@ -104513,5 +104513,17 @@
       "pause_policy": "cancel, measured stop, fresh BT clearance, bounded cursor, full footprint and live costmap revalidation; original 90s budget"
     }
   },
-  "version": "ac448ad201f9df7cd25de58f72b731629373e46dd04435d1d490a7b5b6bcadf1"
+  "startup_cancellation": {
+    "priority": "fresh EXECUTE required throughout START_WORK; cancel before confirming readiness",
+    "stop_confirmation_s": 2.0,
+    "maximum_start_s": 8.0,
+    "resume": "physical stop then fresh BT directive; same idempotency key and original segment retry budget"
+  },
+  "ledger_transport": {
+    "heartbeat_clock": "STEADY_TIME",
+    "heartbeat_wall_s": 0.05,
+    "tool_server_stale_wall_s": 0.25,
+    "simulation_stamps_and_feedback_guards": "unchanged"
+  },
+  "version": "b67d8471290223817c2f39188d58b967a4ab91085febf033b7a102e859cf30c9"
 }

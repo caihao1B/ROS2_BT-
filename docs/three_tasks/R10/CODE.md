@@ -31,3 +31,15 @@ R10 没有为了验收新增一套 C++ 控制器；沿用真实 Nav2、BehaviorT
 `progress_spray_r10.NearGoalProgress` 维护有限长度的合格位置和实际门控平移命令窗口。任务工作器每个导航尝试新建一个监视器；返回停滞证据后记录 `NEAR_GOAL_PROGRESS_REPLAN`，取消真实动作并确认停车，再沿原 BT 的 REPLAN 分支查询新路径。窗口不能把过期定位、纯原地对向或远处阻塞当成近端停滞。5 项专项测试覆盖这几种情况。
 
 `recovery_mowing_r10.observed_cursor` 只在当前游标前方 0.20 米弧长内寻找位置/航向匹配点，游标单调推进，禁止跳到回折曲线的后续支路。`recover_endpoint` 在短时 CANCEL/WAIT 后以新 BT 证据和原候选剩余部分重新准入，记录 `ENDPOINT_OBSERVATION_RESUME`；最多六次续行且不重置 90 秒时钟。4 项新增测试检查单调性、近邻回折、错误位置/方向和末端索引。续行时首端不连续、整车越界、代价图不通过仍拒绝运行。
+
+## 本轮新增核心逻辑
+
+- `scripts/global_filter_r10.py`：从封存 R08 管理器生成隔离 R10 C++ 源码，精确检查替换锚点；仅替换通过原始跳变监督后的修正提交，新增原始修正诊断字段，原始 R08 文件与二进制不改。
+- `r10_backend/correction_filter.hpp`：SE(3) 修正平移的一阶滤波与旋转 SLERP；按仿真 dt 更新，不过滤局部里程计。
+- `scripts/start_work_r10.py`：工具启动等待循环；BT 中断检查优先于工作确认，且保留仿真和墙钟双超时。
+- `scripts/mission_mowing_r10.py`：START_WORK→取消→实际停车→新 BT 准入→原义务重试；失败的启动也计入原重试预算。
+- `scripts/runtime_mowing_r10.py`：专项用例暂停自己启动的 risk 进程并定时恢复；即使测试异常也先恢复被暂停进程再执行正常关停。
+- `tests/test_global_filter_r10.py`：实际编译 C++ 滤波器，验证时间步长一致、零 dt、抖动抑制、原始门控保留、真实局部位移不衰减。
+- `tests/test_start_work_r10.py`：取消与工作确认同时到达、启动中途 WAIT、过期指令、正常启动和超时。
+
+`ledger_mowing_r10.py::derive` 仅把封存 R09 账本的发布定时器换为 `rclpy.clock.Clock(STEADY_TIME)`。原 0.01 仿真秒反馈处理、0.035 秒配对缓冲与所有 `Ledger` 方法原样保留；生成锚点不唯一时拒绝运行。`probe_ledger_clock_r10.py` 在隔离域 134 启动真正的原版/新版账本节点，输入 0.1 倍速及暂停的 `/clock`，记录收到的真实消息间隔与 watchdog 状态。没有底盘或工具动作。

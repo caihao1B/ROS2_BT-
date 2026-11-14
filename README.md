@@ -86,7 +86,15 @@ media/                          图、截图及历史独立演示
 
 本仓库同步源码、配置、说明和精简证据。完整冻结数据库、构建产物及逐帧记录仍绑定开发机，**尚不是 R12 的可移植发行包**。历史媒体按原阶段说明理解；本轮媒体统一以 r11_ / r12_ 前缀区分。R11 材质对照和 R12 实际录像的范围、完成状态与限制见当前回执。完整录像包含真实等待和失败，不等于完成全部作业。
 
+本轮 R10 修复加入全局修正低通与原始异常监督、可取消的割草工具启动等待、与墙钟监督一致的账本心跳，并分别复验完整 A1/B1。原始点数、条带数、精停及停车门限保持不变；完整通过与局部演示通过分别记录。详见 [本轮修复和实测结果](docs/three_tasks/R10修复与完整任务复验_20261115.md)。
+
+![点喷精停实测窗口](media/r10_repair_docking.png)
+
+![割草启动中断与恢复](media/r10_repair_start_work.png)
+
 ## 本轮材质与录像
+
+上轮通过的录像保留于本机原运行目录及 [上轮 GitHub 媒体版本](https://github.com/caihao1B/ROS2_BT-/tree/7458228a2e33d44d6ffd8776dbb32a1b9dd8d15f/media)。它们的通过结论限于原源码版本。
 
 ![spray 材质实拍](media/r11_spray_material.png)
 
@@ -99,7 +107,7 @@ media/                          图、截图及历史独立演示
 - [spray：本例通过](media/r12_spray_full.mp4)
 - [inspection：本例通过](media/r12_inspection_full.mp4)
 - [inspection_leader：本例通过](media/r12_inspection_leader_full.mp4)
-- [mowing：本例通过](media/r12_mowing_full.mp4)
+- [mowing_startup_perception_loss：本例通过](media/r12_mowing_startup_perception_loss_full.mp4)
 - [inspection_blocked：本例通过](media/r12_inspection_blocked_full.mp4)
 
-[本轮推进与后续命令](docs/three_tasks/本轮推进结果_R08-R12_20261114.md) · [R11 手工对照](docs/three_tasks/R11/MANUAL.md) · [R12 录像命令](docs/three_tasks/R12/MANUAL.md)
+[本轮推进与后续命令](docs/three_tasks/R10修复与完整任务复验_20261115.md) · [R11 手工对照](docs/three_tasks/R11/MANUAL.md) · [R12 录像命令](docs/three_tasks/R12/MANUAL.md)

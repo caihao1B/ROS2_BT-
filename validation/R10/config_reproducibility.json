@@ -13,6 +13,6 @@
     "spray/nav2.yaml": true,
     "spray/terrain.json": true
   },
-  "generator_sha256": "92fa84a6a0d7d5e376a900f5e1c07dd0c375f17a5c809be7d581e69e0cf4241e",
-  "method": "isolated regeneration; active configuration files never rewritten"
+  "generator_sha256": "7c817b6702e0c1c348e4a32d834bbc416230ef50b7a8360d7b8db50c59e8bcb5",
+  "scope": "Fresh isolated regeneration compared to active R10 inputs; native build suppressed to preserve running binary; native behavior tested separately"
 }

@@ -4,6 +4,8 @@ test_one_lucky_pose_is_not_admission (test_docking_r10.Docking.test_one_lucky_po
 test_stable_but_offset (test_docking_r10.Docking.test_stable_but_offset) ... ok
 test_stable_center (test_docking_r10.Docking.test_stable_center) ... ok
 test_stale_gap (test_docking_r10.Docking.test_stale_gap) ... ok
+test_cpp_filter_timebase_jitter_and_local_motion (test_global_filter_r10.GlobalCorrection.test_cpp_filter_timebase_jitter_and_local_motion) ... ok
+test_original_raw_guards_precede_filter (test_global_filter_r10.GlobalCorrection.test_original_raw_guards_precede_filter) ... ok
 test_all_original_obligations_retained (test_groups_mowing_r10.Groups.test_all_original_obligations_retained) ... ok
 test_arrived_group_cannot_fail_retry_guard (test_groups_mowing_r10.Groups.test_arrived_group_cannot_fail_retry_guard) ... ok
 test_group_budget_preserves_original_segment_limits (test_groups_mowing_r10.Groups.test_group_budget_preserves_original_segment_limits) ... ok
@@ -14,6 +16,8 @@ test_primitive_mode_requires_each_original_goal (test_groups_mowing_r10.Groups.t
 test_unknown_execution_mode_cannot_silently_change_obligations (test_groups_mowing_r10.Groups.test_unknown_execution_mode_cannot_silently_change_obligations) ... ok
 test_work_regions_remain_original (test_groups_mowing_r10.Groups.test_work_regions_remain_original) ... ok
 test_wrong_position_or_heading_cannot_credit_passage (test_groups_mowing_r10.Groups.test_wrong_position_or_heading_cannot_credit_passage) ... ok
+test_original_credit_and_staleness_guards_are_preserved (test_ledger_transport_r10.LedgerTransport.test_original_credit_and_staleness_guards_are_preserved) ... ok
+test_source_drift_fails_closed (test_ledger_transport_r10.LedgerTransport.test_source_drift_fails_closed) ... ok
 test_angle_wrap_reaches_exact_orientation (test_ompl_endpoint_r10.ContinuousEndpoint.test_angle_wrap_reaches_exact_orientation) ... ok
 test_near_goal_with_lateral_and_heading_error (test_ompl_endpoint_r10.ContinuousEndpoint.test_near_goal_with_lateral_and_heading_error) ... ok
 test_same_position_is_not_an_in_place_yaw_jump (test_ompl_endpoint_r10.ContinuousEndpoint.test_same_position_is_not_an_in_place_yaw_jump) ... ok
@@ -38,8 +42,15 @@ test_changed_original_rejected (test_runtime_binding_r10.RuntimeBinding.test_cha
 test_exact_observer_derivation_accepted (test_runtime_binding_r10.RuntimeBinding.test_exact_observer_derivation_accepted) ... ok
 test_normal_original_runtime_accepted (test_runtime_binding_r10.RuntimeBinding.test_normal_original_runtime_accepted) ... ok
 test_task_command_modification_rejected_even_with_updated_self_hash (test_runtime_binding_r10.RuntimeBinding.test_task_command_modification_rejected_even_with_updated_self_hash) ... ok
+test_all_non_execute_commands_interrupt (test_start_work_r10.StartWork.test_all_non_execute_commands_interrupt) ... ok
+test_cancel_wins_over_simultaneous_working_feedback (test_start_work_r10.StartWork.test_cancel_wins_over_simultaneous_working_feedback) ... ok
+test_feedback_required_and_bounded (test_start_work_r10.StartWork.test_feedback_required_and_bounded) ... ok
+test_healthy_feedback_admits (test_start_work_r10.StartWork.test_healthy_feedback_admits) ... ok
+test_mid_start_wait_returns_before_original_deadline (test_start_work_r10.StartWork.test_mid_start_wait_returns_before_original_deadline) ... ok
+test_stale_execute_is_not_admission (test_start_work_r10.StartWork.test_stale_execute_is_not_admission) ... ok
+test_working_feedback_belongs_to_fresh_active_goal (test_start_work_r10.StartWork.test_working_feedback_belongs_to_fresh_active_goal) ... ok
 
 ----------------------------------------------------------------------
-Ran 40 tests in 0.394s
+Ran 51 tests in 2.222s
 
 OK

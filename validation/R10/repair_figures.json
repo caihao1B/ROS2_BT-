@@ -1,0 +1,7 @@
+{
+  "paths": [
+    "optimization_v2/three_tasks/results/R10/repair_docking.png",
+    "optimization_v2/three_tasks/results/R10/repair_start_work.png"
+  ],
+  "scope": "Offline observed diagnostics; acceptance remains in each run analysis"
+}

@@ -16,6 +16,11 @@ def select(case,events,frames,analysis):
  elif case=='inspection_blocked':
   checks=analysis['checks'];stop=first('TASK_STOP',terminal='HUMAN_REQUIRED');hold=first('BT_INTERRUPTS_PATH')
   if stop and hold and all(checks.get(k) for k in ['expected_controlled_hold','residual_preserved','bounded_attempts','stopped']):start,end,label=hold['t']-4,stop['t']+2,'持续受阻 / 有限规划查询 / 停车请求人工'
+ elif case=='mowing_startup_perception_loss':
+  interrupted=first('BT_INTERRUPTS_START_WORK')
+  stopped=first('BOTH_PHYSICAL_STOPS_CONFIRMED',interrupted['t']) if interrupted else None
+  work=first('TOOL_WORKING_CONFIRMED',stopped['t']) if stopped else None
+  if work:start,end,label=interrupted['t']-3,work['t']+5,'启动中感知中断 / BT取消 / 实测停刀 / 恢复原义务'
  elif case.startswith('mowing'):
   turn=first('SEGMENT_GOAL',kind='TURN_TOOL_OFF')
   work=first('TOOL_WORKING_CONFIRMED',turn['t']) if turn else None

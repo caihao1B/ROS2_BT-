@@ -25,82 +25,46 @@
     "passed": false,
     "terminal": "HUMAN_REQUIRED",
     "controlled_hold": true,
-    "error": "TimeoutError('WAIT_DEADLINE')",
-    "t": 529.17,
+    "error": "TimeoutError('ENDPOINT_RECOVERY_BUDGET')",
+    "t": 327.93,
     "selected_segments": 34,
     "navigation_groups": 34,
     "original_segment_passages": [
       {
         "segment": "B1:segment:0",
-        "xy_error_m": 0.09821965947868701,
-        "yaw_error_rad": 0.03830587540603772,
-        "t": 83.25
+        "xy_error_m": 0.09619093089406756,
+        "yaw_error_rad": 0.002285182153474674,
+        "t": 72.63
       },
       {
         "segment": "B1:segment:1",
-        "xy_error_m": 0.09959209488941763,
-        "yaw_error_rad": 0.08719859800336627,
-        "t": 89.16
+        "xy_error_m": 0.0942952768248307,
+        "yaw_error_rad": 0.0678466418489867,
+        "t": 78.3
       },
       {
         "segment": "B1:segment:2",
-        "xy_error_m": 0.09767431991505776,
-        "yaw_error_rad": 0.04507592585206704,
-        "t": 121.11
+        "xy_error_m": 0.09985075285564361,
+        "yaw_error_rad": 0.012575089782772275,
+        "t": 107.46
       },
       {
         "segment": "B1:segment:3",
-        "xy_error_m": 0.09818034977906724,
-        "yaw_error_rad": 0.07902122866447402,
-        "t": 129.06
+        "xy_error_m": 0.09873777478386735,
+        "yaw_error_rad": 0.031233117080814502,
+        "t": 112.95
       },
       {
         "segment": "B1:segment:4",
-        "xy_error_m": 0.09997400331289134,
-        "yaw_error_rad": 0.0062521534947758695,
-        "t": 192.54
+        "xy_error_m": 0.09886859334623686,
+        "yaw_error_rad": 0.011671154163571396,
+        "t": 172.8
       },
       {
         "segment": "B1:segment:5",
-        "xy_error_m": 0.09890243320904525,
-        "yaw_error_rad": 0.054070133015736266,
-        "t": 219.12
-      },
-      {
-        "segment": "B1:segment:6",
-        "xy_error_m": 0.098002411777686,
-        "yaw_error_rad": 0.006868532743948386,
-        "t": 313.712
-      },
-      {
-        "segment": "B1:segment:7",
-        "xy_error_m": 0.0762420218500367,
-        "yaw_error_rad": 0.06782246674832582,
-        "t": 317.19
-      },
-      {
-        "segment": "B1:segment:8",
-        "xy_error_m": 0.09846913700468925,
-        "yaw_error_rad": 0.008426031245681196,
-        "t": 402.33
-      },
-      {
-        "segment": "B1:segment:9",
-        "xy_error_m": 0.09985322983520585,
-        "yaw_error_rad": 0.049559907689205936,
-        "t": 409.53
-      },
-      {
-        "segment": "B1:segment:10",
-        "xy_error_m": 0.09933823096459658,
-        "yaw_error_rad": 0.0551952091769079,
-        "t": 424.08
-      },
-      {
-        "segment": "B1:segment:11",
-        "xy_error_m": 0.08279445240301246,
-        "yaw_error_rad": 0.025022639927650914,
-        "t": 487.14
+        "xy_error_m": 0.09870203160249492,
+        "yaw_error_rad": 0.0578269023190201,
+        "t": 192.75
       }
     ],
     "original_segments": 34,
@@ -110,15 +74,15 @@
       "B1:segment:2",
       "B1:segment:3",
       "B1:segment:4",
-      "B1:segment:5",
+      "B1:segment:5"
+    ],
+    "remaining_selected": [
       "B1:segment:6",
       "B1:segment:7",
       "B1:segment:8",
       "B1:segment:9",
       "B1:segment:10",
-      "B1:segment:11"
-    ],
-    "remaining_selected": [
+      "B1:segment:11",
       "B1:segment:12",
       "B1:segment:13",
       "B1:segment:14",
@@ -148,110 +112,44 @@
         "segment": "B1:segment:0",
         "state": "CANCELLED",
         "reason": "USER_CANCEL",
-        "confirmed": 2.698012499999999,
-        "remaining": 7.863477781674197,
-        "uncertain": false
-      },
-      {
-        "segment": "B1:segment:0",
-        "state": "CANCELLED",
-        "reason": "USER_CANCEL",
-        "confirmed": 8.433162499999984,
-        "remaining": 2.128327781674212,
-        "uncertain": false
-      },
-      {
-        "segment": "B1:segment:0",
-        "state": "CANCELLED",
-        "reason": "USER_CANCEL",
-        "confirmed": 9.883337499999994,
-        "remaining": 0.6781527816742017,
+        "confirmed": 9.71377499999998,
+        "remaining": 0.8477152816742155,
         "uncertain": false
       },
       {
         "segment": "B1:segment:4",
         "state": "CANCELLED",
         "reason": "USER_CANCEL",
-        "confirmed": 17.224187499999996,
-        "remaining": 1.6306519275130746,
-        "uncertain": false
-      },
-      {
-        "segment": "B1:segment:8",
-        "state": "CANCELLED",
-        "reason": "USER_CANCEL",
-        "confirmed": 3.9135749999999914,
-        "remaining": 21.51874403342531,
-        "uncertain": false
-      },
-      {
-        "segment": "B1:segment:8",
-        "state": "CANCELLED",
-        "reason": "USER_CANCEL",
-        "confirmed": 4.2731124999999945,
-        "remaining": 21.159206533425305,
-        "uncertain": false
-      },
-      {
-        "segment": "B1:segment:8",
-        "state": "CANCELLED",
-        "reason": "USER_CANCEL",
-        "confirmed": 22.73858749999999,
-        "remaining": 2.6937315334253107,
-        "uncertain": false
-      },
-      {
-        "segment": "B1:segment:8",
-        "state": "CANCELLED",
-        "reason": "USER_CANCEL",
-        "confirmed": 23.359849999999952,
-        "remaining": 2.0724690334253495,
-        "uncertain": false
-      },
-      {
-        "segment": "B1:segment:12",
-        "state": "CANCELLED",
-        "reason": "USER_CANCEL",
-        "confirmed": 0.7557999999999987,
-        "remaining": 34.41706958335899,
-        "uncertain": false
-      },
-      {
-        "segment": "B1:segment:12",
-        "state": "CANCELLED",
-        "reason": "USER_CANCEL",
-        "confirmed": 0.7557999999999987,
-        "remaining": 34.41706958335899,
+        "confirmed": 17.17951249999998,
+        "remaining": 1.6753269275130904,
         "uncertain": false
       }
     ],
     "replans": 0,
-    "endpoint_recoveries": 2,
-    "endpoint_planner_queries": 3,
-    "continuous_recovery_queries": 3,
+    "endpoint_recoveries": 1,
+    "endpoint_planner_queries": 2,
+    "continuous_recovery_queries": 2,
     "final_gate": {
-      "t": 529.17,
+      "t": 327.93,
       "allowed": false,
       "mode": "STOP",
       "v": 0.0,
       "w": 0.0,
       "reasons": [
-        "NAV_COMMAND_STALE",
-        "TOOL_STATE_FOR_SEGMENT",
-        "OBSTRUCTED"
+        "NAV_COMMAND_STALE"
       ],
       "stopped": true,
       "tool_stopped": true,
       "nav_idle": true,
-      "progress_m": 73.264387426838,
+      "progress_m": 46.91894658988906,
       "armed_direction": 1,
       "raw_nav_v": 0.0,
       "raw_nav_w": 0.0
     },
     "ownership": {
       "/tf": [
-        "s08_global_pose_manager",
-        "s05_local_odometry"
+        "s05_local_odometry",
+        "s08_global_pose_manager"
       ],
       "/s03/actuator/request": [
         "r09_actuator_gate"
@@ -260,64 +158,42 @@
         "s10_tool_action_server"
       ]
     },
-    "wall_seconds": 1384.6724134340038,
+    "wall_seconds": 1125.2289636039932,
     "execution_mode": "original_primitive_boundaries",
     "scope": "Original segment goals checked in order under explicitly versioned execution mode; feedback area separate from passage"
   },
   "jobs": [
     {
-      "key": "ac448ad201f9df7cd25de58f72b731629373e46dd04435d1d490a7b5b6bcadf1:B1:segment:0",
+      "key": "b67d8471290223817c2f39188d58b967a4ab91085febf033b7a102e859cf30c9:B1:segment:0",
       "status": "CANCELLED",
-      "confirmed_m2": 9.883337499999994,
+      "confirmed_m2": 9.71377499999998,
       "requested_m2": 10.561490281674196,
-      "remaining_m2": 0.6781527816742017,
+      "remaining_m2": 0.8477152816742155,
       "uncertain": false,
-      "physical_area_m2": 13.17462505482403,
+      "physical_area_m2": 13.013459615144576,
       "credit_outside_physical_3cm_m2": 0.0,
-      "credit_geometry_area_m2": 9.883337499999994
+      "credit_geometry_area_m2": 9.71377499999998
     },
     {
-      "key": "ac448ad201f9df7cd25de58f72b731629373e46dd04435d1d490a7b5b6bcadf1:B1:segment:4",
+      "key": "b67d8471290223817c2f39188d58b967a4ab91085febf033b7a102e859cf30c9:B1:segment:4",
       "status": "CANCELLED",
-      "confirmed_m2": 17.224187499999996,
+      "confirmed_m2": 17.17951249999998,
       "requested_m2": 18.85483942751307,
-      "remaining_m2": 1.6306519275130746,
+      "remaining_m2": 1.6753269275130904,
       "uncertain": false,
-      "physical_area_m2": 21.470352121538635,
+      "physical_area_m2": 21.375764183039212,
       "credit_outside_physical_3cm_m2": 0.0,
-      "credit_geometry_area_m2": 17.224187499999996
-    },
-    {
-      "key": "ac448ad201f9df7cd25de58f72b731629373e46dd04435d1d490a7b5b6bcadf1:B1:segment:8",
-      "status": "CANCELLED",
-      "confirmed_m2": 23.359849999999952,
-      "requested_m2": 25.4323190334253,
-      "remaining_m2": 2.0724690334253495,
-      "uncertain": false,
-      "physical_area_m2": 27.432635484702075,
-      "credit_outside_physical_3cm_m2": 0.0,
-      "credit_geometry_area_m2": 23.359849999999952
-    },
-    {
-      "key": "ac448ad201f9df7cd25de58f72b731629373e46dd04435d1d490a7b5b6bcadf1:B1:segment:12",
-      "status": "CANCELLED",
-      "confirmed_m2": 0.7557999999999987,
-      "requested_m2": 35.17286958335899,
-      "remaining_m2": 34.41706958335899,
-      "uncertain": false,
-      "physical_area_m2": 1.9157533945753744,
-      "credit_outside_physical_3cm_m2": 0.0,
-      "credit_geometry_area_m2": 0.7557999999999987
+      "credit_geometry_area_m2": 17.17951249999998
     }
   ],
-  "map_xy_rmse_m": 0.06606271791274118,
-  "actual_reverse_distance_m": 17.90496593676676,
+  "map_xy_rmse_m": 0.05482180087058375,
+  "actual_reverse_distance_m": 17.887358479436745,
   "selected_requested_area_m2": 188.3918016929564,
-  "selected_confirmed_union_m2": 49.960230326157465,
-  "selected_fraction": 0.2651932296267507,
-  "selected_residual_m2": 138.431571366799,
+  "selected_confirmed_union_m2": 26.48870692016314,
+  "selected_fraction": 0.1406043505191102,
+  "selected_residual_m2": 161.90309477279322,
   "original_cluster_area_m2": 195.99438340335297,
-  "original_cluster_confirmed_fraction": 0.2549064389428969,
+  "original_cluster_confirmed_fraction": 0.13515033676067054,
   "original_clusters": 3,
   "unexpected_contacts": {},
   "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",

@@ -5,6 +5,8 @@ from prepare_r12 import build
 
 CASES=dict(spray=dict(task='spray',case='tool_jam',point_limit=3,seconds=300),spray_full_A1=dict(task='spray',case='nominal',point_limit=0,seconds=1800),inspection=dict(task='inspection',case='nominal',seconds=480),inspection_leader=dict(task='inspection',case='leader',distance_limit=20.,seconds=150),inspection_blocked=dict(task='inspection',case='blocked',distance_limit=20.,seconds=120),mowing=dict(task='mowing',case='nominal',segment_limit=5,seconds=420),mowing_full_B1=dict(task='mowing',case='nominal',segment_limit=0,seconds=1800))
 
+CASES['mowing_startup_perception_loss']=dict(task='mowing',case='startup_perception_loss',segment_limit=5,seconds=420)
+
 def declared_scope_matches(receipt,spec,name):
  expected=CASES[name];fields={'seconds':'sim_seconds','distance_limit':'distance_limit_m'}
  if receipt.get('case')!=name or receipt.get('task')!=expected['task'] or spec.get('task')!=expected['task']:return False
@@ -20,7 +22,10 @@ def recheck(receipt):
   from analyze_mowing_r10 import analyze
  else:
   from analyze_r08 import analyze
- analysis=analyze(out);rec=read(out/'video/recording.json');frames=[json.loads(x) for x in (out/'video/frames.jsonl').read_text().splitlines()];gates=[json.loads(x) for x in (out/'control/gate.jsonl').read_text().splitlines()];start=next((x['t'] for x in gates if x.get('mode')=='DRIVE' and abs(x.get('v',0))+abs(x.get('w',0))>.003),None);end=analysis['task_result'].get('t',1e9);active=[f for f in frames if (start or 0)<=f['sim_t']<=end]
+ analysis=analyze(out);rec=read(out/'video/recording.json');frames=[json.loads(x) for x in (out/'video/frames.jsonl').read_text().splitlines()];gates=[json.loads(x) for x in (out/'control/gate.jsonl').read_text().splitlines()];start=next((x['t'] for x in gates if x.get('mode')=='DRIVE' and abs(x.get('v',0))+abs(x.get('w',0))>.003),None)
+ if receipt['case']=='mowing_startup_perception_loss':
+  events=[json.loads(l) for l in (out/'mission_events.jsonl').read_text().splitlines()];start=min([e['t'] for e in events if e['event']=='START_WORK_REQUEST']+([start] if start is not None else []),default=None)
+ end=analysis['task_result'].get('t',1e9);active=[f for f in frames if (start or 0)<=f['sim_t']<=end]
  checks=dict(current_task_evidence=analysis['passed'],video_hash=sha(out/'video/full.mp4')==receipt['source_video_sha256'],encoder=rec['valid'] and rec['encoder_exit']==0,frame_count=rec['frames']==len(frames),complete_timeline=bool(start is not None and frames and frames[0]['sim_t']<=start and frames[-1]['sim_t']>=end-.5),monotonic_clock=all(b['sim_t']>=a['sim_t'] and b['video_s']>a['video_s'] for a,b in zip(frames,frames[1:])),fresh_images=len(active)>=10 and max((f['image_wall_age_s'] for f in active),default=1e9)<=2.5 and max((b['sim_t']-a['sim_t'] for a,b in zip(active,active[1:])),default=1e9)<=1.)
  return dict(receipt,passed=all(checks.values()),current_recheck=checks,task_passed=analysis['passed'])
 
@@ -30,9 +35,9 @@ def record(name):
  spec=CASES[name].copy();task=spec.pop('task');path=edition('R12')/('runtime_'+task+'.py');binding=next(x for x in read(edition('R12')/'runtime_derivation.json')['records'] if x['task']==task)
  if sha(ROOT/binding['source'])!=binding['source_sha256'] or sha(path)!=binding['derived_sha256']:raise ValueError('REBUILD_R12_AFTER_RUNTIME_CHANGE')
  module=importlib.util.spec_from_file_location('r12_'+task,path);runtime=importlib.util.module_from_spec(module);module.loader.exec_module(runtime)
- # The optional held-obstacle clip has tight rendering latency on this host.
+ # Long mowing and held-obstacle recordings previously exceeded image age on this host.
  # Lower only wall-clock pacing; task clock, actions and physical limits remain original.
- out=runtime.run(rtf=.3,**spec) if name=='inspection_blocked' else runtime.run(**spec)
+ out=runtime.run(rtf=.3,**spec) if name in ['inspection_blocked','mowing_full_B1'] else runtime.run(**spec)
  if task=='spray':
   from analyze_spray_r10 import analyze
  elif task=='mowing':
@@ -41,6 +46,7 @@ def record(name):
   from analyze_r08 import analyze
  result=analyze(out);video=read(out/'video/recording.json') if (out/'video/recording.json').exists() else {};frames=[json.loads(l) for l in (out/'video/frames.jsonl').read_text().splitlines()] if (out/'video/frames.jsonl').exists() else [];task_result=result.get('task_result',{});events=[json.loads(l) for l in (out/'mission_events.jsonl').read_text().splitlines()];first_action=next((x['t'] for x in events if x['event'] in ['NAV_GOAL','SEGMENT_GOAL','FOLLOW_PATH_SENT','FOLLOW_PATH_GOAL','ROUTE_GOAL']),None)
  gates=[json.loads(l) for l in (out/'control/gate.jsonl').read_text().splitlines()];first_action=next((g['t'] for g in gates if g.get('mode')=='DRIVE' and abs(g.get('v',0))+abs(g.get('w',0))>.003),first_action)
+ if name=='mowing_startup_perception_loss':first_action=min([e['t'] for e in events if e['event']=='START_WORK_REQUEST']+([first_action] if first_action is not None else []),default=None)
  coverage=bool(frames and frames[0]['sim_t']<=(first_action if first_action is not None else 15.) and frames[-1]['sim_t']>=task_result.get('t',1e9)-.5)
  active_frames=[f for f in frames if (first_action or 0)<=f['sim_t']<=task_result.get('t',0)]
  max_age=max((f['image_wall_age_s'] for f in active_frames),default=1e9);max_gap=max((b['sim_t']-a['sim_t'] for a,b in zip(active_frames,active_frames[1:])),default=1e9);quality=bool(len(active_frames)>=10 and max_age<=2.5 and max_gap<=1.0)

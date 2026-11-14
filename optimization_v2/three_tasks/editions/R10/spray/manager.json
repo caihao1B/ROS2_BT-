@@ -17,5 +17,6 @@
   "nominal_speed": 0.4,
   "degraded_speed": 0.06,
   "stopped_v": 0.01,
-  "stopped_w": 0.02
+  "stopped_w": 0.02,
+  "correction_filter_tau_s": 0.8
 }

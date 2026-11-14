@@ -1,0 +1,185 @@
+{
+  "run": "optimization_v2/three_tasks/results/R12/spray_20261114_194849_404114",
+  "total_sim_s": 1186.44,
+  "selected_points": 56,
+  "completed_points": 20,
+  "navigation_action_intervals_s": 834.49,
+  "failed_navigation_to_bt_retry_wait_s": 48.28199999999981,
+  "near_goal_progress_replans": 4,
+  "redock_goals": 4,
+  "failed_docking_checks": [
+    {
+      "point": "point_8_14",
+      "t": 57.352,
+      "attempt": 0,
+      "reasons": [
+        "median_distance_m",
+        "latest_distance_m"
+      ],
+      "metrics": {
+        "samples": 74,
+        "span_s": 2.1899999999999977,
+        "max_gap_s": 0.030000000000001137,
+        "median_distance_m": 0.05486884187989062,
+        "latest_distance_m": 0.0512416078868988,
+        "position_scatter_p95_m": 0.01168402392667269
+      }
+    },
+    {
+      "point": "point_9_17",
+      "t": 660.02,
+      "attempt": 0,
+      "reasons": [
+        "median_distance_m",
+        "position_scatter_p95_m"
+      ],
+      "metrics": {
+        "samples": 74,
+        "span_s": 2.1900000000000546,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.042311730252455014,
+        "latest_distance_m": 0.04159620096406923,
+        "position_scatter_p95_m": 0.02840916276740476
+      }
+    },
+    {
+      "point": "point_10_18",
+      "t": 789.86,
+      "attempt": 0,
+      "reasons": [
+        "median_distance_m",
+        "latest_distance_m",
+        "position_scatter_p95_m"
+      ],
+      "metrics": {
+        "samples": 74,
+        "span_s": 2.1900000000000546,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.03839210633588131,
+        "latest_distance_m": 0.06040061588002641,
+        "position_scatter_p95_m": 0.03141087821471486
+      }
+    },
+    {
+      "point": "point_9_18",
+      "t": 861.44,
+      "attempt": 0,
+      "reasons": [
+        "median_distance_m",
+        "latest_distance_m"
+      ],
+      "metrics": {
+        "samples": 74,
+        "span_s": 2.189999999999941,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.044879222466719666,
+        "latest_distance_m": 0.058769435222343805,
+        "position_scatter_p95_m": 0.013181919579684623
+      }
+    }
+  ],
+  "point_completion_intervals": [
+    {
+      "point": "point_7_14",
+      "completion_t": 27.424,
+      "since_previous_completion_s": 27.424
+    },
+    {
+      "point": "point_8_14",
+      "completion_t": 74.814,
+      "since_previous_completion_s": 47.38999999999999
+    },
+    {
+      "point": "point_8_15",
+      "completion_t": 123.618,
+      "since_previous_completion_s": 48.804
+    },
+    {
+      "point": "point_9_15",
+      "completion_t": 173.204,
+      "since_previous_completion_s": 49.58600000000001
+    },
+    {
+      "point": "point_9_14",
+      "completion_t": 215.46,
+      "since_previous_completion_s": 42.256
+    },
+    {
+      "point": "point_10_14",
+      "completion_t": 254.356,
+      "since_previous_completion_s": 38.89599999999999
+    },
+    {
+      "point": "point_10_15",
+      "completion_t": 341.756,
+      "since_previous_completion_s": 87.39999999999998
+    },
+    {
+      "point": "point_10_16",
+      "completion_t": 393.322,
+      "since_previous_completion_s": 51.56600000000003
+    },
+    {
+      "point": "point_9_16",
+      "completion_t": 497.508,
+      "since_previous_completion_s": 104.18599999999998
+    },
+    {
+      "point": "point_8_16",
+      "completion_t": 544.064,
+      "since_previous_completion_s": 46.55599999999998
+    },
+    {
+      "point": "point_8_17",
+      "completion_t": 579.35,
+      "since_previous_completion_s": 35.28600000000006
+    },
+    {
+      "point": "point_9_17",
+      "completion_t": 680.32,
+      "since_previous_completion_s": 100.97000000000003
+    },
+    {
+      "point": "point_10_17",
+      "completion_t": 719.408,
+      "since_previous_completion_s": 39.087999999999965
+    },
+    {
+      "point": "point_10_18",
+      "completion_t": 811.256,
+      "since_previous_completion_s": 91.84799999999996
+    },
+    {
+      "point": "point_9_18",
+      "completion_t": 878.902,
+      "since_previous_completion_s": 67.64600000000007
+    },
+    {
+      "point": "point_8_18",
+      "completion_t": 914.922,
+      "since_previous_completion_s": 36.01999999999998
+    },
+    {
+      "point": "point_8_19",
+      "completion_t": 965.956,
+      "since_previous_completion_s": 51.03399999999999
+    },
+    {
+      "point": "point_9_19",
+      "completion_t": 1006.922,
+      "since_previous_completion_s": 40.96600000000001
+    },
+    {
+      "point": "point_10_19",
+      "completion_t": 1052.318,
+      "since_previous_completion_s": 45.39599999999996
+    },
+    {
+      "point": "point_11_19",
+      "completion_t": 1099.424,
+      "since_previous_completion_s": 47.105999999999995
+    }
+  ],
+  "terminal_error": "TimeoutError('WAIT_DEADLINE')",
+  "scope": "Offline observed action intervals, not a causal ablation or pure driving-time measurement; original task clock includes all waiting"
+}

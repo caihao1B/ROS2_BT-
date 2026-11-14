@@ -32,3 +32,17 @@ cd /home/ceihao/robot_project
 bash optimization_v2/three_tasks/advance.sh R12 view-live
 ```
 这只启动现有会话的 GUI 客户端，不创建第二辆车。关闭观察窗口不等于取消任务；结束任务仍在录制终端按 Ctrl+C，并等物理停车、刀具停止和有序退出。GUI 会增加显卡负载；回看已录原片不占仿真传感器资源。
+
+R10 修复版本新增启动感知中断的录像案例：
+```bash
+cd /home/ceihao/robot_project
+bash optimization_v2/three_tasks/advance.sh R10 test record_mowing_startup_perception_loss
+```
+同时验证五个原始段、两条工作带和启动取消恢复；该案例独立于完整 B1。完整割草录像与持续阻塞录像以 0.3 实时因子推进，减少本机录制队列的延迟；仿真时限、车辆动力学、感知频率、任务分母和验收门限不变，不能直接用墙钟耗时比较控制效率。
+
+本轮现成媒体采用启动中断专项替代旧版正常割草片段；三个任务及巡迹交互仍完整保留。需要重新导出当前指针时：
+```bash
+cd /home/ceihao/robot_project
+bash optimization_v2/three_tasks/advance.sh R12 export spray inspection inspection_leader mowing_startup_perception_loss inspection_blocked
+```
+导出前检查各案例 `recording_acceptance.json`。0.3 实时因子也不能保证长录像合格；超过原画面年龄或帧间隔门限时，保留原片和失败回执，不能标为录像质量通过。

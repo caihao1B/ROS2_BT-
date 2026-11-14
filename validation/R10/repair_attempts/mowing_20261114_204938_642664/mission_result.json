@@ -1,0 +1,95 @@
+{
+  "passed": false,
+  "terminal": "FAULT",
+  "controlled_hold": false,
+  "error": "RuntimeError('TOOL_STOP_UNCONFIRMED')",
+  "t": 52.41,
+  "selected_segments": 34,
+  "navigation_groups": 34,
+  "original_segment_passages": [],
+  "original_segments": 34,
+  "completed_segments": [],
+  "remaining_selected": [
+    "B1:segment:0",
+    "B1:segment:1",
+    "B1:segment:2",
+    "B1:segment:3",
+    "B1:segment:4",
+    "B1:segment:5",
+    "B1:segment:6",
+    "B1:segment:7",
+    "B1:segment:8",
+    "B1:segment:9",
+    "B1:segment:10",
+    "B1:segment:11",
+    "B1:segment:12",
+    "B1:segment:13",
+    "B1:segment:14",
+    "B1:segment:15",
+    "B1:segment:16",
+    "B1:segment:17",
+    "B1:segment:18",
+    "B1:segment:19",
+    "B1:segment:20",
+    "B1:segment:21",
+    "B1:segment:22",
+    "B1:segment:23",
+    "B1:segment:24",
+    "B1:segment:25",
+    "B1:segment:26",
+    "B1:segment:27",
+    "B1:segment:28",
+    "B1:segment:29",
+    "B1:segment:30",
+    "B1:segment:31",
+    "B1:segment:32",
+    "B1:segment:33"
+  ],
+  "not_selected": [],
+  "work_results": [
+    {
+      "segment": "B1:segment:0",
+      "state": "LOST",
+      "reason": "LEDGER_STALE",
+      "confirmed": 5.298112499999994,
+      "remaining": 5.263377781674202,
+      "uncertain": true
+    }
+  ],
+  "replans": 0,
+  "endpoint_recoveries": 0,
+  "endpoint_planner_queries": 0,
+  "continuous_recovery_queries": 0,
+  "final_gate": {
+    "t": 52.41,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "TOOL_STATE_FOR_SEGMENT"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": false,
+    "progress_m": 3.5618397095180523,
+    "armed_direction": 1,
+    "raw_nav_v": 0.35,
+    "raw_nav_w": -0.018301968962035862
+  },
+  "ownership": {
+    "/tf": [
+      "s05_local_odometry",
+      "s08_global_pose_manager"
+    ],
+    "/s03/actuator/request": [
+      "r09_actuator_gate"
+    ],
+    "/s10/tool/command": [
+      "s10_tool_action_server"
+    ]
+  },
+  "wall_seconds": 181.28441648298758,
+  "execution_mode": "original_primitive_boundaries",
+  "scope": "Original segment goals checked in order under explicitly versioned execution mode; feedback area separate from passage"
+}

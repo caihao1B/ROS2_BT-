@@ -11,7 +11,8 @@
     "inspection_follow_stop_resume",
     "inspection_detour",
     "inspection_persistent_block",
-    "mowing_persistent_block"
+    "mowing_persistent_block",
+    "mowing_startup_perception_loss"
   ],
   "original_denominators": {
     "A1_points": 56,
@@ -19,5 +20,5 @@
     "connector_m": 88.48099013627927
   },
   "scope": "Independent normal and bounded-fault acceptance, no sixty-run matrix and no extrapolation to untested A2/A3/B2/B3",
-  "version": "75b06f29eb91bd396461f334c7d251cdc2ab43ce7b278e309d26e38436df49b8"
+  "version": "810ffa67fc550c9e1d7ad731a34c2779cf9f781602ee218d1e730b05dd717cae"
 }

@@ -78,3 +78,32 @@ PY
 ```
 
 `ENDPOINT_OBSERVATION_RESUME` 表示短时观测恢复后重新准入原候选，不能当成最终到达；其后仍必须有实际成功和段到达记录。任何人工锁定、六次续行上限或 90 秒总恢复预算触发，都必须停止并保留残余。
+
+本轮新增专项故障命令（等待上一会话完全退出再执行）：
+```bash
+cd /home/ceihao/robot_project
+bash optimization_v2/three_tasks/advance.sh R10 test mowing_startup_perception_loss
+```
+检查该会话 `startup_fault.json` 的触发阶段与进程恢复，以及 `mission_events.jsonl` 中 `BT_INTERRUPTS_START_WORK` 后是否在原 2 秒预算内出现 `BOTH_PHYSICAL_STOPS_CONFIRMED`。最终仍须走完选择的五个原始段，反馈面积与物理效果一致；工具故障恢复不是额外完成量。该用例失败时不要手动更改回执或强制清除 BT 锁存。
+
+同次录制上述启动故障与五段复验（不需要另跑一次无录像版本）：
+```bash
+cd /home/ceihao/robot_project
+bash optimization_v2/three_tasks/advance.sh R10 test record_mowing_startup_perception_loss
+```
+该命令同时写入 R10 专项故障验收和 R12 独立录像回执；案例名明确为启动感知中断，不作为正常无故障案例。完整 B1 仍另外运行。
+
+新全局管理器的原始异常监督检查（隔离 ROS 域 133，无 Gazebo、无底盘控制）：
+```bash
+cd /home/ceihao/robot_project
+bash optimization_v2/three_tasks/advance.sh R10 test global_filter_guards
+```
+它发送合成的已知冲突观测，分别验证 GNSS 冲突拒绝与地图跳变停止锁存；输出在 `results/R10/global_filter_probe/result.json`。该测试不代替实际定位/作业验收。重新测试后执行 `R10 finalize` 更新回执，整体未满足条件时仍返回 PARTIAL。
+
+账本时间基准回归（隔离 ROS 域 134，无 Gazebo）：
+```bash
+cd /home/ceihao/robot_project
+bash optimization_v2/three_tasks/advance.sh R10 test ledger_clock
+cat optimization_v2/three_tasks/results/R10/ledger_clock_probe/result.json
+```
+核对原版在慢时钟下的发布周期、新版小于原 0.25 墙钟秒超时以及暂停后 `CLOCK_WATCHDOG`。这只是传输专项检查，不能代替完整 B1。不要通过修改工具服务器超时值掩盖账本停顿。

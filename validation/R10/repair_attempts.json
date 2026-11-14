@@ -1,0 +1,78 @@
+[
+  {
+    "path": "optimization_v2/three_tasks/results/R12/spray_20261114_194217_549485",
+    "role": "current spray component",
+    "task_passed_at_execution": true,
+    "recording_passed_at_execution": true,
+    "source_sha256": "6080459ab1fb8bdcdc661a0d74c2da7e7b8af447b9de753900c302eb73cf334c",
+    "terminal": null,
+    "reason": null,
+    "completed_points": 3,
+    "completed_segments": null,
+    "simulation_t": 143.396,
+    "scope": "Historical execution result of exact recorded source version; not current-version approval"
+  },
+  {
+    "path": "optimization_v2/three_tasks/results/R12/spray_20261114_194849_404114",
+    "role": "full A1 after correction filter",
+    "task_passed_at_execution": false,
+    "recording_passed_at_execution": false,
+    "source_sha256": "25b088808dd51d9b7c543078557f23eb6290933b79ac3f0dc3170ae44ef55213",
+    "terminal": null,
+    "reason": "TimeoutError('WAIT_DEADLINE')",
+    "completed_points": 20,
+    "completed_segments": null,
+    "simulation_t": 1186.44,
+    "scope": "Historical execution result of exact recorded source version; not current-version approval"
+  },
+  {
+    "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_204129_401398",
+    "role": "startup fault before isolated ledger heartbeat change",
+    "task_passed_at_execution": true,
+    "recording_passed_at_execution": true,
+    "source_sha256": "4273b6b80fdb3a8b892fd25659442234be98322cb4ced5205be3570a6c51cd53",
+    "terminal": "COMPLETED",
+    "reason": null,
+    "completed_points": null,
+    "completed_segments": 5,
+    "simulation_t": 162.142,
+    "scope": "Historical execution result of exact recorded source version; not current-version approval"
+  },
+  {
+    "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_204938_642664",
+    "role": "full B1 exposed wall/simulation heartbeat mismatch",
+    "task_passed_at_execution": false,
+    "recording_passed_at_execution": false,
+    "source_sha256": "22ec58c53e90d40ef8068aca8b34a0f41eae05efdc442bf242c365f94a4cef19",
+    "terminal": "FAULT",
+    "reason": "RuntimeError('TOOL_STOP_UNCONFIRMED')",
+    "completed_points": null,
+    "completed_segments": 0,
+    "simulation_t": 52.41,
+    "scope": "Historical execution result of exact recorded source version; not current-version approval"
+  },
+  {
+    "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_205558_700516",
+    "role": "current full B1 after steady ledger heartbeat",
+    "task_passed_at_execution": false,
+    "recording_passed_at_execution": false,
+    "source_sha256": "dfc2d12ed889701ba934e3c9dc8e5c08d6b4f6b217a8df862a43d958055f21c7",
+    "terminal": "HUMAN_REQUIRED",
+    "reason": "TimeoutError('ENDPOINT_RECOVERY_BUDGET')",
+    "completed_segments": 6,
+    "simulation_t": 327.93,
+    "scope": "Exact recorded source version; raw failure attempts retained"
+  },
+  {
+    "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_211518_676200",
+    "role": "current startup fault recording with steady ledger heartbeat",
+    "task_passed_at_execution": true,
+    "recording_passed_at_execution": true,
+    "source_sha256": "42deb45f322586e213f2b9f3c724598c43d5e37a0d32e000a8318d7493056177",
+    "terminal": "COMPLETED",
+    "reason": null,
+    "completed_segments": 5,
+    "simulation_t": 185.572,
+    "scope": "Exact recorded source version; raw failure attempts retained"
+  }
+]

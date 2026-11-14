@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "videos": [
+    {
+      "path": "optimization_v2/three_tasks/results/R12/media/full_recordings.mp4",
+      "duration_s": 2309.8,
+      "fps": 5.0,
+      "size": [
+        960,
+        650
+      ],
+      "decode_exit": 0,
+      "errors": "",
+      "passed": true,
+      "scope": "File decode only; task completeness and active frame freshness remain separately scored"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/media/three_tasks_short.mp4",
+      "duration_s": 212.3,
+      "fps": 20.0,
+      "size": [
+        960,
+        650
+      ],
+      "decode_exit": 0,
+      "errors": "",
+      "passed": true,
+      "scope": "File decode only; task completeness and active frame freshness remain separately scored"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/media/behavior_highlights.mp4",
+      "duration_s": 150.1,
+      "fps": 20.0,
+      "size": [
+        960,
+        650
+      ],
+      "decode_exit": 0,
+      "errors": "",
+      "passed": true,
+      "scope": "File decode only; task completeness and active frame freshness remain separately scored"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_194849_404114/video/full.mp4",
+      "duration_s": 3069.0,
+      "fps": 5.0,
+      "size": [
+        960,
+        650
+      ],
+      "decode_exit": 0,
+      "errors": "",
+      "passed": true,
+      "scope": "File decode only; task completeness and active frame freshness remain separately scored"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_205558_700516/video/full.mp4",
+      "duration_s": 1129.6,
+      "fps": 5.0,
+      "size": [
+        960,
+        650
+      ],
+      "decode_exit": 0,
+      "errors": "",
+      "passed": true,
+      "scope": "File decode only; task completeness and active frame freshness remain separately scored"
+    }
+  ]
+}

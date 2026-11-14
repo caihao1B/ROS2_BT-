@@ -1,21 +1,27 @@
-# R10 三任务分别验收
+# R10 修复与实际复验
 
-**PARTIAL**。尚不能按完整验收通过 R10；按本轮授权，R11 材质与 R12 独立演示可以交付，不能替代本阶段缺项。
+**PARTIAL**。当前完整任务和专项故障的实测结果如下。
 
-原 A1 56 点、连接路 88.481 米、B1 34 段的要求保留；其余簇与六十次正式矩阵未由本轮推定通过。原 S17/S18 保持 PARTIAL。
-
-|案例|结果|仿真秒|终态|确认量及残余|
+|案例|结果|仿真秒|实际完成与残余|终止原因|
 |---|---|---:|---|---|
-|spray_full_A1|未通过|509.824|INCOMPLETE|点 8/56，原任务 56|
-|spray_tool_jam|PASS|153.178|COMPLETED|点 3/3，原任务 56|
-|mowing_full_B1|未通过|529.17|HUMAN_REQUIRED|段 12/34，原任务 34；反馈 49.960 m²，残余 138.432 m²|
-|inspection_full_connector|PASS|343.642|COMPLETED|原路径剩余 0.100 m|
-|inspection_follow_stop_resume|PASS|108.532|COMPLETED|原路径剩余 73.584 m|
-|inspection_detour|PASS|100.074|COMPLETED|原路径剩余 73.584 m|
-|inspection_persistent_block|PASS|79.298|HUMAN_REQUIRED|原路径剩余 72.185 m|
-|mowing_persistent_block|PASS|62.728|HUMAN_REQUIRED|段 0/5，原任务 34；反馈 2.598 m²，残余 25.356 m²|
+|spray_full_A1|未通过|1186.44|20/56 点（原 56）|TimeoutError('WAIT_DEADLINE')|
+|spray_tool_jam|PASS|143.396|3/3 点（原 56）|COMPLETED|
+|mowing_full_B1|未通过|327.93|6/34 段（原 34）；确认 26.489 m²；残余 161.903 m²|TimeoutError('ENDPOINT_RECOVERY_BUDGET')|
+|mowing_startup_perception_loss|PASS|185.572|5/5 段（原 34）；确认 26.557 m²；残余 1.397 m²|COMPLETED|
+|inspection_full_connector|PASS|343.642|原路径剩余 0.100 m|COMPLETED|
+|inspection_follow_stop_resume|PASS|108.532|原路径剩余 73.584 m|COMPLETED|
+|inspection_detour|PASS|100.074|原路径剩余 73.584 m|COMPLETED|
+|inspection_persistent_block|PASS|79.298|原路径剩余 72.185 m|NO_VALIDATED_ROUTE_WITHIN_BOUNDED_SEARCH|
+|mowing_persistent_block|PASS|62.728|0/5 段（原 34）；确认 2.598 m²；残余 25.356 m²|RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')|
 
-受阻案例通过表示物理停车、有界处理与残余保留正确，不表示工作已经完成。条带抵达和反馈确认面积分别统计；不降低原始覆盖分母，不把模拟电机工作等同于真实药效或切割效果。
+## 实现与原门限
+
+- 全局修正采用独立 C++ 低通处理，原始 GNSS 创新、地图跳变、时间有效性和停止锁存先于滤波，精停门限保持原值。
+- 割草 START_WORK 等待每次处理 BT 中断；取消优先于同次工作确认，确认车体和刀具停止后才依据新的 BT 指令恢复。同一条带的幂等键、残余和重试预算保留。
+- 割草账本状态发布改用 STEADY_TIME，匹配工具服务器原 0.25 墙钟秒监督；仿真时间戳、反馈配对、事务和有效作业几何不变。
+- 原地图、任务点和 34 段条带分母不变；六十次矩阵未执行，原 S17/S18 保持 PARTIAL。
+
+独立 C++ 全局管理器探针：PASS；25 厘米 GNSS 冲突拒绝、20 厘米原始地图跳变触发停止锁存。它使用合成消息，只验证监督逻辑，不算真实传感器任务完成。
 
 ## 未完成项
 
@@ -24,32 +30,41 @@
 - Full original A1 not completed; partial point demo does not replace it
 - Full original B1 traversal not completed; partial swaths do not replace it
 
-## 完整点喷本次停止的解释
+## 当前完整 A1 的新增停止条件
 
-已记录 8 笔工作，其中 8 笔满足原独立物理反馈核对条件。完整案例的 `feedback_and_independent_physics_agree` 同时要求记录数等于选中的 56 点，因此未执行点也会导致该总检查失败；不能把它直接解释成已经完成的工作全部存在反馈冲突。未确认点仍保留，完整任务仍为未通过。
-最后精停检查：点 `point_9_16`，瞬时目标距离 0.0166 m，位置样本 P95 散布 0.0244 m。瞬时距离很小并不保证定位稳定；原准入门限与重试上限不降低。终止原因：`RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')`。
+本次完成 20/56 点，定位 RMSE 0.03538 米；1136.28 秒触发 `MAP_JUMP_REJECTED`，进入 `PLAN_REVALIDATION_REQUIRED`。前后有效地图观测相隔 3.80 秒，GNSS 当时仍通过独立监督。
+近邻记录的二维重建表明修正角度变化接近原 0.035 弧度门限；缺少被拒绝候选的同步三维记录，不能把这次锁存完全归因于滤波滞后，也不能凭该近似证明滤波没有影响。下一步应记录精确候选与配对里程计，再验证观测恢复和生产计划重验；不直接清除锁存。
+详细记录：`optimization_v2/three_tasks/results/R10/global_hold_diagnosis.json`。
 
-最后停靠窗口的独立事后诊断：全局估计 P95 散布 0.024381 m，局部里程计 0.000427 m，真值位置最大位移 0.000000 m。该窗口主要是全局修正抖动，并非车辆仍在运动；此结果没有反向参与在线决策。下一轮先处理全局停靠精度、局部静止与定位不确定性的区别，保留独立 GNSS 监督与工具反馈门限。
+## 当前完整 B1 的新增停止条件
 
-## 完整割草的下一轮修复点
+当前版本完成 6/34 段，确认 26.489 m²、残余 161.903 m²；原 90 秒恢复预算耗尽后以 `HUMAN_REQUIRED` 停稳。首条连续恢复候选长度 1.895 米，但传感器定位显示最大偏离候选约 4.044 米。
+这是已通过几何/代价检查的候选未被控制器正确执行，不是已证明无路可走。后续需要检查 MPPI 换向点处理、按挡位分段的实测停车边界及轨迹偏离监督。未放宽到达、曲率、整车边界或预算门限。
 
-工具重新启动时，521.49 秒感知失效，521.516 秒已关闭工具请求，但任务仍等待工作确认直到 529.13 秒。BT 的取消确认提前超时。根据日志与代码，应修复 START_WORK 等待阶段的取消协同，并专门复验开刀时的感知中断；该修复尚未实施。证据见 `mowing_start_diagnosis.json`，最终实测停车已确认。
+## START_WORK 当前版本实测
 
-## 原始证据
+BT 中断后 0.564 仿真秒确认车体和刀具停止（原上限 2.0 秒）；恢复后完成 5 段，账本仅有原来的 2 个键，无不确定性。确认面积 26.557 m²、选择范围残余 1.397 m²。它是五段专项通过，不是完整 B1 通过。
 
-- `spray_full_A1`：`optimization_v2/three_tasks/results/R12/spray_20261114_170714_616253`；终止原因 `RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')`。
-- `spray_tool_jam`：`optimization_v2/three_tasks/results/R12/spray_20261114_170025_915535`；终止原因 `None`。
-- `mowing_full_B1`：`optimization_v2/three_tasks/results/R12/mowing_20261114_174644_953306`；终止原因 `TimeoutError('WAIT_DEADLINE')`。
-- `inspection_full_connector`：`optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658`；终止原因 `None`。
-- `inspection_follow_stop_resume`：`optimization_v2/three_tasks/results/R08/inspection_20261114_123912_581545`；终止原因 `None`。
-- `inspection_detour`：`optimization_v2/three_tasks/results/R08/inspection_20261114_124410_931009`；终止原因 `None`。
-- `inspection_persistent_block`：`optimization_v2/three_tasks/results/R08/inspection_20261114_124850_642479`；终止原因 `NO_VALIDATED_ROUTE_WITHIN_BOUNDED_SEARCH`。
-- `mowing_persistent_block`：`optimization_v2/three_tasks/results/R09/mowing_20261114_140747_354583`；终止原因 `RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')`。
+## 账本时间基准复验
 
-`spray_full_A1` 结束快照：`{"bt_reason": "NEXT_OBLIGATION", "localization_reason": "MAP_AND_GNSS_AGREE", "gate_reasons": ["NAV_COMMAND_STALE"], "scope": "Last snapshot for context, not an independent root-cause conclusion"}`。取消后的命令过期等状态不自动作为故障根因；需与先前事件和停止原因一起检查。
+隔离 ROS 时钟探针：PASS。原版仿真定时发布与工具墙钟超时存在基准不一致；新版只切换心跳时钟。真实失败尝试、已确认量和不确定性保留在 `results/R10/repair_attempts.json`，该尝试不计作成功。
 
-当前完整 B1 运行记录 2 次 `ENDPOINT_RECOVERY_SUCCESS`，1 次观测恢复事件。恢复成功仍需与最终段完成数分别阅读；原候选续行被拒绝后，重新生成候选并到达，也记录为有界恢复成功。
+## 可视证据
 
-`mowing_full_B1` 结束快照：`{"bt_reason": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT", "localization_reason": "GNSS_FIXED_AND_INNOVATION_VALID", "gate_reasons": ["NAV_COMMAND_STALE", "TOOL_STATE_FOR_SEGMENT", "OBSTRUCTED"], "scope": "Last snapshot for context, not an independent root-cause conclusion"}`。取消后的命令过期等状态不自动作为故障根因；需与先前事件和停止原因一起检查。
+本机诊断图：`optimization_v2/three_tasks/results/R10/repair_docking.png`、`repair_start_work.png`；GitHub 对应 `media/r10_repair_docking.png`、`media/r10_repair_start_work.png`。
 
-命令见 MANUAL.md；技术选择见 TECHNICAL.md；Python/C++ 调用链、运动学及工具互锁见 CODE.md。
+图表只解释对应实测窗口，不能代替完整任务验收。
+
+## 证据入口
+
+- `spray_full_A1`：`optimization_v2/three_tasks/results/R12/spray_20261114_194849_404114`。
+- `spray_tool_jam`：`optimization_v2/three_tasks/results/R12/spray_20261114_194217_549485`。
+- `mowing_full_B1`：`optimization_v2/three_tasks/results/R12/mowing_20261114_205558_700516`。
+- `mowing_startup_perception_loss`：`optimization_v2/three_tasks/results/R12/mowing_20261114_211518_676200`。
+- `inspection_full_connector`：`optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658`。
+- `inspection_follow_stop_resume`：`optimization_v2/three_tasks/results/R08/inspection_20261114_123912_581545`。
+- `inspection_detour`：`optimization_v2/three_tasks/results/R08/inspection_20261114_124410_931009`。
+- `inspection_persistent_block`：`optimization_v2/three_tasks/results/R08/inspection_20261114_124850_642479`。
+- `mowing_persistent_block`：`optimization_v2/three_tasks/results/R09/mowing_20261114_140747_354583`。
+
+上一轮定位抖动和启动超时诊断仍保留为历史输入；当前故障原因以本表对应新运行的事件、回执为准。学习说明见 TECHNICAL.md、CODE.md；启动和退出见 MANUAL.md。

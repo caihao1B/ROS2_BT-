@@ -1,0 +1,55 @@
+{
+  "run": "optimization_v2/three_tasks/results/R12/mowing_20261114_211518_676200",
+  "startup_stop_delay_sim_s": 0.5640000000000001,
+  "original_limit_sim_s": 2.0,
+  "same_original_keys": true,
+  "unique_jobs": 2,
+  "expected_jobs": 2,
+  "uncertainty_pending": false,
+  "completed_segments": 5,
+  "confirmed_area_m2": 26.556663461538417,
+  "residual_area_m2": 1.397318245255585,
+  "work_results": [
+    {
+      "segment": "B1:segment:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 0.0,
+      "remaining": 10.561490281674196,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 9.795837499999994,
+      "remaining": 0.765652781674202,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 7.027212500000002,
+      "remaining": 11.82762692751307,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.26117499999998,
+      "remaining": 1.5936644275130902,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.261037499999972,
+      "remaining": 1.5938019275130983,
+      "uncertain": false
+    }
+  ],
+  "recording_passed": true
+}

@@ -3726,6 +3726,10 @@
     "planar_query": "nearest eligible normal; held-out mapped landmark candidates; raw unmodeled objects retained by perception"
   },
   "ground_statistic": "Raw-ray weighted quantiles; confidence-separated spatial modes; strong voxel hazards retained",
+  "global_correction_filter": {
+    "tau_s": 0.8,
+    "scope": "map to odom correction only; raw jump, GNSS innovation, freshness and plan hold unchanged; all docking gates unchanged"
+  },
   "navigation_recovery": {
     "near_radius_m": 0.25,
     "minimum_improvement_m": 0.005,
@@ -3742,5 +3746,5 @@
     "max_observation_wait_s": 8.0
   },
   "acceleration_profile": "RPP .28m/s desired, 1.4m curvature regulation radius, .25rad/s rotation, .40rad/s2 angular acceleration; physical drivetrain limits retained",
-  "version": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd"
+  "version": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67"
 }

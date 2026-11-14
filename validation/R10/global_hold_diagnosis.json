@@ -1,0 +1,31 @@
+{
+  "source": "optimization_v2/three_tasks/results/R12/spray_20261114_194849_404114",
+  "completed_points": 20,
+  "original_points": 56,
+  "first_hold_t": 1136.28,
+  "reason": "PLAN_REVALIDATION_REQUIRED",
+  "raw_map_reason": "MAP_JUMP_REJECTED",
+  "last_accepted_map_t": 1132.4,
+  "incoming_map_t": 1136.2,
+  "map_gap_s": 3.7999999999999545,
+  "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+  "gnss_innovation_m": 0.027225929860403203,
+  "approximate_planar_yaw_delta_filtered_rad": 0.036306235240935236,
+  "approximate_planar_yaw_delta_last_raw_rad": 0.03521620617944565,
+  "original_yaw_jump_limit_rad": 0.035,
+  "diagnostic_limit": "Planar nearest-record reconstruction only; full synchronized 3-D rejected correction was not recorded. Does not prove filtering alone caused or did not cause the hold.",
+  "next_step": "Log exact rejected SE(3) candidate and matched odometry; assess map gap/local heading drift and production stopped plan revalidation. Do not clear latch or loosen thresholds to obtain completion.",
+  "map_xy_rmse_m": 0.035384031051226686,
+  "failed_checks": [
+    "mission_completed",
+    "feedback_and_independent_physics_agree"
+  ],
+  "final_physical_stop": true,
+  "map_window_reasons": {
+    "HELD_OUT_SURFACE_MATCH": 2,
+    "MAP_MATCH_REJECTED": 17,
+    "TRACKING_CORRECTION_BOUND": 1
+  },
+  "reacquisition_median_samples": 1,
+  "reacquisition_gnss_innovation_at_map_matcher_m": 0.12131824042838632
+}

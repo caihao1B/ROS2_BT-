@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "cases": {
+    "gnss_conflict": {
+      "passed": true,
+      "initial_trusted": true,
+      "fault_at": 3.4,
+      "last": {
+        "confirmation_count": 19,
+        "correction": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "correction_filter_tau_s": 0.8,
+        "gnss_age": 104.65,
+        "gnss_reason": "INNOVATION_REJECTED_FIXED",
+        "gps_count": 0,
+        "has_transform": true,
+        "heading_age": 0.05000000000000071,
+        "innovation_limit_m": 0.15,
+        "innovation_m": 0.25,
+        "jump_count": 0,
+        "map_age": 0.05000000000000071,
+        "map_reason": "GEOMETRIC_MATCH",
+        "max_speed": 0.06,
+        "navigation_allowed": true,
+        "nis": 21.551724137931032,
+        "nis_limit": 9.21,
+        "plan_revalidation_required": false,
+        "raw_map_correction": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "reason": "GNSS_INNOVATION_REJECTED_FIXED",
+        "source": "MAP",
+        "state": "MAP_ONLY",
+        "t": 4.65,
+        "v": 0.0,
+        "w": 0.0
+      },
+      "clean_exit": true
+    },
+    "raw_map_jump": {
+      "passed": true,
+      "initial_trusted": true,
+      "fault_at": 3.25,
+      "last": {
+        "confirmation_count": 19,
+        "correction": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "correction_filter_tau_s": 0.8,
+        "gnss_age": 0.0,
+        "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+        "gps_count": 53,
+        "has_transform": true,
+        "heading_age": 1.2000000000000002,
+        "innovation_limit_m": 0.15,
+        "innovation_m": 0.0,
+        "jump_count": 1,
+        "map_age": 104.45,
+        "map_reason": "MAP_JUMP_REJECTED",
+        "max_speed": 0.0,
+        "navigation_allowed": false,
+        "nis": 0.0,
+        "nis_limit": 9.21,
+        "plan_revalidation_required": true,
+        "raw_map_correction": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "reason": "PLAN_REVALIDATION_REQUIRED",
+        "source": "GNSS_POSITION_LOCAL_HEADING",
+        "state": "STOPPED",
+        "t": 4.45,
+        "v": 0.0,
+        "w": 0.0
+      },
+      "clean_exit": true
+    }
+  },
+  "binary_sha256": "c677479d3d77b366336d308e1d860d1a3baeaf421d4f63eafdf24254d3d6bae7",
+  "policy_sha256": "40e825c36891c86675dd12eee43b3d25714e2746da37945747bbfb28e43a8a27",
+  "domain": "133",
+  "scope": "Synthetic isolated C++ policy test; no real sensor, navigation or work completion credit"
+}

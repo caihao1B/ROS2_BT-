@@ -4,6 +4,10 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from stage_r12 import declared_scope_matches
 
 class Scope(unittest.TestCase):
+ def test_startup_fault_is_not_mislabeled_as_nominal(self):
+  receipt={'case':'mowing_startup_perception_loss','task':'mowing'};spec={'task':'mowing','case':'startup_perception_loss','segment_limit':5,'sim_seconds':420}
+  self.assertTrue(declared_scope_matches(receipt,spec,'mowing_startup_perception_loss'))
+  self.assertFalse(declared_scope_matches(receipt,dict(spec,case='nominal'),'mowing_startup_perception_loss'))
  def test_actual_runtime_distance_key(self):
   self.assertTrue(declared_scope_matches({'case':'inspection_leader','task':'inspection'},{'task':'inspection','case':'leader','distance_limit_m':20.,'sim_seconds':150},'inspection_leader'))
  def test_subset_cannot_replace_full_connector(self):

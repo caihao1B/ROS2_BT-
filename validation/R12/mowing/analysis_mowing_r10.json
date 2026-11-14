@@ -1,5 +1,5 @@
 {
-  "passed": true,
+  "passed": false,
   "checks": {
     "runtime_clean": true,
     "original_database_unchanged": true,
@@ -12,8 +12,8 @@
     "measured_final_stop": true,
     "feedback_area_consistent": true,
     "curvature_bounded": true,
-    "source_bound": true,
-    "task_version_bound": true,
+    "source_bound": false,
+    "task_version_bound": false,
     "original_ordered_passages": true,
     "selected_segments_traversed": true,
     "two_work_strips": true,

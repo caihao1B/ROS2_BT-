@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "original_sim_clock_reproduces_stale_period": true,
+    "steady_heartbeat_below_original_watchdog": true,
+    "paused_clock_fails_closed": true,
+    "clean_exit": true
+  },
+  "cases": [
+    {
+      "variant": "original",
+      "samples": 6,
+      "median_wall_gap_s": 0.49759177600208204,
+      "max_wall_gap_s": 0.4997623689996544,
+      "clock_watchdog_during_pause": false,
+      "exit": 0,
+      "source_sha256": "a17bdd9eecd6e3cef0f1c540f7f7110d7a44df71eca6ca1640e488115125f09c"
+    },
+    {
+      "variant": "steady",
+      "samples": 51,
+      "median_wall_gap_s": 0.05294873649108922,
+      "max_wall_gap_s": 0.05439294000098016,
+      "clock_watchdog_during_pause": true,
+      "exit": 0,
+      "source_sha256": "ea36aafea08f79472eef40d9ae905d9523a9a5917e68bd44e3ed2bae47041d1c"
+    }
+  ],
+  "original_stale_limit_wall_s": 0.25,
+  "scope": "Actual ROS nodes with synthetic clock only; no Gazebo, tool action, motion or work credit",
+  "policy_sha256": "3c91d611b1242cc36504ed45afd72a35924ec9c2b59a5d92c372388d93c6bb34"
+}

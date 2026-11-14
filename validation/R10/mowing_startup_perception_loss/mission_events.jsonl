@@ -1,0 +1,63 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_CLUSTER_HINT"}
+{"t": 38.754, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 38.754, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": ""}
+{"t": 38.762, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": 1, "segment": "B1:segment:0"}
+{"t": 38.762, "event": "START_WORK_REQUEST", "segment": "B1:segment:0"}
+{"t": 39.066, "event": "BT_INTERRUPTS_START_WORK", "action": "CANCEL", "reason": "PERCEPTION_ADMISSION_WAIT", "segment": "B1:segment:0"}
+{"t": 39.596000000000004, "event": "TOOL_RESULT", "segment": "B1:segment:0", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 0.0, "remaining": 10.561490281674196, "uncertain": false}
+{"t": 39.63, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
+{"t": 40.2, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": 1, "segment": "B1:segment:0"}
+{"t": 40.2, "event": "START_WORK_REQUEST", "segment": "B1:segment:0"}
+{"t": 40.71, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:0", "requested_area_m2": 10.561490281674196}
+{"t": 40.71, "event": "SEGMENT_GOAL", "segment": "B1:segment:0", "kind": "COVERAGE", "direction": 1, "original_poses": 75, "remaining_poses": 75, "tool_expected": true, "original_members": ["B1:segment:0"]}
+{"t": 74.16, "event": "ORIGINAL_SEGMENT_PASSAGE", "segment": "B1:segment:0", "xy_error_m": 0.09958648242446265, "yaw_error_rad": 0.005114543832024254, "stop_required": true}
+{"t": 76.536, "event": "TOOL_RESULT", "segment": "B1:segment:0", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 9.795837499999994, "remaining": 0.765652781674202, "uncertain": false}
+{"t": 76.56, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
+{"t": 76.56, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:0", "xy_error_m": 0.004482567233983244, "yaw_error_rad": 0.00755038260398716}
+{"t": 76.56, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
+{"t": 76.59, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": -1, "segment": "B1:segment:1"}
+{"t": 76.59, "event": "SEGMENT_GOAL", "segment": "B1:segment:1", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 8, "remaining_poses": 8, "tool_expected": false, "original_members": ["B1:segment:1"]}
+{"t": 80.7, "event": "ORIGINAL_SEGMENT_PASSAGE", "segment": "B1:segment:1", "xy_error_m": 0.09976467427940132, "yaw_error_rad": 0.0757928276844071, "stop_required": true}
+{"t": 82.02, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:1"}
+{"t": 82.02, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:1", "xy_error_m": 0.051076417030609375, "yaw_error_rad": 0.06466629454213824}
+{"t": 82.02, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:1"}
+{"t": 82.02, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": -1, "segment": "B1:segment:2"}
+{"t": 82.02, "event": "SEGMENT_GOAL", "segment": "B1:segment:2", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 63, "remaining_poses": 63, "tool_expected": false, "original_members": ["B1:segment:2"]}
+{"t": 110.7, "event": "ORIGINAL_SEGMENT_PASSAGE", "segment": "B1:segment:2", "xy_error_m": 0.09758522499726806, "yaw_error_rad": 0.022878399121159576, "stop_required": true}
+{"t": 111.432, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 111.54, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:2"}
+{"t": 112.828, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": -1, "segment": "B1:segment:2"}
+{"t": 112.828, "event": "SEGMENT_GOAL", "segment": "B1:segment:2", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 63, "remaining_poses": 4, "tool_expected": false, "original_members": ["B1:segment:2"]}
+{"t": 114.18, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:2"}
+{"t": 114.18, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:2", "xy_error_m": 0.04853594832187514, "yaw_error_rad": 0.022618325652923214}
+{"t": 114.18, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:2"}
+{"t": 114.18, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": -1, "segment": "B1:segment:3"}
+{"t": 114.18, "event": "SEGMENT_GOAL", "segment": "B1:segment:3", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 8, "remaining_poses": 8, "tool_expected": false, "original_members": ["B1:segment:3"]}
+{"t": 119.67, "event": "ORIGINAL_SEGMENT_PASSAGE", "segment": "B1:segment:3", "xy_error_m": 0.09978633211207061, "yaw_error_rad": 0.00654038854158201, "stop_required": true}
+{"t": 120.934, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:3"}
+{"t": 120.934, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:3", "xy_error_m": 0.03802187110855233, "yaw_error_rad": 0.004181675314739065}
+{"t": 120.934, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:3"}
+{"t": 120.96, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": 1, "segment": "B1:segment:4"}
+{"t": 120.96, "event": "START_WORK_REQUEST", "segment": "B1:segment:4"}
+{"t": 121.462, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:4", "requested_area_m2": 18.85483942751307}
+{"t": 121.462, "event": "SEGMENT_GOAL", "segment": "B1:segment:4", "kind": "COVERAGE", "direction": 1, "original_poses": 127, "remaining_poses": 127, "tool_expected": true, "original_members": ["B1:segment:4"]}
+{"t": 142.206, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 142.764, "event": "TOOL_RESULT", "segment": "B1:segment:4", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 7.027212500000002, "remaining": 11.82762692751307, "uncertain": false}
+{"t": 142.8, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}
+{"t": 143.328, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": 1, "segment": "B1:segment:4"}
+{"t": 143.328, "event": "START_WORK_REQUEST", "segment": "B1:segment:4"}
+{"t": 143.832, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:4", "requested_area_m2": 18.85483942751307}
+{"t": 143.832, "event": "SEGMENT_GOAL", "segment": "B1:segment:4", "kind": "COVERAGE", "direction": 1, "original_poses": 127, "remaining_poses": 82, "tool_expected": true, "original_members": ["B1:segment:4"]}
+{"t": 178.74, "event": "ORIGINAL_SEGMENT_PASSAGE", "segment": "B1:segment:4", "xy_error_m": 0.09706416723426763, "yaw_error_rad": 0.04459184198583931, "stop_required": true}
+{"t": 179.52, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 180.064, "event": "TOOL_RESULT", "segment": "B1:segment:4", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 17.26117499999998, "remaining": 1.5936644275130902, "uncertain": false}
+{"t": 180.09, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}
+{"t": 180.9, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": 1, "segment": "B1:segment:4"}
+{"t": 180.9, "event": "START_WORK_REQUEST", "segment": "B1:segment:4"}
+{"t": 181.394, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:4", "requested_area_m2": 18.85483942751307}
+{"t": 181.396, "event": "SEGMENT_GOAL", "segment": "B1:segment:4", "kind": "COVERAGE", "direction": 1, "original_poses": 127, "remaining_poses": 4, "tool_expected": true, "original_members": ["B1:segment:4"]}
+{"t": 183.546, "event": "TOOL_RESULT", "segment": "B1:segment:4", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 17.261037499999972, "remaining": 1.5938019275130983, "uncertain": false}
+{"t": 183.57, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}
+{"t": 183.57, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:4", "xy_error_m": 0.01576403734843779, "yaw_error_rad": 0.021320654206166967}
+{"t": 183.57, "event": "SELECTED_SEGMENTS_TRAVERSED", "selected": 5, "navigation_groups": 5, "original": 34, "coverage_completion": "read feedback ledger separately"}
+{"t": 185.572, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:4"}

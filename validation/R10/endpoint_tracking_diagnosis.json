@@ -1,0 +1,40 @@
+{
+  "source": "optimization_v2/three_tasks/results/R12/mowing_20261114_205558_700516",
+  "completed_segments": 6,
+  "original_segments": 34,
+  "terminal": "HUMAN_REQUIRED",
+  "error": "TimeoutError('ENDPOINT_RECOVERY_BUDGET')",
+  "sim_t": 327.93,
+  "first_endpoint_stall": {
+    "t": 237.692,
+    "event": "ENDPOINT_POSE_STALL",
+    "segment": "B1:segment:6",
+    "distance_m": 0.16399322425246607,
+    "yaw_error_rad": 0.0408934912152934
+  },
+  "first_continuous_path_length_m": 1.8954582221701624,
+  "maximum_observed_distance_to_candidate": {
+    "t": 292.2,
+    "distance_m": 4.0442505496222685
+  },
+  "interruption": {
+    "t": 292.202,
+    "event": "ENDPOINT_RECOVERY_INTERRUPTED",
+    "action": "CANCEL",
+    "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+    "cursor": 24
+  },
+  "resume_rejected": {
+    "t": 293.898,
+    "event": "ENDPOINT_RESUME_REJECTED",
+    "reason": "START_DISCONTINUITY",
+    "cursor": 24
+  },
+  "confirmed_area_m2": 26.48870692016314,
+  "residual_area_m2": 161.90309477279322,
+  "feedback_consistent": true,
+  "physical_stop": true,
+  "no_false_no_path_claim": true,
+  "scope": "Observed controller failed to track an admitted mixed-direction recovery candidate; no claim that no feasible path exists. Do not loosen arrival/curvature/footprint gates or extend budgets to claim completion.",
+  "next_step": "Inspect MPPI cusp handling; execute recovery gear changes with measured-stop boundaries and bounded cross-track supervision, then retest original B1."
+}

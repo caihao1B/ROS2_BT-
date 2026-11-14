@@ -1,7 +1,7 @@
 {
   "passed": false,
   "checks": {
-    "runtime_clean": false,
+    "runtime_clean": true,
     "map_database_unchanged": true,
     "mission_completed": false,
     "qualified_three_points": true,
@@ -22,78 +22,186 @@
   },
   "case": "nominal",
   "cluster": "A1",
-  "map_xy_rmse_m": 0.03208166382686892,
+  "map_xy_rmse_m": 0.035384031051226686,
   "jobs": [
     {
-      "key": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd:point_7_14",
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_7_14",
       "state": "SUCCEEDED",
-      "confirmed": 3.0959999999999965,
+      "confirmed": 3.0440000000000005,
       "uncertain": false,
-      "physical_dose": 3.276999999999332,
-      "maximum_physical_docking_error_m": 3.2177624241901817e-12,
+      "physical_dose": 3.1916666666659994,
+      "maximum_physical_docking_error_m": 0.0,
       "requested": 3.0
     },
     {
-      "key": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd:point_8_14",
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_8_14",
       "state": "SUCCEEDED",
       "confirmed": 3.073999999999998,
       "uncertain": false,
-      "physical_dose": 3.2323333333326643,
-      "maximum_physical_docking_error_m": 0.02287035084528734,
+      "physical_dose": 3.2336666666659974,
+      "maximum_physical_docking_error_m": 0.029814354711415837,
       "requested": 3.0
     },
     {
-      "key": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd:point_8_15",
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_8_15",
       "state": "SUCCEEDED",
-      "confirmed": 3.0720000000000027,
+      "confirmed": 3.1159999999999997,
       "uncertain": false,
-      "physical_dose": 3.228999999999335,
-      "maximum_physical_docking_error_m": 0.03942014616337519,
+      "physical_dose": 3.2769999999993416,
+      "maximum_physical_docking_error_m": 0.034241615304856185,
       "requested": 3.0
     },
     {
-      "key": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd:point_9_15",
-      "state": "SUCCEEDED",
-      "confirmed": 3.078000000000003,
-      "uncertain": false,
-      "physical_dose": 3.232333333332665,
-      "maximum_physical_docking_error_m": 0.030930513764911297,
-      "requested": 3.0
-    },
-    {
-      "key": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd:point_9_14",
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_9_15",
       "state": "SUCCEEDED",
       "confirmed": 3.078000000000003,
       "uncertain": false,
-      "physical_dose": 3.236333333332665,
-      "maximum_physical_docking_error_m": 0.023065553147195945,
+      "physical_dose": 3.1836666666660136,
+      "maximum_physical_docking_error_m": 0.03537173526137687,
       "requested": 3.0
     },
     {
-      "key": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd:point_10_14",
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_9_14",
       "state": "SUCCEEDED",
-      "confirmed": 3.0500000000000114,
+      "confirmed": 3.079999999999984,
       "uncertain": false,
-      "physical_dose": 3.2296666666659952,
-      "maximum_physical_docking_error_m": 0.018426769900156233,
+      "physical_dose": 3.2336666666659966,
+      "maximum_physical_docking_error_m": 0.018603033745278677,
       "requested": 3.0
     },
     {
-      "key": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd:point_10_15",
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_10_14",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0999999999999943,
+      "uncertain": false,
+      "physical_dose": 3.238333333332665,
+      "maximum_physical_docking_error_m": 0.021799353454265088,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_10_15",
       "state": "SUCCEEDED",
       "confirmed": 3.0720000000000027,
       "uncertain": false,
-      "physical_dose": 3.236333333332664,
-      "maximum_physical_docking_error_m": 0.031151534351203797,
+      "physical_dose": 3.2369999999993304,
+      "maximum_physical_docking_error_m": 0.02794339824199507,
       "requested": 3.0
     },
     {
-      "key": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd:point_10_16",
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_10_16",
       "state": "SUCCEEDED",
-      "confirmed": 3.1140000000000327,
+      "confirmed": 3.0720000000000027,
       "uncertain": false,
-      "physical_dose": 3.278999999999347,
-      "maximum_physical_docking_error_m": 0.028152255188130432,
+      "physical_dose": 3.232333333332668,
+      "maximum_physical_docking_error_m": 0.029009877962840984,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_9_16",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0720000000000027,
+      "uncertain": false,
+      "physical_dose": 3.237666666665997,
+      "maximum_physical_docking_error_m": 0.026839512132498328,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_8_16",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0939999999999372,
+      "uncertain": false,
+      "physical_dose": 3.2756666666659586,
+      "maximum_physical_docking_error_m": 0.028536502899459713,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_8_17",
+      "state": "SUCCEEDED",
+      "confirmed": 3.050000000000068,
+      "uncertain": false,
+      "physical_dose": 3.2343333333326725,
+      "maximum_physical_docking_error_m": 0.038454552919367425,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_9_17",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0720000000000027,
+      "uncertain": false,
+      "physical_dose": 3.231666666665986,
+      "maximum_physical_docking_error_m": 0.015695181213033337,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_10_17",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0920000000000982,
+      "uncertain": false,
+      "physical_dose": 3.240999999999322,
+      "maximum_physical_docking_error_m": 0.01674627510888045,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_10_18",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0720000000000027,
+      "uncertain": false,
+      "physical_dose": 3.2303333333326716,
+      "maximum_physical_docking_error_m": 0.02376685096897164,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_9_18",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0720000000000027,
+      "uncertain": false,
+      "physical_dose": 3.2343333333326534,
+      "maximum_physical_docking_error_m": 0.031414063641713966,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_8_18",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0939999999999372,
+      "uncertain": false,
+      "physical_dose": 3.240999999999322,
+      "maximum_physical_docking_error_m": 0.0388326348402578,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_8_19",
+      "state": "SUCCEEDED",
+      "confirmed": 3.050000000000068,
+      "uncertain": false,
+      "physical_dose": 3.2303333333326845,
+      "maximum_physical_docking_error_m": 0.0334079540584056,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_9_19",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0720000000000027,
+      "uncertain": false,
+      "physical_dose": 3.2349999999993204,
+      "maximum_physical_docking_error_m": 0.022990263692519972,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_10_19",
+      "state": "SUCCEEDED",
+      "confirmed": 3.048000000000002,
+      "uncertain": false,
+      "physical_dose": 3.2309999999993266,
+      "maximum_physical_docking_error_m": 0.017390840998324497,
+      "requested": 3.0
+    },
+    {
+      "key": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67:point_11_19",
+      "state": "SUCCEEDED",
+      "confirmed": 3.048000000000002,
+      "uncertain": false,
+      "physical_dose": 3.2303333333326845,
+      "maximum_physical_docking_error_m": 0.016910123601721574,
       "requested": 3.0
     }
   ],
@@ -109,10 +217,10 @@
             15,
             245,
             121,
-            229,
-            209,
-            55,
-            184,
+            219,
+            9,
+            236,
+            221,
             0,
             0,
             0,
@@ -131,10 +239,10 @@
             15,
             245,
             121,
-            245,
-            209,
-            86,
-            221,
+            226,
+            9,
+            149,
+            0,
             0,
             0,
             0,
@@ -155,10 +263,10 @@
             15,
             245,
             121,
-            249,
-            209,
-            20,
             239,
+            9,
+            158,
+            108,
             0,
             0,
             0,
@@ -179,10 +287,10 @@
             15,
             245,
             121,
-            255,
-            209,
-            27,
-            97,
+            243,
+            9,
+            157,
+            184,
             0,
             0,
             0,
@@ -198,21 +306,23 @@
     "final_gate": {
       "raw_nav_v": 0.0,
       "raw_nav_w": 0.0,
-      "t": 509.82,
+      "t": 1186.44,
       "allowed": false,
       "mode": "STOP",
       "v": 0.0,
       "w": 0.0,
       "reasons": [
+        "LOCALIZATION",
+        "PERCEPTION",
         "NAV_COMMAND_STALE"
       ],
       "stopped": true,
       "tool_stopped": true,
       "nav_idle": true,
-      "progress_m": 34.09109717663637
+      "progress_m": 84.81126736117798
     },
     "passed": false,
-    "error": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+    "error": "TimeoutError('WAIT_DEADLINE')",
     "cluster": "A1",
     "selected_points": 56,
     "original_points": 56,
@@ -221,12 +331,12 @@
         "point": "point_7_14",
         "state": "SUCCEEDED",
         "reason": "CONFIRMED_WORK",
-        "confirmed": 3.0959999999999965,
+        "confirmed": 3.0440000000000005,
         "remaining": 0.0,
         "uncertainty": false,
         "replayed": false,
         "meter_before": 0.0,
-        "meter_after": 3.2977
+        "meter_after": 3.2457
       },
       {
         "point": "point_8_14",
@@ -236,19 +346,19 @@
         "remaining": 0.0,
         "uncertainty": false,
         "replayed": false,
-        "meter_before": 3.2977,
-        "meter_after": 6.5533
+        "meter_before": 3.2457,
+        "meter_after": 6.5153
       },
       {
         "point": "point_8_15",
         "state": "SUCCEEDED",
         "reason": "CONFIRMED_WORK",
-        "confirmed": 3.0720000000000027,
+        "confirmed": 3.1159999999999997,
         "remaining": 0.0,
         "uncertainty": false,
         "replayed": false,
-        "meter_before": 6.5533,
-        "meter_after": 9.803
+        "meter_before": 6.5153,
+        "meter_after": 9.819
       },
       {
         "point": "point_9_15",
@@ -258,30 +368,30 @@
         "remaining": 0.0,
         "uncertainty": false,
         "replayed": false,
-        "meter_before": 9.803,
-        "meter_after": 13.0707
+        "meter_before": 9.819,
+        "meter_after": 13.0767
       },
       {
         "point": "point_9_14",
         "state": "SUCCEEDED",
         "reason": "CONFIRMED_WORK",
-        "confirmed": 3.078000000000003,
+        "confirmed": 3.079999999999984,
         "remaining": 0.0,
         "uncertainty": false,
         "replayed": false,
-        "meter_before": 13.0707,
-        "meter_after": 16.3463
+        "meter_before": 13.0767,
+        "meter_after": 16.3483
       },
       {
         "point": "point_10_14",
         "state": "SUCCEEDED",
         "reason": "CONFIRMED_WORK",
-        "confirmed": 3.0500000000000114,
+        "confirmed": 3.0999999999999943,
         "remaining": 0.0,
         "uncertainty": false,
         "replayed": false,
-        "meter_before": 16.3463,
-        "meter_after": 19.598
+        "meter_before": 16.3483,
+        "meter_after": 19.634
       },
       {
         "point": "point_10_15",
@@ -291,19 +401,151 @@
         "remaining": 0.0,
         "uncertainty": false,
         "replayed": false,
-        "meter_before": 19.598,
-        "meter_after": 22.8657
+        "meter_before": 19.634,
+        "meter_after": 22.9057
       },
       {
         "point": "point_10_16",
         "state": "SUCCEEDED",
         "reason": "CONFIRMED_WORK",
-        "confirmed": 3.1140000000000327,
+        "confirmed": 3.0720000000000027,
         "remaining": 0.0,
         "uncertainty": false,
         "replayed": false,
-        "meter_before": 22.8657,
-        "meter_after": 26.1753
+        "meter_before": 22.9057,
+        "meter_after": 26.1713
+      },
+      {
+        "point": "point_9_16",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.0720000000000027,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 26.1713,
+        "meter_after": 29.447
+      },
+      {
+        "point": "point_8_16",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.0939999999999372,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 29.447,
+        "meter_after": 32.7327
+      },
+      {
+        "point": "point_8_17",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.050000000000068,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 32.7327,
+        "meter_after": 35.9943
+      },
+      {
+        "point": "point_9_17",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.0720000000000027,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 35.9943,
+        "meter_after": 39.256
+      },
+      {
+        "point": "point_10_17",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.0920000000000982,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 39.256,
+        "meter_after": 42.5417
+      },
+      {
+        "point": "point_10_18",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.0720000000000027,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 42.5417,
+        "meter_after": 45.7973
+      },
+      {
+        "point": "point_9_18",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.0720000000000027,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 45.7973,
+        "meter_after": 49.065
+      },
+      {
+        "point": "point_8_18",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.0939999999999372,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 49.065,
+        "meter_after": 52.3567
+      },
+      {
+        "point": "point_8_19",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.050000000000068,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 52.3567,
+        "meter_after": 55.6163
+      },
+      {
+        "point": "point_9_19",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.0720000000000027,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 55.6163,
+        "meter_after": 58.89
+      },
+      {
+        "point": "point_10_19",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.048000000000002,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 58.89,
+        "meter_after": 62.1457
+      },
+      {
+        "point": "point_11_19",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.048000000000002,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 62.1457,
+        "meter_after": 65.4073
       }
     ],
     "failed": [],
@@ -312,18 +554,18 @@
       "point": "point_7_14",
       "state": "SUCCEEDED",
       "reason": "CONFIRMED_WORK",
-      "confirmed": 3.0959999999999965,
+      "confirmed": 3.0440000000000005,
       "remaining": 0.0,
       "uncertainty": false,
       "replayed": true,
-      "meter_before": 3.2977,
-      "meter_after": 3.2977
+      "meter_before": 3.2457,
+      "meter_after": 3.2457
     },
-    "t": 509.824,
-    "wall_seconds": 1312.3374528669956,
+    "t": 1186.44,
+    "wall_seconds": 3068.2401804830006,
     "scope": "Explicitly selected original points; confirmed work and residual separate; full selection does not imply full completion"
   },
-  "wall_seconds": 1323.8994482650014,
+  "wall_seconds": 3078.029793149006,
   "original_obligations_preserved": true,
   "formal_credit": false,
   "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit"

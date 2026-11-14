@@ -1,16 +1,155 @@
 {
   "passed": false,
+  "global_policy_probe": {
+    "passed": true,
+    "cases": {
+      "gnss_conflict": {
+        "passed": true,
+        "initial_trusted": true,
+        "fault_at": 3.4,
+        "last": {
+          "confirmation_count": 19,
+          "correction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "correction_filter_tau_s": 0.8,
+          "gnss_age": 104.65,
+          "gnss_reason": "INNOVATION_REJECTED_FIXED",
+          "gps_count": 0,
+          "has_transform": true,
+          "heading_age": 0.05000000000000071,
+          "innovation_limit_m": 0.15,
+          "innovation_m": 0.25,
+          "jump_count": 0,
+          "map_age": 0.05000000000000071,
+          "map_reason": "GEOMETRIC_MATCH",
+          "max_speed": 0.06,
+          "navigation_allowed": true,
+          "nis": 21.551724137931032,
+          "nis_limit": 9.21,
+          "plan_revalidation_required": false,
+          "raw_map_correction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "reason": "GNSS_INNOVATION_REJECTED_FIXED",
+          "source": "MAP",
+          "state": "MAP_ONLY",
+          "t": 4.65,
+          "v": 0.0,
+          "w": 0.0
+        },
+        "clean_exit": true
+      },
+      "raw_map_jump": {
+        "passed": true,
+        "initial_trusted": true,
+        "fault_at": 3.25,
+        "last": {
+          "confirmation_count": 19,
+          "correction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "correction_filter_tau_s": 0.8,
+          "gnss_age": 0.0,
+          "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+          "gps_count": 53,
+          "has_transform": true,
+          "heading_age": 1.2000000000000002,
+          "innovation_limit_m": 0.15,
+          "innovation_m": 0.0,
+          "jump_count": 1,
+          "map_age": 104.45,
+          "map_reason": "MAP_JUMP_REJECTED",
+          "max_speed": 0.0,
+          "navigation_allowed": false,
+          "nis": 0.0,
+          "nis_limit": 9.21,
+          "plan_revalidation_required": true,
+          "raw_map_correction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "reason": "PLAN_REVALIDATION_REQUIRED",
+          "source": "GNSS_POSITION_LOCAL_HEADING",
+          "state": "STOPPED",
+          "t": 4.45,
+          "v": 0.0,
+          "w": 0.0
+        },
+        "clean_exit": true
+      }
+    },
+    "binary_sha256": "c677479d3d77b366336d308e1d860d1a3baeaf421d4f63eafdf24254d3d6bae7",
+    "policy_sha256": "40e825c36891c86675dd12eee43b3d25714e2746da37945747bbfb28e43a8a27",
+    "domain": "133",
+    "scope": "Synthetic isolated C++ policy test; no real sensor, navigation or work completion credit"
+  },
+  "ledger_clock_probe": {
+    "passed": true,
+    "checks": {
+      "original_sim_clock_reproduces_stale_period": true,
+      "steady_heartbeat_below_original_watchdog": true,
+      "paused_clock_fails_closed": true,
+      "clean_exit": true
+    },
+    "cases": [
+      {
+        "variant": "original",
+        "samples": 6,
+        "median_wall_gap_s": 0.49759177600208204,
+        "max_wall_gap_s": 0.4997623689996544,
+        "clock_watchdog_during_pause": false,
+        "exit": 0,
+        "source_sha256": "a17bdd9eecd6e3cef0f1c540f7f7110d7a44df71eca6ca1640e488115125f09c"
+      },
+      {
+        "variant": "steady",
+        "samples": 51,
+        "median_wall_gap_s": 0.05294873649108922,
+        "max_wall_gap_s": 0.05439294000098016,
+        "clock_watchdog_during_pause": true,
+        "exit": 0,
+        "source_sha256": "ea36aafea08f79472eef40d9ae905d9523a9a5917e68bd44e3ed2bae47041d1c"
+      }
+    ],
+    "original_stale_limit_wall_s": 0.25,
+    "scope": "Actual ROS nodes with synthetic clock only; no Gazebo, tool action, motion or work credit",
+    "policy_sha256": "3c91d611b1242cc36504ed45afd72a35924ec9c2b59a5d92c372388d93c6bb34"
+  },
   "cases": [
     {
       "case": "spray_full_A1",
       "passed": false,
-      "simulation_seconds": 509.824,
-      "wall_seconds": 1312.3374528669956,
+      "simulation_seconds": 1186.44,
+      "wall_seconds": 3068.2401804830006,
       "terminal": "INCOMPLETE",
-      "reason": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+      "reason": "TimeoutError('WAIT_DEADLINE')",
       "selected_points": 56,
       "original_points": 56,
-      "confirmed_points": 8,
+      "confirmed_points": 20,
       "selected_segments": null,
       "original_segments": null,
       "confirmed_segments": null,
@@ -18,11 +157,13 @@
       "residual_area_m2": null,
       "remaining_original_route_m": null,
       "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit",
-      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_170714_616253",
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_194849_404114",
       "terminal_snapshot": {
-        "bt_reason": "NEXT_OBLIGATION",
-        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "bt_reason": "LOCALIZATION_ADMISSION_WAIT",
+        "localization_reason": "PLAN_REVALIDATION_REQUIRED",
         "gate_reasons": [
+          "LOCALIZATION",
+          "PERCEPTION",
           "NAV_COMMAND_STALE"
         ],
         "scope": "Last snapshot for context, not an independent root-cause conclusion"
@@ -31,8 +172,8 @@
     {
       "case": "spray_tool_jam",
       "passed": true,
-      "simulation_seconds": 153.178,
-      "wall_seconds": 395.73066145899065,
+      "simulation_seconds": 143.396,
+      "wall_seconds": 372.7712313009979,
       "terminal": "COMPLETED",
       "reason": null,
       "selected_points": 3,
@@ -45,7 +186,7 @@
       "residual_area_m2": null,
       "remaining_original_route_m": null,
       "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit",
-      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_170025_915535",
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_194217_549485",
       "terminal_snapshot": {
         "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
         "localization_reason": "MAP_AND_GNSS_AGREE",
@@ -58,48 +199,59 @@
     {
       "case": "mowing_full_B1",
       "passed": false,
-      "simulation_seconds": 529.17,
-      "wall_seconds": 1384.6724134340038,
+      "simulation_seconds": 327.93,
+      "wall_seconds": 1125.2289636039932,
       "terminal": "HUMAN_REQUIRED",
-      "reason": "TimeoutError('WAIT_DEADLINE')",
+      "reason": "TimeoutError('ENDPOINT_RECOVERY_BUDGET')",
       "selected_points": null,
       "original_points": null,
       "confirmed_points": null,
       "selected_segments": 34,
       "original_segments": 34,
-      "confirmed_segments": 12,
-      "confirmed_area_m2": 49.960230326157465,
-      "residual_area_m2": 138.431571366799,
+      "confirmed_segments": 6,
+      "confirmed_area_m2": 26.48870692016314,
+      "residual_area_m2": 161.90309477279322,
       "remaining_original_route_m": null,
       "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
-      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_174644_953306",
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_205558_700516",
       "terminal_snapshot": {
-        "bt_reason": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT",
-        "localization_reason": "GNSS_FIXED_AND_INNOVATION_VALID",
+        "bt_reason": "NEXT_OBLIGATION",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
         "gate_reasons": [
-          "NAV_COMMAND_STALE",
-          "TOOL_STATE_FOR_SEGMENT",
-          "OBSTRUCTED"
+          "NAV_COMMAND_STALE"
         ],
         "scope": "Last snapshot for context, not an independent root-cause conclusion"
       },
-      "endpoint_recovery_successes": [
-        {
-          "t": 314.22,
-          "event": "ENDPOINT_RECOVERY_SUCCESS",
-          "segment": "B1:segment:6",
-          "attempt": 1,
-          "pause_restarts": 1
-        },
-        {
-          "t": 446.55,
-          "event": "ENDPOINT_RECOVERY_SUCCESS",
-          "segment": "B1:segment:10",
-          "attempt": 0,
-          "pause_restarts": 0
-        }
-      ],
+      "endpoint_recovery_successes": [],
       "observation_resume_count": 1
+    },
+    {
+      "case": "mowing_startup_perception_loss",
+      "passed": true,
+      "simulation_seconds": 185.572,
+      "wall_seconds": 491.6971119480004,
+      "terminal": "COMPLETED",
+      "reason": null,
+      "selected_points": null,
+      "original_points": null,
+      "confirmed_points": null,
+      "selected_segments": 5,
+      "original_segments": 34,
+      "confirmed_segments": 5,
+      "confirmed_area_m2": 26.556663461538417,
+      "residual_area_m2": 1.397318245255585,
+      "remaining_original_route_m": null,
+      "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_211518_676200",
+      "terminal_snapshot": {
+        "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "gate_reasons": [
+          "NAV_COMMAND_STALE",
+          "TOOL_STATE_FOR_SEGMENT"
+        ],
+        "scope": "Last snapshot for context, not an independent root-cause conclusion"
+      }
     },
     {
       "case": "inspection_full_connector",

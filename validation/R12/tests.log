@@ -1,9 +1,10 @@
 test_actual_runtime_distance_key (test_scope_r12.Scope.test_actual_runtime_distance_key) ... ok
 test_different_task_or_time_budget_rejected (test_scope_r12.Scope.test_different_task_or_time_budget_rejected) ... ok
 test_partial_mowing_cannot_replace_full_cluster (test_scope_r12.Scope.test_partial_mowing_cannot_replace_full_cluster) ... ok
+test_startup_fault_is_not_mislabeled_as_nominal (test_scope_r12.Scope.test_startup_fault_is_not_mislabeled_as_nominal) ... ok
 test_subset_cannot_replace_full_connector (test_scope_r12.Scope.test_subset_cannot_replace_full_connector) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.000s
+Ran 5 tests in 0.000s
 
 OK
