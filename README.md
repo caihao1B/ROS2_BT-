@@ -61,7 +61,31 @@ bash optimization_v2/three_tasks/advance.sh R03 open
 bash optimization_v2/three_tasks/advance.sh R04 open
 ```
 
-仓库提供新增源码、配置、规划摘要、实际结果与图；完整逐帧日志/本机二进制仍由本机回执绑定，尚不是 R12 可移植发行包。R05 正在单独复验新安装外参下的传感器与 RTAB 定位，未宣告通过。
+仓库提供新增源码、配置、规划摘要、实际结果与图；完整逐帧日志/本机二进制仍由本机回执绑定，尚不是 R12 可移植发行包。R05/R06 已完成以下独立验收；任务专用闭环从 R07 继续推进。
+
+## 三任务改造 R05–R06：多底盘定位与共用行为树通过
+
+R05 三车分别真实运行 120 秒仿真，完成短距离往返和全局定位进程重启。使用各自安装外参、真实 64×1024 激光、双目、IMU、轮速与 GNSS；地图 XY RMSE 为点喷 2.44 cm、巡迹 2.71 cm、割草 3.06 cm，重启恢复约 10 秒。原地图数据库保持不变，真值仅用于离线评分。
+
+**定位实现说明：** RTAB-Map 继续提供原生局部激光里程计；新的全局任务定位复用项目已有的观测点云区域匹配，配合独立 GNSS 创新检查。旧 RTAB 数据库的跨高度全局匹配失败仍保留，不能把本结果称为原生 RTAB 跨车视觉回环通过。入口短测也不代表完整地图定位已验收。
+
+![R05 实测定位误差](media/r05_localization.png)
+
+R06 使用实际 BehaviorTree.CPP 响应式分层树，三车各通过 22 项原生策略检查和 22 项 ROS 协议场景。决策记录原因、证据、候选与门限；涵盖等待、经验证的绕行候选、有限次重规划、延期残余、同向跟随、取消确认、无进展停车及人工锁定。协议输入是声明的合成上下文；真实传感器触发的任务交互仍待 R07–R10 集成验收。
+
+![R06 实际 BT 协议状态](media/r06_decisions.png)
+
+|阶段|手工检查|技术原理与核心代码|结果|
+|---|---|---|---|
+|R05 PASS|[命令](docs/three_tasks/R05/MANUAL.md)|[原理](docs/three_tasks/R05/TECHNICAL.md) · [代码](docs/three_tasks/R05/CODE.md)|[结果](docs/three_tasks/R05/RESULTS.md) · [回执](validation/R05/latest.json)|
+|R06 PASS|[命令](docs/three_tasks/R06/MANUAL.md)|[原理](docs/three_tasks/R06/TECHNICAL.md) · [代码](docs/three_tasks/R06/CODE.md)|[结果](docs/three_tasks/R06/RESULTS.md) · [回执](validation/R06/latest.json)|
+
+```bash
+bash optimization_v2/three_tasks/advance.sh R05 open
+bash optimization_v2/three_tasks/advance.sh R06 open
+```
+
+当前正在实施 R07 点喷专用闭环。原 S17/S18 仍为 PARTIAL，新三任务未宣告全地图完成；下方视频仍是旧独立演示版本。
 
 ## 独立小规模演示与实际录制
 

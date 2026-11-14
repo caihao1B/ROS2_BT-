@@ -1,0 +1,996 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "normal",
+      "expected": "EXECUTE",
+      "passed": true,
+      "observed": [
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 0.0,
+      "end": 2.0,
+      "ack_success": null
+    },
+    {
+      "name": "obstacle_short",
+      "expected": "WAIT",
+      "passed": true,
+      "observed": [
+        {
+          "action": "WAIT",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "WAIT",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "WAIT",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "WAIT",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "WAIT",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 2.0,
+      "end": 4.0,
+      "ack_success": null
+    },
+    {
+      "name": "cancel_before_wait",
+      "expected": "CANCEL",
+      "passed": true,
+      "observed": [
+        {
+          "action": "CANCEL",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "CANCEL",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "CANCEL",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "CANCEL",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "CANCEL",
+          "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        }
+      ],
+      "start": 4.0,
+      "end": 5.0,
+      "ack_success": null
+    },
+    {
+      "name": "validated_detour",
+      "expected": "DETOUR",
+      "passed": true,
+      "observed": [
+        {
+          "action": "DETOUR",
+          "reason": "VALIDATED_DETOUR_COST_BENEFIT",
+          "selected": "DETOUR",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "DETOUR",
+          "reason": "VALIDATED_DETOUR_COST_BENEFIT",
+          "selected": "DETOUR",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "DETOUR",
+          "reason": "VALIDATED_DETOUR_COST_BENEFIT",
+          "selected": "DETOUR",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "DETOUR",
+          "reason": "VALIDATED_DETOUR_COST_BENEFIT",
+          "selected": "DETOUR",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "DETOUR",
+          "reason": "VALIDATED_DETOUR_COST_BENEFIT",
+          "selected": "DETOUR",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 5.0,
+      "end": 7.0,
+      "ack_success": null
+    },
+    {
+      "name": "wait_for_persistence",
+      "expected": "REPLAN",
+      "passed": true,
+      "observed": [
+        {
+          "action": "REPLAN",
+          "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY",
+          "selected": "REPLAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "REPLAN",
+          "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY",
+          "selected": "REPLAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "REPLAN",
+          "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY",
+          "selected": "REPLAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "REPLAN",
+          "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY",
+          "selected": "REPLAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "REPLAN",
+          "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY",
+          "selected": "REPLAN",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 7.0,
+      "end": 15.0,
+      "ack_success": null
+    },
+    {
+      "name": "planner_exhausted_other_job",
+      "expected": "DEFER",
+      "passed": true,
+      "observed": [
+        {
+          "action": "DEFER",
+          "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL",
+          "selected": "DEFER",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "DEFER",
+          "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL",
+          "selected": "DEFER",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "DEFER",
+          "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL",
+          "selected": "DEFER",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "DEFER",
+          "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL",
+          "selected": "DEFER",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "DEFER",
+          "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL",
+          "selected": "DEFER",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 15.0,
+      "end": 17.0,
+      "ack_success": null
+    },
+    {
+      "name": "no_verified_alternative",
+      "expected": "HUMAN",
+      "passed": true,
+      "observed": [
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 17.0,
+      "end": 19.0,
+      "ack_success": null
+    },
+    {
+      "name": "manual_latch_survives_clear",
+      "expected": "HUMAN",
+      "passed": true,
+      "observed": [
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "BOUNDED_REPLAN_EXHAUSTED",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 19.0,
+      "end": 21.0,
+      "ack_success": null
+    },
+    {
+      "name": "ack_reset",
+      "expected": "EXECUTE",
+      "passed": true,
+      "observed": [
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 21.0,
+      "end": 23.0,
+      "ack_success": true
+    },
+    {
+      "name": "follow_leader",
+      "expected": "FOLLOW",
+      "passed": true,
+      "observed": [
+        {
+          "action": "FOLLOW",
+          "reason": "SAME_DIRECTION_CLEARANCE_CONTROL",
+          "selected": "FOLLOW",
+          "cap": 0.3,
+          "confirmed": true
+        },
+        {
+          "action": "FOLLOW",
+          "reason": "SAME_DIRECTION_CLEARANCE_CONTROL",
+          "selected": "FOLLOW",
+          "cap": 0.3,
+          "confirmed": true
+        },
+        {
+          "action": "FOLLOW",
+          "reason": "SAME_DIRECTION_CLEARANCE_CONTROL",
+          "selected": "FOLLOW",
+          "cap": 0.3,
+          "confirmed": true
+        },
+        {
+          "action": "FOLLOW",
+          "reason": "SAME_DIRECTION_CLEARANCE_CONTROL",
+          "selected": "FOLLOW",
+          "cap": 0.3,
+          "confirmed": true
+        },
+        {
+          "action": "FOLLOW",
+          "reason": "SAME_DIRECTION_CLEARANCE_CONTROL",
+          "selected": "FOLLOW",
+          "cap": 0.3,
+          "confirmed": true
+        }
+      ],
+      "start": 23.0,
+      "end": 26.0,
+      "ack_success": null
+    },
+    {
+      "name": "crossing_not_follow",
+      "expected": "WAIT",
+      "passed": true,
+      "observed": [
+        {
+          "action": "WAIT",
+          "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "WAIT",
+          "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "WAIT",
+          "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "WAIT",
+          "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "WAIT",
+          "reason": "PERSISTENCE_THRESHOLD_NOT_REACHED",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 26.0,
+      "end": 28.0,
+      "ack_success": null
+    },
+    {
+      "name": "emergency",
+      "expected": "STOP",
+      "passed": true,
+      "observed": [
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 28.0,
+      "end": 30.0,
+      "ack_success": null
+    },
+    {
+      "name": "stale_context",
+      "expected": "STOP",
+      "passed": true,
+      "observed": [
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "SAFETY_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 30.0,
+      "end": 32.0,
+      "ack_success": null
+    },
+    {
+      "name": "wrong_version",
+      "expected": "STOP",
+      "passed": true,
+      "observed": [
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 32.0,
+      "end": 34.0,
+      "ack_success": null
+    },
+    {
+      "name": "replayed_sequence",
+      "expected": "STOP",
+      "passed": true,
+      "observed": [
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        }
+      ],
+      "start": 34.0,
+      "end": 36.0,
+      "ack_success": null
+    },
+    {
+      "name": "future_timestamp",
+      "expected": "STOP",
+      "passed": true,
+      "observed": [
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "VERSION_MISMATCH",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": false
+        }
+      ],
+      "start": 36.0,
+      "end": 38.0,
+      "ack_success": null
+    },
+    {
+      "name": "cancel_timeout",
+      "expected": "STOP",
+      "passed": true,
+      "observed": [
+        {
+          "action": "STOP",
+          "reason": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        },
+        {
+          "action": "STOP",
+          "reason": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT",
+          "selected": "WAIT",
+          "cap": 0.6,
+          "confirmed": false
+        }
+      ],
+      "start": 38.0,
+      "end": 42.0,
+      "ack_success": null
+    },
+    {
+      "name": "ack_after_timeout",
+      "expected": "EXECUTE",
+      "passed": true,
+      "observed": [
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 42.0,
+      "end": 44.0,
+      "ack_success": true
+    },
+    {
+      "name": "motion_stall",
+      "expected": "HUMAN",
+      "passed": true,
+      "observed": [
+        {
+          "action": "HUMAN",
+          "reason": "MOTION_WITHOUT_OBSERVED_PROGRESS",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "MOTION_WITHOUT_OBSERVED_PROGRESS",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "MOTION_WITHOUT_OBSERVED_PROGRESS",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "MOTION_WITHOUT_OBSERVED_PROGRESS",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "HUMAN",
+          "reason": "MOTION_WITHOUT_OBSERVED_PROGRESS",
+          "selected": "HUMAN",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 44.0,
+      "end": 56.0,
+      "ack_success": null
+    },
+    {
+      "name": "budget_reserve",
+      "expected": "STOP",
+      "passed": true,
+      "observed": [
+        {
+          "action": "STOP",
+          "reason": "BUDGET_RESERVE_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "BUDGET_RESERVE_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "BUDGET_RESERVE_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "BUDGET_RESERVE_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "STOP",
+          "reason": "BUDGET_RESERVE_STOP",
+          "selected": "STOP",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 56.0,
+      "end": 58.0,
+      "ack_success": null
+    },
+    {
+      "name": "final_ack",
+      "expected": "EXECUTE",
+      "passed": true,
+      "observed": [
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "EXECUTE",
+          "reason": "NEXT_OBLIGATION",
+          "selected": "EXECUTE",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 58.0,
+      "end": 60.0,
+      "ack_success": true
+    },
+    {
+      "name": "feedback_complete",
+      "expected": "COMPLETE",
+      "passed": true,
+      "observed": [
+        {
+          "action": "COMPLETE",
+          "reason": "FEEDBACK_CONFIRMED_COMPLETE",
+          "selected": "COMPLETE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "COMPLETE",
+          "reason": "FEEDBACK_CONFIRMED_COMPLETE",
+          "selected": "COMPLETE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "COMPLETE",
+          "reason": "FEEDBACK_CONFIRMED_COMPLETE",
+          "selected": "COMPLETE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "COMPLETE",
+          "reason": "FEEDBACK_CONFIRMED_COMPLETE",
+          "selected": "COMPLETE",
+          "cap": 0.6,
+          "confirmed": true
+        },
+        {
+          "action": "COMPLETE",
+          "reason": "FEEDBACK_CONFIRMED_COMPLETE",
+          "selected": "COMPLETE",
+          "cap": 0.6,
+          "confirmed": true
+        }
+      ],
+      "start": 60.0,
+      "end": 62.0,
+      "ack_success": true
+    }
+  ],
+  "scope": "Declared synthetic context and cancellation fixture over ROS; no Gazebo/vision interaction claim"
+}

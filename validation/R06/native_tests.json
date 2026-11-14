@@ -1,0 +1,17 @@
+{
+  "spray": {
+    "exit": 0,
+    "stdout": "{\"cases\":22,\"framework\":\"BehaviorTree.CPP actual XML execution\",\"passed\":true}\n",
+    "stderr": ""
+  },
+  "inspection": {
+    "exit": 0,
+    "stdout": "{\"cases\":22,\"framework\":\"BehaviorTree.CPP actual XML execution\",\"passed\":true}\n",
+    "stderr": ""
+  },
+  "mowing": {
+    "exit": 0,
+    "stdout": "{\"cases\":22,\"framework\":\"BehaviorTree.CPP actual XML execution\",\"passed\":true}\n",
+    "stderr": ""
+  }
+}

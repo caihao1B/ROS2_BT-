@@ -1,0 +1,7 @@
+{
+  "supervisor_exit": 0,
+  "fixture_exit": 0,
+  "forced": false,
+  "passed": true,
+  "context_scope": "synthetic protocol fixture; never actuator commands"
+}

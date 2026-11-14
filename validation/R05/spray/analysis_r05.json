@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "task": "spray",
+  "checks": {
+    "runtime_clean": true,
+    "original_map_unchanged": true,
+    "completed": true,
+    "all_sensors": true,
+    "observed_map_match_before_and_after_restart": true,
+    "initial_acquisition_within_45s": true,
+    "restart_acquisition_within_45s": true,
+    "native_3d_raster": true,
+    "camera_nonblank": true,
+    "registered_map_accuracy": true,
+    "local_odom_rmse_under_25cm": true,
+    "observed_motion_over_3m": true,
+    "final_stopped": true,
+    "odom_transform_present": true,
+    "sole_public_tf_owner": true,
+    "probe_source_binding": true,
+    "runtime_source_binding": true,
+    "current_rig_binding": true,
+    "generated_adapters_intact": true
+  },
+  "valid_map_matches": [
+    136,
+    116
+  ],
+  "first_acquisition_s": 7.326,
+  "reacquisition_s": 10.224000000000004,
+  "map_xy_rmse_m": 0.02444439153956908,
+  "map_yaw_rmse_deg": 0.024267031759152756,
+  "local_xy_rmse_m": 0.21410711334033797,
+  "actual_travel_m": 4.774018799291319,
+  "sensor_counts": {
+    "imu": 23989,
+    "gnss": 600,
+    "camera": 1768,
+    "lidar": 892,
+    "odom": 3580,
+    "rtab_icp_info": 472,
+    "quality": 315
+  },
+  "sim_seconds": 120.0,
+  "wall_seconds": 207.07945814599952,
+  "new_rig_revision": "cc6e2fdd1c929e446bf85171f28d53c8da8bab022b667bcbfb3e8135ecb37bbc",
+  "truth_evaluation_only": true,
+  "scope": "Existing registered frozen-cloud localization + native RTAB ICP + wheel/IMU, independent GNSS gate, actual global-localizer restart; work task not accepted"
+}
