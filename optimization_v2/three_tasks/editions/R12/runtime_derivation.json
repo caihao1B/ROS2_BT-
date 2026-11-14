@@ -1,0 +1,47 @@
+{
+  "records": [
+    {
+      "task": "spray",
+      "source": "optimization_v2/ws/src/task_platform/scripts/runtime_spray_r10.py",
+      "source_sha256": "27482c6044105506df17afacf3a74dfd831713ff72dd77886ca2a42c3cea9b09",
+      "derived_runtime": "optimization_v2/three_tasks/editions/R12/runtime_spray.py",
+      "derived_sha256": "f5bf0b543fbf77f9cbaa101dbc17aa895101563656b2f43361362a73e2720737",
+      "changes": [
+        "isolated R12 output",
+        "material-only scene",
+        "observer camera in evaluation domain",
+        "actual video recorder",
+        "pause after physical stop before ROS teardown"
+      ]
+    },
+    {
+      "task": "inspection",
+      "source": "optimization_v2/ws/src/task_platform/scripts/runtime_r08.py",
+      "source_sha256": "8456e723915f37c3abcc1072f971eb3ace02ee7e9ae067a6b25d66212474f9f7",
+      "derived_runtime": "optimization_v2/three_tasks/editions/R12/runtime_inspection.py",
+      "derived_sha256": "1e438ddf97a53653a4388134716bae916714c95308a6cc7e41484c2af1019d84",
+      "changes": [
+        "isolated R12 output",
+        "material-only scene",
+        "observer camera in evaluation domain",
+        "actual video recorder",
+        "pause after physical stop before ROS teardown"
+      ]
+    },
+    {
+      "task": "mowing",
+      "source": "optimization_v2/ws/src/task_platform/scripts/runtime_mowing_r10.py",
+      "source_sha256": "86bc626b974a6bce40a5fc2128c41f34c0fba5b533669ebc067b8d2ee19ac8b1",
+      "derived_runtime": "optimization_v2/three_tasks/editions/R12/runtime_mowing.py",
+      "derived_sha256": "8db80101a771b803144ef814111178efa43a7cc47ffe682be07af12c8e054ba4",
+      "changes": [
+        "isolated R12 output",
+        "material-only scene",
+        "observer camera in evaluation domain",
+        "actual video recorder",
+        "pause after physical stop before ROS teardown"
+      ]
+    }
+  ],
+  "no_task_or_gate_changes": true
+}

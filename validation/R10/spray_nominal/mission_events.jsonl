@@ -1,0 +1,17 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_PLAN_HINT"}
+{"t": 18.792, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 18.792, "event": "NAV_GOAL", "point": "point_7_14", "target": [-5.5, 29.5], "attempt": 0}
+{"t": 18.81, "event": "NAV_SUCCESS", "point": "point_7_14"}
+{"t": 20.31, "event": "DOCKING_SETTLED_CHECK", "point": "point_7_14", "distance_m": 0.053377420337232, "attempt": 0}
+{"t": 24.414, "event": "TOOL_RESULT", "point": "point_7_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0660000000000025, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 0.0, "meter_after": 3.2757}
+{"t": 24.458, "event": "TOOL_RESULT", "point": "point_7_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0660000000000025, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2757, "meter_after": 3.2757}
+{"t": 24.458, "event": "IDEMPOTENT_REPLAY", "result": {"point": "point_7_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0660000000000025, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2757, "meter_after": 3.2757}}
+{"t": 24.458, "event": "NAV_GOAL", "point": "point_8_14", "target": [-2.5, 29.5], "attempt": 0}
+{"t": 41.94, "event": "NAV_SUCCESS", "point": "point_8_14"}
+{"t": 43.44, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_14", "distance_m": 0.04071547351503272, "attempt": 0}
+{"t": 47.526, "event": "TOOL_RESULT", "point": "point_8_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0720000000000027, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 3.2757, "meter_after": 6.5373}
+{"t": 47.55, "event": "NAV_GOAL", "point": "point_8_15", "target": [-2.5, 32.5], "attempt": 0}
+{"t": 59.584, "event": "BT_INTERRUPTS_NAV", "action": "CANCEL", "reason": "LOCALIZATION_ADMISSION_WAIT"}
+{"t": 59.584, "event": "NAV_CANCEL_ACK", "accepted": true}
+{"t": 109.602, "event": "TASK_STOP", "error": "TimeoutError('WAIT_DEADLINE')"}
+{"t": 109.604, "event": "FINAL_TOOL_STOP", "state": "STOPPED"}

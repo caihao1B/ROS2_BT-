@@ -1,0 +1,22 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_CLUSTER_HINT"}
+{"t": 37.66, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 37.66, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": ""}
+{"t": 38.142, "event": "TOOL_WORKING_CONFIRMED", "segment": "B1:segment:0", "requested_area_m2": 10.561490281674196}
+{"t": 38.142, "event": "SEGMENT_GOAL", "segment": "B1:segment:0", "kind": "COVERAGE", "direction": 1, "original_poses": 75, "remaining_poses": 75, "tool_expected": true, "original_members": ["B1:segment:0"]}
+{"t": 71.34, "event": "ORIGINAL_SEGMENT_PASSAGE", "segment": "B1:segment:0", "xy_error_m": 0.09896755940268145, "yaw_error_rad": 0.0071625713435761185, "stop_required": true}
+{"t": 73.158, "event": "TOOL_RESULT", "segment": "B1:segment:0", "state": "CANCELLED", "reason": "USER_CANCEL", "confirmed": 9.688562499999994, "remaining": 0.8729277816742016, "uncertain": false}
+{"t": 73.2, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
+{"t": 73.2, "event": "SEGMENT_ARRIVAL", "segment": "B1:segment:0", "xy_error_m": 0.03762522649853937, "yaw_error_rad": 0.005026977051637571}
+{"t": 73.2, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:0"}
+{"t": 73.2, "event": "SEGMENT_GOAL", "segment": "B1:segment:1", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 77, "remaining_poses": 77, "tool_expected": false, "original_members": ["B1:segment:1", "B1:segment:2", "B1:segment:3"]}
+{"t": 80.34, "event": "ORIGINAL_SEGMENT_PASSAGE", "segment": "B1:segment:1", "xy_error_m": 0.09653903379616201, "yaw_error_rad": 0.08122972165653392, "stop_required": false}
+{"t": 115.414, "event": "BT_INTERRUPTS_SEGMENT", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 115.65, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:1"}
+{"t": 116.81, "event": "SEGMENT_GOAL", "segment": "B1:segment:1", "kind": "TURN_TOOL_OFF", "direction": -1, "original_poses": 77, "remaining_poses": 42, "tool_expected": false, "original_members": ["B1:segment:1", "B1:segment:2", "B1:segment:3"]}
+{"t": 153.122, "event": "ORIGINAL_SEGMENT_PASSAGE", "segment": "B1:segment:2", "xy_error_m": 0.09957367108269653, "yaw_error_rad": 0.05557700044599483, "stop_required": false}
+{"t": 166.95, "event": "ORIGINAL_SEGMENT_PASSAGE", "segment": "B1:segment:3", "xy_error_m": 0.09142721551154775, "yaw_error_rad": 0.11994633596256699, "stop_required": true}
+{"t": 173.912, "event": "ENDPOINT_POSE_STALL", "segment": "B1:segment:1", "distance_m": 0.013924146435110292, "yaw_error_rad": 0.09197625070296811}
+{"t": 173.92, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:1"}
+{"t": 173.922, "event": "ENDPOINT_RECOVERY_PLAN", "attempt": 0, "status": 4, "accepted": false, "reason": "MALFORMED_PATH", "poses": [[82.64811204211216, 35.05484900492048, 0.2617993877991514]], "segment": "B1:segment:1"}
+{"t": 173.922, "event": "TASK_STOP", "error": "RuntimeError('ENDPOINT_RECOVERY_MALFORMED_PATH')", "terminal": "HUMAN_REQUIRED"}
+{"t": 173.922, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "B1:segment:1"}

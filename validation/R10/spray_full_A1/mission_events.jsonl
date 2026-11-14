@@ -1,0 +1,65 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_PLAN_HINT"}
+{"t": 19.106, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 19.108, "event": "NAV_GOAL", "point": "point_7_14", "target": [-5.5, 29.5], "attempt": 0}
+{"t": 29.22, "event": "NAV_SUCCESS", "point": "point_7_14"}
+{"t": 32.49, "event": "DOCKING_SETTLED_CHECK", "point": "point_7_14", "distance_m": 0.012769242376003189, "attempt": 0, "stable": true, "stability": {"samples": 61, "span_s": 1.8000000000000007, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.011700151502207896, "latest_distance_m": 0.012769242376003189, "position_scatter_p95_m": 0.0019979704204205182}}
+{"t": 36.618, "event": "TOOL_RESULT", "point": "point_7_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0959999999999965, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 0.0, "meter_after": 3.2977}
+{"t": 36.664, "event": "TOOL_RESULT", "point": "point_7_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0959999999999965, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2977, "meter_after": 3.2977}
+{"t": 36.664, "event": "IDEMPOTENT_REPLAY", "result": {"point": "point_7_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0959999999999965, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2977, "meter_after": 3.2977}}
+{"t": 36.664, "event": "NAV_GOAL", "point": "point_8_14", "target": [-2.5, 29.5], "attempt": 0}
+{"t": 62.67, "event": "NAV_SUCCESS", "point": "point_8_14"}
+{"t": 65.97, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_14", "distance_m": 0.01660909246485461, "attempt": 0, "stable": true, "stability": {"samples": 62, "span_s": 1.8299999999999983, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.00846110241113784, "latest_distance_m": 0.01660909246485461, "position_scatter_p95_m": 0.009882032310514405}}
+{"t": 70.062, "event": "TOOL_RESULT", "point": "point_8_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.073999999999998, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 3.2977, "meter_after": 6.5533}
+{"t": 70.08, "event": "NAV_GOAL", "point": "point_8_15", "target": [-2.5, 32.5], "attempt": 0}
+{"t": 80.592, "event": "BT_INTERRUPTS_NAV", "action": "CANCEL", "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS"}
+{"t": 80.592, "event": "NAV_CANCEL_ACK", "accepted": true}
+{"t": 81.896, "event": "RETRY_DECISION", "action": "EXECUTE", "reason": "NEXT_OBLIGATION"}
+{"t": 81.896, "event": "RESUME_AFTER_OBSERVATION_CLEAR", "point": "point_8_15"}
+{"t": 81.896, "event": "NAV_GOAL", "point": "point_8_15", "target": [-2.5, 32.5], "attempt": 0}
+{"t": 104.64, "event": "NAV_SUCCESS", "point": "point_8_15"}
+{"t": 108.78, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_15", "distance_m": 0.021216125888270685, "attempt": 0, "stable": true, "stability": {"samples": 74, "span_s": 2.1899999999999977, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.025127241194904452, "latest_distance_m": 0.021216125888270685, "position_scatter_p95_m": 0.010649354041317609}}
+{"t": 112.85, "event": "TOOL_RESULT", "point": "point_8_15", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0720000000000027, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 6.5533, "meter_after": 9.803}
+{"t": 112.89, "event": "NAV_GOAL", "point": "point_9_15", "target": [0.5, 32.5], "attempt": 0}
+{"t": 149.4, "event": "NEAR_GOAL_PROGRESS_REPLAN", "point": "point_9_15", "attempt": 0, "evidence": {"reason": "QUALIFIED_NEAR_GOAL_WITHOUT_DISTANCE_PROGRESS", "distance_m": 0.12488731277437297, "best_distance_m": 0.10591698900544194, "seconds_without_improvement": 8.01000000000002, "translation_command_seconds": 6.570000000000022, "qualified_samples": 284}}
+{"t": 149.4, "event": "NAV_CANCEL_ACK", "accepted": true}
+{"t": 149.55, "event": "NAV_TERMINAL_FAILURE", "status": 5, "error_code": 0}
+{"t": 161.63, "event": "RETRY_DECISION", "action": "REPLAN", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 162.684, "event": "NAV_GOAL", "point": "point_9_15", "target": [0.5, 32.5], "attempt": 1}
+{"t": 178.74, "event": "NAV_SUCCESS", "point": "point_9_15"}
+{"t": 182.04, "event": "DOCKING_SETTLED_CHECK", "point": "point_9_15", "distance_m": 0.02622882416082402, "attempt": 0, "stable": true, "stability": {"samples": 62, "span_s": 1.829999999999984, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.023923107348503288, "latest_distance_m": 0.02622882416082402, "position_scatter_p95_m": 0.012703227543266027}}
+{"t": 186.108, "event": "TOOL_RESULT", "point": "point_9_15", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.078000000000003, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 9.803, "meter_after": 13.0707}
+{"t": 186.15, "event": "NAV_GOAL", "point": "point_9_14", "target": [0.5, 29.5], "attempt": 0}
+{"t": 226.74, "event": "NAV_SUCCESS", "point": "point_9_14"}
+{"t": 236.24, "event": "DOCKING_SETTLED_CHECK", "point": "point_9_14", "distance_m": 0.05209955566790713, "attempt": 0, "stable": false, "stability": {"samples": 74, "span_s": 2.1899999999999977, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.05508361598372708, "latest_distance_m": 0.05209955566790713, "position_scatter_p95_m": 0.0428881045477197}}
+{"t": 236.24, "event": "REDOCK_NAV_GOAL", "point": "point_9_14", "distance_m": 0.05209955566790713, "attempt": 0}
+{"t": 238.954, "event": "REDOCK_NAV_SUCCESS", "point": "point_9_14"}
+{"t": 242.28, "event": "DOCKING_SETTLED_CHECK", "point": "point_9_14", "distance_m": 0.014465954320344282, "attempt": 1, "stable": true, "stability": {"samples": 61, "span_s": 1.8000000000000114, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.02451388982401434, "latest_distance_m": 0.014465954320344282, "position_scatter_p95_m": 0.014734460018529055}}
+{"t": 246.364, "event": "TOOL_RESULT", "point": "point_9_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.078000000000003, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 13.0707, "meter_after": 16.3463}
+{"t": 246.392, "event": "NAV_GOAL", "point": "point_10_14", "target": [3.5, 29.5], "attempt": 0}
+{"t": 298.11, "event": "NEAR_GOAL_PROGRESS_REPLAN", "point": "point_10_14", "attempt": 0, "evidence": {"reason": "QUALIFIED_NEAR_GOAL_WITHOUT_DISTANCE_PROGRESS", "distance_m": 0.05241874131965978, "best_distance_m": 0.027393412591415322, "seconds_without_improvement": 8.009999999999991, "translation_command_seconds": 4.409999999999968, "qualified_samples": 284}}
+{"t": 298.11, "event": "NAV_CANCEL_ACK", "accepted": true}
+{"t": 298.44, "event": "NAV_TERMINAL_FAILURE", "status": 5, "error_code": 0}
+{"t": 310.504, "event": "RETRY_DECISION", "action": "REPLAN", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 311.572, "event": "NAV_GOAL", "point": "point_10_14", "target": [3.5, 29.5], "attempt": 1}
+{"t": 321.66, "event": "NAV_SUCCESS", "point": "point_10_14"}
+{"t": 329.19, "event": "DOCKING_SETTLED_CHECK", "point": "point_10_14", "distance_m": 0.032975231925277744, "attempt": 0, "stable": true, "stability": {"samples": 74, "span_s": 2.1899999999999977, "max_gap_s": 0.03000000000002956, "median_distance_m": 0.033400820323170356, "latest_distance_m": 0.032975231925277744, "position_scatter_p95_m": 0.01474043935229909}}
+{"t": 333.262, "event": "TOOL_RESULT", "point": "point_10_14", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0500000000000114, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 16.3463, "meter_after": 19.598}
+{"t": 333.3, "event": "NAV_GOAL", "point": "point_10_15", "target": [3.5, 32.5], "attempt": 0}
+{"t": 375.81, "event": "NAV_SUCCESS", "point": "point_10_15"}
+{"t": 379.08, "event": "DOCKING_SETTLED_CHECK", "point": "point_10_15", "distance_m": 0.03157682522185096, "attempt": 0, "stable": true, "stability": {"samples": 61, "span_s": 1.8000000000000114, "max_gap_s": 0.03000000000002956, "median_distance_m": 0.029479734908824263, "latest_distance_m": 0.03157682522185096, "position_scatter_p95_m": 0.012419384575720883}}
+{"t": 383.144, "event": "TOOL_RESULT", "point": "point_10_15", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0720000000000027, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 19.598, "meter_after": 22.8657}
+{"t": 383.19, "event": "NAV_GOAL", "point": "point_10_16", "target": [3.5, 35.5], "attempt": 0}
+{"t": 421.47, "event": "NAV_SUCCESS", "point": "point_10_16"}
+{"t": 424.74, "event": "DOCKING_SETTLED_CHECK", "point": "point_10_16", "distance_m": 0.043732998589094345, "attempt": 0, "stable": true, "stability": {"samples": 61, "span_s": 1.8000000000000114, "max_gap_s": 0.03000000000002956, "median_distance_m": 0.02592280530266716, "latest_distance_m": 0.043732998589094345, "position_scatter_p95_m": 0.013132585653000425}}
+{"t": 428.854, "event": "TOOL_RESULT", "point": "point_10_16", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.1140000000000327, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 22.8657, "meter_after": 26.1753}
+{"t": 428.882, "event": "NAV_GOAL", "point": "point_9_16", "target": [0.5, 35.5], "attempt": 0}
+{"t": 466.62, "event": "NAV_SUCCESS", "point": "point_9_16"}
+{"t": 476.12, "event": "DOCKING_SETTLED_CHECK", "point": "point_9_16", "distance_m": 0.06224939139169252, "attempt": 0, "stable": false, "stability": {"samples": 74, "span_s": 2.1899999999999977, "max_gap_s": 0.03000000000002956, "median_distance_m": 0.06667253448599482, "latest_distance_m": 0.06224939139169252, "position_scatter_p95_m": 0.05235728677706749}}
+{"t": 476.12, "event": "REDOCK_NAV_GOAL", "point": "point_9_16", "distance_m": 0.06224939139169252, "attempt": 0}
+{"t": 486.216, "event": "REDOCK_NAV_SUCCESS", "point": "point_9_16"}
+{"t": 495.716, "event": "DOCKING_SETTLED_CHECK", "point": "point_9_16", "distance_m": 0.05108403802418634, "attempt": 1, "stable": false, "stability": {"samples": 74, "span_s": 2.1899999999999977, "max_gap_s": 0.03000000000002956, "median_distance_m": 0.05212757921156199, "latest_distance_m": 0.05108403802418634, "position_scatter_p95_m": 0.010829444942681583}}
+{"t": 495.716, "event": "REDOCK_NAV_GOAL", "point": "point_9_16", "distance_m": 0.05108403802418634, "attempt": 1}
+{"t": 500.212, "event": "REDOCK_NAV_SUCCESS", "point": "point_9_16"}
+{"t": 509.81, "event": "DOCKING_SETTLED_CHECK", "point": "point_9_16", "distance_m": 0.016607296113334256, "attempt": 2, "stable": false, "stability": {"samples": 74, "span_s": 2.1899999999999977, "max_gap_s": 0.03000000000002956, "median_distance_m": 0.006041539415167597, "latest_distance_m": 0.016607296113334256, "position_scatter_p95_m": 0.02439127704089094}}
+{"t": 509.81, "event": "TASK_STOP", "error": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')"}
+{"t": 509.824, "event": "FINAL_TOOL_STOP", "state": "STOPPED"}

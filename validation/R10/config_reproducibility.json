@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": {
+    "catalog.json": true,
+    "mowing/mission.json": true,
+    "mowing/manager.json": true,
+    "mowing/tool.json": true,
+    "mowing/nav2.yaml": true,
+    "mowing/terrain.json": true,
+    "spray/mission.json": true,
+    "spray/manager.json": true,
+    "spray/tool.json": true,
+    "spray/nav2.yaml": true,
+    "spray/terrain.json": true
+  },
+  "generator_sha256": "92fa84a6a0d7d5e376a900f5e1c07dd0c375f17a5c809be7d581e69e0cf4241e",
+  "method": "isolated regeneration; active configuration files never rewritten"
+}

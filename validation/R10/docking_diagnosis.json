@@ -1,0 +1,23 @@
+{
+  "source": "optimization_v2/three_tasks/results/R12/spray_20261114_170714_616253",
+  "window_sim": [
+    507.62,
+    509.81
+  ],
+  "global_estimate": {
+    "samples": 73,
+    "p95_scatter_m": 0.024381234355979373,
+    "max_displacement_m": 0.03659866244001635
+  },
+  "local_odometry": {
+    "samples": 73,
+    "p95_scatter_m": 0.00042675605563178036,
+    "max_displacement_m": 0.0004537110860027463
+  },
+  "offline_true_position": {
+    "samples": 110,
+    "p95_scatter_m": 0.0,
+    "max_displacement_m": 0.0
+  },
+  "scope": "Offline diagnosis only. True pose not used by runtime. Window from final docking check; independent sampling differs from monitor history."
+}

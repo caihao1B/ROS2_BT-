@@ -23,25 +23,25 @@ controller_server:
       movement_time_allowance: 20.0
     goal:
       plugin: nav2_controller::PositionGoalChecker
-      xy_goal_tolerance: 0.05
+      xy_goal_tolerance: 0.025
       stateful: false
     DWB:
       plugin: dwb_core::DWBLocalPlanner
       debug_trajectory_details: false
       min_vel_x: 0.0
       min_vel_y: 0.0
-      max_vel_x: 0.4
+      max_vel_x: 0.25
       max_vel_y: 0.0
-      max_vel_theta: 0.45
+      max_vel_theta: 0.3
       min_speed_xy: 0.0
-      max_speed_xy: 0.4
+      max_speed_xy: 0.25
       min_speed_theta: 0.0
-      acc_lim_x: 0.5
+      acc_lim_x: 0.3
       acc_lim_y: 0.0
-      acc_lim_theta: 0.8
-      decel_lim_x: -0.8
+      acc_lim_theta: 0.4
+      decel_lim_x: -0.45
       decel_lim_y: 0.0
-      decel_lim_theta: -0.8
+      decel_lim_theta: -0.5
       vx_samples: 18
       vy_samples: 1
       vtheta_samples: 24
@@ -79,26 +79,26 @@ controller_server:
         scale: 0.02
     RPP:
       plugin: nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
-      desired_linear_vel: 0.3
+      desired_linear_vel: 0.28
       lookahead_dist: 0.45
       min_lookahead_dist: 0.25
       max_lookahead_dist: 0.7
       lookahead_time: 3.0
       use_velocity_scaled_lookahead_dist: false
       transform_tolerance: 0.15
-      min_approach_linear_velocity: 0.02
+      min_approach_linear_velocity: 0.01
       approach_velocity_scaling_dist: 0.6
       use_collision_detection: true
       max_allowed_time_to_collision_up_to_carrot: 2.0
       use_regulated_linear_velocity_scaling: true
       use_cost_regulated_linear_velocity_scaling: false
-      regulated_linear_scaling_min_radius: 0.6
-      regulated_linear_scaling_min_speed: 0.03
+      regulated_linear_scaling_min_radius: 1.4
+      regulated_linear_scaling_min_speed: 0.01
       use_rotate_to_heading: true
       allow_reversing: false
-      max_angular_accel: 0.5
+      max_angular_accel: 0.4
       max_robot_pose_search_dist: 8.0
-      rotate_to_heading_angular_vel: 0.35
+      rotate_to_heading_angular_vel: 0.25
       rotate_to_heading_min_angle: 0.45
     MPPI:
       plugin: s13::MeasuredController

@@ -2,6 +2,7 @@
 from common import *
 from analyze_r02 import rows
 import numpy as np,math,sqlite3
+from runtime_binding_r10 import spray_runtime_valid
 
 def analyze(out):
     runtime=read(out/'runtime.json');spec=read(out/'spec.json');cfg=read(out/'mission.json');mission=read(out/'mission_result.json') if (out/'mission_result.json').exists() else {};checks=dict(runtime_clean=runtime['passed'],map_database_unchanged=runtime['original_db_unchanged'],mission_completed=mission.get('passed',False),qualified_three_points=mission.get('selected_points',0)>=3)
@@ -30,9 +31,9 @@ def analyze(out):
     replay=mission.get('replay') or {};checks['idempotent_replay_no_extra_flow']=bool(replay.get('replayed') and replay.get('meter_before') is not None and abs(replay['meter_after']-replay['meter_before'])<=.01)
     checks['measured_final_stop']=bool(mission.get('final_gate') and mission['final_gate']['stopped'] and mission['final_gate']['tool_stopped']) and bool(physical) and abs(physical[-1]['rpm_rad_s'])<.1 and physical[-1]['flow']==0
     graph=mission.get('ownership',{});checks['unique_actuator_owner']=[x['node'] for x in graph.get('/s03/actuator/request',[])]==['r07_actuator_gate'];checks['unique_tool_owner']=[x['node'] for x in graph.get('/s10/tool/command',[])]==['s10_tool_action_server'];checks['unique_transform_owners']=set(x['node'] for x in graph.get('/tf',[]))=={'s05_local_odometry','s08_global_pose_manager'} and len(graph.get('/tf',[]))==2
-    checks['implementation_bound']=bool(spec.get('implementation_bindings')) and all((ROOT/p).is_file() and sha(ROOT/p)==h for p,h in spec.get('implementation_bindings',{}).items());checks['probe_source_bound']=spec.get('online_probe_sha256')==sha(PKG/'scripts/mission_spray_r10.py');checks['runtime_source_bound']=spec.get('runtime_sha256')==sha(PKG/'scripts/runtime_spray_r10.py');checks['task_version_bound']=cfg['version']==read(edition('R10')/'spray/mission.json')['version']
+    checks['implementation_bound']=bool(spec.get('implementation_bindings')) and all((ROOT/p).is_file() and sha(ROOT/p)==h for p,h in spec.get('implementation_bindings',{}).items());checks['probe_source_bound']=spec.get('online_probe_sha256')==sha(PKG/'scripts/mission_spray_r10.py');checks['runtime_source_bound']=spray_runtime_valid(spec);checks['task_version_bound']=cfg['version']==read(edition('R10')/'spray/mission.json')['version']
     if spec['case']=='tool_jam':
-        events=rows(out/'mission_events.jsonl');checks['real_fault_and_residual_retry']=bool((out/'fault_injection.json').exists() and any(x['event']=='RESIDUAL_RETRY' for x in events))
+        events=rows(out/'mission_events.jsonl');checks['real_fault_and_residual_retry']=bool((out/'fault_injection.json').exists() and read(out/'fault_injection.json')['exit']==0 and any(not x['healthy'] for x in physical) and all(x['flow']==0 for x in physical if not x['healthy']) and any(x['event']=='TOOL_RESULT' and x.get('reason')=='TOOL_HEALTH' for x in events) and any(x['event']=='RESIDUAL_RETRY' for x in events))
     result=dict(passed=all(checks.values()),checks={k:bool(v) for k,v in checks.items()},case=spec['case'],cluster=spec['cluster'],map_xy_rmse_m=rmse,jobs=jobs,unexpected_contacts=unsafe_contacts,task_result=mission,wall_seconds=runtime['wall_seconds'],original_obligations_preserved=True,formal_credit=False,scope='Explicit point count and remaining original obligations; no inherited full-cluster credit')
     dump(out/'analysis_spray_r10.json',result);np.savez(out/'errors.npz',map_error=np.asarray(err),truth_xy=xy,truth_t=rt);return result
 
@@ -44,4 +45,4 @@ def figures(paths):
         if len(e):axes[1].plot(e[:,0],e[:,1],label=case)
     axes[0].axis('equal');axes[0].set(title='Actual point-service vehicle trajectory',xlabel='Site X [m]',ylabel='Site Y [m]');axes[1].set(title='Online map estimate / offline truth evaluation',xlabel='Simulation seconds',ylabel='XY error [m]')
     for ax in axes:ax.grid(alpha=.3);ax.legend()
-    fig.tight_layout();p=APP/'results/R07/task.png';fig.savefig(p,dpi=150);plt.close(fig);return[p]
+    fig.tight_layout();p=APP/'results/R10/spray.png';fig.savefig(p,dpi=150);plt.close(fig);return[p]

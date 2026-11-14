@@ -1,0 +1,13 @@
+{
+  "spawn": [
+    22.5,
+    43.5,
+    0.0
+  ],
+  "online_access": false,
+  "coarse_operator_map_hint": [
+    -5.0,
+    29.0,
+    0.05
+  ]
+}

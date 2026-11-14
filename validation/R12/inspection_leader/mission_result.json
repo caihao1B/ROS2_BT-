@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "terminal": "COMPLETED",
+  "controlled_hold": false,
+  "error": null,
+  "manual_reason": null,
+  "t": 119.812,
+  "selected_length_m": 19.995639270704046,
+  "original_length_m": 88.48099013627925,
+  "full_route_selected": false,
+  "remaining_original_m": 68.58533233580827,
+  "route_index": 199,
+  "replans": 0,
+  "final_gate": {
+    "t": 119.79,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "NAV_COMMAND_STALE"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 20.183091883285964
+  },
+  "ownership": {
+    "/tf": [
+      "s05_local_odometry",
+      "s08_global_pose_manager"
+    ],
+    "/s03/actuator/request": [
+      "r08_actuator_gate"
+    ],
+    "/s10/tool/command": []
+  },
+  "wall_seconds": 314.6954004279978,
+  "scope": "Inspection navigation; residuals remain; no spray/mow credit"
+}

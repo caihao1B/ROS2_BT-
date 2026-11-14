@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "capture": {
+    "passed": true,
+    "frames": 80,
+    "sample_frames": 65,
+    "source": "actual Gazebo observer camera",
+    "autonomous_motion": false,
+    "real_time_factor": 0.39995337237570716,
+    "received_wall_fps": 3.1996269790056573,
+    "first_sim": 2.0,
+    "last_sim": 10.0
+  },
+  "error": null,
+  "forced": [],
+  "process_exits": {
+    "server": 0,
+    "camera_bridge": 0,
+    "capture": 0
+  },
+  "wall_seconds": 29.135316236002836,
+  "scene_sha256": "a72fa5e1c23dcde6c843a647622e445bb92ac841868d660474b92778fbd1d8d5"
+}

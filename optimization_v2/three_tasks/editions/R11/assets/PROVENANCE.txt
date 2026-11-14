@@ -1,0 +1,1 @@
+Original deterministic Python/Pillow panel textures. No third-party logo or downloaded artwork. Geometry and non-material SDF nodes are unchanged. Camera pixels change and require recorded replay qualification.

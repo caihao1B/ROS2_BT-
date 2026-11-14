@@ -1,0 +1,147 @@
+{
+  "episodes": [
+    {
+      "case": "spray",
+      "run": "optimization_v2/three_tasks/results/R12/spray_20261114_170025_915535",
+      "task_passed": true,
+      "full_path": "optimization_v2/three_tasks/results/R12/spray_20261114_170025_915535/video/full.mp4",
+      "full_sha256": "a1f46a98223a90c18f42f40117c473a495f1b684d047228407f0709418267623",
+      "full_seconds": 397.0,
+      "sim_first": 0.376,
+      "sim_last": 154.376,
+      "overview_speed": 9,
+      "overview_path": "optimization_v2/three_tasks/results/R12/media/spray_overview.mp4",
+      "overview_sha256": "6139173e80378022433b0f20f102b45fe45c9dc3b649cd54b5ac07420cc918aa",
+      "timeline_complete": true,
+      "behavior_excerpt": {
+        "start_sim": 63.5,
+        "end_sim": 110.876,
+        "start_video_s": 162.2,
+        "duration_video_s": 122.19999999999999,
+        "speed": 3,
+        "label": "工具故障 / 关停 / 按账本补作残余",
+        "selection": "actual recorded events; no synthesized scene motion or behavior",
+        "path": "optimization_v2/three_tasks/results/R12/media/spray_behavior.mp4",
+        "sha256": "7ae6658a94a8314bd38b91ce8514f0c4948d8dac66b3a3353379294aa3e968b9"
+      }
+    },
+    {
+      "case": "inspection",
+      "run": "optimization_v2/three_tasks/results/R12/inspection_20261114_160433_163459",
+      "task_passed": true,
+      "full_path": "optimization_v2/three_tasks/results/R12/inspection_20261114_160433_163459/video/full.mp4",
+      "full_sha256": "9acec2107601374bee7d333364b2e5338a625658666fa98cfaf4d75286990aa6",
+      "full_seconds": 867.0,
+      "sim_first": 0.25,
+      "sim_last": 333.376,
+      "overview_speed": 20,
+      "overview_path": "optimization_v2/three_tasks/results/R12/media/inspection_overview.mp4",
+      "overview_sha256": "c870e7a2dfaa1097b3f1dc4967d87019fe5614e788924bc390307449f8177dc5",
+      "timeline_complete": true,
+      "behavior_excerpt": {
+        "start_sim": 111.626,
+        "end_sim": 201.75,
+        "start_video_s": 290.4,
+        "duration_video_s": 233.0,
+        "speed": 6,
+        "label": "传感器检测 / 实际重规划 / 绕行后接回",
+        "selection": "actual recorded events; no synthesized scene motion or behavior",
+        "path": "optimization_v2/three_tasks/results/R12/media/inspection_behavior.mp4",
+        "sha256": "0612f98d415d99eb1aafef71c66a6dc060968030dcddf9b982324522ac024b5e"
+      }
+    },
+    {
+      "case": "inspection_leader",
+      "run": "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381",
+      "task_passed": true,
+      "full_path": "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/video/full.mp4",
+      "full_sha256": "9a46b73cb863298dc43ce31709da39eda6f02a619e0d398a0a103213f7651a11",
+      "full_seconds": 316.4,
+      "sim_first": 0.376,
+      "sim_last": 121.376,
+      "overview_speed": 8,
+      "overview_path": "optimization_v2/three_tasks/results/R12/media/inspection_leader_overview.mp4",
+      "overview_sha256": "ce1f2416f9cdd892a1bed52e2b2908c6ae6097f6bfa65eb18f94962d3ce45858",
+      "timeline_complete": true,
+      "behavior_excerpt": {
+        "start_sim": 55.0,
+        "end_sim": 90.0,
+        "start_video_s": 142.4,
+        "duration_video_s": 91.4,
+        "speed": 3,
+        "label": "跟随前车 / 前车停止后停车 / 恢复跟随",
+        "selection": "actual recorded events; no synthesized scene motion or behavior",
+        "path": "optimization_v2/three_tasks/results/R12/media/inspection_leader_behavior.mp4",
+        "sha256": "f5e6869aa72c98a8b0b32e8bfbb67a937feef50c8b846609e7ed25fd3a10e73b"
+      }
+    },
+    {
+      "case": "mowing",
+      "run": "optimization_v2/three_tasks/results/R12/mowing_20261114_173824_624692",
+      "task_passed": true,
+      "full_path": "optimization_v2/three_tasks/results/R12/mowing_20261114_173824_624692/video/full.mp4",
+      "full_sha256": "bdfb34a1de256386c10f0fd4700cd2136990a4af7b75afde34ba3293aff55ebc",
+      "full_seconds": 489.2,
+      "sim_first": 0.376,
+      "sim_last": 186.75,
+      "overview_speed": 11,
+      "overview_path": "optimization_v2/three_tasks/results/R12/media/mowing_overview.mp4",
+      "overview_sha256": "c37793fa53c62eb7a3fdfafc86e6e4abd951b0ca6e7ba7de70cf9ca337ce6b9d",
+      "timeline_complete": true,
+      "behavior_excerpt": {
+        "start_sim": 69.626,
+        "end_sim": 125.0,
+        "start_video_s": 181.8,
+        "duration_video_s": 143.59999999999997,
+        "speed": 4,
+        "label": "关刀换行 / 停车选挡 / 开始下一条带",
+        "selection": "actual recorded events; no synthesized scene motion or behavior",
+        "path": "optimization_v2/three_tasks/results/R12/media/mowing_behavior.mp4",
+        "sha256": "1ae8653c32105ed82737226570ec9646bab4be8028755c0b989e637677630ad4"
+      }
+    },
+    {
+      "case": "inspection_blocked",
+      "run": "optimization_v2/three_tasks/results/R12/inspection_20261114_181645_878210",
+      "task_passed": true,
+      "full_path": "optimization_v2/three_tasks/results/R12/inspection_20261114_181645_878210/video/full.mp4",
+      "full_sha256": "911097333988c4b8e0a56a81dbb73fcd5a2bcfd0fafa5a26e67e606862a19b11",
+      "full_seconds": 256.2,
+      "sim_first": 0.126,
+      "sim_last": 74.75,
+      "overview_speed": 6,
+      "overview_path": "optimization_v2/three_tasks/results/R12/media/inspection_blocked_overview.mp4",
+      "overview_sha256": "7efa0d27d194441a3b2f584027d64ad6d0e4061986268823c5ef72167baa5dca",
+      "timeline_complete": true,
+      "behavior_excerpt": {
+        "start_sim": 58.126,
+        "end_sim": 74.75,
+        "start_video_s": 197.6,
+        "duration_video_s": 56.80000000000001,
+        "speed": 2,
+        "label": "持续受阻 / 有限规划查询 / 停车请求人工",
+        "selection": "actual recorded events; no synthesized scene motion or behavior",
+        "path": "optimization_v2/three_tasks/results/R12/media/inspection_blocked_behavior.mp4",
+        "sha256": "302c00838b809a78598c9a4e3a28a245fe921202664e81e3e2544f06d69803fe"
+      }
+    }
+  ],
+  "full": {
+    "path": "optimization_v2/three_tasks/results/R12/media/full_recordings.mp4",
+    "sha256": "09c25d8283d774fdb565ac67957560913c04b2e700e9a2476e54c6d99d4987cf",
+    "speed": 1
+  },
+  "short": {
+    "path": "optimization_v2/three_tasks/results/R12/media/three_tasks_short.mp4",
+    "sha256": "af8ea86e4f94e1bb8ce676c0277ec334a99c62ebc21986ec0f6c4f21a67ca9da",
+    "speed": "per-episode labeled acceleration"
+  },
+  "no_generated_scene_motion": true,
+  "formal_S17_S18": "PARTIAL",
+  "scope": "Complete recorded execution intervals, including actual holds/failures; full recording does not mean full work completion",
+  "behaviors": {
+    "path": "optimization_v2/three_tasks/results/R12/media/behavior_highlights.mp4",
+    "sha256": "f57ce7e9b07952e9d5c077d3e02d065458df8fff1c49b70238b4a1be29aebff8",
+    "speed": "per-excerpt labeled acceleration"
+  }
+}

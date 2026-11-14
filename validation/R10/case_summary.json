@@ -1,0 +1,259 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "spray_full_A1",
+      "passed": false,
+      "simulation_seconds": 509.824,
+      "wall_seconds": 1312.3374528669956,
+      "terminal": "INCOMPLETE",
+      "reason": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+      "selected_points": 56,
+      "original_points": 56,
+      "confirmed_points": 8,
+      "selected_segments": null,
+      "original_segments": null,
+      "confirmed_segments": null,
+      "confirmed_area_m2": null,
+      "residual_area_m2": null,
+      "remaining_original_route_m": null,
+      "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit",
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_170714_616253",
+      "terminal_snapshot": {
+        "bt_reason": "NEXT_OBLIGATION",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "gate_reasons": [
+          "NAV_COMMAND_STALE"
+        ],
+        "scope": "Last snapshot for context, not an independent root-cause conclusion"
+      }
+    },
+    {
+      "case": "spray_tool_jam",
+      "passed": true,
+      "simulation_seconds": 153.178,
+      "wall_seconds": 395.73066145899065,
+      "terminal": "COMPLETED",
+      "reason": null,
+      "selected_points": 3,
+      "original_points": 56,
+      "confirmed_points": 3,
+      "selected_segments": null,
+      "original_segments": null,
+      "confirmed_segments": null,
+      "confirmed_area_m2": null,
+      "residual_area_m2": null,
+      "remaining_original_route_m": null,
+      "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit",
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_170025_915535",
+      "terminal_snapshot": {
+        "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "gate_reasons": [
+          "NAV_COMMAND_STALE"
+        ],
+        "scope": "Last snapshot for context, not an independent root-cause conclusion"
+      }
+    },
+    {
+      "case": "mowing_full_B1",
+      "passed": false,
+      "simulation_seconds": 529.17,
+      "wall_seconds": 1384.6724134340038,
+      "terminal": "HUMAN_REQUIRED",
+      "reason": "TimeoutError('WAIT_DEADLINE')",
+      "selected_points": null,
+      "original_points": null,
+      "confirmed_points": null,
+      "selected_segments": 34,
+      "original_segments": 34,
+      "confirmed_segments": 12,
+      "confirmed_area_m2": 49.960230326157465,
+      "residual_area_m2": 138.431571366799,
+      "remaining_original_route_m": null,
+      "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_174644_953306",
+      "terminal_snapshot": {
+        "bt_reason": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT",
+        "localization_reason": "GNSS_FIXED_AND_INNOVATION_VALID",
+        "gate_reasons": [
+          "NAV_COMMAND_STALE",
+          "TOOL_STATE_FOR_SEGMENT",
+          "OBSTRUCTED"
+        ],
+        "scope": "Last snapshot for context, not an independent root-cause conclusion"
+      },
+      "endpoint_recovery_successes": [
+        {
+          "t": 314.22,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:segment:6",
+          "attempt": 1,
+          "pause_restarts": 1
+        },
+        {
+          "t": 446.55,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:segment:10",
+          "attempt": 0,
+          "pause_restarts": 0
+        }
+      ],
+      "observation_resume_count": 1
+    },
+    {
+      "case": "inspection_full_connector",
+      "passed": true,
+      "simulation_seconds": 343.642,
+      "wall_seconds": 893.1436295809981,
+      "terminal": "COMPLETED",
+      "reason": null,
+      "selected_points": null,
+      "original_points": null,
+      "confirmed_points": null,
+      "selected_segments": null,
+      "original_segments": null,
+      "confirmed_segments": null,
+      "confirmed_area_m2": null,
+      "residual_area_m2": null,
+      "remaining_original_route_m": 0.099977027539083,
+      "scope": "Declared independent inspection case only; blocked-case PASS means controlled hold, never route completion",
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658",
+      "terminal_snapshot": {
+        "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "gate_reasons": [
+          "NAV_COMMAND_STALE"
+        ],
+        "scope": "Last snapshot for context, not an independent root-cause conclusion"
+      }
+    },
+    {
+      "case": "inspection_follow_stop_resume",
+      "passed": true,
+      "simulation_seconds": 108.532,
+      "wall_seconds": 286.49436309799785,
+      "terminal": "COMPLETED",
+      "reason": null,
+      "selected_points": null,
+      "original_points": null,
+      "confirmed_points": null,
+      "selected_segments": null,
+      "original_segments": null,
+      "confirmed_segments": null,
+      "confirmed_area_m2": null,
+      "residual_area_m2": null,
+      "remaining_original_route_m": 73.58434672664208,
+      "scope": "Declared independent inspection case only; blocked-case PASS means controlled hold, never route completion",
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_123912_581545",
+      "terminal_snapshot": {
+        "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "gate_reasons": [
+          "NAV_COMMAND_STALE"
+        ],
+        "scope": "Last snapshot for context, not an independent root-cause conclusion"
+      }
+    },
+    {
+      "case": "inspection_detour",
+      "passed": true,
+      "simulation_seconds": 100.074,
+      "wall_seconds": 266.37195582200366,
+      "terminal": "COMPLETED",
+      "reason": null,
+      "selected_points": null,
+      "original_points": null,
+      "confirmed_points": null,
+      "selected_segments": null,
+      "original_segments": null,
+      "confirmed_segments": null,
+      "confirmed_area_m2": null,
+      "residual_area_m2": null,
+      "remaining_original_route_m": 73.58434672664208,
+      "scope": "Declared independent inspection case only; blocked-case PASS means controlled hold, never route completion",
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_124410_931009",
+      "terminal_snapshot": {
+        "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "gate_reasons": [
+          "NAV_COMMAND_STALE"
+        ],
+        "scope": "Last snapshot for context, not an independent root-cause conclusion"
+      }
+    },
+    {
+      "case": "inspection_persistent_block",
+      "passed": true,
+      "simulation_seconds": 79.298,
+      "wall_seconds": 210.20496897499834,
+      "terminal": "HUMAN_REQUIRED",
+      "reason": "NO_VALIDATED_ROUTE_WITHIN_BOUNDED_SEARCH",
+      "selected_points": null,
+      "original_points": null,
+      "confirmed_points": null,
+      "selected_segments": null,
+      "original_segments": null,
+      "confirmed_segments": null,
+      "confirmed_area_m2": null,
+      "residual_area_m2": null,
+      "remaining_original_route_m": 72.1846363328619,
+      "scope": "Declared independent inspection case only; blocked-case PASS means controlled hold, never route completion",
+      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_124850_642479",
+      "terminal_snapshot": {
+        "bt_reason": "BOUNDED_REPLAN_EXHAUSTED",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "gate_reasons": [
+          "NAV_COMMAND_STALE",
+          "OBSTRUCTED",
+          "PATCH_PREFIX"
+        ],
+        "scope": "Last snapshot for context, not an independent root-cause conclusion"
+      }
+    },
+    {
+      "case": "mowing_persistent_block",
+      "passed": true,
+      "simulation_seconds": 62.728,
+      "wall_seconds": 167.72069314299733,
+      "terminal": "HUMAN_REQUIRED",
+      "reason": "RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')",
+      "selected_points": null,
+      "original_points": null,
+      "confirmed_points": null,
+      "selected_segments": 5,
+      "original_segments": 34,
+      "confirmed_segments": 0,
+      "confirmed_area_m2": 2.5984625000000006,
+      "residual_area_m2": 25.355519206793986,
+      "remaining_original_route_m": null,
+      "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
+      "path": "optimization_v2/three_tasks/results/R09/mowing_20261114_140747_354583",
+      "terminal_snapshot": {
+        "bt_reason": "PERSISTENT_BLOCK_GLOBAL_QUERY",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "gate_reasons": [
+          "NAV_COMMAND_STALE",
+          "TOOL_STATE_FOR_SEGMENT",
+          "OBSTRUCTED"
+        ],
+        "scope": "Last snapshot for context, not an independent root-cause conclusion"
+      }
+    }
+  ],
+  "pending": [
+    "spray_full_A1 failed current evidence checks",
+    "mowing_full_B1 failed current evidence checks",
+    "Full original A1 not completed; partial point demo does not replace it",
+    "Full original B1 traversal not completed; partial swaths do not replace it"
+  ],
+  "original_obligations": {
+    "A1_points": 56,
+    "B1_segments": 34,
+    "connector_m": 88.48099013627927
+  },
+  "formal_credit": false,
+  "original_S17": "PARTIAL",
+  "original_S18": "PARTIAL",
+  "scope": "Three separately run task acceptance cases plus declared bounded faults; no sixty-run matrix, no A2/A3/B2/B3 or cutting-effectiveness claim"
+}

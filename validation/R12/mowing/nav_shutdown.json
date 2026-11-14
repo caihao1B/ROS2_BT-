@@ -1,0 +1,6 @@
+{
+  "exit": 0,
+  "output": "waiting for service to become available...\nrequester: making request: nav2_msgs.srv.ManageLifecycleNodes_Request(command=4)\n\nresponse:\nnav2_msgs.srv.ManageLifecycleNodes_Response(success=True)\n\n",
+  "stderr": "",
+  "passed": true
+}

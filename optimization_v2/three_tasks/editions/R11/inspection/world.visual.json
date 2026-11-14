@@ -1,0 +1,15 @@
+{
+  "task": "inspection",
+  "changed_materials": 42,
+  "geometry_sensor_physics_signature": "d6668432833c1a0b736debe6f8a53e1b11c36901db5b54731c586fbd4bcb1b86",
+  "geometry_and_physics_unchanged": true,
+  "source_sha256": "7976087a44a77f05a7c1093f8eb88ff754a6c208417e96f004b2b4e5a309a486",
+  "destination_sha256": "7a313c9729da23da7e6f28ca05d6311ff307f1b21e39aabc03173dc366714e11",
+  "sensor_pixels": "CHANGED_REQUIRES_SEPARATE_QUALIFICATION",
+  "assets": {
+    "optimization_v2/three_tasks/editions/R11/assets/PROVENANCE.txt": "390060d573c52103cc0aadd19d9a262887c8d2172d8d5491c2e7cdd8472d4bff",
+    "optimization_v2/three_tasks/editions/R11/assets/inspection.png": "21cf9d262990553e932f5a4cf5215540dcf798e5e63a860eb84af83dae95717d",
+    "optimization_v2/three_tasks/editions/R11/assets/spray.png": "1450a56da2c9284508080715308085bc33bfde6b7ab569b02c38baac70d88ba6",
+    "optimization_v2/three_tasks/editions/R11/assets/mowing.png": "0b10832c5a4621bc63f8bf6ecea71bc1cce0ac57d84b82806e1be35a2b6e423f"
+  }
+}

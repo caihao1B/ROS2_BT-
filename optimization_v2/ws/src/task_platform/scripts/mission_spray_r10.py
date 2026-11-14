@@ -1,5 +1,6 @@
 """Point-service dispatcher: Nav2 action -> measured stop -> tool action -> ledger."""
 import argparse,json,time,signal,math
+from progress_spray_r10 import NearGoalProgress
 from pathlib import Path
 import rclpy
 from rclpy.action import ActionClient
@@ -10,6 +11,7 @@ from geometry_msgs.msg import PoseWithCovarianceStamped
 from std_msgs.msg import String
 from rosgraph_msgs.msg import Clock
 from std_srvs.srv import Trigger
+from docking_r10 import stable_dock
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);a=ap.parse_args();out=a.out;spec=json.loads((out/'spec.json').read_text());cfg=json.loads((out/'mission.json').read_text());toolcfg=json.loads((out/'scene/tool.json').read_text());cluster=next(x for x in cfg['clusters'] if x['id']==spec['cluster']);allpoints=cluster['points'];points=allpoints[:spec['point_limit']] if spec['point_limit'] else allpoints
@@ -47,9 +49,17 @@ def main():
         for attempt in range(3):
             st['phase']='STOPPING';wait(lambda:bool(st['gate'] and st['gate']['stopped'] and st['gate']['tool_stopped']),6)
             since=st['t'];wait(lambda:st['t']>=since+cfg['docking_settle_s'],4)
+            history=[];stable=False;metrics={};observation_start=st['t']
+            while st['t']-observation_start<8.:
+                tick();loc=st['loc'] or {};gate=st['gate'] or {}
+                if loc.get('valid') and -.03<=st['t']-loc.get('t',-100)<.15 and gate.get('stopped') and gate.get('tool_stopped') and 'pose' in loc:
+                    if not history or loc['t']>history[-1][0]:history.append((loc['t'],loc['pose'][:2]))
+                    history=[x for x in history if loc['t']-x[0]<=2.2];stable,metrics=stable_dock(history,p['target'])
+                    if stable:break
+                else:history=[]
             loc=st['loc'] or {};distance=math.dist(loc['pose'][:2],p['target']) if loc.get('valid') and 'pose' in loc else float('inf')
-            log('DOCKING_SETTLED_CHECK',point=p['id'],distance_m=distance,attempt=attempt)
-            if distance<=.065 and not force:return
+            log('DOCKING_SETTLED_CHECK',point=p['id'],distance_m=distance,attempt=attempt,stable=stable,stability=metrics)
+            if stable and not force:return
             force=False
             if attempt>=cfg['docking_realign_max_attempts']:raise RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')
             wait(lambda:bool(st['bt'] and st['bt']['action']=='EXECUTE' and st['loc'] and st['loc']['valid']),12)
@@ -97,11 +107,17 @@ def main():
                 g=NavigateToPose.Goal();g.pose.header.frame_id='map';g.pose.pose.position.x=p['target'][0];g.pose.pose.position.y=p['target'][1];g.pose.pose.orientation.z=math.sin(p['yaw']/2);g.pose.pose.orientation.w=math.cos(p['yaw']/2)
                 st.update(phase='NAVIGATING',nav_idle=False);active_nav=result(nav.send_goal_async(g),10)
                 if not active_nav.accepted:active_nav=None;st.update(nav_idle=True,nav_failed=True,phase='NAV_FAILED');log('NAV_REJECTED',point=p['id']);attempt+=1;continue
-                log('NAV_GOAL',point=p['id'],target=p['target'],attempt=attempt);f=active_nav.get_result_async();nav_start=st['t'];interrupted=False
+                log('NAV_GOAL',point=p['id'],target=p['target'],attempt=attempt);f=active_nav.get_result_async();nav_start=st['t'];interrupted=False;near_progress=NearGoalProgress(cfg['navigation_recovery'])
                 while not f.done():
                     tick();bt=st['bt'] or {};action=bt.get('action')
                     if action in ['CANCEL','STOP','HUMAN','REPLAN','DEFER','WAIT'] and st['t']-nav_start>1.:
                         log('BT_INTERRUPTS_NAV',action=action,reason=bt.get('reason_code'));interrupted=True;cancel_nav();break
+                    loc=st['loc'] or {};gate=st['gate'] or {};stalled=None
+                    if loc.get('pose'):
+                        qualified=bool(loc.get('valid') and -.03<=st['t']-loc.get('t',-100)<.15 and action=='EXECUTE')
+                        stalled=near_progress.update(loc.get('t',st['t']),loc['pose'],p['target'],qualified,gate.get('v',0.))
+                    if stalled:
+                        log('NEAR_GOAL_PROGRESS_REPLAN',point=p['id'],attempt=attempt,evidence=stalled);cancel_nav();break
                     if st['t']-nav_start>120:cancel_nav();break
                 if f.done() and f.result().status==4:
                     active_nav=None;st.update(nav_idle=True,phase='STOPPING');wait(lambda:bool(st['gate'] and st['gate']['stopped']),5);succeeded=True;log('NAV_SUCCESS',point=p['id']);break

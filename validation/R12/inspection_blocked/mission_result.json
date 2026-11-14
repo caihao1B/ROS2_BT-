@@ -1,0 +1,41 @@
+{
+  "passed": false,
+  "terminal": "HUMAN_REQUIRED",
+  "controlled_hold": true,
+  "error": "RuntimeError('NO_VALIDATED_ROUTE_WITHIN_BOUNDED_SEARCH')",
+  "manual_reason": "NO_VALIDATED_ROUTE_WITHIN_BOUNDED_SEARCH",
+  "t": 74.112,
+  "selected_length_m": 19.995639270704046,
+  "original_length_m": 88.48099013627925,
+  "full_route_selected": false,
+  "remaining_original_m": 72.08465665426611,
+  "route_index": 164,
+  "replans": 2,
+  "final_gate": {
+    "t": 74.1,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "NAV_COMMAND_STALE",
+      "OBSTRUCTED"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 16.540525250903077
+  },
+  "ownership": {
+    "/tf": [
+      "s05_local_odometry",
+      "s08_global_pose_manager"
+    ],
+    "/s03/actuator/request": [
+      "r08_actuator_gate"
+    ],
+    "/s10/tool/command": []
+  },
+  "wall_seconds": 255.29725106598926,
+  "scope": "Inspection navigation; residuals remain; no spray/mow credit"
+}

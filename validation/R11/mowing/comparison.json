@@ -1,0 +1,70 @@
+{
+  "task": "mowing",
+  "passed": true,
+  "variants": {
+    "original": {
+      "passed": true,
+      "capture": {
+        "passed": true,
+        "frames": 80,
+        "sample_frames": 65,
+        "source": "actual Gazebo observer camera",
+        "autonomous_motion": false,
+        "real_time_factor": 0.39994518917160143,
+        "received_wall_fps": 3.1995615133728115,
+        "first_sim": 2.0,
+        "last_sim": 10.0
+      },
+      "error": null,
+      "forced": [],
+      "process_exits": {
+        "server": 0,
+        "camera_bridge": 0,
+        "capture": 0
+      },
+      "wall_seconds": 29.29310218000319,
+      "scene_sha256": "034350caecc55b894b2147d24f4333c1e90f30d9db97ca1d33873c677dc1633d"
+    },
+    "material": {
+      "passed": true,
+      "capture": {
+        "passed": true,
+        "frames": 80,
+        "sample_frames": 65,
+        "source": "actual Gazebo observer camera",
+        "autonomous_motion": false,
+        "real_time_factor": 0.39995337237570716,
+        "received_wall_fps": 3.1996269790056573,
+        "first_sim": 2.0,
+        "last_sim": 10.0
+      },
+      "error": null,
+      "forced": [],
+      "process_exits": {
+        "server": 0,
+        "camera_bridge": 0,
+        "capture": 0
+      },
+      "wall_seconds": 29.135316236002836,
+      "scene_sha256": "a72fa5e1c23dcde6c843a647622e445bb92ac841868d660474b92778fbd1d8d5"
+    }
+  },
+  "material_to_original_rtf_ratio": 1.0000204608139498,
+  "minimum_ratio": 0.8,
+  "material_contract": {
+    "task": "mowing",
+    "changed_materials": 43,
+    "geometry_sensor_physics_signature": "0544a441855dd47c4f56abed1725825701b9ed18b27c1f955652a0ea7afc6a62",
+    "geometry_and_physics_unchanged": true,
+    "source_sha256": "034350caecc55b894b2147d24f4333c1e90f30d9db97ca1d33873c677dc1633d",
+    "destination_sha256": "a72fa5e1c23dcde6c843a647622e445bb92ac841868d660474b92778fbd1d8d5",
+    "sensor_pixels": "CHANGED_REQUIRES_SEPARATE_QUALIFICATION",
+    "assets": {
+      "optimization_v2/three_tasks/editions/R11/assets/PROVENANCE.txt": "390060d573c52103cc0aadd19d9a262887c8d2172d8d5491c2e7cdd8472d4bff",
+      "optimization_v2/three_tasks/editions/R11/assets/inspection.png": "21cf9d262990553e932f5a4cf5215540dcf798e5e63a860eb84af83dae95717d",
+      "optimization_v2/three_tasks/editions/R11/assets/spray.png": "1450a56da2c9284508080715308085bc33bfde6b7ab569b02c38baac70d88ba6",
+      "optimization_v2/three_tasks/editions/R11/assets/mowing.png": "0b10832c5a4621bc63f8bf6ecea71bc1cce0ac57d84b82806e1be35a2b6e423f"
+    }
+  },
+  "scope": "Paired parked 10-sim-second render test; no autonomy equivalence claim"
+}

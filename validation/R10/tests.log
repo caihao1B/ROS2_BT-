@@ -1,0 +1,45 @@
+test_approach_drift (test_docking_r10.Docking.test_approach_drift) ... ok
+test_last_pose_outside_margin (test_docking_r10.Docking.test_last_pose_outside_margin) ... ok
+test_one_lucky_pose_is_not_admission (test_docking_r10.Docking.test_one_lucky_pose_is_not_admission) ... ok
+test_stable_but_offset (test_docking_r10.Docking.test_stable_but_offset) ... ok
+test_stable_center (test_docking_r10.Docking.test_stable_center) ... ok
+test_stale_gap (test_docking_r10.Docking.test_stale_gap) ... ok
+test_all_original_obligations_retained (test_groups_mowing_r10.Groups.test_all_original_obligations_retained) ... ok
+test_arrived_group_cannot_fail_retry_guard (test_groups_mowing_r10.Groups.test_arrived_group_cannot_fail_retry_guard) ... ok
+test_group_budget_preserves_original_segment_limits (test_groups_mowing_r10.Groups.test_group_budget_preserves_original_segment_limits) ... ok
+test_headland_preserves_original_waypoints_and_order (test_groups_mowing_r10.Groups.test_headland_preserves_original_waypoints_and_order) ... ok
+test_never_connect_a_geometric_gap (test_groups_mowing_r10.Groups.test_never_connect_a_geometric_gap) ... ok
+test_never_merge_gear_change (test_groups_mowing_r10.Groups.test_never_merge_gear_change) ... ok
+test_primitive_mode_requires_each_original_goal (test_groups_mowing_r10.Groups.test_primitive_mode_requires_each_original_goal) ... ok
+test_unknown_execution_mode_cannot_silently_change_obligations (test_groups_mowing_r10.Groups.test_unknown_execution_mode_cannot_silently_change_obligations) ... ok
+test_work_regions_remain_original (test_groups_mowing_r10.Groups.test_work_regions_remain_original) ... ok
+test_wrong_position_or_heading_cannot_credit_passage (test_groups_mowing_r10.Groups.test_wrong_position_or_heading_cannot_credit_passage) ... ok
+test_angle_wrap_reaches_exact_orientation (test_ompl_endpoint_r10.ContinuousEndpoint.test_angle_wrap_reaches_exact_orientation) ... ok
+test_near_goal_with_lateral_and_heading_error (test_ompl_endpoint_r10.ContinuousEndpoint.test_near_goal_with_lateral_and_heading_error) ... ok
+test_same_position_is_not_an_in_place_yaw_jump (test_ompl_endpoint_r10.ContinuousEndpoint.test_same_position_is_not_an_in_place_yaw_jump) ... ok
+test_continuous_approach_is_not_a_stall (test_progress_spray_r10.NearGoal.test_continuous_approach_is_not_a_stall) ... ok
+test_far_obstacle_wait_is_not_endpoint_recovery (test_progress_spray_r10.NearGoal.test_far_obstacle_wait_is_not_endpoint_recovery) ... ok
+test_initial_in_place_alignment_is_not_a_stall (test_progress_spray_r10.NearGoal.test_initial_in_place_alignment_is_not_a_stall) ... ok
+test_near_circling_requests_bounded_replan (test_progress_spray_r10.NearGoal.test_near_circling_requests_bounded_replan) ... ok
+test_unqualified_or_stale_poses_cannot_trigger (test_progress_spray_r10.NearGoal.test_unqualified_or_stale_poses_cannot_trigger) ... ok
+test_body_outside (test_recovery_mowing_r10.RecoveryAdmission.test_body_outside) ... ok
+test_gear_interlock (test_recovery_mowing_r10.RecoveryAdmission.test_gear_interlock) ... ok
+test_no_in_place_ackermann (test_recovery_mowing_r10.RecoveryAdmission.test_no_in_place_ackermann) ... ok
+test_no_preselection_with_motion_tool_or_recovery (test_recovery_mowing_r10.RecoveryAdmission.test_no_preselection_with_motion_tool_or_recovery) ... ok
+test_reverse_turn_to_work_requires_preselection_before_tool_start (test_recovery_mowing_r10.RecoveryAdmission.test_reverse_turn_to_work_requires_preselection_before_tool_start) ... ok
+test_sharp_curve_rejected (test_recovery_mowing_r10.RecoveryAdmission.test_sharp_curve_rejected) ... ok
+test_straight_real_candidate (test_recovery_mowing_r10.RecoveryAdmission.test_straight_real_candidate) ... ok
+test_wrong_goal (test_recovery_mowing_r10.RecoveryAdmission.test_wrong_goal) ... ok
+test_distant_or_wrong_heading_does_not_advance (test_resume_cursor_r10.RecoveryCursor.test_distant_or_wrong_heading_does_not_advance) ... ok
+test_final_index_retained (test_resume_cursor_r10.RecoveryCursor.test_final_index_retained) ... ok
+test_monotonic_local_progress (test_resume_cursor_r10.RecoveryCursor.test_monotonic_local_progress) ... ok
+test_near_return_branch_cannot_skip_loop (test_resume_cursor_r10.RecoveryCursor.test_near_return_branch_cannot_skip_loop) ... ok
+test_changed_original_rejected (test_runtime_binding_r10.RuntimeBinding.test_changed_original_rejected) ... ok
+test_exact_observer_derivation_accepted (test_runtime_binding_r10.RuntimeBinding.test_exact_observer_derivation_accepted) ... ok
+test_normal_original_runtime_accepted (test_runtime_binding_r10.RuntimeBinding.test_normal_original_runtime_accepted) ... ok
+test_task_command_modification_rejected_even_with_updated_self_hash (test_runtime_binding_r10.RuntimeBinding.test_task_command_modification_rejected_even_with_updated_self_hash) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.394s
+
+OK

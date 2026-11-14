@@ -2100,8 +2100,8 @@
       ]
     ]
   },
-  "speed_cap_mps": 0.4,
-  "yaw_cap_rps": 0.45,
+  "speed_cap_mps": 0.3,
+  "yaw_cap_rps": 0.35,
   "terrain_plane_neighborhood_cells": 9,
   "ground_observation_filter": {
     "frames": 3,
@@ -3726,5 +3726,21 @@
     "planar_query": "nearest eligible normal; held-out mapped landmark candidates; raw unmodeled objects retained by perception"
   },
   "ground_statistic": "Raw-ray weighted quantiles; confidence-separated spatial modes; strong voxel hazards retained",
-  "version": "d3c9a33cebf83c33ec110d805d35bb279180ebd9de45964c7b0612154702b25e"
+  "navigation_recovery": {
+    "near_radius_m": 0.25,
+    "minimum_improvement_m": 0.005,
+    "stall_s": 8.0,
+    "minimum_translation_command_s": 2.0,
+    "maximum_sample_gap_s": 0.15
+  },
+  "docking_admission": {
+    "navigation_goal_m": 0.025,
+    "median_distance_m": 0.035,
+    "latest_distance_m": 0.045,
+    "scatter_p95_m": 0.015,
+    "span_s": 1.8,
+    "max_observation_wait_s": 8.0
+  },
+  "acceleration_profile": "RPP .28m/s desired, 1.4m curvature regulation radius, .25rad/s rotation, .40rad/s2 angular acceleration; physical drivetrain limits retained",
+  "version": "e5c39c60273e5682389c35d41faa9986d73e3f505a63c5d53ef3d6c9bac018fd"
 }

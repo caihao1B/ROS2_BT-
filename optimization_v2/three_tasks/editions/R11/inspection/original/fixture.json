@@ -1,0 +1,14 @@
+{
+  "spawn": [
+    49.0,
+    42.0,
+    -0.46364050993828665
+  ],
+  "online_access": false,
+  "coarse_operator_map_hint": [
+    21.5,
+    27.5,
+    -0.41364050993828666
+  ],
+  "case": "nominal"
+}
