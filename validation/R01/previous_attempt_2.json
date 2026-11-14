@@ -1,0 +1,38 @@
+{
+  "task_id": "inspection",
+  "task_version": "0568c7be528193cb9740be2ff3f557dde2e82fac292cb4114dc33aa8766d292f",
+  "run_id": "r01_inspection_20261114_023305_915375",
+  "lifecycle_status": "FAIL",
+  "mission_status": "PARTIAL",
+  "mission_complete": false,
+  "safety": true,
+  "localization_pass": true,
+  "termination": "OPERATOR_STOP",
+  "error": null,
+  "admitted": true,
+  "compat_loaded": true,
+  "server_exit": 0,
+  "abnormal_process_exits": [
+    {
+      "role": "rviz",
+      "exit": -6
+    }
+  ],
+  "expected_nonzero_exits": [
+    {
+      "role": "client",
+      "exit": 1
+    }
+  ],
+  "escalations": [],
+  "tool_shutdown": {
+    "state": "STOPPED",
+    "tool_on_requested": false
+  },
+  "survivors": [],
+  "sim_seconds": 42.365,
+  "wall_seconds": 127.37091381900245,
+  "child_exit": -2,
+  "formal_credit": false,
+  "scope": "R01 lifecycle probe; task completion scored separately using unchanged original standards"
+}

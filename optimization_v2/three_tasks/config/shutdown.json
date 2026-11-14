@@ -1,0 +1,28 @@
+{
+  "schema": "R01-GAZEBO-SHUTDOWN/1",
+  "gazebo_version": "8.15.0",
+  "preload": "/home/ceihao/robot_project/optimization_v2/three_tasks/build/libr01_shutdown_compat.so",
+  "symbol": "_ZN2gz3sim2v816SimulationRunner4StopEv",
+  "libraries": [
+    {
+      "path": "/home/ceihao/robot_project/optimization_v2/three_tasks/build/libr01_shutdown_compat.so",
+      "sha256": "974c8d425d25c0a5199bbde2ab54348695edd70a2813adcf430a3860c30e2372",
+      "resolved": "/home/ceihao/robot_project/optimization_v2/three_tasks/build/libr01_shutdown_compat.so"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0",
+      "sha256": "dfb8b2e4e5d5d945a9ebdd6645816e2297d535cd6a7e529bd66a2f6332142270",
+      "resolved": "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0"
+    },
+    {
+      "path": "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8",
+      "sha256": "a348e4d28376de4e59ba58402142d0ce9e2abd7852ab76e721a34bafa569ef19",
+      "resolved": "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8.15.0"
+    }
+  ],
+  "source": {
+    "path": "optimization_v2/ws/src/task_runtime/src/shutdown_compat.cc",
+    "sha256": "7d319400e1c3991a469556ac56b6e8f3ecb62e9ba9c93a6d1ea5633e98f13708"
+  },
+  "scope": "Process-local stop serialization and Boost TLS library retention. No physics, sensors or exit-code replacement."
+}

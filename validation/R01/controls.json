@@ -1,0 +1,49 @@
+{
+  "refusal_checks": [
+    {
+      "argv": [
+        "bash",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/run.sh",
+        "stop",
+        "mowing"
+      ],
+      "exit": 2,
+      "stdout": "{\"status\": \"TASK_SCOPE_MISMATCH\", \"requested\": \"mowing\", \"active\": \"inspection\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "bash",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/run.sh",
+        "smoke",
+        "spray"
+      ],
+      "exit": 2,
+      "stdout": "",
+      "stderr": "ANOTHER_PROJECT_SESSION_IS_ACTIVE\n"
+    }
+  ],
+  "operator_stop": {
+    "ready_before_stop": true,
+    "run": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687",
+    "exit": 0,
+    "stdout": "{\"status\": \"STOPPED\", \"task\": \"inspection\", \"output\": \"/home/ceihao/robot_project/optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687\", \"result\": {\"task_id\": \"inspection\", \"task_version\": \"0568c7be528193cb9740be2ff3f557dde2e82fac292cb4114dc33aa8766d292f\", \"run_id\": \"r01_inspection_20261114_023925_438687\", \"lifecycle_status\": \"PASS\", \"mission_status\": \"PARTIAL\", \"mission_complete\": false, \"safety\": true, \"localization_pass\": true, \"termination\": \"OPERATOR_STOP\", \"error\": null, \"admitted\": true, \"compat_loaded\": true, \"server_exit\": 0, \"abnormal_process_exits\": [], \"expected_nonzero_exits\": [{\"role\": \"client\", \"exit\": 1}], \"escalations\": [], \"tool_shutdown\": {\"state\": \"STOPPED\", \"tool_on_requested\": false}, \"survivors\": [], \"sim_seconds\": 42.151, \"wall_seconds\": 122.94284517099732, \"child_exit\": -2, \"formal_credit\": false, \"scope\": \"R01 lifecycle probe; task completion scored separately using unchanged original standards\"}}\n",
+    "stderr": ""
+  },
+  "previous_operator_stop_attempts": [
+    {
+      "ready_before_stop": true,
+      "run": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_022902_402297",
+      "exit": 0,
+      "stdout": "{\"status\": \"STOPPED\", \"task\": \"inspection\", \"output\": \"/home/ceihao/robot_project/optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_022902_402297\", \"result\": {\"task_id\": \"inspection\", \"task_version\": \"0568c7be528193cb9740be2ff3f557dde2e82fac292cb4114dc33aa8766d292f\", \"run_id\": \"r01_inspection_20261114_022902_402297\", \"lifecycle_status\": \"FAIL\", \"mission_status\": \"PARTIAL\", \"mission_complete\": false, \"safety\": true, \"localization_pass\": true, \"termination\": \"OPERATOR_STOP\", \"error\": null, \"admitted\": true, \"compat_loaded\": true, \"server_exit\": 0, \"abnormal_process_exits\": [{\"role\": \"rviz\", \"exit\": -15}], \"expected_nonzero_exits\": [{\"role\": \"client\", \"exit\": 1}], \"escalations\": [], \"tool_shutdown\": {\"state\": \"STOPPED\", \"tool_on_requested\": false}, \"survivors\": [], \"sim_seconds\": 62.004, \"wall_seconds\": 165.8809597569998, \"child_exit\": -2, \"formal_credit\": false, \"scope\": \"R01 lifecycle probe; task completion scored separately using unchanged original standards\"}}\n",
+      "stderr": ""
+    },
+    {
+      "ready_before_stop": true,
+      "run": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023305_915375",
+      "exit": 0,
+      "stdout": "{\"status\": \"STOPPED\", \"task\": \"inspection\", \"output\": \"/home/ceihao/robot_project/optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023305_915375\", \"result\": {\"task_id\": \"inspection\", \"task_version\": \"0568c7be528193cb9740be2ff3f557dde2e82fac292cb4114dc33aa8766d292f\", \"run_id\": \"r01_inspection_20261114_023305_915375\", \"lifecycle_status\": \"FAIL\", \"mission_status\": \"PARTIAL\", \"mission_complete\": false, \"safety\": true, \"localization_pass\": true, \"termination\": \"OPERATOR_STOP\", \"error\": null, \"admitted\": true, \"compat_loaded\": true, \"server_exit\": 0, \"abnormal_process_exits\": [{\"role\": \"rviz\", \"exit\": -6}], \"expected_nonzero_exits\": [{\"role\": \"client\", \"exit\": 1}], \"escalations\": [], \"tool_shutdown\": {\"state\": \"STOPPED\", \"tool_on_requested\": false}, \"survivors\": [], \"sim_seconds\": 42.365, \"wall_seconds\": 127.37091381900245, \"child_exit\": -2, \"formal_credit\": false, \"scope\": \"R01 lifecycle probe; task completion scored separately using unchanged original standards\"}}\n",
+      "stderr": ""
+    }
+  ]
+}

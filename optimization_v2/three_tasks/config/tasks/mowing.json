@@ -1,0 +1,75 @@
+{
+  "schema": "THREE-TASK-PROFILE/1",
+  "task_id": "mowing",
+  "revision": "R01.1",
+  "active_vehicle": "ackermann",
+  "active_vehicle_scope": "EXISTING_QUALIFIED_LIGHTWEIGHT_BASELINE",
+  "planned_reference_vehicle": "Existing Dino adaptation, R02 pending",
+  "operation": "cluster",
+  "controller": "RPP",
+  "default_cluster": "B1",
+  "clusters": [
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "seed": 17023,
+  "map_id": "4e4b85d7-ccf3-58ed-925b-1efba3fa6262",
+  "atlas_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+  "plan_revision": "463a8579db9c153339eeef840c88c5e07651f180449104238a56c11894d1b205",
+  "results_root": "optimization_v2/three_tasks/results/mowing",
+  "defaults": {
+    "sim_seconds": 300,
+    "wall_timeout": 720,
+    "rtf": 0.6
+  },
+  "bindings": {
+    "world": {
+      "path": "optimization_v2/assets/worlds/irregular_farm.sdf",
+      "sha256": "d43c5014ecce50ee0ba1aa8207159d398224c9c2277f8a75108835a2be45ffc8"
+    },
+    "atlas": {
+      "path": "optimization_v2/maps/s17_full/manifest.json",
+      "sha256": "25062968d111015f9b26627a960d037349882175e48ed96b4e27c20a4ace33b0"
+    },
+    "plan": {
+      "path": "optimization_v2/plans/s17_full/mission_plan.json",
+      "sha256": "fb785e0c839ef85618187b368821700b09c491a4c1e9b1cd8e8d5302af638410"
+    },
+    "input_selector": {
+      "path": "optimization_v2/evaluation/active_inputs17.json",
+      "sha256": "49143e570fd3c09a2c102fc7dca393bb2cb418f527d979a18df26b5998dddf39"
+    },
+    "vehicle": {
+      "path": "optimization_v2/config/vehicles/ackermann.yaml",
+      "sha256": "918c6c4597aeae4594b82fbf94b3c382967ee2bfad290616b51f0ddc579c09f7"
+    },
+    "control": {
+      "path": "optimization_v2/config/controller_profiles.yaml",
+      "sha256": "e3ca680e2564ba7d71fe2e2234dee0fc13fbed5e096388dc71ba928d4afc073b"
+    },
+    "nav2": {
+      "path": "optimization_v2/config/nav2_ackermann.yaml",
+      "sha256": "c10ef8d46e5ae7404be30a2173e37a83815c7b4dde963b97e6045e7831c37787"
+    },
+    "behavior_tree": {
+      "path": "optimization_v2/behavior_trees/mission.xml",
+      "sha256": "7cda823d17066e6e06e23060f8ac685dc27b0ecd3491639ce140b2238e1ee714"
+    },
+    "tool": {
+      "path": "optimization_v2/config/tool_profiles.yaml",
+      "sha256": "4f86d550d64157b9f82c13db283dd96aad881a5c2e72c146d5086e48a6bd10be"
+    },
+    "frozen_history": {
+      "path": "optimization_v2/three_tasks/baseline/frozen_s01_s18.json",
+      "sha256": "b2dbd6250f76b3ba028ab6569945b88933a2d8b44dbb66f2afed25616fd34f00"
+    },
+    "shutdown": {
+      "path": "optimization_v2/three_tasks/config/shutdown.json",
+      "sha256": "f923ee45e1409e75a149dbd24216f746372089e8fe23ad4f1782cbd45b17c144"
+    }
+  },
+  "future_task_tree": "R07/R08/R09 pending; currently shared original task tree",
+  "initial_admission": "Original map, localization, tool and command ownership gates unchanged",
+  "version": "6a95888ef06ffc844f189177038252ccbfae57ecacd8d34f56f7e4ab1d76fc32"
+}

@@ -1,0 +1,6 @@
+{
+  "pid": 107885,
+  "shim": "/home/ceihao/robot_project/optimization_v2/three_tasks/build/libr01_shutdown_compat.so",
+  "boost": "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0",
+  "verified": true
+}

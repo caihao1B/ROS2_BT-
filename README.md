@@ -1,6 +1,6 @@
 # ROS 2 农田自主作业机器人
 
-在三维仿真场景中，用同一套任务与安全接口运行两种机器人：差速车逐点喷洒，阿克曼车连续割草。两个连续不规则作业区通过曲线道路连接；工作区由算法划分为三个连通簇，再生成点服务或条带路径。
+在同一张三维农田地图上，将点喷、巡迹、割草组织为三个独立任务。当前复用原有差速和阿克曼轻量底盘，后续分别建立车辆尺寸与运动学契约。两个连续不规则作业区通过曲线道路连接，各工作区由算法划分为三个连通簇。
 
 项目重点是把 **传感器 → 定位与感知 → 规划 → 可解释行为树 → 导航控制 → 工具反馈账本** 连成可检验的闭环。在线算法接收带误差的模拟观测；仿真真值仅用于独立评分。喷洒与割草执行器抽象为动作接口，后续可独立接入机械臂、近景视觉或 VLA。
 
@@ -15,6 +15,24 @@
 
 底盘图来自 S03 的真实 Gazebo 验收截图；后续阶段增加传感器、定位和导航接口。上方总览图展示公开先验和算法分簇，不计作实际完成量。
 
+
+## 三任务改造 R01：启动与退出通过（2026-11-14）
+
+新增 `spray / inspection / mowing` 三套独立配置、哈希版本和结果目录，共用原地图与正式计划。**R01 PASS 只表示任务启动、定位准入和有序停止通过；S17/S18 仍为 PARTIAL。** 三种新的车辆几何与专用行为树尚未实施。
+
+新入口对当前锁定的 Gazebo 8.15.0 使用仅限 server 进程的退出兼容修复；三个任务实测 server=0、工具 STOPPED、无残余进程。17 项 Python 检查及 C++ 并发停止对照通过。RViz 视角已修正；本机有析构缺陷的 ImageDisplay 面板默认不加载，摄像头传感器、视觉感知及图像话题继续运行。先前两次 GUI 失败保留，不改成通过。
+
+[三任务使用说明](docs/three_tasks/README.md) · [手工验收](docs/three_tasks/R01/MANUAL_CHECK.md) · [技术原理](docs/three_tasks/R01/TECHNICAL.md) · [核心代码](docs/three_tasks/R01/CODE_WALKTHROUGH.md) · [实测结果](docs/three_tasks/R01/RESULTS.md) · [回执](validation/R01/latest.json)
+
+```bash
+bash /home/ceihao/robot_project/optimization_v2/three_tasks/run.sh doctor
+bash /home/ceihao/robot_project/optimization_v2/three_tasks/run.sh smoke inspection --gui
+bash /home/ceihao/robot_project/optimization_v2/three_tasks/run.sh stop inspection
+```
+
+![R01 巡迹启动的真实 RViz 画面](media/r01_rviz.png)
+
+这张图展示传感器点云、障碍、路径和车体轮廓，不是全道路完成或跟随验收。新入口与后文 S18 历史入口分开；兼容修复没有改写历史结果。仓库发布源码、配置与精简证据，完整冻结输入和生产兼容库仍绑定开发机，不能视为全新机器可直接运行的完整安装包。
 
 ## 独立小规模演示与实际录制
 

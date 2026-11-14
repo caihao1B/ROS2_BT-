@@ -1,0 +1,794 @@
+{
+  "schema": "R01-LIFECYCLE-ACCEPTANCE/1",
+  "stage": "R01",
+  "automated_status": "PASS",
+  "formal_task_acceptance": false,
+  "scope": "Three task startup, localization admission and ordered stop only",
+  "original_stage_states": {
+    "S01": "PASS",
+    "S02": "PASS",
+    "S03": "PASS",
+    "S04": "PASS",
+    "S05": "PASS",
+    "S06": "PASS",
+    "S07": "PASS",
+    "S08": "PASS",
+    "S09": "PASS",
+    "S10": "PASS",
+    "S11": "PASS",
+    "S12": "PASS",
+    "S13": "PASS",
+    "S14": "PASS",
+    "S15": "PASS",
+    "S16": "PASS",
+    "S17": "PARTIAL",
+    "S18": "PARTIAL"
+  },
+  "frozen_history": {
+    "files": 41331,
+    "bytes": 8494274388,
+    "changed": 0
+  },
+  "runs": {
+    "spray": {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652",
+      "result": {
+        "task_id": "spray",
+        "task_version": "bedf6d987de3f501a944d672327c82c3a9fa374cb176b0f0fbef08c65451ceca",
+        "run_id": "r01_spray_20261114_022315_469652",
+        "lifecycle_status": "PASS",
+        "mission_status": "PARTIAL",
+        "mission_complete": false,
+        "safety": true,
+        "localization_pass": true,
+        "termination": "SMOKE_DURATION_REACHED",
+        "error": null,
+        "admitted": true,
+        "compat_loaded": true,
+        "server_exit": 0,
+        "abnormal_process_exits": [],
+        "expected_nonzero_exits": [
+          {
+            "role": "client",
+            "exit": 1
+          }
+        ],
+        "escalations": [],
+        "tool_shutdown": {
+          "state": "STOPPED",
+          "tool_on_requested": false
+        },
+        "survivors": [],
+        "sim_seconds": 62.202,
+        "wall_seconds": 145.31348733300547,
+        "child_exit": -2,
+        "formal_credit": false,
+        "scope": "R01 lifecycle probe; task completion scored separately using unchanged original standards"
+      }
+    },
+    "inspection": {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687",
+      "result": {
+        "task_id": "inspection",
+        "task_version": "0568c7be528193cb9740be2ff3f557dde2e82fac292cb4114dc33aa8766d292f",
+        "run_id": "r01_inspection_20261114_023925_438687",
+        "lifecycle_status": "PASS",
+        "mission_status": "PARTIAL",
+        "mission_complete": false,
+        "safety": true,
+        "localization_pass": true,
+        "termination": "OPERATOR_STOP",
+        "error": null,
+        "admitted": true,
+        "compat_loaded": true,
+        "server_exit": 0,
+        "abnormal_process_exits": [],
+        "expected_nonzero_exits": [
+          {
+            "role": "client",
+            "exit": 1
+          }
+        ],
+        "escalations": [],
+        "tool_shutdown": {
+          "state": "STOPPED",
+          "tool_on_requested": false
+        },
+        "survivors": [],
+        "sim_seconds": 42.151,
+        "wall_seconds": 122.94284517099732,
+        "child_exit": -2,
+        "formal_credit": false,
+        "scope": "R01 lifecycle probe; task completion scored separately using unchanged original standards"
+      }
+    },
+    "mowing": {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183",
+      "result": {
+        "task_id": "mowing",
+        "task_version": "6a95888ef06ffc844f189177038252ccbfae57ecacd8d34f56f7e4ab1d76fc32",
+        "run_id": "r01_mowing_20261114_022613_986183",
+        "lifecycle_status": "PASS",
+        "mission_status": "PARTIAL",
+        "mission_complete": false,
+        "safety": true,
+        "localization_pass": true,
+        "termination": "SMOKE_DURATION_REACHED",
+        "error": null,
+        "admitted": true,
+        "compat_loaded": true,
+        "server_exit": 0,
+        "abnormal_process_exits": [],
+        "expected_nonzero_exits": [
+          {
+            "role": "client",
+            "exit": 1
+          }
+        ],
+        "escalations": [],
+        "tool_shutdown": {
+          "state": "STOPPED",
+          "tool_on_requested": false
+        },
+        "survivors": [],
+        "sim_seconds": 61.551,
+        "wall_seconds": 149.2298797550029,
+        "child_exit": -2,
+        "formal_credit": false,
+        "scope": "R01 lifecycle probe; task completion scored separately using unchanged original standards"
+      }
+    }
+  },
+  "previous_attempts": [
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_022902_402297/result.json",
+      "result": {
+        "task_id": "inspection",
+        "task_version": "0568c7be528193cb9740be2ff3f557dde2e82fac292cb4114dc33aa8766d292f",
+        "run_id": "r01_inspection_20261114_022902_402297",
+        "lifecycle_status": "FAIL",
+        "mission_status": "PARTIAL",
+        "mission_complete": false,
+        "safety": true,
+        "localization_pass": true,
+        "termination": "OPERATOR_STOP",
+        "error": null,
+        "admitted": true,
+        "compat_loaded": true,
+        "server_exit": 0,
+        "abnormal_process_exits": [
+          {
+            "role": "rviz",
+            "exit": -15
+          }
+        ],
+        "expected_nonzero_exits": [
+          {
+            "role": "client",
+            "exit": 1
+          }
+        ],
+        "escalations": [],
+        "tool_shutdown": {
+          "state": "STOPPED",
+          "tool_on_requested": false
+        },
+        "survivors": [],
+        "sim_seconds": 62.004,
+        "wall_seconds": 165.8809597569998,
+        "child_exit": -2,
+        "formal_credit": false,
+        "scope": "R01 lifecycle probe; task completion scored separately using unchanged original standards"
+      }
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023305_915375/result.json",
+      "result": {
+        "task_id": "inspection",
+        "task_version": "0568c7be528193cb9740be2ff3f557dde2e82fac292cb4114dc33aa8766d292f",
+        "run_id": "r01_inspection_20261114_023305_915375",
+        "lifecycle_status": "FAIL",
+        "mission_status": "PARTIAL",
+        "mission_complete": false,
+        "safety": true,
+        "localization_pass": true,
+        "termination": "OPERATOR_STOP",
+        "error": null,
+        "admitted": true,
+        "compat_loaded": true,
+        "server_exit": 0,
+        "abnormal_process_exits": [
+          {
+            "role": "rviz",
+            "exit": -6
+          }
+        ],
+        "expected_nonzero_exits": [
+          {
+            "role": "client",
+            "exit": 1
+          }
+        ],
+        "escalations": [],
+        "tool_shutdown": {
+          "state": "STOPPED",
+          "tool_on_requested": false
+        },
+        "survivors": [],
+        "sim_seconds": 42.365,
+        "wall_seconds": 127.37091381900245,
+        "child_exit": -2,
+        "formal_credit": false,
+        "scope": "R01 lifecycle probe; task completion scored separately using unchanged original standards"
+      }
+    }
+  ],
+  "shutdown_probes": [
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_compat_service_project_20261114_021643_881389/result.json",
+      "result": {
+        "compat": true,
+        "pinned": false,
+        "mode": "service",
+        "project": true,
+        "library": "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0",
+        "library_sha256": "dfb8b2e4e5d5d945a9ebdd6645816e2297d535cd6a7e529bd66a2f6332142270",
+        "world_sha256": "989bd4e5df4764b978956876cb14431b9cdc0c40fe8df08233bbd59cc3c8ba29",
+        "server_exit": 0,
+        "forced": false,
+        "error": null,
+        "wall_s": 3.828070714000205,
+        "passed": true
+      }
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_compat_signal_project_20261114_021647_753461/result.json",
+      "result": {
+        "compat": true,
+        "pinned": false,
+        "mode": "signal",
+        "project": true,
+        "library": "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0",
+        "library_sha256": "dfb8b2e4e5d5d945a9ebdd6645816e2297d535cd6a7e529bd66a2f6332142270",
+        "world_sha256": "989bd4e5df4764b978956876cb14431b9cdc0c40fe8df08233bbd59cc3c8ba29",
+        "server_exit": 0,
+        "forced": false,
+        "error": null,
+        "wall_s": 3.555824967996159,
+        "passed": true
+      }
+    }
+  ],
+  "validation": {
+    "contract_tests": 17,
+    "contracts_passed": true,
+    "cpp_race_passed": true,
+    "concurrent_start_rejected": true,
+    "wrong_task_stop_rejected": true,
+    "operator_stop_passed": true,
+    "isolated_build_passed": true,
+    "rebuild_identical": true,
+    "passed": true,
+    "clean_shell_passed": true
+  },
+  "issues": [],
+  "report_path": "optimization_v2/three_tasks/results/R01/report.html",
+  "artifacts": [
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/result.json",
+      "sha256": "1ccfc57599f0ee256fc4b0f7621ae16ad84a1bd4df7b4556dd36c93a718eabb2"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/task_config.json",
+      "sha256": "4c534c95d794c122f5f2acd6493f5d506615d45850c9e35c308c3d943318afef"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/spec.json",
+      "sha256": "ddddc89563b546abc0882b9e2390a29f7e6dcebfc8a14596681813cfd475dbeb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/runtime_source_binding.json",
+      "sha256": "6f485b90b90ae49f980a61b1428fe434be97946b11926a530296972681066491"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/runtime.json",
+      "sha256": "90b12eadf49f6084deffbecc41689bab5be9c63189d9db6c50cd7fd8caf76a02"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/metrics17.json",
+      "sha256": "7acd0ea241ed8d9d0752705afe326fa4479c1b3825aa573650dad851676cbcf4"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/cleanup_r1.json",
+      "sha256": "1e6343eb3a1e40499828a9b63a3930d7a5834de4617a4991c72d2caa9edca708"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/loaded_compat.json",
+      "sha256": "6553115600f76f2b44c40e0be546a283b8b0e50a4d431e5728ce505724de5f1c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/shutdown_compat.json",
+      "sha256": "55fa16ce515680bf6e95f92be1f9de215f80f76229641977e7e09f1e264b1145"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/startup_samples.json",
+      "sha256": "6a3cd9e3452bb71e6653bb648e07b7d7cb6819959b579211dea61d0106448a75"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/stop_request.json",
+      "sha256": "7c64267f3d1cb60b5aecd2b72386c5f8ab7d6308ac9a43c2d10ac212ac2b6b69"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/command.json",
+      "sha256": "96cbf2d19a9280b3234089222dae488c5444aaef9014c404f33cfaed196b45f2"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/adapter_r1.json",
+      "sha256": "be03aefc45fe0037fcc381f4df02356dfdfed179ad83abafb4a8f53c53baeaa8"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/spray/r01_spray_20261114_022315_469652/launcher.log",
+      "sha256": "b28941e4bfba769f524551af23dc96cb09e0fd34745c37828c6011c2630adc30"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/result.json",
+      "sha256": "810e6d94e5389fa0adf5075fcc98dc19c06eb6c78efa76206be5d854ba464089"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/task_config.json",
+      "sha256": "ac5293f6b9373dde35be9946832fbaa4706af09904b596490543dcae82f30cf5"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/spec.json",
+      "sha256": "706894fd502e961c8a866e8f37007775a58465f21089145ed981f3da0c76d300"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/runtime_source_binding.json",
+      "sha256": "c2cc610fdd20e1f3eaec0a5f7524ae583e1741d0ca9de210601793214c4f9641"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/runtime.json",
+      "sha256": "e540802ce3937af0999c3ed19a9adfedc35fc57c5547908be1ddca38aa06d75c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/metrics17.json",
+      "sha256": "4e3539bff95b788063d1b3c0e27adc7a9048a1671d181ba0a8a1d6f79677e0a1"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/cleanup_r1.json",
+      "sha256": "3d9e4ae6a172aa38f32eedb8ad4a27d058384582ee7998d336db4c05db3ea926"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/loaded_compat.json",
+      "sha256": "fe84d7a412fe2349b1523d2329f9ff65d57892c4193f64ffef0299ae4f575f11"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/shutdown_compat.json",
+      "sha256": "55fa16ce515680bf6e95f92be1f9de215f80f76229641977e7e09f1e264b1145"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/startup_samples.json",
+      "sha256": "e0ec608ed87702b77dcc6a26dd75a8ad7050e2424571f6581df99eea579872bb"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/stop_request.json",
+      "sha256": "c3f77dfde829468d24814c78b0cc5c097dcbfe7fff607717580ba913561f06a8"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/command.json",
+      "sha256": "5fc6277ddeca7f4636973d9e4ae3f13e198e556520eaa407d2a38923bb790c88"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/adapter_r1.json",
+      "sha256": "bf76fd4f5482c050a66f6887ecb04d92f17976c9c53a8fedef3424019c0e506b"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/launcher.log",
+      "sha256": "42d713d1025d0a40ceecac437d3ea58d6365fecd9fdb91a4022efa5d0aa9ac71"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/result.json",
+      "sha256": "8b15914a02be715ce8c6b9ed6692dbde8942c76c76f459d5f2e405175e5d90c1"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/task_config.json",
+      "sha256": "24e16f1e161b9417a674c72008246d4a279b2d9a0e5a96e26bda145b1eec8a76"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/spec.json",
+      "sha256": "318712ed0abf4e6264f362f88c40f2677a21373474784afde61c9082eb644360"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/runtime_source_binding.json",
+      "sha256": "1503c07411e503e3934085c5f40de9e2a292def8efd4af36f613dcebe5f5683e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/runtime.json",
+      "sha256": "417a868f756ac6e8076968d33526fd0870344e3ccaddcd341f1355cf54f29d3c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/metrics17.json",
+      "sha256": "7b99b2d36cbdcbf9583d5aa2fe0f745a07127112b079099f2f89e162dd17e369"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/cleanup_r1.json",
+      "sha256": "4bf11a3efeb59eba6cdb834ae5c800fc78e422c7ea6abed13f638e647e435b7a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/loaded_compat.json",
+      "sha256": "95c44c6372f643fa913e912b71bb1f14844de4f971c57c108ff4fc10d16ad972"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/shutdown_compat.json",
+      "sha256": "55fa16ce515680bf6e95f92be1f9de215f80f76229641977e7e09f1e264b1145"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/startup_samples.json",
+      "sha256": "d1f7f878ce9e44a48bca6a0f8ac9fc99a6741eec79cd9b0a489e24cfccada0dc"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/stop_request.json",
+      "sha256": "55edf25a844e1ad65caba53e4eea178047d686508d9fcb08e968a84d093ed0ab"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/command.json",
+      "sha256": "1d7067a4de286b057b3e0758d4ef3ccecd00668593f84c524df99b1f5153388e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/adapter_r1.json",
+      "sha256": "c7fbc25b17a3cffefc87c3f76e7d86b22fab62d61ab3e428bd0969b4954134b3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/mowing/r01_mowing_20261114_022613_986183/launcher.log",
+      "sha256": "d80eab55f7f555474440e034fe938599dcc01beaca10d20646f3743272f01e89"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_022902_402297/result.json",
+      "sha256": "972cd5ed13bd99ccf5aef088e74db7424a299a4a2b375b8bb3396fc814db00fa"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023305_915375/result.json",
+      "sha256": "0eaef41ae70c7f12c47b561ab1a8412cbd86cbf9f215bfa61e4592f815c0456c"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_compat_service_project_20261114_021643_881389/result.json",
+      "sha256": "b35d7231ed83b2e0e3afa0de5ab8268ed01d2ed2fbd7d84aa4b125b4adcda3a0"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_compat_service_project_20261114_021643_881389/commands.json",
+      "sha256": "acb2005da3a11e64e2ceba0e5382ce773b7c2303c09a27c6b55786a5d9612850"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_compat_service_project_20261114_021643_881389/server.log",
+      "sha256": "2d76a2eee358ca367cb6a3986381c2515cbebe6201944e16a857900d42b215fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_compat_signal_project_20261114_021647_753461/result.json",
+      "sha256": "5933e8b46be64ddbb09b3a24ecc4304a07bbf3383716479eaf224b55a781e8b3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_compat_signal_project_20261114_021647_753461/commands.json",
+      "sha256": "42bca6919ee08780653486c3b96891b8409e2cd86e4c24b5383d02b457bec146"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_compat_signal_project_20261114_021647_753461/server.log",
+      "sha256": "2d76a2eee358ca367cb6a3986381c2515cbebe6201944e16a857900d42b215fd"
+    },
+    {
+      "path": "optimization_v2/three_tasks/baseline/frozen_s01_s18.json",
+      "sha256": "b2dbd6250f76b3ba028ab6569945b88933a2d8b44dbb66f2afed25616fd34f00"
+    },
+    {
+      "path": "optimization_v2/three_tasks/baseline/before.json",
+      "sha256": "18bc2efd7da738f91b0e31c21ac74138802ed9d68180eadcc532b2ec5934c29d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/baseline/after.json",
+      "sha256": "7c9cc201306142a46fd5ee65f4b0bb95408b766f75728b6528e6bb72fa41a524"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/validation.json",
+      "sha256": "39659137d5951abe8debeda79fb3dfdaf8d298758a0979a90f931c2616f0b80e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/contracts.log",
+      "sha256": "4fb8d21073d374abef62c92a392e42a538cd4e65bd8474e17a3540b8594635f9"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/cpp_race.json",
+      "sha256": "67233acad340e97feb9d65ad228d941bc9abcadb4cce26fefec94d23f581c2f3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/controls.json",
+      "sha256": "fe9d0c71b9ec88294eeaf9ef36846fdb918603ecee3c013f35cfe87ae9830d4b"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/build.json",
+      "sha256": "8af64a9ae35dd7a2bf16f324d7a63990323c0135a03b0a0c943d4453f8439962"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/build.log",
+      "sha256": "941b99169c5203cbe0a4b62a424aa518ab7f4ba021137670da8ca4673479ffac"
+    },
+    {
+      "path": "optimization_v2/three_tasks/build/libr01_shutdown_compat.so",
+      "sha256": "974c8d425d25c0a5199bbde2ab54348695edd70a2813adcf430a3860c30e2372"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/clean_shell.json",
+      "sha256": "7fb2d30bbdf195a5aef5d6bca73054bd34bf99cfbe7f475581e1bdc06c65dd11"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_original_service_20261114_021021_008842/result.json",
+      "sha256": "78de25d96e753749870e4ee60f26afd55ee66619cb890667afbe214bf605b50a"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_original_service_project_20261114_021124_102846/result.json",
+      "sha256": "4e6a9fd25a0248c7b942153c4894baa5fbfec7e721f7c5be2a08e38393792b99"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_pinned_service_20261114_021024_534674/result.json",
+      "sha256": "af8dd908f4e88609d4170cd01c730f14d3da28234ccc6859f18f93ddb367a549"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/exit_pinned_service_project_20261114_021129_011837/result.json",
+      "sha256": "1e823ea001039327082f5d7df322c2f16265657d44d55c81afd181b5fb0156c7"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/gui_exit_20261114_023639_779179/result.json",
+      "sha256": "2b246729288c647e5924eb02e5390d177e1e494c3504404d8fe37d8e24c82f3e"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/gui_exit_20261114_023829_356411/result.json",
+      "sha256": "f561ac6e6bb9b03a648b42ed8a85849ccaf0eab9ae06645d39ca349344921f31"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/gui_exit_20261114_023639_779179/view_shutdown_r1.json",
+      "sha256": "cd430c5e49a2f6c35afb28575ed7b0bea9860a7997a503d8ca46d4443ef6c6dc"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/gui_exit_20261114_023829_356411/view_shutdown_r1.json",
+      "sha256": "800bfbd2dfdd43f261266c3e380c292686db071fc830dcfb8eedb4813b25af36"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/rviz_gdb_20261114_023744_616366/gdb.log",
+      "sha256": "06ab6963e340d1c55d9c9a36abda6a1be211f1626357ac706ed9be2d1992fdf3"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/gdb_pinned/gdb.log",
+      "sha256": "a4c353088a7a7103c56bb724a58dbfca2b17f8af62e4fc5750e21473aed0f2b2"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/gdb_project/gdb.log",
+      "sha256": "166c0a3340c642e91b184847b137a16823dc515bf7fbf8f2006f226bc4a1693f"
+    },
+    {
+      "path": "optimization_v2/results/S01/latest.json",
+      "sha256": "7363e627c90f8a0231823d2862ddefa299c4b2ee5f0948adf1e2abb087a30090"
+    },
+    {
+      "path": "optimization_v2/results/S02/latest.json",
+      "sha256": "5377aa5e94cd7d4d530d60e9f6de42864bb216f4386670e923acb7c13c1092ac"
+    },
+    {
+      "path": "optimization_v2/results/S03/latest.json",
+      "sha256": "2ac8217084caebd63bf2074ad63e3c98e1060e262a41aff941d5be2d6f4a7ae0"
+    },
+    {
+      "path": "optimization_v2/results/S04/latest.json",
+      "sha256": "d5c3c6b064fe4ea3cff5d81f7b4ae4eac9e149acc4d3247b7030e43e68285838"
+    },
+    {
+      "path": "optimization_v2/results/S05/latest.json",
+      "sha256": "b2055ac6c551a53cf91f4effe7534e3cfe6baa47af55410b1503a91457ceefdc"
+    },
+    {
+      "path": "optimization_v2/results/S06/latest.json",
+      "sha256": "da4d3e1f9e4d09cfc0062d1d1c9bf9fa29ab65e7427cf6c1bb6b7acb91189b5b"
+    },
+    {
+      "path": "optimization_v2/results/S07/latest.json",
+      "sha256": "7833437136313e847b0b736390d81ddf838fe5621473012bf707563c7775a729"
+    },
+    {
+      "path": "optimization_v2/results/S08/latest.json",
+      "sha256": "41eeb1a161bfd18d4613aabb9803423a598f6042ea615503f359a0b15042f5c1"
+    },
+    {
+      "path": "optimization_v2/results/S09/latest.json",
+      "sha256": "ef05997a885545f3f000fc83f1de42c0751abbdd7d5dc7357bd9dbd9d6468e3c"
+    },
+    {
+      "path": "optimization_v2/results/S10/latest.json",
+      "sha256": "20b28c16378238d37146f6c80f5bae5932885b907407ff15630589b16b98ba64"
+    },
+    {
+      "path": "optimization_v2/results/S11/latest.json",
+      "sha256": "3468d3050f5ea4cd9f1433ec2014419d5be8533d5ca40aeb69887af87b65d1a8"
+    },
+    {
+      "path": "optimization_v2/results/S12/latest.json",
+      "sha256": "734cd7926617711f36ca6dfe5f4124e5d3155d0e8b35c04b4dfc5add0214baad"
+    },
+    {
+      "path": "optimization_v2/results/S13/latest.json",
+      "sha256": "d74fe8a179ec99f3bd37ca0111b7166a63c550a6a5208423604bfd19dca6736b"
+    },
+    {
+      "path": "optimization_v2/results/S14/latest.json",
+      "sha256": "a12c14f5fe05ded70806a66e3fb8a81abe2704419d9c831b360692878112418c"
+    },
+    {
+      "path": "optimization_v2/results/S15/latest.json",
+      "sha256": "f5090f046b2148f589e4816144d95bb61d3afd10984ee3e10134bea6c9b4bac9"
+    },
+    {
+      "path": "optimization_v2/results/S16/latest.json",
+      "sha256": "b58793600acbc5d4299c552a9b1dae969b1da21c0e9ccf66edbb210499030458"
+    },
+    {
+      "path": "optimization_v2/results/S17/latest.json",
+      "sha256": "b91696ae200966c05f65a13fc11445bb8f9e27a7a793dd93ecb5cf58602ac84a"
+    },
+    {
+      "path": "optimization_v2/results/S18/latest.json",
+      "sha256": "de844daadd5948038cb6b216e12dbc8c43604e14536344df9f02ab1b5b2ce30c"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/CMakeLists.txt",
+      "sha256": "82ad54f0e9841c7bf0caffc5e12d7611c6d76b1b5a9c8e00622c67d5c77f3e44"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/package.xml",
+      "sha256": "9934fde992a33cc38d978eb1c1bb652c71b78a4e2a35dd68aaca24a506f68516"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/taskctl.py",
+      "sha256": "9994dfd2586f26dd3b626dc39b8c7289a2779d0a031e8f7b7ee667b2f91d332c"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/score_r1.py",
+      "sha256": "0844b1dfab00610b3a5acfb93f591efda6171a8cf50077bee76ffdd7b6e0a8dd"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/baseline_r1.py",
+      "sha256": "41459c62acb71c70111204b2d7ed0eca2e907f8d48e449792e08bbf87d2b544a"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/registry_r1.py",
+      "sha256": "804698cd66950a4c0505d4f3dc85a0a324bc5f6619ff67eaff97bb24524e83de"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/one_r1.py",
+      "sha256": "b8d8dc455cc107e3431b1c6304cf5f1f758003ca72a4f153d9ecb40a77cfb177"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/ownership_r1.py",
+      "sha256": "adbe2487205b56d4802f3f756928663c19d0803bd0d6633ce48f2d5f92a61527"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/lifecycle_r1.py",
+      "sha256": "b162acd050f570538294a676231ea73389e163000d3a7b6b68acb420c2b29cc0"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/report_r1.py",
+      "sha256": "815100a007e046275891ba893edc3c11230e1b062a67595f3300456220d742f4"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/shutdown_probe.py",
+      "sha256": "4827526a77160b95cd674e2104a6358736739cfd19df1c0a06be432776dd024e"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/scripts/common_r1.py",
+      "sha256": "a992e6013892ec836afe0ba9fa942a60089036bc1a5ea8819dd77e56cb6d7882"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/src/shutdown_compat.cc",
+      "sha256": "7d319400e1c3991a469556ac56b6e8f3ecb62e9ba9c93a6d1ea5633e98f13708"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/config/official_camera.sdf",
+      "sha256": "68abd3d1a65953fc550676ff5c0720f69819a990fa120f2d1de5bf84e2feae74"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/tests/stop_race.cc",
+      "sha256": "fafa82cf8a0bed2b9314fbee1fb2330c3b1772d7514d29b370f36646401f184a"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_runtime/tests/test_contracts.py",
+      "sha256": "a578cc308b0356e103d98ea920231b72632c474c3d533b48eab0be98bec45891"
+    },
+    {
+      "path": "optimization_v2/three_tasks/config/shutdown.json",
+      "sha256": "f923ee45e1409e75a149dbd24216f746372089e8fe23ad4f1782cbd45b17c144"
+    },
+    {
+      "path": "optimization_v2/three_tasks/config/tasks/inspection.json",
+      "sha256": "ac5293f6b9373dde35be9946832fbaa4706af09904b596490543dcae82f30cf5"
+    },
+    {
+      "path": "optimization_v2/three_tasks/config/tasks/spray.json",
+      "sha256": "4c534c95d794c122f5f2acd6493f5d506615d45850c9e35c308c3d943318afef"
+    },
+    {
+      "path": "optimization_v2/three_tasks/config/tasks/mowing.json",
+      "sha256": "24e16f1e161b9417a674c72008246d4a279b2d9a0e5a96e26bda145b1eec8a76"
+    },
+    {
+      "path": "optimization_v2/three_tasks/versions/mowing/6a95888ef06ffc844f189177038252ccbfae57ecacd8d34f56f7e4ab1d76fc32.json",
+      "sha256": "24e16f1e161b9417a674c72008246d4a279b2d9a0e5a96e26bda145b1eec8a76"
+    },
+    {
+      "path": "optimization_v2/three_tasks/versions/inspection/0568c7be528193cb9740be2ff3f557dde2e82fac292cb4114dc33aa8766d292f.json",
+      "sha256": "ac5293f6b9373dde35be9946832fbaa4706af09904b596490543dcae82f30cf5"
+    },
+    {
+      "path": "optimization_v2/three_tasks/versions/spray/bedf6d987de3f501a944d672327c82c3a9fa374cb176b0f0fbef08c65451ceca.json",
+      "sha256": "4c534c95d794c122f5f2acd6493f5d506615d45850c9e35c308c3d943318afef"
+    },
+    {
+      "path": "docs/three_tasks/README.md",
+      "sha256": "23af9c95c3b86be68e5b89695aa197d285b8c68f3d89d4e01798f90cd4dad96f"
+    },
+    {
+      "path": "docs/three_tasks/实施步骤.md",
+      "sha256": "c0efcc4cf0e3d930e354aedc40b69864d02da67c0ebb83df045c79fc4ef85e66"
+    },
+    {
+      "path": "docs/three_tasks/R01/TECHNICAL.md",
+      "sha256": "11939e0642f9ad757eb44919e2107ff7ef50c6464115faef23db7100ac7cb217"
+    },
+    {
+      "path": "docs/three_tasks/R01/MANUAL_CHECK.md",
+      "sha256": "5c0e38caa22ac8fb00cadc1d46ee9b13a9b9f3c1824da6617e8aaf9511ce9d05"
+    },
+    {
+      "path": "docs/three_tasks/R01/CODE_WALKTHROUGH.md",
+      "sha256": "4e0fe8ed1da38f489e2539f39495993a53ac6398451256c9ba13104c27d732cc"
+    },
+    {
+      "path": "docs/three_tasks/R01/RESULTS.md",
+      "sha256": "ecc4dd218288c88cca411a182346102d348be995800cd971f19e0c3bef4a8e72"
+    },
+    {
+      "path": "lessons/three_tasks/R01/config_version_demo.py",
+      "sha256": "e3298c421f66b0a3c997198a8fdc1c112835883d78b714fbeefac254d18d112a"
+    },
+    {
+      "path": "lessons/three_tasks/R01/README.md",
+      "sha256": "40433eea7719c7ac43994dba8899dda82808d334f8e1cc3df87e52467fa26c23"
+    },
+    {
+      "path": "optimization_v2/three_tasks/run.sh",
+      "sha256": "83bb3f9893d1e2b44dd13cdd123d8496067030177ee8ecfeacd68d2dca79aa6d"
+    },
+    {
+      "path": "optimization_v2/three_tasks/build_compat.sh",
+      "sha256": "bd75904a57657eac578d77fcb328f997ab4f717dab97bf44a7184658837c0953"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/rviz.png",
+      "sha256": "17205e365d98c29c4413b4d604cc747fc35433c39aa37113865018103817ab79"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/view_r1.json",
+      "sha256": "6fab64d64e5517407d94afd598c318e75a4b070438076824250883f5f736db22"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/inspection/r01_inspection_20261114_023925_438687/view_shutdown_r1.json",
+      "sha256": "71fd26bebef5f9a7a419e13c8a7e059fa95f0183993698a4ae0e9a0f3cf0b344"
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R01/report.html",
+      "sha256": "1bd9bf252022245d2fd7682ba02367f595d8b91eff51b940528015c74196f8bb"
+    }
+  ],
+  "next_step": "R02",
+  "limitations": [
+    "R01 uses existing lightweight diff/ackermann models.",
+    "R01 does not complete original task clusters, route acceptance, new vehicle geometries, dedicated BTs or recording.",
+    "S17/S18 remain PARTIAL. Host-local runtime bindings require requalification on another machine.",
+    "Shutdown compatibility is limited to the current hashed Gazebo 8.15.0 and Boost build.",
+    "Installed RViz ImageDisplay destructor crashes; default GUI omits only that display, leaving camera perception active."
+  ]
+}

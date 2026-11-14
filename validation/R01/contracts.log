@@ -1,0 +1,24 @@
+test_abi_hash_mismatch_rejected (__main__.Contracts.test_abi_hash_mismatch_rejected) ... ok
+test_changed_map_digest_rejected (__main__.Contracts.test_changed_map_digest_rejected) ... ok
+test_config_tampering_rejected (__main__.Contracts.test_config_tampering_rejected) ... ok
+test_cross_task_cluster_rejected (__main__.Contracts.test_cross_task_cluster_rejected) ... ok
+test_invalid_budgets (__main__.Contracts.test_invalid_budgets) ... ok
+test_no_session_stop_is_idempotent (__main__.Contracts.test_no_session_stop_is_idempotent) ... ok
+test_nonserver_environment_unchanged (__main__.Contracts.test_nonserver_environment_unchanged) ... ok
+test_only_faulty_image_viewer_is_omitted (__main__.Contracts.test_only_faulty_image_viewer_is_omitted) ... ok
+test_pid_reuse_rejected (__main__.Contracts.test_pid_reuse_rejected) ... ok
+test_server_external_preload_rejected (__main__.Contracts.test_server_external_preload_rejected) ... ok
+test_spawn_failure_records_failure_and_removes_session (__main__.Contracts.test_spawn_failure_records_failure_and_removes_session) ... /home/ceihao/robot_project/optimization_v2/three_tasks/runtime/tmpt_hc9sdh/results/spray/r01_spray_20261114_024004_863196
+{"task_id": "spray", "task_version": "bedf6d987de3f501a944d672327c82c3a9fa374cb176b0f0fbef08c65451ceca", "run_id": "r01_spray_20261114_024004_863196", "lifecycle_status": "FAIL", "mission_status": "NOT_SCORED", "mission_complete": false, "safety": false, "localization_pass": false, "termination": "TASK_RETURNED", "error": "FileNotFoundError('injected missing launcher')", "admitted": false, "compat_loaded": false, "server_exit": null, "abnormal_process_exits": [], "expected_nonzero_exits": [], "escalations": [], "tool_shutdown": null, "survivors": [], "sim_seconds": null, "wall_seconds": 0.10521781699935673, "child_exit": null, "formal_credit": false, "scope": "R01 lifecycle probe; task completion scored separately using unchanged original standards"}
+ok
+test_stop_wrong_task_or_stale_owner_never_sends_signal (__main__.Contracts.test_stop_wrong_task_or_stale_owner_never_sends_signal) ... ok
+test_three_distinct_versions_same_original_map (__main__.Contracts.test_three_distinct_versions_same_original_map) ... ok
+test_valid_bounded_budget (__main__.Contracts.test_valid_bounded_budget) ... ok
+test_view_uses_local_base_without_changing_fixed_frame (__main__.Contracts.test_view_uses_local_base_without_changing_fixed_frame) ... ok
+test_window_close_never_touches_unowned_process (__main__.Contracts.test_window_close_never_touches_unowned_process) ... ok
+test_wrong_result_scope_rejected_even_if_rehashed (__main__.Contracts.test_wrong_result_scope_rejected_even_if_rehashed) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.671s
+
+OK

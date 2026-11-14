@@ -1,0 +1,33 @@
+{
+  "task_id": "mowing",
+  "task_version": "6a95888ef06ffc844f189177038252ccbfae57ecacd8d34f56f7e4ab1d76fc32",
+  "run_id": "r01_mowing_20261114_022613_986183",
+  "lifecycle_status": "PASS",
+  "mission_status": "PARTIAL",
+  "mission_complete": false,
+  "safety": true,
+  "localization_pass": true,
+  "termination": "SMOKE_DURATION_REACHED",
+  "error": null,
+  "admitted": true,
+  "compat_loaded": true,
+  "server_exit": 0,
+  "abnormal_process_exits": [],
+  "expected_nonzero_exits": [
+    {
+      "role": "client",
+      "exit": 1
+    }
+  ],
+  "escalations": [],
+  "tool_shutdown": {
+    "state": "STOPPED",
+    "tool_on_requested": false
+  },
+  "survivors": [],
+  "sim_seconds": 61.551,
+  "wall_seconds": 149.2298797550029,
+  "child_exit": -2,
+  "formal_credit": false,
+  "scope": "R01 lifecycle probe; task completion scored separately using unchanged original standards"
+}

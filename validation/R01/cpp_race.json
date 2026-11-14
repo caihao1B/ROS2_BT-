@@ -1,0 +1,57 @@
+{
+  "before_peak": 2,
+  "after_peak": 1,
+  "passed": true,
+  "commands": [
+    {
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-fPIC",
+        "-shared",
+        "-DPROVIDER",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/task_runtime/tests/stop_race.cc",
+        "-o",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R01/cpp_race/libprovider.so",
+        "-pthread"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "/home/ceihao/robot_project/optimization_v2/ws/src/task_runtime/tests/stop_race.cc",
+        "-o",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R01/cpp_race/caller",
+        "-L/home/ceihao/robot_project/optimization_v2/three_tasks/results/R01/cpp_race",
+        "-lprovider",
+        "-Wl,-rpath,/home/ceihao/robot_project/optimization_v2/three_tasks/results/R01/cpp_race",
+        "-pthread"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R01/cpp_race/caller"
+      ],
+      "exit": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R01/cpp_race/caller"
+      ],
+      "exit": 0,
+      "stdout": "1\n",
+      "stderr": "R01_SERIALIZED_GAZEBO_STOP\nR01_SERIALIZED_GAZEBO_STOP\n"
+    }
+  ]
+}

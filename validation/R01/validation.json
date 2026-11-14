@@ -1,0 +1,12 @@
+{
+  "contract_tests": 17,
+  "contracts_passed": true,
+  "cpp_race_passed": true,
+  "concurrent_start_rejected": true,
+  "wrong_task_stop_rejected": true,
+  "operator_stop_passed": true,
+  "isolated_build_passed": true,
+  "rebuild_identical": true,
+  "passed": true,
+  "clean_shell_passed": true
+}

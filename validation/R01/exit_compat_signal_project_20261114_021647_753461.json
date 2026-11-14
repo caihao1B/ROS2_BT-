@@ -1,0 +1,14 @@
+{
+  "compat": true,
+  "pinned": false,
+  "mode": "signal",
+  "project": true,
+  "library": "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0",
+  "library_sha256": "dfb8b2e4e5d5d945a9ebdd6645816e2297d535cd6a7e529bd66a2f6332142270",
+  "world_sha256": "989bd4e5df4764b978956876cb14431b9cdc0c40fe8df08233bbd59cc3c8ba29",
+  "server_exit": 0,
+  "forced": false,
+  "error": null,
+  "wall_s": 3.555824967996159,
+  "passed": true
+}

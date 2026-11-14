@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "files": 41331,
+  "bytes": 8494274388,
+  "issues": [],
+  "wall_seconds": 12.99309471900051,
+  "stage_states": {
+    "S01": "PASS",
+    "S02": "PASS",
+    "S03": "PASS",
+    "S04": "PASS",
+    "S05": "PASS",
+    "S06": "PASS",
+    "S07": "PASS",
+    "S08": "PASS",
+    "S09": "PASS",
+    "S10": "PASS",
+    "S11": "PASS",
+    "S12": "PASS",
+    "S13": "PASS",
+    "S14": "PASS",
+    "S15": "PASS",
+    "S16": "PASS",
+    "S17": "PARTIAL",
+    "S18": "PARTIAL"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "task_id": "spray",
+  "task_version": "bedf6d987de3f501a944d672327c82c3a9fa374cb176b0f0fbef08c65451ceca",
+  "run_id": "r01_spray_20261114_022315_469652",
+  "lifecycle_status": "PASS",
+  "mission_status": "PARTIAL",
+  "mission_complete": false,
+  "safety": true,
+  "localization_pass": true,
+  "termination": "SMOKE_DURATION_REACHED",
+  "error": null,
+  "admitted": true,
+  "compat_loaded": true,
+  "server_exit": 0,
+  "abnormal_process_exits": [],
+  "expected_nonzero_exits": [
+    {
+      "role": "client",
+      "exit": 1
+    }
+  ],
+  "escalations": [],
+  "tool_shutdown": {
+    "state": "STOPPED",
+    "tool_on_requested": false
+  },
+  "survivors": [],
+  "sim_seconds": 62.202,
+  "wall_seconds": 145.31348733300547,
+  "child_exit": -2,
+  "formal_credit": false,
+  "scope": "R01 lifecycle probe; task completion scored separately using unchanged original standards"
+}
