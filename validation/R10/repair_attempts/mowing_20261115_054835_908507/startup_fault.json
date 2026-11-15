@@ -1,0 +1,9 @@
+{
+  "t": 37.56,
+  "until": 38.760000000000005,
+  "pid": 422390,
+  "phase": "START_WORK",
+  "method": "SIGSTOP owned risk producer; all health timeouts and BT gates unchanged",
+  "resumed": true,
+  "resumed_t": 38.79
+}

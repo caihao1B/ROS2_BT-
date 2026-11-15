@@ -18,7 +18,8 @@
     "selected_segments_traversed": true,
     "two_work_strips": true,
     "actual_reverse_travel": true,
-    "tools_off_during_turns": true
+    "tools_off_during_turns": true,
+    "tools_off_during_recovery": true
   },
   "case": "nominal",
   "task_result": {

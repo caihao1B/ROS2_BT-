@@ -3726,9 +3726,63 @@
     "planar_query": "nearest eligible normal; held-out mapped landmark candidates; raw unmodeled objects retained by perception"
   },
   "ground_statistic": "Raw-ray weighted quantiles; confidence-separated spatial modes; strong voxel hazards retained",
+  "stopped_revalidation": {
+    "max_attempts_per_point": 2,
+    "observation_window_s": 15.0,
+    "late_hold_dispatch": "wake stopped observation wait when native revalidation latch arrives; manual stop remains priority",
+    "prepare_hold": true,
+    "planner": "original Nav2 exact-goal planner plus full live costmap and swept footprint validation",
+    "motion_permit": "separate from planning-only localization preview",
+    "same_original_ledger_obligation": true
+  },
+  "ledger_transport": {
+    "heartbeat_clock": "STEADY_TIME",
+    "heartbeat_wall_s": 0.05,
+    "tool_server_stale_wall_s": 0.25,
+    "simulation_stamps_and_feedback_guards": "unchanged"
+  },
+  "global_approach_handoff": {
+    "current_radius_m": 0.1,
+    "visited_radius_m": 0.06,
+    "navigation_goal_m": 0.025,
+    "window_s": 2.0,
+    "stall_s": 1.5,
+    "max_gap_s": 0.15,
+    "minimum_improvement_m": 0.005,
+    "translation_command_s": 0.5,
+    "minimum_samples": 20,
+    "scope": "Cancel a qualified near-goal stall, confirm physical stop, then use unchanged global work gate and bounded local docking. No navigation success or work credit from this proposal."
+  },
   "global_correction_filter": {
-    "tau_s": 0.8,
-    "scope": "map to odom correction only; raw jump, GNSS innovation, freshness and plan hold unchanged; all docking gates unchanged"
+    "tau_s": 3.0,
+    "moving_tau_s": 0.5,
+    "selection": "measured stopped_v/stopped_w of original native supervisor",
+    "scope": "map to odom correction only; raw jump, GNSS innovation, freshness and plan hold unchanged; all docking gates unchanged",
+    "stopped_candidate_gnss": "three independently quality-checked raw fixed samples tested against candidate with unchanged innovation and NIS gates"
+  },
+  "controller_target_margin": {
+    "xy_goal_m": 0.025,
+    "original_navigation_admission_m": 0.025,
+    "reason": "original global approach gate followed by bounded odom-frame docking and unchanged global work admission"
+  },
+  "local_docking": {
+    "observation_policy": "propose correction as soon as original stationary evidence confirms a stable offset; 8s is an upper bound; work gate unchanged",
+    "controller": "DockRPP",
+    "frame": "odom",
+    "maximum_translation_m": 0.15,
+    "xy_goal_m": 0.008,
+    "maximum_sim_seconds": 45.0,
+    "global_sweep_and_live_costmap_required": true,
+    "work_admission": "unchanged global stationary gates",
+    "scatter_only_failure": "bounded stationary observation, no unnecessary navigation"
+  },
+  "precision_progress_policy": {
+    "scope": "only validated local docking translations .008 < d <= .15m",
+    "delta_m": "min(original .10m, max(.005m, .25 * proposed translation))",
+    "progress_timeout_s": 10.0,
+    "local_action_timeout_s": 45.0,
+    "coarse_policy_unchanged": true,
+    "work_admission_unchanged": true
   },
   "navigation_recovery": {
     "near_radius_m": 0.25,
@@ -3745,6 +3799,6 @@
     "span_s": 1.8,
     "max_observation_wait_s": 8.0
   },
-  "acceleration_profile": "RPP .28m/s desired, 1.4m curvature regulation radius, .25rad/s rotation, .40rad/s2 angular acceleration; physical drivetrain limits retained",
-  "version": "37f8197e6ef0e57bc592159c68fc3f924039c49be32deeb06423704359bd8a67"
+  "acceleration_profile": "RPP stateless original .025m global target then bounded local odometry docking, .30m/s desired, .35rad/s rotation, .90m regulation radius, .005m/s curvature floor, .25m approach distance, .03m/s straight approach floor; original speed/yaw/stop/goal gates retained",
+  "version": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4"
 }

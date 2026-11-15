@@ -1,7 +1,7 @@
 import sys,unittest,math
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from recovery_mowing_r10 import validate_candidate,gear_permitted,arm_direction
+from recovery_mowing_r10 import validate_candidate,gear_permitted,arm_direction,retreat_prefix,gear_runs
 
 class RecoveryAdmission(unittest.TestCase):
  def setUp(self):
@@ -23,3 +23,32 @@ class RecoveryAdmission(unittest.TestCase):
   for phase,stopped,tool_stopped in [('READY',False,True),('READY',True,False),('NAVIGATING',True,True)]:
    self.assertEqual(arm_direction(-1,1,phase,stopped,tool_stopped),-1)
   self.assertEqual(arm_direction(-1,0,'READY',True,True),-1)
+ def test_retreat_is_bounded_reverse_without_in_place_yaw(self):
+  for yaw in [0.,.8,-2.8]:
+   p=retreat_prefix([0.,0.,yaw]);self.assertAlmostEqual(math.dist(p[0][:2],p[-1][:2]),.6)
+   self.assertEqual([r['direction'] for r in gear_runs(p)],[-1])
+   self.assertTrue(all(math.dist(a[:2],b[:2])<=.040001 for a,b in zip(p,p[1:])))
+   self.assertTrue(validate_candidate(p,p[0],p[-1],self.cfg)[0])
+ def test_retreat_does_not_bypass_prior_or_distance_limit(self):
+  p=retreat_prefix([-7.4,0.,0.]);self.assertEqual(validate_candidate(p,p[0],p[-1],self.cfg)[1],'FOOTPRINT_OUTSIDE_PRIOR')
+  with self.assertRaises(ValueError):retreat_prefix([0,0,0],.81)
+  with self.assertRaises(ValueError):retreat_prefix([0,float('nan'),0])
+
+class GearExecution(unittest.TestCase):
+ def test_cusps_share_pose_and_preserve_every_edge(self):
+  from recovery_mowing_r10 import gear_runs
+  points=[[0.,0.,0.],[.1,0.,0.],[.2,0.,0.],[.1,0.,0.],[0.,0.,0.],[.1,0.,0.]];runs=gear_runs(points)
+  self.assertEqual([r['direction'] for r in runs],[1,-1,1]);self.assertEqual(runs[0]['poses'][-1],runs[1]['poses'][0]);self.assertEqual(sum(len(r['poses'])-1 for r in runs),len(points)-1)
+ def test_lateral_motion_is_not_ackermann(self):
+  from recovery_mowing_r10 import gear_runs
+  with self.assertRaisesRegex(ValueError,'LATERAL'):gear_runs([[0,0,0],[0,.1,0]])
+ def test_reverse_heading_wrap(self):
+  from recovery_mowing_r10 import gear_runs
+  self.assertEqual(gear_runs([[0,0,math.pi-.01],[.1,0,-math.pi+.01]])[0]['direction'],-1)
+ def test_cross_track_cannot_hide_on_return_branch(self):
+  from recovery_mowing_r10 import tracking_distance
+  p=[[i*.04,0,0] for i in range(20)]+[[0,1,0],[.04,1,0]]
+  self.assertGreater(tracking_distance(p,[0,1,0],0),.25)
+ def test_tracking_segment_projection(self):
+  from recovery_mowing_r10 import tracking_distance
+  self.assertAlmostEqual(tracking_distance([[0,0,0],[.1,0,0],[.2,0,0]],[.05,.03,0],0),.03)

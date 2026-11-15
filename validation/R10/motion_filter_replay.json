@@ -1,0 +1,26 @@
+[
+  {
+    "moving_tau_s": 3.0,
+    "stationary_tau_s": 3.0,
+    "first_jump_difference_m": 0.1678379318119805,
+    "scope": "Counterfactual replay of recorded accepted targets with original availability mask; not online acceptance"
+  },
+  {
+    "moving_tau_s": 0.8,
+    "stationary_tau_s": 3.0,
+    "first_jump_difference_m": 0.14492994329607742,
+    "scope": "Counterfactual replay of recorded accepted targets with original availability mask; not online acceptance"
+  },
+  {
+    "moving_tau_s": 0.5,
+    "stationary_tau_s": 3.0,
+    "first_jump_difference_m": 0.14218346237191043,
+    "scope": "Counterfactual replay of recorded accepted targets with original availability mask; not online acceptance"
+  },
+  {
+    "moving_tau_s": 0.3,
+    "stationary_tau_s": 3.0,
+    "first_jump_difference_m": 0.14136885473343863,
+    "scope": "Counterfactual replay of recorded accepted targets with original availability mask; not online acceptance"
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "retreat_m": 0.0,
+    "start": [
+      84.77268509157932,
+      32.26682228871799,
+      -1.1376428201931912
+    ],
+    "goal": [
+      88.5361888923889,
+      30.821381995416573,
+      0.26179938779914863
+    ],
+    "accepted": true,
+    "reason": "PRIOR_AND_KINEMATICS_VALID_OBSERVED_RISK_STILL_REQUIRED",
+    "details": {
+      "solver": "OMPL ReedsSheppStateSpace",
+      "length_m": 4.581158280766114,
+      "primitives": [
+        [
+          -0.3227535902608297,
+          -0.09919743607770304
+        ],
+        [
+          0.3227535902608297,
+          4.359354811686431
+        ],
+        [
+          -0.3227535902608297,
+          0.12260603300198009
+        ]
+      ],
+      "gear_sequence": [
+        -1,
+        1,
+        1
+      ],
+      "spacing_m": 0.04
+    },
+    "envelope_blocked": [
+      {
+        "direction": -1,
+        "count": 0,
+        "of": 4
+      },
+      {
+        "direction": 1,
+        "count": 0,
+        "of": 114
+      }
+    ]
+  },
+  {
+    "retreat_m": 0.3,
+    "start": [
+      84.77268509157932,
+      32.26682228871799,
+      -1.1376428201931912
+    ],
+    "goal": [
+      88.5361888923889,
+      30.821381995416573,
+      0.26179938779914863
+    ],
+    "accepted": true,
+    "reason": "PRIOR_AND_KINEMATICS_VALID_OBSERVED_RISK_STILL_REQUIRED",
+    "details": {
+      "solver": "OMPL ReedsSheppStateSpace",
+      "length_m": 4.612438428440947,
+      "primitives": [
+        [
+          0.3227535902608297,
+          3.2392036339782604
+        ],
+        [
+          0.0,
+          0.27649221367879334
+        ],
+        [
+          0.3227535902608297,
+          1.0967425807838935
+        ]
+      ],
+      "gear_sequence": [
+        1,
+        1,
+        1
+      ],
+      "spacing_m": 0.04
+    },
+    "envelope_blocked": [
+      {
+        "direction": -1,
+        "count": 0,
+        "of": 9
+      },
+      {
+        "direction": 1,
+        "count": 0,
+        "of": 117
+      }
+    ]
+  },
+  {
+    "retreat_m": 0.6,
+    "start": [
+      84.77268509157932,
+      32.26682228871799,
+      -1.1376428201931912
+    ],
+    "goal": [
+      88.5361888923889,
+      30.821381995416573,
+      0.26179938779914863
+    ],
+    "accepted": true,
+    "reason": "PRIOR_AND_KINEMATICS_VALID_OBSERVED_RISK_STILL_REQUIRED",
+    "details": {
+      "solver": "OMPL ReedsSheppStateSpace",
+      "length_m": 4.8355905439124,
+      "primitives": [
+        [
+          0.3227535902608297,
+          1.5468176012947505
+        ],
+        [
+          0.0,
+          0.4996443291502465
+        ],
+        [
+          0.3227535902608297,
+          2.7891286134674034
+        ]
+      ],
+      "gear_sequence": [
+        1,
+        1,
+        1
+      ],
+      "spacing_m": 0.04
+    },
+    "envelope_blocked": [
+      {
+        "direction": -1,
+        "count": 0,
+        "of": 16
+      },
+      {
+        "direction": 1,
+        "count": 0,
+        "of": 123
+      }
+    ]
+  },
+  {
+    "retreat_m": 0.8,
+    "start": [
+      84.77268509157932,
+      32.26682228871799,
+      -1.1376428201931912
+    ],
+    "goal": [
+      88.5361888923889,
+      30.821381995416573,
+      0.26179938779914863
+    ],
+    "accepted": true,
+    "reason": "PRIOR_AND_KINEMATICS_VALID_OBSERVED_RISK_STILL_REQUIRED",
+    "details": {
+      "solver": "OMPL ReedsSheppStateSpace",
+      "length_m": 5.0179350684858255,
+      "primitives": [
+        [
+          0.3227535902608297,
+          1.1103660107238154
+        ],
+        [
+          0.0,
+          0.6819888537236724
+        ],
+        [
+          0.3227535902608297,
+          3.2255802040383386
+        ]
+      ],
+      "gear_sequence": [
+        1,
+        1,
+        1
+      ],
+      "spacing_m": 0.04
+    },
+    "envelope_blocked": [
+      {
+        "direction": -1,
+        "count": 0,
+        "of": 21
+      },
+      {
+        "direction": 1,
+        "count": 0,
+        "of": 128
+      }
+    ]
+  }
+]

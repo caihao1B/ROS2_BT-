@@ -17,5 +17,10 @@
   "nominal_speed": 0.4,
   "degraded_speed": 0.06,
   "stopped_v": 0.01,
-  "stopped_w": 0.02
+  "stopped_w": 0.02,
+  "correction_filter_tau_s": 3.0,
+  "correction_filter_moving_tau_s": 0.5,
+  "plan_revision": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335",
+  "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+  "stopped_recovery_max_yaw_rad": 0.1
 }

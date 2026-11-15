@@ -2,123 +2,343 @@
   "passed": false,
   "terminal": "HUMAN_REQUIRED",
   "controlled_hold": true,
-  "error": "TimeoutError('ENDPOINT_RECOVERY_BUDGET')",
-  "t": 327.93,
-  "selected_segments": 34,
-  "navigation_groups": 34,
+  "error": "TimeoutError('WAIT_DEADLINE')",
+  "t": 879.272,
+  "selected_segments": 47,
+  "navigation_groups": 47,
   "original_segment_passages": [
     {
-      "segment": "B1:segment:0",
-      "xy_error_m": 0.09619093089406756,
-      "yaw_error_rad": 0.002285182153474674,
-      "t": 72.63
+      "segment": "B1:segment:0:safe:0",
+      "xy_error_m": 0.09898886178687347,
+      "yaw_error_rad": 0.015573017568445618,
+      "t": 82.68
     },
     {
-      "segment": "B1:segment:1",
-      "xy_error_m": 0.0942952768248307,
-      "yaw_error_rad": 0.0678466418489867,
-      "t": 78.3
+      "segment": "B1:safe_turn:1:0",
+      "xy_error_m": 0.09997960246749979,
+      "yaw_error_rad": 0.03203662921357048,
+      "t": 120.81
     },
     {
-      "segment": "B1:segment:2",
-      "xy_error_m": 0.09985075285564361,
-      "yaw_error_rad": 0.012575089782772275,
-      "t": 107.46
+      "segment": "B1:segment:4:safe:0",
+      "xy_error_m": 0.09804368986893588,
+      "yaw_error_rad": 0.016497347474338453,
+      "t": 180.632
     },
     {
-      "segment": "B1:segment:3",
-      "xy_error_m": 0.09873777478386735,
-      "yaw_error_rad": 0.031233117080814502,
-      "t": 112.95
+      "segment": "B1:safe_turn:2:0",
+      "xy_error_m": 0.09944657651653029,
+      "yaw_error_rad": 0.021503974166546147,
+      "t": 206.64
     },
     {
-      "segment": "B1:segment:4",
-      "xy_error_m": 0.09886859334623686,
-      "yaw_error_rad": 0.011671154163571396,
-      "t": 172.8
+      "segment": "B1:safe_turn:2:1",
+      "xy_error_m": 0.09952803418022116,
+      "yaw_error_rad": 0.007468608170521751,
+      "t": 246.15
     },
     {
-      "segment": "B1:segment:5",
-      "xy_error_m": 0.09870203160249492,
-      "yaw_error_rad": 0.0578269023190201,
-      "t": 192.75
+      "segment": "B1:safe_turn:2:2",
+      "xy_error_m": 0.09953424546739471,
+      "yaw_error_rad": 0.10616003036635169,
+      "t": 257.73
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "xy_error_m": 0.09788306472268442,
+      "yaw_error_rad": 0.004009628253518027,
+      "t": 361.592
+    },
+    {
+      "segment": "B1:safe_turn:3:0",
+      "xy_error_m": 0.09720250947922005,
+      "yaw_error_rad": 0.03983865441663958,
+      "t": 365.73
+    },
+    {
+      "segment": "B1:safe_turn:3:1",
+      "xy_error_m": 0.09853796431038514,
+      "yaw_error_rad": 0.050967862865404,
+      "t": 416.1
+    },
+    {
+      "segment": "B1:safe_turn:3:2",
+      "xy_error_m": 0.0959434194427734,
+      "yaw_error_rad": 0.06749456043026147,
+      "t": 497.82
+    },
+    {
+      "segment": "B1:safe_turn:3:3",
+      "xy_error_m": 0.09837975573729493,
+      "yaw_error_rad": 0.11454802214046389,
+      "t": 516.81
+    },
+    {
+      "segment": "B1:segment:12:safe:0",
+      "xy_error_m": 0.09918359554561303,
+      "yaw_error_rad": 0.00791954881982504,
+      "t": 577.89
+    },
+    {
+      "segment": "B1:safe_turn:4:0",
+      "xy_error_m": 0.09921909216087797,
+      "yaw_error_rad": 0.060886938390747325,
+      "t": 609.45
+    },
+    {
+      "segment": "B1:safe_turn:4:1",
+      "xy_error_m": 0.09996862449913332,
+      "yaw_error_rad": 0.013947400953874924,
+      "t": 701.13
+    },
+    {
+      "segment": "B1:safe_turn:4:2",
+      "xy_error_m": 0.09941415776943444,
+      "yaw_error_rad": 0.07186286701798394,
+      "t": 708.81
+    },
+    {
+      "segment": "B1:segment:16:safe:0",
+      "xy_error_m": 0.0958741705084902,
+      "yaw_error_rad": 0.012731349087898192,
+      "t": 735.51
+    },
+    {
+      "segment": "B1:safe_turn:5:0",
+      "xy_error_m": 0.09622762618975804,
+      "yaw_error_rad": 0.07488047199035952,
+      "t": 743.4
+    },
+    {
+      "segment": "B1:safe_turn:5:1",
+      "xy_error_m": 0.06987221590199122,
+      "yaw_error_rad": 0.11970809145188666,
+      "t": 745.83
+    },
+    {
+      "segment": "B1:safe_turn:5:2",
+      "xy_error_m": 0.0996571215836024,
+      "yaw_error_rad": 0.10411906735800834,
+      "t": 756.36
+    },
+    {
+      "segment": "B1:safe_turn:5:3",
+      "xy_error_m": 0.09809812498490933,
+      "yaw_error_rad": 0.1129179120483088,
+      "t": 863.222
     }
   ],
-  "original_segments": 34,
+  "original_segments": 47,
+  "execution_segments": 47,
+  "reference_original_segments": 34,
+  "original_reference_status": "PARTIAL",
+  "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+  "localization_revalidations": {
+    "B1:safe_turn:5:3": 1
+  },
   "completed_segments": [
-    "B1:segment:0",
-    "B1:segment:1",
-    "B1:segment:2",
-    "B1:segment:3",
-    "B1:segment:4",
-    "B1:segment:5"
+    "B1:segment:0:safe:0",
+    "B1:safe_turn:1:0",
+    "B1:segment:4:safe:0",
+    "B1:safe_turn:2:0",
+    "B1:safe_turn:2:1",
+    "B1:safe_turn:2:2",
+    "B1:segment:8:safe:0",
+    "B1:safe_turn:3:0",
+    "B1:safe_turn:3:1",
+    "B1:safe_turn:3:2",
+    "B1:safe_turn:3:3",
+    "B1:segment:12:safe:0",
+    "B1:safe_turn:4:0",
+    "B1:safe_turn:4:1",
+    "B1:safe_turn:4:2",
+    "B1:segment:16:safe:0",
+    "B1:safe_turn:5:0",
+    "B1:safe_turn:5:1",
+    "B1:safe_turn:5:2"
   ],
   "remaining_selected": [
-    "B1:segment:6",
-    "B1:segment:7",
-    "B1:segment:8",
-    "B1:segment:9",
-    "B1:segment:10",
-    "B1:segment:11",
-    "B1:segment:12",
-    "B1:segment:13",
-    "B1:segment:14",
-    "B1:segment:15",
-    "B1:segment:16",
-    "B1:segment:17",
-    "B1:segment:18",
-    "B1:segment:19",
-    "B1:segment:20",
-    "B1:segment:21",
-    "B1:segment:22",
-    "B1:segment:23",
-    "B1:segment:24",
-    "B1:segment:25",
-    "B1:segment:26",
-    "B1:segment:27",
-    "B1:segment:28",
-    "B1:segment:29",
-    "B1:segment:30",
-    "B1:segment:31",
-    "B1:segment:32",
-    "B1:segment:33"
+    "B1:safe_turn:5:3",
+    "B1:safe_turn:5:4",
+    "B1:segment:16:safe:1",
+    "B1:safe_turn:6:0",
+    "B1:safe_turn:6:1",
+    "B1:safe_turn:6:2",
+    "B1:safe_turn:6:3",
+    "B1:safe_turn:6:4",
+    "B1:segment:20:safe:0",
+    "B1:safe_turn:7:0",
+    "B1:safe_turn:7:1",
+    "B1:safe_turn:7:2",
+    "B1:safe_turn:7:3",
+    "B1:safe_turn:7:4",
+    "B1:safe_turn:7:5",
+    "B1:segment:24:safe:0",
+    "B1:safe_turn:8:0",
+    "B1:safe_turn:8:1",
+    "B1:safe_turn:8:2",
+    "B1:safe_turn:8:3",
+    "B1:safe_turn:8:4",
+    "B1:safe_turn:8:5",
+    "B1:safe_turn:8:6",
+    "B1:safe_turn:8:7",
+    "B1:segment:29:safe:0",
+    "B1:safe_turn:9:0",
+    "B1:safe_turn:9:1",
+    "B1:segment:29:safe:1"
   ],
   "not_selected": [],
   "work_results": [
     {
-      "segment": "B1:segment:0",
+      "segment": "B1:segment:0:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 9.71377499999998,
-      "remaining": 0.8477152816742155,
+      "confirmed": 3.760700000000002,
+      "remaining": 6.800790281674194,
       "uncertain": false
     },
     {
-      "segment": "B1:segment:4",
+      "segment": "B1:segment:0:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 17.17951249999998,
-      "remaining": 1.6753269275130904,
+      "confirmed": 3.760700000000002,
+      "remaining": 6.800790281674194,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 5.303237499999997,
+      "remaining": 5.258252781674199,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 9.657824999999997,
+      "remaining": 0.9036652816741988,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.172062499999978,
+      "remaining": 1.6827769275130926,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 4.795787499999989,
+      "remaining": 20.636531533425313,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 7.537375000000004,
+      "remaining": 17.894944033425297,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 14.147687500000023,
+      "remaining": 11.284631533425278,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 21.53773750000001,
+      "remaining": 3.894581533425292,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 22.255700000000022,
+      "remaining": 3.176619033425279,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 23.149574999999984,
+      "remaining": 2.282744033425317,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:12:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 11.294662500000014,
+      "remaining": 23.878207083358973,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:12:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 14.583799999999998,
+      "remaining": 20.58906958335899,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:12:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 14.787375,
+      "remaining": 20.385494583358987,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:12:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 15.377387500000012,
+      "remaining": 19.795482083358976,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:16:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 7.976674999999993,
+      "remaining": 21.62655591014289,
       "uncertain": false
     }
   ],
   "replans": 0,
+  "coverage_rejoins": 0,
+  "coverage_planner_queries": 0,
   "endpoint_recoveries": 1,
-  "endpoint_planner_queries": 2,
-  "continuous_recovery_queries": 2,
+  "endpoint_planner_queries": 1,
+  "continuous_recovery_queries": 1,
   "final_gate": {
-    "t": 327.93,
+    "t": 879.27,
     "allowed": false,
     "mode": "STOP",
     "v": 0.0,
     "w": 0.0,
     "reasons": [
+      "LOCALIZATION",
+      "PERCEPTION",
       "NAV_COMMAND_STALE"
     ],
     "stopped": true,
     "tool_stopped": true,
     "nav_idle": true,
-    "progress_m": 46.91894658988906,
+    "progress_m": 132.44101279923953,
     "armed_direction": 1,
     "raw_nav_v": 0.0,
     "raw_nav_w": 0.0
@@ -135,7 +355,7 @@
       "s10_tool_action_server"
     ]
   },
-  "wall_seconds": 1125.2289636039932,
+  "wall_seconds": 2333.241463890008,
   "execution_mode": "original_primitive_boundaries",
-  "scope": "Original segment goals checked in order under explicitly versioned execution mode; feedback area separate from passage"
+  "scope": "All current approved execution goals checked in order; original 34 reference remains PARTIAL; unchanged original work polygons use physical feedback only"
 }

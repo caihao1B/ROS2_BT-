@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "cycle": 0,
+      "both_directions_exact": true,
+      "exit": 0,
+      "forced": false,
+      "shutdown_wall_s": 0.1348078790178988
+    },
+    {
+      "cycle": 1,
+      "both_directions_exact": true,
+      "exit": 0,
+      "forced": false,
+      "shutdown_wall_s": 0.12274303901358508
+    },
+    {
+      "cycle": 2,
+      "both_directions_exact": true,
+      "exit": 0,
+      "forced": false,
+      "shutdown_wall_s": 0.12368425200111233
+    },
+    {
+      "cycle": 3,
+      "both_directions_exact": true,
+      "exit": 0,
+      "forced": false,
+      "shutdown_wall_s": 0.12384978201589547
+    },
+    {
+      "cycle": 4,
+      "both_directions_exact": true,
+      "exit": 0,
+      "forced": false,
+      "shutdown_wall_s": 0.12135614000726491
+    },
+    {
+      "cycle": 5,
+      "both_directions_exact": true,
+      "exit": 0,
+      "forced": false,
+      "shutdown_wall_s": 0.12213555301423185
+    }
+  ],
+  "binary_sha256": "a618caa663b5f74fcfb8733968e51e487e06d9df6c10333d6560059f67d08b3f",
+  "source_sha256": "f373b030f63457b582680b74cddf68964689c55700734ed4794a266e58820f8a",
+  "probe_sha256": "6797345964fbc75453bf28b26d78d1d840d7ca398216d799f5e4ab4a679303e5",
+  "scope": "Actual ROS and Gazebo transport fixture; shutdown under active traffic, no physical work credit"
+}

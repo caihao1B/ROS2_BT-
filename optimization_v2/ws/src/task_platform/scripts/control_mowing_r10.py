@@ -3,6 +3,7 @@ import argparse,json,time,signal,math
 from pathlib import Path
 import numpy as np
 from recovery_mowing_r10 import gear_permitted,arm_direction
+from obstruction_memory_r10 import ObstructionMemory
 import rclpy
 from rclpy.qos import qos_profile_sensor_data
 from std_msgs.msg import String
@@ -12,7 +13,7 @@ from rosgraph_msgs.msg import Clock
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);ap.add_argument('--config',type=Path,required=True);ap.add_argument('--session',required=True);a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True);c=json.loads(a.config.read_text());v=c['vehicle'];rclpy.init();n=rclpy.create_node('r09_actuator_gate',parameter_overrides=[rclpy.parameter.Parameter('use_sim_time',value=True)]);st=dict(t=0.,stop=False,enc=None,odom=None,loc=None,safety=None,tool=None,worker=None,bt=None,cmd=None,cmd_wall=0.,clock_wall=time.monotonic());seq=0;contextseq=0;progress=0.;lastpose=None;last_gear=0
-    cmdpub=n.create_publisher(String,'/s03/actuator/request',10);btpub=n.create_publisher(String,'/r06/context',10);statepub=n.create_publisher(String,'/r07/gate',10);log=(a.out/'gate.jsonl').open('w')
+    cmdpub=n.create_publisher(String,'/s03/actuator/request',10);btpub=n.create_publisher(String,'/r06/context',10);statepub=n.create_publisher(String,'/r07/gate',10);log=(a.out/'gate.jsonl').open('w');obstruction=ObstructionMemory(c['obstruction_evidence']['clear_hold_s'])
     def clock(m):
         t=m.clock.sec+m.clock.nanosec*1e-9
         if t!=st['t']:st['clock_wall']=time.monotonic()
@@ -36,7 +37,7 @@ def main():
             p=loc['odom']
             if lastpose is not None:progress+=min(.1,math.dist(p[:2],lastpose[:2])+.25*abs(math.atan2(math.sin(p[2]-lastpose[2]),math.cos(p[2]-lastpose[2]))))
             lastpose=p
-        blocked=healthy and s.get('max_speed',0)<=0 or bool(worker.get('nav_failed'))
+        blocked=obstruction.update(t,healthy,s.get('max_speed',0)<=0) or bool(worker.get('nav_failed'))
         contextseq+=1;context=dict(stamp=t,sequence=contextseq,session=a.session,task_version=c['version'],vehicle_hash=v['config_hash'],rig_revision=c['rig']['revision'],localized=localized,sensors_healthy=healthy,stopped=stopped,tool_stopped=tool_stopped,nav_idle=nav_idle,remaining_s=max(0,c['task_budget_s']-t),next_min_s=3.,blocked=blocked,complete=worker.get('complete',False),commanded_motion=workerfresh and worker.get('phase')=='NAVIGATING',progress_m=progress,replans=worker.get('replans',0),deferrals=worker.get('deferrals',0),alternative=worker.get('alternative',False),detour_valid=False,worker_fresh=workerfresh,loc_age=t-loc.get('t',-100),sensor_age=t-s.get('t',-100),reference_valid=loc.get('valid',False))
         btpub.publish(String(data=json.dumps(context)))
         working_segment=workerfresh and worker.get('segment')=='COVERAGE' and worker.get('direction')==1 and not worker.get('work_complete',False)

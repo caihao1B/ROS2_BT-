@@ -1,0 +1,6 @@
+{
+  "source": "optimization_v2/three_tasks/results/R12/spray_20261115_010125_409123",
+  "first_stopped_observation_proposal_sim": 426.39,
+  "original_bt_cancel_sim": 436.908,
+  "scope": "Recorded odometry counterfactual only, no runtime success or work credit"
+}

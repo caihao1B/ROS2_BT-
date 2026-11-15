@@ -1,0 +1,19 @@
+test_bounded_tail_discloses_incomplete_history (test_monitor.MonitorEvidenceTests.test_bounded_tail_discloses_incomplete_history) ... ok
+test_file_stall_distinguished_from_sim_freshness (test_monitor.MonitorEvidenceTests.test_file_stall_distinguished_from_sim_freshness) ... ok
+test_historical_run_not_marked_live (test_monitor.MonitorEvidenceTests.test_historical_run_not_marked_live) ... ok
+test_inspection_selected_distance_keeps_original_route (test_monitor.MonitorEvidenceTests.test_inspection_selected_distance_keeps_original_route) ... ok
+test_invalid_measurement_not_json_nan (test_monitor.MonitorEvidenceTests.test_invalid_measurement_not_json_nan) ... ok
+test_live_run_does_not_infer_pass (test_monitor.MonitorEvidenceTests.test_live_run_does_not_infer_pass) ... ok
+test_missing_stale_and_future_distinguished (test_monitor.MonitorEvidenceTests.test_missing_stale_and_future_distinguished) ... ok
+test_no_path_traversal_or_unknown_run (test_monitor.MonitorEvidenceTests.test_no_path_traversal_or_unknown_run) ... ok
+test_no_work_credit_for_failed_or_replayed_action (test_monitor.MonitorEvidenceTests.test_no_work_credit_for_failed_or_replayed_action) ... ok
+test_occupied_port_does_not_spawn_ros_child (test_monitor.MonitorEvidenceTests.test_occupied_port_does_not_spawn_ros_child) ... ok
+test_old_observer_cannot_cross_session (test_monitor.MonitorEvidenceTests.test_old_observer_cannot_cross_session) ... ok
+test_partial_json_line_not_treated_as_complete (test_monitor.MonitorEvidenceTests.test_partial_json_line_not_treated_as_complete) ... ok
+test_record_count_limit_discloses_incomplete_history (test_monitor.MonitorEvidenceTests.test_record_count_limit_discloses_incomplete_history) ... ok
+test_short_demo_does_not_shrink_original_plan (test_monitor.MonitorEvidenceTests.test_short_demo_does_not_shrink_original_plan) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.049s
+
+OK

@@ -1,0 +1,203 @@
+{
+  "ownership": {
+    "/tf": [
+      {
+        "node": "s05_local_odometry",
+        "namespace": "/",
+        "gid": [
+          1,
+          15,
+          245,
+          121,
+          175,
+          215,
+          153,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          3
+        ]
+      },
+      {
+        "node": "s08_global_pose_manager",
+        "namespace": "/",
+        "gid": [
+          1,
+          15,
+          245,
+          121,
+          191,
+          215,
+          12,
+          111,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          3
+        ]
+      }
+    ],
+    "/s03/actuator/request": [
+      {
+        "node": "r07_actuator_gate",
+        "namespace": "/",
+        "gid": [
+          1,
+          15,
+          245,
+          121,
+          195,
+          215,
+          250,
+          29,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          3
+        ]
+      }
+    ],
+    "/s10/tool/command": [
+      {
+        "node": "s10_tool_action_server",
+        "namespace": "/",
+        "gid": [
+          1,
+          15,
+          245,
+          121,
+          199,
+          215,
+          214,
+          210,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          3
+        ]
+      }
+    ]
+  },
+  "final_gate": {
+    "raw_nav_v": 0.0,
+    "raw_nav_w": 0.0,
+    "t": 248.67,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "NAV_COMMAND_STALE"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 23.729200793035815
+  },
+  "passed": false,
+  "error": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+  "cluster": "A1",
+  "selected_points": 56,
+  "original_points": 56,
+  "completed": [
+    {
+      "point": "point_7_14",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.064,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 0.0,
+      "meter_after": 3.2597
+    },
+    {
+      "point": "point_8_14",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.0519999999999996,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 3.2597,
+      "meter_after": 6.5093
+    },
+    {
+      "point": "point_8_15",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.073999999999998,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 6.5093,
+      "meter_after": 9.763
+    },
+    {
+      "point": "point_9_15",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.0519999999999925,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 9.763,
+      "meter_after": 13.0107
+    },
+    {
+      "point": "point_9_14",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.078000000000003,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 13.0107,
+      "meter_after": 16.2703
+    },
+    {
+      "point": "point_10_14",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.078000000000003,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 16.2703,
+      "meter_after": 19.544
+    }
+  ],
+  "failed": [],
+  "not_selected": [],
+  "replay": {
+    "point": "point_7_14",
+    "state": "SUCCEEDED",
+    "reason": "CONFIRMED_WORK",
+    "confirmed": 3.064,
+    "remaining": 0.0,
+    "uncertainty": false,
+    "replayed": true,
+    "meter_before": 3.2597,
+    "meter_after": 3.2597
+  },
+  "t": 248.678,
+  "wall_seconds": 646.0222267599893,
+  "scope": "Explicitly selected original points; confirmed work and residual separate; full selection does not imply full completion"
+}

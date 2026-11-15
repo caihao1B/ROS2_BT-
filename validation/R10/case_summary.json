@@ -5,10 +5,15 @@
     "cases": {
       "gnss_conflict": {
         "passed": true,
+        "checks": {
+          "initial_trusted": true,
+          "actual_raw_innovation_rejected": true,
+          "gnss_stays_excluded": true
+        },
         "initial_trusted": true,
-        "fault_at": 3.4,
-        "last": {
-          "confirmation_count": 19,
+        "fault_at": 3.35,
+        "first_fault_witness": {
+          "confirmation_count": 22,
           "correction": [
             0.0,
             0.0,
@@ -18,16 +23,18 @@
             0.0,
             1.0
           ],
-          "correction_filter_tau_s": 0.8,
-          "gnss_age": 104.65,
+          "correction_filter_active_tau_s": 3.0,
+          "correction_filter_tau_s": 3.0,
+          "gnss_age": 103.45,
           "gnss_reason": "INNOVATION_REJECTED_FIXED",
           "gps_count": 0,
           "has_transform": true,
-          "heading_age": 0.05000000000000071,
+          "heading_age": 0.050000000000000266,
           "innovation_limit_m": 0.15,
           "innovation_m": 0.25,
           "jump_count": 0,
-          "map_age": 0.05000000000000071,
+          "last_rejected_map": {},
+          "map_age": 0.050000000000000266,
           "map_reason": "GEOMETRIC_MATCH",
           "max_speed": 0.06,
           "navigation_allowed": true,
@@ -44,20 +51,22 @@
             1.0
           ],
           "reason": "GNSS_INNOVATION_REJECTED_FIXED",
+          "recovery_count": 0,
+          "recovery_epoch": 0,
+          "recovery_gnss_reference": "independent raw fixed samples tested against stopped candidate",
+          "recovery_gnss_samples": 9,
+          "recovery_prepared_t": -100.0,
+          "recovery_preview": false,
+          "recovery_ready": false,
           "source": "MAP",
           "state": "MAP_ONLY",
-          "t": 4.65,
+          "t": 3.45,
           "v": 0.0,
           "w": 0.0
         },
-        "clean_exit": true
-      },
-      "raw_map_jump": {
-        "passed": true,
-        "initial_trusted": true,
-        "fault_at": 3.25,
+        "verified_fault_status_count": 26,
         "last": {
-          "confirmation_count": 19,
+          "confirmation_count": 22,
           "correction": [
             0.0,
             0.0,
@@ -67,16 +76,123 @@
             0.0,
             1.0
           ],
-          "correction_filter_tau_s": 0.8,
+          "correction_filter_active_tau_s": 3.0,
+          "correction_filter_tau_s": 3.0,
+          "gnss_age": 104.6,
+          "gnss_reason": "INNOVATION_REJECTED_FIXED",
+          "gps_count": 0,
+          "has_transform": true,
+          "heading_age": 0.0,
+          "innovation_limit_m": 0.15,
+          "innovation_m": 0.25,
+          "jump_count": 0,
+          "last_rejected_map": {},
+          "map_age": 0.0,
+          "map_reason": "GEOMETRIC_MATCH",
+          "max_speed": 0.06,
+          "navigation_allowed": true,
+          "nis": 21.551724137931032,
+          "nis_limit": 9.21,
+          "plan_revalidation_required": false,
+          "raw_map_correction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "reason": "GNSS_INNOVATION_REJECTED_FIXED",
+          "recovery_count": 0,
+          "recovery_epoch": 0,
+          "recovery_gnss_reference": "independent raw fixed samples tested against stopped candidate",
+          "recovery_gnss_samples": 12,
+          "recovery_prepared_t": -100.0,
+          "recovery_preview": false,
+          "recovery_ready": false,
+          "source": "MAP",
+          "state": "MAP_ONLY",
+          "t": 4.6,
+          "v": 0.0,
+          "w": 0.0
+        },
+        "clean_exit": true
+      },
+      "raw_map_jump": {
+        "passed": true,
+        "checks": {
+          "initial_trusted": true,
+          "actual_raw_jump_latches": true,
+          "hold_never_permits_motion": true
+        },
+        "initial_trusted": true,
+        "fault_at": 3.15,
+        "first_fault_witness": {
+          "confirmation_count": 0,
+          "correction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "correction_filter_active_tau_s": 3.0,
+          "correction_filter_tau_s": 3.0,
           "gnss_age": 0.0,
           "gnss_reason": "FIXED_AND_INNOVATION_VALID",
-          "gps_count": 53,
+          "gps_count": 39,
           "has_transform": true,
-          "heading_age": 1.2000000000000002,
+          "heading_age": 0.050000000000000266,
           "innovation_limit_m": 0.15,
           "innovation_m": 0.0,
           "jump_count": 1,
-          "map_age": 104.45,
+          "last_rejected_map": {
+            "angle_rad": 0.0,
+            "candidate": [
+              0.2,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "capture_t": 3.2,
+            "displacement_m": 0.2,
+            "map_pose": [
+              0.2,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "matched_odom_t": 3.2,
+            "paired_odom": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "previous": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "received_t": 3.2
+          },
+          "map_age": 103.2,
           "map_reason": "MAP_JUMP_REJECTED",
           "max_speed": 0.0,
           "navigation_allowed": false,
@@ -93,19 +209,194 @@
             1.0
           ],
           "reason": "PLAN_REVALIDATION_REQUIRED",
+          "recovery_count": 0,
+          "recovery_epoch": 0,
+          "recovery_gnss_reference": "independent raw fixed samples tested against stopped candidate",
+          "recovery_gnss_samples": 10,
+          "recovery_prepared_t": -100.0,
+          "recovery_preview": false,
+          "recovery_ready": false,
           "source": "GNSS_POSITION_LOCAL_HEADING",
           "state": "STOPPED",
-          "t": 4.45,
+          "t": 3.2,
+          "v": 0.0,
+          "w": 0.0
+        },
+        "verified_fault_status_count": 27,
+        "last": {
+          "confirmation_count": 20,
+          "correction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "correction_filter_active_tau_s": 3.0,
+          "correction_filter_tau_s": 3.0,
+          "gnss_age": 0.0,
+          "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+          "gps_count": 59,
+          "has_transform": true,
+          "heading_age": 1.2500000000000004,
+          "innovation_limit_m": 0.15,
+          "innovation_m": 0.0,
+          "jump_count": 1,
+          "last_rejected_map": {
+            "angle_rad": 0.0,
+            "candidate": [
+              0.2,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "capture_t": 4.4,
+            "displacement_m": 0.2,
+            "map_pose": [
+              0.2,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "matched_odom_t": 4.4,
+            "paired_odom": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "previous": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "received_t": 4.4
+          },
+          "map_age": 104.4,
+          "map_reason": "MAP_JUMP_REJECTED",
+          "max_speed": 0.0,
+          "navigation_allowed": false,
+          "nis": 0.0,
+          "nis_limit": 9.21,
+          "plan_revalidation_required": true,
+          "raw_map_correction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "reason": "PLAN_REVALIDATION_REQUIRED",
+          "recovery_count": 0,
+          "recovery_epoch": 0,
+          "recovery_gnss_reference": "independent raw fixed samples tested against stopped candidate",
+          "recovery_gnss_samples": 10,
+          "recovery_prepared_t": -100.0,
+          "recovery_preview": false,
+          "recovery_ready": false,
+          "source": "GNSS_POSITION_LOCAL_HEADING",
+          "state": "STOPPED",
+          "t": 4.4,
           "v": 0.0,
           "w": 0.0
         },
         "clean_exit": true
       }
     },
-    "binary_sha256": "c677479d3d77b366336d308e1d860d1a3baeaf421d4f63eafdf24254d3d6bae7",
-    "policy_sha256": "40e825c36891c86675dd12eee43b3d25714e2746da37945747bbfb28e43a8a27",
+    "binary_sha256": "396d69b34017819eb6120c33dc2959ec46d0e6632ef66215d3848457f193812c",
+    "policy_sha256": "872e99f267388212c9b5ccd6a40a3badb7a7b004a82e6f9394c431a2027b0743",
+    "probe_sha256": "b54205298ee3f88ac7a0992adbd626d18e0c3b80da500dd7b370f3714e35de8d",
     "domain": "133",
-    "scope": "Synthetic isolated C++ policy test; no real sensor, navigation or work completion credit"
+    "scope": "Synthetic isolated C++ policy test; no real sensor, navigation or work completion credit",
+    "template_sha256": "b1935ce3fc85b70ae29511fd2bd3cd833e5cc0c563afd3615ec5ab14b068db4b",
+    "derived_source_sha256": "79c1357581c48fb008b3e6d92acc947724e933ae679440032f36d27524df702b",
+    "variant": "global"
+  },
+  "stopped_revalidation_probe": {
+    "passed": true,
+    "checks": {
+      "original_initial_confirmation": true,
+      "original_jump_guard_stops": true,
+      "reject_without_worker_transaction": true,
+      "reject_while_moving": true,
+      "prepare_retains_hold": true,
+      "no_path_proof_rejected": true,
+      "wrong_epoch_rejected": true,
+      "wrong_plan_rejected": true,
+      "blocked_path_rejected": true,
+      "valid_transaction_commits": true,
+      "commit_not_instant_motion": true,
+      "original_confirmation_after_commit": true,
+      "exact_rejected_se3_recorded": true,
+      "clean_exit": true
+    },
+    "events": [
+      {
+        "t": 3.55,
+        "success": false,
+        "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+      },
+      {
+        "t": 5.6,
+        "success": false,
+        "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+      },
+      {
+        "t": 7.25,
+        "success": true,
+        "message": "{\"epoch\":1,\"reason\":\"STOPPED_CANDIDATE_PREPARED_HOLD_RETAINED\",\"t\":7.25}"
+      },
+      {
+        "t": 7.3,
+        "success": false,
+        "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+      },
+      {
+        "t": 7.4,
+        "success": false,
+        "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+      },
+      {
+        "t": 7.5,
+        "success": false,
+        "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+      },
+      {
+        "t": 7.6,
+        "success": false,
+        "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+      },
+      {
+        "t": 7.75,
+        "success": true,
+        "message": "PLAN_REVALIDATED_WAIT_FOR_ORIGINAL_CONFIRMATION"
+      }
+    ],
+    "binary_sha256": "396d69b34017819eb6120c33dc2959ec46d0e6632ef66215d3848457f193812c",
+    "policy_sha256": "872e99f267388212c9b5ccd6a40a3badb7a7b004a82e6f9394c431a2027b0743",
+    "source_sha256": "b54205298ee3f88ac7a0992adbd626d18e0c3b80da500dd7b370f3714e35de8d",
+    "domain": "135",
+    "scope": "Synthetic isolated production recovery transaction; no Gazebo or work completion credit",
+    "template_sha256": "53ef899b91b02a4c41f403c9aa693f4f521630fca0fecf69b79e33c020fbe1a2",
+    "derived_source_sha256": "a858d7efca1702bbf082806552d7abd45b000e3452ceb7905aec0424d670b95a",
+    "variant": "revalidation"
   },
   "ledger_clock_probe": {
     "passed": true,
@@ -119,17 +410,17 @@
       {
         "variant": "original",
         "samples": 6,
-        "median_wall_gap_s": 0.49759177600208204,
-        "max_wall_gap_s": 0.4997623689996544,
+        "median_wall_gap_s": 0.5006841830036137,
+        "max_wall_gap_s": 0.5120283190044574,
         "clock_watchdog_during_pause": false,
         "exit": 0,
         "source_sha256": "a17bdd9eecd6e3cef0f1c540f7f7110d7a44df71eca6ca1640e488115125f09c"
       },
       {
         "variant": "steady",
-        "samples": 51,
-        "median_wall_gap_s": 0.05294873649108922,
-        "max_wall_gap_s": 0.05439294000098016,
+        "samples": 60,
+        "median_wall_gap_s": 0.052212090988177806,
+        "max_wall_gap_s": 0.056660994014237076,
         "clock_watchdog_during_pause": true,
         "exit": 0,
         "source_sha256": "ea36aafea08f79472eef40d9ae905d9523a9a5917e68bd44e3ed2bae47041d1c"
@@ -137,27 +428,31 @@
     ],
     "original_stale_limit_wall_s": 0.25,
     "scope": "Actual ROS nodes with synthetic clock only; no Gazebo, tool action, motion or work credit",
-    "policy_sha256": "3c91d611b1242cc36504ed45afd72a35924ec9c2b59a5d92c372388d93c6bb34"
+    "policy_sha256": "fa966f1ce9318531f782838b75aff377009ad3583750bbd00cad65a82b3b4b22"
   },
   "cases": [
     {
       "case": "spray_full_A1",
       "passed": false,
-      "simulation_seconds": 1186.44,
-      "wall_seconds": 3068.2401804830006,
+      "simulation_seconds": 1402.732,
+      "wall_seconds": 3004.4799021510116,
       "terminal": "INCOMPLETE",
-      "reason": "TimeoutError('WAIT_DEADLINE')",
+      "reason": "RuntimeError('LOCALIZATION_REVALIDATION_BOUND')",
       "selected_points": 56,
       "original_points": 56,
-      "confirmed_points": 20,
+      "confirmed_points": 28,
       "selected_segments": null,
       "original_segments": null,
+      "execution_segments": null,
+      "reference_original_segments": null,
+      "original_reference_status": null,
+      "safe_plan_revision": null,
       "confirmed_segments": null,
       "confirmed_area_m2": null,
       "residual_area_m2": null,
       "remaining_original_route_m": null,
       "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit",
-      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_194849_404114",
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261115_060145_047614",
       "terminal_snapshot": {
         "bt_reason": "LOCALIZATION_ADMISSION_WAIT",
         "localization_reason": "PLAN_REVALIDATION_REQUIRED",
@@ -172,8 +467,8 @@
     {
       "case": "spray_tool_jam",
       "passed": true,
-      "simulation_seconds": 143.396,
-      "wall_seconds": 372.7712313009979,
+      "simulation_seconds": 92.786,
+      "wall_seconds": 242.6777821329888,
       "terminal": "COMPLETED",
       "reason": null,
       "selected_points": 3,
@@ -181,12 +476,16 @@
       "confirmed_points": 3,
       "selected_segments": null,
       "original_segments": null,
+      "execution_segments": null,
+      "reference_original_segments": null,
+      "original_reference_status": null,
+      "safe_plan_revision": null,
       "confirmed_segments": null,
       "confirmed_area_m2": null,
       "residual_area_m2": null,
       "remaining_original_route_m": null,
       "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit",
-      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_194217_549485",
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261115_065207_245639",
       "terminal_snapshot": {
         "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
         "localization_reason": "MAP_AND_GNSS_AGREE",
@@ -199,56 +498,113 @@
     {
       "case": "mowing_full_B1",
       "passed": false,
-      "simulation_seconds": 327.93,
-      "wall_seconds": 1125.2289636039932,
+      "simulation_seconds": 879.272,
+      "wall_seconds": 2333.241463890008,
       "terminal": "HUMAN_REQUIRED",
-      "reason": "TimeoutError('ENDPOINT_RECOVERY_BUDGET')",
+      "reason": "TimeoutError('WAIT_DEADLINE')",
       "selected_points": null,
       "original_points": null,
       "confirmed_points": null,
-      "selected_segments": 34,
-      "original_segments": 34,
-      "confirmed_segments": 6,
-      "confirmed_area_m2": 26.48870692016314,
-      "residual_area_m2": 161.90309477279322,
+      "selected_segments": 47,
+      "original_segments": 47,
+      "execution_segments": 47,
+      "reference_original_segments": 34,
+      "original_reference_status": "PARTIAL",
+      "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+      "confirmed_segments": 19,
+      "confirmed_area_m2": 71.94386728545035,
+      "residual_area_m2": 116.44793440750612,
       "remaining_original_route_m": null,
       "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
-      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_205558_700516",
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261115_070740_054017",
       "terminal_snapshot": {
-        "bt_reason": "NEXT_OBLIGATION",
-        "localization_reason": "MAP_AND_GNSS_AGREE",
+        "bt_reason": "LOCALIZATION_ADMISSION_WAIT",
+        "localization_reason": "PLAN_REVALIDATION_REQUIRED",
         "gate_reasons": [
+          "LOCALIZATION",
+          "PERCEPTION",
           "NAV_COMMAND_STALE"
         ],
         "scope": "Last snapshot for context, not an independent root-cause conclusion"
       },
-      "endpoint_recovery_successes": [],
+      "endpoint_recovery_successes": [
+        {
+          "t": 211.35,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:2:0",
+          "attempt": 0,
+          "pause_restarts": 0,
+          "method": "measured stopped original segment admission; no extra motion"
+        },
+        {
+          "t": 255.124,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:2:1",
+          "attempt": 0,
+          "pause_restarts": 0,
+          "method": "measured stopped original segment admission; no extra motion"
+        },
+        {
+          "t": 264.99,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:2:2",
+          "attempt": 0,
+          "pause_restarts": 0,
+          "method": "measured stopped original segment admission; no extra motion"
+        },
+        {
+          "t": 701.942,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:4:1",
+          "attempt": 0,
+          "pause_restarts": 1
+        },
+        {
+          "t": 750.87,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:5:1",
+          "attempt": 0,
+          "pause_restarts": 0,
+          "method": "measured stopped original segment admission; no extra motion"
+        },
+        {
+          "t": 762.24,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:5:2",
+          "attempt": 0,
+          "pause_restarts": 0,
+          "method": "measured stopped original segment admission; no extra motion"
+        }
+      ],
       "observation_resume_count": 1
     },
     {
       "case": "mowing_startup_perception_loss",
       "passed": true,
-      "simulation_seconds": 185.572,
-      "wall_seconds": 491.6971119480004,
+      "simulation_seconds": 246.912,
+      "wall_seconds": 661.5896586510062,
       "terminal": "COMPLETED",
       "reason": null,
       "selected_points": null,
       "original_points": null,
       "confirmed_points": null,
       "selected_segments": 5,
-      "original_segments": 34,
+      "original_segments": 47,
+      "execution_segments": 47,
+      "reference_original_segments": 34,
+      "original_reference_status": "PARTIAL",
+      "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
       "confirmed_segments": 5,
-      "confirmed_area_m2": 26.556663461538417,
-      "residual_area_m2": 1.397318245255585,
+      "confirmed_area_m2": 26.391029762931016,
+      "residual_area_m2": 1.5629519438629738,
       "remaining_original_route_m": null,
       "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
-      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_211518_676200",
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371",
       "terminal_snapshot": {
         "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
         "localization_reason": "MAP_AND_GNSS_AGREE",
         "gate_reasons": [
-          "NAV_COMMAND_STALE",
-          "TOOL_STATE_FOR_SEGMENT"
+          "NAV_COMMAND_STALE"
         ],
         "scope": "Last snapshot for context, not an independent root-cause conclusion"
       }
@@ -265,6 +621,10 @@
       "confirmed_points": null,
       "selected_segments": null,
       "original_segments": null,
+      "execution_segments": null,
+      "reference_original_segments": null,
+      "original_reference_status": null,
+      "safe_plan_revision": null,
       "confirmed_segments": null,
       "confirmed_area_m2": null,
       "residual_area_m2": null,
@@ -292,6 +652,10 @@
       "confirmed_points": null,
       "selected_segments": null,
       "original_segments": null,
+      "execution_segments": null,
+      "reference_original_segments": null,
+      "original_reference_status": null,
+      "safe_plan_revision": null,
       "confirmed_segments": null,
       "confirmed_area_m2": null,
       "residual_area_m2": null,
@@ -319,6 +683,10 @@
       "confirmed_points": null,
       "selected_segments": null,
       "original_segments": null,
+      "execution_segments": null,
+      "reference_original_segments": null,
+      "original_reference_status": null,
+      "safe_plan_revision": null,
       "confirmed_segments": null,
       "confirmed_area_m2": null,
       "residual_area_m2": null,
@@ -346,6 +714,10 @@
       "confirmed_points": null,
       "selected_segments": null,
       "original_segments": null,
+      "execution_segments": null,
+      "reference_original_segments": null,
+      "original_reference_status": null,
+      "safe_plan_revision": null,
       "confirmed_segments": null,
       "confirmed_area_m2": null,
       "residual_area_m2": null,
@@ -375,6 +747,10 @@
       "confirmed_points": null,
       "selected_segments": 5,
       "original_segments": 34,
+      "execution_segments": null,
+      "reference_original_segments": null,
+      "original_reference_status": null,
+      "safe_plan_revision": null,
       "confirmed_segments": 0,
       "confirmed_area_m2": 2.5984625000000006,
       "residual_area_m2": 25.355519206793986,
@@ -397,7 +773,7 @@
     "spray_full_A1 failed current evidence checks",
     "mowing_full_B1 failed current evidence checks",
     "Full original A1 not completed; partial point demo does not replace it",
-    "Full original B1 traversal not completed; partial swaths do not replace it"
+    "Full approved B1 execution not completed; partial swaths do not replace it"
   ],
   "original_obligations": {
     "A1_points": 56,
@@ -407,5 +783,594 @@
   "formal_credit": false,
   "original_S17": "PARTIAL",
   "original_S18": "PARTIAL",
-  "scope": "Three separately run task acceptance cases plus declared bounded faults; no sixty-run matrix, no A2/A3/B2/B3 or cutting-effectiveness claim"
+  "scope": "Three separately run task acceptance cases plus declared bounded faults; no sixty-run matrix, no A2/A3/B2/B3 or cutting-effectiveness claim",
+  "precision_progress_probe": {
+    "passed": true,
+    "cases": [
+      {
+        "name": "original_policy_test",
+        "exit": 0,
+        "stdout": "{\"cases\":25,\"framework\":\"BehaviorTree.CPP actual XML execution\",\"passed\":true}\n",
+        "stderr": ""
+      },
+      {
+        "name": "precision_progress_test",
+        "exit": 0,
+        "stdout": "{\"checks\":5,\"coarse_delta_m\":0.1,\"passed\":true,\"scope\":\"Actual derived BT policy; no disabled stall watchdog\",\"timeout_s\":10.0}\n",
+        "stderr": ""
+      }
+    ],
+    "binary_sha256": "ffaf6fc7458c4b26a2895cab23bc88fedde31891dcfd1f16b82bb25306dd9ac8",
+    "policy_sha256": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+    "header_sha256": "3b34eb3bcafcbea8d02cf5d375769c423a859bef15fa3dfe678a565bb303bcda",
+    "driver_sha256": "5f2da7a37b87d062a63a8bb02e5fa23db5a5fb59da105cc2bd00127513d7f50d",
+    "generator_sha256": "70994fb55029d069818efc7c6f8df6e154ae37506faba38709f7be96a90fb3cd",
+    "scope": "Actual BehaviorTree.CPP policy/XML tests, separate from full A1 execution"
+  },
+  "bridge_shutdown_probe": {
+    "passed": true,
+    "cases": [
+      {
+        "cycle": 0,
+        "both_directions_exact": true,
+        "exit": 0,
+        "forced": false,
+        "shutdown_wall_s": 0.1348078790178988
+      },
+      {
+        "cycle": 1,
+        "both_directions_exact": true,
+        "exit": 0,
+        "forced": false,
+        "shutdown_wall_s": 0.12274303901358508
+      },
+      {
+        "cycle": 2,
+        "both_directions_exact": true,
+        "exit": 0,
+        "forced": false,
+        "shutdown_wall_s": 0.12368425200111233
+      },
+      {
+        "cycle": 3,
+        "both_directions_exact": true,
+        "exit": 0,
+        "forced": false,
+        "shutdown_wall_s": 0.12384978201589547
+      },
+      {
+        "cycle": 4,
+        "both_directions_exact": true,
+        "exit": 0,
+        "forced": false,
+        "shutdown_wall_s": 0.12135614000726491
+      },
+      {
+        "cycle": 5,
+        "both_directions_exact": true,
+        "exit": 0,
+        "forced": false,
+        "shutdown_wall_s": 0.12213555301423185
+      }
+    ],
+    "binary_sha256": "a618caa663b5f74fcfb8733968e51e487e06d9df6c10333d6560059f67d08b3f",
+    "source_sha256": "f373b030f63457b582680b74cddf68964689c55700734ed4794a266e58820f8a",
+    "probe_sha256": "6797345964fbc75453bf28b26d78d1d840d7ca398216d799f5e4ab4a679303e5",
+    "scope": "Actual ROS and Gazebo transport fixture; shutdown under active traffic, no physical work credit"
+  },
+  "spray_ledger_clock_probe": {
+    "passed": true,
+    "checks": {
+      "original_sim_clock_reproduces_stale_period": true,
+      "steady_heartbeat_below_original_watchdog": true,
+      "paused_clock_fails_closed": true,
+      "clean_exit": true
+    },
+    "cases": [
+      {
+        "variant": "original",
+        "samples": 6,
+        "median_wall_gap_s": 0.5003148209943902,
+        "max_wall_gap_s": 0.5160817439900711,
+        "clock_watchdog_during_pause": false,
+        "exit": 0,
+        "source_sha256": "f2330db137620a2494ec5927e1ef5257916a0e5a7989aa656756a83ab88f1caf"
+      },
+      {
+        "variant": "steady",
+        "samples": 60,
+        "median_wall_gap_s": 0.052156190999085084,
+        "max_wall_gap_s": 0.05690363701432943,
+        "clock_watchdog_during_pause": true,
+        "exit": 0,
+        "source_sha256": "1f977fbdd2b8412b3c367c9de3d7a70469055491404d99b9b5713eb63e6bd347"
+      }
+    ],
+    "original_stale_limit_wall_s": 0.25,
+    "scope": "Actual ROS nodes with synthetic clock only; no Gazebo, tool action, motion or work credit",
+    "policy_sha256": "92af8ad88e0b04f839cc0ae5bb433357d7e95e8f272b746f0e6e18e8a8e9656c"
+  },
+  "mowing_native_probes": {
+    "mowing_global_filter_probe": {
+      "passed": true,
+      "cases": {
+        "gnss_conflict": {
+          "passed": true,
+          "checks": {
+            "initial_trusted": true,
+            "actual_raw_innovation_rejected": true,
+            "gnss_stays_excluded": true
+          },
+          "initial_trusted": true,
+          "fault_at": 3.35,
+          "first_fault_witness": {
+            "confirmation_count": 21,
+            "correction": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "correction_filter_active_tau_s": 3.0,
+            "correction_filter_tau_s": 3.0,
+            "gnss_age": 103.45,
+            "gnss_reason": "INNOVATION_REJECTED_FIXED",
+            "gps_count": 0,
+            "has_transform": true,
+            "heading_age": 0.050000000000000266,
+            "innovation_limit_m": 0.15,
+            "innovation_m": 0.25,
+            "jump_count": 0,
+            "last_rejected_map": {},
+            "map_age": 0.050000000000000266,
+            "map_reason": "GEOMETRIC_MATCH",
+            "max_speed": 0.06,
+            "navigation_allowed": true,
+            "nis": 21.551724137931032,
+            "nis_limit": 9.21,
+            "plan_revalidation_required": false,
+            "raw_map_correction": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "reason": "GNSS_INNOVATION_REJECTED_FIXED",
+            "recovery_count": 0,
+            "recovery_epoch": 0,
+            "recovery_prepared_t": -100.0,
+            "recovery_preview": false,
+            "recovery_ready": false,
+            "source": "MAP",
+            "state": "MAP_ONLY",
+            "t": 3.45,
+            "v": 0.0,
+            "w": 0.0
+          },
+          "verified_fault_status_count": 26,
+          "last": {
+            "confirmation_count": 21,
+            "correction": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "correction_filter_active_tau_s": 3.0,
+            "correction_filter_tau_s": 3.0,
+            "gnss_age": 104.6,
+            "gnss_reason": "INNOVATION_REJECTED_FIXED",
+            "gps_count": 0,
+            "has_transform": true,
+            "heading_age": 0.0,
+            "innovation_limit_m": 0.15,
+            "innovation_m": 0.25,
+            "jump_count": 0,
+            "last_rejected_map": {},
+            "map_age": 0.0,
+            "map_reason": "GEOMETRIC_MATCH",
+            "max_speed": 0.06,
+            "navigation_allowed": true,
+            "nis": 21.551724137931032,
+            "nis_limit": 9.21,
+            "plan_revalidation_required": false,
+            "raw_map_correction": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "reason": "GNSS_INNOVATION_REJECTED_FIXED",
+            "recovery_count": 0,
+            "recovery_epoch": 0,
+            "recovery_prepared_t": -100.0,
+            "recovery_preview": false,
+            "recovery_ready": false,
+            "source": "MAP",
+            "state": "MAP_ONLY",
+            "t": 4.6,
+            "v": 0.0,
+            "w": 0.0
+          },
+          "clean_exit": true
+        },
+        "raw_map_jump": {
+          "passed": true,
+          "checks": {
+            "initial_trusted": true,
+            "actual_raw_jump_latches": true,
+            "hold_never_permits_motion": true
+          },
+          "initial_trusted": true,
+          "fault_at": 3.4,
+          "first_fault_witness": {
+            "confirmation_count": 0,
+            "correction": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "correction_filter_active_tau_s": 3.0,
+            "correction_filter_tau_s": 3.0,
+            "gnss_age": 0.0,
+            "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+            "gps_count": 36,
+            "has_transform": true,
+            "heading_age": 0.10000000000000009,
+            "innovation_limit_m": 0.15,
+            "innovation_m": 0.0,
+            "jump_count": 1,
+            "last_rejected_map": {
+              "angle_rad": 0.0,
+              "candidate": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "capture_t": 3.5,
+              "displacement_m": 0.2,
+              "map_pose": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "matched_odom_t": 3.45,
+              "paired_odom": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "previous": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "received_t": 3.5
+            },
+            "map_age": 103.5,
+            "map_reason": "MAP_JUMP_REJECTED",
+            "max_speed": 0.0,
+            "navigation_allowed": false,
+            "nis": 0.0,
+            "nis_limit": 9.21,
+            "plan_revalidation_required": true,
+            "raw_map_correction": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "reason": "PLAN_REVALIDATION_REQUIRED",
+            "recovery_count": 0,
+            "recovery_epoch": 0,
+            "recovery_prepared_t": -100.0,
+            "recovery_preview": false,
+            "recovery_ready": false,
+            "source": "GNSS_POSITION_LOCAL_HEADING",
+            "state": "STOPPED",
+            "t": 3.5,
+            "v": 0.0,
+            "w": 0.0
+          },
+          "verified_fault_status_count": 26,
+          "last": {
+            "confirmation_count": 18,
+            "correction": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "correction_filter_active_tau_s": 3.0,
+            "correction_filter_tau_s": 3.0,
+            "gnss_age": 0.05000000000000071,
+            "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+            "gps_count": 54,
+            "has_transform": true,
+            "heading_age": 1.2500000000000004,
+            "innovation_limit_m": 0.15,
+            "innovation_m": 0.0,
+            "jump_count": 1,
+            "last_rejected_map": {
+              "angle_rad": 0.0,
+              "candidate": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "capture_t": 4.6,
+              "displacement_m": 0.2,
+              "map_pose": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "matched_odom_t": 4.55,
+              "paired_odom": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "previous": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "received_t": 4.6
+            },
+            "map_age": 104.65,
+            "map_reason": "MAP_JUMP_REJECTED",
+            "max_speed": 0.0,
+            "navigation_allowed": false,
+            "nis": 0.0,
+            "nis_limit": 9.21,
+            "plan_revalidation_required": true,
+            "raw_map_correction": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "reason": "PLAN_REVALIDATION_REQUIRED",
+            "recovery_count": 0,
+            "recovery_epoch": 0,
+            "recovery_prepared_t": -100.0,
+            "recovery_preview": false,
+            "recovery_ready": false,
+            "source": "GNSS_POSITION_LOCAL_HEADING",
+            "state": "STOPPED",
+            "t": 4.65,
+            "v": 0.0,
+            "w": 0.0
+          },
+          "clean_exit": true
+        }
+      },
+      "binary_sha256": "9841b3ae8bc22328d1fe8d82a45f28f037ac653818dfa45adea280d406aacd40",
+      "policy_sha256": "11995f47574f63e722f9ea90393d0e433fdff4c7f3e25e7fefa542153a0b456b",
+      "probe_sha256": "2ba430ab2047781c2a221f8f03e4b570eb9eb56801d24e97b6e183bc522989b6",
+      "domain": "138",
+      "scope": "Synthetic isolated C++ policy test; no real sensor, navigation or work completion credit",
+      "template_sha256": "b1935ce3fc85b70ae29511fd2bd3cd833e5cc0c563afd3615ec5ab14b068db4b",
+      "derived_source_sha256": "f7c141f86b3bc442071a428d837afb0d188a2eec04937b69ca68278c281c9b28"
+    },
+    "mowing_revalidation_probe": {
+      "passed": true,
+      "checks": {
+        "original_initial_confirmation": true,
+        "original_jump_guard_stops": true,
+        "reject_without_worker_transaction": true,
+        "reject_while_moving": true,
+        "prepare_retains_hold": true,
+        "no_path_proof_rejected": true,
+        "wrong_epoch_rejected": true,
+        "wrong_plan_rejected": true,
+        "blocked_path_rejected": true,
+        "valid_transaction_commits": true,
+        "commit_not_instant_motion": true,
+        "original_confirmation_after_commit": true,
+        "exact_rejected_se3_recorded": true,
+        "clean_exit": true
+      },
+      "events": [
+        {
+          "t": 3.55,
+          "success": false,
+          "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+        },
+        {
+          "t": 5.6,
+          "success": false,
+          "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+        },
+        {
+          "t": 7.25,
+          "success": true,
+          "message": "{\"epoch\":1,\"reason\":\"STOPPED_CANDIDATE_PREPARED_HOLD_RETAINED\",\"t\":7.25}"
+        },
+        {
+          "t": 7.3,
+          "success": false,
+          "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+        },
+        {
+          "t": 7.4,
+          "success": false,
+          "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+        },
+        {
+          "t": 7.5,
+          "success": false,
+          "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+        },
+        {
+          "t": 7.6,
+          "success": false,
+          "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+        },
+        {
+          "t": 7.7,
+          "success": true,
+          "message": "PLAN_REVALIDATED_WAIT_FOR_ORIGINAL_CONFIRMATION"
+        }
+      ],
+      "binary_sha256": "9841b3ae8bc22328d1fe8d82a45f28f037ac653818dfa45adea280d406aacd40",
+      "policy_sha256": "11995f47574f63e722f9ea90393d0e433fdff4c7f3e25e7fefa542153a0b456b",
+      "source_sha256": "9c58154f26c22eef3369e63e82854ddd1cfa79ae18d41eda0d9b08eec9e14537",
+      "domain": "139",
+      "scope": "Synthetic isolated production recovery transaction; no Gazebo or work completion credit",
+      "template_sha256": "53ef899b91b02a4c41f403c9aa693f4f521630fca0fecf69b79e33c020fbe1a2",
+      "derived_source_sha256": "505b30d9c9c8e84f1de9d7fdb1d74c2b83682ff60a1d23814253de9914126d08"
+    }
+  },
+  "safe_execution_validation": {
+    "passed": true,
+    "execution_segments": 47,
+    "reference_original_segments": 34,
+    "original_reference_status": "PARTIAL",
+    "original_work_target_union_m2": 188.3918016929564,
+    "original_cluster_area_m2": 195.99438340335297,
+    "original_work_union_unchanged": true
+  },
+  "independent_candidate_gnss_probe": {
+    "passed": true,
+    "checks": {
+      "original_initial_confirmation": true,
+      "original_jump_guard_stops": true,
+      "reject_without_worker_transaction": true,
+      "reject_while_moving": true,
+      "candidate_rejects_independent_gnss_conflict": true,
+      "candidate_rejects_invalid_fix": true,
+      "old_reference_gnss_stays_rejected": true,
+      "independent_candidate_with_same_numeric_gates_ready": true,
+      "prepare_retains_hold": true,
+      "no_path_proof_rejected": true,
+      "wrong_epoch_rejected": true,
+      "wrong_plan_rejected": true,
+      "blocked_path_rejected": true,
+      "valid_transaction_commits": true,
+      "commit_not_instant_motion": true,
+      "original_confirmation_after_commit": true,
+      "exact_rejected_se3_recorded": true,
+      "clean_exit": true
+    },
+    "events": [
+      {
+        "t": 3.55,
+        "success": false,
+        "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+      },
+      {
+        "t": 5.6,
+        "success": false,
+        "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+      },
+      {
+        "t": 7.65,
+        "success": false,
+        "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+      },
+      {
+        "t": 8.7,
+        "success": false,
+        "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+      },
+      {
+        "t": 10.65,
+        "success": true,
+        "message": "{\"epoch\":1,\"reason\":\"STOPPED_CANDIDATE_PREPARED_HOLD_RETAINED\",\"t\":10.65}"
+      },
+      {
+        "t": 10.7,
+        "success": false,
+        "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+      },
+      {
+        "t": 10.8,
+        "success": false,
+        "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+      },
+      {
+        "t": 10.9,
+        "success": false,
+        "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+      },
+      {
+        "t": 11.0,
+        "success": false,
+        "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+      },
+      {
+        "t": 11.15,
+        "success": true,
+        "message": "PLAN_REVALIDATED_WAIT_FOR_ORIGINAL_CONFIRMATION"
+      }
+    ],
+    "binary_sha256": "396d69b34017819eb6120c33dc2959ec46d0e6632ef66215d3848457f193812c",
+    "policy_sha256": "872e99f267388212c9b5ccd6a40a3badb7a7b004a82e6f9394c431a2027b0743",
+    "source_sha256": "b54205298ee3f88ac7a0992adbd626d18e0c3b80da500dd7b370f3714e35de8d",
+    "domain": "140",
+    "scope": "Synthetic isolated production recovery transaction; no Gazebo or work completion credit",
+    "template_sha256": "53ef899b91b02a4c41f403c9aa693f4f521630fca0fecf69b79e33c020fbe1a2",
+    "derived_source_sha256": "c00f8b5ea292444a092a0111bf6f215b9a54ed6ef06886b4120a5707f6874de6",
+    "variant": "candidate"
+  },
+  "original_B1_reference_status": "PARTIAL"
 }

@@ -4,6 +4,6 @@ test_sensor_extrinsic_is_detected (test_visual_r11.MaterialContract.test_sensor_
 test_visual_occlusion_geometry_is_detected (test_visual_r11.MaterialContract.test_visual_occlusion_geometry_is_detected) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.001s
+Ran 4 tests in 0.002s
 
 OK

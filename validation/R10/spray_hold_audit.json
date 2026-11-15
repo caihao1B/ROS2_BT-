@@ -1,0 +1,16 @@
+{
+  "run": "optimization_v2/three_tasks/results/R12/spray_20261115_020757_802998",
+  "first_latches": [
+    {
+      "t": 581.28,
+      "raw_to_last_accepted_m": 0.16331960192678002,
+      "raw_to_last_accepted_rad": 0.007407740370195948,
+      "raw_to_filtered_m": 0.16439919395145522,
+      "raw_to_filtered_rad": 0.007490933891360964,
+      "limit_m": 0.15,
+      "limit_rad": 0.035,
+      "raw_capture_t": 581.2
+    }
+  ],
+  "scope": "Offline diagnostic using recorded map corrections and measured paired odometry only; no truth; not a rerun or a new PASS"
+}

@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "checks": {
+    "original_initial_confirmation": true,
+    "original_jump_guard_stops": true,
+    "reject_without_worker_transaction": true,
+    "reject_while_moving": true,
+    "prepare_retains_hold": true,
+    "no_path_proof_rejected": true,
+    "wrong_epoch_rejected": true,
+    "wrong_plan_rejected": true,
+    "blocked_path_rejected": true,
+    "valid_transaction_commits": true,
+    "commit_not_instant_motion": true,
+    "original_confirmation_after_commit": true,
+    "exact_rejected_se3_recorded": true,
+    "clean_exit": true
+  },
+  "events": [
+    {
+      "t": 3.55,
+      "success": false,
+      "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+    },
+    {
+      "t": 5.6,
+      "success": false,
+      "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+    },
+    {
+      "t": 7.25,
+      "success": true,
+      "message": "{\"epoch\":1,\"reason\":\"STOPPED_CANDIDATE_PREPARED_HOLD_RETAINED\",\"t\":7.25}"
+    },
+    {
+      "t": 7.3,
+      "success": false,
+      "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+    },
+    {
+      "t": 7.4,
+      "success": false,
+      "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+    },
+    {
+      "t": 7.5,
+      "success": false,
+      "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+    },
+    {
+      "t": 7.6,
+      "success": false,
+      "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
+    },
+    {
+      "t": 7.75,
+      "success": true,
+      "message": "PLAN_REVALIDATED_WAIT_FOR_ORIGINAL_CONFIRMATION"
+    }
+  ],
+  "binary_sha256": "396d69b34017819eb6120c33dc2959ec46d0e6632ef66215d3848457f193812c",
+  "policy_sha256": "872e99f267388212c9b5ccd6a40a3badb7a7b004a82e6f9394c431a2027b0743",
+  "source_sha256": "b54205298ee3f88ac7a0992adbd626d18e0c3b80da500dd7b370f3714e35de8d",
+  "domain": "135",
+  "scope": "Synthetic isolated production recovery transaction; no Gazebo or work completion credit",
+  "template_sha256": "53ef899b91b02a4c41f403c9aa693f4f521630fca0fecf69b79e33c020fbe1a2",
+  "derived_source_sha256": "a858d7efca1702bbf082806552d7abd45b000e3452ceb7905aec0424d670b95a",
+  "variant": "revalidation"
+}

@@ -24,13 +24,28 @@ def run():
     while time.monotonic()<until:rclpy.spin_once(n,timeout_sec=.005)
     if not ready and status and status[-1]['navigation_allowed'] and status[-1]['state']=='TRUSTED_MAP':ready=True;fault_at=t
     if fault_at is not None and t-fault_at>1.2:break
-   last=status[-1] if status else {};checked=bool(ready and last.get('gnss_reason')=='INNOVATION_REJECTED_FIXED' and last.get('gps_count')==0) if name=='gnss_conflict' else bool(ready and last.get('plan_revalidation_required') and not last.get('navigation_allowed') and last.get('jump_count',0)>0)
-   cases[name]=dict(passed=checked,initial_trusted=ready,fault_at=fault_at,last=last)
+   last=status[-1] if status else {}
+   fault_status=[s for s in status if fault_at is not None and s['t']>fault_at+.05]
+   # Cross-topic DDS delivery may leave STALE_OR_REORDERED as the final reason.
+   # Require a real innovation rejection, then continuous GNSS exclusion;
+   # inspecting only the final diagnostic string confuses this with a bypass.
+   if name=='gnss_conflict':
+    index=next((i for i,s in enumerate(fault_status) if s.get('gnss_reason')=='INNOVATION_REJECTED_FIXED' and s.get('innovation_m',0)>=.24 and s.get('gps_count')==0),None)
+    witness=fault_status[index] if index is not None else None;after=fault_status[index:] if index is not None else []
+    checks=dict(initial_trusted=ready,actual_raw_innovation_rejected=witness is not None,gnss_stays_excluded=bool(after) and all(s.get('gps_count')==0 and s.get('source')!='GNSS_POSITION_LOCAL_HEADING' for s in after))
+   else:
+    index=next((i for i,s in enumerate(fault_status) if s.get('plan_revalidation_required') and s.get('jump_count',0)>0),None)
+    witness=fault_status[index] if index is not None else None;after=fault_status[index:] if index is not None else []
+    checks=dict(initial_trusted=ready,actual_raw_jump_latches=witness is not None,hold_never_permits_motion=bool(after) and all(s.get('plan_revalidation_required') and not s.get('navigation_allowed') for s in after))
+   cases[name]=dict(passed=all(checks.values()),checks=checks,initial_trusted=ready,fault_at=fault_at,first_fault_witness=witness,verified_fault_status_count=len(after),last=last)
+   # Multiple wall-timer publications can share one simulation timestamp.
+   # Preserve receive order, including the pre-fault sample at that same stamp.
+   dump(out/(name+'_status.json'),status)
   finally:
    p.send_signal(signal.SIGINT)
    try:p.wait(timeout=5)
    except subprocess.TimeoutExpired:p.kill();p.wait();cases.setdefault(name,{})['passed']=False
    log.close();n.destroy_node();rclpy.shutdown()
   cases[name]['clean_exit']=p.returncode==0;cases[name]['passed']=cases[name]['passed'] and p.returncode==0
- result=dict(passed=all(c['passed'] for c in cases.values()),cases=cases,binary_sha256=sha(binary),policy_sha256=sha(policy),domain=os.environ.get('ROS_DOMAIN_ID'),scope='Synthetic isolated C++ policy test; no real sensor, navigation or work completion credit');dump(out/'result.json',result);print(json.dumps(result));return 0 if result['passed'] else 2
+ result=dict(passed=all(c['passed'] for c in cases.values()),cases=cases,binary_sha256=sha(binary),policy_sha256=sha(policy),probe_sha256=sha(Path(__file__)),domain=os.environ.get('ROS_DOMAIN_ID'),scope='Synthetic isolated C++ policy test; no real sensor, navigation or work completion credit');dump(out/'result.json',result);print(json.dumps(result));return 0 if result['passed'] else 2
 if __name__=='__main__':raise SystemExit(run())

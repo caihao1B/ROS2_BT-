@@ -1,0 +1,11 @@
+{
+  "startup_run": "optimization_v2/three_tasks/results/R12/mowing_20261115_042330_043786",
+  "startup_task_and_video_passed": true,
+  "startup_sim_s": 263.302,
+  "full_run": "optimization_v2/three_tasks/results/R12/mowing_20261115_043537_296551",
+  "full_completed_segments": 7,
+  "full_execution_segments": 45,
+  "full_passed": false,
+  "terminal": "HUMAN_REQUIRED",
+  "scope": "Closed V2 history. No PASS inherited by a new planning envelope. Original B1 34 remains PARTIAL."
+}

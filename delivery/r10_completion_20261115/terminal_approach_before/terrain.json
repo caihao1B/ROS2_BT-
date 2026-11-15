@@ -1,0 +1,93 @@
+{
+  "schema": "S09-TERRAIN/1",
+  "resolution_m": 0.15,
+  "width_m": 30.0,
+  "voxel_m": 0.04,
+  "range_m": 15.0,
+  "min_range_m": 0.5,
+  "ground_distance_m": 0.025,
+  "min_ground_points": 150,
+  "ground_max_angle_deg": 15.0,
+  "obstacle_min_height_m": 0.045,
+  "unknown_after_s": 2.0,
+  "clear_frames": 3,
+  "max_cloud_age_s": 0.45,
+  "max_odom_delta_s": 0.05,
+  "terrain_slope_sigma_deg": 0.7,
+  "terrain_height_sigma_m": 0.012,
+  "profiles": {
+    "diff": {
+      "footprint": [
+        [
+          -0.254,
+          -0.215
+        ],
+        [
+          0.254,
+          -0.215
+        ],
+        [
+          0.254,
+          0.215
+        ],
+        [
+          -0.254,
+          0.215
+        ]
+      ],
+      "clearance_m": 0.065,
+      "tool_width_m": 0.0,
+      "max_step_m": 0.04,
+      "max_slope_deg": 5.0,
+      "max_roughness_m": 0.035,
+      "margin_m": 0.1,
+      "provenance": "Slope <= S03 qualified 5deg; step/roughness limits are conservative geometry candidates, NOT physically certified climbing capability",
+      "vehicle_config_sha256": "104d07a36ef510be47544277750b5afa2cd3699e27cd12a523f1e8a2f10d2dfe"
+    },
+    "ackermann": {
+      "footprint": [
+        [
+          -0.571,
+          -1.385
+        ],
+        [
+          2.2089999999999996,
+          -1.385
+        ],
+        [
+          2.2089999999999996,
+          1.385
+        ],
+        [
+          -0.571,
+          1.385
+        ]
+      ],
+      "clearance_m": 0.1,
+      "tool_width_m": 1.6,
+      "max_step_m": 0.06,
+      "max_slope_deg": 5.0,
+      "max_roughness_m": 0.025,
+      "margin_m": 0.1,
+      "provenance": "Slope <= S03 qualified 5deg; step/roughness limits are conservative geometry candidates, NOT physically certified climbing capability",
+      "vehicle_config_sha256": "52410d437f633b24dc1e2da3c06cd9a6727071cb7e2f2a08682cdd996b64c8ce"
+    }
+  },
+  "lidar_xyz": [
+    1.1,
+    0,
+    1.5
+  ],
+  "self_mask": [
+    -0.621,
+    2.2589999999999995,
+    -1.435,
+    1.435
+  ],
+  "self_z_max": 1.188218021463,
+  "collision_ceiling_m": 1.2,
+  "qualified_speed_mps": 0.4,
+  "protective_half_width_m": 1.485,
+  "protective_front_m": 2.609,
+  "self_uncertainty_margin_m": 0.05
+}

@@ -1,7 +1,11 @@
-# R11 材质对照
+# R11 实际结果
 
-整体 **PARTIAL**；材质与成对渲染组件：PASS。
+实际回执：**PARTIAL**。
 
-几何、碰撞、传感器和物理参数相同的原始/材质场景对照保留；仅做外观材质，不是精细商品模型。任务源码变化通过 R12 新运行复验，不把停放渲染当成自主任务通过。
+材质仅改变视觉，配对静止渲染性能和几何/传感器/物理签名分别校核。
 
-- R10 full-job acceptance remains PARTIAL
+未完成项：R10 full-job acceptance remains PARTIAL
+
+[手工验收命令](MANUAL.md) · [技术说明](TECHNICAL.md) · [核心代码](CODE.md)
+
+原 S17/S18 保持 PARTIAL，不从三任务录像推定六簇正式验收。

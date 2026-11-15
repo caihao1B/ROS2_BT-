@@ -16,8 +16,15 @@ def main():
    folder=out/(variant+'_'+stamp());folder.mkdir();received.clear()
    with (folder/'process.log').open('w') as log:
     child=subprocess.Popen([str(BASE/'venvs/scene/bin/python'),str(PKG/'scripts'/script),'--out',str(folder),'--config',str(edition('R10')/'mowing/tool.json')],stdout=log,stderr=log)
-    begin=time.monotonic()
     try:
+     # The measurement window starts after process and DDS discovery, not Python
+     # import time. Otherwise host load can leave fewer than four old heartbeats.
+     ready_deadline=time.monotonic()+15.
+     while not ((folder/'ready').exists() and pub.get_subscription_count()>0 and node.count_publishers('/s10/ledger/state')>0):
+      rclpy.spin_once(node,timeout_sec=.05)
+      if child.poll() is not None:raise RuntimeError('LEDGER_PROBE_CHILD_EXITED')
+      if time.monotonic()>ready_deadline:raise TimeoutError('LEDGER_PROBE_DISCOVERY')
+     received.clear();begin=time.monotonic()
      while time.monotonic()-begin<7.:
       elapsed=time.monotonic()-begin;t=min(elapsed,5.)*.1
       msg=Clock();ns=int(t*1e9);msg.clock.sec=ns//10**9;msg.clock.nanosec=ns%10**9;pub.publish(msg);rclpy.spin_once(node,timeout_sec=.01);time.sleep(.01)

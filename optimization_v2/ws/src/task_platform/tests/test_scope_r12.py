@@ -21,5 +21,8 @@ class Scope(unittest.TestCase):
   receipt={'case':'mowing_full_B1','task':'mowing'};spec={'task':'mowing','case':'nominal','segment_limit':5,'sim_seconds':1800}
   self.assertFalse(declared_scope_matches(receipt,spec,'mowing_full_B1'))
   self.assertTrue(declared_scope_matches(receipt,dict(spec,segment_limit=0),'mowing_full_B1'))
+ def test_offset_pilot_cannot_replace_full_cluster(self):
+  receipt={'case':'mowing_full_B1','task':'mowing'};spec={'task':'mowing','case':'nominal','segment_limit':0,'segment_start':12,'sim_seconds':1800}
+  self.assertFalse(declared_scope_matches(receipt,spec,'mowing_full_B1'))
 
 if __name__=='__main__':unittest.main()

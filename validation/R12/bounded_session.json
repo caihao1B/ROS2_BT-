@@ -1,0 +1,10 @@
+{
+  "user_update_utc": "2026-11-15T05:35:41+00:00",
+  "all_simulations_closed_before_utc": "2026-11-15T07:50:11.594168+00:00",
+  "elapsed_window_seconds": 8070.594168,
+  "maximum_seconds": 10800,
+  "within_user_limit": true,
+  "owned_queues_ended": true,
+  "guard_cancelled_after_completion": true,
+  "scope": "Conservative wall-clock window including GUI work and simulation gaps; no new simulation after this handoff, no sixty-run matrix; task limits unchanged"
+}

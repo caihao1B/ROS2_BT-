@@ -1,31 +1,97 @@
 {
-  "source": "optimization_v2/three_tasks/results/R12/spray_20261114_194849_404114",
-  "completed_points": 20,
-  "original_points": 56,
-  "first_hold_t": 1136.28,
-  "reason": "PLAN_REVALIDATION_REQUIRED",
-  "raw_map_reason": "MAP_JUMP_REJECTED",
-  "last_accepted_map_t": 1132.4,
-  "incoming_map_t": 1136.2,
-  "map_gap_s": 3.7999999999999545,
-  "gnss_reason": "FIXED_AND_INNOVATION_VALID",
-  "gnss_innovation_m": 0.027225929860403203,
-  "approximate_planar_yaw_delta_filtered_rad": 0.036306235240935236,
-  "approximate_planar_yaw_delta_last_raw_rad": 0.03521620617944565,
-  "original_yaw_jump_limit_rad": 0.035,
-  "diagnostic_limit": "Planar nearest-record reconstruction only; full synchronized 3-D rejected correction was not recorded. Does not prove filtering alone caused or did not cause the hold.",
-  "next_step": "Log exact rejected SE(3) candidate and matched odometry; assess map gap/local heading drift and production stopped plan revalidation. Do not clear latch or loosen thresholds to obtain completion.",
-  "map_xy_rmse_m": 0.035384031051226686,
-  "failed_checks": [
-    "mission_completed",
-    "feedback_and_independent_physics_agree"
+  "source": "optimization_v2/three_tasks/results/R12/spray_20261115_060145_047614",
+  "task_passed": false,
+  "events": [
+    {
+      "t": 1344.93,
+      "event": "STOPPED_RELOCALIZATION_REQUEST",
+      "point": "point_11_21",
+      "attempt": 1
+    },
+    {
+      "t": 1351.892,
+      "event": "LOCALIZATION_PREVIEW_PREPARED",
+      "prepared_t": 1351.892,
+      "epoch": 1,
+      "reason": "STOPPED_CANDIDATE_PREPARED_HOLD_RETAINED"
+    },
+    {
+      "t": 1352.01,
+      "event": "STOPPED_PLAN_REVALIDATION",
+      "point": "point_11_21",
+      "epoch": 1,
+      "path_valid": true,
+      "footprint_valid": true,
+      "path_sha256": "57dd4792bcec64c1efefc8e7e6b52c3b3a7eced1e26f724384cb0352df8561bd"
+    },
+    {
+      "t": 1352.092,
+      "event": "LOCALIZATION_PLAN_COMMITTED",
+      "point": "point_11_21",
+      "epoch": 1,
+      "proof": {
+        "epoch": 1,
+        "plan_revision": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+        "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+        "path_valid": true,
+        "footprint_valid": true,
+        "path_sha256": "57dd4792bcec64c1efefc8e7e6b52c3b3a7eced1e26f724384cb0352df8561bd",
+        "point": "point_11_21",
+        "t": 1352.01
+      }
+    },
+    {
+      "t": 1353.856,
+      "event": "LOCALIZATION_REVALIDATED_RESUME",
+      "point": "point_11_21",
+      "epoch": 1
+    },
+    {
+      "t": 1389.54,
+      "event": "STOPPED_RELOCALIZATION_REQUEST",
+      "point": "point_11_21",
+      "attempt": 2
+    },
+    {
+      "t": 1391.28,
+      "event": "LOCALIZATION_PREVIEW_PREPARED",
+      "prepared_t": 1391.28,
+      "epoch": 2,
+      "reason": "STOPPED_CANDIDATE_PREPARED_HOLD_RETAINED"
+    },
+    {
+      "t": 1391.396,
+      "event": "STOPPED_PLAN_REVALIDATION",
+      "point": "point_11_21",
+      "epoch": 2,
+      "path_valid": true,
+      "footprint_valid": true,
+      "path_sha256": "0aeea14a5d5c41bf0931e4efa4dd6c28aae40adf1f0204fff6acec270e865c93"
+    },
+    {
+      "t": 1391.476,
+      "event": "LOCALIZATION_PLAN_COMMITTED",
+      "point": "point_11_21",
+      "epoch": 2,
+      "proof": {
+        "epoch": 2,
+        "plan_revision": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+        "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+        "path_valid": true,
+        "footprint_valid": true,
+        "path_sha256": "0aeea14a5d5c41bf0931e4efa4dd6c28aae40adf1f0204fff6acec270e865c93",
+        "point": "point_11_21",
+        "t": 1391.396
+      }
+    },
+    {
+      "t": 1393.214,
+      "event": "LOCALIZATION_REVALIDATED_RESUME",
+      "point": "point_11_21",
+      "epoch": 2
+    }
   ],
-  "final_physical_stop": true,
-  "map_window_reasons": {
-    "HELD_OUT_SURFACE_MATCH": 2,
-    "MAP_MATCH_REJECTED": 17,
-    "TRACKING_CORRECTION_BOUND": 1
-  },
-  "reacquisition_median_samples": 1,
-  "reacquisition_gnss_innovation_at_map_matcher_m": 0.12131824042838632
+  "scope": "Actual task events only; synthetic native recovery probe is separately labeled",
+  "native_probe": "global_filter_probe/result.json",
+  "transaction_probe": "revalidation_probe/result.json"
 }

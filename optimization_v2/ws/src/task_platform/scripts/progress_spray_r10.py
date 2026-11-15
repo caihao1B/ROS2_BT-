@@ -2,6 +2,16 @@
 from collections import deque
 import math
 
+def stopped_decision(action,needs_revalidation,choices):
+ """Asynchronous localization escalation can awaken a BT observation wait.
+
+ This grants no motion. The RECOVER branch must perform the existing physical
+ stop, independent observation, plan-proof transaction and fresh BT admission.
+ """
+ if action in ('HUMAN','STOP'):return action
+ if needs_revalidation:return 'RECOVER_LOCALIZATION'
+ return action if action in choices else None
+
 class NearGoalProgress:
  def __init__(self,policy):self.p=policy;self.clear()
  def clear(self):self.samples=deque();self.best=None;self.best_t=None

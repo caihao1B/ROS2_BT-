@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "initial_run_selector_loaded": true,
+    "live_run": true,
+    "tab_overview": true,
+    "tab_decision": true,
+    "tab_sensors": true,
+    "tab_work": true,
+    "tab_raw": true,
+    "six_actual_ros_channels": true,
+    "actual_camera_image": true,
+    "bounded_lidar_points": true,
+    "freeze_display_only": true,
+    "historical_not_live": true,
+    "historical_no_cross_run_sensor": true,
+    "selected_vs_original": true,
+    "inspection_original_route_retained": true,
+    "inspection_distance_units": true,
+    "closed_spray_error_visible": true,
+    "mobile_no_horizontal_overflow": true,
+    "path_rejected": true,
+    "post_rejected": true,
+    "browser_no_exceptions": true
+  },
+  "live_run": "R12/mowing_20261115_065623_825371",
+  "historical_run": "R12/mowing_20261115_054835_908507",
+  "errors": [],
+  "simulation_before_pause": 47.58,
+  "simulation_after_pause": 48.36,
+  "scope": "Real local browser and live observed ROS data; GUI only, no task success credit"
+}

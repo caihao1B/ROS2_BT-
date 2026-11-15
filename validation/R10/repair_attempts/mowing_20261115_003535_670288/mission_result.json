@@ -1,0 +1,211 @@
+{
+  "passed": false,
+  "terminal": "HUMAN_REQUIRED",
+  "controlled_hold": true,
+  "error": "RuntimeError('ALTERNATE_ROUTE_REQUIRES_COVERAGE_RESEQUENCING_RETAIN_RESIDUAL')",
+  "t": 445.12,
+  "selected_segments": 34,
+  "navigation_groups": 34,
+  "original_segment_passages": [
+    {
+      "segment": "B1:segment:0",
+      "xy_error_m": 0.09861090209898642,
+      "yaw_error_rad": 0.01994758745426567,
+      "t": 71.1
+    },
+    {
+      "segment": "B1:segment:1",
+      "xy_error_m": 0.0980480646482258,
+      "yaw_error_rad": 0.06899822903852537,
+      "t": 76.5
+    },
+    {
+      "segment": "B1:segment:2",
+      "xy_error_m": 0.09929411331453503,
+      "yaw_error_rad": 0.002641874551668366,
+      "t": 108.27
+    },
+    {
+      "segment": "B1:segment:3",
+      "xy_error_m": 0.0997547567060198,
+      "yaw_error_rad": 0.0017037596982209524,
+      "t": 115.89
+    },
+    {
+      "segment": "B1:segment:4",
+      "xy_error_m": 0.09875752153848939,
+      "yaw_error_rad": 0.009213127026977297,
+      "t": 175.02
+    },
+    {
+      "segment": "B1:segment:5",
+      "xy_error_m": 0.09908608974884331,
+      "yaw_error_rad": 0.04142434569396957,
+      "t": 196.38
+    },
+    {
+      "segment": "B1:segment:6",
+      "xy_error_m": 0.09898128945666843,
+      "yaw_error_rad": 0.06803624479586734,
+      "t": 251.19
+    },
+    {
+      "segment": "B1:segment:7",
+      "xy_error_m": 0.09816198946301116,
+      "yaw_error_rad": 0.09117781795839841,
+      "t": 255.18
+    },
+    {
+      "segment": "B1:segment:8",
+      "xy_error_m": 0.09753753224482287,
+      "yaw_error_rad": 0.010826275298308374,
+      "t": 340.17
+    },
+    {
+      "segment": "B1:segment:9",
+      "xy_error_m": 0.09827367073269726,
+      "yaw_error_rad": 0.07085725586544411,
+      "t": 347.4
+    },
+    {
+      "segment": "B1:segment:10",
+      "xy_error_m": 0.09726053954356444,
+      "yaw_error_rad": 0.057076457421839644,
+      "t": 364.71
+    },
+    {
+      "segment": "B1:segment:11",
+      "xy_error_m": 0.09656712798171686,
+      "yaw_error_rad": 0.0051374107537972,
+      "t": 416.85
+    }
+  ],
+  "original_segments": 34,
+  "completed_segments": [
+    "B1:segment:0",
+    "B1:segment:1",
+    "B1:segment:2",
+    "B1:segment:3",
+    "B1:segment:4",
+    "B1:segment:5",
+    "B1:segment:6",
+    "B1:segment:7",
+    "B1:segment:8",
+    "B1:segment:9",
+    "B1:segment:10",
+    "B1:segment:11"
+  ],
+  "remaining_selected": [
+    "B1:segment:12",
+    "B1:segment:13",
+    "B1:segment:14",
+    "B1:segment:15",
+    "B1:segment:16",
+    "B1:segment:17",
+    "B1:segment:18",
+    "B1:segment:19",
+    "B1:segment:20",
+    "B1:segment:21",
+    "B1:segment:22",
+    "B1:segment:23",
+    "B1:segment:24",
+    "B1:segment:25",
+    "B1:segment:26",
+    "B1:segment:27",
+    "B1:segment:28",
+    "B1:segment:29",
+    "B1:segment:30",
+    "B1:segment:31",
+    "B1:segment:32",
+    "B1:segment:33"
+  ],
+  "not_selected": [],
+  "work_results": [
+    {
+      "segment": "B1:segment:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 9.738387499999988,
+      "remaining": 0.8231027816742085,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.3114375,
+      "remaining": 1.5434019275130701,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 12.572112499999982,
+      "remaining": 12.86020653342532,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8",
+      "state": "PARTIAL",
+      "reason": "LOCALIZATION",
+      "confirmed": 14.748850000000006,
+      "remaining": 10.683469033425295,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 23.33648750000003,
+      "remaining": 2.0958315334252724,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:12",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 0.6360874999999977,
+      "remaining": 34.53678208335899,
+      "uncertain": false
+    }
+  ],
+  "replans": 1,
+  "endpoint_recoveries": 1,
+  "endpoint_planner_queries": 1,
+  "continuous_recovery_queries": 1,
+  "final_gate": {
+    "t": 445.11,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "NAV_COMMAND_STALE",
+      "TOOL_STATE_FOR_SEGMENT",
+      "OBSTRUCTED"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 68.31511544460304,
+    "armed_direction": 1,
+    "raw_nav_v": 0.0,
+    "raw_nav_w": 0.0
+  },
+  "ownership": {
+    "/tf": [
+      "s05_local_odometry",
+      "s08_global_pose_manager"
+    ],
+    "/s03/actuator/request": [
+      "r09_actuator_gate"
+    ],
+    "/s10/tool/command": [
+      "s10_tool_action_server"
+    ]
+  },
+  "wall_seconds": 1534.4456331259862,
+  "execution_mode": "original_primitive_boundaries",
+  "scope": "Original segment goals checked in order under explicitly versioned execution mode; feedback area separate from passage"
+}

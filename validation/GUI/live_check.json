@@ -1,0 +1,7 @@
+{
+  "browser_exceptions": [],
+  "ui_pause_only": true,
+  "simulation_continued_during_ui_pause": true,
+  "sim_before": 0.9600000000000001,
+  "sim_after": 1.74
+}

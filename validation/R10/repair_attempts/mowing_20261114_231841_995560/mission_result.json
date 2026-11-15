@@ -1,0 +1,161 @@
+{
+  "passed": false,
+  "terminal": "HUMAN_REQUIRED",
+  "controlled_hold": true,
+  "error": "RuntimeError('ENDPOINT_RECOVERY_MANUAL_LATCH_RETAINED')",
+  "t": 291.902,
+  "selected_segments": 34,
+  "navigation_groups": 34,
+  "original_segment_passages": [
+    {
+      "segment": "B1:segment:0",
+      "xy_error_m": 0.09879384990290868,
+      "yaw_error_rad": 0.01178410154463222,
+      "t": 69.81
+    },
+    {
+      "segment": "B1:segment:1",
+      "xy_error_m": 0.09867058373075356,
+      "yaw_error_rad": 0.07301471721297344,
+      "t": 75.78
+    },
+    {
+      "segment": "B1:segment:2",
+      "xy_error_m": 0.09812647969682564,
+      "yaw_error_rad": 0.0030017317072027483,
+      "t": 103.8
+    },
+    {
+      "segment": "B1:segment:3",
+      "xy_error_m": 0.09780801633878496,
+      "yaw_error_rad": 0.02723439085315138,
+      "t": 132.9
+    },
+    {
+      "segment": "B1:segment:4",
+      "xy_error_m": 0.0989560538044136,
+      "yaw_error_rad": 0.011725984645460983,
+      "t": 192.9
+    },
+    {
+      "segment": "B1:segment:5",
+      "xy_error_m": 0.09917544888779611,
+      "yaw_error_rad": 0.03867076680915571,
+      "t": 215.91
+    },
+    {
+      "segment": "B1:segment:6",
+      "xy_error_m": 0.09912220882213821,
+      "yaw_error_rad": 0.003674162502220746,
+      "t": 247.14
+    }
+  ],
+  "original_segments": 34,
+  "completed_segments": [
+    "B1:segment:0",
+    "B1:segment:1",
+    "B1:segment:2",
+    "B1:segment:3",
+    "B1:segment:4",
+    "B1:segment:5"
+  ],
+  "remaining_selected": [
+    "B1:segment:6",
+    "B1:segment:7",
+    "B1:segment:8",
+    "B1:segment:9",
+    "B1:segment:10",
+    "B1:segment:11",
+    "B1:segment:12",
+    "B1:segment:13",
+    "B1:segment:14",
+    "B1:segment:15",
+    "B1:segment:16",
+    "B1:segment:17",
+    "B1:segment:18",
+    "B1:segment:19",
+    "B1:segment:20",
+    "B1:segment:21",
+    "B1:segment:22",
+    "B1:segment:23",
+    "B1:segment:24",
+    "B1:segment:25",
+    "B1:segment:26",
+    "B1:segment:27",
+    "B1:segment:28",
+    "B1:segment:29",
+    "B1:segment:30",
+    "B1:segment:31",
+    "B1:segment:32",
+    "B1:segment:33"
+  ],
+  "not_selected": [],
+  "work_results": [
+    {
+      "segment": "B1:segment:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 5.8120375000000015,
+      "remaining": 4.7494527816741945,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 9.702937499999996,
+      "remaining": 0.8585527816742005,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 4.976799999999997,
+      "remaining": 13.878039427513073,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.24561249999998,
+      "remaining": 1.6092269275130917,
+      "uncertain": false
+    }
+  ],
+  "replans": 0,
+  "endpoint_recoveries": 2,
+  "endpoint_planner_queries": 3,
+  "continuous_recovery_queries": 3,
+  "final_gate": {
+    "t": 291.9,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 41.000638504313095,
+    "armed_direction": 1,
+    "raw_nav_v": 0.0,
+    "raw_nav_w": 0.0
+  },
+  "ownership": {
+    "/tf": [
+      "s05_local_odometry",
+      "s08_global_pose_manager"
+    ],
+    "/s03/actuator/request": [
+      "r09_actuator_gate"
+    ],
+    "/s10/tool/command": [
+      "s10_tool_action_server"
+    ]
+  },
+  "wall_seconds": 1002.12770597302,
+  "execution_mode": "original_primitive_boundaries",
+  "scope": "Original segment goals checked in order under explicitly versioned execution mode; feedback area separate from passage"
+}

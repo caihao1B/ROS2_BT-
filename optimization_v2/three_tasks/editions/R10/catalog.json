@@ -20,5 +20,11 @@
     "connector_m": 88.48099013627927
   },
   "scope": "Independent normal and bounded-fault acceptance, no sixty-run matrix and no extrapolation to untested A2/A3/B2/B3",
-  "version": "810ffa67fc550c9e1d7ad731a34c2779cf9f781602ee218d1e730b05dd717cae"
+  "safe_execution": {
+    "revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+    "B1_segments": 47,
+    "original_B1_reference_status": "PARTIAL",
+    "original_work_area_unchanged": true
+  },
+  "version": "9535df40d93eda517eac0451d6e09f707664464fbd470a5f4ec16df784b073d1"
 }

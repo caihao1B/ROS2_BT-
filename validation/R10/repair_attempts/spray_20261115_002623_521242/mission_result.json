@@ -1,0 +1,194 @@
+{
+  "ownership": {
+    "/tf": [
+      {
+        "node": "s05_local_odometry",
+        "namespace": "/",
+        "gid": [
+          1,
+          15,
+          245,
+          121,
+          48,
+          154,
+          19,
+          150,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          3
+        ]
+      },
+      {
+        "node": "s08_global_pose_manager",
+        "namespace": "/",
+        "gid": [
+          1,
+          15,
+          245,
+          121,
+          64,
+          154,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          3
+        ]
+      }
+    ],
+    "/s03/actuator/request": [
+      {
+        "node": "r07_actuator_gate",
+        "namespace": "/",
+        "gid": [
+          1,
+          15,
+          245,
+          121,
+          68,
+          154,
+          220,
+          121,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          3
+        ]
+      }
+    ],
+    "/s10/tool/command": [
+      {
+        "node": "s10_tool_action_server",
+        "namespace": "/",
+        "gid": [
+          1,
+          15,
+          245,
+          121,
+          74,
+          154,
+          87,
+          254,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          3
+        ]
+      }
+    ]
+  },
+  "final_gate": {
+    "raw_nav_v": 0.0,
+    "raw_nav_w": 0.0,
+    "t": 205.83,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "LOCALIZATION",
+      "PERCEPTION",
+      "NAV_COMMAND_STALE"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 15.99379430315407
+  },
+  "passed": false,
+  "error": "TimeoutError('TASK_BOUND_OR_STOP_REQUEST')",
+  "cluster": "A1",
+  "selected_points": 56,
+  "original_points": 56,
+  "completed": [
+    {
+      "point": "point_7_14",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.064,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 0.0,
+      "meter_after": 3.2557
+    },
+    {
+      "point": "point_8_14",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.073999999999998,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 3.2557,
+      "meter_after": 6.5213
+    },
+    {
+      "point": "point_8_15",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.0519999999999925,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 6.5213,
+      "meter_after": 9.771
+    },
+    {
+      "point": "point_9_15",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.0560000000000116,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 9.771,
+      "meter_after": 13.0067
+    },
+    {
+      "point": "point_9_14",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.078000000000003,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 13.0067,
+      "meter_after": 16.2763
+    }
+  ],
+  "failed": [],
+  "not_selected": [],
+  "replay": {
+    "point": "point_7_14",
+    "state": "SUCCEEDED",
+    "reason": "CONFIRMED_WORK",
+    "confirmed": 3.064,
+    "remaining": 0.0,
+    "uncertainty": false,
+    "replayed": true,
+    "meter_before": 3.2557,
+    "meter_after": 3.2557
+  },
+  "t": 205.84,
+  "wall_seconds": 539.428149814019,
+  "scope": "Explicitly selected original points; confirmed work and residual separate; full selection does not imply full completion"
+}

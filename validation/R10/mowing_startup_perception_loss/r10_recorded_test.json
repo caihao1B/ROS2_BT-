@@ -1,22 +1,22 @@
 {
   "case": "mowing_startup_perception_loss",
-  "scope": "original first five segments with real START_WORK perception fault; actual R12 observer camera simultaneously recorded",
+  "scope": "first five approved execution segments with real START_WORK perception fault; original work polygons retained; actual R12 observer camera simultaneously recorded",
   "video_acceptance": {
     "case": "mowing_startup_perception_loss",
     "task": "mowing",
-    "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_211518_676200",
+    "path": "optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371",
     "task_passed": true,
     "video_valid": true,
     "mission_timeline_complete": true,
     "active_video_quality": true,
-    "max_active_image_age_wall_s": 1.8978905850090086,
-    "max_active_frame_gap_sim_s": 0.75,
+    "max_active_image_age_wall_s": 0.38336800498655066,
+    "max_active_frame_gap_sim_s": 0.12600000000000477,
     "passed": true,
     "task_terminal": "COMPLETED",
     "scope": "Actual independent recording, retains full or selected original obligation count",
-    "sim_seconds": 185.572,
-    "video_seconds": 494.0,
-    "source_video_sha256": "42deb45f322586e213f2b9f3c724598c43d5e37a0d32e000a8318d7493056177",
+    "sim_seconds": 246.912,
+    "video_seconds": 664.4,
+    "source_video_sha256": "f30b20f0c0a338dcbb170733ed1396f724ad36cb1bbd552a48ba2ddc887d75bb",
     "analysis_checks": {
       "runtime_clean": true,
       "original_database_unchanged": true,
@@ -36,12 +36,15 @@
       "two_work_strips": true,
       "actual_reverse_travel": true,
       "tools_off_during_turns": true,
+      "tools_off_during_recovery": true,
       "actual_startup_outage": true,
       "startup_cancel_observed": true,
       "consumers_detected_missing_perception": true,
       "startup_cancel_physically_confirmed": true,
       "no_cancel_timeout_latch": true,
-      "startup_recovery_completed": true
+      "startup_recovery_completed": true,
+      "original_area_and_obligations_retained": true,
+      "reference_not_claimed_completed": true
     }
   }
 }

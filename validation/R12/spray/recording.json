@@ -1,11 +1,11 @@
 {
   "valid": true,
-  "frames": 1881,
+  "frames": 1222,
   "fps": 5.0,
-  "duration_s": 376.2,
+  "duration_s": 244.4,
   "encoder_exit": 0,
   "source": "actual Gazebo camera",
-  "sim_last": 145.25,
+  "sim_last": 94.126,
   "no_generated_motion": true,
   "wall_pacing": true
 }

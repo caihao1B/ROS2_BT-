@@ -1,7 +1,9 @@
 {
-  "paths": [
-    "optimization_v2/three_tasks/results/R10/repair_docking.png",
-    "optimization_v2/three_tasks/results/R10/repair_start_work.png"
+  "spray_source": "optimization_v2/three_tasks/results/R12/spray_20261115_060145_047614",
+  "startup_source": "optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371",
+  "images": [
+    "repair_docking.png",
+    "repair_start_work.png"
   ],
-  "scope": "Offline observed diagnostics; acceptance remains in each run analysis"
+  "scope": "Current recorded evidence; plots do not assign task credit"
 }

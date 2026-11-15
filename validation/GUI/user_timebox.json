@@ -1,0 +1,6 @@
+{
+  "user_update_utc": "2026-11-15T05:35:41+00:00",
+  "simulation_stop_by_utc": "2026-11-15T08:20:41+00:00",
+  "delivery_target_by_utc": "2026-11-15T08:35:41+00:00",
+  "instruction": "At most three hours from new request; prioritize real GUI and bounded simulations, upload actual PASS/PARTIAL evidence. No 60-case matrix; original safety/precision gates retained."
+}

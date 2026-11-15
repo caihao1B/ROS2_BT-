@@ -1,0 +1,223 @@
+{
+  "passed": false,
+  "terminal": "HUMAN_REQUIRED",
+  "controlled_hold": true,
+  "error": "TimeoutError('WAIT_DEADLINE')",
+  "t": 431.172,
+  "selected_segments": 34,
+  "navigation_groups": 34,
+  "original_segment_passages": [
+    {
+      "segment": "B1:segment:0",
+      "xy_error_m": 0.09923777103173798,
+      "yaw_error_rad": 0.018705166860811084,
+      "t": 57.39
+    },
+    {
+      "segment": "B1:segment:1",
+      "xy_error_m": 0.0993712431355172,
+      "yaw_error_rad": 0.04385336243944343,
+      "t": 64.23
+    },
+    {
+      "segment": "B1:segment:2",
+      "xy_error_m": 0.09879842515064013,
+      "yaw_error_rad": 0.052183881434734125,
+      "t": 94.89
+    },
+    {
+      "segment": "B1:segment:3",
+      "xy_error_m": 0.09977918545320233,
+      "yaw_error_rad": 0.06636924645055559,
+      "t": 101.01
+    },
+    {
+      "segment": "B1:segment:4",
+      "xy_error_m": 0.09845223067799627,
+      "yaw_error_rad": 0.0030420308830645393,
+      "t": 157.26
+    },
+    {
+      "segment": "B1:segment:5",
+      "xy_error_m": 0.0986580300501828,
+      "yaw_error_rad": 0.026207020993397334,
+      "t": 178.38
+    },
+    {
+      "segment": "B1:segment:6",
+      "xy_error_m": 0.09762417816097364,
+      "yaw_error_rad": 0.03965173485104101,
+      "t": 206.01
+    },
+    {
+      "segment": "B1:segment:7",
+      "xy_error_m": 0.0776526644641881,
+      "yaw_error_rad": 0.11517091892094776,
+      "t": 209.52
+    },
+    {
+      "segment": "B1:segment:8",
+      "xy_error_m": 0.09841709595087576,
+      "yaw_error_rad": 0.01687089976082179,
+      "t": 289.2
+    },
+    {
+      "segment": "B1:segment:9",
+      "xy_error_m": 0.09921561205106097,
+      "yaw_error_rad": 0.10321537418020021,
+      "t": 295.71
+    },
+    {
+      "segment": "B1:segment:10",
+      "xy_error_m": 0.09946902734500426,
+      "yaw_error_rad": 0.10308237075475657,
+      "t": 315.09
+    }
+  ],
+  "original_segments": 34,
+  "completed_segments": [
+    "B1:segment:0",
+    "B1:segment:1",
+    "B1:segment:2",
+    "B1:segment:3",
+    "B1:segment:4",
+    "B1:segment:5",
+    "B1:segment:6",
+    "B1:segment:7",
+    "B1:segment:8",
+    "B1:segment:9",
+    "B1:segment:10"
+  ],
+  "remaining_selected": [
+    "B1:segment:11",
+    "B1:segment:12",
+    "B1:segment:13",
+    "B1:segment:14",
+    "B1:segment:15",
+    "B1:segment:16",
+    "B1:segment:17",
+    "B1:segment:18",
+    "B1:segment:19",
+    "B1:segment:20",
+    "B1:segment:21",
+    "B1:segment:22",
+    "B1:segment:23",
+    "B1:segment:24",
+    "B1:segment:25",
+    "B1:segment:26",
+    "B1:segment:27",
+    "B1:segment:28",
+    "B1:segment:29",
+    "B1:segment:30",
+    "B1:segment:31",
+    "B1:segment:32",
+    "B1:segment:33"
+  ],
+  "not_selected": [],
+  "work_results": [
+    {
+      "segment": "B1:segment:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 3.339737499999999,
+      "remaining": 7.221752781674197,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 6.147362499999993,
+      "remaining": 4.414127781674203,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 9.001899999999992,
+      "remaining": 1.559590281674204,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 9.672962499999999,
+      "remaining": 0.8885277816741972,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 9.248649999999994,
+      "remaining": 9.606189427513076,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.239087499999975,
+      "remaining": 1.6157519275130952,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 8.96972500000002,
+      "remaining": 16.462594033425283,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:8",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 23.234174999999986,
+      "remaining": 2.198144033425315,
+      "uncertain": false
+    }
+  ],
+  "replans": 0,
+  "coverage_rejoins": 0,
+  "coverage_planner_queries": 0,
+  "endpoint_recoveries": 0,
+  "endpoint_planner_queries": 0,
+  "continuous_recovery_queries": 0,
+  "final_gate": {
+    "t": 431.16,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "LOCALIZATION",
+      "PERCEPTION",
+      "NAV_COMMAND_STALE"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 61.5817467982427,
+    "armed_direction": 1,
+    "raw_nav_v": 0.0,
+    "raw_nav_w": 0.0
+  },
+  "ownership": {
+    "/tf": [
+      "s05_local_odometry",
+      "s08_global_pose_manager"
+    ],
+    "/s03/actuator/request": [
+      "r09_actuator_gate"
+    ],
+    "/s10/tool/command": [
+      "s10_tool_action_server"
+    ]
+  },
+  "wall_seconds": 1485.2875672989758,
+  "execution_mode": "original_primitive_boundaries",
+  "scope": "Original segment goals checked in order under explicitly versioned execution mode; feedback area separate from passage"
+}

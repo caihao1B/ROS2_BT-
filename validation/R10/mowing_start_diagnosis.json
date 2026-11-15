@@ -1,41 +1,72 @@
 {
-  "source": "optimization_v2/three_tasks/results/R12/mowing_20261114_174644_953306",
-  "window_sim": [
-    521.1,
-    529.2
+  "run": "optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371",
+  "task_passed": true,
+  "startup_stop_delays_sim_s": [
+    0.5919999999999987
   ],
-  "bt_transitions": [
+  "original_limit_sim_s": 2.0,
+  "uncertainty_pending": false,
+  "unique_jobs": 2,
+  "completed_segments": 5,
+  "confirmed_area_m2": 26.391029762931016,
+  "residual_area_m2": 1.5629519438629738,
+  "work_results": [
     {
-      "t": 521.126,
-      "action": "EXECUTE",
-      "reason_code": "NEXT_OBLIGATION",
-      "stopped_confirmation": true
+      "segment": "B1:segment:0:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 0.0,
+      "remaining": 10.561490281674196,
+      "uncertain": false
     },
     {
-      "t": 521.522,
-      "action": "CANCEL",
-      "reason_code": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
-      "stopped_confirmation": false
+      "segment": "B1:segment:0:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 9.682437499999992,
+      "remaining": 0.8790527816742042,
+      "uncertain": false
     },
     {
-      "t": 523.524,
-      "action": "STOP",
-      "reason_code": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT",
-      "stopped_confirmation": false
+      "segment": "B1:segment:4:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 5.335299999999988,
+      "remaining": 13.519539427513083,
+      "uncertain": false
     },
     {
-      "t": 529.17,
-      "action": "HUMAN",
-      "reason_code": "CANCEL_OR_STOP_CONFIRMATION_TIMEOUT",
-      "stopped_confirmation": true
+      "segment": "B1:segment:4:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 14.426937499999983,
+      "remaining": 4.427901927513087,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.170337499999956,
+      "remaining": 1.6845019275131143,
+      "uncertain": false
     }
   ],
-  "first_perception_invalid_t": 521.49,
-  "last_context_perception": false,
-  "first_tool_on_t": 521.19,
-  "first_tool_off_after_start_t": 521.516,
-  "maximum_feedback_rpm_rad_s": 12.0,
-  "mission_timeout_t": 529.13,
-  "final_physical_stop_confirmed": true,
-  "diagnostic_inference": "Tool start waits for working confirmation without processing BT cancellation. A perception interruption switches the tool off while its action remains active, so the BT cancellation protocol times out before the task worker reaches its 8s start timeout. Diagnose/fix START_WORK cancellation coordination; do not weaken perception/stop thresholds."
+  "fault": {
+    "t": 39.002,
+    "until": 40.202000000000005,
+    "pid": 433988,
+    "phase": "START_WORK",
+    "method": "SIGSTOP owned risk producer; all health timeouts and BT gates unchanged",
+    "resumed": true,
+    "resumed_t": 40.23
+  },
+  "checks": {
+    "actual_startup_outage": true,
+    "startup_cancel_observed": true,
+    "consumers_detected_missing_perception": true,
+    "startup_cancel_physically_confirmed": true,
+    "no_cancel_timeout_latch": true,
+    "startup_recovery_completed": true
+  }
 }

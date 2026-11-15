@@ -1,0 +1,12 @@
+{
+  "task": "mowing",
+  "source": "optimization_v2/ws/src/task_platform/scripts/runtime_mowing_r10.py",
+  "source_sha256": "02818c25377b42295e35f734e164020ee8f3f31217cd751ed0a9aaa3c02ef52a",
+  "derived_runtime": "optimization_v2/three_tasks/editions/R12/runtime_mowing_video.py",
+  "derived_sha256": "ac89853d577c2434e083c7dc91ebb386047f5c21a18bedefb2b198e2e66d1ff3",
+  "changes": [
+    "same observer-only derivation",
+    "64 MiB session SHM segment for observer image writer only"
+  ],
+  "scope": "No control, physics, perception, map or work admission change; existing recording runtime retained"
+}

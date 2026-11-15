@@ -1,0 +1,45 @@
+{
+  "source_run": "optimization_v2/three_tasks/results/R12/mowing_20261115_003535_670288",
+  "original_segments": 34,
+  "world_grade_degrees": 10.0,
+  "current_terrain_qualification_degrees": 5.0,
+  "conflicts": [
+    {
+      "original_segment_index": 19,
+      "id": "B1:segment:19",
+      "kind": "TURN_TOOL_OFF",
+      "endpoint_world": [
+        120.46120771400606,
+        42.974314313797684,
+        0.261799387799143
+      ],
+      "base_point_inside_ramp": false,
+      "body_overlap_m2": 1.4112579096632525
+    },
+    {
+      "original_segment_index": 24,
+      "id": "B1:segment:24",
+      "kind": "COVERAGE",
+      "endpoint_world": [
+        120.08088480618957,
+        44.32179375035932,
+        -2.8797932657906458
+      ],
+      "base_point_inside_ramp": true,
+      "body_overlap_m2": 0.9227510531703982
+    },
+    {
+      "original_segment_index": 31,
+      "id": "B1:segment:31",
+      "kind": "TURN_TOOL_OFF",
+      "endpoint_world": [
+        124.61230875383089,
+        44.233231769383316,
+        1.3061873910470525
+      ],
+      "base_point_inside_ramp": true,
+      "body_overlap_m2": 6.234634297363893
+    }
+  ],
+  "scope": "Offline original mesh and original endpoint geometry only. Potential physical incompatibility requiring actual observed checks; not online knowledge or global no-path proof. Original route and acceptance standards unchanged."
+}

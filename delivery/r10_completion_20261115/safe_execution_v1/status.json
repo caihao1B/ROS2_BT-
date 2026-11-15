@@ -1,0 +1,10 @@
+{
+  "status": "PARTIAL",
+  "execution_segments": 46,
+  "full_attempt": "optimization_v2/three_tasks/results/R12/mowing_20261115_033846_289066",
+  "completed_segments": 7,
+  "passed_startup_case": "optimization_v2/three_tasks/results/R12/mowing_20261115_032728_973082",
+  "reason": "Long connection rejected by actual local costmap near slope; original numeric gates retained.",
+  "original_reference_segments": 34,
+  "original_reference_status": "PARTIAL"
+}

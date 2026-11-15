@@ -1,23 +1,513 @@
 {
-  "source": "optimization_v2/three_tasks/results/R12/spray_20261114_170714_616253",
-  "window_sim": [
-    507.62,
-    509.81
+  "source": "optimization_v2/three_tasks/results/R12/spray_20261115_060145_047614",
+  "task_passed": false,
+  "confirmed_points": 28,
+  "original_points": 56,
+  "local_docking_actions": 15,
+  "admitted_stopped_windows": [
+    {
+      "t": 22.5,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_7_14",
+      "distance_m": 0.00395445361878837,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999983,
+        "max_gap_s": 0.030000000000001137,
+        "median_distance_m": 0.002946915491727039,
+        "latest_distance_m": 0.00395445361878837,
+        "position_scatter_p95_m": 0.00841745926795826
+      }
+    },
+    {
+      "t": 44.042,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_14",
+      "distance_m": 0.033155361310935244,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999983,
+        "max_gap_s": 0.030000000000001137,
+        "median_distance_m": 0.030662493530910655,
+        "latest_distance_m": 0.033155361310935244,
+        "position_scatter_p95_m": 0.0035625357394571816
+      }
+    },
+    {
+      "t": 85.65,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_15",
+      "distance_m": 0.011497314563521311,
+      "attempt": 1,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000114,
+        "max_gap_s": 0.030000000000001137,
+        "median_distance_m": 0.010741419606021393,
+        "latest_distance_m": 0.011497314563521311,
+        "position_scatter_p95_m": 0.0038871739429559076
+      }
+    },
+    {
+      "t": 118.86,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_15",
+      "distance_m": 0.041606510477855324,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999983,
+        "max_gap_s": 0.030000000000001137,
+        "median_distance_m": 0.03270946367931593,
+        "latest_distance_m": 0.041606510477855324,
+        "position_scatter_p95_m": 0.008262269238989822
+      }
+    },
+    {
+      "t": 157.44,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_14",
+      "distance_m": 0.02498904050165436,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000114,
+        "max_gap_s": 0.030000000000001137,
+        "median_distance_m": 0.02392786317253744,
+        "latest_distance_m": 0.02498904050165436,
+        "position_scatter_p95_m": 0.0012173008727526225
+      }
+    },
+    {
+      "t": 201.78,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_14",
+      "distance_m": 0.029494799702645565,
+      "attempt": 1,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000114,
+        "max_gap_s": 0.030000000000001137,
+        "median_distance_m": 0.03416157929892391,
+        "latest_distance_m": 0.029494799702645565,
+        "position_scatter_p95_m": 0.00860326154345944
+      }
+    },
+    {
+      "t": 241.02,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_15",
+      "distance_m": 0.02868460599754273,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000114,
+        "max_gap_s": 0.030000000000001137,
+        "median_distance_m": 0.028828015772479572,
+        "latest_distance_m": 0.02868460599754273,
+        "position_scatter_p95_m": 0.002988803629580961
+      }
+    },
+    {
+      "t": 288.93,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_16",
+      "distance_m": 0.006129201082214005,
+      "attempt": 2,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.829999999999984,
+        "max_gap_s": 0.03200000000003911,
+        "median_distance_m": 0.0021678966984990436,
+        "latest_distance_m": 0.006129201082214005,
+        "position_scatter_p95_m": 0.004224202626380938
+      }
+    },
+    {
+      "t": 331.95,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_16",
+      "distance_m": 0.022982907272119216,
+      "attempt": 1,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000114,
+        "max_gap_s": 0.031999999999982265,
+        "median_distance_m": 0.025668849785874588,
+        "latest_distance_m": 0.022982907272119216,
+        "position_scatter_p95_m": 0.0063408943603017465
+      }
+    },
+    {
+      "t": 363.99,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_16",
+      "distance_m": 0.006911950549340927,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.829999999999984,
+        "max_gap_s": 0.03000000000002956,
+        "median_distance_m": 0.004441740748665417,
+        "latest_distance_m": 0.006911950549340927,
+        "position_scatter_p95_m": 0.004898657223955807
+      }
+    },
+    {
+      "t": 396.57,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_17",
+      "distance_m": 0.025766542473531346,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000114,
+        "max_gap_s": 0.03000000000002956,
+        "median_distance_m": 0.029251870980778187,
+        "latest_distance_m": 0.025766542473531346,
+        "position_scatter_p95_m": 0.0044064337326824915
+      }
+    },
+    {
+      "t": 457.74,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_17",
+      "distance_m": 0.031349046438921106,
+      "attempt": 2,
+      "stable": true,
+      "stability": {
+        "samples": 74,
+        "span_s": 2.1899999999999977,
+        "max_gap_s": 0.03200000000003911,
+        "median_distance_m": 0.03492419844210308,
+        "latest_distance_m": 0.031349046438921106,
+        "position_scatter_p95_m": 0.004916826269535665
+      }
+    },
+    {
+      "t": 495.93,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_17",
+      "distance_m": 0.026592033202278834,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000114,
+        "max_gap_s": 0.03000000000002956,
+        "median_distance_m": 0.0265984698944196,
+        "latest_distance_m": 0.026592033202278834,
+        "position_scatter_p95_m": 0.0038329290648201593
+      }
+    },
+    {
+      "t": 527.79,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_18",
+      "distance_m": 0.03299229474496731,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999272,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.03163666005992001,
+        "latest_distance_m": 0.03299229474496731,
+        "position_scatter_p95_m": 0.004667813867399881
+      }
+    },
+    {
+      "t": 579.48,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_18",
+      "distance_m": 0.016196230586053757,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000682,
+        "max_gap_s": 0.03200000000003911,
+        "median_distance_m": 0.019780126952284642,
+        "latest_distance_m": 0.016196230586053757,
+        "position_scatter_p95_m": 0.004095572725480116
+      }
+    },
+    {
+      "t": 583.17,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_18",
+      "distance_m": 0.013415947312432565,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999272,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.013551976424004497,
+        "latest_distance_m": 0.013415947312432565,
+        "position_scatter_p95_m": 0.007114205425805542
+      }
+    },
+    {
+      "t": 631.08,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_18",
+      "distance_m": 0.013220241067775836,
+      "attempt": 1,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000682,
+        "max_gap_s": 0.03199999999992542,
+        "median_distance_m": 0.012897407046308347,
+        "latest_distance_m": 0.013220241067775836,
+        "position_scatter_p95_m": 0.0017944906168623107
+      }
+    },
+    {
+      "t": 663.42,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_19",
+      "distance_m": 0.02895912696182827,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999272,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.029664118749342248,
+        "latest_distance_m": 0.02895912696182827,
+        "position_scatter_p95_m": 0.0053045721443500645
+      }
+    },
+    {
+      "t": 715.95,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_19",
+      "distance_m": 0.017912155820911557,
+      "attempt": 1,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.830000000000041,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.01636684651879894,
+        "latest_distance_m": 0.017912155820911557,
+        "position_scatter_p95_m": 0.0031512098731282284
+      }
+    },
+    {
+      "t": 756.33,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_19",
+      "distance_m": 0.027107578224626516,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.8000000000000682,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.023562385983780843,
+        "latest_distance_m": 0.027107578224626516,
+        "position_scatter_p95_m": 0.009358652952090854
+      }
+    },
+    {
+      "t": 789.21,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_11_19",
+      "distance_m": 0.031060680539507866,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.830000000000041,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.028767159633314495,
+        "latest_distance_m": 0.031060680539507866,
+        "position_scatter_p95_m": 0.00654582058843444
+      }
+    },
+    {
+      "t": 855.81,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_12_20",
+      "distance_m": 0.017132998344452494,
+      "attempt": 2,
+      "stable": true,
+      "stability": {
+        "samples": 74,
+        "span_s": 2.189999999999941,
+        "max_gap_s": 0.03199999999992542,
+        "median_distance_m": 0.011955753874115642,
+        "latest_distance_m": 0.017132998344452494,
+        "position_scatter_p95_m": 0.014762383090271933
+      }
+    },
+    {
+      "t": 859.77,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_12_20",
+      "distance_m": 0.008312926127503886,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999272,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.01190262287614112,
+        "latest_distance_m": 0.008312926127503886,
+        "position_scatter_p95_m": 0.00874345070071042
+      }
+    },
+    {
+      "t": 965.19,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_11_20",
+      "distance_m": 0.01044253192880387,
+      "attempt": 2,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.830000000000041,
+        "max_gap_s": 0.030000000000086402,
+        "median_distance_m": 0.01984145826101037,
+        "latest_distance_m": 0.01044253192880387,
+        "position_scatter_p95_m": 0.007508449594465943
+      }
+    },
+    {
+      "t": 1060.05,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_20",
+      "distance_m": 0.0154097224847457,
+      "attempt": 1,
+      "stable": true,
+      "stability": {
+        "samples": 74,
+        "span_s": 2.1900000000000546,
+        "max_gap_s": 0.032000000000152795,
+        "median_distance_m": 0.019315958667293305,
+        "latest_distance_m": 0.0154097224847457,
+        "position_scatter_p95_m": 0.014993873872866522
+      }
+    },
+    {
+      "t": 1105.98,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_20",
+      "distance_m": 0.03150469252955325,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 74,
+        "span_s": 2.1900000000000546,
+        "max_gap_s": 0.03000000000020009,
+        "median_distance_m": 0.03495856157760579,
+        "latest_distance_m": 0.03150469252955325,
+        "position_scatter_p95_m": 0.0037511550396216215
+      }
+    },
+    {
+      "t": 1142.49,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_20",
+      "distance_m": 0.014337139271308669,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 74,
+        "span_s": 2.1900000000000546,
+        "max_gap_s": 0.032000000000152795,
+        "median_distance_m": 0.028279090018344707,
+        "latest_distance_m": 0.014337139271308669,
+        "position_scatter_p95_m": 0.014857221027389027
+      }
+    },
+    {
+      "t": 1180.5,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_21",
+      "distance_m": 0.01609236842268487,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999272,
+        "max_gap_s": 0.03000000000020009,
+        "median_distance_m": 0.018383036050531674,
+        "latest_distance_m": 0.01609236842268487,
+        "position_scatter_p95_m": 0.010236824776968788
+      }
+    },
+    {
+      "t": 1223.91,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_21",
+      "distance_m": 0.029828346758910305,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 61,
+        "span_s": 1.800000000000182,
+        "max_gap_s": 0.03000000000020009,
+        "median_distance_m": 0.02726627788830656,
+        "latest_distance_m": 0.029828346758910305,
+        "position_scatter_p95_m": 0.00539815553269563
+      }
+    },
+    {
+      "t": 1262.462,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_21",
+      "distance_m": 0.023217115742267518,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999272,
+        "max_gap_s": 0.03000000000020009,
+        "median_distance_m": 0.022335636096166872,
+        "latest_distance_m": 0.023217115742267518,
+        "position_scatter_p95_m": 0.0018121754891137277
+      }
+    },
+    {
+      "t": 1340.79,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_11_21",
+      "distance_m": 0.018825485456175236,
+      "attempt": 0,
+      "stable": true,
+      "stability": {
+        "samples": 62,
+        "span_s": 1.8299999999999272,
+        "max_gap_s": 0.03000000000020009,
+        "median_distance_m": 0.013539857518275824,
+        "latest_distance_m": 0.018825485456175236,
+        "position_scatter_p95_m": 0.006038267637135914
+      }
+    }
   ],
-  "global_estimate": {
-    "samples": 73,
-    "p95_scatter_m": 0.024381234355979373,
-    "max_displacement_m": 0.03659866244001635
+  "map_xy_rmse_m": 0.039565299137372376,
+  "original_work_limits": {
+    "median_distance_m": 0.035,
+    "latest_distance_m": 0.045,
+    "p95_scatter_m": 0.015,
+    "minimum_span_s": 1.8
   },
-  "local_odometry": {
-    "samples": 73,
-    "p95_scatter_m": 0.00042675605563178036,
-    "max_displacement_m": 0.0004537110860027463
-  },
-  "offline_true_position": {
-    "samples": 110,
-    "p95_scatter_m": 0.0,
-    "max_displacement_m": 0.0
-  },
-  "scope": "Offline diagnosis only. True pose not used by runtime. Window from final docking check; independent sampling differs from monitor history."
+  "scope": "Actual completed recording; docking windows and independent physical work checks remain separate"
 }

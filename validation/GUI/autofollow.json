@@ -1,0 +1,49 @@
+{
+  "run": {
+    "id": "R12/mowing_20261115_070740_054017",
+    "task": "mowing",
+    "case": "nominal",
+    "status": "LIVE",
+    "wall_age_s": 0.015918254852294922,
+    "sim_seconds": 1800,
+    "cluster": "B1"
+  },
+  "sim_t": 179.01,
+  "selected_count": 47,
+  "original_count": 47,
+  "observer_run": "R12/mowing_20261115_070740_054017",
+  "channels": {
+    "imu": {
+      "t": 179.016,
+      "observed_sim_hz": 200.0,
+      "frame": "imu_link"
+    },
+    "wheel": {
+      "t": 179.002,
+      "observed_sim_hz": 100.0,
+      "frame": "base_link"
+    },
+    "odom": {
+      "t": 179.006,
+      "observed_sim_hz": 30.06012024048082,
+      "frame": "odom"
+    },
+    "lidar": {
+      "t": 178.9,
+      "observed_sim_hz": 10.0,
+      "frame": "lidar_link"
+    },
+    "camera": {
+      "t": 178.994,
+      "observed_sim_hz": 15.136226034308784,
+      "frame": "left_optical"
+    },
+    "gnss": {
+      "t": 179.0,
+      "observed_sim_hz": 5.0,
+      "frame": "gnss_link"
+    }
+  },
+  "scope": "Automatic API follow from startup subset to new full B1, without restarting GUI; no task credit",
+  "passed": true
+}

@@ -1,0 +1,1 @@
+<library path="r08_observed_prior"><class name="r08::ObservedPriorLayer" type="r08::ObservedPriorLayer" base_class_type="nav2_costmap_2d::Layer"><description>Current observed hazards augment a prior map; never an execution free-space certificate.</description></class></library>

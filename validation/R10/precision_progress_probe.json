@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "original_policy_test",
+      "exit": 0,
+      "stdout": "{\"cases\":25,\"framework\":\"BehaviorTree.CPP actual XML execution\",\"passed\":true}\n",
+      "stderr": ""
+    },
+    {
+      "name": "precision_progress_test",
+      "exit": 0,
+      "stdout": "{\"checks\":5,\"coarse_delta_m\":0.1,\"passed\":true,\"scope\":\"Actual derived BT policy; no disabled stall watchdog\",\"timeout_s\":10.0}\n",
+      "stderr": ""
+    }
+  ],
+  "binary_sha256": "ffaf6fc7458c4b26a2895cab23bc88fedde31891dcfd1f16b82bb25306dd9ac8",
+  "policy_sha256": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+  "header_sha256": "3b34eb3bcafcbea8d02cf5d375769c423a859bef15fa3dfe678a565bb303bcda",
+  "driver_sha256": "5f2da7a37b87d062a63a8bb02e5fa23db5a5fb59da105cc2bd00127513d7f50d",
+  "generator_sha256": "70994fb55029d069818efc7c6f8df6e154ae37506faba38709f7be96a90fb3cd",
+  "scope": "Actual BehaviorTree.CPP policy/XML tests, separate from full A1 execution"
+}

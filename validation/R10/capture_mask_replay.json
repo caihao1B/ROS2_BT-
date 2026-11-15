@@ -1,0 +1,496 @@
+{
+  "run": "optimization_v2/three_tasks/results/R12/mowing_20261115_023724_657473",
+  "captures": [
+    {
+      "capture": "capture_00",
+      "t": 86.0,
+      "units": [
+        {
+          "unit": "front",
+          "finite_points": 15856,
+          "removed_self_returns": 2408,
+          "remaining_points": 13448,
+          "removed_body_xyz_min": [
+            2.1507996938718805,
+            -1.3568463325500486,
+            -0.0241983640902583
+          ],
+          "removed_body_xyz_max": [
+            2.208989486382815,
+            1.3579113483428953,
+            0.03238625046761642
+          ]
+        },
+        {
+          "unit": "rear",
+          "finite_points": 15853,
+          "removed_self_returns": 2405,
+          "remaining_points": 13448,
+          "removed_body_xyz_min": [
+            -0.5709822516412042,
+            -1.3486244678497312,
+            -0.02316392817440746
+          ],
+          "removed_body_xyz_max": [
+            -0.5139609693237769,
+            1.3597513437271116,
+            0.03469003430670772
+          ]
+        },
+        {
+          "unit": "left",
+          "finite_points": 15857,
+          "removed_self_returns": 2412,
+          "remaining_points": 13445,
+          "removed_body_xyz_min": [
+            -0.5417099056243895,
+            1.3291747819267965,
+            -0.03048038026752417
+          ],
+          "removed_body_xyz_max": [
+            2.165258759498596,
+            1.3849976997696414,
+            0.036545212512822056
+          ]
+        },
+        {
+          "unit": "right",
+          "finite_points": 15853,
+          "removed_self_returns": 2405,
+          "remaining_points": 13448,
+          "removed_body_xyz_min": [
+            -0.5223861989974974,
+            -1.3849983607557073,
+            -0.030713851525552366
+          ],
+          "removed_body_xyz_max": [
+            2.197756284713745,
+            -1.3275463836510975,
+            0.03215912086617531
+          ]
+        }
+      ]
+    },
+    {
+      "capture": "capture_01",
+      "t": 92.6,
+      "units": [
+        {
+          "unit": "front",
+          "finite_points": 15855,
+          "removed_self_returns": 2407,
+          "remaining_points": 13448,
+          "removed_body_xyz_min": [
+            2.152298178142824,
+            -1.3457710742950437,
+            -0.025279283457690843
+          ],
+          "removed_body_xyz_max": [
+            2.2089920295975025,
+            1.3592946529388426,
+            0.035109771140755974
+          ]
+        },
+        {
+          "unit": "rear",
+          "finite_points": 15853,
+          "removed_self_returns": 2411,
+          "remaining_points": 13442,
+          "removed_body_xyz_min": [
+            -0.5709960493029533,
+            -1.3664300441741941,
+            -0.023194562273050362
+          ],
+          "removed_body_xyz_max": [
+            -0.5139300141144287,
+            1.3474456071853635,
+            0.03533761273889066
+          ]
+        },
+        {
+          "unit": "left",
+          "finite_points": 15855,
+          "removed_self_returns": 2408,
+          "remaining_points": 13447,
+          "removed_body_xyz_min": [
+            -0.5377124605178831,
+            1.3281712219870023,
+            -0.026038101486609372
+          ],
+          "removed_body_xyz_max": [
+            2.163099760055542,
+            1.3849941180553476,
+            0.03460517685833575
+          ]
+        },
+        {
+          "unit": "right",
+          "finite_points": 15853,
+          "removed_self_returns": 2403,
+          "remaining_points": 13450,
+          "removed_body_xyz_min": [
+            -0.5398045835494993,
+            -1.3849969791437449,
+            -0.027003159463303367
+          ],
+          "removed_body_xyz_max": [
+            2.170088523864746,
+            -1.3265778605646654,
+            0.041007781387584874
+          ]
+        }
+      ]
+    },
+    {
+      "capture": "capture_02",
+      "t": 96.4,
+      "units": [
+        {
+          "unit": "front",
+          "finite_points": 15855,
+          "removed_self_returns": 2405,
+          "remaining_points": 13450,
+          "removed_body_xyz_min": [
+            2.151239483771193,
+            -1.3395376205444334,
+            -0.026612091918464614
+          ],
+          "removed_body_xyz_max": [
+            2.208989165720024,
+            1.3519635200500486,
+            0.03545160458178351
+          ]
+        },
+        {
+          "unit": "rear",
+          "finite_points": 15853,
+          "removed_self_returns": 2402,
+          "remaining_points": 13451,
+          "removed_body_xyz_min": [
+            -0.5709819683504462,
+            -1.3772723674774168,
+            -0.02429720986835407
+          ],
+          "removed_body_xyz_max": [
+            -0.5136064332179913,
+            1.3668704032897947,
+            0.035581257771216124
+          ]
+        },
+        {
+          "unit": "left",
+          "finite_points": 15854,
+          "removed_self_returns": 2405,
+          "remaining_points": 13449,
+          "removed_body_xyz_min": [
+            -0.5509872493743895,
+            1.3285416991584404,
+            -0.02520509277251945
+          ],
+          "removed_body_xyz_max": [
+            2.188144320487976,
+            1.3849949595162288,
+            0.03489284723765518
+          ]
+        },
+        {
+          "unit": "right",
+          "finite_points": 15853,
+          "removed_self_returns": 2409,
+          "remaining_points": 13444,
+          "removed_body_xyz_min": [
+            -0.5379654226303099,
+            -1.384999879668154,
+            -0.026169198879480077
+          ],
+          "removed_body_xyz_max": [
+            2.1811598482131958,
+            -1.3245890694948486,
+            0.038061665058534616
+          ]
+        }
+      ]
+    },
+    {
+      "capture": "capture_03",
+      "t": 102.4,
+      "units": [
+        {
+          "unit": "front",
+          "finite_points": 15853,
+          "removed_self_returns": 2410,
+          "remaining_points": 13443,
+          "removed_body_xyz_min": [
+            2.152034791817065,
+            -1.3539078235626218,
+            -0.02233883636098752
+          ],
+          "removed_body_xyz_max": [
+            2.2089956700445583,
+            1.3514603376388548,
+            0.03799348728599769
+          ]
+        },
+        {
+          "unit": "rear",
+          "finite_points": 15853,
+          "removed_self_returns": 2407,
+          "remaining_points": 13446,
+          "removed_body_xyz_min": [
+            -0.5709852728517006,
+            -1.3706747293472288,
+            -0.02455208133452816
+          ],
+          "removed_body_xyz_max": [
+            -0.5110021751971111,
+            1.3546025753021238,
+            0.03448562953789397
+          ]
+        },
+        {
+          "unit": "left",
+          "finite_points": 15853,
+          "removed_self_returns": 2407,
+          "remaining_points": 13446,
+          "removed_body_xyz_min": [
+            -0.5393089113235472,
+            1.3277670993289636,
+            -0.028728222149125987
+          ],
+          "removed_body_xyz_max": [
+            2.1741487922668457,
+            1.3849857002718984,
+            0.032594998020746724
+          ]
+        },
+        {
+          "unit": "right",
+          "finite_points": 15853,
+          "removed_self_returns": 2407,
+          "remaining_points": 13446,
+          "removed_body_xyz_min": [
+            -0.5402483997344969,
+            -1.3849562924367813,
+            -0.023206071885142537
+          ],
+          "removed_body_xyz_max": [
+            2.172064179420471,
+            -1.3279972284630432,
+            0.03469921920237731
+          ]
+        }
+      ]
+    },
+    {
+      "capture": "capture_04",
+      "t": 107.2,
+      "units": [
+        {
+          "unit": "front",
+          "finite_points": 15853,
+          "removed_self_returns": 2407,
+          "remaining_points": 13446,
+          "removed_body_xyz_min": [
+            2.1530732715851353,
+            -1.3495022058486936,
+            -0.036553766966190254
+          ],
+          "removed_body_xyz_max": [
+            2.208985780128577,
+            1.361114978790283,
+            0.0360473460212247
+          ]
+        },
+        {
+          "unit": "rear",
+          "finite_points": 15853,
+          "removed_self_returns": 2409,
+          "remaining_points": 13444,
+          "removed_body_xyz_min": [
+            -0.5709943461292784,
+            -1.3654063940048216,
+            -0.02258772326505218
+          ],
+          "removed_body_xyz_max": [
+            -0.5140911330006336,
+            1.3347365856170652,
+            0.03357188522248064
+          ]
+        },
+        {
+          "unit": "left",
+          "finite_points": 15853,
+          "removed_self_returns": 2413,
+          "remaining_points": 13440,
+          "removed_body_xyz_min": [
+            -0.5427995977401732,
+            1.328589006634029,
+            -0.028084834503195683
+          ],
+          "removed_body_xyz_max": [
+            2.17953466796875,
+            1.3849844471506887,
+            0.03646644952922448
+          ]
+        },
+        {
+          "unit": "right",
+          "finite_points": 15853,
+          "removed_self_returns": 2408,
+          "remaining_points": 13445,
+          "removed_body_xyz_min": [
+            -0.5501607713699339,
+            -1.384987613886554,
+            -0.023807966607150483
+          ],
+          "removed_body_xyz_max": [
+            2.1770750226974487,
+            -1.3271573737912705,
+            0.03401756389237051
+          ]
+        }
+      ]
+    },
+    {
+      "capture": "capture_05",
+      "t": 110.6,
+      "units": [
+        {
+          "unit": "front",
+          "finite_points": 15853,
+          "removed_self_returns": 2403,
+          "remaining_points": 13450,
+          "removed_body_xyz_min": [
+            2.1496088014412966,
+            -1.3584667444229124,
+            -0.022176351097256547
+          ],
+          "removed_body_xyz_max": [
+            2.2089932869190845,
+            1.3635160923004148,
+            0.037105663067004746
+          ]
+        },
+        {
+          "unit": "rear",
+          "finite_points": 15853,
+          "removed_self_returns": 2404,
+          "remaining_points": 13449,
+          "removed_body_xyz_min": [
+            -0.5709856238369019,
+            -1.3713982105255125,
+            -0.02451028903799138
+          ],
+          "removed_body_xyz_max": [
+            -0.5134543158093264,
+            1.3510329723358152,
+            0.034612486844060236
+          ]
+        },
+        {
+          "unit": "left",
+          "finite_points": 15853,
+          "removed_self_returns": 2405,
+          "remaining_points": 13448,
+          "removed_body_xyz_min": [
+            -0.5362620410919188,
+            1.3284068311962258,
+            -0.026453678385677165
+          ],
+          "removed_body_xyz_max": [
+            2.1792294921875,
+            1.3849800376954349,
+            0.0373277321984499
+          ]
+        },
+        {
+          "unit": "right",
+          "finite_points": 15853,
+          "removed_self_returns": 2409,
+          "remaining_points": 13444,
+          "removed_body_xyz_min": [
+            -0.5283604917526243,
+            -1.3849930268766217,
+            -0.020697052252344555
+          ],
+          "removed_body_xyz_max": [
+            2.175021761894226,
+            -1.327700117301246,
+            0.03407939255494968
+          ]
+        }
+      ]
+    },
+    {
+      "capture": "capture_06",
+      "t": 114.2,
+      "units": [
+        {
+          "unit": "front",
+          "finite_points": 15853,
+          "removed_self_returns": 2406,
+          "remaining_points": 13447,
+          "removed_body_xyz_min": [
+            2.151705308486484,
+            -1.349733233451843,
+            -0.0241773337652276
+          ],
+          "removed_body_xyz_max": [
+            2.208972076700812,
+            1.3476278781890867,
+            0.03422792344446518
+          ]
+        },
+        {
+          "unit": "rear",
+          "finite_points": 15853,
+          "removed_self_returns": 2405,
+          "remaining_points": 13448,
+          "removed_body_xyz_min": [
+            -0.5709982501732329,
+            -1.3535897731781004,
+            -0.0223190585511667
+          ],
+          "removed_body_xyz_max": [
+            -0.5133689523618724,
+            1.3552900552749632,
+            0.041309725240862544
+          ]
+        },
+        {
+          "unit": "left",
+          "finite_points": 15853,
+          "removed_self_returns": 2408,
+          "remaining_points": 13445,
+          "removed_body_xyz_min": [
+            -0.5280689058303831,
+            1.3265161710167823,
+            -0.022434258125817813
+          ],
+          "removed_body_xyz_max": [
+            2.174990409851074,
+            1.3849734846009885,
+            0.03413284303498065
+          ]
+        },
+        {
+          "unit": "right",
+          "finite_points": 15853,
+          "removed_self_returns": 2407,
+          "remaining_points": 13446,
+          "removed_body_xyz_min": [
+            -0.5399409589767454,
+            -1.3849761161557341,
+            -0.020284905946738624
+          ],
+          "removed_body_xyz_max": [
+            2.1630810441970825,
+            -1.3277003774771732,
+            0.033699073513986266
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Recorded raw rays filtered in their own sensor/body capture frames; no online control, no resimulation, no task PASS; main raw source not in these snapshots, so this does not reconstruct the complete combined cloud."
+}

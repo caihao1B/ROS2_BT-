@@ -1,45 +1,45 @@
 # R10 核心代码
 
-`prepare_r10.py` 生成明确的验收目录与正常/故障清单。`runtime_spray_r10.py` 使用独立会话及唯一发布者启动点喷复验；`mission_spray_r10.py` 保留点服务、重新停靠和幂等重试逻辑；`analyze_spray_r10.py` 比较真实流量、确认量与实际到点位置。
+源码目录：`optimization_v2/ws/src/task_platform/`。
 
-`stage_r10.py` 调度完整 A1、工具 JAM 和完整 B1；对 R08/R09 的同版本独立用例，从已封存回执定位原始证据，再重新评分。完整点数、完整段数和完整连接路是独立的必选检查。新仿真不会覆写历史 R07/R09 的阶段通过记录。
+|文件|执行逻辑|
+|---|---|
+|`scripts/mission_spray_r10.py`|真实 NavigateToPose → 车辆/工具停车 → 全局静止位置窗口 → 必要时局部 FollowPath 精停 → ToolTask；失败只补残余，取消和人工锁存有界处理|
+|`scripts/progress_spray_r10.py`|接近目标的有界进展判据；`stopped_decision` 让停车等待响应后到的定位重验证锁存，人工停止优先|
+|`scripts/approach_handoff_r10.py`|对新鲜、已准入且有平移命令的近目标停滞提出取消接近动作；必须实测停车并通过原精停检查，不产生导航成功或作业信用|
+|`scripts/docking_r10.py`|保留原喷洒精停样本数、时间跨度、距离和散布门限|
+|`scripts/local_dock_r10.py`|静止全局观测中位数形成最多 0.15 m 的候选修正；将整个路径一次转换至局部 odom，包含旋转扫掠；本函数没有控制或作业计量权限|
+|`scripts/revalidation_spray_r10.py`|原先验区域内整车扫掠检查与路径摘要；运行时另须实际 Nav2 IsPathValid|
+|`r10_backend/correction_filter.hpp`|C++ SE(3) 修正低通：平移插值、四元数 slerp；原始异常监督在调用前执行|
+|`r10_backend/stopped_revalidation.inc`|停车后候选确认、保持锁存的 prepare、带地图/计划/epoch/路径证据的 commit，再经过原确认窗口恢复|
+|`scripts/spray_global_r10.py`|点喷独立原生管理器：用原始合格固定解及其采集时刻的里程计检验停车候选，不依赖旧位置已经接受的 GNSS 计数；行驶监督门限不变|
+|`scripts/near_mowing_r10.py`、`self_capture_mowing_r10.py`|各雷达在自己的采集车体坐标中按原车体遮罩剔除自回波，再做原有运动补偿；保留低矮地面例外，不扩大遮罩|
+|`scripts/mission_mowing_r10.py`|逐个当前版本执行段执行；START_WORK 持续响应 BT；恢复按挡位执行并在换向前实测停车|
+|`scripts/arrival_mowing_r10.py`|取消导航并停车后，用连续观测确认原 0.10 m / 0.12 rad 段到达标准，避免对已实际到达的目标反复停车调整|
+|`scripts/recovery_mowing_r10.py`|有界关刀退让候选、曲率/整车轮廓、挡位分段、局部进度索引、跟踪偏差、换挡停车准入|
+|`scripts/start_work_r10.py`|启动工具过程中每次 tick 都优先检查新鲜 BT 指令；取消先于工作确认|
+|`scripts/planning_envelope_r10.py`|解析车身角点在朝向设计扰动区间内的极值，加入 Nav2 膨胀、位置余量及栅格半对角线，生成独立规划包络；物理车身和到达门限不变|
+|`scripts/prepare_safe_plan_r10.py`、`safe_plan_r10.py`|裁剪原条带、显式保留遗漏原义务、验证完整包络与版本，原作业多边形不因裁剪变小|
+|`r10_backend/safe_route.cpp`|OMPL Reeds–Shepp / 有界 RRTConnect 用扩展包络检查连续连接，保留精确换向尖点，C++ 只输出候选，不发布控制|
+|`scripts/diagnostics_mowing_r10.py`|只读派生原 R09 诊断器，每 5 仿真秒保留一份完整风险/代价图，上限 400 份，避免只记录开头而丢失后半程失败现场|
+|`scripts/ledger_mowing_r10.py`、`ledger_spray_r10.py`|仅把心跳调度改成单调墙钟；原反馈准入、仿真时间戳、面积/剂量和幂等键保留|
+|`r10_backend/tool_bridge.cpp`|使用现有 ros_gz_bridge 转换器；先取消/释放 Gazebo 传输资源，后关闭 ROS context，修复退出崩溃|
+|`scripts/analyze_spray_r10.py`、`analyze_mowing_r10.py`|只在会话结束后读取隔离真值、接触、物理效果和账本；禁止在线控制导入|
+|`scripts/stage_r10.py`|重新分析同版本实际任务、原生故障探针、完整原分母与历史封存案例；缺少任一必要项保持 PARTIAL|
 
-R10 没有为了验收新增一套 C++ 控制器；沿用真实 Nav2、BehaviorTree.CPP、Gazebo 关节底盘、S10 工具服务器和共用传感器定位组件。测试负责验证这些模块的组合行为，不从合成轨迹生成工作信用。
+Python 任务层只发 Nav2/ToolTask 动作，不直接发布底盘或工具执行指令。唯一底盘出口独立检查时钟、观测、定位、BT、挡位、速度/曲率和工具状态；唯一工具出口独立检查工作准入、反馈与停止确认。原始工具账本数据库不能用路径进度覆盖。
 
-`groups_mowing_r10.py` 是纯路径编排函数。当前默认每个原始运动基元单独执行，在曲率或挡位边界停车；保留的连续执行对照模式才会合并几何连续的同向 `TURN_TOOL_OFF` 段。两种模式都保存原始成员编号与端点，原样保留路径点。`mission_mowing_r10.py` 给 Nav2 发送执行组，订阅合格定位按顺序记录 `ORIGINAL_SEGMENT_PASSAGE`；阿克曼车不能通过原地旋转补足姿态。
+阅读顺序：先看 mission 的 `main` 状态机，再看纯判据函数，最后对照运行目录 `mission_events.jsonl`、`control/gate.jsonl` 与 `ledger/ledger.sqlite`。纯函数测试证明局部判据，真实任务和故障录像才证明整条链路。
+## 条带受阻后的接回
 
-`prepare_r10.py` 将选定的执行方式加入独立割草版本；`scene_mowing_r10.py` 复用 R09 物理车体和传感器，仅换任务/工具版本；`runtime_mowing_r10.py` 在独立结果目录启动。`analyze_mowing_r10.py` 同时检查原始段顺序、工具关闭转场、实际倒车、原区域内整车轮廓、接触、定位及反馈面积。没有改变原地图、工具幅宽、曲率上限或原始任务分母。
+`coverage_rejoin_r10.py` 沿原条带弧长提出前方候选；候选没有控制权和作业信用。`mission_mowing_r10.coverage_rejoin` 先确认停车、关刀，再用当前 Nav2 代价地图和 SmacHybrid 验证候选及接回后的原路径。连接由 `recover_endpoint` 按挡位实际执行；随后恢复同一原任务键和原面积。`analyze_mowing_r10.py` 用独立物理刀具效果核对反馈面积，跳过部分仍为残余。诊断的非零 `segment_start` 无法通过 R12 完整任务范围检查。
 
-`recovery_mowing_r10.py` 是恢复准入的纯计算层：校验有限数值、连续性、原终点、曲率和先验内的整车轮廓；EN​​U 点必须先加回固定 [28,14] 世界坐标偏移再与世界先验比较。`control_mowing_r10.py` 沿用原唯一执行出口，新增实测停车换挡互锁。只有任务显式标明关刀恢复时才允许双向命令。
+`local_dock_r10.ready_for_stopped_observation` 只判断是否值得提前结束局部运动、转入实际停车和原全局精停检查。连续局部距离≤10 mm 不等于喷洒准入；事件明确 `navigation_success=false`、`work_admitted=false`。这样不会为了继续追逐 Nav2 内部 8 mm 目标而把微小动作拖到通用无进展保护，原 BT 门限和人工锁存仍完整生效。
 
-`mission_mowing_r10.py::recover_endpoint` 负责原生 ComputePathToPose / FollowPath 两个动作的生命周期与两次/90秒预算；不是 Python 直接给关节发运动命令。RPP、MPPI、Smac 与关节控制仍由 C++ 原生节点执行。
+`mission_spray_r10.settle_and_redock` 只有在仍有物理修正次数时，才允许“稳定偏差”提前结束观察并申请下一次移动。用完两次修正后的最终检查仍使用原 8 秒窗口；窗口内必须满足原稳定性判据，否则报错。`test_final_dock_observation_r10.py` 直接执行这一生产函数，验证延迟收敛和持续偏差两种情况，且两种情况都不得多发第三次移动。
 
-`stage_r10.py` 的 `record_spray_full_A1` / `record_mowing_full_B1` 将同一原始完整任务交给 R12 隔离录制运行器，同次运行再用原 R10 数量、物理、定位、账本和退出判据评分。材质、观察相机和录像源码另有绑定；录像文件本身不替代验收数据。
 
-`docking_r10.py` 计算实测停车位置的中位距离、P95 抖动、有效跨度和观测间隔；它不能用单个恰好接近目标的样本放行喷洒。`control_spray_r10.py` 记录原始与最终速度命令，便于区分控制器越限和执行器反馈问题，原执行出口规则保留。
 
-`runtime_binding_r10.py` 对普通运行器检查精确哈希；对录制运行器，从当前原始代码重新生成允许的观察相机派生内容并逐字节比较，不接受只自报新哈希的任意运行器。组件测试覆盖停靠漂移、陈旧观测、错误终点、车体越界、原地旋转、换挡未停车和派生代码篡改。
+## 用户批准的新安全路径版本
 
-`ompl_endpoint_r10.py` 调用已经存在的 `r03_reeds_shepp` 原生程序。C++ 构造 `ompl::base::ReedsSheppStateSpace(radius)`，求解两个 SE(2) 姿态之间的最短前后行驶曲线，输出每段曲率 κ 和带符号长度 s。Python 用 `θ₂=θ₁+κs`、`Δx=(sinθ₂−sinθ₁)/κ`、`Δy=(cosθ₁−cosθ₂)/κ` 积分圆弧；κ=0 时积分直线。它生成候选而非执行命令，也不使用仿真真值。
-
-候选密采样后由 `validate_candidate` 检查整车扫掠区域，再请求真实 `/is_path_valid` 服务。只有这两层成立才调用 MPPI FollowPath。40 项 Python/原生求解契约测试中，连续路径用例专门覆盖本次“近端横向误差”“同位置不同朝向”“角度跨 ±π”三类问题；这些组件通过仍不代表控制器已完成真实恢复。
-
-`arm_direction` 在 `READY` 阶段、实测车体停车且刀具停止时先选择下一段挡位；任务等待出口回传 `armed_direction` 后才启动工作工具。这避免倒车换行后先开刀、再请求前进导致安全互锁永久拒绝。运行中的反向恢复仍必须再次满足停车和关刀条件；无法用预选择绕过行驶中换向限制。
-
-当前 `execution_groups(..., original_primitive_boundaries)` 将 34 个原始运动基元分别交给导航，不合并中间曲率变化处的停车目标。连续分组实现保留作失败对照。`build-mowing` 只生成割草配置，避免正在执行点喷时重写其输入。
-
-`progress_spray_r10.NearGoalProgress` 维护有限长度的合格位置和实际门控平移命令窗口。任务工作器每个导航尝试新建一个监视器；返回停滞证据后记录 `NEAR_GOAL_PROGRESS_REPLAN`，取消真实动作并确认停车，再沿原 BT 的 REPLAN 分支查询新路径。窗口不能把过期定位、纯原地对向或远处阻塞当成近端停滞。5 项专项测试覆盖这几种情况。
-
-`recovery_mowing_r10.observed_cursor` 只在当前游标前方 0.20 米弧长内寻找位置/航向匹配点，游标单调推进，禁止跳到回折曲线的后续支路。`recover_endpoint` 在短时 CANCEL/WAIT 后以新 BT 证据和原候选剩余部分重新准入，记录 `ENDPOINT_OBSERVATION_RESUME`；最多六次续行且不重置 90 秒时钟。4 项新增测试检查单调性、近邻回折、错误位置/方向和末端索引。续行时首端不连续、整车越界、代价图不通过仍拒绝运行。
-
-## 本轮新增核心逻辑
-
-- `scripts/global_filter_r10.py`：从封存 R08 管理器生成隔离 R10 C++ 源码，精确检查替换锚点；仅替换通过原始跳变监督后的修正提交，新增原始修正诊断字段，原始 R08 文件与二进制不改。
-- `r10_backend/correction_filter.hpp`：SE(3) 修正平移的一阶滤波与旋转 SLERP；按仿真 dt 更新，不过滤局部里程计。
-- `scripts/start_work_r10.py`：工具启动等待循环；BT 中断检查优先于工作确认，且保留仿真和墙钟双超时。
-- `scripts/mission_mowing_r10.py`：START_WORK→取消→实际停车→新 BT 准入→原义务重试；失败的启动也计入原重试预算。
-- `scripts/runtime_mowing_r10.py`：专项用例暂停自己启动的 risk 进程并定时恢复；即使测试异常也先恢复被暂停进程再执行正常关停。
-- `tests/test_global_filter_r10.py`：实际编译 C++ 滤波器，验证时间步长一致、零 dt、抖动抑制、原始门控保留、真实局部位移不衰减。
-- `tests/test_start_work_r10.py`：取消与工作确认同时到达、启动中途 WAIT、过期指令、正常启动和超时。
-
-`ledger_mowing_r10.py::derive` 仅把封存 R09 账本的发布定时器换为 `rclpy.clock.Clock(STEADY_TIME)`。原 0.01 仿真秒反馈处理、0.035 秒配对缓冲与所有 `Ledger` 方法原样保留；生成锚点不唯一时拒绝运行。`probe_ledger_clock_r10.py` 在隔离域 134 启动真正的原版/新版账本节点，输入 0.1 倍速及暂停的 `/clock`，记录收到的真实消息间隔与 watchdog 状态。没有底盘或工具动作。
+B1 已新增独立安全执行版本，原 34 段参考和 PARTIAL 记录保留；原面积、原精度、安全及时间门限不变。算法、C++/Python 逻辑及手工检查见 [安全执行版本说明](SAFE_EXECUTION.md)。仅以实际运行回执判断新版本是否通过。

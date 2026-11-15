@@ -15,3 +15,9 @@ class RuntimeBinding(unittest.TestCase):
   self.derived.write_text(self.derived.read_text().replace("'seconds':", "'seconds_changed':")+'\n# arbitrary change\n');self.spec['runtime_sha256']=self.hash(self.derived);self.spec['implementation_bindings'][str(self.derived.relative_to(self.root))]=self.hash(self.derived);self.assertFalse(binding.spray_runtime_valid(self.spec))
  def test_changed_original_rejected(self):self.original.write_text(self.original.read_text()+'\n# changed upstream\n');self.assertFalse(binding.spray_runtime_valid(self.spec))
  def test_normal_original_runtime_accepted(self):self.spec['runtime_sha256']=self.hash(self.original);self.assertTrue(binding.spray_runtime_valid(self.spec))
+ def test_observer_buffer_derivation_requires_exact_content(self):
+  from prepare_spray_video_r12 import derive
+  p=self.ed/'runtime_spray_video.py';p.write_text(derive(self.original.read_text()));self.spec.update(runtime_sha256=self.hash(p));self.spec['implementation_bindings'][str(p.relative_to(self.root))]=self.hash(p)
+  self.assertTrue(binding.spray_runtime_valid(self.spec))
+  p.write_text(p.read_text()+'\n# unauthorized runtime mutation\n');self.spec['runtime_sha256']=self.hash(p);self.spec['implementation_bindings'][str(p.relative_to(self.root))]=self.hash(p)
+  self.assertFalse(binding.spray_runtime_valid(self.spec))

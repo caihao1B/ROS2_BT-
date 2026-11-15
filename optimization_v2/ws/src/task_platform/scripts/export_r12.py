@@ -16,15 +16,26 @@ def export(names):
   if not rec['valid'] or not receipt['mission_timeline_complete'] or not receipt['active_video_quality'] or sha(video)!=receipt['source_video_sha256']:raise ValueError('VIDEO_TIMELINE_QUALITY_OR_HASH_INVALID '+name)
   timeline=[json.loads(l) for l in (run/'video/frames.jsonl').read_text().splitlines()]
   if any(b['sim_t']<a['sim_t'] or b['video_s']<=a['video_s'] for a,b in zip(timeline,timeline[1:])):raise ValueError('VIDEO_CLOCK_REGRESSION')
-  videos.append(video);speed=max(1,math.ceil(rec['duration_s']/45));short=out/(name+'_overview.mp4');label=f'{name} / {speed}倍速概览 / 完成状态以账本为准'
-  filters=f"setpts=(PTS-STARTPTS)/{speed},fps=20,"+speed_header(speed)+f",drawtext=fontfile=/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc:text='{label}':fontcolor=white:fontsize=18:box=1:boxcolor=black@0.8:x=14:y=h-30"
+  task=read(run/'mission_result.json');spec=read(run/'spec.json')
+  if receipt['task']=='spray':scope=f"A1 选择 {task['selected_points']}/{task['original_points']} 点"
+  elif receipt['task']=='mowing':
+   scope=f"B1 选择 {task['selected_segments']}/{task['original_segments']} 段"
+   if task.get('safe_plan_revision'):scope=f"安全 B1 选择 {task['selected_segments']}/{task['execution_segments']} 段 / 旧34段 PARTIAL"
+  else:scope='完整原连接路' if not spec.get('distance_limit_m') else f"巡迹专项 / 路段上限 {spec['distance_limit_m']:g} m"
+  videos.append(video);speed=max(1,math.ceil(rec['duration_s']/45));short=out/(name+'_overview.mp4')
+  count=len(task.get('completed',task.get('completed_segments',[])));selected=task.get('selected_points',task.get('selected_segments'))
+  verdict='任务通过' if receipt['task_passed'] else '未完成 / PARTIAL'
+  progress=f'完成 {count}/{selected}' if selected is not None else verdict
+  version=read(run/'mission.json').get('version','unknown')[:8]
+  label=out/(name+'_overview.txt');label.write_text(f'{name} / {verdict} / {progress} / {speed}倍速概览\n{scope} / 计划 {version}')
+  filters=f"setpts=(PTS-STARTPTS)/{speed},fps=20,"+speed_header(speed)+f",drawtext=fontfile=/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc:textfile='{label}':fontcolor=white:fontsize=16:line_spacing=3:box=1:boxcolor=black@0.8:x=14:y=h-52"
   execute(['-i',str(video),'-an','-vf',filters,'-c:v','libx264','-threads','2','-preset','fast','-crf','25','-pix_fmt','yuv420p','-movflags','+faststart',str(short)],name+'_overview');shorts.append(short)
-  episodes.append(dict(case=name,run=receipt['path'],task_passed=receipt['task_passed'],full_path=str(video.relative_to(ROOT)),full_sha256=sha(video),full_seconds=rec['duration_s'],sim_first=timeline[0]['sim_t'],sim_last=timeline[-1]['sim_t'],overview_speed=speed,overview_path=str(short.relative_to(ROOT)),overview_sha256=sha(short),timeline_complete=True))
+  episodes.append(dict(case=name,run=receipt['path'],task_passed=receipt['task_passed'],displayed_scope=scope,full_path=str(video.relative_to(ROOT)),full_sha256=sha(video),full_seconds=rec['duration_s'],sim_first=timeline[0]['sim_t'],sim_last=timeline[-1]['sim_t'],overview_speed=speed,overview_path=str(short.relative_to(ROOT)),overview_sha256=sha(short),timeline_complete=True))
   events=[json.loads(l) for l in (run/'mission_events.jsonl').read_text().splitlines()];analysis=read(run/'analysis_r08.json') if name.startswith('inspection') else {}
   excerpt=select_highlight(name,events,timeline,analysis)
   if excerpt:
-   target=out/(name+'_behavior.mp4');caption=out/(name+'_behavior.txt');caption.write_text(excerpt['label']+f" / {excerpt['speed']}倍速 / 真实原片片段")
-   filters=f"setpts=(PTS-STARTPTS)/{excerpt['speed']},fps=20,"+speed_header(excerpt['speed'])+f",drawtext=fontfile=/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc:textfile='{caption}':fontcolor=white:fontsize=18:box=1:boxcolor=black@0.85:x=14:y=h-30"
+   target=out/(name+'_behavior.mp4');caption=out/(name+'_behavior.txt');caption.write_text(f'{verdict} / {progress} / '+scope+'\n'+excerpt['label']+f" / {excerpt['speed']}倍速 / 真实原片片段")
+   filters=f"setpts=(PTS-STARTPTS)/{excerpt['speed']},fps=20,"+speed_header(excerpt['speed'])+f",drawtext=fontfile=/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc:textfile='{caption}':fontcolor=white:fontsize=18:line_spacing=3:box=1:boxcolor=black@0.85:x=14:y=h-58"
    execute(['-ss',str(excerpt['start_video_s']),'-i',str(video),'-t',str(excerpt['duration_video_s']/excerpt['speed']),'-an','-vf',filters,'-c:v','libx264','-threads','2','-preset','fast','-crf','25','-pix_fmt','yuv420p','-movflags','+faststart',str(target)],name+'_behavior');behaviors.append(target);episodes[-1]['behavior_excerpt']=dict(excerpt,path=str(target.relative_to(ROOT)),sha256=sha(target))
  def concat(paths,name):
   listing=out/(name+'.txt');listing.write_text(''.join("file '"+str(p).replace("'","'\\''")+"'\n" for p in paths));target=out/(name+'.mp4');execute(['-f','concat','-safe','0','-i',str(listing),'-c','copy','-movflags','+faststart',str(target)],name);return target

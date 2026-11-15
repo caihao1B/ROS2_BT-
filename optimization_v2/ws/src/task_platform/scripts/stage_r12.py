@@ -9,6 +9,7 @@ CASES['mowing_startup_perception_loss']=dict(task='mowing',case='startup_percept
 
 def declared_scope_matches(receipt,spec,name):
  expected=CASES[name];fields={'seconds':'sim_seconds','distance_limit':'distance_limit_m'}
+ if expected['task']=='mowing' and spec.get('segment_start',0)!=0:return False
  if receipt.get('case')!=name or receipt.get('task')!=expected['task'] or spec.get('task')!=expected['task']:return False
  if not all(spec.get(fields.get(k,k))==v for k,v in expected.items() if k!='task'):return False
  return expected['task']!='inspection' or spec.get('distance_limit_m')==expected.get('distance_limit',0.)
@@ -33,11 +34,17 @@ def record(name):
  require('R09')
  if name not in CASES:raise ValueError('UNKNOWN_RECORDING_CASE')
  spec=CASES[name].copy();task=spec.pop('task');path=edition('R12')/('runtime_'+task+'.py');binding=next(x for x in read(edition('R12')/'runtime_derivation.json')['records'] if x['task']==task)
+ if task=='mowing':
+  from prepare_mowing_video_r12 import build as build_video_transport
+  path,binding=build_video_transport()
+ if task=='spray':
+  from prepare_spray_video_r12 import build as build_video_transport
+  path,binding=build_video_transport()
  if sha(ROOT/binding['source'])!=binding['source_sha256'] or sha(path)!=binding['derived_sha256']:raise ValueError('REBUILD_R12_AFTER_RUNTIME_CHANGE')
  module=importlib.util.spec_from_file_location('r12_'+task,path);runtime=importlib.util.module_from_spec(module);module.loader.exec_module(runtime)
  # Long mowing and held-obstacle recordings previously exceeded image age on this host.
  # Lower only wall-clock pacing; task clock, actions and physical limits remain original.
- out=runtime.run(rtf=.3,**spec) if name in ['inspection_blocked','mowing_full_B1'] else runtime.run(**spec)
+ out=runtime.run(rtf=.3,**spec) if name=='inspection_blocked' else runtime.run(rtf=.4,**spec) if name=='mowing_full_B1' else runtime.run(rtf=.5,**spec) if name=='spray_full_A1' else runtime.run(**spec)
  if task=='spray':
   from analyze_spray_r10 import analyze
  elif task=='mowing':

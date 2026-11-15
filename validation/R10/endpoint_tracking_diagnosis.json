@@ -1,40 +1,161 @@
 {
-  "source": "optimization_v2/three_tasks/results/R12/mowing_20261114_205558_700516",
-  "completed_segments": 6,
-  "original_segments": 34,
+  "source": "optimization_v2/three_tasks/results/R12/mowing_20261115_070740_054017",
+  "task_passed": false,
+  "completed_segments": 19,
+  "original_segments": 47,
   "terminal": "HUMAN_REQUIRED",
-  "error": "TimeoutError('ENDPOINT_RECOVERY_BUDGET')",
-  "sim_t": 327.93,
-  "first_endpoint_stall": {
-    "t": 237.692,
-    "event": "ENDPOINT_POSE_STALL",
-    "segment": "B1:segment:6",
-    "distance_m": 0.16399322425246607,
-    "yaw_error_rad": 0.0408934912152934
-  },
-  "first_continuous_path_length_m": 1.8954582221701624,
-  "maximum_observed_distance_to_candidate": {
-    "t": 292.2,
-    "distance_m": 4.0442505496222685
-  },
-  "interruption": {
-    "t": 292.202,
-    "event": "ENDPOINT_RECOVERY_INTERRUPTED",
-    "action": "CANCEL",
-    "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
-    "cursor": 24
-  },
-  "resume_rejected": {
-    "t": 293.898,
-    "event": "ENDPOINT_RESUME_REJECTED",
-    "reason": "START_DISCONTINUITY",
-    "cursor": 24
-  },
-  "confirmed_area_m2": 26.48870692016314,
-  "residual_area_m2": 161.90309477279322,
-  "feedback_consistent": true,
+  "error": "TimeoutError('WAIT_DEADLINE')",
+  "events": [
+    {
+      "t": 211.35,
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "segment": "B1:safe_turn:2:0",
+      "samples": 22,
+      "span_s": 0.6299999999999955,
+      "xy_error_m": 0.07564113408060351,
+      "yaw_error_rad": 0.004825902478675647,
+      "limits": [
+        0.1,
+        0.12
+      ]
+    },
+    {
+      "t": 211.35,
+      "event": "ENDPOINT_RECOVERY_SUCCESS",
+      "segment": "B1:safe_turn:2:0",
+      "attempt": 0,
+      "pause_restarts": 0,
+      "method": "measured stopped original segment admission; no extra motion"
+    },
+    {
+      "t": 255.124,
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "segment": "B1:safe_turn:2:1",
+      "samples": 21,
+      "span_s": 0.6040000000000134,
+      "xy_error_m": 0.07690579234185742,
+      "yaw_error_rad": 0.008656751377804195,
+      "limits": [
+        0.1,
+        0.12
+      ]
+    },
+    {
+      "t": 255.124,
+      "event": "ENDPOINT_RECOVERY_SUCCESS",
+      "segment": "B1:safe_turn:2:1",
+      "attempt": 0,
+      "pause_restarts": 0,
+      "method": "measured stopped original segment admission; no extra motion"
+    },
+    {
+      "t": 264.99,
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "segment": "B1:safe_turn:2:2",
+      "samples": 22,
+      "span_s": 0.6299999999999955,
+      "xy_error_m": 0.0652355978299085,
+      "yaw_error_rad": 0.10099597352518774,
+      "limits": [
+        0.1,
+        0.12
+      ]
+    },
+    {
+      "t": 264.99,
+      "event": "ENDPOINT_RECOVERY_SUCCESS",
+      "segment": "B1:safe_turn:2:2",
+      "attempt": 0,
+      "pause_restarts": 0,
+      "method": "measured stopped original segment admission; no extra motion"
+    },
+    {
+      "t": 666.654,
+      "event": "RECOVERY_CUSP_STOP_CONFIRMED",
+      "gear_index": 0,
+      "direction": 1,
+      "xy_m": 0.02336840880966957,
+      "yaw_rad": 0.006375906601332915
+    },
+    {
+      "t": 687.72,
+      "event": "RECOVERY_CUSP_STOP_CONFIRMED",
+      "gear_index": 1,
+      "direction": -1,
+      "xy_m": 0.0490623242323792,
+      "yaw_rad": 0.06190820008260545
+    },
+    {
+      "t": 697.232,
+      "event": "ENDPOINT_RECOVERY_INTERRUPTED",
+      "action": "CANCEL",
+      "reason": "SHORT_OBSTRUCTION_OR_CLEAR_HYSTERESIS",
+      "cursor": 26,
+      "gear_index": 2
+    },
+    {
+      "t": 701.942,
+      "event": "RECOVERY_CUSP_STOP_CONFIRMED",
+      "gear_index": 2,
+      "direction": 1,
+      "xy_m": 0.04610529190449539,
+      "yaw_rad": 0.020827846055913035
+    },
+    {
+      "t": 701.942,
+      "event": "ENDPOINT_RECOVERY_SUCCESS",
+      "segment": "B1:safe_turn:4:1",
+      "attempt": 0,
+      "pause_restarts": 1
+    },
+    {
+      "t": 750.87,
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "segment": "B1:safe_turn:5:1",
+      "samples": 21,
+      "span_s": 0.6000000000000227,
+      "xy_error_m": 0.0037698241399572413,
+      "yaw_error_rad": 0.10770046247131536,
+      "limits": [
+        0.1,
+        0.12
+      ]
+    },
+    {
+      "t": 750.87,
+      "event": "ENDPOINT_RECOVERY_SUCCESS",
+      "segment": "B1:safe_turn:5:1",
+      "attempt": 0,
+      "pause_restarts": 0,
+      "method": "measured stopped original segment admission; no extra motion"
+    },
+    {
+      "t": 762.24,
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "segment": "B1:safe_turn:5:2",
+      "samples": 21,
+      "span_s": 0.6000000000000227,
+      "xy_error_m": 0.046592927436244096,
+      "yaw_error_rad": 0.0950018319251158,
+      "limits": [
+        0.1,
+        0.12
+      ]
+    },
+    {
+      "t": 762.24,
+      "event": "ENDPOINT_RECOVERY_SUCCESS",
+      "segment": "B1:safe_turn:5:2",
+      "attempt": 0,
+      "pause_restarts": 0,
+      "method": "measured stopped original segment admission; no extra motion"
+    }
+  ],
+  "confirmed_area_m2": 71.94386728545035,
+  "residual_area_m2": 116.44793440750612,
   "physical_stop": true,
-  "no_false_no_path_claim": true,
-  "scope": "Observed controller failed to track an admitted mixed-direction recovery candidate; no claim that no feasible path exists. Do not loosen arrival/curvature/footprint gates or extend budgets to claim completion.",
-  "next_step": "Inspect MPPI cusp handling; execute recovery gear changes with measured-stop boundaries and bounded cross-track supervision, then retest original B1."
+  "reference_original_segments": 34,
+  "original_reference_status": "PARTIAL",
+  "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+  "scope": "Actual same-version approved B1 safe execution; original reference remains PARTIAL; original feedback denominator retained"
 }

@@ -1,0 +1,32 @@
+{
+  "scope": "Exact early-offset pilot/full diagnostic source; no current-version approval",
+  "bindings": {
+    "optimization_v2/ws/src/task_platform/scripts/runtime_spray_r10.py": "07dbc2f730a043c97b9bee34e3c8bb115d8ae8af12477dd1f4e0e8a585a4aa73",
+    "optimization_v2/ws/src/task_platform/scripts/mission_spray_r10.py": "3ac2d2f6e2a41b493aba6d9a5603aab60578597fa42ed8726a9aa95f03c10d20",
+    "optimization_v2/ws/src/task_platform/scripts/scene_spray_r10.py": "73348d001f02e3b04448b433933656a7e4aecf950e3187a1ef575d5a75b44dec",
+    "optimization_v2/ws/src/task_platform/scripts/control_spray_r10.py": "757c44e2294e24df86a0ebe23738c422708ee8a0e5858729027e1ef2c2fca1f0",
+    "optimization_v2/ws/src/task_platform/scripts/docking_r10.py": "c56683b52345a5e6fb6ccce915751f70e20980b84628798f2ecff45dd4db1644",
+    "optimization_v2/ws/src/task_platform/scripts/local_dock_r10.py": "18b0b3b1bdc3bb0d6f6da5c6fded02d4ee8822f019ebe4fecd4954213b36d8ed",
+    "optimization_v2/ws/src/task_platform/scripts/progress_spray_r10.py": "858d17fabf99d402e09119b701eb7eb46adc76887e416ba0065c2cb38747fe24",
+    "optimization_v2/ws/src/task_platform/scripts/revalidation_spray_r10.py": "8ecbc6b6d7da24ae9027f256167bf9d2beac76d3a9c0667690558264f60a01eb",
+    "optimization_v2/ws/src/task_platform/scripts/reference_spray_r10.py": "50bfb5c0555c22569df5438691e02e0093a9c28de304ce646cfd18cd35c2bc78",
+    "optimization_v2/ws/src/task_platform/scripts/risk_spray_r10.py": "85f72665fcb762275d6e397d34f9aa0717954814e72a5561a18170f49ebee49f",
+    "optimization_v2/ws/src/task_platform/scripts/ledger_spray_r10.py": "1f977fbdd2b8412b3c367c9de3d7a70469055491404d99b9b5713eb63e6bd347",
+    "optimization_v2/ws/src/task_platform/scripts/ledger_mowing_r10.py": "ea36aafea08f79472eef40d9ae905d9523a9a5917e68bd44e3ed2bae47041d1c",
+    "optimization_v2/ws/src/task_platform/scripts/runtime_binding_r10.py": "30713c4c414c3f00d532ce9afb6ed55ece7583df7c63a7565879da716f72a212",
+    "optimization_v2/ws/src/task_platform/scripts/analyze_spray_r10.py": "94ce2b54eca0b7be401c8277a0d5c38ba96810e456948521cae0996dc38be51d",
+    "optimization_v2/three_tasks/editions/R10/spray/mission.json": "38fa486419f5d79e7cac0f781201150fb8233db50f17c69c89edec2eda5df0d4",
+    "optimization_v2/three_tasks/editions/R10/spray/manager.json": "6785c7f287be4feddf75a78751e15f593004c7fc131e15edd3fc742bb78006c8",
+    "optimization_v2/three_tasks/editions/R10/spray/tool.json": "242f0f682880b4d2ea5ccfdedea2e3c7fe4bfd03b1ad0bb6fe337919866e5180",
+    "optimization_v2/three_tasks/editions/R10/spray/nav2.yaml": "f08f3c0365a632adb25688849fc7a66c70068fbed27e76e94536a679398a0e53",
+    "optimization_v2/three_tasks/editions/R10/spray/terrain.json": "264e326981a04f552ccac5324109dacd665268c8b965ab079d583250100ec5b5",
+    "optimization_v2/ws/src/task_platform/scripts/global_filter_r10.py": "b5cf8a2ad8a801536c3fb5d099600e25eab5697b51c678c710e7ee13022e4a01",
+    "optimization_v2/ws/src/task_platform/r10_backend/correction_filter.hpp": "28263236ad4caac1044041783ab539a223e25eb5937b3f64b20521741399c682",
+    "optimization_v2/ws/src/task_platform/r10_backend/stopped_revalidation.inc": "bf8529d9e5020ef86d3f1f9f464cae3553bdabb76319734f29b40cc4f53dee05",
+    "optimization_v2/three_tasks/build/r10_global_source/global_manager.cpp": "408e10ed31935a92ffcc59d1f93ddc5e13489ecabd6738286bcfa58075f99174",
+    "optimization_v2/three_tasks/build/r10_global/r10_global_manager": "633f868ed7c1e4b23efd221540356acbfb5f157a04ab7b54ea19ffbea1832061",
+    "optimization_v2/ws/src/task_platform/scripts/bridge_r10.py": "2416d73fcd64cd316aeb1d02e1f9cc21bac6e64b2002fa5334e1d9a25c16c550",
+    "optimization_v2/ws/src/task_platform/r10_backend/tool_bridge.cpp": "f373b030f63457b582680b74cddf68964689c55700734ed4794a266e58820f8a",
+    "optimization_v2/three_tasks/editions/R12/runtime_spray.py": "ca83b9bf45fd338002c4e1f46247e80ea767c1daa1b741e3c8a40efb180dfd4c"
+  }
+}

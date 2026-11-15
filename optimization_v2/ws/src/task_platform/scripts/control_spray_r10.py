@@ -36,6 +36,9 @@ def main():
             lastpose=p
         blocked=healthy and s.get('max_speed',0)<=0 or bool(worker.get('nav_failed'))
         contextseq+=1;context=dict(stamp=t,sequence=contextseq,session=a.session,task_version=c['version'],vehicle_hash=v['config_hash'],rig_revision=c['rig']['revision'],localized=localized,sensors_healthy=healthy,stopped=stopped,tool_stopped=tool_stopped,nav_idle=nav_idle,remaining_s=max(0,c['task_budget_s']-t),next_min_s=3.,blocked=blocked,complete=worker.get('complete',False),commanded_motion=workerfresh and worker.get('phase')=='NAVIGATING',progress_m=progress,replans=worker.get('replans',0),deferrals=worker.get('deferrals',0),alternative=worker.get('alternative',False),detour_valid=False,worker_fresh=workerfresh,loc_age=t-loc.get('t',-100),sensor_age=t-s.get('t',-100),reference_valid=loc.get('valid',False))
+        distance=worker.get('precision_translation_m')
+        if workerfresh and worker.get('phase')=='NAVIGATING' and isinstance(distance,(int,float)) and math.isfinite(distance) and .008<distance<=.15:
+            context.update(motion_scope='VALIDATED_LOCAL_DOCKING',expected_translation_m=distance)
         btpub.publish(String(data=json.dumps(context)))
         reasons=[]
         for ok,reason in [(localized,'LOCALIZATION'),(healthy,'PERCEPTION'),(fresh(bt,.15),'BT_STALE'),(workerfresh,'TASK_STALE'),(now-st['clock_wall']<.2,'CLOCK'),(now-st['cmd_wall']<.2,'NAV_COMMAND_STALE'),(tool_stopped,'TOOL_NOT_STOPPED'),(not blocked,'OBSTRUCTED')]:

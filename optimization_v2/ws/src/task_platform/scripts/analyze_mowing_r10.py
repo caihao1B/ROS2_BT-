@@ -1,6 +1,7 @@
 """Offline physical evaluation; original and selected coverage denominators coexist."""
 from common import *
 from footprint_r09 import body_polygon
+from safe_plan_r10 import requested_target,validate
 from analyze_r02 import rows
 import numpy as np,math,sqlite3
 from shapely import wkb,union_all
@@ -8,7 +9,7 @@ from shapely.geometry import Polygon,shape,mapping
 from shapely.affinity import translate,rotate
 
 def analyze(out):
- run=read(out/'runtime.json');spec=read(out/'spec.json');cfg=read(out/'mission.json');mission=read(out/'mission_result.json') if (out/'mission_result.json').exists() else {};cluster=next(c for c in cfg['clusters'] if c['cluster']==spec['cluster']);selected=cluster['segments'][:spec['segment_limit']] if spec['segment_limit'] else cluster['segments'];truth=rows(out/'evaluation/truth.jsonl');times=np.array([r['t'] for r in truth]);xy=np.array([r['xyz'][:2] for r in truth]);refs=rows(out/'reference/reference.jsonl');errors=[]
+ run=read(out/'runtime.json');spec=read(out/'spec.json');cfg=read(out/'mission.json');mission=read(out/'mission_result.json') if (out/'mission_result.json').exists() else {};cluster=next(c for c in cfg['clusters'] if c['cluster']==spec['cluster']);eligible=cluster['segments'][spec.get('segment_start',0):];selected=eligible[:spec['segment_limit']] if spec['segment_limit'] else eligible;truth=rows(out/'evaluation/truth.jsonl');times=np.array([r['t'] for r in truth]);xy=np.array([r['xyz'][:2] for r in truth]);refs=rows(out/'reference/reference.jsonl');errors=[]
  for r in refs:
   if r.get('valid') and 'pose' in r:errors.append([r['t'],math.dist(np.asarray(r['pose'][:2])+[28,14],[np.interp(r['odom_t'],times,xy[:,j]) for j in range(2)])])
  rmse=float(np.sqrt(np.mean(np.asarray(errors)[:,1]**2))) if errors else None;contacts=read(out/'evaluation/contacts.json');bad={k:v for k,v in contacts.items() if 'vehicle::' in k and not ('wheel::' in k and 'ground::body::ground' in k)};allowed=shape(cfg['allowed_prior']).buffer(-cfg['footprint_margin_m']);fp=Polygon(cfg['vehicle']['footprint']);outside=[]
@@ -17,7 +18,7 @@ def analyze(out):
  physical=read(out/'tool_evaluation/result.json').get('jobs',{}) if (out/'tool_evaluation/result.json').exists() else {};jobs=[];credit_polys=[];conn=sqlite3.connect('file:'+str(out/'ledger/ledger.sqlite')+'?mode=ro',uri=True)
  for key,status,quantity,blob,uncertain,raw in conn.execute('SELECT key,status,quantity,credit,uncertain,goal FROM jobs'):
   g=json.loads(raw);credit=wkb.loads(blob) if blob else Polygon();effect=shape(physical.get(key,{}).get('area',mapping(Polygon())));excess=credit.difference(effect.buffer(.03)).area;credit_polys.append(credit);jobs.append(dict(key=key,status=status,confirmed_m2=quantity,requested_m2=g['requested_quantity'],remaining_m2=max(0,g['requested_quantity']-quantity),uncertain=bool(uncertain),physical_area_m2=effect.area,credit_outside_physical_3cm_m2=excess,credit_geometry_area_m2=credit.area))
- conn.close();selected_target=union_all([Polygon(s['target_area']) for s in selected if s['kind']=='COVERAGE']);credit=union_all(credit_polys).intersection(selected_target);residual=selected_target.difference(credit);gates=rows(out/'control/gate.jsonl');events=rows(out/'mission_events.jsonl');commands=[r for r in gates if r['mode']=='DRIVE'];toolrows=rows(out/'tool_evaluation/physical.jsonl');off_checks=[]
+ conn.close();selected_target=requested_target(cluster,selected,spec['segment_limit']==0 and spec.get('segment_start',0)==0);credit=union_all(credit_polys).intersection(selected_target);residual=selected_target.difference(credit);gates=rows(out/'control/gate.jsonl');events=rows(out/'mission_events.jsonl');commands=[r for r in gates if r['mode']=='DRIVE'];toolrows=rows(out/'tool_evaluation/physical.jsonl');off_checks=[]
  for i,event in enumerate(events):
   if event['event']=='SEGMENT_GOAL' and not event['tool_expected']:
    end=next((e['t'] for e in events[i+1:] if e['event'] in ['SEGMENT_ARRIVAL','BT_INTERRUPTS_SEGMENT','TASK_STOP']),mission.get('t',event['t']));samples=[r for r in toolrows if event['t']<=r['t']<=end];off_checks.append(bool(samples) and max(abs(r['rpm_rad_s']) for r in samples)<.1)
@@ -25,8 +26,23 @@ def analyze(out):
  for a,b in zip(truth,truth[1:]):
   ds=np.asarray(b['xyz'][:2])-a['xyz'][:2];forward=ds@np.array([math.cos(a['rpy'][2]),math.sin(a['rpy'][2])]);reverse_distance+=max(0,-forward)
  own=mission.get('ownership',{});checks=dict(runtime_clean=run['passed'],original_database_unchanged=run['original_db_unchanged'],no_unexpected_contact=not bad,whole_footprint_authorized=not outside,map_rmse_under_15cm=rmse is not None and rmse<.15,unique_actuator=own.get('/s03/actuator/request')==['r09_actuator_gate'],unique_tool=own.get('/s10/tool/command')==['s10_tool_action_server'],unique_tf=set(own.get('/tf',[]))=={'s05_local_odometry','s08_global_pose_manager'} and len(own.get('/tf',[]))==2,measured_final_stop=bool(mission.get('final_gate',{}).get('stopped') and mission.get('final_gate',{}).get('tool_stopped') and toolrows and abs(toolrows[-1]['rpm_rad_s'])<.1),feedback_area_consistent=bool(jobs) and all(not j['uncertain'] and abs(j['confirmed_m2']-j['credit_geometry_area_m2'])<1e-6 and j['credit_outside_physical_3cm_m2']<.01 and j['confirmed_m2']<=j['physical_area_m2']+.01 for j in jobs),curvature_bounded=bool(commands) and all(abs(x['w'])<=abs(x['v'])*cfg['vehicle']['steering']['max_curvature']+1e-6 for x in commands),source_bound=all((ROOT/p).is_file() and sha(ROOT/p)==h for p,h in spec['implementation_bindings'].items()),task_version_bound=cfg['version']==read(edition('R10')/'mowing/mission.json')['version'])
- if spec['case'] in ['nominal','startup_perception_loss']:checks.update(original_ordered_passages=[x['segment'] for x in mission.get('original_segment_passages',[])]==[s['id'] for s in selected],selected_segments_traversed=mission.get('passed',False),two_work_strips=len(jobs)>=2 and all(j['confirmed_m2']>0 for j in jobs),actual_reverse_travel=reverse_distance>1.,tools_off_during_turns=bool(off_checks) and all(off_checks))
+ if spec['case'] in ['nominal','startup_perception_loss','terrain_rejoin_pilot']:checks.update(original_ordered_passages=[x['segment'] for x in mission.get('original_segment_passages',[])]==[s['id'] for s in selected],selected_segments_traversed=mission.get('passed',False),two_work_strips=len(jobs)>=2 and all(j['confirmed_m2']>0 for j in jobs),actual_reverse_travel=reverse_distance>1.,tools_off_during_turns=bool(off_checks) and all(off_checks))
  else:checks.update(physical_obstacle_injected=(out/'barrier_injection.json').exists() and read(out/'barrier_injection.json')['passed'],controlled_hold=mission.get('controlled_hold',False),no_false_completion=not mission.get('passed'),residual_retained=bool(mission.get('remaining_selected')) and residual.area>0,bounded_planning=1<=mission.get('replans',0)<=2)
+ recovery_off=[]
+ for i,event in enumerate(events):
+  if event['event']=='RECOVERY_GEAR_ARMED':
+   end=next((e['t'] for e in events[i+1:] if e['event'] in ['BOTH_PHYSICAL_STOPS_CONFIRMED','TASK_STOP']),mission.get('t',event['t']))
+   samples=[r for r in toolrows if event['t']<=r['t']<=end];recovery_off.append(bool(samples) and max(abs(r['rpm_rad_s']) for r in samples)<.1)
+ checks['tools_off_during_recovery']=all(recovery_off)
+ if spec['case']=='terrain_rejoin_pilot':
+  checks.pop('two_work_strips');checks.pop('actual_reverse_travel')
+  checks['selected_strip_feedback']=len(jobs)==1 and jobs[0]['confirmed_m2']>0
+  checks['bounded_rejoin']=1<=mission.get('coverage_rejoins',0)<=2 and mission.get('coverage_planner_queries',0)<=12
+  checks['actual_coverage_rejoin']=any(e['event']=='COVERAGE_REJOIN_CONFIRMED' for e in events)
+  checks['diagnostic_subset_not_full_credit']=spec.get('segment_start')==12 and len(selected)==1 and mission.get('original_segments')==34
+  # A single coverage strip has no original TURN_TOOL_OFF segment. Its actual
+  # recovery gear runs still require independently measured stopped blades.
+  checks['tools_off_during_turns']=bool(recovery_off) and all(recovery_off)
  if spec['case']=='startup_perception_loss':
   fault=read(out/'startup_fault.json') if (out/'startup_fault.json').exists() else {};interrupts=[e for e in events if e['event']=='BT_INTERRUPTS_START_WORK'];stops=[e for e in events if e['event']=='BOTH_PHYSICAL_STOPS_CONFIRMED'];decisions=rows(out/'decisions.jsonl')
   checks['actual_startup_outage']=bool(fault.get('resumed') and fault.get('phase')=='START_WORK')
@@ -35,5 +51,11 @@ def analyze(out):
   checks['startup_cancel_physically_confirmed']=bool(interrupts) and all(any(i['t']<=s['t']<=i['t']+2. for s in stops) for i in interrupts)
   checks['no_cancel_timeout_latch']=not any(d.get('reason_code')=='CANCEL_OR_STOP_CONFIRMATION_TIMEOUT' for d in decisions)
   checks['startup_recovery_completed']=mission.get('passed',False)
+ safe=cfg.get('safe_execution_plan')
+ if safe:
+  reference=read(edition('R09')/'mission.json');expected=reference['clusters'][0];original_target=requested_target(expected,expected['segments'],True)
+  checks['original_area_and_obligations_retained']=cluster['work_area_m2']==expected['work_area_m2'] and cluster.get('original_work_segments')==[s for s in expected['segments'] if s['kind']=='COVERAGE'] and safe['source_sha256']==sha(edition('R09')/'mission.json')
+  checks['reference_not_claimed_completed']=mission.get('reference_original_segments')==34 and mission.get('original_reference_status')=='PARTIAL' and mission.get('safe_plan_revision')==safe['revision']
+  if spec['segment_limit']==0:checks['full_original_area_denominator']=selected_target.symmetric_difference(original_target).area<1e-8
  result=dict(passed=all(checks.values()),checks={k:bool(v) for k,v in checks.items()},case=spec['case'],task_result=mission,jobs=jobs,map_xy_rmse_m=rmse,actual_reverse_distance_m=reverse_distance,selected_requested_area_m2=selected_target.area,selected_confirmed_union_m2=credit.area,selected_fraction=credit.area/selected_target.area if selected_target.area else 0.,selected_residual_m2=residual.area,original_cluster_area_m2=cluster['work_area_m2'],original_cluster_confirmed_fraction=credit.intersection(shape(cluster['area_map'])).area/cluster['work_area_m2'],original_clusters=3,unexpected_contacts=bad,scope='Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged',formal_credit=False)
  dump(out/'analysis_mowing_r10.json',result);dump(out/'coverage.geojson',dict(type='FeatureCollection',features=[dict(type='Feature',properties=dict(kind=k),geometry=mapping(g)) for k,g in [('selected_target',selected_target),('confirmed_feedback',credit),('residual',residual)]]));np.savez(out/'trajectory.npz',xy=xy,t=times,error=np.asarray(errors));return result

@@ -1,6 +1,7 @@
 {
   "passed": true,
   "checks": {
+    "mowing_safe_plan.json": true,
     "catalog.json": true,
     "mowing/mission.json": true,
     "mowing/manager.json": true,
@@ -13,6 +14,6 @@
     "spray/nav2.yaml": true,
     "spray/terrain.json": true
   },
-  "generator_sha256": "7c817b6702e0c1c348e4a32d834bbc416230ef50b7a8360d7b8db50c59e8bcb5",
+  "generator_sha256": "101deba426cd2eae9547dd88bb1db8bb1a8dcddcd4a1eef362d17e66cbc1d255",
   "scope": "Fresh isolated regeneration compared to active R10 inputs; native build suppressed to preserve running binary; native behavior tested separately"
 }

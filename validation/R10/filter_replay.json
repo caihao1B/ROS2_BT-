@@ -1,0 +1,26 @@
+[
+  {
+    "tau": 0.8,
+    "median_distance": 0.006644010609540729,
+    "scatter_p95": 0.030170081099571627,
+    "scope": "counterfactual planar replay of accepted corrections; not runtime PASS"
+  },
+  {
+    "tau": 2.0,
+    "median_distance": 0.009876369940234612,
+    "scatter_p95": 0.018311456669159672,
+    "scope": "counterfactual planar replay of accepted corrections; not runtime PASS"
+  },
+  {
+    "tau": 3.0,
+    "median_distance": 0.012672496174697354,
+    "scatter_p95": 0.012138677900894946,
+    "scope": "counterfactual planar replay of accepted corrections; not runtime PASS"
+  },
+  {
+    "tau": 4.0,
+    "median_distance": 0.013251328551316159,
+    "scatter_p95": 0.00876384045500012,
+    "scope": "counterfactual planar replay of accepted corrections; not runtime PASS"
+  }
+]

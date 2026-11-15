@@ -1,10 +1,16 @@
+test_endpoint_excerpt_needs_same_segment_actual_recovery_motion (test_highlights_r12.ActualRejoinExcerpt.test_endpoint_excerpt_needs_same_segment_actual_recovery_motion) ... ok
+test_only_confirmed_rejoin_can_be_labeled (test_highlights_r12.ActualRejoinExcerpt.test_only_confirmed_rejoin_can_be_labeled) ... ok
+test_spray_docking_requires_same_point_real_work (test_highlights_r12.ActualRejoinExcerpt.test_spray_docking_requires_same_point_real_work) ... ok
+test_spray_recovery_request_without_resume_is_not_success (test_highlights_r12.ActualRejoinExcerpt.test_spray_recovery_request_without_resume_is_not_success) ... ok
 test_actual_runtime_distance_key (test_scope_r12.Scope.test_actual_runtime_distance_key) ... ok
 test_different_task_or_time_budget_rejected (test_scope_r12.Scope.test_different_task_or_time_budget_rejected) ... ok
+test_offset_pilot_cannot_replace_full_cluster (test_scope_r12.Scope.test_offset_pilot_cannot_replace_full_cluster) ... ok
 test_partial_mowing_cannot_replace_full_cluster (test_scope_r12.Scope.test_partial_mowing_cannot_replace_full_cluster) ... ok
 test_startup_fault_is_not_mislabeled_as_nominal (test_scope_r12.Scope.test_startup_fault_is_not_mislabeled_as_nominal) ... ok
 test_subset_cannot_replace_full_connector (test_scope_r12.Scope.test_subset_cannot_replace_full_connector) ... ok
+test_only_large_observer_writer_changes (test_video_transport_r12.VideoTransport.test_only_large_observer_writer_changes) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.000s
+Ran 11 tests in 0.001s
 
 OK

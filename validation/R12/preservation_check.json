@@ -1,5 +1,261 @@
 {
   "passed": true,
-  "preserved_media_files": 23,
-  "changed": []
+  "checks": [
+    {
+      "path": "optimization_v2/three_tasks/results/R08/latest.json",
+      "kind": "protected receipt",
+      "unchanged": true
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R09/latest.json",
+      "kind": "protected receipt",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_startup_perception_loss_overview.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_overview.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_overview.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_startup_perception_loss_behavior.txt",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/full_recordings.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_startup_perception_loss_overview.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/spray_behavior.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_blocked_overview.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/spray_behavior.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_behavior.txt",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_behavior.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_behavior.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/full_recordings.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/behavior_highlights.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/three_tasks_short.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_overview.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/behavior_highlights.txt",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_leader_overview.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/manifest.json",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_blocked_behavior.txt",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_leader_behavior.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_blocked_behavior.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_leader_behavior.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/full_recordings.txt",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_blocked_overview.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/index.html",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/behavior_highlights.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/three_tasks_short.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/spray_behavior.txt",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_behavior.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/three_tasks_short.txt",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_behavior.txt",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_behavior.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/spray_overview.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_startup_perception_loss_behavior.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_blocked_behavior.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/mowing_startup_perception_loss_behavior.log",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/spray_overview.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_leader_overview.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_leader_behavior.txt",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/r10_completion_20261115/previous_assembled_media/inspection_overview.mp4",
+      "kind": "prior assembled media backup",
+      "unchanged": true
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/inspection_20261114_181645_878210/video/full.mp4",
+      "kind": "prior raw recording",
+      "unchanged": true
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_205558_700516/video/full.mp4",
+      "kind": "prior raw recording",
+      "unchanged": true
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/video/full.mp4",
+      "kind": "prior raw recording",
+      "unchanged": true
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_194849_404114/video/full.mp4",
+      "kind": "prior raw recording",
+      "unchanged": true
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/inspection_20261114_160433_163459/video/full.mp4",
+      "kind": "prior raw recording",
+      "unchanged": true
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_211518_676200/video/full.mp4",
+      "kind": "prior raw recording",
+      "unchanged": true
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261114_173824_624692/video/full.mp4",
+      "kind": "prior raw recording",
+      "unchanged": true
+    },
+    {
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261114_194217_549485/video/full.mp4",
+      "kind": "prior raw recording",
+      "unchanged": true
+    }
+  ],
+  "scope": "Protected R08/R09 receipts, previous raw video files and prior assembled media; current stage seals checked separately"
 }

@@ -1,0 +1,12 @@
+{
+  "task": "spray",
+  "source": "optimization_v2/ws/src/task_platform/scripts/runtime_spray_r10.py",
+  "source_sha256": "eba540ae6f6e8c036b47f092f7419c2412d59014f964cd9d1bcd7e1283c419b6",
+  "derived_runtime": "optimization_v2/three_tasks/editions/R12/runtime_spray_video.py",
+  "derived_sha256": "badc668017bd7ab33dada4ee320f0cfbfe753484fc60a0e1d18bdc50acd72200",
+  "changes": [
+    "same observer-only derivation",
+    "64 MiB session SHM segment for observer image writer only"
+  ],
+  "scope": "No control, physics, perception, map or work admission change; existing recording runtime retained"
+}

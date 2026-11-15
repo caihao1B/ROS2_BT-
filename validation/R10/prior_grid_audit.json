@@ -1,0 +1,27 @@
+{
+  "run": "optimization_v2/three_tasks/results/R12/mowing_20261115_043537_296551",
+  "frame": "grid_019.json",
+  "t": 435.75,
+  "nearby_risk_lethal_cells": 59,
+  "nearby_cells_outside_declared_prior": 59,
+  "actual_world_pose": [
+    121.04521602357512,
+    49.37627305933965,
+    -3.062085535792172
+  ],
+  "nearest_planned_pose": [
+    121.02703887912422,
+    49.3955514172691,
+    -3.0900470993498823
+  ],
+  "center_tracking_error_m": 0.026496484009104655,
+  "heading_tracking_error_rad": 0.02796156355771018,
+  "v2_extra_side_m": 0.2,
+  "nav2_padding_m": 0.1,
+  "grid_half_diagonal_m": 0.10606602139266699,
+  "v3_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+  "v3_hard_prior_unchanged": true,
+  "v3_checked_local_poses": 2269,
+  "v3_saved_hard_cell_collisions": [],
+  "scope": "Offline saved-grid replay around the failed connector. Prior-generated cells are distinguished from observations. Unknown space, moving objects and future tracking still need actual runtime checks; no global no-path or full execution claim."
+}

@@ -1,0 +1,66 @@
+{
+  "run": "optimization_v2/three_tasks/results/R12/spray_20261115_024715_380236",
+  "proposals": [
+    {
+      "point": "point_10_16",
+      "attempt": 0,
+      "t": 281.22,
+      "proposal": {
+        "reason": "NEAR_APPROACH_STALLED_STOP_FOR_PRECISION",
+        "distance_m": 0.05779961464320503,
+        "best_distance_m": 0.04430009823179275,
+        "seconds_without_improvement": 1.5,
+        "translation_command_seconds": 0.8400000000000318,
+        "samples": 72,
+        "navigation_success": false,
+        "work_admitted": false
+      }
+    },
+    {
+      "point": "point_10_18",
+      "attempt": 0,
+      "t": 503.82,
+      "proposal": {
+        "reason": "NEAR_APPROACH_STALLED_STOP_FOR_PRECISION",
+        "distance_m": 0.08084628677349291,
+        "best_distance_m": 0.05465974902585355,
+        "seconds_without_improvement": 1.5,
+        "translation_command_seconds": 1.5600000000000023,
+        "samples": 72,
+        "navigation_success": false,
+        "work_admitted": false
+      }
+    },
+    {
+      "point": "point_10_19",
+      "attempt": 0,
+      "t": 694.41,
+      "proposal": {
+        "reason": "NEAR_APPROACH_STALLED_STOP_FOR_PRECISION",
+        "distance_m": 0.050071047482785985,
+        "best_distance_m": 0.03056376817299351,
+        "seconds_without_improvement": 1.5,
+        "translation_command_seconds": 1.259999999999991,
+        "samples": 72,
+        "navigation_success": false,
+        "work_admitted": false
+      }
+    },
+    {
+      "point": "point_11_19",
+      "attempt": 0,
+      "t": 736.47,
+      "proposal": {
+        "reason": "NEAR_APPROACH_STALLED_STOP_FOR_PRECISION",
+        "distance_m": 0.042336331921437424,
+        "best_distance_m": 0.03763398641260354,
+        "seconds_without_improvement": 1.5,
+        "translation_command_seconds": 2.009999999999991,
+        "samples": 72,
+        "navigation_success": false,
+        "work_admitted": false
+      }
+    }
+  ],
+  "scope": "Offline recorded qualified observations and gated commands. A stop proposal is not work admission; saved runtime and time savings cannot be inferred without a new actual run."
+}

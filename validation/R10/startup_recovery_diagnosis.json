@@ -1,17 +1,18 @@
 {
-  "run": "optimization_v2/three_tasks/results/R12/mowing_20261114_211518_676200",
-  "startup_stop_delay_sim_s": 0.5640000000000001,
+  "run": "optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371",
+  "task_passed": true,
+  "startup_stop_delays_sim_s": [
+    0.5919999999999987
+  ],
   "original_limit_sim_s": 2.0,
-  "same_original_keys": true,
-  "unique_jobs": 2,
-  "expected_jobs": 2,
   "uncertainty_pending": false,
+  "unique_jobs": 2,
   "completed_segments": 5,
-  "confirmed_area_m2": 26.556663461538417,
-  "residual_area_m2": 1.397318245255585,
+  "confirmed_area_m2": 26.391029762931016,
+  "residual_area_m2": 1.5629519438629738,
   "work_results": [
     {
-      "segment": "B1:segment:0",
+      "segment": "B1:segment:0:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
       "confirmed": 0.0,
@@ -19,37 +20,53 @@
       "uncertain": false
     },
     {
-      "segment": "B1:segment:0",
+      "segment": "B1:segment:0:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 9.795837499999994,
-      "remaining": 0.765652781674202,
+      "confirmed": 9.682437499999992,
+      "remaining": 0.8790527816742042,
       "uncertain": false
     },
     {
-      "segment": "B1:segment:4",
+      "segment": "B1:segment:4:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 7.027212500000002,
-      "remaining": 11.82762692751307,
+      "confirmed": 5.335299999999988,
+      "remaining": 13.519539427513083,
       "uncertain": false
     },
     {
-      "segment": "B1:segment:4",
+      "segment": "B1:segment:4:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 17.26117499999998,
-      "remaining": 1.5936644275130902,
+      "confirmed": 14.426937499999983,
+      "remaining": 4.427901927513087,
       "uncertain": false
     },
     {
-      "segment": "B1:segment:4",
+      "segment": "B1:segment:4:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 17.261037499999972,
-      "remaining": 1.5938019275130983,
+      "confirmed": 17.170337499999956,
+      "remaining": 1.6845019275131143,
       "uncertain": false
     }
   ],
-  "recording_passed": true
+  "fault": {
+    "t": 39.002,
+    "until": 40.202000000000005,
+    "pid": 433988,
+    "phase": "START_WORK",
+    "method": "SIGSTOP owned risk producer; all health timeouts and BT gates unchanged",
+    "resumed": true,
+    "resumed_t": 40.23
+  },
+  "checks": {
+    "actual_startup_outage": true,
+    "startup_cancel_observed": true,
+    "consumers_detected_missing_perception": true,
+    "startup_cancel_physically_confirmed": true,
+    "no_cancel_timeout_latch": true,
+    "startup_recovery_completed": true
+  }
 }

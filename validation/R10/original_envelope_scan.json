@@ -1,0 +1,308 @@
+[
+  {
+    "segment": "B1:segment:0",
+    "kind": "COVERAGE",
+    "direction": 1,
+    "minimum_clearance": 2.1666204357456267,
+    "end_clearance": 4.074712916161346,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:1",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 4.0079033535459345,
+    "end_clearance": 4.0079033535459345,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:2",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 2.105117229139276,
+    "end_clearance": 2.105117229139276,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:3",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 1.6668403081340641,
+    "end_clearance": 1.6668403081340641,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:4",
+    "kind": "COVERAGE",
+    "direction": 1,
+    "minimum_clearance": 2.1666204338082675,
+    "end_clearance": 7.1678429329212365,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:5",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 7.1678429329212365,
+    "end_clearance": 7.490802992886467,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:6",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 7.257419929900143,
+    "end_clearance": 10.258758380418453,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:7",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 10.367572548512724,
+    "end_clearance": 10.383534989827654,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:8",
+    "kind": "COVERAGE",
+    "direction": 1,
+    "minimum_clearance": 1.5550779445706095,
+    "end_clearance": 1.5550779445706095,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:9",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 0.44789632702470594,
+    "end_clearance": 0.44789632702470594,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:10",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 0.9279391710165782,
+    "end_clearance": 2.411593352849866,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:11",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 0.1622013779817899,
+    "end_clearance": 1.6040274241993264,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:12",
+    "kind": "COVERAGE",
+    "direction": 1,
+    "minimum_clearance": 1.4247218964729842,
+    "end_clearance": 1.4247218964729842,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:13",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 1.7822160839619403,
+    "end_clearance": 6.562466447463319,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:14",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 5.999877868062838,
+    "end_clearance": 6.146614871924864,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:15",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 6.13923489334782,
+    "end_clearance": 6.13923489334782,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:16",
+    "kind": "COVERAGE",
+    "direction": 1,
+    "minimum_clearance": 1.281291090520309,
+    "end_clearance": 1.281291090520309,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:17",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 0.5965661538875034,
+    "end_clearance": 0.5965661538875034,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:18",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 0.995194375799816,
+    "end_clearance": 3.2458497868915837,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:19",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 0.16219743323244323,
+    "end_clearance": 1.6040274234231098,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:20",
+    "kind": "COVERAGE",
+    "direction": 1,
+    "minimum_clearance": 1.2389556723593007,
+    "end_clearance": 1.2389556723593007,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:21",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 1.0762735492360567,
+    "end_clearance": 2.9521203335142228,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:22",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 0.1901495266236777,
+    "end_clearance": 0.1901495266236777,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:23",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 0.6760860707201815,
+    "end_clearance": 1.596449859042896,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:24",
+    "kind": "COVERAGE",
+    "direction": 1,
+    "minimum_clearance": 1.2812910901761048,
+    "end_clearance": 1.2812910901761048,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:25",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 1.2195447842950429,
+    "end_clearance": 1.6744271709935252,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:26",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 1.4539171262791233,
+    "end_clearance": 1.4539171262791233,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:27",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "minimum_clearance": 1.4539171262791233,
+    "end_clearance": 4.815315800551277,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:28",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 1.2812910935430546,
+    "end_clearance": 1.2812910935430546,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:29",
+    "kind": "COVERAGE",
+    "direction": 1,
+    "minimum_clearance": 1.604027426864505,
+    "end_clearance": 8.920441895794886,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:30",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 7.637779958212913,
+    "end_clearance": 7.637779958212913,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:31",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 3.992140221045118,
+    "end_clearance": 3.992140221045118,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:32",
+    "kind": "TURN_TOOL_OFF",
+    "direction": -1,
+    "minimum_clearance": 1.2812910908479462,
+    "end_clearance": 1.2812910908479462,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  },
+  {
+    "segment": "B1:segment:33",
+    "kind": "COVERAGE",
+    "direction": 1,
+    "minimum_clearance": 1.6040274241693706,
+    "end_clearance": 2.007165233236652,
+    "samples_outside": 0,
+    "note": "ideal geometry diagnostic; no sensor or dynamic obstacle claim"
+  }
+]
