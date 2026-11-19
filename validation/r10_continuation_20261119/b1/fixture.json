@@ -1,0 +1,62 @@
+{
+  "scope": "B1 current-gear four original directed sections",
+  "fixture": {
+    "candidate_profile": "B1-seed877-current-gear",
+    "spawn": [
+      116.15586598392574,
+      46.16886143180507,
+      -2.879793265790642
+    ],
+    "online_access": false,
+    "coarse_operator_map_hint": [
+      88.65586598392574,
+      31.66886143180507,
+      -2.8297932657906424
+    ],
+    "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+    "plan_revision": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac",
+    "scope": "Independent stopped start at the candidate connector entry. Single coarse hint; online pose is entirely sensor-derived."
+  },
+  "sections": [
+    {
+      "id": "B1:offline_connection:6:0",
+      "direction": 1,
+      "length_m": 1.4149686754849407,
+      "goal": [
+        86.75393716261267,
+        32.12194275301114,
+        2.946702758863019
+      ]
+    },
+    {
+      "id": "B1:offline_connection:6:1",
+      "direction": -1,
+      "length_m": 2.195824135184883,
+      "goal": [
+        88.58785649065003,
+        30.999455600140266,
+        2.2379879057101375
+      ]
+    },
+    {
+      "id": "B1:offline_connection:6:2",
+      "direction": 1,
+      "length_m": 21.852812780100372,
+      "goal": [
+        102.94387567748458,
+        30.81321081290492,
+        -0.53692704041775
+      ]
+    },
+    {
+      "id": "B1:offline_connection:6:3",
+      "direction": -1,
+      "length_m": 2.474708519860936,
+      "goal": [
+        100.55717284124896,
+        31.143621631592943,
+        0.261799387799147
+      ]
+    }
+  ]
+}

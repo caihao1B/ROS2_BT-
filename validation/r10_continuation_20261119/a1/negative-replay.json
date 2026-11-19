@@ -1,0 +1,77 @@
+{
+  "schema": "A1-OFFLINE-ROBUSTNESS/1",
+  "scope": "recorded shutdown plus deterministic simulated callback tests; no additional driven points",
+  "worker_sha256": "b24979c9460dc092c840dacb58edb5da9dfd62ad406687c84651f10863021073",
+  "handoff_hash": "e9db524782677aac9d5f36095a0934f94532d4af90f483ed94f998722c9349c9",
+  "closed_valve_and_double_stop": {
+    "session": "spray_defer_20261119_121141_482729",
+    "positive_measured_shutdown": true,
+    "faults_rejected": {
+      "valve_open": [
+        "independent_tool_stopped"
+      ],
+      "nonzero_flow": [
+        "independent_tool_stopped"
+      ],
+      "moving_rotor": [
+        "independent_tool_stopped"
+      ],
+      "stale_feedback": [
+        "independent_tool_stopped"
+      ],
+      "different_epoch": [
+        "independent_tool_stopped"
+      ],
+      "base_moving": [
+        "measured_chassis_stop"
+      ],
+      "no_chassis_confirmation": [
+        "fresh_gate_double_stop"
+      ],
+      "missing_stop_ack": [
+        "explicit_stop_work_ack"
+      ]
+    }
+  },
+  "randomized_stop_observation": {
+    "seeds": 64,
+    "cases": [
+      "invalid localization",
+      "moving chassis",
+      "32 cm pose jump into a new localization epoch",
+      "stale acquisition"
+    ],
+    "independent_sampling": "15–47 ms callback intervals, repeated source stamps, ±2 mm pose noise; guaranteed fresh tail after 4 s"
+  },
+  "frozen_live_dispatch_BT_cancellation": {
+    "STOP": {
+      "sent": 1,
+      "cancel_requests": 1,
+      "remaining": 2.75,
+      "state": "CANCELLED"
+    },
+    "HUMAN": {
+      "sent": 1,
+      "cancel_requests": 1,
+      "remaining": 2.75,
+      "state": "CANCELLED"
+    },
+    "WAIT": {
+      "sent": 1,
+      "cancel_requests": 1,
+      "remaining": 2.75,
+      "state": "CANCELLED"
+    },
+    "CANCEL": {
+      "sent": 1,
+      "cancel_requests": 1,
+      "remaining": 2.75,
+      "state": "CANCELLED"
+    },
+    "DENIED_BEFORE_START": {
+      "sent": 0
+    }
+  },
+  "formal_credit": false,
+  "passed": true
+}

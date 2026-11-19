@@ -1,0 +1,93 @@
+{
+  "schema": "r10-spray-measured-work/1",
+  "session": "spray_defer_20261119_121833_942724",
+  "sha256_before_gzip": true,
+  "sqlite_integrity": "ok",
+  "ledger_confirmed_points": [
+    "point_10_20",
+    "point_11_20",
+    "point_8_20",
+    "point_9_20"
+  ],
+  "same_confirmed_ids_as_mission_feedback": true,
+  "jobs": [
+    {
+      "point": "point_10_20",
+      "status": "SUCCEEDED",
+      "measured_quantity": 3.074000000000005,
+      "requested_quantity": 3.0,
+      "uncertain": false
+    },
+    {
+      "point": "point_11_20",
+      "status": "SUCCEEDED",
+      "measured_quantity": 3.0720000000000027,
+      "requested_quantity": 3.0,
+      "uncertain": false
+    },
+    {
+      "point": "point_8_20",
+      "status": "SUCCEEDED",
+      "measured_quantity": 3.0519999999999925,
+      "requested_quantity": 3.0,
+      "uncertain": false
+    },
+    {
+      "point": "point_9_20",
+      "status": "SUCCEEDED",
+      "measured_quantity": 3.073999999999998,
+      "requested_quantity": 3.0,
+      "uncertain": false
+    }
+  ],
+  "files": {
+    "mission.json": {
+      "path": "mission.json.gz",
+      "sha256": "eabb73c9332afd2f87f47925f9637db40e132dd3c42a7f008d8d596e6e05e2df",
+      "gzip_sha256": "2f1677b6d1364e188e75f255dc315db0a398f79a909765a6a169fdf6402532e5",
+      "bytes": 81324
+    },
+    "evaluation/truth.jsonl": {
+      "path": "evaluation/truth.jsonl.gz",
+      "sha256": "77992e0172eabe3bf21e326eff0848c84554c2247678aa0ba73a5c2700d288c8",
+      "gzip_sha256": "54414d52abcc58371557c749efcb668764a70c703c415a52f895b4202a81de03",
+      "bytes": 1236176
+    },
+    "evaluation/contacts.json": {
+      "path": "evaluation/contacts.json.gz",
+      "sha256": "dfec0aae7483c65e62a2dc87b3fb6f73cdca63d100c961aeb367aa68bde9498f",
+      "gzip_sha256": "b8439d347b5c17ac22d551cee34430092c28f03fac2b3900dfc299127c95ac06",
+      "bytes": 286
+    },
+    "tool_evaluation/physical.jsonl": {
+      "path": "tool_evaluation/physical.jsonl.gz",
+      "sha256": "28de411e3665e46fbc47d58a66b922679ff2c371d14380e00361947ce747818b",
+      "gzip_sha256": "6e8ea13278f49cd01ad0a29b78f697c2395a34b8a3e2f96ba67fedcba09ed5a8",
+      "bytes": 993229
+    },
+    "tool_evaluation/result.json": {
+      "path": "tool_evaluation/result.json.gz",
+      "sha256": "c70e6356d9f9bab0ddf4a4ad9ecdbc0924195f99f43450641d5beb227c6d5258",
+      "gzip_sha256": "0329207e5c82b6fb191ccd89709b8fde14f38b152487daab898072a6366613fe",
+      "bytes": 1191
+    },
+    "risk/risk.jsonl": {
+      "path": "risk/risk.jsonl.gz",
+      "sha256": "08fc54d26bc2cfe84a058204e2ba09dd3fb18ba418609dc63c5be8a7789a6742",
+      "gzip_sha256": "d44221fc33a9dc758f37c9345c9c2beba6a9ba1f4533380c4a697870ba89cb1e",
+      "bytes": 731488
+    },
+    "ledger/ledger.sqlite": {
+      "path": "ledger/ledger.sqlite.gz",
+      "sha256": "8f65f838e5f9d5ea70b0812cf7bdcb4386d486a98a45c399a6188c4f5cd42015",
+      "gzip_sha256": "90b1e55dd0cbebf0c084c3285d64e65b6dd574b7b1610623a80a812f97edf6fb",
+      "bytes": 1118208
+    },
+    "ledger/summary.json": {
+      "path": "ledger/summary.json.gz",
+      "sha256": "ad06dca7729850ed62cdd61b87b12fce74b4fa9958c869dff0ca90ed29875ed5",
+      "gzip_sha256": "dd7550f7e4ca66cbf8ec3c9a16d879b1ba771b4574eb15dcbcc5b3d331d1c137",
+      "bytes": 2222
+    }
+  }
+}

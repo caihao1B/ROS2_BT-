@@ -1,0 +1,312 @@
+{
+  "schema": "r10-continuation-baseline/1",
+  "base_commit": "0868d45bfc8f88646cea9c4d5e33d01ff64f4ef9",
+  "baseline_utc": "2026-11-19T12:11:03Z",
+  "published_films": {
+    "media/closeout_20261119/inspection_excerpt.mp4": {
+      "git_blob": "3b76d7ce146114d7f96743f79753fc206dc04322",
+      "sha256": "82e8d48bc972f22f59e8a9254cdebf7c6c297e8a9726d710be67cea8b95ac1a5",
+      "bytes": 237843,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/mowing_20261119_072044_764057_B1_partial_full.mp4": {
+      "git_blob": "a8f98d41fd9062b680335104b5b01df584af3eb0",
+      "sha256": "d3fa90cf5a2663b256ea9b7611301b45641ad44d8affeb6e87694183897b7c38",
+      "bytes": 22067887,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/mowing_excerpt.mp4": {
+      "git_blob": "8c4ee3dd6da1c4630fa405d1857f373571875d82",
+      "sha256": "be4ba5a176f212d105443bd6351a82c653d0ccdb8640a8689e59558638a04755",
+      "bytes": 132419,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/mowing_pilot_full.mp4": {
+      "git_blob": "cf768b3b7321095cf7dd08d5a1053df0014559d2",
+      "sha256": "413c2ccc8bf355ec332521d6a9489f492c54e7d913eb1b9928e9b85383ab3e9c",
+      "bytes": 5792074,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_20261119_081218_417252_A1_partial_full.mp4": {
+      "git_blob": "be47506a01f8ea24ec2fa00a6adeb697d7e31473",
+      "sha256": "1f2c33f5ae822b41700e35c958cab06e8611ce5742b598d27f38812d1735ba07",
+      "bytes": 7920641,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_defer_full.mp4": {
+      "git_blob": "35d3bf4aad17bda9f5e71932a03fdfdae81493ef",
+      "sha256": "8b47236601b9ad3863b2fec9d6a9379e70555b9aa255897e560f9bf9cabfaa73",
+      "bytes": 1827363,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_defer_highlight.mp4": {
+      "git_blob": "ab44c4ae05a617f31d3d8a082c40d9efa37e4a72",
+      "sha256": "f4a1d7b15dda3e7b2de00bc8a503c839a175c4762ebb8f2fd7925ec0091da42f",
+      "bytes": 298628,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_excerpt.mp4": {
+      "git_blob": "32d98639bd99d8444eea39c95f3781e5297ae1e8",
+      "sha256": "8260f959a2a39b4c04326469c9260aefc1ec4c416e6cefeed83b4ab2543949d5",
+      "bytes": 61620,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_last_blocked_full.mp4": {
+      "git_blob": "80d0c9974261eec1cf7a051504c3bc588ba43e0e",
+      "sha256": "ab6a632a70cc468064ec9b78984eb68f04b377858020f926e9b72c3e8577a291",
+      "bytes": 502368,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_last_blocked_handoff.mp4": {
+      "git_blob": "970aa0c06c012b0caca8ca9cf2132c98775f0c59",
+      "sha256": "682abd6a1fe4f4aab9826663aeacda2f0be46dc847058e5873f19673e8f81e1d",
+      "bytes": 119844,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_last_blocked_initial_full.mp4": {
+      "git_blob": "6da62207cab9569f77cdcadef61839de64de9de6",
+      "sha256": "1f280e05043becea6e50dd0019fb83d9cf14bd2b1d86342384d934f938ad953f",
+      "bytes": 549021,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_natural_full.mp4": {
+      "git_blob": "be9122d655c671e0af47da39b37b43cff2cc8dba",
+      "sha256": "6ddb7134beee867dab84beb9d44e3d722b38cc56e82aa08fbf6de0b237c891db",
+      "bytes": 1828896,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_natural_relocalization.mp4": {
+      "git_blob": "f1be4c097ed49a0b20059d7103a3e34d3bcc78eb",
+      "sha256": "27419827afa7e495baba4437aead5915f3b951a567d0a228243ce844f345b87f",
+      "bytes": 133359,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/spray_pilot_full.mp4": {
+      "git_blob": "02f8d453baca32dad4406c0362e6037ba358f49c",
+      "sha256": "4c3dc6b1f661d92fd61148151c682e53ecd40391122b7ea324a390c8e182970b",
+      "bytes": 836952,
+      "local_mirror": true
+    },
+    "media/closeout_20261119/three_tasks_highlights.mp4": {
+      "git_blob": "5bf091b8ae198b2ff1d3aef2ed75e25897a6a093",
+      "sha256": "39dd44d04e160c41c51726662e0da24a0cd6e5e05bd205c73e258f2fa07e8e26",
+      "bytes": 430363,
+      "local_mirror": true
+    },
+    "media/full_demo.mp4": {
+      "git_blob": "99eebdd06acf89ee4da60b97ce46a0b3c4d500b6",
+      "sha256": "310495674bfc1a46d4778da4f87180215a9eb05eed344e099ab98e083b5122a5",
+      "bytes": 31544956,
+      "local_mirror": false
+    },
+    "media/r12_behavior_highlights.mp4": {
+      "git_blob": "1197b580c76391108bef97a7329e1a46f3d59a23",
+      "sha256": "14cf68220207a15de63ed7ab3d5504885750074e55707b71b455c1cc1d76ad4c",
+      "bytes": 1633905,
+      "local_mirror": true
+    },
+    "media/r12_inspection_blocked_full.mp4": {
+      "git_blob": "35b2fe3ead28d1e27f980a920e5c4b3f937452d8",
+      "sha256": "911097333988c4b8e0a56a81dbb73fcd5a2bcfd0fafa5a26e67e606862a19b11",
+      "bytes": 1394487,
+      "local_mirror": true
+    },
+    "media/r12_inspection_full.mp4": {
+      "git_blob": "09a0071624ea4fe32c08b1c3c742a46191915b30",
+      "sha256": "9acec2107601374bee7d333364b2e5338a625658666fa98cfaf4d75286990aa6",
+      "bytes": 5975848,
+      "local_mirror": true
+    },
+    "media/r12_inspection_leader_full.mp4": {
+      "git_blob": "a3dd8d29b241aa67d0489ee4967d4d66f4f4e567",
+      "sha256": "9a46b73cb863298dc43ce31709da39eda6f02a619e0d398a0a103213f7651a11",
+      "bytes": 2479920,
+      "local_mirror": true
+    },
+    "media/r12_mowing_full.mp4": {
+      "git_blob": "52f0adc02ca3f4788618664a05d7cf915b146bd4",
+      "sha256": "bdfb34a1de256386c10f0fd4700cd2136990a4af7b75afde34ba3293aff55ebc",
+      "bytes": 3258303,
+      "local_mirror": false
+    },
+    "media/r12_mowing_full_B1_full.mp4": {
+      "git_blob": "e0ff216305d52ed6e6d552682f802d47549c5e37",
+      "sha256": "b43cb0501711c4840ab18ad47bf5bcfbc4b901701c4f3d206add1d0159319b92",
+      "bytes": 17157362,
+      "local_mirror": true
+    },
+    "media/r12_mowing_startup_perception_loss_full.mp4": {
+      "git_blob": "edc17c69c11e6924f3bd7eb5c8a75740f4a770d0",
+      "sha256": "f30b20f0c0a338dcbb170733ed1396f724ad36cb1bbd552a48ba2ddc887d75bb",
+      "bytes": 5242184,
+      "local_mirror": true
+    },
+    "media/r12_spray_full.mp4": {
+      "git_blob": "04b783e41c17cdb728c9501d8393fcb2f6510063",
+      "sha256": "a9167f1ba78bacbe37f92ba96676dcee9e79a8ba5d49d8e5499f3bbf11cf6973",
+      "bytes": 828825,
+      "local_mirror": true
+    },
+    "media/r12_spray_full_A1_full.mp4": {
+      "git_blob": "5c83ac3dfcc275c26b2a9c04a384672d0f5f38e0",
+      "sha256": "68c1e1cc98b9934448f4e988ad1645b5c15f0f14d4300a250381fc856e751827",
+      "bytes": 12069351,
+      "local_mirror": true
+    },
+    "media/r12_three_tasks_short.mp4": {
+      "git_blob": "87d93c5cbb8788822bae2026b6ea141b02b0c21e",
+      "sha256": "e3667d78951105036a878e6ec93618bde56d940e67fa096ea68ee25225977723",
+      "bytes": 3373354,
+      "local_mirror": true
+    },
+    "media/showcase_short.mp4": {
+      "git_blob": "9ea149105d248a9600d365851246950c04adc111",
+      "sha256": "98bf6efc5b06022e57815df2d42c4a74ea72810b599faa624a20bf232c8ff7b4",
+      "bytes": 6761970,
+      "local_mirror": false
+    }
+  },
+  "local_sealed_films": {
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/video/full.mp4": "1f2c33f5ae822b41700e35c958cab06e8611ce5742b598d27f38812d1735ba07",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/video/full.mp4": "4c3dc6b1f661d92fd61148151c682e53ecd40391122b7ea324a390c8e182970b",
+    "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/video/full.mp4": "d3fa90cf5a2663b256ea9b7611301b45641ad44d8affeb6e87694183897b7c38",
+    "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/video/full.mp4": "413c2ccc8bf355ec332521d6a9489f492c54e7d913eb1b9928e9b85383ab3e9c",
+    "optimization_v2/three_tasks/results/R12/media/mowing_startup_perception_loss_overview.mp4": "e299dafa0e89ca405be5d0c3a68895cf5452ffbdbbfb5cdffaf086f3fab7000e",
+    "optimization_v2/three_tasks/results/R12/media/mowing_full_B1_behavior.mp4": "2c52410aabf7c22ca8b82a2942fb80026ec629cfab9b28736397966f98aa205b",
+    "optimization_v2/three_tasks/results/R12/media/spray_behavior.mp4": "03d5ef2bfdc89788730dd59ec3cdfcb985a65d1fd385a5a63a635f9f12946ecb",
+    "optimization_v2/three_tasks/results/R12/media/inspection_behavior.mp4": "9ab24f1aa0af14d73000eb61202226c51d04f7c987e395c1837caca5015a54e2",
+    "optimization_v2/three_tasks/results/R12/media/full_recordings.mp4": "42c983a7d6590a02a4f57e056ad7520d8486080a07ac8d66fd9963d2a26d6d0d",
+    "optimization_v2/three_tasks/results/R12/media/spray_full_A1_overview.mp4": "0208d592e785c8ea15699d9789ab12310afede17ba88759f30b83dbb78b4fa64",
+    "optimization_v2/three_tasks/results/R12/media/three_tasks_short.mp4": "5996c90f38d7b3f5f05e64772e8d6752d92047b300dead3efebe604c2538d73c",
+    "optimization_v2/three_tasks/results/R12/media/inspection_leader_behavior.mp4": "31121364e711252a64ecea33a8942f1f3c57fcf340a5d3d3d9a7764881a2c137",
+    "optimization_v2/three_tasks/results/R12/media/mowing_full_B1_overview.mp4": "c10ac9610b64d70d5db01d685a6a5c051e5c19da5c34b67bf353c4400205512d",
+    "optimization_v2/three_tasks/results/R12/media/inspection_blocked_overview.mp4": "30fc3811ae802344b0854d540d0106daa13ed5dd77ea4df1d4555859968f24f6",
+    "optimization_v2/three_tasks/results/R12/media/behavior_highlights.mp4": "2e1ab1bbc2ea5d3c84901421f2e9a29563f07173b4f71cfed6097c130a91aa93",
+    "optimization_v2/three_tasks/results/R12/media/spray_full_A1_behavior.mp4": "18be938f700b8df13663628effbf435e87c6f085351864493f02f913add95417",
+    "optimization_v2/three_tasks/results/R12/media/mowing_startup_perception_loss_behavior.mp4": "ab15ce25f0bd22e089432cbca1e96ce965ef2a373e374f30e751b77992d5137a",
+    "optimization_v2/three_tasks/results/R12/media/inspection_blocked_behavior.mp4": "19b710cef04b2ac29964caf0ce775f182c5bfc3b9a7ff2ad648db4b249e43a53",
+    "optimization_v2/three_tasks/results/R12/media/spray_overview.mp4": "a0fce4090705f7a35fdf576a6b66fe479ead95db3ed0774f572af2289f038ac8",
+    "optimization_v2/three_tasks/results/R12/media/inspection_leader_overview.mp4": "977a0540c36e229b4e1853367bd0bab9e5a961fccdd54da98e401423428a1ff3",
+    "optimization_v2/three_tasks/results/R12/media/inspection_overview.mp4": "d6a5592d909dd78ba515558755c99115a891b746eb3c02e7b3941564dedad56a",
+    "optimization_v2/three_tasks/results/R12/inspection_20261114_160433_163459/video/full.mp4": "9acec2107601374bee7d333364b2e5338a625658666fa98cfaf4d75286990aa6",
+    "optimization_v2/three_tasks/results/R12/mowing_20261114_173824_624692/video/full.mp4": "bdfb34a1de256386c10f0fd4700cd2136990a4af7b75afde34ba3293aff55ebc",
+    "optimization_v2/three_tasks/results/R12/inspection_20261114_181645_878210/video/full.mp4": "911097333988c4b8e0a56a81dbb73fcd5a2bcfd0fafa5a26e67e606862a19b11",
+    "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/video/full.mp4": "9a46b73cb863298dc43ce31709da39eda6f02a619e0d398a0a103213f7651a11"
+  },
+  "stage_baseline": {
+    "R01": {
+      "status": "PASS",
+      "sha256": "8c3ed687da6a7f6f7f94ccf57dec2317e410a30e922fa82d3cfd2520f2ff3983",
+      "public_blob": "f8deb1e168cb83ba65ba84b3ec46291287be01f7"
+    },
+    "R02": {
+      "status": "PASS",
+      "sha256": "2f80f282e89acf17222869855cc3e33d6cc13533083e34b45d15a54dd9cc79eb",
+      "public_blob": "0c2b8db7c5e58cc5fe690ba39ba5c6ded496fbdc"
+    },
+    "R03": {
+      "status": "PASS",
+      "sha256": "784222c26ad9d24f961047ed7d6211aa2c3b1ec71749b57c0a44f021b7c9e119",
+      "public_blob": "7e88018722dac4bde4838a0598f0d836dba77c71"
+    },
+    "R04": {
+      "status": "PASS",
+      "sha256": "fc4ffff0ee6b43de9a795228ea6a73a839bf0aec0850a63c2f57c76253ab2381",
+      "public_blob": "b1c18b1c24da0b01a1364889405dd3548307533b"
+    },
+    "R05": {
+      "status": "PASS",
+      "sha256": "1b839419892f26f2a59387f7cc058a7931c882a01a5d7b488ac048f7ad1774e9",
+      "public_blob": "ffe11d77ebc5d1f754ec3507d70215d80e283cb9"
+    },
+    "R06": {
+      "status": "PASS",
+      "sha256": "bfb18236c9f9e39de4bf72f2880ffb15346ba4430953a2475a957fd04dd04cf0",
+      "public_blob": "7db8ba91f4fb034e3ced30a74e792bed460f6467"
+    },
+    "R07": {
+      "status": "PASS",
+      "sha256": "d1ed430f8a9f5cfd56ff8a1ee78081d88e411b19d9e5172afd6fe7a635718f69",
+      "public_blob": "c92334ad40282427f2bfe1f9b635c9c3dd6c6ad0"
+    },
+    "R08": {
+      "status": "PASS",
+      "sha256": "087055b8f7e0a51ffee7a65e040cd8051cdac6aeb166276417ba41a47155f46d",
+      "public_blob": "343f924aa05b27c97e0ed1284a8cb0ecf841f915"
+    },
+    "R09": {
+      "status": "PASS",
+      "sha256": "af2648b4d256acada245bf191ae413a496c81e69329544d98f153b893a1066e1",
+      "public_blob": "e4b527d42658080d08944c5fcb2b9398cb2a569f"
+    },
+    "R10": {
+      "status": "PARTIAL",
+      "sha256": "111e5174e9af4d564c983bd03c8995bc980d2de573a01e727dedac6a124898bb",
+      "public_blob": "004e91e65292981a1b92dbcb632f4c2a7ea4cbac"
+    },
+    "R11": {
+      "status": "PARTIAL",
+      "sha256": "d9243b26678f9459225c74b3c564b0f7f9f967ab9c8b538978e003ce5ed78387",
+      "public_blob": "0a960075ccaae4bb79ea25ebf1e3240c4cce1b60"
+    },
+    "R12": {
+      "status": "PARTIAL",
+      "sha256": "9374ad7bd254b959e33aedba5a7d8d9492ea631a89615fe8911032395fabdc44",
+      "public_blob": "c7863c82b3054014d339ffc17395ee18a79e4fbb"
+    }
+  },
+  "legacy_formal": {
+    "S17": {
+      "sha256": "b91696ae200966c05f65a13fc11445bb8f9e27a7a793dd93ecb5cf58602ac84a",
+      "status": "PARTIAL"
+    },
+    "S18": {
+      "sha256": "de844daadd5948038cb6b216e12dbc8c43604e14536344df9f02ab1b5b2ce30c",
+      "status": "PARTIAL"
+    }
+  },
+  "original_constraints": {
+    "spray_docking_admission": {
+      "navigation_goal_m": 0.025,
+      "median_distance_m": 0.035,
+      "latest_distance_m": 0.045,
+      "scatter_p95_m": 0.015,
+      "span_s": 1.8,
+      "max_observation_wait_s": 8.0
+    },
+    "spray_task_budget_s": 1800.0,
+    "mowing_stopped_arrival": {
+      "xy_m": 0.1,
+      "yaw_rad": 0.12,
+      "minimum_samples": 15,
+      "span_s": 0.6,
+      "maximum_gap_s": 0.15,
+      "maximum_wait_s": 1.5,
+      "all_samples_inside_original_gate": true
+    },
+    "mowing_intermediate_xy_m": 0.1,
+    "mowing_intermediate_yaw_rad": 0.12,
+    "original_denominators": {
+      "A1_points": 56,
+      "B1_segments": 34,
+      "connector_m": 88.48099013627927
+    },
+    "safe_execution_segments": 47,
+    "original_mowing_target_m2": 188.3918016929564,
+    "original_map": {
+      "spray": {
+        "map_id": "4e4b85d7-ccf3-58ed-925b-1efba3fa6262",
+        "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+        "source_plan_version": "1f131cc76780f99001e66a3c1eb03a92548a9ebd31d465593f6d092ca6571edf"
+      },
+      "mowing": {
+        "map_id": "4e4b85d7-ccf3-58ed-925b-1efba3fa6262",
+        "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+        "source_plan_version": "1f131cc76780f99001e66a3c1eb03a92548a9ebd31d465593f6d092ca6571edf"
+      }
+    },
+    "original_raw_spray_tool_sha256": "92af8ad88e0b04f839cc0ae5bb433357d7e95e8f272b746f0e6e18e8a8e9656c",
+    "original_raw_mowing_tool_sha256": "fa966f1ce9318531f782838b75aff377009ad3583750bbd00cad65a82b3b4b22"
+  },
+  "four_gear_candidate_sha256": "2a8fed96cccf06c5cdd22719fab3dce1dec12ce74020d3bb1e2f289dc6eec2e7"
+}

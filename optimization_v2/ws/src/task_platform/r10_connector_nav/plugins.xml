@@ -1,0 +1,5 @@
+<library path="r10_path_curvature">
+  <class name="r10::DirectedPathCurvature" type="r10::DirectedPathCurvature" base_class_type="nav2_core::Controller">
+    <description>Directed curvature feedforward and lateral/heading feedback, using original RPP velocity and collision checker.</description>
+  </class>
+</library>

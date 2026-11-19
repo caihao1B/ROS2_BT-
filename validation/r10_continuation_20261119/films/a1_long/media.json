@@ -1,0 +1,985 @@
+{
+  "schema": "r10-continuation-camera/1",
+  "session": "spray_defer_20261119_130223_269769",
+  "task": "spray",
+  "case": "precision_natural",
+  "formal_score_in_this_media_file": false,
+  "mission_passed": false,
+  "mission_terminal": null,
+  "mission_error": "TimeoutError('TASK_BOUND_OR_STOP_REQUEST')",
+  "closed_sim_s": 978.792,
+  "runtime_clean": true,
+  "title": "A1 原序全选五十六点现场实测",
+  "raw": {
+    "path": "media/r10_continuation_20261119/a1_long_full.mp4",
+    "sha256": "7ac9b7afb51fbf49303f745e3c59a3b74d3322b2b68d6b20d605eb7671193cbd",
+    "frames": 7959,
+    "fps": 5.0,
+    "seconds": 1591.8,
+    "original_and_decoded": true
+  },
+  "clip": {
+    "path": "media/r10_continuation_20261119/a1_long_short.mp4",
+    "sha256": "1cdc1373c4393e645533fce6bdb8b2d796c3c53b7410b95344fcf2b74bfed8f4",
+    "frames": 744,
+    "fps": 10,
+    "seconds": 74.4,
+    "source_start_frame": 133,
+    "source_end_frame_exclusive": 7950,
+    "wall_camera_speed": 21,
+    "actual_continuous_frames": true,
+    "decoded_to_eof": true
+  },
+  "event_bookmarks": [
+    {
+      "event": "NAV_GOAL",
+      "point": "point_7_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 20.366,
+      "raw_video_s": 29.6,
+      "clip_s": 0.143
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_7_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 22.292,
+      "raw_video_s": 33.2,
+      "clip_s": 0.314
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_7_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 26.672,
+      "raw_video_s": 40.8,
+      "clip_s": 0.676
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_7_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 26.75,
+      "raw_video_s": 40.8,
+      "clip_s": 0.676
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 26.756,
+      "raw_video_s": 41.0,
+      "clip_s": 0.686
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 43.712,
+      "raw_video_s": 68.4,
+      "clip_s": 1.99
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_8_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 47.834,
+      "raw_video_s": 75.0,
+      "clip_s": 2.305
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 47.886,
+      "raw_video_s": 75.2,
+      "clip_s": 2.314
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 52.84,
+      "raw_video_s": 83.2,
+      "clip_s": 2.695
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 61.296,
+      "raw_video_s": 99.2,
+      "clip_s": 3.457
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 80.79,
+      "raw_video_s": 131.4,
+      "clip_s": 4.99
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_8_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 84.888,
+      "raw_video_s": 138.0,
+      "clip_s": 5.305
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 84.932,
+      "raw_video_s": 138.0,
+      "clip_s": 5.305
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 110.014,
+      "raw_video_s": 178.2,
+      "clip_s": 7.219
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 133.352,
+      "raw_video_s": 215.8,
+      "clip_s": 9.01
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_9_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 135.634,
+      "raw_video_s": 219.4,
+      "clip_s": 9.181
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 137.55,
+      "raw_video_s": 222.4,
+      "clip_s": 9.324
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_9_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 140.462,
+      "raw_video_s": 227.0,
+      "clip_s": 9.543
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 140.494,
+      "raw_video_s": 227.0,
+      "clip_s": 9.543
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 168.66,
+      "raw_video_s": 273.0,
+      "clip_s": 11.733
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 181.85,
+      "raw_video_s": 294.6,
+      "clip_s": 12.762
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 184.532,
+      "raw_video_s": 299.0,
+      "clip_s": 12.971
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_9_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 188.67,
+      "raw_video_s": 305.6,
+      "clip_s": 13.286
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 188.73,
+      "raw_video_s": 305.6,
+      "clip_s": 13.286
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 201.37,
+      "raw_video_s": 325.8,
+      "clip_s": 14.248
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 222.692,
+      "raw_video_s": 359.2,
+      "clip_s": 15.838
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_10_14",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 226.774,
+      "raw_video_s": 366.0,
+      "clip_s": 16.162
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 226.802,
+      "raw_video_s": 366.0,
+      "clip_s": 16.162
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 236.178,
+      "raw_video_s": 381.0,
+      "clip_s": 16.876
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 258.84,
+      "raw_video_s": 417.4,
+      "clip_s": 18.61
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_10_15",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 262.954,
+      "raw_video_s": 424.0,
+      "clip_s": 18.924
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 262.99,
+      "raw_video_s": 424.0,
+      "clip_s": 18.924
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 291.718,
+      "raw_video_s": 470.0,
+      "clip_s": 21.114
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_10_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 295.872,
+      "raw_video_s": 476.8,
+      "clip_s": 21.438
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 295.918,
+      "raw_video_s": 477.0,
+      "clip_s": 21.448
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 327.426,
+      "raw_video_s": 529.0,
+      "clip_s": 23.924
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_9_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 331.65,
+      "raw_video_s": 535.8,
+      "clip_s": 24.248
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 331.684,
+      "raw_video_s": 535.8,
+      "clip_s": 24.248
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 341.284,
+      "raw_video_s": 552.2,
+      "clip_s": 25.029
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 359.496,
+      "raw_video_s": 582.2,
+      "clip_s": 26.457
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_8_16",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 363.586,
+      "raw_video_s": 588.6,
+      "clip_s": 26.762
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 363.63,
+      "raw_video_s": 588.8,
+      "clip_s": 26.771
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 393.27,
+      "raw_video_s": 638.0,
+      "clip_s": 29.114
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_8_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 393.302,
+      "raw_video_s": 638.0,
+      "clip_s": 29.114
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 395.282,
+      "raw_video_s": 641.4,
+      "clip_s": 29.276
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_8_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 399.392,
+      "raw_video_s": 648.6,
+      "clip_s": 29.619
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 399.422,
+      "raw_video_s": 648.6,
+      "clip_s": 29.619
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 432.96,
+      "raw_video_s": 703.6,
+      "clip_s": 32.238
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_9_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 437.094,
+      "raw_video_s": 710.2,
+      "clip_s": 32.552
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 437.132,
+      "raw_video_s": 710.4,
+      "clip_s": 32.562
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 464.58,
+      "raw_video_s": 754.8,
+      "clip_s": 34.676
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_10_17",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 468.716,
+      "raw_video_s": 761.6,
+      "clip_s": 35.0
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 468.754,
+      "raw_video_s": 761.6,
+      "clip_s": 35.0
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 507.18,
+      "raw_video_s": 824.2,
+      "clip_s": 37.981
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_10_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 511.26,
+      "raw_video_s": 831.2,
+      "clip_s": 38.314
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 511.286,
+      "raw_video_s": 831.2,
+      "clip_s": 38.314
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 516.486,
+      "raw_video_s": 840.2,
+      "clip_s": 38.743
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 553.564,
+      "raw_video_s": 902.8,
+      "clip_s": 41.724
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_9_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 557.65,
+      "raw_video_s": 909.6,
+      "clip_s": 42.048
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 557.702,
+      "raw_video_s": 909.6,
+      "clip_s": 42.048
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 582.42,
+      "raw_video_s": 951.0,
+      "clip_s": 44.019
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_8_18",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 586.59,
+      "raw_video_s": 957.8,
+      "clip_s": 44.343
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 586.624,
+      "raw_video_s": 957.8,
+      "clip_s": 44.343
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 616.68,
+      "raw_video_s": 1006.6,
+      "clip_s": 46.667
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_8_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 620.766,
+      "raw_video_s": 1013.2,
+      "clip_s": 46.981
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 620.792,
+      "raw_video_s": 1013.2,
+      "clip_s": 46.981
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 623.016,
+      "raw_video_s": 1016.8,
+      "clip_s": 47.152
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 651.57,
+      "raw_video_s": 1062.4,
+      "clip_s": 49.324
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_9_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 655.686,
+      "raw_video_s": 1069.0,
+      "clip_s": 49.638
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 655.746,
+      "raw_video_s": 1069.0,
+      "clip_s": 49.638
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 661.216,
+      "raw_video_s": 1077.6,
+      "clip_s": 50.048
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 682.11,
+      "raw_video_s": 1111.8,
+      "clip_s": 51.676
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_10_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 686.188,
+      "raw_video_s": 1118.6,
+      "clip_s": 52.0
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_11_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 686.222,
+      "raw_video_s": 1118.6,
+      "clip_s": 52.0
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_11_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 708.242,
+      "raw_video_s": 1154.0,
+      "clip_s": 53.686
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_11_19",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 712.32,
+      "raw_video_s": 1160.4,
+      "clip_s": 53.99
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_12_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 712.36,
+      "raw_video_s": 1160.4,
+      "clip_s": 53.99
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_12_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 735.878,
+      "raw_video_s": 1198.0,
+      "clip_s": 55.781
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_12_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 743.172,
+      "raw_video_s": 1209.6,
+      "clip_s": 56.333
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_12_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 744.242,
+      "raw_video_s": 1211.2,
+      "clip_s": 56.41
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_12_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 764.912,
+      "raw_video_s": 1244.4,
+      "clip_s": 57.99
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_12_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 769.02,
+      "raw_video_s": 1251.0,
+      "clip_s": 58.305
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_11_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 769.052,
+      "raw_video_s": 1251.0,
+      "clip_s": 58.305
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_11_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 799.674,
+      "raw_video_s": 1300.6,
+      "clip_s": 60.667
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_11_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 803.802,
+      "raw_video_s": 1307.0,
+      "clip_s": 60.971
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_10_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 803.854,
+      "raw_video_s": 1307.0,
+      "clip_s": 60.971
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 841.978,
+      "raw_video_s": 1368.2,
+      "clip_s": 63.886
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_10_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 846.336,
+      "raw_video_s": 1375.0,
+      "clip_s": 64.21
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 846.39,
+      "raw_video_s": 1375.2,
+      "clip_s": 64.219
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 863.616,
+      "raw_video_s": 1402.2,
+      "clip_s": 65.505
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_9_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 886.082,
+      "raw_video_s": 1438.0,
+      "clip_s": 67.21
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_9_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 890.192,
+      "raw_video_s": 1444.6,
+      "clip_s": 67.524
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 890.224,
+      "raw_video_s": 1444.6,
+      "clip_s": 67.524
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 912.332,
+      "raw_video_s": 1479.8,
+      "clip_s": 69.2
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_8_20",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 916.478,
+      "raw_video_s": 1486.2,
+      "clip_s": 69.505
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_21",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 916.534,
+      "raw_video_s": 1486.4,
+      "clip_s": 69.514
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_8_21",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 941.362,
+      "raw_video_s": 1525.8,
+      "clip_s": 71.39
+    },
+    {
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_8_21",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 952.412,
+      "raw_video_s": 1543.4,
+      "clip_s": 72.229
+    },
+    {
+      "event": "TOOL_RESULT",
+      "point": "point_8_21",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 956.57,
+      "raw_video_s": 1550.2,
+      "clip_s": 72.552
+    },
+    {
+      "event": "NAV_GOAL",
+      "point": "point_9_21",
+      "segment": null,
+      "direction": null,
+      "simulation_s": 956.614,
+      "raw_video_s": 1550.2,
+      "clip_s": 72.552
+    },
+    {
+      "event": "TASK_STOP",
+      "point": null,
+      "segment": null,
+      "direction": null,
+      "simulation_s": 978.306,
+      "raw_video_s": 1585.0,
+      "clip_s": 74.21
+    },
+    {
+      "event": "FINAL_TOOL_STOP",
+      "point": null,
+      "segment": null,
+      "direction": null,
+      "simulation_s": 978.792,
+      "raw_video_s": 1585.8,
+      "clip_s": 74.248
+    }
+  ],
+  "source_files": {
+    "spec.json": {
+      "source": "spec.json",
+      "raw_sha256": "bbf8f7730df51bb2ebebb0645da8ca68bcc4199f803c4892f32169480f625bf2",
+      "published_sha256": "bbf8f7730df51bb2ebebb0645da8ca68bcc4199f803c4892f32169480f625bf2"
+    },
+    "mission_result.json": {
+      "source": "mission_result.json",
+      "raw_sha256": "4408039d0039211737feadf3cf3b28d48c4e5e0bb7cb8d706d103b3dc8e2a3bc",
+      "published_sha256": "4408039d0039211737feadf3cf3b28d48c4e5e0bb7cb8d706d103b3dc8e2a3bc"
+    },
+    "mission_events.jsonl.gz": {
+      "source": "mission_events.jsonl",
+      "raw_sha256": "19a547aa94646eaae54049d58f72c28651565392ba217b6d7c68c44606cd55fe",
+      "published_sha256": "14bd8a33fd5cee130600a5d895d4507dc94c6df6bccbe00ffd33737f14ca99fe"
+    },
+    "runtime.json": {
+      "source": "runtime.json",
+      "raw_sha256": "6c1488ec87faf0690ca7390efe5b69a8d08aebe8f14e1bb7ce36df958dc1df0a",
+      "published_sha256": "6c1488ec87faf0690ca7390efe5b69a8d08aebe8f14e1bb7ce36df958dc1df0a"
+    },
+    "video/recording.json": {
+      "source": "video/recording.json",
+      "raw_sha256": "660ba5c4935b0550194b1cbd52e9b496ca2b8e2fc36ca81b90370f4c7fb01a78",
+      "published_sha256": "660ba5c4935b0550194b1cbd52e9b496ca2b8e2fc36ca81b90370f4c7fb01a78"
+    },
+    "video/frames.jsonl.gz": {
+      "source": "video/frames.jsonl",
+      "raw_sha256": "b74c51b4157119bb8579624b8d81e781bd12e87d50959fc3ef49e4d545f78206",
+      "published_sha256": "573ab2f4c795a0787d59174e7ed83380a92f69b2d83cb29acd6fc02e3d66d905"
+    }
+  }
+}

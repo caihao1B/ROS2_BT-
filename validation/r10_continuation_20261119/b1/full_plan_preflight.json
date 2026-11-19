@@ -1,0 +1,172 @@
+{
+  "schema": "B1-FULL-PLAN-PREFLIGHT/1",
+  "passed": true,
+  "tests": {
+    "exact_run_configuration": true,
+    "full_plan_geometry_validator": true,
+    "original_34_reference_status_partial": true,
+    "complete_46": true,
+    "first_and_final_poses_unchanged": true,
+    "only_five_original_turns_replaced_by_four": true,
+    "all_45_seams_continuous": true,
+    "single_gear_connector": true,
+    "exact_10_approved_work_fragments": true,
+    "original_nine_obligations_retained": true,
+    "approved_omitted_work_retained": true,
+    "original_requested_geometry": true,
+    "same_original_cluster_area_and_polygon": true,
+    "map_identity_and_frame": true,
+    "actual_qualified_subset_only": true
+  },
+  "candidate_version": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac",
+  "parent_47_version": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335",
+  "source_geometry": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+  "selected_connector_sha256": "2a8fed96cccf06c5cdd22719fab3dce1dec12ce74020d3bb1e2f289dc6eec2e7",
+  "reference_version": "16810c484d320666be161569e0ed65505864862eff375c124cc6a988d1b6e261",
+  "published_map_sha256": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+  "segment_count": 46,
+  "selected_indices_zero_based": [
+    22,
+    23,
+    24,
+    25
+  ],
+  "actual_strict_four_gear_report": "mowing_20261119_125335_539235",
+  "actual_full_cluster_status": "NOT_RUN_FOR_THIS_EDITION",
+  "original_full_cluster_area_m2": 195.99438340335297,
+  "original_work_target_union_m2": 188.3918016929564,
+  "target_symmetric_difference_m2": 0.0,
+  "preserved_original_obligation_order": [
+    "B1:segment:0",
+    "B1:segment:4",
+    "B1:segment:8",
+    "B1:segment:12",
+    "B1:segment:16",
+    "B1:segment:20",
+    "B1:segment:24",
+    "B1:segment:29",
+    "B1:segment:33"
+  ],
+  "approved_work_fragments": [
+    {
+      "segment": "B1:segment:0:safe:0",
+      "source_obligation": "B1:segment:0"
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "source_obligation": "B1:segment:4"
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "source_obligation": "B1:segment:8"
+    },
+    {
+      "segment": "B1:segment:12:safe:0",
+      "source_obligation": "B1:segment:12"
+    },
+    {
+      "segment": "B1:segment:16:safe:0",
+      "source_obligation": "B1:segment:16"
+    },
+    {
+      "segment": "B1:segment:16:safe:1",
+      "source_obligation": "B1:segment:16"
+    },
+    {
+      "segment": "B1:segment:20:safe:0",
+      "source_obligation": "B1:segment:20"
+    },
+    {
+      "segment": "B1:segment:24:safe:0",
+      "source_obligation": "B1:segment:24"
+    },
+    {
+      "segment": "B1:segment:29:safe:0",
+      "source_obligation": "B1:segment:29"
+    },
+    {
+      "segment": "B1:segment:29:safe:1",
+      "source_obligation": "B1:segment:29"
+    }
+  ],
+  "retained_work_without_safe_fragment": [
+    {
+      "obligation": "B1:segment:33",
+      "reason": "NO_AT_LEAST_1M_SAFE_WORK_FRAGMENT"
+    }
+  ],
+  "whole_plan_distance_m": 227.65308781269306,
+  "offline_expected_seconds": 1240.6123512507722,
+  "original_sim_time_gate_s": 1800,
+  "start_map": [
+    82.25344445444406,
+    36.3848589598888,
+    0.2617993877991483
+  ],
+  "end_map": [
+    99.98564269988519,
+    36.78802720206104,
+    0.2617993877991509
+  ],
+  "nominal_connector_sections": [
+    "B1:offline_connection:6:0",
+    "B1:offline_connection:6:1",
+    "B1:offline_connection:6:2",
+    "B1:offline_connection:6:3"
+  ],
+  "full_ordered_sections": [
+    "B1:segment:0:safe:0",
+    "B1:safe_turn:1:0",
+    "B1:segment:4:safe:0",
+    "B1:safe_turn:2:0",
+    "B1:safe_turn:2:1",
+    "B1:safe_turn:2:2",
+    "B1:segment:8:safe:0",
+    "B1:safe_turn:3:0",
+    "B1:safe_turn:3:1",
+    "B1:safe_turn:3:2",
+    "B1:safe_turn:3:3",
+    "B1:segment:12:safe:0",
+    "B1:safe_turn:4:0",
+    "B1:safe_turn:4:1",
+    "B1:safe_turn:4:2",
+    "B1:segment:16:safe:0",
+    "B1:safe_turn:5:0",
+    "B1:safe_turn:5:1",
+    "B1:safe_turn:5:2",
+    "B1:safe_turn:5:3",
+    "B1:safe_turn:5:4",
+    "B1:segment:16:safe:1",
+    "B1:offline_connection:6:0",
+    "B1:offline_connection:6:1",
+    "B1:offline_connection:6:2",
+    "B1:offline_connection:6:3",
+    "B1:segment:20:safe:0",
+    "B1:safe_turn:7:0",
+    "B1:safe_turn:7:1",
+    "B1:safe_turn:7:2",
+    "B1:safe_turn:7:3",
+    "B1:safe_turn:7:4",
+    "B1:safe_turn:7:5",
+    "B1:segment:24:safe:0",
+    "B1:safe_turn:8:0",
+    "B1:safe_turn:8:1",
+    "B1:safe_turn:8:2",
+    "B1:safe_turn:8:3",
+    "B1:safe_turn:8:4",
+    "B1:safe_turn:8:5",
+    "B1:safe_turn:8:6",
+    "B1:safe_turn:8:7",
+    "B1:segment:29:safe:0",
+    "B1:safe_turn:9:0",
+    "B1:safe_turn:9:1",
+    "B1:segment:29:safe:1"
+  ],
+  "compressed_full_edition": {
+    "filename": "mission_46.json.gz",
+    "sha256": "efd8b6ecc21462de43a164a9d687a38fb4ac3c95d71c96072ba63f9733dee22f",
+    "uncompressed_sha256": "3ea2fd1565ee1313114e0bf2ed77032f65081eb30e60f270ed553404057f4df3",
+    "size_bytes": 627687
+  },
+  "scope": "Offline preflight of the full mission. The vehicle trial started at index 22 and drove exactly four turn sections. Full-cluster passage, cutting, coverage fraction and elapsed work time remain unmeasured for this edition."
+}

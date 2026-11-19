@@ -25,7 +25,21 @@ def matches_case(name, spec):
             and spec.get('segment_start', 0) == 0 and spec.get('sim_seconds') in budgets)
 
 
+def experiment(args):
+    """Run a scoped vehicle experiment without replacing an official case receipt."""
+    entries = {
+        'spray_precision': PKG/'scripts/qualify_spray_session_r10.py',
+        'mowing_four_gear': PKG/'scripts/qualify_b1_context.py',
+        'spray_time_order': APP/'spray_route_time.py',
+        'vehicle_measurements': APP/'r10_checkpoint.py',
+    }
+    if not args or args[0] not in entries:
+        raise ValueError('Choose an R10 experiment: '+', '.join(entries))
+    return subprocess.run([str(BASE/'venvs/scene/bin/python'),str(entries[args[0]]),*args[1:]],cwd=ROOT).returncode
+
+
 def main(command,args):
+ if command=='experiment':return experiment(args)
  require('R09');out=APP/'results/R10';out.mkdir(parents=True,exist_ok=True)
  if command=='build':build();return 0
  if command=='build-mowing':build_mowing();return 0
@@ -154,6 +168,31 @@ def main(command,args):
  summary['safe_execution_validation']=safe_validation
  summary['independent_candidate_gnss_probe']=candidate_probe
  summary['original_B1_reference_status']='PARTIAL'
+ # Keep the measured four-stop experiments visible beside the original stage rows. They
+ # have no weight in the nine-case score, and retain the exact physical-feedback reports.
+ experiment_dir=ROOT/'validation/r10_continuation_20261119'
+ comparison_files=[]
+ if (experiment_dir/'checkpoint.json').is_file():
+  comparison_files=[experiment_dir/'a1/comparison.json',experiment_dir/'b1/physical_connector_report.json',experiment_dir/'checkpoint.json']
+  if not all(f.is_file() for f in comparison_files):raise ValueError('Incomplete four-stop experiment reports')
+  spray_evidence,mow_evidence,checkpoint=(read(f) for f in comparison_files)
+  if checkpoint.get('full_cluster_credit') is not False:raise ValueError('Subsets cannot replace full task evidence')
+  summary['measured_vehicle_experiments']=dict(
+      formal_credit=False,source_reports=[dict(path=str(f.relative_to(ROOT)),sha256=sha(f)) for f in comparison_files],
+      spray=[dict(session=r['session'],selected=r['selected_count'],completed=r['completed_count'],
+                  passed=r['measured_subset_pass'],elapsed_sim_s=r['elapsed_sim_s']) for r in spray_evidence['runs']],
+      four_gear=dict(session=mow_evidence['session'],verified=mow_evidence['verified_parking_stops'],
+                     selected=mow_evidence['selected_sections'],passed=mow_evidence['passed']))
+  full_selection=experiment_dir/'a1/full_selection.json'
+  if full_selection.is_file():
+   full=read(full_selection)
+   if full['selected_count']!=full['total_original'] or full['total_original']!=56 or full['formal_credit'] is not False:
+    raise ValueError('Expected the supplementary original 56-point selection')
+   comparison_files.append(full_selection)
+   summary['measured_vehicle_experiments']['full_spray_selection']=dict(
+       session=full['session'],selected=full['selected_count'],completed=full['completed_count'],
+       passed=full['measured_subset_pass'],sim_s=full['elapsed_sim_s'],error=full['error'],
+       path=str(full_selection.relative_to(ROOT)),sha256=sha(full_selection))
  from overview_r10 import build as build_overview
  dump(out/'case_summary.json',summary)
  build_overview()
@@ -168,6 +207,7 @@ def main(command,args):
  files+=list((out/'candidate_gnss_probe').glob('*'))+[APP/'build/r10_spray_global/r10_global_manager',APP/'build/r10_spray_global_source/global_manager.cpp',APP/'build/r10_spray_global_source/stopped_revalidation.inc']
  files+=list((out/'precision_progress_probe').glob('*'))+[APP/'build/r10_spray_bt/r10_spray_supervisor',APP/'build/r10_spray_bt_source/policy.hpp',APP/'build/r10_spray_bt_source/supervisor.cpp']
  files.extend([out/'safe_plan_validation.json',gyro_path])
+ files.extend(comparison_files)
  files.append(out/'docking_diagnosis.json')
  files.append(out/'mowing_start_diagnosis.json')
  files.append(out/'repair_attempts.json')

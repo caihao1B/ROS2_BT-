@@ -1,0 +1,152 @@
+{
+  "schema": "B1-FOUR-GEAR-PHYSICAL/1",
+  "passed": false,
+  "formal_credit": false,
+  "checks": {
+    "four_measured_parking_positions_and_headings": false,
+    "four_goals_ordered": false,
+    "sensor_localized": true,
+    "map_xy_rmse_under_15cm": true,
+    "vehicle_footprint_inside_original_authority": true,
+    "no_unexpected_contact": true,
+    "physical_blades_off_everywhere": true,
+    "zero_work_ledger": true,
+    "unique_actuator": true,
+    "unique_tool": true,
+    "unique_tf": true,
+    "curvature_bounded": true,
+    "measured_final_stop": true,
+    "runtime_clean": true,
+    "original_database_unchanged": true,
+    "unchanged_geometry_checks": true,
+    "plan_bindings": true
+  },
+  "session": "mowing_20261119_122854_238212",
+  "relative_session": "optimization_v2/three_tasks/results/experiments/b1_connector/mowing_20261119_122854_238212",
+  "plan_revision": "e6c68d1a7108c11bad6dc8f2a118f6a492f817b2dac59249448955f45592f79b",
+  "geometry_sha256": "2a8fed96cccf06c5cdd22719fab3dce1dec12ce74020d3bb1e2f289dc6eec2e7",
+  "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+  "selected_sections": 4,
+  "verified_parking_stops": 0,
+  "trajectory": [
+    {
+      "segment": "B1:offline_connection:6:0",
+      "direction": 1,
+      "length_m": 1.4149686754849407,
+      "goal_map": [
+        86.75393716261267,
+        32.12194275301114,
+        2.946702758863019
+      ],
+      "action_accepted": 7,
+      "state": "ATTEMPTED",
+      "parking_window": null,
+      "stop_observation": {
+        "event": "BOTH_PHYSICAL_STOPS_CONFIRMED",
+        "sim_s": 31.622,
+        "physical_xy_error_m": 0.7200172504369393,
+        "physical_yaw_error_rad": 0.2576634333619241,
+        "physical": {
+          "longitudinal_m": -0.7168274395668843,
+          "lateral_left_m": -0.0676997991928707,
+          "overshoot_in_motion_direction_m": -0.7168274395668843,
+          "yaw_error_signed_rad": 0.2576634333619241,
+          "xy_error_m": 0.7200172504369393
+        },
+        "estimated": {
+          "longitudinal_m": -0.6761086137123723,
+          "lateral_left_m": -0.0809237083072035,
+          "overshoot_in_motion_direction_m": -0.6761086137123723,
+          "yaw_error_signed_rad": 0.2584113863292661,
+          "xy_error_m": 0.6809342876535556
+        },
+        "estimate_stamp": 31.62,
+        "cause": "POSITION_OUTSIDE"
+      },
+      "first_goal_sim_s": 22.17,
+      "stopped_gear_armed": true,
+      "physical_forward_m": 0.6970831028581789,
+      "physical_reverse_m": 0,
+      "maximum_path_cross_track_m": 0.01597846326105089,
+      "completed_by_worker": false,
+      "failure_class": "POSITION_OUTSIDE"
+    },
+    {
+      "segment": "B1:offline_connection:6:1",
+      "direction": -1,
+      "length_m": 2.195824135184883,
+      "goal_map": [
+        88.58785649065003,
+        30.999455600140266,
+        2.2379879057101375
+      ],
+      "action_accepted": 0,
+      "state": "NOT_STARTED",
+      "parking_window": null,
+      "stop_observation": null
+    },
+    {
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "length_m": 21.852812780100372,
+      "goal_map": [
+        102.94387567748458,
+        30.81321081290492,
+        -0.53692704041775
+      ],
+      "action_accepted": 0,
+      "state": "NOT_STARTED",
+      "parking_window": null,
+      "stop_observation": null
+    },
+    {
+      "segment": "B1:offline_connection:6:3",
+      "direction": -1,
+      "length_m": 2.474708519860936,
+      "goal_map": [
+        100.55717284124896,
+        31.143621631592943,
+        0.261799387799147
+      ],
+      "action_accepted": 0,
+      "state": "NOT_STARTED",
+      "parking_window": null,
+      "stop_observation": null
+    }
+  ],
+  "terminal": "HUMAN_REQUIRED",
+  "terminal_error": "RuntimeError('SEGMENT_RETRY_BOUND')",
+  "accepted_quality_samples": 104,
+  "localization_reasons": {
+    "STARTUP_CORRECTION_STABILITY_PENDING": 32,
+    "GNSS_MAP_INNOVATION_OR_FRESHNESS": 1,
+    "HELD_OUT_SURFACE_MATCH": 104
+  },
+  "map_xy_rmse_m": 0.046418499397842254,
+  "footprint_outside_samples": 0,
+  "unexpected_contacts": {},
+  "ledger_jobs": 0,
+  "source_binding_mismatches": [],
+  "runtime_wall_s": 82.08569851599896,
+  "runtime_error": null,
+  "forced": [],
+  "sim_s": 31.624,
+  "final_stop": {
+    "task_sim_s": 31.624,
+    "independent_linear_speed_mps": 0.0,
+    "independent_angular_speed_rad_s": 0.0,
+    "independent_rotor_rad_s": 3.4837461392212807e-19,
+    "vehicle_gate": true,
+    "tool_gate": true
+  },
+  "physical_limits": {
+    "position_m": 0.1,
+    "yaw_rad": 0.12,
+    "stopped_linear_mps": 0.01,
+    "stopped_angular_rad_s": 0.02,
+    "tracking_m": 0.25,
+    "minimum_stopped_s": 0.6
+  },
+  "scope": "Only four tool-off B1 connector sections. Endpoint estimates and isolated Gazebo pose streams are compared on each stopped interval; no cluster or work credit.",
+  "parking_sample_file_sha256": "b9984989a432cb3597a83d6a8f268ac5dfbe04181fbc566c4192884be590de63"
+}

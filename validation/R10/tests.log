@@ -128,11 +128,14 @@ test_estimates_sensor_difference_and_keeps_real_rotation (test_stationary_gyro_r
 test_gap_or_bad_samples_restart_stationary_dwell (test_stationary_gyro_r10.StationaryCalibrationTest.test_gap_or_bad_samples_restart_stationary_dwell) ... ok
 test_motion_sparse_data_and_large_fault_cannot_calibrate (test_stationary_gyro_r10.StationaryCalibrationTest.test_motion_sparse_data_and_large_fault_cannot_calibrate) ... ok
 test_only_fresh_evaluated_wheel_conflicts_veto (test_stationary_gyro_r10.StationaryCalibrationTest.test_only_fresh_evaluated_wheel_conflicts_veto) ... ok
+test_carried_over_replan_is_rejected_after_cusp (test_switch_evidence_r10.SwitchEvidenceTest.test_carried_over_replan_is_rejected_after_cusp) ... ok
+test_emergency_and_lost_localization_are_immediate (test_switch_evidence_r10.SwitchEvidenceTest.test_emergency_and_lost_localization_are_immediate) ... ok
+test_valid_current_obstruction_can_still_trigger_replanning (test_switch_evidence_r10.SwitchEvidenceTest.test_valid_current_obstruction_can_still_trigger_replanning) ... ok
 test_bad_inputs_rejected (test_terminal_approach_r10.TerminalApproach.test_bad_inputs_rejected) ... ok
 test_exact_pose_and_forward_kinematics_at_wrapped_headings (test_terminal_approach_r10.TerminalApproach.test_exact_pose_and_forward_kinematics_at_wrapped_headings) ... ok
 test_unsafe_tail_does_not_gain_admission (test_terminal_approach_r10.TerminalApproach.test_unsafe_tail_does_not_gain_admission) ... ok
 
 ----------------------------------------------------------------------
-Ran 133 tests in 5.328s
+Ran 136 tests in 5.480s
 
 OK

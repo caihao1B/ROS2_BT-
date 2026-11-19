@@ -1,0 +1,259 @@
+{
+  "session": "mowing_20261119_125335_539235",
+  "source_file_sha256": {
+    "mission_events.jsonl": "1ef7bf58eb366f55118b17056e01f0e5458bd7b09a35e4b5dce79c40f1c89fb3",
+    "decisions.jsonl": "8a708c9db3a5fec18e43de485c5d725bca14d75e42ec0d5fa352c6326fc61ce5",
+    "control/gate.jsonl": "635b18c0e87c74b203274b16a3f6daf54c8825226f8cbcfa4cea86de1d2369fc"
+  },
+  "scope": "Independent temporal cross-check of persisted BT samples and actually accepted FollowPath goals. BT log records transitions/0.2 s samples, so both sides of each first action are retained.",
+  "original_four_followpath_dispatches": [
+    {
+      "id": "B1:offline_connection:6:0",
+      "gear": 1,
+      "first_accepted_goal": {
+        "t": 22.158,
+        "event": "SEGMENT_GOAL",
+        "segment": "B1:offline_connection:6:0",
+        "kind": "TURN_TOOL_OFF",
+        "direction": 1,
+        "original_poses": 37,
+        "remaining_poses": 37,
+        "tool_expected": false,
+        "original_members": [
+          "B1:offline_connection:6:0"
+        ]
+      },
+      "all_accepted_goal_sim_s": [
+        22.158
+      ],
+      "recorded_execute_at_or_before": {
+        "t": 22.058,
+        "action": "EXECUTE",
+        "reason": "NEXT_OBLIGATION",
+        "context_sequence": 731,
+        "capture": 21.8,
+        "obligation_id": "B1:offline_connection:6:0",
+        "direction": 1
+      },
+      "recorded_execute_at_or_after": {
+        "t": 22.266,
+        "action": "EXECUTE",
+        "reason": "NEXT_OBLIGATION",
+        "context_sequence": 738,
+        "capture": 22.0,
+        "obligation_id": "B1:offline_connection:6:0",
+        "direction": 1
+      }
+    },
+    {
+      "id": "B1:offline_connection:6:1",
+      "gear": -1,
+      "first_accepted_goal": {
+        "t": 35.264,
+        "event": "SEGMENT_GOAL",
+        "segment": "B1:offline_connection:6:1",
+        "kind": "TURN_TOOL_OFF",
+        "direction": -1,
+        "original_poses": 57,
+        "remaining_poses": 57,
+        "tool_expected": false,
+        "original_members": [
+          "B1:offline_connection:6:1"
+        ]
+      },
+      "all_accepted_goal_sim_s": [
+        35.264,
+        37.148,
+        38.718,
+        47.234,
+        49.926
+      ],
+      "recorded_execute_at_or_before": {
+        "t": 35.198,
+        "action": "EXECUTE",
+        "reason": "NEXT_OBLIGATION",
+        "context_sequence": 1169,
+        "capture": 34.9,
+        "obligation_id": "B1:offline_connection:6:1",
+        "direction": -1
+      },
+      "recorded_execute_at_or_after": {
+        "t": 35.404,
+        "action": "EXECUTE",
+        "reason": "NEXT_OBLIGATION",
+        "context_sequence": 1176,
+        "capture": 35.0,
+        "obligation_id": "B1:offline_connection:6:1",
+        "direction": -1
+      }
+    },
+    {
+      "id": "B1:offline_connection:6:2",
+      "gear": 1,
+      "first_accepted_goal": {
+        "t": 55.04,
+        "event": "SEGMENT_GOAL",
+        "segment": "B1:offline_connection:6:2",
+        "kind": "TURN_TOOL_OFF",
+        "direction": 1,
+        "original_poses": 553,
+        "remaining_poses": 553,
+        "tool_expected": false,
+        "original_members": [
+          "B1:offline_connection:6:2"
+        ]
+      },
+      "all_accepted_goal_sim_s": [
+        55.04,
+        58.296,
+        61.812,
+        65.072,
+        84.634,
+        90.57,
+        104.356,
+        109.382,
+        139.542,
+        152.768,
+        160.994,
+        192.848,
+        195.426,
+        196.334
+      ],
+      "recorded_execute_at_or_before": {
+        "t": 54.942,
+        "action": "EXECUTE",
+        "reason": "NEXT_OBLIGATION",
+        "context_sequence": 1827,
+        "capture": 54.4,
+        "obligation_id": "B1:offline_connection:6:2",
+        "direction": 1
+      },
+      "recorded_execute_at_or_after": {
+        "t": 55.146,
+        "action": "EXECUTE",
+        "reason": "NEXT_OBLIGATION",
+        "context_sequence": 1834,
+        "capture": 54.9,
+        "obligation_id": "B1:offline_connection:6:2",
+        "direction": 1
+      }
+    },
+    {
+      "id": "B1:offline_connection:6:3",
+      "gear": -1,
+      "first_accepted_goal": {
+        "t": 203.382,
+        "event": "SEGMENT_GOAL",
+        "segment": "B1:offline_connection:6:3",
+        "kind": "TURN_TOOL_OFF",
+        "direction": -1,
+        "original_poses": 64,
+        "remaining_poses": 64,
+        "tool_expected": false,
+        "original_members": [
+          "B1:offline_connection:6:3"
+        ]
+      },
+      "all_accepted_goal_sim_s": [
+        203.382,
+        204.542,
+        208.692
+      ],
+      "recorded_execute_at_or_before": {
+        "t": 203.19,
+        "action": "EXECUTE",
+        "reason": "NEXT_OBLIGATION",
+        "context_sequence": 6769,
+        "capture": 202.8,
+        "obligation_id": "B1:offline_connection:6:3",
+        "direction": -1
+      },
+      "recorded_execute_at_or_after": {
+        "t": 203.392,
+        "action": "EXECUTE",
+        "reason": "NEXT_OBLIGATION",
+        "context_sequence": 6775,
+        "capture": 203.0,
+        "obligation_id": "B1:offline_connection:6:3",
+        "direction": -1
+      }
+    }
+  ],
+  "rearmed_only_after_observed_progress": [
+    {
+      "t": 47.232,
+      "event": "OBSERVED_PATH_PROGRESS_REARMS_CONSECUTIVE_RETRIES",
+      "segment": "B1:offline_connection:6:1",
+      "arc_m": 1.7258412006069452,
+      "total_interruptions": 3
+    },
+    {
+      "t": 65.072,
+      "event": "OBSERVED_PATH_PROGRESS_REARMS_CONSECUTIVE_RETRIES",
+      "segment": "B1:offline_connection:6:2",
+      "arc_m": 1.2113018878779682,
+      "total_interruptions": 3
+    },
+    {
+      "t": 84.634,
+      "event": "OBSERVED_PATH_PROGRESS_REARMS_CONSECUTIVE_RETRIES",
+      "segment": "B1:offline_connection:6:2",
+      "arc_m": 4.6654172719544285,
+      "total_interruptions": 4
+    },
+    {
+      "t": 104.354,
+      "event": "OBSERVED_PATH_PROGRESS_REARMS_CONSECUTIVE_RETRIES",
+      "segment": "B1:offline_connection:6:2",
+      "arc_m": 7.537976743315948,
+      "total_interruptions": 6
+    },
+    {
+      "t": 139.542,
+      "event": "OBSERVED_PATH_PROGRESS_REARMS_CONSECUTIVE_RETRIES",
+      "segment": "B1:offline_connection:6:2",
+      "arc_m": 13.19423926320551,
+      "total_interruptions": 8
+    },
+    {
+      "t": 152.768,
+      "event": "OBSERVED_PATH_PROGRESS_REARMS_CONSECUTIVE_RETRIES",
+      "segment": "B1:offline_connection:6:2",
+      "arc_m": 15.220279927357115,
+      "total_interruptions": 9
+    },
+    {
+      "t": 160.994,
+      "event": "OBSERVED_PATH_PROGRESS_REARMS_CONSECUTIVE_RETRIES",
+      "segment": "B1:offline_connection:6:2",
+      "arc_m": 16.686052633080717,
+      "total_interruptions": 10
+    },
+    {
+      "t": 192.846,
+      "event": "OBSERVED_PATH_PROGRESS_REARMS_CONSECUTIVE_RETRIES",
+      "segment": "B1:offline_connection:6:2",
+      "arc_m": 21.299719222222905,
+      "total_interruptions": 11
+    }
+  ],
+  "physical_admission_after_canceled_nav": [],
+  "selected_four_complete": {
+    "t": 226.172,
+    "event": "SELECTED_SEGMENTS_TRAVERSED",
+    "selected": 4,
+    "navigation_groups": 4,
+    "original": 46,
+    "coverage_completion": "read feedback ledger separately"
+  },
+  "final_stops": [
+    {
+      "t": 228.312,
+      "event": "BOTH_PHYSICAL_STOPS_CONFIRMED",
+      "segment": "B1:offline_connection:6:3"
+    }
+  ],
+  "original_safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+  "current_candidate_revision": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac",
+  "execution_speed_policy": "0 m/s during front steering alignment"
+}

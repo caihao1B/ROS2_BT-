@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "terminal": "COMPLETED",
+  "controlled_hold": false,
+  "error": null,
+  "t": 228.312,
+  "selected_segments": 4,
+  "navigation_groups": 4,
+  "original_segment_passages": [
+    {
+      "segment": "B1:offline_connection:6:0",
+      "xy_error_m": 0.09647816141815894,
+      "yaw_error_rad": 0.04497829651165386,
+      "t": 31.17
+    },
+    {
+      "segment": "B1:offline_connection:6:1",
+      "xy_error_m": 0.09704254897077273,
+      "yaw_error_rad": 0.02903199263416889,
+      "t": 50.46
+    },
+    {
+      "segment": "B1:offline_connection:6:2",
+      "xy_error_m": 0.09869615888354422,
+      "yaw_error_rad": 0.006941770130682979,
+      "t": 198.542
+    },
+    {
+      "segment": "B1:offline_connection:6:3",
+      "xy_error_m": 0.09726881878913031,
+      "yaw_error_rad": 0.06039661886700662,
+      "t": 219.842
+    }
+  ],
+  "original_segments": 46,
+  "execution_segments": 46,
+  "reference_original_segments": 34,
+  "original_reference_status": "PARTIAL",
+  "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+  "localization_revalidations": {},
+  "completed_segments": [
+    "B1:offline_connection:6:0",
+    "B1:offline_connection:6:1",
+    "B1:offline_connection:6:2",
+    "B1:offline_connection:6:3"
+  ],
+  "remaining_selected": [],
+  "not_selected": [
+    "B1:segment:0:safe:0",
+    "B1:safe_turn:1:0",
+    "B1:segment:4:safe:0",
+    "B1:safe_turn:2:0",
+    "B1:safe_turn:2:1",
+    "B1:safe_turn:2:2",
+    "B1:segment:8:safe:0",
+    "B1:safe_turn:3:0",
+    "B1:safe_turn:3:1",
+    "B1:safe_turn:3:2",
+    "B1:safe_turn:3:3",
+    "B1:segment:12:safe:0",
+    "B1:safe_turn:4:0",
+    "B1:safe_turn:4:1",
+    "B1:safe_turn:4:2",
+    "B1:segment:16:safe:0",
+    "B1:safe_turn:5:0",
+    "B1:safe_turn:5:1",
+    "B1:safe_turn:5:2",
+    "B1:safe_turn:5:3",
+    "B1:safe_turn:5:4",
+    "B1:segment:16:safe:1",
+    "B1:segment:20:safe:0",
+    "B1:safe_turn:7:0",
+    "B1:safe_turn:7:1",
+    "B1:safe_turn:7:2",
+    "B1:safe_turn:7:3",
+    "B1:safe_turn:7:4",
+    "B1:safe_turn:7:5",
+    "B1:segment:24:safe:0",
+    "B1:safe_turn:8:0",
+    "B1:safe_turn:8:1",
+    "B1:safe_turn:8:2",
+    "B1:safe_turn:8:3",
+    "B1:safe_turn:8:4",
+    "B1:safe_turn:8:5",
+    "B1:safe_turn:8:6",
+    "B1:safe_turn:8:7",
+    "B1:segment:29:safe:0",
+    "B1:safe_turn:9:0",
+    "B1:safe_turn:9:1",
+    "B1:segment:29:safe:1"
+  ],
+  "work_results": [],
+  "replans": 0,
+  "coverage_rejoins": 0,
+  "coverage_planner_queries": 0,
+  "endpoint_recoveries": 0,
+  "endpoint_planner_queries": 0,
+  "continuous_recovery_queries": 0,
+  "final_gate": {
+    "t": 228.3,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "NAV_COMMAND_STALE"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 30.023599781727054,
+    "armed_direction": -1,
+    "raw_nav_v": 0.0,
+    "raw_nav_w": 0.0
+  },
+  "ownership": {
+    "/tf": [
+      "s05_local_odometry",
+      "s08_global_pose_manager"
+    ],
+    "/s03/actuator/request": [
+      "r09_actuator_gate"
+    ],
+    "/s10/tool/command": [
+      "s10_tool_action_server"
+    ]
+  },
+  "wall_seconds": 485.39888760300164,
+  "execution_mode": "original_primitive_boundaries",
+  "scope": "All current approved execution goals checked in order; original 34 reference remains PARTIAL; unchanged original work polygons use physical feedback only"
+}

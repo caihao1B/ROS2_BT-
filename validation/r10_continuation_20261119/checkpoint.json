@@ -1,0 +1,125 @@
+{
+  "schema": "R10-VEHICLE-CHECKPOINT/1",
+  "a1_equal_work": [
+    {
+      "before_session": "spray_defer_20261119_121141_482729",
+      "after_session": "spray_defer_20261119_121833_942724",
+      "common_confirmed_prefix": [
+        {
+          "point": "point_11_20",
+          "before_sim_s": 7.418,
+          "after_sim_s": 6.068
+        },
+        {
+          "point": "point_10_20",
+          "before_sim_s": 41.31,
+          "after_sim_s": 26.452
+        },
+        {
+          "point": "point_9_20",
+          "before_sim_s": 34.042,
+          "after_sim_s": 29.596
+        }
+      ],
+      "consecutive_travel_and_service_cycles": 2,
+      "before_travel_and_service_s": 75.352,
+      "after_travel_and_service_s": 56.048
+    },
+    {
+      "before_session": "spray_defer_20261119_121141_482729",
+      "after_session": "spray_defer_20261119_122402_750899",
+      "common_confirmed_prefix": [
+        {
+          "point": "point_11_20",
+          "before_sim_s": 7.418,
+          "after_sim_s": 6.052
+        },
+        {
+          "point": "point_10_20",
+          "before_sim_s": 41.31,
+          "after_sim_s": 24.824
+        },
+        {
+          "point": "point_9_20",
+          "before_sim_s": 34.042,
+          "after_sim_s": 30.994
+        }
+      ],
+      "consecutive_travel_and_service_cycles": 2,
+      "before_travel_and_service_s": 75.352,
+      "after_travel_and_service_s": 55.818
+    }
+  ],
+  "b1_stop_states": {
+    "B1:offline_connection:6:0": "PHYSICALLY_VERIFIED",
+    "B1:offline_connection:6:1": "PHYSICALLY_VERIFIED",
+    "B1:offline_connection:6:2": "PHYSICALLY_VERIFIED",
+    "B1:offline_connection:6:3": "PHYSICALLY_VERIFIED"
+  },
+  "b1_physical_verified": 4,
+  "b1_expected": 4,
+  "full_cluster_credit": false,
+  "a1_full_original_prefix": {
+    "current_session": "spray_defer_20261119_130223_269769",
+    "compared_sessions": [
+      {
+        "control_session": "spray_20261115_060145_047614",
+        "shared_consecutive_points": 26,
+        "travel_and_service_cycles": 25,
+        "last_shared_point": "point_8_21",
+        "control_sim_s": 1157.998,
+        "current_sim_s": 929.898,
+        "difference_current_minus_control_s": -228.1
+      },
+      {
+        "control_session": "spray_20261119_081218_417252",
+        "shared_consecutive_points": 22,
+        "travel_and_service_cycles": 21,
+        "last_shared_point": "point_11_20",
+        "control_sim_s": 862.112,
+        "current_sim_s": 777.13,
+        "difference_current_minus_control_s": -84.982
+      }
+    ],
+    "clock": "Simulation seconds elapsed between the first and last confirmed dose in the common prefix. Includes all intervening waits.",
+    "scope": "Identical original point order. Runs can differ in startup, observation scheduling, control versions and recovery events."
+  },
+  "b1_attempt_history": [
+    {
+      "session": "mowing_20261119_122854_238212",
+      "plan_revision": "e6c68d1a7108c11bad6dc8f2a118f6a492f817b2dac59249448955f45592f79b",
+      "verified": 0,
+      "selected": 4,
+      "sim_s": 31.624,
+      "mission_terminal": "HUMAN_REQUIRED",
+      "physical_route_pass": false
+    },
+    {
+      "session": "mowing_20261119_123242_987678",
+      "plan_revision": "fe669041377cf2ded01c1dc4ce85a34d4b34d0d698107bfb8b647a7e96844d85",
+      "verified": 1,
+      "selected": 4,
+      "sim_s": 207.902,
+      "mission_terminal": "HUMAN_REQUIRED",
+      "physical_route_pass": false
+    },
+    {
+      "session": "mowing_20261119_124201_958601",
+      "plan_revision": "d179efd697981faaba036c8c740537fa6e739815740be7b3f6d4b2090ee248f8",
+      "verified": 3,
+      "selected": 4,
+      "sim_s": 279.382,
+      "mission_terminal": "COMPLETED",
+      "physical_route_pass": false
+    },
+    {
+      "session": "mowing_20261119_125335_539235",
+      "plan_revision": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac",
+      "verified": 4,
+      "selected": 4,
+      "sim_s": 228.312,
+      "mission_terminal": "COMPLETED",
+      "physical_route_pass": true
+    }
+  ]
+}

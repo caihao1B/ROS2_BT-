@@ -1,0 +1,273 @@
+{
+  "checkout_component_tests": {
+    "python_suites": {
+      "optimization_v2/three_tasks/test_r10_checkpoint.py": 4,
+      "optimization_v2/three_tasks/test_spray_route_time.py": 3,
+      "optimization_v2/ws/src/task_platform/scripts/test_spray_precision_r10.py": 5,
+      "optimization_v2/ws/src/task_platform/tests/test_switch_evidence_r10.py": 3
+    },
+    "python_passed": 15,
+    "cpp": {
+      "test": "optimization_v2/ws/src/task_platform/r10_backend/terrain_pairing_test.cpp",
+      "compiled_and_executed": true,
+      "tested_include": "optimization_v2/three_tasks/build/spray_terrain_pairing_session_source/terrain_pairing_session.inc",
+      "include_sha256": "96dd7c0e80ffcd5430b3860f243c0ac0c8fa35c9ae9a4b012fcea0f6e0cac9f5",
+      "result": "matched delayed odometry, missing odometry timeout, stale cloud, bounded replacement and clock rollback: PASS"
+    }
+  },
+  "schema": "r10-continuation-release/1",
+  "phase": "final",
+  "base_commit": "0868d45bfc8f88646cea9c4d5e33d01ff64f4ef9",
+  "passed": true,
+  "issues": [],
+  "changed_paths_except_report": 259,
+  "public_videos_sha256_verified": 27,
+  "sealed_local_films_sha256_verified": 25,
+  "protected_R01_R09": 9,
+  "stages": {
+    "R01": "PASS",
+    "R02": "PASS",
+    "R03": "PASS",
+    "R04": "PASS",
+    "R05": "PASS",
+    "R06": "PASS",
+    "R07": "PASS",
+    "R08": "PASS",
+    "R09": "PASS",
+    "R10": "PARTIAL",
+    "R11": "PARTIAL",
+    "R12": "PARTIAL"
+  },
+  "original_S17_S18": {
+    "S17": "PARTIAL",
+    "S18": "PARTIAL"
+  },
+  "sealed_public_artifacts": {
+    "R10": {
+      "tracked_public": 154,
+      "local_qualification_or_build": 2807
+    },
+    "R11": {
+      "tracked_public": 44,
+      "local_qualification_or_build": 53
+    },
+    "R12": {
+      "tracked_public": 26,
+      "local_qualification_or_build": 2538
+    }
+  },
+  "frozen_map_members": 10,
+  "original_constraints_verified": true,
+  "four_gear_candidate_unchanged": true,
+  "new_films": [
+    {
+      "session": "spray_defer_20261119_121141_482729",
+      "task": "spray",
+      "original_frames": 1613,
+      "original_seconds": 322.6,
+      "clip_seconds": 62.0,
+      "events": 33
+    },
+    {
+      "session": "spray_defer_20261119_121833_942724",
+      "task": "spray",
+      "original_frames": 1351,
+      "original_seconds": 270.2,
+      "clip_seconds": 66.2,
+      "events": 14
+    },
+    {
+      "session": "spray_defer_20261119_130223_269769",
+      "task": "spray",
+      "original_frames": 7959,
+      "original_seconds": 1591.8,
+      "clip_seconds": 74.4,
+      "events": 102
+    },
+    {
+      "session": "spray_defer_20261119_122402_750899",
+      "task": "spray",
+      "original_frames": 1220,
+      "original_seconds": 244.0,
+      "clip_seconds": 57.9,
+      "events": 14
+    },
+    {
+      "session": "mowing_20261119_125335_539235",
+      "task": "mowing",
+      "original_frames": 2450,
+      "original_seconds": 490.0,
+      "clip_seconds": 73.2,
+      "events": 33
+    },
+    {
+      "session": "mowing_20261119_122854_238212",
+      "task": "mowing",
+      "original_frames": 347,
+      "original_seconds": 69.4,
+      "clip_seconds": 25.0,
+      "events": 8
+    },
+    {
+      "session": "mowing_20261119_123242_987678",
+      "task": "mowing",
+      "original_frames": 2361,
+      "original_seconds": 472.2,
+      "clip_seconds": 70.4,
+      "events": 16
+    },
+    {
+      "session": "mowing_20261119_124201_958601",
+      "task": "mowing",
+      "original_frames": 3253,
+      "original_seconds": 650.6,
+      "clip_seconds": 73.3,
+      "events": 18
+    }
+  ],
+  "run_source_provenance": {
+    "spray_defer_20261119_121141_482729": {
+      "base_commit": 109,
+      "source_archive": 8,
+      "build_artifact_hash_only": 10,
+      "generated_scene_inputs": 1
+    },
+    "spray_defer_20261119_121833_942724": {
+      "base_commit": 109,
+      "source_archive": 15,
+      "build_artifact_hash_only": 11,
+      "generated_scene_inputs": 1
+    },
+    "spray_defer_20261119_130223_269769": {
+      "base_commit": 109,
+      "source_archive": 17,
+      "build_artifact_hash_only": 11,
+      "generated_scene_inputs": 1
+    },
+    "spray_defer_20261119_122402_750899": {
+      "base_commit": 109,
+      "source_archive": 17,
+      "build_artifact_hash_only": 11,
+      "generated_scene_inputs": 1
+    },
+    "mowing_20261119_125335_539235": {
+      "base_commit": 138,
+      "source_archive": 26,
+      "build_artifact_hash_only": 13,
+      "generated_scene_inputs": 7
+    },
+    "mowing_20261119_122854_238212": {
+      "base_commit": 138,
+      "source_archive": 9,
+      "build_artifact_hash_only": 11,
+      "generated_scene_inputs": 7
+    },
+    "mowing_20261119_123242_987678": {
+      "base_commit": 138,
+      "source_archive": 17,
+      "build_artifact_hash_only": 12,
+      "generated_scene_inputs": 7
+    },
+    "mowing_20261119_124201_958601": {
+      "base_commit": 138,
+      "source_archive": 24,
+      "build_artifact_hash_only": 13,
+      "generated_scene_inputs": 7
+    }
+  },
+  "measured_subsets": {
+    "spray_defer_20261119_121141_482729": {
+      "task": "spray",
+      "selected": 4,
+      "verified": 3,
+      "scope": "selected point service"
+    },
+    "spray_defer_20261119_121833_942724": {
+      "task": "spray",
+      "selected": 4,
+      "verified": 4,
+      "scope": "selected point service"
+    },
+    "spray_defer_20261119_122402_750899": {
+      "task": "spray",
+      "selected": 4,
+      "verified": 4,
+      "scope": "selected point service"
+    },
+    "spray_defer_20261119_130223_269769": {
+      "task": "spray",
+      "selected": 56,
+      "verified": 26,
+      "scope": "full original selection, bounded run"
+    },
+    "mowing_20261119_123242_987678": {
+      "task": "mowing",
+      "selected": 4,
+      "verified": 1,
+      "scope": "four-gear alignment"
+    },
+    "mowing_20261119_122854_238212": {
+      "task": "mowing",
+      "selected": 4,
+      "verified": 0,
+      "scope": "four-gear alignment"
+    },
+    "mowing_20261119_125335_539235": {
+      "task": "mowing",
+      "selected": 4,
+      "verified": 4,
+      "scope": "four-gear alignment"
+    },
+    "mowing_20261119_124201_958601": {
+      "task": "mowing",
+      "selected": 4,
+      "verified": 3,
+      "scope": "four-gear alignment"
+    }
+  },
+  "physical_work_archives": {
+    "spray_defer_20261119_121141_482729": {
+      "files": 8,
+      "sqlite_integrity": "ok",
+      "verified_ledger_points": 3,
+      "agrees_with_mission": true
+    },
+    "spray_defer_20261119_121833_942724": {
+      "files": 8,
+      "sqlite_integrity": "ok",
+      "verified_ledger_points": 4,
+      "agrees_with_mission": true
+    },
+    "spray_defer_20261119_130223_269769": {
+      "files": 8,
+      "sqlite_integrity": "ok",
+      "verified_ledger_points": 26,
+      "agrees_with_mission": true
+    },
+    "spray_defer_20261119_122402_750899": {
+      "files": 8,
+      "sqlite_integrity": "ok",
+      "verified_ledger_points": 4,
+      "agrees_with_mission": true
+    }
+  },
+  "offline_full_b1_edition": {
+    "sha256": "3ea2fd1565ee1313114e0bf2ed77032f65081eb30e60f270ed553404057f4df3",
+    "offline_sections": 46,
+    "offline_checks": 15,
+    "nominal_vehicle_test_sections": 4
+  },
+  "updated_manuals": [
+    "README.md",
+    "docs/three_tasks/R10/CONTINUOUS_SERVICE_AND_PARKING.md",
+    "docs/three_tasks/R10/RESULTS.md",
+    "docs/three_tasks/R11/RESULTS.md",
+    "docs/three_tasks/R12/RESULTS.md",
+    "media/r10_continuation_20261119/README.md",
+    "validation/r10_continuation_20261119/a1/README.md",
+    "validation/r10_continuation_20261119/b1/README.md"
+  ],
+  "resolved_relative_links": 148,
+  "text_blobs_scanned": 237,
+  "zip_members_reviewed": 0
+}

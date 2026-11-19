@@ -1,0 +1,229 @@
+{
+  "schema": "r10-continuation-camera/1",
+  "session": "mowing_20261119_124201_958601",
+  "task": "mowing",
+  "case": "nominal",
+  "formal_score_in_this_media_file": false,
+  "mission_passed": true,
+  "mission_terminal": "COMPLETED",
+  "mission_error": null,
+  "closed_sim_s": 279.382,
+  "runtime_clean": true,
+  "title": "B1 转向控制修复与逐挡停车复验",
+  "raw": {
+    "path": "media/r10_continuation_20261119/b1_third_full.mp4",
+    "sha256": "d565bd042a5404e064a8d885ddd890f8d860bb568992205284f16497b4a4ca9a",
+    "frames": 3253,
+    "fps": 5.0,
+    "seconds": 650.6,
+    "original_and_decoded": true
+  },
+  "clip": {
+    "path": "media/r10_continuation_20261119/b1_third_short.mp4",
+    "sha256": "0087677440c461d45c421b27332d70f66924efada9a0272d54643bc2d32ac3dd",
+    "frames": 733,
+    "fps": 10,
+    "seconds": 73.3,
+    "source_start_frame": 275,
+    "source_end_frame_exclusive": 3208,
+    "wall_camera_speed": 8,
+    "actual_continuous_frames": true,
+    "decoded_to_eof": true
+  },
+  "event_bookmarks": [
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:0",
+      "direction": 1,
+      "simulation_s": 23.97,
+      "raw_video_s": 58.0,
+      "clip_s": 0.375
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:0",
+      "direction": 1,
+      "simulation_s": 31.75,
+      "raw_video_s": 75.6,
+      "clip_s": 2.575
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:0",
+      "direction": 1,
+      "simulation_s": 38.582,
+      "raw_video_s": 91.2,
+      "clip_s": 4.525
+    },
+    {
+      "event": "SEGMENT_ARRIVAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:0",
+      "direction": null,
+      "simulation_s": 39.21,
+      "raw_video_s": 92.6,
+      "clip_s": 4.7
+    },
+    {
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "point": null,
+      "segment": "B1:offline_connection:6:0",
+      "direction": null,
+      "simulation_s": 39.78,
+      "raw_video_s": 94.0,
+      "clip_s": 4.875
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:1",
+      "direction": -1,
+      "simulation_s": 39.962,
+      "raw_video_s": 94.4,
+      "clip_s": 4.925
+    },
+    {
+      "event": "SEGMENT_ARRIVAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:1",
+      "direction": null,
+      "simulation_s": 58.524,
+      "raw_video_s": 136.0,
+      "clip_s": 10.125
+    },
+    {
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "point": null,
+      "segment": "B1:offline_connection:6:1",
+      "direction": null,
+      "simulation_s": 59.1,
+      "raw_video_s": 137.0,
+      "clip_s": 10.25
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 59.312,
+      "raw_video_s": 137.6,
+      "clip_s": 10.325
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 70.446,
+      "raw_video_s": 163.4,
+      "clip_s": 13.55
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 132.502,
+      "raw_video_s": 303.4,
+      "clip_s": 31.05
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 137.782,
+      "raw_video_s": 315.2,
+      "clip_s": 32.525
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 193.074,
+      "raw_video_s": 443.4,
+      "clip_s": 48.55
+    },
+    {
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": null,
+      "simulation_s": 209.04,
+      "raw_video_s": 479.8,
+      "clip_s": 53.1
+    },
+    {
+      "event": "SEGMENT_ARRIVAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": null,
+      "simulation_s": 209.168,
+      "raw_video_s": 480.2,
+      "clip_s": 53.15
+    },
+    {
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": null,
+      "simulation_s": 209.79,
+      "raw_video_s": 481.6,
+      "clip_s": 53.325
+    },
+    {
+      "event": "SEGMENT_ARRIVAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:3",
+      "direction": null,
+      "simulation_s": 276.652,
+      "raw_video_s": 636.2,
+      "clip_s": 72.65
+    },
+    {
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "point": null,
+      "segment": "B1:offline_connection:6:3",
+      "direction": null,
+      "simulation_s": 277.23,
+      "raw_video_s": 637.4,
+      "clip_s": 72.8
+    }
+  ],
+  "source_files": {
+    "spec.json": {
+      "source": "spec.json",
+      "raw_sha256": "0156df732c703f0424faf740ec28ae0f2d10a241fd64e651c253ebd0fa116566",
+      "published_sha256": "0156df732c703f0424faf740ec28ae0f2d10a241fd64e651c253ebd0fa116566"
+    },
+    "mission_result.json": {
+      "source": "mission_result.json",
+      "raw_sha256": "9394cf4ce6f8cd53cbe6b8ecfb452bbff7c6cba31e91021833870ea021e3e2c1",
+      "published_sha256": "9394cf4ce6f8cd53cbe6b8ecfb452bbff7c6cba31e91021833870ea021e3e2c1"
+    },
+    "mission_events.jsonl.gz": {
+      "source": "mission_events.jsonl",
+      "raw_sha256": "863991ddf3acf345de6aac55869c49271e73a57286b1c596110797a876a6d14e",
+      "published_sha256": "fa7bf0d34efadd3dc3f4c33916fa7eb3374dbd3ca6124e7a90c5901f3bdb947a"
+    },
+    "runtime.json": {
+      "source": "runtime.json",
+      "raw_sha256": "6186883eea1cd75739c3918b7a9e64f79a4842801dc111707e7ebf36b93abf77",
+      "published_sha256": "6186883eea1cd75739c3918b7a9e64f79a4842801dc111707e7ebf36b93abf77"
+    },
+    "video/recording.json": {
+      "source": "video/recording.json",
+      "raw_sha256": "f0e1fe2b55c576387fa2d107e2c114f854660c8db43be44213ce2ed8fe25f5b0",
+      "published_sha256": "f0e1fe2b55c576387fa2d107e2c114f854660c8db43be44213ce2ed8fe25f5b0"
+    },
+    "video/frames.jsonl.gz": {
+      "source": "video/frames.jsonl",
+      "raw_sha256": "5473901f91a2f3f25601f51731cb1b64f19d54b32961876b0686a2fa0b832386",
+      "published_sha256": "f7abaceb8a80c9019b370411714d7246a2462a7d3b3a33daf742a34c61be85b6"
+    }
+  }
+}

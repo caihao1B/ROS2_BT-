@@ -4,7 +4,7 @@
 
 ![地图与任务分簇](media/r03_task_map.png)
 
-[第一次观察三项作业](docs/three_tasks/第一次观察三任务.md) · [11 月 19 日收尾复验与操作](docs/three_tasks/收尾复验_20261119.md) · [离线查看决策与传感器](validation/closeout_20261119/replay.html)
+[连续点喷与四段换向实测](docs/three_tasks/R10/CONTINUOUS_SERVICE_AND_PARKING.md) · [第一次观察三项作业](docs/three_tasks/第一次观察三任务.md) · [11 月 19 日收尾复验与操作](docs/three_tasks/收尾复验_20261119.md) · [离线查看决策与传感器](validation/closeout_20261119/replay.html)
 
 ## 三个任务
 
@@ -75,7 +75,7 @@ B1 的原始割草目标为 188.39 m²。在当前坡面与整车安全边界下
 
 ![B1 计划和实际反馈](media/closeout_20261119/B1_plan_feedback.png)
 
-B1 第六处地头的离线备选保持同一对作业端点，换向由 6 降到 4 次，四个单挡段通过了原生 Nav2 栅格障碍拒绝检查。正式运行仍采用表中的 47 段版本。[实际路径图与复核命令](docs/three_tasks/B1地头连接对照.md)
+B1 第六处地头的新路径已完成 Gazebo 整车复验。前进、倒车、前进、倒车四段均按原轨迹停车，四个停车窗口的最大位置误差为 4.87、4.90、9.38、3.57 cm，最大航向误差 1.43°。这段全程关刀；正式整簇表仍记录原 47 段安全版本。A1 的相同四点对照由 3/4 提升至两次 4/4。修复版按原序全选 56 点后实际确认 26 点，任务时刻 978.792 仿真秒。[停车与工时专项报告](docs/three_tasks/R10/CONTINUOUS_SERVICE_AND_PARKING.md) · [录像和逐段时标](media/r10_continuation_20261119/README.md)
 
 ## 演示
 

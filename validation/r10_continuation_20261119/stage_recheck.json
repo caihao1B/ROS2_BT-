@@ -1,0 +1,60 @@
+{
+  "actions": [
+    {
+      "stage": "R10",
+      "action": "finalize",
+      "code": 2,
+      "status": "PARTIAL",
+      "changed": null
+    },
+    {
+      "stage": "R11",
+      "action": "finalize",
+      "code": 2,
+      "status": "PARTIAL",
+      "changed": null
+    },
+    {
+      "stage": "R12",
+      "action": "finalize",
+      "code": 2,
+      "status": "PARTIAL",
+      "changed": null
+    },
+    {
+      "stage": "R08",
+      "action": "check",
+      "code": 0,
+      "status": "PASS",
+      "changed": []
+    },
+    {
+      "stage": "R09",
+      "action": "check",
+      "code": 0,
+      "status": "PASS",
+      "changed": []
+    },
+    {
+      "stage": "R10",
+      "action": "check",
+      "code": 2,
+      "status": "PARTIAL",
+      "changed": []
+    },
+    {
+      "stage": "R11",
+      "action": "check",
+      "code": 2,
+      "status": "PARTIAL",
+      "changed": []
+    },
+    {
+      "stage": "R12",
+      "action": "check",
+      "code": 2,
+      "status": "PARTIAL",
+      "changed": []
+    }
+  ]
+}

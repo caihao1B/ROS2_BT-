@@ -1,0 +1,8 @@
+{
+  "source": "R09 Ackermann terrain",
+  "original_geometry_body_unchanged_except_queue_observability": true,
+  "geometry_sha256": "d5ad1d0d1621c52feff59b149a57ea75ca33e2ea7587662b8ca76d9567f4b112",
+  "actual_pairing_header_matches_A1_v2": true,
+  "pairing_header_sha256": "96dd7c0e80ffcd5430b3860f243c0ac0c8fa35c9ae9a4b012fcea0f6e0cac9f5",
+  "vehicle_geometric_self_filter_test_pass": true
+}

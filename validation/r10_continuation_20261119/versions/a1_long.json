@@ -1,0 +1,38 @@
+{
+  "schema": "r10-run-version/1",
+  "session": "spray_defer_20261119_130223_269769",
+  "base_commit": "0868d45bfc8f88646cea9c4d5e33d01ff64f4ef9",
+  "spec_sha256": "bbf8f7730df51bb2ebebb0645da8ca68bcc4199f803c4892f32169480f625bf2",
+  "recorded_simulator_bindings": 137,
+  "counts": {
+    "build_artifact_hash_only": 11,
+    "source_archive": 17,
+    "base_commit": 109
+  },
+  "source_archive": {
+    "optimization_v2/three_tasks/build/r08_source/CMakeLists.txt": "source/455e5a8bc2a98a4c9a23d53a403894f2e463720bd8b8b883de6f652bc23da6eb.txt.gz",
+    "optimization_v2/three_tasks/build/r08_source/terrain.cpp": "source/dec5192e107238e97e1478674b9e2df2c66fa08cc3e14a328cc248148102330b.cpp.gz",
+    "optimization_v2/three_tasks/build/r09_source/ToolActuator.cc": "source/1b84481c1560396eac370f61dce7c10284f07adec9b5d19e1e30db6cad2494e4.cc.gz",
+    "optimization_v2/three_tasks/build/r09_source/tool_action_server.cpp": "source/372f615b49d064e668150ee6d55b1fb0fec44500adf95ba0642abb3b449fccc8.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_global_source/global_manager.cpp": "source/d99350d08270eb24908defe4fcfb28f918d934beccaaa0089f518575bac19745.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_spray_bt_source/policy.hpp": "source/0efb2c70753b96e70003907dcf617928a1d3319f7885fc34abbac2aafa12ce16.hpp.gz",
+    "optimization_v2/three_tasks/build/r10_spray_bt_source/supervisor.cpp": "source/34529dcaa6acce06a854c0c9c825b70c82fa7249d3b2d59b6d6ef6ae982fe0f1.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_spray_global_source/global_manager.cpp": "source/03b9fd287ad998c67b0fd0f4e090272c11a0f13e70f614ece78e33f591caa84f.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_spray_global_source/stopped_revalidation.inc": "source/c8bea127de9414f85f4332167d409c33d2e3cdc74d9314b6187a5c86345cea3a.inc.gz",
+    "optimization_v2/three_tasks/build/spray_precision_session/mission_spray_precision_session.py": "source/b24979c9460dc092c840dacb58edb5da9dfd62ad406687c84651f10863021073.py.gz",
+    "optimization_v2/three_tasks/build/spray_terrain_pairing_session_source/terrain.cpp": "source/9572e08a7deca1d57331db0613bbbb8f42b8a603a9fb5d15d966b368eecd0415.cpp.gz",
+    "optimization_v2/three_tasks/build/spray_terrain_pairing_session_source/terrain_pairing_session.inc": "source/96dd7c0e80ffcd5430b3860f243c0ac0c8fa35c9ae9a4b012fcea0f6e0cac9f5.inc.gz",
+    "optimization_v2/ws/src/task_platform/r10_backend/terrain_pairing.inc": "source/d43118cd297e8f654ac22c5e78e5afc7eab9e9a680a2ba5d4a7f7dd8438c8e94.inc.gz",
+    "optimization_v2/ws/src/task_platform/scripts/spray_precision_candidate_r10.py": "source/525fff23f672f2e6fde006b8afdf20ce773c09e6f62264362a2a5a0046d40903.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/spray_precision_r10.py": "source/38c34648299e3926658fe4e90e85beb7e253811e45e48a65ff668c9ccbf45aab.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/spray_precision_session_r10.py": "source/a2f038af3b3e4c697613a0c5979b2e8c2b869b062266250013c7e6c1e73a6fb7.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/terrain_pairing_r10.py": "source/db0e104f96dafba6943ddc5190b830ff1a6ac8cdf42ce4991c0eb98b1004380a.py.gz"
+  },
+  "build_artifacts": "Compiled objects are fingerprinted in spec.json and rebuilt on the target host.",
+  "generated_scene_inputs": {
+    "scene/world.sdf": {
+      "sha256": "119bc1e931d630cc979243a88a3f1548998a8ab7b9f7598f26e29833f472d970",
+      "archive": "scenes/119bc1e931d630cc979243a88a3f1548998a8ab7b9f7598f26e29833f472d970.sdf.gz"
+    }
+  }
+}

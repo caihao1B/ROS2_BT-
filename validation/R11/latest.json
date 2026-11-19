@@ -393,7 +393,7 @@
     },
     {
       "path": "optimization_v2/three_tasks/results/R11/tests.log",
-      "sha256": "7280615be418a46cbc419ae9755fcf1e1a06b1c3e762dcea1fb0e870869dda33"
+      "sha256": "daf14959bf9ca9ab282b4e45dd04407f89a45e7d6a64169005d50f545e9a04c5"
     },
     {
       "path": "optimization_v2/three_tasks/results/R11/mowing/comparison.json",
@@ -629,12 +629,12 @@
     },
     {
       "path": "docs/three_tasks/R11/RESULTS.md",
-      "sha256": "78ea2602dc23de2951ba92ace3eff08ca07b3fbf168c46f84e3305c97a558be1"
+      "sha256": "826950b51c2c94aa9712df7d482cdfc7cb086355fee8f2c0c99747203fb19c70"
     }
   ],
   "next_step": null,
   "formal_credit": false,
   "original_S17": "PARTIAL",
   "original_S18": "PARTIAL",
-  "created_utc": "20261119_093852_707883"
+  "created_utc": "20261119_132942_319709"
 }

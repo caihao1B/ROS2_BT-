@@ -1,0 +1,211 @@
+{
+  "schema": "r10-continuation-camera/1",
+  "session": "mowing_20261119_123242_987678",
+  "task": "mowing",
+  "case": "nominal",
+  "formal_score_in_this_media_file": false,
+  "mission_passed": false,
+  "mission_terminal": "HUMAN_REQUIRED",
+  "mission_error": "RuntimeError('SEGMENT_RETRY_BOUND')",
+  "closed_sim_s": 207.902,
+  "runtime_clean": true,
+  "title": "B1 时间配对修复与四挡整车复验",
+  "raw": {
+    "path": "media/r10_continuation_20261119/b1_paired_full.mp4",
+    "sha256": "e765bc588a6f126af8e0c29a52d8c27dc325c5dde66671a2bb2d85f933377bfe",
+    "frames": 2361,
+    "fps": 5.0,
+    "seconds": 472.2,
+    "original_and_decoded": true
+  },
+  "clip": {
+    "path": "media/r10_continuation_20261119/b1_paired_short.mp4",
+    "sha256": "13fba39e8492195d10f3f753888c546c38211bbc9eddce88d71ed0bdb2d6d37f",
+    "frames": 704,
+    "fps": 10,
+    "seconds": 70.4,
+    "source_start_frame": 229,
+    "source_end_frame_exclusive": 2342,
+    "wall_camera_speed": 6,
+    "actual_continuous_frames": true,
+    "decoded_to_eof": true
+  },
+  "event_bookmarks": [
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:0",
+      "direction": 1,
+      "simulation_s": 22.35,
+      "raw_video_s": 48.8,
+      "clip_s": 0.5
+    },
+    {
+      "event": "SEGMENT_ARRIVAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:0",
+      "direction": null,
+      "simulation_s": 32.36,
+      "raw_video_s": 70.6,
+      "clip_s": 4.133
+    },
+    {
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "point": null,
+      "segment": "B1:offline_connection:6:0",
+      "direction": null,
+      "simulation_s": 32.972,
+      "raw_video_s": 72.0,
+      "clip_s": 4.367
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:1",
+      "direction": -1,
+      "simulation_s": 33.152,
+      "raw_video_s": 72.4,
+      "clip_s": 4.433
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:1",
+      "direction": -1,
+      "simulation_s": 45.67,
+      "raw_video_s": 100.0,
+      "clip_s": 9.033
+    },
+    {
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "point": null,
+      "segment": "B1:offline_connection:6:1",
+      "direction": null,
+      "simulation_s": 144.75,
+      "raw_video_s": 321.0,
+      "clip_s": 45.867
+    },
+    {
+      "event": "SEGMENT_ARRIVAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:1",
+      "direction": null,
+      "simulation_s": 144.882,
+      "raw_video_s": 321.6,
+      "clip_s": 45.967
+    },
+    {
+      "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+      "point": null,
+      "segment": "B1:offline_connection:6:1",
+      "direction": null,
+      "simulation_s": 145.5,
+      "raw_video_s": 322.6,
+      "clip_s": 46.133
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 145.642,
+      "raw_video_s": 323.2,
+      "clip_s": 46.233
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 151.276,
+      "raw_video_s": 335.8,
+      "clip_s": 48.333
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 168.98,
+      "raw_video_s": 375.4,
+      "clip_s": 54.933
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 175.89,
+      "raw_video_s": 391.2,
+      "clip_s": 57.567
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 184.234,
+      "raw_video_s": 409.4,
+      "clip_s": 60.6
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 189.722,
+      "raw_video_s": 421.8,
+      "clip_s": 62.667
+    },
+    {
+      "event": "SEGMENT_GOAL",
+      "point": null,
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "simulation_s": 206.904,
+      "raw_video_s": 462.0,
+      "clip_s": 69.367
+    },
+    {
+      "event": "TASK_STOP",
+      "point": null,
+      "segment": null,
+      "direction": null,
+      "simulation_s": 207.762,
+      "raw_video_s": 464.2,
+      "clip_s": 69.733
+    }
+  ],
+  "source_files": {
+    "spec.json": {
+      "source": "spec.json",
+      "raw_sha256": "58ea260437feff184b338bec7c477eb66dd26c2920712368f2495aad13a3c1a9",
+      "published_sha256": "58ea260437feff184b338bec7c477eb66dd26c2920712368f2495aad13a3c1a9"
+    },
+    "mission_result.json": {
+      "source": "mission_result.json",
+      "raw_sha256": "10c89d0e187f50b1187b39c5fe7623e7eca539e96daff8986d0e3f3582aa291b",
+      "published_sha256": "10c89d0e187f50b1187b39c5fe7623e7eca539e96daff8986d0e3f3582aa291b"
+    },
+    "mission_events.jsonl.gz": {
+      "source": "mission_events.jsonl",
+      "raw_sha256": "22798aa7d71ec527e3f3feef6c99b03c29358435a28b3b1d43b7f5b6317acb30",
+      "published_sha256": "7b8cb0e756428c995682cc38720be584713e5fa3d351035e0130e81c1af92f25"
+    },
+    "runtime.json": {
+      "source": "runtime.json",
+      "raw_sha256": "b4517a2a09d7110ab4c4c5ff9be863d02e42d091e668f4984c4f0e56017af4c0",
+      "published_sha256": "b4517a2a09d7110ab4c4c5ff9be863d02e42d091e668f4984c4f0e56017af4c0"
+    },
+    "video/recording.json": {
+      "source": "video/recording.json",
+      "raw_sha256": "5a83014f6ae79bd88cfc900b20ed35190a2a2197cc373307dd85bbe454ef6967",
+      "published_sha256": "5a83014f6ae79bd88cfc900b20ed35190a2a2197cc373307dd85bbe454ef6967"
+    },
+    "video/frames.jsonl.gz": {
+      "source": "video/frames.jsonl",
+      "raw_sha256": "718bce1c86229849f37c70ae070f2f9e399e4d3c054861f637bdd29026220046",
+      "published_sha256": "4296d75698bcdadf7bf68176bd1ad4b36dffbc44b87f62b7d8f774b9ca8eb898"
+    }
+  }
+}

@@ -1,0 +1,1926 @@
+{
+  "schema": "A1-ORIGINAL-FULL-SELECTION/1",
+  "method": "Historic and current draws share original 56 point IDs, targets, yaw, dose and order. Runtime factor differs; timings are descriptive. Times start at the first actual Nav2 goal.",
+  "historical": {
+    "session": "spray_20261119_081218_417252",
+    "selection": 56,
+    "original_count": 56,
+    "confirmed_count": 22,
+    "elapsed_sim_s": 944.304,
+    "simulation_rtf_requested": 0.5,
+    "wall_seconds": 1994.0422698829998,
+    "start_nav_t": 32.496,
+    "successful_milestones_after_first_nav": {
+      "point_7_14": 7.454000000000001,
+      "point_8_14": 35.022,
+      "point_8_15": 95.08599999999998,
+      "point_9_15": 129.438,
+      "point_9_14": 163.69,
+      "point_10_14": 193.91199999999998,
+      "point_10_15": 226.85799999999998,
+      "point_10_16": 271.516,
+      "point_9_16": 324.344,
+      "point_8_16": 368.42400000000004,
+      "point_8_17": 405.41,
+      "point_9_17": 447.94,
+      "point_10_17": 479.784,
+      "point_10_18": 530.812,
+      "point_9_18": 574.628,
+      "point_8_18": 616.176,
+      "point_8_19": 652.214,
+      "point_9_19": 700.394,
+      "point_10_19": 751.88,
+      "point_11_19": 788.5600000000001,
+      "point_12_20": 832.1460000000001,
+      "point_11_20": 869.566
+    },
+    "remaining_uncompleted_ids": [
+      "point_10_20",
+      "point_9_20",
+      "point_8_20",
+      "point_8_21",
+      "point_9_21",
+      "point_10_21",
+      "point_11_21",
+      "point_12_21",
+      "point_12_22",
+      "point_12_23",
+      "point_11_23",
+      "point_11_22",
+      "point_10_22",
+      "point_9_22",
+      "point_8_22",
+      "point_7_22",
+      "point_7_21",
+      "point_6_21",
+      "point_6_20",
+      "point_7_20",
+      "point_7_19",
+      "point_7_18",
+      "point_7_17",
+      "point_7_16",
+      "point_6_17",
+      "point_6_18",
+      "point_6_19",
+      "point_5_19",
+      "point_5_18",
+      "point_5_17",
+      "point_5_16",
+      "point_6_16",
+      "point_6_15",
+      "point_7_15"
+    ],
+    "original_route_sha256": "e5875621d1c8445fd517d958deb9fbecd321f5a0bd77e12b560be358a36ed9fc",
+    "runtime_clean": false,
+    "error": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+    "terminal": null,
+    "final_chassis_stopped": true,
+    "final_tool_stopped": true,
+    "sources": {
+      "spec.json": "058d69509c0c009091250aa9173b706d0a7a0f74610be9647333c9e4ff9f16f5",
+      "runtime.json": "c22bfb085e22ff11bd3a2c5c6a8a3685e171dfe3d4eb40b2deb457b48b945d9d",
+      "mission_result.json": "4583153d38bd29b5c771f540de2e21ea4b63c4a99cc35e877ec45aaaa7101bf3",
+      "mission_events.jsonl": "ca4d9838cb7173d34c3ca1530a92cc739772739786820f55a7ecb7396e6b8acd"
+    }
+  },
+  "current": {
+    "session": "spray_defer_20261119_130223_269769",
+    "selection": 56,
+    "original_count": 56,
+    "confirmed_count": 26,
+    "elapsed_sim_s": 978.792,
+    "simulation_rtf_requested": 0.85,
+    "wall_seconds": 1600.140683701,
+    "start_nav_t": 20.366,
+    "successful_milestones_after_first_nav": {
+      "point_7_14": 6.306000000000001,
+      "point_8_14": 27.468000000000004,
+      "point_8_15": 64.522,
+      "point_9_15": 120.09599999999999,
+      "point_9_14": 168.30399999999997,
+      "point_10_14": 206.40800000000002,
+      "point_10_15": 242.58800000000002,
+      "point_10_16": 275.50600000000003,
+      "point_9_16": 311.284,
+      "point_8_16": 343.22,
+      "point_8_17": 379.026,
+      "point_9_17": 416.728,
+      "point_10_17": 448.35,
+      "point_10_18": 490.894,
+      "point_9_18": 537.284,
+      "point_8_18": 566.224,
+      "point_8_19": 600.4,
+      "point_9_19": 635.32,
+      "point_10_19": 665.822,
+      "point_11_19": 691.9540000000001,
+      "point_12_20": 748.654,
+      "point_11_20": 783.436,
+      "point_10_20": 825.97,
+      "point_9_20": 869.826,
+      "point_8_20": 896.112,
+      "point_8_21": 936.2040000000001
+    },
+    "remaining_uncompleted_ids": [
+      "point_9_21",
+      "point_10_21",
+      "point_11_21",
+      "point_12_21",
+      "point_12_22",
+      "point_12_23",
+      "point_11_23",
+      "point_11_22",
+      "point_10_22",
+      "point_9_22",
+      "point_8_22",
+      "point_7_22",
+      "point_7_21",
+      "point_6_21",
+      "point_6_20",
+      "point_7_20",
+      "point_7_19",
+      "point_7_18",
+      "point_7_17",
+      "point_7_16",
+      "point_6_17",
+      "point_6_18",
+      "point_6_19",
+      "point_5_19",
+      "point_5_18",
+      "point_5_17",
+      "point_5_16",
+      "point_6_16",
+      "point_6_15",
+      "point_7_15"
+    ],
+    "original_route_sha256": "e5875621d1c8445fd517d958deb9fbecd321f5a0bd77e12b560be358a36ed9fc",
+    "runtime_clean": true,
+    "error": "TimeoutError('TASK_BOUND_OR_STOP_REQUEST')",
+    "terminal": null,
+    "final_chassis_stopped": true,
+    "final_tool_stopped": true,
+    "sources": {
+      "spec.json": "bbf8f7730df51bb2ebebb0645da8ca68bcc4199f803c4892f32169480f625bf2",
+      "runtime.json": "6c1488ec87faf0690ca7390efe5b69a8d08aebe8f14e1bb7ce36df958dc1df0a",
+      "mission_result.json": "4408039d0039211737feadf3cf3b28d48c4e5e0bb7cb8d706d103b3dc8e2a3bc",
+      "mission_events.jsonl": "19a547aa94646eaae54049d58f72c28651565392ba217b6d7c68c44606cd55fe"
+    }
+  },
+  "common_measured_milestones": [
+    {
+      "id": "point_7_14",
+      "historical_sim_s": 7.454000000000001,
+      "current_sim_s": 6.306000000000001
+    },
+    {
+      "id": "point_8_14",
+      "historical_sim_s": 35.022,
+      "current_sim_s": 27.468000000000004
+    },
+    {
+      "id": "point_8_15",
+      "historical_sim_s": 95.08599999999998,
+      "current_sim_s": 64.522
+    },
+    {
+      "id": "point_9_15",
+      "historical_sim_s": 129.438,
+      "current_sim_s": 120.09599999999999
+    },
+    {
+      "id": "point_9_14",
+      "historical_sim_s": 163.69,
+      "current_sim_s": 168.30399999999997
+    },
+    {
+      "id": "point_10_14",
+      "historical_sim_s": 193.91199999999998,
+      "current_sim_s": 206.40800000000002
+    },
+    {
+      "id": "point_10_15",
+      "historical_sim_s": 226.85799999999998,
+      "current_sim_s": 242.58800000000002
+    },
+    {
+      "id": "point_10_16",
+      "historical_sim_s": 271.516,
+      "current_sim_s": 275.50600000000003
+    },
+    {
+      "id": "point_9_16",
+      "historical_sim_s": 324.344,
+      "current_sim_s": 311.284
+    },
+    {
+      "id": "point_8_16",
+      "historical_sim_s": 368.42400000000004,
+      "current_sim_s": 343.22
+    },
+    {
+      "id": "point_8_17",
+      "historical_sim_s": 405.41,
+      "current_sim_s": 379.026
+    },
+    {
+      "id": "point_9_17",
+      "historical_sim_s": 447.94,
+      "current_sim_s": 416.728
+    },
+    {
+      "id": "point_10_17",
+      "historical_sim_s": 479.784,
+      "current_sim_s": 448.35
+    },
+    {
+      "id": "point_10_18",
+      "historical_sim_s": 530.812,
+      "current_sim_s": 490.894
+    },
+    {
+      "id": "point_9_18",
+      "historical_sim_s": 574.628,
+      "current_sim_s": 537.284
+    },
+    {
+      "id": "point_8_18",
+      "historical_sim_s": 616.176,
+      "current_sim_s": 566.224
+    },
+    {
+      "id": "point_8_19",
+      "historical_sim_s": 652.214,
+      "current_sim_s": 600.4
+    },
+    {
+      "id": "point_9_19",
+      "historical_sim_s": 700.394,
+      "current_sim_s": 635.32
+    },
+    {
+      "id": "point_10_19",
+      "historical_sim_s": 751.88,
+      "current_sim_s": 665.822
+    },
+    {
+      "id": "point_11_19",
+      "historical_sim_s": 788.5600000000001,
+      "current_sim_s": 691.9540000000001
+    },
+    {
+      "id": "point_12_20",
+      "historical_sim_s": 832.1460000000001,
+      "current_sim_s": 748.654
+    },
+    {
+      "id": "point_11_20",
+      "historical_sim_s": 869.566,
+      "current_sim_s": 783.436
+    }
+  ],
+  "formal_credit": false,
+  "wall_time_limit": {
+    "requested_cooperative_stop_utc": "2026-11-19T13:28:55Z",
+    "events": [
+      {
+        "event": "START",
+        "utc": "2026-11-19T13:02:18.872547+00:00"
+      },
+      {
+        "event": "ORIGINAL_56_SESSION",
+        "utc": "2026-11-19T13:02:23.477753+00:00"
+      },
+      {
+        "event": "DEADLINE_OBSERVER_SIGINT",
+        "utc": "2026-11-19T13:28:55.165172+00:00"
+      },
+      {
+        "event": "END",
+        "utc": "2026-11-19T13:29:09.994367+00:00",
+        "driver_exit": 2,
+        "completed": 26,
+        "runtime_clean": true,
+        "chassis_stopped": true,
+        "tool_stopped": true
+      }
+    ],
+    "source_sha256": "c782dd6ae4472356b30da2297a739d8e66951f25d3b5eca0d9e5e183c9b9c92d"
+  },
+  "current_independent_check": {
+    "variant": "candidate",
+    "original_contract_sha256": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+    "session": "spray_defer_20261119_130223_269769",
+    "path": "optimization_v2/three_tasks/results/experiments/spray_precision_session/spray_defer_20261119_130223_269769",
+    "scope": "original A1 consecutive points only",
+    "source_version": "762cb1e244a78b33809c766b65a6991434e2de4117917bcb24cf632c05ae9fd7",
+    "elapsed_sim_s": 978.792,
+    "first_goal_to_last_event_sim_s": 958.426,
+    "first_nav_t": 20.366,
+    "wall_seconds": 1600.140683701,
+    "completed_count": 26,
+    "selected_count": 56,
+    "total_original": 56,
+    "disposition": "INCOMPLETE",
+    "error": "TimeoutError('TASK_BOUND_OR_STOP_REQUEST')",
+    "measured_subset_pass": false,
+    "formal_credit": false,
+    "scene_comparison_sha256": "8898779075ae68b75867bd18f7dc477323f8b1036cc52b1727e3e2fd08416726",
+    "points": [
+      {
+        "id": "point_7_14",
+        "target": [
+          -5.5,
+          29.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0680000000000014,
+        "physical_dose": 3.4843333333326667,
+        "maximum_physical_docking_error_m": 0.0,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 20.366,
+        "succeeded_t": 26.672,
+        "cycle_sim_s": 6.306000000000001,
+        "time_to_service_sim_s": 1.926000000000002,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 51,
+            "span_s": 1.8260000000000005,
+            "max_gap_s": 0.07600000000000051,
+            "median_distance_m": 0.015008886071655196,
+            "latest_distance_m": 0.009994598041253277,
+            "position_scatter_p95_m": 0.007643838556390663,
+            "continuous_stopped_s": 1.8780000000000001,
+            "localization_epoch": 0
+          }
+        ]
+      },
+      {
+        "id": "point_8_14",
+        "target": [
+          -2.5,
+          29.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.073999999999998,
+        "physical_dose": 3.228999999999335,
+        "maximum_physical_docking_error_m": 0.02611937282440541,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 26.756,
+        "succeeded_t": 47.834,
+        "cycle_sim_s": 21.078000000000003,
+        "time_to_service_sim_s": 16.956000000000003,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 50,
+            "span_s": 1.8159999999999954,
+            "max_gap_s": 0.07199999999999562,
+            "median_distance_m": 0.027432456004901334,
+            "latest_distance_m": 0.029379792306591122,
+            "position_scatter_p95_m": 0.003723192406087117,
+            "continuous_stopped_s": 1.858000000000004,
+            "localization_epoch": 0
+          }
+        ]
+      },
+      {
+        "id": "point_8_15",
+        "target": [
+          -2.5,
+          32.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.073999999999998,
+        "physical_dose": 3.189666666666003,
+        "maximum_physical_docking_error_m": 0.024825533183231895,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 47.886,
+        "succeeded_t": 84.888,
+        "cycle_sim_s": 37.002,
+        "time_to_service_sim_s": 32.904,
+        "completed": true,
+        "route_goals": 3,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 53,
+            "span_s": 1.8199999999999932,
+            "max_gap_s": 0.06799999999999784,
+            "median_distance_m": 0.02381836825643491,
+            "latest_distance_m": 0.02470581341282584,
+            "position_scatter_p95_m": 0.001928044238585474,
+            "continuous_stopped_s": 1.858000000000004,
+            "localization_epoch": 0
+          }
+        ]
+      },
+      {
+        "id": "point_9_15",
+        "target": [
+          0.5,
+          32.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.079999999999984,
+        "physical_dose": 3.37266666666534,
+        "maximum_physical_docking_error_m": 0.0031681785224301835,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 84.932,
+        "succeeded_t": 140.462,
+        "cycle_sim_s": 55.52999999999999,
+        "time_to_service_sim_s": 48.42,
+        "completed": true,
+        "route_goals": 2,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 54,
+            "span_s": 1.8259999999999934,
+            "max_gap_s": 0.0660000000000025,
+            "median_distance_m": 0.01742674824489312,
+            "latest_distance_m": 0.016510886356781534,
+            "position_scatter_p95_m": 0.0032026466702899134,
+            "continuous_stopped_s": 1.920000000000016,
+            "localization_epoch": 1
+          },
+          {
+            "samples": 51,
+            "span_s": 1.8000000010000008,
+            "max_gap_s": 0.06999999900000375,
+            "median_distance_m": 0.01595873650972267,
+            "latest_distance_m": 0.016286531438950258,
+            "position_scatter_p95_m": 0.006223422032447943,
+            "continuous_stopped_s": 1.8780000000000143,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_9_14",
+        "target": [
+          0.5,
+          29.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.098000000000013,
+        "physical_dose": 3.240999999999336,
+        "maximum_physical_docking_error_m": 0.022771983654358313,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 140.494,
+        "succeeded_t": 188.67,
+        "cycle_sim_s": 48.17599999999999,
+        "time_to_service_sim_s": 44.03800000000001,
+        "completed": true,
+        "route_goals": 3,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 47,
+            "span_s": 1.8000000000000114,
+            "max_gap_s": 0.07399999999998386,
+            "median_distance_m": 0.01829823334104586,
+            "latest_distance_m": 0.01668702265695608,
+            "position_scatter_p95_m": 0.0023256301799915407,
+            "continuous_stopped_s": 1.832000000000022,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_10_14",
+        "target": [
+          3.5,
+          29.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0560000000000116,
+        "physical_dose": 3.1896666666659916,
+        "maximum_physical_docking_error_m": 0.03085252652951879,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 188.73,
+        "succeeded_t": 226.774,
+        "cycle_sim_s": 38.04400000000001,
+        "time_to_service_sim_s": 33.96200000000002,
+        "completed": true,
+        "route_goals": 2,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 47,
+            "span_s": 1.8059999999999832,
+            "max_gap_s": 0.08600000000001273,
+            "median_distance_m": 0.021821537211912108,
+            "latest_distance_m": 0.0222113200103637,
+            "position_scatter_p95_m": 0.003708578557592012,
+            "continuous_stopped_s": 1.8319999999999936,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_10_15",
+        "target": [
+          3.5,
+          32.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.191666666665987,
+        "maximum_physical_docking_error_m": 0.04799333664769867,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 226.802,
+        "succeeded_t": 262.954,
+        "cycle_sim_s": 36.152000000000015,
+        "time_to_service_sim_s": 32.03799999999998,
+        "completed": true,
+        "route_goals": 2,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 49,
+            "span_s": 1.829999999999984,
+            "max_gap_s": 0.0999999999999659,
+            "median_distance_m": 0.021876279021018723,
+            "latest_distance_m": 0.02837980643256464,
+            "position_scatter_p95_m": 0.006305044805448547,
+            "continuous_stopped_s": 1.891999999999996,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_10_16",
+        "target": [
+          3.5,
+          35.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.093999999999994,
+        "physical_dose": 3.230333333332669,
+        "maximum_physical_docking_error_m": 0.025693596743907143,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 262.99,
+        "succeeded_t": 295.872,
+        "cycle_sim_s": 32.882000000000005,
+        "time_to_service_sim_s": 28.72800000000001,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 48,
+            "span_s": 1.8059999999999832,
+            "max_gap_s": 0.09199999999998454,
+            "median_distance_m": 0.019164394249877443,
+            "latest_distance_m": 0.014416488215348185,
+            "position_scatter_p95_m": 0.00871860829043766,
+            "continuous_stopped_s": 1.8880000000000337,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_9_16",
+        "target": [
+          0.5,
+          35.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0739999999999554,
+        "physical_dose": 3.3276666666660177,
+        "maximum_physical_docking_error_m": 0.017319253037013836,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 295.918,
+        "succeeded_t": 331.65,
+        "cycle_sim_s": 35.73199999999997,
+        "time_to_service_sim_s": 31.50799999999998,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 51,
+            "span_s": 1.8280000000000314,
+            "max_gap_s": 0.07999999999998408,
+            "median_distance_m": 0.014562079699912694,
+            "latest_distance_m": 0.010366485640642324,
+            "position_scatter_p95_m": 0.00482005273228852,
+            "continuous_stopped_s": 1.9219999999999686,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_8_16",
+        "target": [
+          -2.5,
+          35.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.227666666666003,
+        "maximum_physical_docking_error_m": 0.055730316859953534,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 331.684,
+        "succeeded_t": 363.586,
+        "cycle_sim_s": 31.901999999999987,
+        "time_to_service_sim_s": 27.811999999999955,
+        "completed": true,
+        "route_goals": 2,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 50,
+            "span_s": 1.825999999999965,
+            "max_gap_s": 0.07400000000001228,
+            "median_distance_m": 0.0268781626904501,
+            "latest_distance_m": 0.03241021862371334,
+            "position_scatter_p95_m": 0.004091405710536324,
+            "continuous_stopped_s": 1.9279999999999973,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_8_17",
+        "target": [
+          -2.5,
+          38.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.1889999999993766,
+        "maximum_physical_docking_error_m": 0.03203723060256301,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 363.63,
+        "succeeded_t": 399.392,
+        "cycle_sim_s": 35.762,
+        "time_to_service_sim_s": 29.639999999999986,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 50,
+            "span_s": 1.8199999999999932,
+            "max_gap_s": 0.08400000000000318,
+            "median_distance_m": 0.022172436561461225,
+            "latest_distance_m": 0.024218374877070757,
+            "position_scatter_p95_m": 0.0027239301778375405,
+            "continuous_stopped_s": 1.9159999999999968,
+            "localization_epoch": 1
+          },
+          {
+            "samples": 49,
+            "span_s": 1.8000000000000114,
+            "max_gap_s": 0.08000000000004093,
+            "median_distance_m": 0.02930237919614745,
+            "latest_distance_m": 0.03552527448185888,
+            "position_scatter_p95_m": 0.005921819087514464,
+            "continuous_stopped_s": 1.858000000000004,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_9_17",
+        "target": [
+          0.5,
+          38.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0500000000000114,
+        "physical_dose": 3.2256666666660037,
+        "maximum_physical_docking_error_m": 0.03834429937807334,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 399.422,
+        "succeeded_t": 437.094,
+        "cycle_sim_s": 37.67199999999997,
+        "time_to_service_sim_s": 33.537999999999954,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 53,
+            "span_s": 1.8319999999999936,
+            "max_gap_s": 0.07399999999995543,
+            "median_distance_m": 0.02122492465569747,
+            "latest_distance_m": 0.024513692625000017,
+            "position_scatter_p95_m": 0.0044742198291707995,
+            "continuous_stopped_s": 1.8879999999999768,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_10_17",
+        "target": [
+          3.5,
+          38.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.237666666665997,
+        "maximum_physical_docking_error_m": 0.03943038243289112,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 437.132,
+        "succeeded_t": 468.716,
+        "cycle_sim_s": 31.584000000000003,
+        "time_to_service_sim_s": 27.44799999999998,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 48,
+            "span_s": 1.8059999999999832,
+            "max_gap_s": 0.07000000000005002,
+            "median_distance_m": 0.012364450667887673,
+            "latest_distance_m": 0.016266488146123876,
+            "position_scatter_p95_m": 0.008635604837632661,
+            "continuous_stopped_s": 1.853999999999985,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_10_18",
+        "target": [
+          3.5,
+          41.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.051999999999964,
+        "physical_dose": 3.227666666665995,
+        "maximum_physical_docking_error_m": 0.017129043545332834,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 468.754,
+        "succeeded_t": 511.26,
+        "cycle_sim_s": 42.50599999999997,
+        "time_to_service_sim_s": 38.42599999999999,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 48,
+            "span_s": 1.8000000000000114,
+            "max_gap_s": 0.08400000000000318,
+            "median_distance_m": 0.004049534868956681,
+            "latest_distance_m": 0.005718180316310262,
+            "position_scatter_p95_m": 0.00672081564528326,
+            "continuous_stopped_s": 1.8559999999999945,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_9_18",
+        "target": [
+          0.5,
+          41.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.230333333332653,
+        "maximum_physical_docking_error_m": 0.030829917858480237,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 511.286,
+        "succeeded_t": 557.65,
+        "cycle_sim_s": 46.363999999999976,
+        "time_to_service_sim_s": 42.27799999999996,
+        "completed": true,
+        "route_goals": 2,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 50,
+            "span_s": 1.8199999999999363,
+            "max_gap_s": 0.06999999999993634,
+            "median_distance_m": 0.021679164742790715,
+            "latest_distance_m": 0.021652044964067665,
+            "position_scatter_p95_m": 0.0033328056333420788,
+            "continuous_stopped_s": 1.919999999999959,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_8_18",
+        "target": [
+          -2.5,
+          41.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.050000000000068,
+        "physical_dose": 3.188999999999272,
+        "maximum_physical_docking_error_m": 0.04350795388652067,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 557.702,
+        "succeeded_t": 586.59,
+        "cycle_sim_s": 28.888000000000034,
+        "time_to_service_sim_s": 24.71799999999996,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 51,
+            "span_s": 1.8100000000000591,
+            "max_gap_s": 0.10399999999992815,
+            "median_distance_m": 0.021183637157958353,
+            "latest_distance_m": 0.022137244123304013,
+            "position_scatter_p95_m": 0.0009657119726352155,
+            "continuous_stopped_s": 1.8619999999999663,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_8_19",
+        "target": [
+          -2.5,
+          44.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.050000000000068,
+        "physical_dose": 3.2276666666660043,
+        "maximum_physical_docking_error_m": 0.0179639938268363,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 586.624,
+        "succeeded_t": 620.766,
+        "cycle_sim_s": 34.14199999999994,
+        "time_to_service_sim_s": 30.055999999999926,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 49,
+            "span_s": 1.8279999999999745,
+            "max_gap_s": 0.07200000000000273,
+            "median_distance_m": 0.025579099520496293,
+            "latest_distance_m": 0.031003868861209496,
+            "position_scatter_p95_m": 0.00876689765535249,
+            "continuous_stopped_s": 1.8599999999999,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_9_19",
+        "target": [
+          0.5,
+          44.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.050000000000068,
+        "physical_dose": 3.189666666665941,
+        "maximum_physical_docking_error_m": 0.040617059445663115,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 620.792,
+        "succeeded_t": 655.686,
+        "cycle_sim_s": 34.894000000000005,
+        "time_to_service_sim_s": 30.77800000000002,
+        "completed": true,
+        "route_goals": 2,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 51,
+            "span_s": 1.8319999999999936,
+            "max_gap_s": 0.08999999999991815,
+            "median_distance_m": 0.030640586284610184,
+            "latest_distance_m": 0.03615715978157207,
+            "position_scatter_p95_m": 0.007664789475001155,
+            "continuous_stopped_s": 1.886000000000081,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_10_19",
+        "target": [
+          3.5,
+          44.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.1863333333326107,
+        "maximum_physical_docking_error_m": 0.013603937170958518,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 655.746,
+        "succeeded_t": 686.188,
+        "cycle_sim_s": 30.442000000000007,
+        "time_to_service_sim_s": 26.364000000000033,
+        "completed": true,
+        "route_goals": 2,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 47,
+            "span_s": 1.8360000000000127,
+            "max_gap_s": 0.07600000000002183,
+            "median_distance_m": 0.018112881368232227,
+            "latest_distance_m": 0.01773983666620572,
+            "position_scatter_p95_m": 0.002154081558311172,
+            "continuous_stopped_s": 1.8880000000000337,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_11_19",
+        "target": [
+          6.5,
+          44.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.1916666666659395,
+        "maximum_physical_docking_error_m": 0.03347236754054344,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 686.222,
+        "succeeded_t": 712.32,
+        "cycle_sim_s": 26.09800000000007,
+        "time_to_service_sim_s": 22.019999999999982,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 48,
+            "span_s": 1.8039999999999736,
+            "max_gap_s": 0.08600000000001273,
+            "median_distance_m": 0.024802432344173966,
+            "latest_distance_m": 0.02734869158894636,
+            "position_scatter_p95_m": 0.002750465629083922,
+            "continuous_stopped_s": 1.8899999999999864,
+            "localization_epoch": 1
+          }
+        ]
+      },
+      {
+        "id": "point_12_20",
+        "target": [
+          9.5,
+          47.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.2309999999993386,
+        "maximum_physical_docking_error_m": 0.0029574169819257356,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 712.36,
+        "succeeded_t": 769.02,
+        "cycle_sim_s": 56.65999999999997,
+        "time_to_service_sim_s": 52.55200000000002,
+        "completed": true,
+        "route_goals": 4,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 51,
+            "span_s": 1.8039999999999736,
+            "max_gap_s": 0.07399999999995543,
+            "median_distance_m": 0.022653980080330087,
+            "latest_distance_m": 0.02300585503598969,
+            "position_scatter_p95_m": 0.0006991246802750225,
+            "continuous_stopped_s": 1.86200000000008,
+            "localization_epoch": 2
+          }
+        ]
+      },
+      {
+        "id": "point_11_20",
+        "target": [
+          6.5,
+          47.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.2263333333326707,
+        "maximum_physical_docking_error_m": 0.03187838462680555,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 769.052,
+        "succeeded_t": 803.802,
+        "cycle_sim_s": 34.75,
+        "time_to_service_sim_s": 30.621999999999957,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 51,
+            "span_s": 1.8259999999999081,
+            "max_gap_s": 0.08600000000001273,
+            "median_distance_m": 0.015029129542777105,
+            "latest_distance_m": 0.021394293155345166,
+            "position_scatter_p95_m": 0.014175032755054023,
+            "continuous_stopped_s": 1.8859999999999673,
+            "localization_epoch": 2
+          }
+        ]
+      },
+      {
+        "id": "point_10_20",
+        "target": [
+          3.5,
+          47.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.094000000000051,
+        "physical_dose": 3.479666666665986,
+        "maximum_physical_docking_error_m": 0.04077929035499155,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 803.854,
+        "succeeded_t": 846.336,
+        "cycle_sim_s": 42.48199999999997,
+        "time_to_service_sim_s": 38.12399999999991,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 49,
+            "span_s": 1.830000000000041,
+            "max_gap_s": 0.08399999999994634,
+            "median_distance_m": 0.023573178925061274,
+            "latest_distance_m": 0.033580389593020975,
+            "position_scatter_p95_m": 0.009166946539511762,
+            "continuous_stopped_s": 1.8559999999999945,
+            "localization_epoch": 2
+          }
+        ]
+      },
+      {
+        "id": "point_9_20",
+        "target": [
+          0.5,
+          47.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0519999999999072,
+        "physical_dose": 3.188333333332609,
+        "maximum_physical_docking_error_m": 0.03544588994655484,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 846.39,
+        "succeeded_t": 890.192,
+        "cycle_sim_s": 43.80200000000002,
+        "time_to_service_sim_s": 39.69200000000001,
+        "completed": true,
+        "route_goals": 2,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 53,
+            "span_s": 1.8299999999999272,
+            "max_gap_s": 0.06599999999991724,
+            "median_distance_m": 0.032154291964924496,
+            "latest_distance_m": 0.03398750755377641,
+            "position_scatter_p95_m": 0.0019579510536576962,
+            "continuous_stopped_s": 1.891999999999939,
+            "localization_epoch": 3
+          }
+        ]
+      },
+      {
+        "id": "point_8_20",
+        "target": [
+          -2.5,
+          47.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.236333333332679,
+        "maximum_physical_docking_error_m": 0.021626079078137638,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 890.224,
+        "succeeded_t": 916.478,
+        "cycle_sim_s": 26.253999999999905,
+        "time_to_service_sim_s": 22.107999999999947,
+        "completed": true,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 52,
+            "span_s": 1.863999999999919,
+            "max_gap_s": 0.08000000000004093,
+            "median_distance_m": 0.020405371195128075,
+            "latest_distance_m": 0.01861703578556808,
+            "position_scatter_p95_m": 0.0023954963647111784,
+            "continuous_stopped_s": 1.9220000000000255,
+            "localization_epoch": 3
+          }
+        ]
+      },
+      {
+        "id": "point_8_21",
+        "target": [
+          -2.5,
+          50.5
+        ],
+        "requested": 3.0,
+        "confirmed": 3.0720000000000027,
+        "physical_dose": 3.2756666666659586,
+        "maximum_physical_docking_error_m": 0.0204669165956227,
+        "ledger_state": "SUCCEEDED",
+        "uncertain": false,
+        "first_nav_t": 916.534,
+        "succeeded_t": 956.57,
+        "cycle_sim_s": 40.03600000000006,
+        "time_to_service_sim_s": 35.87800000000004,
+        "completed": true,
+        "route_goals": 2,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": [
+          {
+            "samples": 53,
+            "span_s": 1.830000000000041,
+            "max_gap_s": 0.07200000000000273,
+            "median_distance_m": 0.016437222945649196,
+            "latest_distance_m": 0.013823668186241906,
+            "position_scatter_p95_m": 0.002391010727594867,
+            "continuous_stopped_s": 1.8899999999999864,
+            "localization_epoch": 3
+          }
+        ]
+      },
+      {
+        "id": "point_9_21",
+        "target": [
+          0.5,
+          50.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": 956.614,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 1,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_10_21",
+        "target": [
+          3.5,
+          50.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_11_21",
+        "target": [
+          6.5,
+          50.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_12_21",
+        "target": [
+          9.5,
+          50.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_12_22",
+        "target": [
+          9.5,
+          53.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_12_23",
+        "target": [
+          9.5,
+          56.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_11_23",
+        "target": [
+          6.5,
+          56.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_11_22",
+        "target": [
+          6.5,
+          53.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_10_22",
+        "target": [
+          3.5,
+          53.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_9_22",
+        "target": [
+          0.5,
+          53.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_8_22",
+        "target": [
+          -2.5,
+          53.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_7_22",
+        "target": [
+          -5.5,
+          53.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_7_21",
+        "target": [
+          -5.5,
+          50.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_6_21",
+        "target": [
+          -8.5,
+          50.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_6_20",
+        "target": [
+          -8.5,
+          47.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_7_20",
+        "target": [
+          -5.5,
+          47.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_7_19",
+        "target": [
+          -5.5,
+          44.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_7_18",
+        "target": [
+          -5.5,
+          41.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_7_17",
+        "target": [
+          -5.5,
+          38.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_7_16",
+        "target": [
+          -5.5,
+          35.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_6_17",
+        "target": [
+          -8.5,
+          38.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_6_18",
+        "target": [
+          -8.5,
+          41.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_6_19",
+        "target": [
+          -8.5,
+          44.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_5_19",
+        "target": [
+          -11.5,
+          44.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_5_18",
+        "target": [
+          -11.5,
+          41.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_5_17",
+        "target": [
+          -11.5,
+          38.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_5_16",
+        "target": [
+          -11.5,
+          35.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_6_16",
+        "target": [
+          -8.5,
+          35.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_6_15",
+        "target": [
+          -8.5,
+          32.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      },
+      {
+        "id": "point_7_15",
+        "target": [
+          -5.5,
+          32.5
+        ],
+        "requested": 3.0,
+        "confirmed": 0,
+        "physical_dose": 0,
+        "maximum_physical_docking_error_m": null,
+        "ledger_state": null,
+        "uncertain": null,
+        "first_nav_t": null,
+        "succeeded_t": null,
+        "cycle_sim_s": null,
+        "time_to_service_sim_s": null,
+        "completed": false,
+        "route_goals": 0,
+        "local_corrections": 0,
+        "global_reacquisitions": 0,
+        "settled_windows": []
+      }
+    ],
+    "terrain": {
+      "exact_observed_deferred_matches": 2682,
+      "recorded_samples": 9562,
+      "valid_samples": 9553,
+      "odometry_epoch_mismatches": 9,
+      "waited_then_matched": 1228,
+      "max_pair_wait_sim_s": 0.012000000000000455,
+      "maximum_accepted_pair_delta_s": 0.04999999999999716,
+      "perception_cancel_dispatches": 9
+    },
+    "quantitative_safety": {
+      "runtime_clean": true,
+      "map_database_unchanged": true,
+      "no_unexpected_contact": true,
+      "sensor_render_configuration_valid": true,
+      "four_real_near_sensors": true,
+      "map_pose_rmse_under_15cm": true,
+      "measured_final_stop": true,
+      "unique_actuator_owner": true,
+      "unique_tool_owner": true,
+      "unique_transform_owners": true,
+      "implementation_bound": true
+    },
+    "camera": {
+      "frames": 7959,
+      "internal_valid": true,
+      "max_active_gap_sim_s": 0.25,
+      "max_active_age_wall_s": 0.30378393799765036,
+      "valid": true
+    },
+    "independent_dose_agreement": false,
+    "replay_no_flow": true,
+    "version_and_executable_bound": true,
+    "map_xy_rmse_m": 0.048298077922110626,
+    "low_speed_capture_proposals": 2,
+    "hashes": {
+      "spec.json": "bbf8f7730df51bb2ebebb0645da8ca68bcc4199f803c4892f32169480f625bf2",
+      "mission.json": "c7701314d9e77ff8174fa239d44f1791a15dbeb46876364adb135e52bc1a7629",
+      "mission_result.json": "4408039d0039211737feadf3cf3b28d48c4e5e0bb7cb8d706d103b3dc8e2a3bc",
+      "runtime.json": "6c1488ec87faf0690ca7390efe5b69a8d08aebe8f14e1bb7ce36df958dc1df0a",
+      "mission_events.jsonl": "19a547aa94646eaae54049d58f72c28651565392ba217b6d7c68c44606cd55fe",
+      "ledger/ledger.sqlite": "f59c814d57f5806c5fad66310081d7cfd305fdd4be770a8f7cf10d0815bd86f3",
+      "risk/risk.jsonl": "0fc3b708652e8c214879cd12caf5cf888c96c95876eaa159039c2100e768b130",
+      "tool_evaluation/physical.jsonl": "5225596b8a1df7557cadfa3620633ee24469e03bedce123ecb4ae2bd6c6bb346",
+      "evaluation/truth.jsonl": "a25aca21720d39af0bbeeb5af87b5f0fcce6e46a32a63e1e71f3aad0b89ff072",
+      "evaluation/contacts.json": "537bdfbf3717b6f0a5ad13d30ba2ca88c69e599cfdad25e813b20005e826832c",
+      "video/full.mp4": "7ac9b7afb51fbf49303f745e3c59a3b74d3322b2b68d6b20d605eb7671193cbd",
+      "video/recording.json": "660ba5c4935b0550194b1cbd52e9b496ca2b8e2fc36ca81b90370f4c7fb01a78"
+    }
+  },
+  "incomplete_jobs_with_actual_meter_or_active_ledger": [],
+  "completed_point_physics": {
+    "confirmed_original_points": 26,
+    "independently_verified": 26,
+    "failed_completed_points": [],
+    "total_measured_dose": 84.41566666664838,
+    "maximum_work_error_m": 0.055730316859953534,
+    "validated_original_thresholds": "SUCCEEDED, not uncertain, requested <= confirmed <= integrated physical dose + 0.10, measured error < 0.20 m"
+  }
+}

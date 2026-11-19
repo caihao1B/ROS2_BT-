@@ -1496,5 +1496,61 @@
     "derived_source_sha256": "c00f8b5ea292444a092a0111bf6f215b9a54ed6ef06886b4120a5707f6874de6",
     "variant": "candidate"
   },
-  "original_B1_reference_status": "PARTIAL"
+  "original_B1_reference_status": "PARTIAL",
+  "measured_vehicle_experiments": {
+    "formal_credit": false,
+    "source_reports": [
+      {
+        "path": "validation/r10_continuation_20261119/a1/comparison.json",
+        "sha256": "f9a673252767f199834dd1353f00e655257ecf3348d71d7d81d11ad37ef87c18"
+      },
+      {
+        "path": "validation/r10_continuation_20261119/b1/physical_connector_report.json",
+        "sha256": "ffdc14b117238e0df6aa0c72e64ae255a92db53c833a95fcd166fc5d483ee130"
+      },
+      {
+        "path": "validation/r10_continuation_20261119/checkpoint.json",
+        "sha256": "6a13c98771179270cb97818b1639fd0f852b6c737864c01902046cbfdad763e7"
+      }
+    ],
+    "spray": [
+      {
+        "session": "spray_defer_20261119_121141_482729",
+        "selected": 4,
+        "completed": 3,
+        "passed": false,
+        "elapsed_sim_s": 156.448
+      },
+      {
+        "session": "spray_defer_20261119_121833_942724",
+        "selected": 4,
+        "completed": 4,
+        "passed": true,
+        "elapsed_sim_s": 128.164
+      },
+      {
+        "session": "spray_defer_20261119_122402_750899",
+        "selected": 4,
+        "completed": 4,
+        "passed": true,
+        "elapsed_sim_s": 120.242
+      }
+    ],
+    "four_gear": {
+      "session": "mowing_20261119_125335_539235",
+      "verified": 4,
+      "selected": 4,
+      "passed": true
+    },
+    "full_spray_selection": {
+      "session": "spray_defer_20261119_130223_269769",
+      "selected": 56,
+      "completed": 26,
+      "passed": false,
+      "sim_s": 978.792,
+      "error": "TimeoutError('TASK_BOUND_OR_STOP_REQUEST')",
+      "path": "validation/r10_continuation_20261119/a1/full_selection.json",
+      "sha256": "fbc082997462f54549c5067214faf4e9d99f9cd1cb070611f440f0787754b23f"
+    }
+  }
 }

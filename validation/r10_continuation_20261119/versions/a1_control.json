@@ -1,0 +1,29 @@
+{
+  "schema": "r10-run-version/1",
+  "session": "spray_defer_20261119_121141_482729",
+  "base_commit": "0868d45bfc8f88646cea9c4d5e33d01ff64f4ef9",
+  "spec_sha256": "f81fef803c9055438f3fe90c4ab1dcd90b81fd43755899e001d5479b8dca314f",
+  "recorded_simulator_bindings": 127,
+  "counts": {
+    "build_artifact_hash_only": 10,
+    "source_archive": 8,
+    "base_commit": 109
+  },
+  "source_archive": {
+    "optimization_v2/three_tasks/build/r09_source/ToolActuator.cc": "source/1b84481c1560396eac370f61dce7c10284f07adec9b5d19e1e30db6cad2494e4.cc.gz",
+    "optimization_v2/three_tasks/build/r09_source/tool_action_server.cpp": "source/372f615b49d064e668150ee6d55b1fb0fec44500adf95ba0642abb3b449fccc8.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_global_source/global_manager.cpp": "source/d99350d08270eb24908defe4fcfb28f918d934beccaaa0089f518575bac19745.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_spray_bt_source/policy.hpp": "source/0efb2c70753b96e70003907dcf617928a1d3319f7885fc34abbac2aafa12ce16.hpp.gz",
+    "optimization_v2/three_tasks/build/r10_spray_bt_source/supervisor.cpp": "source/34529dcaa6acce06a854c0c9c825b70c82fa7249d3b2d59b6d6ef6ae982fe0f1.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_spray_global_source/global_manager.cpp": "source/03b9fd287ad998c67b0fd0f4e090272c11a0f13e70f614ece78e33f591caa84f.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_spray_global_source/stopped_revalidation.inc": "source/c8bea127de9414f85f4332167d409c33d2e3cdc74d9314b6187a5c86345cea3a.inc.gz",
+    "optimization_v2/three_tasks/build/spray_handoff_candidate/mission_spray_handoff.py": "source/6d57ad63120a5184c7bc48b828fa57eaf6cec38f8ca2eb0b7a7d2c522b1c8b29.py.gz"
+  },
+  "build_artifacts": "Compiled objects are fingerprinted in spec.json and rebuilt on the target host.",
+  "generated_scene_inputs": {
+    "scene/world.sdf": {
+      "sha256": "2e3cb721f89d009cc231cdb7b0b814f0142d40b4d350bd4e98164b011c65c0dd",
+      "archive": "scenes/2e3cb721f89d009cc231cdb7b0b814f0142d40b4d350bd4e98164b011c65c0dd.sdf.gz"
+    }
+  }
+}

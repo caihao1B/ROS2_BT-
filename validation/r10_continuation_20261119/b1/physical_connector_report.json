@@ -1,0 +1,336 @@
+{
+  "schema": "B1-FOUR-GEAR-PHYSICAL/1",
+  "passed": true,
+  "formal_credit": false,
+  "checks": {
+    "four_measured_parking_positions_and_headings": true,
+    "four_goals_ordered": true,
+    "sensor_localized": true,
+    "map_xy_rmse_under_15cm": true,
+    "vehicle_footprint_inside_original_authority": true,
+    "no_unexpected_contact": true,
+    "physical_blades_off_everywhere": true,
+    "zero_work_ledger": true,
+    "unique_actuator": true,
+    "unique_tool": true,
+    "unique_tf": true,
+    "curvature_bounded": true,
+    "measured_final_stop": true,
+    "runtime_clean": true,
+    "original_database_unchanged": true,
+    "unchanged_geometry_checks": true,
+    "plan_bindings": true
+  },
+  "session": "mowing_20261119_125335_539235",
+  "relative_session": "optimization_v2/three_tasks/results/experiments/b1_connector/mowing_20261119_125335_539235",
+  "plan_revision": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac",
+  "geometry_sha256": "2a8fed96cccf06c5cdd22719fab3dce1dec12ce74020d3bb1e2f289dc6eec2e7",
+  "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+  "selected_sections": 4,
+  "verified_parking_stops": 4,
+  "trajectory": [
+    {
+      "segment": "B1:offline_connection:6:0",
+      "direction": 1,
+      "length_m": 1.4149686754849407,
+      "goal_map": [
+        86.75393716261267,
+        32.12194275301114,
+        2.946702758863019
+      ],
+      "action_accepted": 1,
+      "state": "PHYSICALLY_VERIFIED",
+      "parking_window": {
+        "start_s": 34.022000000000006,
+        "end_s": 34.652,
+        "loc_samples": 22,
+        "physical_truth_samples": 32,
+        "physical_rotor_samples": 13,
+        "span_s": 0.6299999999999955,
+        "estimated_end_xy_m": 0.023908976359336125,
+        "estimated_end_yaw_rad": 0.015279976622707192,
+        "max_physical_xy_m": 0.04871349667486329,
+        "max_physical_yaw_rad": 0.014002928401436687,
+        "max_physical_linear_speed_mps": 0.0,
+        "max_physical_angular_speed_rad_s": 0.0,
+        "max_rotor_rad_s": 1.2484713111728596e-18,
+        "checks": {
+          "fresh_held_estimate": true,
+          "gated_stop": true,
+          "independent_measured_hold": true,
+          "physical_position": true,
+          "physical_heading": true,
+          "physically_stopped": true,
+          "physical_tool_off": true,
+          "measured_travel_in_selected_gear": true,
+          "route_tracked": true,
+          "armed": true
+        }
+      },
+      "stop_observation": {
+        "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+        "sim_s": 34.642,
+        "physical_xy_error_m": 0.04871349667486329,
+        "physical_yaw_error_rad": 0.014002928401436687,
+        "physical": {
+          "longitudinal_m": -0.0486008431764203,
+          "lateral_left_m": 0.0033110120556889434,
+          "overshoot_in_motion_direction_m": -0.0486008431764203,
+          "yaw_error_signed_rad": 0.014002928401436687,
+          "xy_error_m": 0.04871349667486329
+        },
+        "estimated": {
+          "longitudinal_m": -0.021514324320530808,
+          "lateral_left_m": -0.010429429494574968,
+          "overshoot_in_motion_direction_m": -0.021514324320530808,
+          "yaw_error_signed_rad": 0.015279976622707192,
+          "xy_error_m": 0.023908976359336125
+        },
+        "estimate_stamp": 34.65,
+        "cause": "INSIDE_PHYSICAL_ENVELOPE"
+      },
+      "first_goal_sim_s": 22.158,
+      "stopped_gear_armed": true,
+      "physical_forward_m": 1.367541398893668,
+      "physical_reverse_m": 0,
+      "maximum_path_cross_track_m": 0.003938301439063417,
+      "completed_by_worker": true
+    },
+    {
+      "segment": "B1:offline_connection:6:1",
+      "direction": -1,
+      "length_m": 2.195824135184883,
+      "goal_map": [
+        88.58785649065003,
+        30.999455600140266,
+        2.2379879057101375
+      ],
+      "action_accepted": 5,
+      "state": "PHYSICALLY_VERIFIED",
+      "parking_window": {
+        "start_s": 53.762,
+        "end_s": 54.362,
+        "loc_samples": 21,
+        "physical_truth_samples": 31,
+        "physical_rotor_samples": 12,
+        "span_s": 0.6000000000000014,
+        "estimated_end_xy_m": 0.024167730441253636,
+        "estimated_end_yaw_rad": 0.009990310343548359,
+        "max_physical_xy_m": 0.04895582239684552,
+        "max_physical_yaw_rad": 0.009573351890470594,
+        "max_physical_linear_speed_mps": 0.0,
+        "max_physical_angular_speed_rad_s": 0.0,
+        "max_rotor_rad_s": 1.1888213615334352e-18,
+        "checks": {
+          "fresh_held_estimate": true,
+          "gated_stop": true,
+          "independent_measured_hold": true,
+          "physical_position": true,
+          "physical_heading": true,
+          "physically_stopped": true,
+          "physical_tool_off": true,
+          "measured_travel_in_selected_gear": true,
+          "route_tracked": true,
+          "armed": true
+        }
+      },
+      "stop_observation": {
+        "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+        "sim_s": 54.362,
+        "physical_xy_error_m": 0.04895582239684552,
+        "physical_yaw_error_rad": 0.009573351890470594,
+        "physical": {
+          "longitudinal_m": -0.036415526804242586,
+          "lateral_left_m": -0.032719748686702514,
+          "overshoot_in_motion_direction_m": 0.036415526804242586,
+          "yaw_error_signed_rad": -0.009573351890470594,
+          "xy_error_m": 0.04895582239684552
+        },
+        "estimated": {
+          "longitudinal_m": 0.01042860340213802,
+          "lateral_left_m": -0.021801913350942684,
+          "overshoot_in_motion_direction_m": -0.01042860340213802,
+          "yaw_error_signed_rad": -0.009990310343548359,
+          "xy_error_m": 0.024167730441253636
+        },
+        "estimate_stamp": 54.36,
+        "cause": "INSIDE_PHYSICAL_ENVELOPE"
+      },
+      "first_goal_sim_s": 35.264,
+      "stopped_gear_armed": true,
+      "physical_forward_m": 0,
+      "physical_reverse_m": 2.1978237985079403,
+      "maximum_path_cross_track_m": 0.04895582239684552,
+      "completed_by_worker": true
+    },
+    {
+      "segment": "B1:offline_connection:6:2",
+      "direction": 1,
+      "length_m": 21.852812780100372,
+      "goal_map": [
+        102.94387567748458,
+        30.81321081290492,
+        -0.53692704041775
+      ],
+      "action_accepted": 14,
+      "state": "PHYSICALLY_VERIFIED",
+      "parking_window": {
+        "start_s": 202.108,
+        "end_s": 202.71,
+        "loc_samples": 21,
+        "physical_truth_samples": 30,
+        "physical_rotor_samples": 12,
+        "span_s": 0.6020000000000039,
+        "estimated_end_xy_m": 0.09768122890789828,
+        "estimated_end_yaw_rad": 0.0065201317465819475,
+        "max_physical_xy_m": 0.09378121424056331,
+        "max_physical_yaw_rad": 0.011054434409946134,
+        "max_physical_linear_speed_mps": 0.0,
+        "max_physical_angular_speed_rad_s": 0.0,
+        "max_rotor_rad_s": 6.514579881708667e-19,
+        "checks": {
+          "fresh_held_estimate": true,
+          "gated_stop": true,
+          "independent_measured_hold": true,
+          "physical_position": true,
+          "physical_heading": true,
+          "physically_stopped": true,
+          "physical_tool_off": true,
+          "measured_travel_in_selected_gear": true,
+          "route_tracked": true,
+          "armed": true
+        }
+      },
+      "stop_observation": {
+        "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+        "sim_s": 202.702,
+        "physical_xy_error_m": 0.09378121424056331,
+        "physical_yaw_error_rad": 0.011054434409946134,
+        "physical": {
+          "longitudinal_m": 0.04559717542755959,
+          "lateral_left_m": -0.08195006856289257,
+          "overshoot_in_motion_direction_m": 0.04559717542755959,
+          "yaw_error_signed_rad": 0.011054434409946134,
+          "xy_error_m": 0.09378121424056331
+        },
+        "estimated": {
+          "longitudinal_m": -0.0005992486271486422,
+          "lateral_left_m": -0.09767939077430861,
+          "overshoot_in_motion_direction_m": -0.0005992486271486422,
+          "yaw_error_signed_rad": 0.0065201317465819475,
+          "xy_error_m": 0.09768122890789828
+        },
+        "estimate_stamp": 202.71,
+        "cause": "INSIDE_PHYSICAL_ENVELOPE"
+      },
+      "first_goal_sim_s": 55.04,
+      "stopped_gear_armed": true,
+      "physical_forward_m": 21.95680399140738,
+      "physical_reverse_m": 0,
+      "maximum_path_cross_track_m": 0.09378121424056331,
+      "completed_by_worker": true
+    },
+    {
+      "segment": "B1:offline_connection:6:3",
+      "direction": -1,
+      "length_m": 2.474708519860936,
+      "goal_map": [
+        100.55717284124896,
+        31.143621631592943,
+        0.261799387799147
+      ],
+      "action_accepted": 3,
+      "state": "PHYSICALLY_VERIFIED",
+      "parking_window": {
+        "start_s": 225.57000000000002,
+        "end_s": 226.172,
+        "loc_samples": 21,
+        "physical_truth_samples": 30,
+        "physical_rotor_samples": 12,
+        "span_s": 0.6019999999999754,
+        "estimated_end_xy_m": 0.029034986500244248,
+        "estimated_end_yaw_rad": 0.02289730177912575,
+        "max_physical_xy_m": 0.03570286504059339,
+        "max_physical_yaw_rad": 0.025038693064344225,
+        "max_physical_linear_speed_mps": 0.0,
+        "max_physical_angular_speed_rad_s": 0.0,
+        "max_rotor_rad_s": 8.141612177427719e-19,
+        "checks": {
+          "fresh_held_estimate": true,
+          "gated_stop": true,
+          "independent_measured_hold": true,
+          "physical_position": true,
+          "physical_heading": true,
+          "physically_stopped": true,
+          "physical_tool_off": true,
+          "measured_travel_in_selected_gear": true,
+          "route_tracked": true,
+          "armed": true
+        }
+      },
+      "stop_observation": {
+        "event": "STOPPED_ORIGINAL_ARRIVAL_CONFIRMED",
+        "sim_s": 226.162,
+        "physical_xy_error_m": 0.03570286504059339,
+        "physical_yaw_error_rad": 0.025038693064344225,
+        "physical": {
+          "longitudinal_m": 0.009440882070822363,
+          "lateral_left_m": -0.03443202459675659,
+          "overshoot_in_motion_direction_m": -0.009440882070822363,
+          "yaw_error_signed_rad": -0.025038693064344225,
+          "xy_error_m": 0.03570286504059339
+        },
+        "estimated": {
+          "longitudinal_m": -0.00163952158060276,
+          "lateral_left_m": -0.028988660025190946,
+          "overshoot_in_motion_direction_m": 0.00163952158060276,
+          "yaw_error_signed_rad": -0.022897301779125745,
+          "xy_error_m": 0.029034986500244248
+        },
+        "estimate_stamp": 226.17,
+        "cause": "INSIDE_PHYSICAL_ENVELOPE"
+      },
+      "first_goal_sim_s": 203.382,
+      "stopped_gear_armed": true,
+      "physical_forward_m": 0,
+      "physical_reverse_m": 2.4604589548440954,
+      "maximum_path_cross_track_m": 0.09378121424056331,
+      "completed_by_worker": true
+    }
+  ],
+  "terminal": "COMPLETED",
+  "terminal_error": null,
+  "accepted_quality_samples": 1082,
+  "localization_reasons": {
+    "STARTUP_CORRECTION_STABILITY_PENDING": 32,
+    "GNSS_MAP_INNOVATION_OR_FRESHNESS": 1,
+    "HELD_OUT_SURFACE_MATCH": 1082
+  },
+  "map_xy_rmse_m": 0.026248852423300953,
+  "footprint_outside_samples": 0,
+  "unexpected_contacts": {},
+  "ledger_jobs": 0,
+  "source_binding_mismatches": [],
+  "runtime_wall_s": 503.29625585399845,
+  "runtime_error": null,
+  "forced": [],
+  "sim_s": 228.312,
+  "final_stop": {
+    "task_sim_s": 228.312,
+    "independent_linear_speed_mps": 0.0,
+    "independent_angular_speed_rad_s": 0.0,
+    "independent_rotor_rad_s": 2.496675509380178e-19,
+    "vehicle_gate": true,
+    "tool_gate": true
+  },
+  "physical_limits": {
+    "position_m": 0.1,
+    "yaw_rad": 0.12,
+    "stopped_linear_mps": 0.01,
+    "stopped_angular_rad_s": 0.02,
+    "tracking_m": 0.25,
+    "minimum_stopped_s": 0.6
+  },
+  "scope": "Only four tool-off B1 connector sections. Endpoint estimates and isolated Gazebo pose streams are compared on each stopped interval; no cluster or work credit.",
+  "parking_sample_file_sha256": "49b9f2bf30e1e8d949be11c23da0b007796bff52c93cb1858f78b38ad4289daa"
+}

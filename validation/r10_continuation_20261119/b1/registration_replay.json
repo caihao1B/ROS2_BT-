@@ -1,0 +1,1466 @@
+{
+  "scope": "Offline paired technical replay only. Every held-out and GNSS gate stays in force in the real runtime; no parking or route credit.",
+  "cases": [
+    {
+      "session": "mowing_20261119_084537_532941",
+      "coarse_hint_map": [
+        90.00712788060756,
+        32.03093096578392,
+        -2.8297932657906424
+      ],
+      "seven_heading_offsets_rad": [
+        -0.15,
+        -0.1,
+        -0.05,
+        0.0,
+        0.04999999999999999,
+        0.09999999999999998,
+        0.15
+      ],
+      "winner_rule": "Minimum held-out surface p95 after all seven LiDAR starts mutually converge within 8 cm / 0.015 rad; no truth or GNSS winner selection",
+      "training_choice": "Archived stationary startup only. Trim to nearest 60% of fitting-half correspondences and 4 cm Huber; 7 yaw guesses are a single capture.",
+      "fixture": "cold coarse hint; same stationary vehicle",
+      "frame_count": 14,
+      "surface_map_sha256": "18caa05e257c4a9e5bac4a1537349b717b858ea3fec8786651012ddc3541dd8c",
+      "comparison": {
+        "original": {
+          "evaluable": 14,
+          "gnss_under_15cm": 11,
+          "median_physical_xy_m": 0.1323250148080289,
+          "p95_physical_xy_m": 0.16264182516825376,
+          "median_physical_yaw_rad": 0.004343794553967273,
+          "median_raw_gnss_residual_m": 0.12714785645695845
+        },
+        "trimmed": {
+          "evaluable": 14,
+          "gnss_under_15cm": 14,
+          "median_physical_xy_m": 0.047690416632195455,
+          "p95_physical_xy_m": 0.07428992906288197,
+          "median_physical_yaw_rad": 0.0020398881820351544,
+          "median_raw_gnss_residual_m": 0.04949225206579633
+        }
+      },
+      "frames": [
+        {
+          "t": 10.4,
+          "original": {
+            "heldout_overlap": 0.9567207657095298,
+            "heldout_p95_m": 0.2161286344733681,
+            "gnss_residual_m": 0.08916357270170236,
+            "physical_xy_m": 0.04356179964133251,
+            "physical_yaw_rad": 0.001931778817745755
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9554723262588432,
+            "heldout_p95_m": 0.21083849602935564,
+            "gnss_residual_m": 0.09843941931352129,
+            "physical_xy_m": 0.05649164898017129,
+            "physical_yaw_rad": 0.0021893215165778024
+          }
+        },
+        {
+          "t": 15.4,
+          "original": {
+            "heldout_overlap": 0.9887185420885161,
+            "heldout_p95_m": 0.1664862143226202,
+            "gnss_residual_m": 0.14631441492236777,
+            "physical_xy_m": 0.12852698432847887,
+            "physical_yaw_rad": 0.006568736061377312
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9843795198148684,
+            "heldout_p95_m": 0.17149956644548367,
+            "gnss_residual_m": 0.04634629490051739,
+            "physical_xy_m": 0.027188366988571747,
+            "physical_yaw_rad": 0.0030574579405451274
+          }
+        },
+        {
+          "t": 20.6,
+          "original": {
+            "heldout_overlap": 0.9594594594594594,
+            "heldout_p95_m": 0.213018374848719,
+            "gnss_residual_m": 0.10843603890017707,
+            "physical_xy_m": 0.14664861779103755,
+            "physical_yaw_rad": 0.005324748172881755
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9553496208930076,
+            "heldout_p95_m": 0.21361604992543778,
+            "gnss_residual_m": 0.027678607012188248,
+            "physical_xy_m": 0.06354086728983413,
+            "physical_yaw_rad": 0.0026629622191971514
+          }
+        },
+        {
+          "t": 25.6,
+          "original": {
+            "heldout_overlap": 0.998546511627907,
+            "heldout_p95_m": 0.17913836817230505,
+            "gnss_residual_m": 0.12456803197333931,
+            "physical_xy_m": 0.16043970119540665,
+            "physical_yaw_rad": 0.0053909003222143426
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9966068831798351,
+            "heldout_p95_m": 0.17814959131667685,
+            "gnss_residual_m": 0.029269809264577822,
+            "physical_xy_m": 0.0667491125396161,
+            "physical_yaw_rad": 0.0022633292424019125
+          }
+        },
+        {
+          "t": 30.6,
+          "original": {
+            "heldout_overlap": 0.991960696739616,
+            "heldout_p95_m": 0.18469169176263023,
+            "gnss_residual_m": 0.12017484285973525,
+            "physical_xy_m": 0.12944515075416796,
+            "physical_yaw_rad": 0.004037451084217825
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9906166219839142,
+            "heldout_p95_m": 0.18148442813297522,
+            "gnss_residual_m": 0.03599923815638624,
+            "physical_xy_m": 0.044343940987024925,
+            "physical_yaw_rad": 0.0011960806970763294
+          }
+        },
+        {
+          "t": 35.6,
+          "original": {
+            "heldout_overlap": 0.9974645030425964,
+            "heldout_p95_m": 0.18062238937499664,
+            "gnss_residual_m": 0.15327691513795483,
+            "physical_xy_m": 0.1252989372787869,
+            "physical_yaw_rad": 0.00418082885550719
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9964503042596349,
+            "heldout_p95_m": 0.180132916391409,
+            "gnss_residual_m": 0.10171461178155645,
+            "physical_xy_m": 0.07474281295568545,
+            "physical_yaw_rad": 0.0024937828589504107
+          }
+        },
+        {
+          "t": 40.6,
+          "original": {
+            "heldout_overlap": 0.9947229551451188,
+            "heldout_p95_m": 0.19562658692631993,
+            "gnss_residual_m": 0.07572872684486158,
+            "physical_xy_m": 0.10759898428683075,
+            "physical_yaw_rad": 0.003767076023318161
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9938434476693052,
+            "heldout_p95_m": 0.19664673065140748,
+            "gnss_residual_m": 0.03182468977515369,
+            "physical_xy_m": 0.035699873437514344,
+            "physical_yaw_rad": 0.0012585450535183007
+          }
+        },
+        {
+          "t": 45.6,
+          "original": {
+            "heldout_overlap": 0.9921150278293135,
+            "heldout_p95_m": 0.1840892303807412,
+            "gnss_residual_m": 0.1492551101533079,
+            "physical_xy_m": 0.1578572020151809,
+            "physical_yaw_rad": 0.0057224162362752296
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9907149489322191,
+            "heldout_p95_m": 0.17965490357936278,
+            "gnss_residual_m": 0.035443568861412665,
+            "physical_xy_m": 0.04060152274415642,
+            "physical_yaw_rad": 0.001809870933758173
+          }
+        },
+        {
+          "t": 50.6,
+          "original": {
+            "heldout_overlap": 0.9371428571428572,
+            "heldout_p95_m": 0.20929783791249706,
+            "gnss_residual_m": 0.04667528320156465,
+            "physical_xy_m": 0.042727930483097316,
+            "physical_yaw_rad": 0.0010077826023793257
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9340611353711791,
+            "heldout_p95_m": 0.19455187881703115,
+            "gnss_residual_m": 0.0859678152353785,
+            "physical_xy_m": 0.0491698423595566,
+            "physical_yaw_rad": 0.001908158176694652
+          }
+        },
+        {
+          "t": 55.6,
+          "original": {
+            "heldout_overlap": 0.9986486486486487,
+            "heldout_p95_m": 0.1790765894189709,
+            "gnss_residual_m": 0.16315200670297528,
+            "physical_xy_m": 0.1667314839749698,
+            "physical_yaw_rad": 0.005522210680087625
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9954975236380009,
+            "heldout_p95_m": 0.17818705365013693,
+            "gnss_residual_m": 0.04611189400340479,
+            "physical_xy_m": 0.04608782549629089,
+            "physical_yaw_rad": 0.0014209093306085663
+          }
+        },
+        {
+          "t": 60.6,
+          "original": {
+            "heldout_overlap": 0.9969405594405595,
+            "heldout_p95_m": 0.1742719921513439,
+            "gnss_residual_m": 0.13671721992746066,
+            "physical_xy_m": 0.13974522845446416,
+            "physical_yaw_rad": 0.004506760252427355
+          },
+          "trimmed": {
+            "heldout_overlap": 0.994752951464801,
+            "heldout_p95_m": 0.17085993714725006,
+            "gnss_residual_m": 0.056992300996227374,
+            "physical_xy_m": 0.04621099090483431,
+            "physical_yaw_rad": 0.0013600114365974747
+          }
+        },
+        {
+          "t": 65.8,
+          "original": {
+            "heldout_overlap": 0.9979140592407175,
+            "heldout_p95_m": 0.17370924901769816,
+            "gnss_residual_m": 0.16058088648459012,
+            "physical_xy_m": 0.13520487886188987,
+            "physical_yaw_rad": 0.004125477557574531
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9970784641068448,
+            "heldout_p95_m": 0.17604907720320445,
+            "gnss_residual_m": 0.06833179845738474,
+            "physical_xy_m": 0.04408525928835329,
+            "physical_yaw_rad": 0.0010477418659036175
+          }
+        },
+        {
+          "t": 70.8,
+          "original": {
+            "heldout_overlap": 0.9775528169014085,
+            "heldout_p95_m": 0.20915828845330686,
+            "gnss_residual_m": 0.1297276809405776,
+            "physical_xy_m": 0.1580314718056178,
+            "physical_yaw_rad": 0.005343935014229029
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9736031676198856,
+            "heldout_p95_m": 0.20509513715058636,
+            "gnss_residual_m": 0.052638209231075254,
+            "physical_xy_m": 0.07404606850521855,
+            "physical_yaw_rad": 0.0025562501482006006
+          }
+        },
+        {
+          "t": 75.8,
+          "original": {
+            "heldout_overlap": 0.9823209428830463,
+            "heldout_p95_m": 0.1918387985313529,
+            "gnss_residual_m": 0.10359534762003927,
+            "physical_xy_m": 0.08700053234366471,
+            "physical_yaw_rad": 0.0032663200343483467
+          },
+          "trimmed": {
+            "heldout_overlap": 0.980072463768116,
+            "heldout_p95_m": 0.19031332553801839,
+            "gnss_residual_m": 0.0739038094371333,
+            "physical_xy_m": 0.05737277103722768,
+            "physical_yaw_rad": 0.002171618187375657
+          }
+        }
+      ]
+    },
+    {
+      "session": "mowing_20261119_072044_764057",
+      "coarse_hint_map": [
+        82.75344445444406,
+        35.8848589598888,
+        0.3117993877991483
+      ],
+      "seven_heading_offsets_rad": [
+        -0.15,
+        -0.1,
+        -0.05,
+        0.0,
+        0.04999999999999999,
+        0.09999999999999998,
+        0.15
+      ],
+      "winner_rule": "Minimum held-out surface p95 after all seven LiDAR starts mutually converge within 8 cm / 0.015 rad; no truth or GNSS winner selection",
+      "training_choice": "Archived stationary startup only. Trim to nearest 60% of fitting-half correspondences and 4 cm Huber; 7 yaw guesses are a single capture.",
+      "fixture": "moving retained full B1 observation; same previous raw observed pose for both fits",
+      "frame_count": 67,
+      "surface_map_sha256": "18caa05e257c4a9e5bac4a1537349b717b858ea3fec8786651012ddc3541dd8c",
+      "comparison": {
+        "original": {
+          "evaluable": 67,
+          "gnss_under_15cm": 35,
+          "median_physical_xy_m": 0.13979900646820526,
+          "p95_physical_xy_m": 0.30978209518813715,
+          "median_physical_yaw_rad": 0.007058470646260417,
+          "median_raw_gnss_residual_m": 0.14351443616676143
+        },
+        "trimmed": {
+          "evaluable": 67,
+          "gnss_under_15cm": 66,
+          "median_physical_xy_m": 0.02076571930030395,
+          "p95_physical_xy_m": 0.08586431577395884,
+          "median_physical_yaw_rad": 0.003138462649828755,
+          "median_raw_gnss_residual_m": 0.04044887374807153
+        }
+      },
+      "frames": [
+        {
+          "t": 50.6,
+          "original": {
+            "heldout_overlap": 0.9546064400715564,
+            "heldout_p95_m": 0.18471251822534698,
+            "gnss_residual_m": 0.037325299163760144,
+            "physical_xy_m": 0.02966996148504545,
+            "physical_yaw_rad": 0.0011321360476124753
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9532647584973166,
+            "heldout_p95_m": 0.18141026095212473,
+            "gnss_residual_m": 0.0509571283863208,
+            "physical_xy_m": 0.00429918367334171,
+            "physical_yaw_rad": 0.0002489221081776738
+          }
+        },
+        {
+          "t": 95.8,
+          "original": {
+            "heldout_overlap": 0.995040151157298,
+            "heldout_p95_m": 0.16901767807539783,
+            "gnss_residual_m": 0.05904094661540359,
+            "physical_xy_m": 0.051428271424004565,
+            "physical_yaw_rad": 0.0013057377961172012
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9957487009919698,
+            "heldout_p95_m": 0.16871438239162057,
+            "gnss_residual_m": 0.019352764797418494,
+            "physical_xy_m": 0.004276534135858061,
+            "physical_yaw_rad": 0.0002972951634251375
+          }
+        },
+        {
+          "t": 140.8,
+          "original": {
+            "heldout_overlap": 0.9867921114528677,
+            "heldout_p95_m": 0.206490645697802,
+            "gnss_residual_m": 0.03653946976275741,
+            "physical_xy_m": 0.008568852942123742,
+            "physical_yaw_rad": 0.0007533525716985068
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9873349013931608,
+            "heldout_p95_m": 0.20808921311014666,
+            "gnss_residual_m": 0.029299380363044355,
+            "physical_xy_m": 0.0029179238661127165,
+            "physical_yaw_rad": 0.0005060172463809964
+          }
+        },
+        {
+          "t": 185.8,
+          "original": {
+            "heldout_overlap": 0.9498318385650224,
+            "heldout_p95_m": 0.19952946801041324,
+            "gnss_residual_m": 0.04532045170107738,
+            "physical_xy_m": 0.03342993385103882,
+            "physical_yaw_rad": 0.0025421535978951137
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9480100896860987,
+            "heldout_p95_m": 0.19870659608547644,
+            "gnss_residual_m": 0.020649789226178744,
+            "physical_xy_m": 0.007166412930941712,
+            "physical_yaw_rad": 0.0009210112330117481
+          }
+        },
+        {
+          "t": 230.8,
+          "original": {
+            "heldout_overlap": 0.9432321575061526,
+            "heldout_p95_m": 0.20352645625827578,
+            "gnss_residual_m": 0.09519443378230315,
+            "physical_xy_m": 0.09013810665677026,
+            "physical_yaw_rad": 0.004522071924677018
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9399507793273175,
+            "heldout_p95_m": 0.19720523014021887,
+            "gnss_residual_m": 0.07190140058508977,
+            "physical_xy_m": 0.014467210125906512,
+            "physical_yaw_rad": 0.0004863947329440954
+          }
+        },
+        {
+          "t": 275.8,
+          "original": {
+            "heldout_overlap": 0.9610409848839021,
+            "heldout_p95_m": 0.20191046721129258,
+            "gnss_residual_m": 0.03770687173082227,
+            "physical_xy_m": 0.0295635381849314,
+            "physical_yaw_rad": 0.0023344415032156007
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9605734767025089,
+            "heldout_p95_m": 0.20167136467275934,
+            "gnss_residual_m": 0.027796871948507107,
+            "physical_xy_m": 0.02076571930030395,
+            "physical_yaw_rad": 0.0019220421673527
+          }
+        },
+        {
+          "t": 320.8,
+          "original": {
+            "heldout_overlap": 0.9512876202295998,
+            "heldout_p95_m": 0.20039341804595362,
+            "gnss_residual_m": 0.06730234844983712,
+            "physical_xy_m": 0.05418124443131883,
+            "physical_yaw_rad": 0.00323985673427174
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9506670803599131,
+            "heldout_p95_m": 0.2005893237122097,
+            "gnss_residual_m": 0.03584767291252464,
+            "physical_xy_m": 0.017946929565684094,
+            "physical_yaw_rad": 0.001957145095475177
+          }
+        },
+        {
+          "t": 365.8,
+          "original": {
+            "heldout_overlap": 0.9917355371900827,
+            "heldout_p95_m": 0.19105260697535634,
+            "gnss_residual_m": 0.07444997492595186,
+            "physical_xy_m": 0.03596569856116378,
+            "physical_yaw_rad": 0.001308881638115711
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9905201750121536,
+            "heldout_p95_m": 0.1928319814435856,
+            "gnss_residual_m": 0.02704494478650921,
+            "physical_xy_m": 0.011078241294177896,
+            "physical_yaw_rad": 0.00033648695618992974
+          }
+        },
+        {
+          "t": 410.8,
+          "original": {
+            "heldout_overlap": 0.9509978906376765,
+            "heldout_p95_m": 0.21509809078738396,
+            "gnss_residual_m": 0.2889388154450797,
+            "physical_xy_m": 0.2547216566960035,
+            "physical_yaw_rad": 0.009601315316560721
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9388284926172319,
+            "heldout_p95_m": 0.22327230352717264,
+            "gnss_residual_m": 0.042742619537886765,
+            "physical_xy_m": 0.007545656315461608,
+            "physical_yaw_rad": 0.0003248139656122362
+          }
+        },
+        {
+          "t": 455.8,
+          "original": {
+            "heldout_overlap": 0.9526770817533748,
+            "heldout_p95_m": 0.2230680559605072,
+            "gnss_residual_m": 0.1834389052906859,
+            "physical_xy_m": 0.17822343001202412,
+            "physical_yaw_rad": 0.00700482722308593
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9420597603518883,
+            "heldout_p95_m": 0.21670132490354568,
+            "gnss_residual_m": 0.027711827836071158,
+            "physical_xy_m": 0.017184734510717732,
+            "physical_yaw_rad": 0.0006820445641084749
+          }
+        },
+        {
+          "t": 500.8,
+          "original": {
+            "heldout_overlap": 0.9579070937447594,
+            "heldout_p95_m": 0.1789870745282933,
+            "gnss_residual_m": 0.18041578899764138,
+            "physical_xy_m": 0.1637058039649673,
+            "physical_yaw_rad": 0.005122026641588784
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9567331879926212,
+            "heldout_p95_m": 0.17162609150713343,
+            "gnss_residual_m": 0.05349609209303062,
+            "physical_xy_m": 0.02205235243339869,
+            "physical_yaw_rad": 0.0009925293903969568
+          }
+        },
+        {
+          "t": 546.0,
+          "original": {
+            "heldout_overlap": 0.9152219873150106,
+            "heldout_p95_m": 0.23929935127578467,
+            "gnss_residual_m": 0.0024462776572070624,
+            "physical_xy_m": 0.018525420922642605,
+            "physical_yaw_rad": 0.0018244081313822935
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9164904862579282,
+            "heldout_p95_m": 0.2412032464035961,
+            "gnss_residual_m": 0.011386064647664385,
+            "physical_xy_m": 0.005945069781872998,
+            "physical_yaw_rad": 0.0009557599413221873
+          }
+        },
+        {
+          "t": 591.0,
+          "original": {
+            "heldout_overlap": 0.9630541871921182,
+            "heldout_p95_m": 0.15896237780628328,
+            "gnss_residual_m": 0.11782955275655761,
+            "physical_xy_m": 0.09324868907874352,
+            "physical_yaw_rad": 0.0024360740534707936
+          },
+          "trimmed": {
+            "heldout_overlap": 0.957820197044335,
+            "heldout_p95_m": 0.15748443239401844,
+            "gnss_residual_m": 0.05251919327382469,
+            "physical_xy_m": 0.03057670418336784,
+            "physical_yaw_rad": 0.0008824340635953387
+          }
+        },
+        {
+          "t": 636.0,
+          "original": {
+            "heldout_overlap": 0.9453667953667954,
+            "heldout_p95_m": 0.22064407159243166,
+            "gnss_residual_m": 0.1379423208450006,
+            "physical_xy_m": 0.07973854356624967,
+            "physical_yaw_rad": 0.005009119970973419
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9362934362934363,
+            "heldout_p95_m": 0.2105821776785338,
+            "gnss_residual_m": 0.06600218691169982,
+            "physical_xy_m": 0.007934274020374834,
+            "physical_yaw_rad": 0.001668818117805504
+          }
+        },
+        {
+          "t": 681.0,
+          "original": {
+            "heldout_overlap": 0.9516129032258065,
+            "heldout_p95_m": 0.17735455594329402,
+            "gnss_residual_m": 0.07631275931725479,
+            "physical_xy_m": 0.08055623049048645,
+            "physical_yaw_rad": 0.006181076389097928
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9416508538899431,
+            "heldout_p95_m": 0.17461331808458874,
+            "gnss_residual_m": 0.005227631001753838,
+            "physical_xy_m": 0.008998017229819162,
+            "physical_yaw_rad": 0.00164229271066052
+          }
+        },
+        {
+          "t": 726.0,
+          "original": {
+            "heldout_overlap": 0.9360045306526972,
+            "heldout_p95_m": 0.2202547253300255,
+            "gnss_residual_m": 0.02149449597000468,
+            "physical_xy_m": 0.02109232374049723,
+            "physical_yaw_rad": 0.0038101646809223233
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9348718674784086,
+            "heldout_p95_m": 0.22491873753357083,
+            "gnss_residual_m": 0.02439212839381493,
+            "physical_xy_m": 0.009652781793405736,
+            "physical_yaw_rad": 0.0021398559180019205
+          }
+        },
+        {
+          "t": 771.0,
+          "original": {
+            "heldout_overlap": 0.9521291399944336,
+            "heldout_p95_m": 0.2208066129824613,
+            "gnss_residual_m": 0.13564958671330424,
+            "physical_xy_m": 0.15492143472506265,
+            "physical_yaw_rad": 0.008513965248341915
+          },
+          "trimmed": {
+            "heldout_overlap": 0.944336209295853,
+            "heldout_p95_m": 0.214476458091386,
+            "gnss_residual_m": 0.014088876345709902,
+            "physical_xy_m": 0.008813085286630707,
+            "physical_yaw_rad": 0.0016451782601754061
+          }
+        },
+        {
+          "t": 816.0,
+          "original": {
+            "heldout_overlap": 0.9864597093791282,
+            "heldout_p95_m": 0.18950235263048043,
+            "gnss_residual_m": 0.012590400717982658,
+            "physical_xy_m": 0.002454575760451702,
+            "physical_yaw_rad": 0.0033410542513356845
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9867899603698811,
+            "heldout_p95_m": 0.1890886946793846,
+            "gnss_residual_m": 0.010239795444338954,
+            "physical_xy_m": 0.016088621482064754,
+            "physical_yaw_rad": 0.0037787187435860403
+          }
+        },
+        {
+          "t": 861.0,
+          "original": {
+            "heldout_overlap": 0.9969638421197903,
+            "heldout_p95_m": 0.16635815135814633,
+            "gnss_residual_m": 0.1192847767581838,
+            "physical_xy_m": 0.14798823518107884,
+            "physical_yaw_rad": 0.006980109567571446
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9925476124758488,
+            "heldout_p95_m": 0.16359676826888422,
+            "gnss_residual_m": 0.006235510494403138,
+            "physical_xy_m": 0.028108278732678817,
+            "physical_yaw_rad": 0.0028395683941733196
+          }
+        },
+        {
+          "t": 891.0,
+          "original": {
+            "heldout_overlap": 0.9675324675324676,
+            "heldout_p95_m": 0.19550970023136743,
+            "gnss_residual_m": 0.14351443616676143,
+            "physical_xy_m": 0.13979900646820526,
+            "physical_yaw_rad": 0.00048798017389728443
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9749536178107606,
+            "heldout_p95_m": 0.20405780173898033,
+            "gnss_residual_m": 0.03665733521883565,
+            "physical_xy_m": 0.015124326598396744,
+            "physical_yaw_rad": 0.00390480215898803
+          }
+        },
+        {
+          "t": 896.0,
+          "original": {
+            "heldout_overlap": 0.9906928645294726,
+            "heldout_p95_m": 0.18436233126678062,
+            "gnss_residual_m": 0.019555049338962148,
+            "physical_xy_m": 0.015551693417307338,
+            "physical_yaw_rad": 0.0037787947485909967
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9925542916235781,
+            "heldout_p95_m": 0.18810227127140738,
+            "gnss_residual_m": 0.07986154212007442,
+            "physical_xy_m": 0.05117252999098735,
+            "physical_yaw_rad": 0.006497032973991512
+          }
+        },
+        {
+          "t": 901.0,
+          "original": {
+            "heldout_overlap": 0.9970501474926253,
+            "heldout_p95_m": 0.20599107319645638,
+            "gnss_residual_m": 0.1757771123948454,
+            "physical_xy_m": 0.13915007349485725,
+            "physical_yaw_rad": 0.0077940915951235645
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9941002949852508,
+            "heldout_p95_m": 0.2039912804341426,
+            "gnss_residual_m": 0.12281807922157446,
+            "physical_xy_m": 0.08621375606498961,
+            "physical_yaw_rad": 0.006261893088268966
+          }
+        },
+        {
+          "t": 906.0,
+          "original": {
+            "heldout_overlap": 0.9959125281013693,
+            "heldout_p95_m": 0.17565101542938732,
+            "gnss_residual_m": 0.18191413518942845,
+            "physical_xy_m": 0.1710926576190247,
+            "physical_yaw_rad": 0.008633733740917027
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9908031882280809,
+            "heldout_p95_m": 0.18178542678604906,
+            "gnss_residual_m": 0.05811423718628948,
+            "physical_xy_m": 0.0497845046138407,
+            "physical_yaw_rad": 0.004500816380886619
+          }
+        },
+        {
+          "t": 911.0,
+          "original": {
+            "heldout_overlap": 0.981271676300578,
+            "heldout_p95_m": 0.19450324557362647,
+            "gnss_residual_m": 0.30670290687450175,
+            "physical_xy_m": 0.30759748434823714,
+            "physical_yaw_rad": 0.012502415989758653
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9750289017341041,
+            "heldout_p95_m": 0.1948748954257094,
+            "gnss_residual_m": 0.061204447086425307,
+            "physical_xy_m": 0.0660554316618198,
+            "physical_yaw_rad": 0.004628821298204855
+          }
+        },
+        {
+          "t": 916.0,
+          "original": {
+            "heldout_overlap": 0.9879366222542312,
+            "heldout_p95_m": 0.19386756366456145,
+            "gnss_residual_m": 0.11134735451642495,
+            "physical_xy_m": 0.13689498057928212,
+            "physical_yaw_rad": 0.007805698176922338
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9841555635577962,
+            "heldout_p95_m": 0.190281729961286,
+            "gnss_residual_m": 0.0544833023103755,
+            "physical_xy_m": 0.022580868397479293,
+            "physical_yaw_rad": 0.0020140209796064568
+          }
+        },
+        {
+          "t": 921.0,
+          "original": {
+            "heldout_overlap": 0.9594197216232111,
+            "heldout_p95_m": 0.22295915330094643,
+            "gnss_residual_m": 0.31920984064707286,
+            "physical_xy_m": 0.3151317746133028,
+            "physical_yaw_rad": 0.006531436582279504
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9758870809645167,
+            "heldout_p95_m": 0.23477726242193706,
+            "gnss_residual_m": 0.06321106091413443,
+            "physical_xy_m": 0.04683693393256412,
+            "physical_yaw_rad": 0.004722684793970977
+          }
+        },
+        {
+          "t": 926.0,
+          "original": {
+            "heldout_overlap": 0.9911730545876888,
+            "heldout_p95_m": 0.18231904251120792,
+            "gnss_residual_m": 0.14880409975417633,
+            "physical_xy_m": 0.1554176417668221,
+            "physical_yaw_rad": 0.008510596440994611
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9886178861788618,
+            "heldout_p95_m": 0.17422172672166403,
+            "gnss_residual_m": 0.041728178327368214,
+            "physical_xy_m": 0.03246724467835939,
+            "physical_yaw_rad": 0.002353751050532704
+          }
+        },
+        {
+          "t": 931.0,
+          "original": {
+            "heldout_overlap": 0.9907533315202611,
+            "heldout_p95_m": 0.18444465654142062,
+            "gnss_residual_m": 0.3535904657675861,
+            "physical_xy_m": 0.3107183569766658,
+            "physical_yaw_rad": 0.012482189250862863
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9945607832472124,
+            "heldout_p95_m": 0.17562133220488652,
+            "gnss_residual_m": 0.12689542690023178,
+            "physical_xy_m": 0.08504895509488707,
+            "physical_yaw_rad": 0.005132668267489038
+          }
+        },
+        {
+          "t": 936.0,
+          "original": {
+            "heldout_overlap": 0.9938398357289527,
+            "heldout_p95_m": 0.1901875082373623,
+            "gnss_residual_m": 0.17392229484378857,
+            "physical_xy_m": 0.14432760603699055,
+            "physical_yaw_rad": 0.007705968017299725
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9881359799224275,
+            "heldout_p95_m": 0.18560892577435448,
+            "gnss_residual_m": 0.03630366415280031,
+            "physical_xy_m": 0.03251335821394659,
+            "physical_yaw_rad": 0.0018408030541303688
+          }
+        },
+        {
+          "t": 941.0,
+          "original": {
+            "heldout_overlap": 0.9580489763147331,
+            "heldout_p95_m": 0.21618455552657123,
+            "gnss_residual_m": 0.04185149655423614,
+            "physical_xy_m": 0.038512202508234276,
+            "physical_yaw_rad": 0.004293325719421759
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9568446407065435,
+            "heldout_p95_m": 0.21165856256609428,
+            "gnss_residual_m": 0.01429511042103824,
+            "physical_xy_m": 0.006321816133018701,
+            "physical_yaw_rad": 0.00329548441171168
+          }
+        },
+        {
+          "t": 946.0,
+          "original": {
+            "heldout_overlap": 0.9797698589458055,
+            "heldout_p95_m": 0.19864973552358586,
+            "gnss_residual_m": 0.014348457621120034,
+            "physical_xy_m": 0.02091369101725483,
+            "physical_yaw_rad": 0.0021688837982347664
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9806978470675576,
+            "heldout_p95_m": 0.1988495414961528,
+            "gnss_residual_m": 0.007092280011847677,
+            "physical_xy_m": 0.005489751553757423,
+            "physical_yaw_rad": 0.002683128591874251
+          }
+        },
+        {
+          "t": 951.0,
+          "original": {
+            "heldout_overlap": 0.984954128440367,
+            "heldout_p95_m": 0.2125346610865384,
+            "gnss_residual_m": 0.01674539261168742,
+            "physical_xy_m": 0.0016388338725633097,
+            "physical_yaw_rad": 0.002723061850684605
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9853211009174312,
+            "heldout_p95_m": 0.21140864483650088,
+            "gnss_residual_m": 0.029167616253514748,
+            "physical_xy_m": 0.011780704510152618,
+            "physical_yaw_rad": 0.002921399271655467
+          }
+        },
+        {
+          "t": 956.0,
+          "original": {
+            "heldout_overlap": 0.9919627749576988,
+            "heldout_p95_m": 0.18617299301332613,
+            "gnss_residual_m": 0.17888432766016046,
+            "physical_xy_m": 0.23699416128792666,
+            "physical_yaw_rad": 0.009749743061548521
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9919627749576988,
+            "heldout_p95_m": 0.18666429349168373,
+            "gnss_residual_m": 0.0308342822291123,
+            "physical_xy_m": 0.0674590983226754,
+            "physical_yaw_rad": 0.004297330232294172
+          }
+        },
+        {
+          "t": 961.0,
+          "original": {
+            "heldout_overlap": 0.9751984126984127,
+            "heldout_p95_m": 0.1892000128250095,
+            "gnss_residual_m": 0.19961221955569178,
+            "physical_xy_m": 0.17233597209844365,
+            "physical_yaw_rad": 0.007193962334015147
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9737103174603174,
+            "heldout_p95_m": 0.19261297335854413,
+            "gnss_residual_m": 0.061297902553138675,
+            "physical_xy_m": 0.03438929840610518,
+            "physical_yaw_rad": 0.0026307845541846397
+          }
+        },
+        {
+          "t": 966.0,
+          "original": {
+            "heldout_overlap": 0.9968973747016706,
+            "heldout_p95_m": 0.17336716795431414,
+            "gnss_residual_m": 0.08243635869730956,
+            "physical_xy_m": 0.12907077428431013,
+            "physical_yaw_rad": 0.006155233938879068
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9926014319809069,
+            "heldout_p95_m": 0.17665579368232104,
+            "gnss_residual_m": 0.048734691837561545,
+            "physical_xy_m": 0.01563325852188998,
+            "physical_yaw_rad": 0.0023979829375289086
+          }
+        },
+        {
+          "t": 971.0,
+          "original": {
+            "heldout_overlap": 0.9903225806451613,
+            "heldout_p95_m": 0.19733820893384188,
+            "gnss_residual_m": 0.074177282232175,
+            "physical_xy_m": 0.06845665952650544,
+            "physical_yaw_rad": 0.005069029409610071
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9898617511520738,
+            "heldout_p95_m": 0.19748368115650813,
+            "gnss_residual_m": 0.0758368750007817,
+            "physical_xy_m": 0.07127444125027793,
+            "physical_yaw_rad": 0.004904806701517828
+          }
+        },
+        {
+          "t": 976.0,
+          "original": {
+            "heldout_overlap": 0.9860526898383883,
+            "heldout_p95_m": 0.17933648878114228,
+            "gnss_residual_m": 0.16968914867723814,
+            "physical_xy_m": 0.1711112409031325,
+            "physical_yaw_rad": 0.008395062561190603
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9809608147000222,
+            "heldout_p95_m": 0.17206885355488727,
+            "gnss_residual_m": 0.053828255970697986,
+            "physical_xy_m": 0.05472607189872049,
+            "physical_yaw_rad": 0.004341284225148456
+          }
+        },
+        {
+          "t": 981.0,
+          "original": {
+            "heldout_overlap": 0.9747831349606617,
+            "heldout_p95_m": 0.18234359094819788,
+            "gnss_residual_m": 0.18497714092053893,
+            "physical_xy_m": 0.169814714024788,
+            "physical_yaw_rad": 0.007952991140612431
+          },
+          "trimmed": {
+            "heldout_overlap": 0.974581400040347,
+            "heldout_p95_m": 0.18426625187077078,
+            "gnss_residual_m": 0.09478842883358542,
+            "physical_xy_m": 0.07600648479151606,
+            "physical_yaw_rad": 0.004886684988800072
+          }
+        },
+        {
+          "t": 986.0,
+          "original": {
+            "heldout_overlap": 0.9982758620689656,
+            "heldout_p95_m": 0.171305068924239,
+            "gnss_residual_m": 0.1677141000768104,
+            "physical_xy_m": 0.16632116988587803,
+            "physical_yaw_rad": 0.007956042978464417
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9943965517241379,
+            "heldout_p95_m": 0.16889038073183035,
+            "gnss_residual_m": 0.04238728539058193,
+            "physical_xy_m": 0.03610344413641428,
+            "physical_yaw_rad": 0.003970016284178923
+          }
+        },
+        {
+          "t": 991.0,
+          "original": {
+            "heldout_overlap": 0.9924605894448252,
+            "heldout_p95_m": 0.17041985529835244,
+            "gnss_residual_m": 0.16601227948567918,
+            "physical_xy_m": 0.1712583008512353,
+            "physical_yaw_rad": 0.008205985616379419
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9901759195796207,
+            "heldout_p95_m": 0.1674961230941574,
+            "gnss_residual_m": 0.04706184952839934,
+            "physical_xy_m": 0.045564574482952806,
+            "physical_yaw_rad": 0.004378496001265386
+          }
+        },
+        {
+          "t": 996.0,
+          "original": {
+            "heldout_overlap": 0.9970910718281495,
+            "heldout_p95_m": 0.17411994884503582,
+            "gnss_residual_m": 0.12937389429575089,
+            "physical_xy_m": 0.12927036754085824,
+            "physical_yaw_rad": 0.007075207701129349
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9930633251286641,
+            "heldout_p95_m": 0.17059382243654794,
+            "gnss_residual_m": 0.034771499007376847,
+            "physical_xy_m": 0.019200337741249802,
+            "physical_yaw_rad": 0.003138462649828755
+          }
+        },
+        {
+          "t": 1001.0,
+          "original": {
+            "heldout_overlap": 0.9912776991984913,
+            "heldout_p95_m": 0.19155155165664708,
+            "gnss_residual_m": 0.05107127993670846,
+            "physical_xy_m": 0.10170418635770717,
+            "physical_yaw_rad": 0.005944819817421454
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9867986798679867,
+            "heldout_p95_m": 0.18630638535097097,
+            "gnss_residual_m": 0.031145032862098732,
+            "physical_xy_m": 0.020388721835036473,
+            "physical_yaw_rad": 0.0032676306212424677
+          }
+        },
+        {
+          "t": 1006.0,
+          "original": {
+            "heldout_overlap": 0.9888610414926204,
+            "heldout_p95_m": 0.1852059346094796,
+            "gnss_residual_m": 0.08384867321013548,
+            "physical_xy_m": 0.11367888859171404,
+            "physical_yaw_rad": 0.005910521845953642
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9835700362016151,
+            "heldout_p95_m": 0.17986255485515631,
+            "gnss_residual_m": 0.022866917558500618,
+            "physical_xy_m": 0.05084314198980261,
+            "physical_yaw_rad": 0.0037036531921237348
+          }
+        },
+        {
+          "t": 1011.0,
+          "original": {
+            "heldout_overlap": 0.9821609568214068,
+            "heldout_p95_m": 0.19001599058027224,
+            "gnss_residual_m": 0.005281784687228523,
+            "physical_xy_m": 0.017465683474099082,
+            "physical_yaw_rad": 0.002916712177292613
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9813500912223799,
+            "heldout_p95_m": 0.18958590768445543,
+            "gnss_residual_m": 0.02763763182142507,
+            "physical_xy_m": 0.042595811032031104,
+            "physical_yaw_rad": 0.003311413964812271
+          }
+        },
+        {
+          "t": 1016.0,
+          "original": {
+            "heldout_overlap": 0.9965304548959136,
+            "heldout_p95_m": 0.16601722730167842,
+            "gnss_residual_m": 0.24539279799676111,
+            "physical_xy_m": 0.22656108234121897,
+            "physical_yaw_rad": 0.010231315965429921
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9965304548959136,
+            "heldout_p95_m": 0.17007692451332665,
+            "gnss_residual_m": 0.15110141745428057,
+            "physical_xy_m": 0.1253509768243137,
+            "physical_yaw_rad": 0.0066425274231138864
+          }
+        },
+        {
+          "t": 1021.0,
+          "original": {
+            "heldout_overlap": 0.990606936416185,
+            "heldout_p95_m": 0.18622669247589313,
+            "gnss_residual_m": 0.312629425077566,
+            "physical_xy_m": 0.32907698639005656,
+            "physical_yaw_rad": 0.013841313674768596
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9958453757225434,
+            "heldout_p95_m": 0.19444301609668774,
+            "gnss_residual_m": 0.09290865146232657,
+            "physical_xy_m": 0.1033849440982476,
+            "physical_yaw_rad": 0.007096021936531471
+          }
+        },
+        {
+          "t": 1026.0,
+          "original": {
+            "heldout_overlap": 0.9924812030075187,
+            "heldout_p95_m": 0.19340215429824562,
+            "gnss_residual_m": 0.23154612144829317,
+            "physical_xy_m": 0.2249609684001026,
+            "physical_yaw_rad": 0.01115270543171265
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9939482853475151,
+            "heldout_p95_m": 0.1978942576541734,
+            "gnss_residual_m": 0.06500654334855552,
+            "physical_xy_m": 0.05596629633408808,
+            "physical_yaw_rad": 0.0063243688597942604
+          }
+        },
+        {
+          "t": 1031.0,
+          "original": {
+            "heldout_overlap": 0.9884007029876977,
+            "heldout_p95_m": 0.19089967739998903,
+            "gnss_residual_m": 0.17904929642528394,
+            "physical_xy_m": 0.20702027467365255,
+            "physical_yaw_rad": 0.010343555559843898
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9892794376098418,
+            "heldout_p95_m": 0.18680739889131462,
+            "gnss_residual_m": 0.016507738952718894,
+            "physical_xy_m": 0.04015552256054013,
+            "physical_yaw_rad": 0.004930083729382195
+          }
+        },
+        {
+          "t": 1036.0,
+          "original": {
+            "heldout_overlap": 0.9842483560177397,
+            "heldout_p95_m": 0.19360477089682762,
+            "gnss_residual_m": 0.04250297368569243,
+            "physical_xy_m": 0.05224587578472743,
+            "physical_yaw_rad": 0.001892333446097183
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9862364275883163,
+            "heldout_p95_m": 0.19701274428316523,
+            "gnss_residual_m": 0.005918824823152132,
+            "physical_xy_m": 0.015404711289876782,
+            "physical_yaw_rad": 0.0029321477352017844
+          }
+        },
+        {
+          "t": 1041.0,
+          "original": {
+            "heldout_overlap": 0.9707053469852105,
+            "heldout_p95_m": 0.19994633975148196,
+            "gnss_residual_m": 0.1500928763706517,
+            "physical_xy_m": 0.17163909846209244,
+            "physical_yaw_rad": 0.008989642660129582
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9684300341296929,
+            "heldout_p95_m": 0.1954950139858151,
+            "gnss_residual_m": 0.020463920641871088,
+            "physical_xy_m": 0.011641209520268914,
+            "physical_yaw_rad": 0.003208038285972714
+          }
+        },
+        {
+          "t": 1046.0,
+          "original": {
+            "heldout_overlap": 0.9623465211459754,
+            "heldout_p95_m": 0.19799896497423847,
+            "gnss_residual_m": 0.1507618689850838,
+            "physical_xy_m": 0.11148919967395557,
+            "physical_yaw_rad": 0.007058470646260417
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9574351978171897,
+            "heldout_p95_m": 0.19901715173147919,
+            "gnss_residual_m": 0.04334607073621307,
+            "physical_xy_m": 0.0017787676575149074,
+            "physical_yaw_rad": 0.002661827912686321
+          }
+        },
+        {
+          "t": 1051.0,
+          "original": {
+            "heldout_overlap": 0.9686880697582243,
+            "heldout_p95_m": 0.19277232294815722,
+            "gnss_residual_m": 0.16152309816148422,
+            "physical_xy_m": 0.14341994543005487,
+            "physical_yaw_rad": 0.008276560942269084
+          },
+          "trimmed": {
+            "heldout_overlap": 0.965120887831946,
+            "heldout_p95_m": 0.18973466924468513,
+            "gnss_residual_m": 0.08091488109164145,
+            "physical_xy_m": 0.061104564001689364,
+            "physical_yaw_rad": 0.0049519471594371145
+          }
+        },
+        {
+          "t": 1056.0,
+          "original": {
+            "heldout_overlap": 0.9722935531828626,
+            "heldout_p95_m": 0.17743654033342993,
+            "gnss_residual_m": 0.14203514895683142,
+            "physical_xy_m": 0.12948714677271905,
+            "physical_yaw_rad": 0.007943829965547891
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9712123259899986,
+            "heldout_p95_m": 0.17998336850133434,
+            "gnss_residual_m": 0.11222319063528031,
+            "physical_xy_m": 0.09562146033197838,
+            "physical_yaw_rad": 0.006818432452479803
+          }
+        },
+        {
+          "t": 1061.0,
+          "original": {
+            "heldout_overlap": 0.9716343327454439,
+            "heldout_p95_m": 0.17696415328025106,
+            "gnss_residual_m": 0.20435330198786544,
+            "physical_xy_m": 0.21412629724944904,
+            "physical_yaw_rad": 0.011098292579738583
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9704585537918872,
+            "heldout_p95_m": 0.1795239981046495,
+            "gnss_residual_m": 0.04044887374807153,
+            "physical_xy_m": 0.04585634433083125,
+            "physical_yaw_rad": 0.004240876463950386
+          }
+        },
+        {
+          "t": 1066.0,
+          "original": {
+            "heldout_overlap": 0.9537462807681905,
+            "heldout_p95_m": 0.21252355972065587,
+            "gnss_residual_m": 0.3190818661915877,
+            "physical_xy_m": 0.3382061833492586,
+            "physical_yaw_rad": 0.016298701694173183
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9440086556667568,
+            "heldout_p95_m": 0.2044449201881946,
+            "gnss_residual_m": 0.04356093085341415,
+            "physical_xy_m": 0.05812122330418607,
+            "physical_yaw_rad": 0.00498070008655222
+          }
+        },
+        {
+          "t": 1071.0,
+          "original": {
+            "heldout_overlap": 0.9677556818181818,
+            "heldout_p95_m": 0.18136708124431636,
+            "gnss_residual_m": 0.24929208043663587,
+            "physical_xy_m": 0.2550630834094296,
+            "physical_yaw_rad": 0.013465933238657392
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9640625,
+            "heldout_p95_m": 0.18731017835414995,
+            "gnss_residual_m": 0.06427981164477692,
+            "physical_xy_m": 0.059998184899498,
+            "physical_yaw_rad": 0.005138350044586522
+          }
+        },
+        {
+          "t": 1076.0,
+          "original": {
+            "heldout_overlap": 0.9560425639726374,
+            "heldout_p95_m": 0.20627275987501495,
+            "gnss_residual_m": 0.0770060412682812,
+            "physical_xy_m": 0.06287370965969893,
+            "physical_yaw_rad": 0.0001558680651637251
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9619964530022802,
+            "heldout_p95_m": 0.20560683509945646,
+            "gnss_residual_m": 0.03282013611008225,
+            "physical_xy_m": 0.020472248894153333,
+            "physical_yaw_rad": 0.0035019486660136864
+          }
+        },
+        {
+          "t": 1081.0,
+          "original": {
+            "heldout_overlap": 0.9684621825286073,
+            "heldout_p95_m": 0.17612199795306005,
+            "gnss_residual_m": 0.059121111745174745,
+            "physical_xy_m": 0.052297707013421554,
+            "physical_yaw_rad": 0.004687388679907346
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9666480602846776,
+            "heldout_p95_m": 0.1787425386745387,
+            "gnss_residual_m": 0.045386746280942775,
+            "physical_xy_m": 0.009510278255632287,
+            "physical_yaw_rad": 0.0027491109844656886
+          }
+        },
+        {
+          "t": 1086.0,
+          "original": {
+            "heldout_overlap": 0.970301353908866,
+            "heldout_p95_m": 0.1828675601993562,
+            "gnss_residual_m": 0.16270615806287103,
+            "physical_xy_m": 0.1633918491876169,
+            "physical_yaw_rad": 0.009319514470196091
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9625855291891104,
+            "heldout_p95_m": 0.1786308408917624,
+            "gnss_residual_m": 0.038313671872601957,
+            "physical_xy_m": 0.0028617848999341836,
+            "physical_yaw_rad": 0.0021505824279563733
+          }
+        },
+        {
+          "t": 1091.0,
+          "original": {
+            "heldout_overlap": 0.9495544479685848,
+            "heldout_p95_m": 0.20191404141838015,
+            "gnss_residual_m": 0.13510450248904612,
+            "physical_xy_m": 0.13257442224082053,
+            "physical_yaw_rad": 0.003643764238222942
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9561999697930826,
+            "heldout_p95_m": 0.2058944014783908,
+            "gnss_residual_m": 0.018703613344761824,
+            "physical_xy_m": 0.01730918071588872,
+            "physical_yaw_rad": 0.0017197801831200371
+          }
+        },
+        {
+          "t": 1096.0,
+          "original": {
+            "heldout_overlap": 0.9262083049693669,
+            "heldout_p95_m": 0.23207602320372603,
+            "gnss_residual_m": 0.09473553447307692,
+            "physical_xy_m": 0.10968543106546151,
+            "physical_yaw_rad": 0.0019389417253825592
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9253914227365555,
+            "heldout_p95_m": 0.22518220633011868,
+            "gnss_residual_m": 0.0087174195460634,
+            "physical_xy_m": 0.011097842695576558,
+            "physical_yaw_rad": 0.002561898989903666
+          }
+        },
+        {
+          "t": 1101.0,
+          "original": {
+            "heldout_overlap": 0.944412191582003,
+            "heldout_p95_m": 0.23220512292442883,
+            "gnss_residual_m": 0.18928388310920394,
+            "physical_xy_m": 0.18733988145622354,
+            "physical_yaw_rad": 0.011743116715854152
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9274310595065312,
+            "heldout_p95_m": 0.2196848477557043,
+            "gnss_residual_m": 0.020184017781425066,
+            "physical_xy_m": 0.005607996950535607,
+            "physical_yaw_rad": 0.002891810129343808
+          }
+        },
+        {
+          "t": 1106.0,
+          "original": {
+            "heldout_overlap": 0.9429400386847195,
+            "heldout_p95_m": 0.22355050100039117,
+            "gnss_residual_m": 0.21272394793556307,
+            "physical_xy_m": 0.1693161815564874,
+            "physical_yaw_rad": 0.010251913402634094
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9335912314635719,
+            "heldout_p95_m": 0.2123227340845053,
+            "gnss_residual_m": 0.07295663892757616,
+            "physical_xy_m": 0.03242969037408693,
+            "physical_yaw_rad": 0.0033763952837880806
+          }
+        },
+        {
+          "t": 1111.0,
+          "original": {
+            "heldout_overlap": 0.953186400136682,
+            "heldout_p95_m": 0.21206135291429773,
+            "gnss_residual_m": 0.21574670059786583,
+            "physical_xy_m": 0.20588511731179462,
+            "physical_yaw_rad": 0.011993333788219651
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9345634717239023,
+            "heldout_p95_m": 0.19415101413173982,
+            "gnss_residual_m": 0.011726876006493598,
+            "physical_xy_m": 0.0049474741000334705,
+            "physical_yaw_rad": 0.0026917173205494027
+          }
+        },
+        {
+          "t": 1116.0,
+          "original": {
+            "heldout_overlap": 0.9463099299694738,
+            "heldout_p95_m": 0.21197379531076305,
+            "gnss_residual_m": 0.22518892567815804,
+            "physical_xy_m": 0.21898326663842077,
+            "physical_yaw_rad": 0.01342691697785181
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9279942539055486,
+            "heldout_p95_m": 0.19076377857122168,
+            "gnss_residual_m": 0.03473195036871342,
+            "physical_xy_m": 0.031219394741525734,
+            "physical_yaw_rad": 0.0042009813086973935
+          }
+        },
+        {
+          "t": 1121.0,
+          "original": {
+            "heldout_overlap": 0.9489277028520893,
+            "heldout_p95_m": 0.22258743807002354,
+            "gnss_residual_m": 0.24602015844307115,
+            "physical_xy_m": 0.2210439661248874,
+            "physical_yaw_rad": 0.012977601665215888
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9292504974574397,
+            "heldout_p95_m": 0.20469941711671377,
+            "gnss_residual_m": 0.04560703494103267,
+            "physical_xy_m": 0.023696515576931355,
+            "physical_yaw_rad": 0.0037349970564288792
+          }
+        },
+        {
+          "t": 1126.0,
+          "original": {
+            "heldout_overlap": 0.941034103410341,
+            "heldout_p95_m": 0.24239110509727152,
+            "gnss_residual_m": 0.22188374645161937,
+            "physical_xy_m": 0.17158824674190992,
+            "physical_yaw_rad": 0.011236501639465102
+          },
+          "trimmed": {
+            "heldout_overlap": 0.9262926292629263,
+            "heldout_p95_m": 0.23101215617540563,
+            "gnss_residual_m": 0.06216314794368493,
+            "physical_xy_m": 0.01507209669301316,
+            "physical_yaw_rad": 0.003406460819653123
+          }
+        }
+      ]
+    }
+  ]
+}

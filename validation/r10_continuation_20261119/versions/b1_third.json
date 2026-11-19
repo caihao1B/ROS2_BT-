@@ -1,0 +1,69 @@
+{
+  "schema": "r10-run-version/1",
+  "session": "mowing_20261119_124201_958601",
+  "base_commit": "0868d45bfc8f88646cea9c4d5e33d01ff64f4ef9",
+  "spec_sha256": "0156df732c703f0424faf740ec28ae0f2d10a241fd64e651c253ebd0fa116566",
+  "recorded_simulator_bindings": 175,
+  "counts": {
+    "build_artifact_hash_only": 13,
+    "source_archive": 24,
+    "base_commit": 138
+  },
+  "source_archive": {
+    "optimization_v2/three_tasks/build/mowing_terrain_pairing_source/CMakeLists.txt": "source/0b1da198c5e6c140b7b4891ce735b366e14a3c724ccd9d8e3f4feb1e75fa9acb.txt.gz",
+    "optimization_v2/three_tasks/build/mowing_terrain_pairing_source/terrain.cpp": "source/c4decb19da7cd15ac45ffa87908cd22004d707a2521ba618dd37d0d627f53c49.cpp.gz",
+    "optimization_v2/three_tasks/build/mowing_terrain_pairing_source/terrain_pairing_session.inc": "source/96dd7c0e80ffcd5430b3860f243c0ac0c8fa35c9ae9a4b012fcea0f6e0cac9f5.inc.gz",
+    "optimization_v2/three_tasks/build/r08_source/global_manager.cpp": "source/b83774a8655308fee6c20c35a5f53b35ad335ad0ce1999c48a91412b0508d400.cpp.gz",
+    "optimization_v2/three_tasks/build/r08_source/terrain.cpp": "source/dec5192e107238e97e1478674b9e2df2c66fa08cc3e14a328cc248148102330b.cpp.gz",
+    "optimization_v2/three_tasks/build/r09_source/CMakeLists.txt": "source/d86f9abe07abaaba3cf4c6ec1a1dbbb93922303d3e86690555406482d9e777e1.txt.gz",
+    "optimization_v2/three_tasks/build/r09_source/ToolActuator.cc": "source/1b84481c1560396eac370f61dce7c10284f07adec9b5d19e1e30db6cad2494e4.cc.gz",
+    "optimization_v2/three_tasks/build/r09_source/terrain.cpp": "source/2cb9193250100e9461a4fe7d6a1be9e7655b68c3ace17530b6bdb883c6b8a6c7.cpp.gz",
+    "optimization_v2/three_tasks/build/r09_source/tool_action_server.cpp": "source/372f615b49d064e668150ee6d55b1fb0fec44500adf95ba0642abb3b449fccc8.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_connector_nav/steering_recorded_runtime.py": "source/c601e98fbf11bcf5f72eec28d645441cca10d5196d3f5dd27413f82d1ecf1faf.py.gz",
+    "optimization_v2/three_tasks/build/r10_connector_nav_install/share/r10_connector_navigation/plugins.xml": "source/d8b79d6e2add4be21b3bdc5c2899210051ad2fd9847f9dcc104605ed9d3e2337.xml.gz",
+    "optimization_v2/three_tasks/build/r10_global_source/global_manager.cpp": "source/d99350d08270eb24908defe4fcfb28f918d934beccaaa0089f518575bac19745.cpp.gz",
+    "optimization_v2/ws/src/task_platform/r10_backend/terrain_pairing.inc": "source/d43118cd297e8f654ac22c5e78e5afc7eab9e9a680a2ba5d4a7f7dd8438c8e94.inc.gz",
+    "optimization_v2/ws/src/task_platform/r10_connector_nav/CMakeLists.txt": "source/f8ca8a298433040e30481ea434f6678d0152fac32fd444d95d4f748a9d958f51.txt.gz",
+    "optimization_v2/ws/src/task_platform/r10_connector_nav/controller.cpp": "source/e0c34ee1cd8407a68f7c189e7c7e8b83c35cf9eea31f48a889a6fbc7df192b01.cpp.gz",
+    "optimization_v2/ws/src/task_platform/r10_connector_nav/package.xml": "source/ea9d48cb28538918a5981cf1b9f5bd343586e34694206f492a13a29cab1534c9.xml.gz",
+    "optimization_v2/ws/src/task_platform/r10_connector_nav/plugins.xml": "source/d8b79d6e2add4be21b3bdc5c2899210051ad2fd9847f9dcc104605ed9d3e2337.xml.gz",
+    "optimization_v2/ws/src/task_platform/scripts/connector_registration.py": "source/540834eb24493a1b44d29623ea55aff7ca3755d18017e06933ee62b403ce6d07.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/qualify_b1_connector.py": "source/1359a6381a9f5d66a8400d4444c3f43cc857898d8214689677779311741fb9db.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/qualify_b1_steering.py": "source/66fe1da1f9c642eaf32abbea375cbd0e1995167b5a44c93ced0ea36168635e56.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/score_b1_connector.py": "source/10d260e7b4c8c4f2a02571a0964b664f24bf5abd09f52e7ebc0d45e10216fdcd.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/spray_precision_session_r10.py": "source/a2f038af3b3e4c697613a0c5979b2e8c2b869b062266250013c7e6c1e73a6fb7.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/terrain_pairing_mowing_r10.py": "source/a10c31b5481e6ac6777f919b9df134ba9cc0c23ec0c87475575eec4772da1924.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/terrain_pairing_r10.py": "source/db0e104f96dafba6943ddc5190b830ff1a6ac8cdf42ce4991c0eb98b1004380a.py.gz"
+  },
+  "build_artifacts": "Compiled objects are fingerprinted in spec.json and rebuilt on the target host.",
+  "generated_scene_inputs": {
+    "overlay/adaptation.json": {
+      "sha256": "1392141ad843d4604a96487689273704f2240fbb0c207acdefe656085a42e2cb",
+      "archive": "scenes/1392141ad843d4604a96487689273704f2240fbb0c207acdefe656085a42e2cb.json.gz"
+    },
+    "overlay/regional_math.py": {
+      "sha256": "5e14d98f51e4b5719e102a7503aad6861e9550b0143ce0b8ea420003453dd4e5",
+      "archive": "scenes/5e14d98f51e4b5719e102a7503aad6861e9550b0143ce0b8ea420003453dd4e5.py.gz"
+    },
+    "scene/connector_manager.json": {
+      "sha256": "860a0c00689a88e656ad25c8ba24d541f277119c757a9f251671f375ce94c8de",
+      "archive": "scenes/860a0c00689a88e656ad25c8ba24d541f277119c757a9f251671f375ce94c8de.json.gz"
+    },
+    "scene/connector_mission.json": {
+      "sha256": "2af0979beaf8be479eabba27e739e3a625b191c7a7d82afcc5d2ef4f9fa82157",
+      "archive": "scenes/2af0979beaf8be479eabba27e739e3a625b191c7a7d82afcc5d2ef4f9fa82157.json.gz"
+    },
+    "scene/fixture.json": {
+      "sha256": "c98d2368065c75c3ba7db856108df03a6c62fc2c4c23446c20b2a90fb536dade",
+      "archive": "scenes/c98d2368065c75c3ba7db856108df03a6c62fc2c4c23446c20b2a90fb536dade.json.gz"
+    },
+    "scene/tool.json": {
+      "sha256": "d54cb6f507d015428351b770b684c7b804396a3c3a7f680eec63b4f16dbac465",
+      "archive": "scenes/d54cb6f507d015428351b770b684c7b804396a3c3a7f680eec63b4f16dbac465.json.gz"
+    },
+    "scene/world.sdf": {
+      "sha256": "38da4098219434d6bcff27f367b4c9a22d17629c5c8b2d7a01d121c68326bcc6",
+      "archive": "scenes/38da4098219434d6bcff27f367b4c9a22d17629c5c8b2d7a01d121c68326bcc6.sdf.gz"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "r10-run-version/1",
+  "session": "mowing_20261119_125335_539235",
+  "base_commit": "0868d45bfc8f88646cea9c4d5e33d01ff64f4ef9",
+  "spec_sha256": "bbd665d39b7ef538b1b997b2cf26ce95211c7d19edb1d2eb84f1ad9b7976135e",
+  "recorded_simulator_bindings": 177,
+  "counts": {
+    "build_artifact_hash_only": 13,
+    "source_archive": 26,
+    "base_commit": 138
+  },
+  "source_archive": {
+    "optimization_v2/three_tasks/build/mowing_terrain_pairing_source/CMakeLists.txt": "source/0b1da198c5e6c140b7b4891ce735b366e14a3c724ccd9d8e3f4feb1e75fa9acb.txt.gz",
+    "optimization_v2/three_tasks/build/mowing_terrain_pairing_source/terrain.cpp": "source/c4decb19da7cd15ac45ffa87908cd22004d707a2521ba618dd37d0d627f53c49.cpp.gz",
+    "optimization_v2/three_tasks/build/mowing_terrain_pairing_source/terrain_pairing_session.inc": "source/96dd7c0e80ffcd5430b3860f243c0ac0c8fa35c9ae9a4b012fcea0f6e0cac9f5.inc.gz",
+    "optimization_v2/three_tasks/build/r08_source/global_manager.cpp": "source/b83774a8655308fee6c20c35a5f53b35ad335ad0ce1999c48a91412b0508d400.cpp.gz",
+    "optimization_v2/three_tasks/build/r08_source/terrain.cpp": "source/dec5192e107238e97e1478674b9e2df2c66fa08cc3e14a328cc248148102330b.cpp.gz",
+    "optimization_v2/three_tasks/build/r09_source/CMakeLists.txt": "source/d86f9abe07abaaba3cf4c6ec1a1dbbb93922303d3e86690555406482d9e777e1.txt.gz",
+    "optimization_v2/three_tasks/build/r09_source/ToolActuator.cc": "source/1b84481c1560396eac370f61dce7c10284f07adec9b5d19e1e30db6cad2494e4.cc.gz",
+    "optimization_v2/three_tasks/build/r09_source/terrain.cpp": "source/2cb9193250100e9461a4fe7d6a1be9e7655b68c3ace17530b6bdb883c6b8a6c7.cpp.gz",
+    "optimization_v2/three_tasks/build/r09_source/tool_action_server.cpp": "source/372f615b49d064e668150ee6d55b1fb0fec44500adf95ba0642abb3b449fccc8.cpp.gz",
+    "optimization_v2/three_tasks/build/r10_connector_nav/current_gear_gate.py": "source/e1c165d0d115a6cce3347d602636f6ff5caa6fccbf4ec96ab5c2d986353491ca.py.gz",
+    "optimization_v2/three_tasks/build/r10_connector_nav/current_gear_recorded_runtime.py": "source/52a51ee1316ac8487dfb2d48103121198e11e270e73209a367d96a9d6ef7746e.py.gz",
+    "optimization_v2/three_tasks/build/r10_connector_nav_install/share/r10_connector_navigation/plugins.xml": "source/d8b79d6e2add4be21b3bdc5c2899210051ad2fd9847f9dcc104605ed9d3e2337.xml.gz",
+    "optimization_v2/three_tasks/build/r10_global_source/global_manager.cpp": "source/d99350d08270eb24908defe4fcfb28f918d934beccaaa0089f518575bac19745.cpp.gz",
+    "optimization_v2/ws/src/task_platform/r10_backend/terrain_pairing.inc": "source/d43118cd297e8f654ac22c5e78e5afc7eab9e9a680a2ba5d4a7f7dd8438c8e94.inc.gz",
+    "optimization_v2/ws/src/task_platform/r10_connector_nav/CMakeLists.txt": "source/f8ca8a298433040e30481ea434f6678d0152fac32fd444d95d4f748a9d958f51.txt.gz",
+    "optimization_v2/ws/src/task_platform/r10_connector_nav/controller.cpp": "source/e0c34ee1cd8407a68f7c189e7c7e8b83c35cf9eea31f48a889a6fbc7df192b01.cpp.gz",
+    "optimization_v2/ws/src/task_platform/r10_connector_nav/package.xml": "source/ea9d48cb28538918a5981cf1b9f5bd343586e34694206f492a13a29cab1534c9.xml.gz",
+    "optimization_v2/ws/src/task_platform/r10_connector_nav/plugins.xml": "source/d8b79d6e2add4be21b3bdc5c2899210051ad2fd9847f9dcc104605ed9d3e2337.xml.gz",
+    "optimization_v2/ws/src/task_platform/scripts/connector_registration.py": "source/540834eb24493a1b44d29623ea55aff7ca3755d18017e06933ee62b403ce6d07.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/qualify_b1_connector.py": "source/1359a6381a9f5d66a8400d4444c3f43cc857898d8214689677779311741fb9db.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/qualify_b1_context.py": "source/649dd23780bf04c17a67f9d2de1abe4074b58de389d083255078f4781bb5cac7.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/qualify_b1_steering.py": "source/66fe1da1f9c642eaf32abbea375cbd0e1995167b5a44c93ced0ea36168635e56.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/score_b1_connector.py": "source/10d260e7b4c8c4f2a02571a0964b664f24bf5abd09f52e7ebc0d45e10216fdcd.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/spray_precision_session_r10.py": "source/a2f038af3b3e4c697613a0c5979b2e8c2b869b062266250013c7e6c1e73a6fb7.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/terrain_pairing_mowing_r10.py": "source/a10c31b5481e6ac6777f919b9df134ba9cc0c23ec0c87475575eec4772da1924.py.gz",
+    "optimization_v2/ws/src/task_platform/scripts/terrain_pairing_r10.py": "source/db0e104f96dafba6943ddc5190b830ff1a6ac8cdf42ce4991c0eb98b1004380a.py.gz"
+  },
+  "build_artifacts": "Compiled objects are fingerprinted in spec.json and rebuilt on the target host.",
+  "generated_scene_inputs": {
+    "overlay/adaptation.json": {
+      "sha256": "6948e9b78e6b7611581ad6926f6373a4870bafa2fc7c0a832330a4ee0a83d3c2",
+      "archive": "scenes/6948e9b78e6b7611581ad6926f6373a4870bafa2fc7c0a832330a4ee0a83d3c2.json.gz"
+    },
+    "overlay/regional_math.py": {
+      "sha256": "5e14d98f51e4b5719e102a7503aad6861e9550b0143ce0b8ea420003453dd4e5",
+      "archive": "scenes/5e14d98f51e4b5719e102a7503aad6861e9550b0143ce0b8ea420003453dd4e5.py.gz"
+    },
+    "scene/connector_manager.json": {
+      "sha256": "7256d9098850ad9d8c6a8dd504545f483618ad8013914fc07c2427c5b1721065",
+      "archive": "scenes/7256d9098850ad9d8c6a8dd504545f483618ad8013914fc07c2427c5b1721065.json.gz"
+    },
+    "scene/connector_mission.json": {
+      "sha256": "3ea2fd1565ee1313114e0bf2ed77032f65081eb30e60f270ed553404057f4df3",
+      "archive": "scenes/3ea2fd1565ee1313114e0bf2ed77032f65081eb30e60f270ed553404057f4df3.json.gz"
+    },
+    "scene/fixture.json": {
+      "sha256": "27e45bfae0b3296e3610be27573690f5f36c888f196a50074977c26b9629d35d",
+      "archive": "scenes/27e45bfae0b3296e3610be27573690f5f36c888f196a50074977c26b9629d35d.json.gz"
+    },
+    "scene/tool.json": {
+      "sha256": "cfcb2f0be59b999238b2d25128026d166ff634c6ca117ec53d0fced5976d78f6",
+      "archive": "scenes/cfcb2f0be59b999238b2d25128026d166ff634c6ca117ec53d0fced5976d78f6.json.gz"
+    },
+    "scene/world.sdf": {
+      "sha256": "db0b78215a0e818324f5f5a5bea94283e120432c6e8cbeabb262fd95372f55a8",
+      "archive": "scenes/db0b78215a0e818324f5f5a5bea94283e120432c6e8cbeabb262fd95372f55a8.sdf.gz"
+    }
+  }
+}

@@ -1499,7 +1499,63 @@
       "derived_source_sha256": "c00f8b5ea292444a092a0111bf6f215b9a54ed6ef06886b4120a5707f6874de6",
       "variant": "candidate"
     },
-    "original_B1_reference_status": "PARTIAL"
+    "original_B1_reference_status": "PARTIAL",
+    "measured_vehicle_experiments": {
+      "formal_credit": false,
+      "source_reports": [
+        {
+          "path": "validation/r10_continuation_20261119/a1/comparison.json",
+          "sha256": "f9a673252767f199834dd1353f00e655257ecf3348d71d7d81d11ad37ef87c18"
+        },
+        {
+          "path": "validation/r10_continuation_20261119/b1/physical_connector_report.json",
+          "sha256": "ffdc14b117238e0df6aa0c72e64ae255a92db53c833a95fcd166fc5d483ee130"
+        },
+        {
+          "path": "validation/r10_continuation_20261119/checkpoint.json",
+          "sha256": "6a13c98771179270cb97818b1639fd0f852b6c737864c01902046cbfdad763e7"
+        }
+      ],
+      "spray": [
+        {
+          "session": "spray_defer_20261119_121141_482729",
+          "selected": 4,
+          "completed": 3,
+          "passed": false,
+          "elapsed_sim_s": 156.448
+        },
+        {
+          "session": "spray_defer_20261119_121833_942724",
+          "selected": 4,
+          "completed": 4,
+          "passed": true,
+          "elapsed_sim_s": 128.164
+        },
+        {
+          "session": "spray_defer_20261119_122402_750899",
+          "selected": 4,
+          "completed": 4,
+          "passed": true,
+          "elapsed_sim_s": 120.242
+        }
+      ],
+      "four_gear": {
+        "session": "mowing_20261119_125335_539235",
+        "verified": 4,
+        "selected": 4,
+        "passed": true
+      },
+      "full_spray_selection": {
+        "session": "spray_defer_20261119_130223_269769",
+        "selected": 56,
+        "completed": 26,
+        "passed": false,
+        "sim_s": 978.792,
+        "error": "TimeoutError('TASK_BOUND_OR_STOP_REQUEST')",
+        "path": "validation/r10_continuation_20261119/a1/full_selection.json",
+        "sha256": "fbc082997462f54549c5067214faf4e9d99f9cd1cb070611f440f0787754b23f"
+      }
+    }
   },
   "artifacts": [
     {
@@ -1552,15 +1608,15 @@
     },
     {
       "path": "optimization_v2/three_tasks/results/R10/report.html",
-      "sha256": "aa9b2b88ef8035d59799bb2f7eb0aaddb534324b14fdecf1dfad21bd1c269faf"
+      "sha256": "eed8e3ccfcd32767498675fdb11a9c55b8acf0f77069e3eb8e59e65f45efa86e"
     },
     {
       "path": "optimization_v2/three_tasks/results/R10/case_summary.json",
-      "sha256": "fd78ccf37281b0c0a2875e3afe44f5b21bcba878739bd9611a7eca3712340425"
+      "sha256": "ac95b8e4039b21dd0cb1aa8d11c2222531ccbd24ba319ba554237c117ca4d6aa"
     },
     {
       "path": "optimization_v2/three_tasks/results/R10/tests.log",
-      "sha256": "f3fa75143829d62cf39a0507519953a5227b20bccabc6ee3cb44f6570c064664"
+      "sha256": "a6f5b20773fc0c8f64144be28fd3e1d8d787e8d7a776e47ed5c3b3b9586ea507"
     },
     {
       "path": "optimization_v2/three_tasks/results/R10/config_reproducibility.json",
@@ -12751,6 +12807,22 @@
       "sha256": "ff0b4e76758f342239ffc3d9e3df605a1df9bcea4d057ab276b29207795eabbe"
     },
     {
+      "path": "validation/r10_continuation_20261119/a1/comparison.json",
+      "sha256": "f9a673252767f199834dd1353f00e655257ecf3348d71d7d81d11ad37ef87c18"
+    },
+    {
+      "path": "validation/r10_continuation_20261119/b1/physical_connector_report.json",
+      "sha256": "ffdc14b117238e0df6aa0c72e64ae255a92db53c833a95fcd166fc5d483ee130"
+    },
+    {
+      "path": "validation/r10_continuation_20261119/checkpoint.json",
+      "sha256": "6a13c98771179270cb97818b1639fd0f852b6c737864c01902046cbfdad763e7"
+    },
+    {
+      "path": "validation/r10_continuation_20261119/a1/full_selection.json",
+      "sha256": "fbc082997462f54549c5067214faf4e9d99f9cd1cb070611f440f0787754b23f"
+    },
+    {
       "path": "optimization_v2/three_tasks/results/R10/docking_diagnosis.json",
       "sha256": "5d626132573a8bda9124a1a405aa22966fec26312da3f01ac6e17b289bdd7f7f"
     },
@@ -12783,8 +12855,16 @@
       "sha256": "4cd1f63d12725c39770ae2206e4f463946643ce910818f1b4fb5ee052eb58b2d"
     },
     {
+      "path": "optimization_v2/ws/src/task_platform/r10_backend/terrain_pairing_test.cpp",
+      "sha256": "cf65e36c1ec58d72707f0ccd9f36e539540b98380810a5fa4edaf74a20848542"
+    },
+    {
       "path": "optimization_v2/ws/src/task_platform/r10_backend/correction_filter.hpp",
       "sha256": "28263236ad4caac1044041783ab539a223e25eb5937b3f64b20521741399c682"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/r10_backend/terrain_pairing.inc",
+      "sha256": "d43118cd297e8f654ac22c5e78e5afc7eab9e9a680a2ba5d4a7f7dd8438c8e94"
     },
     {
       "path": "optimization_v2/ws/src/task_platform/r10_backend/precision_progress_test.cpp",
@@ -12855,8 +12935,16 @@
       "sha256": "53ef899b91b02a4c41f403c9aa693f4f521630fca0fecf69b79e33c020fbe1a2"
     },
     {
+      "path": "optimization_v2/ws/src/task_platform/scripts/terrain_pairing_r10.py",
+      "sha256": "db0e104f96dafba6943ddc5190b830ff1a6ac8cdf42ce4991c0eb98b1004380a"
+    },
+    {
       "path": "optimization_v2/ws/src/task_platform/scripts/build_safe_route_r10.py",
       "sha256": "e24ac2911d0066500c84080671e030a8cd55ee1a316c2cef000c93edfb7313a8"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/spray_precision_r10.py",
+      "sha256": "38c34648299e3926658fe4e90e85beb7e253811e45e48a65ff668c9ccbf45aab"
     },
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/spray_defer_fixture_r10.py",
@@ -12877,6 +12965,10 @@
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/progress_spray_r10.py",
       "sha256": "cd6c8244ee0a88245fb2cb75ec84716c4f9c87b4740df94b7dd3930de9904238"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/qualify_spray_session_r10.py",
+      "sha256": "dae6763ffa11820f7c687c3cbe57f56c674b58d23449df948c2620b18e7f85c0"
     },
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/audit_mowing_checkpoint_r10.py",
@@ -12921,6 +13013,10 @@
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/replay_spray_bias_r10.py",
       "sha256": "40c554b1d7e356ece8e70b3df39a257943b0608b6f386876d2b3b76c2643c5d8"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/spray_precision_candidate_r10.py",
+      "sha256": "525fff23f672f2e6fde006b8afdf20ce773c09e6f62264362a2a5a0046d40903"
     },
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/approach_handoff_r10.py",
@@ -12987,6 +13083,10 @@
       "sha256": "70994fb55029d069818efc7c6f8df6e154ae37506faba38709f7be96a90fb3cd"
     },
     {
+      "path": "optimization_v2/ws/src/task_platform/scripts/test_spray_precision_r10.py",
+      "sha256": "7f039dd036a4bd37214e5743bc4e613121f49b138ded6d86e3da34688e1a7828"
+    },
+    {
       "path": "optimization_v2/ws/src/task_platform/scripts/probe_mowing_revalidation_r10.py",
       "sha256": "e0ff9cac30bee564503d47bda13022886d0f7fc4fa24ce9c8fea19b3936fca9e"
     },
@@ -13001,6 +13101,10 @@
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/probe_mowing_global_r10.py",
       "sha256": "2ba430ab2047781c2a221f8f03e4b570eb9eb56801d24e97b6e183bc522989b6"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/terrain_pairing_mowing_r10.py",
+      "sha256": "a10c31b5481e6ac6777f919b9df134ba9cc0c23ec0c87475575eec4772da1924"
     },
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/probe_nav2_paths_candidate_r10.py",
@@ -13055,6 +13159,10 @@
       "sha256": "bd30d6c865f4100f0db985ab3dab2ef55d94231a1c565a699aa41d559f4cb354"
     },
     {
+      "path": "optimization_v2/ws/src/task_platform/scripts/spray_precision_session_r10.py",
+      "sha256": "a2f038af3b3e4c697613a0c5979b2e8c2b869b062266250013c7e6c1e73a6fb7"
+    },
+    {
       "path": "optimization_v2/ws/src/task_platform/scripts/probe_global_r10.py",
       "sha256": "b1935ce3fc85b70ae29511fd2bd3cd833e5cc0c563afd3615ec5ab14b068db4b"
     },
@@ -13064,7 +13172,7 @@
     },
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/stage_r10.py",
-      "sha256": "1fe41b459772be5995bbcd9e89ea149199b1dcf6e598e663bcd85edec9caab4e"
+      "sha256": "4de369eda20eacd028617eec466ebdaadf840837756547a710a6197372c290de"
     },
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/scene_spray_r10.py",
@@ -13087,6 +13195,10 @@
       "sha256": "992e5280762af1efbf7cc7fc101c3b2665b37b3ebb4f8b43f28d160490fea3cc"
     },
     {
+      "path": "optimization_v2/ws/src/task_platform/scripts/replay_spray_precision_r10.py",
+      "sha256": "f5efd0c536d19e6edfb549e92e6f4d6adc443cba294b28891848197cf39066eb"
+    },
+    {
       "path": "optimization_v2/ws/src/task_platform/scripts/coverage_rejoin_r10.py",
       "sha256": "0cead284e7671e70536f6bca3b90055ecb2b8986b45b49734bbfced9e883d419"
     },
@@ -13097,6 +13209,10 @@
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/plot_repair_r10.py",
       "sha256": "a0a54f3657287baa5e86d332652dd31a1b44b42e41e3d847b6498789db0a0d4b"
+    },
+    {
+      "path": "optimization_v2/ws/src/task_platform/scripts/analyze_spray_precision_r10.py",
+      "sha256": "67fb35e8f60ba20e0b907e29e67035e47bb95286ecb2f47f105640c550e353fd"
     },
     {
       "path": "optimization_v2/ws/src/task_platform/scripts/prepare_safe_plan_r10.py",
@@ -13191,6 +13307,10 @@
       "sha256": "54b8dcbe5b5690e657094dac9b9c6f08d557313d39112177cbf59a1827b7631f"
     },
     {
+      "path": "optimization_v2/ws/src/task_platform/tests/test_switch_evidence_r10.py",
+      "sha256": "73fb3781fc3952780d62ddaac85e518d03b626d5d96f5bcde45ff80573ba5eaf"
+    },
+    {
       "path": "optimization_v2/ws/src/task_platform/tests/test_self_capture_mowing_r10.py",
       "sha256": "57fe102246d46e0f2f10064156e62998ba60922e76be6c14dc65c70d011021c6"
     },
@@ -13263,6 +13383,10 @@
       "sha256": "3bff97fb6b27364d0499fd6aa4ac7749f683e3e63f24b91b80f51a72fd565327"
     },
     {
+      "path": "docs/three_tasks/R10/CONTINUOUS_SERVICE_AND_PARKING.md",
+      "sha256": "639d0cb7d3afeba9319c25b023e6c28cd7fe76a25c0e64b1a7527a489d9a3d25"
+    },
+    {
       "path": "docs/three_tasks/R10/SAFE_EXECUTION.md",
       "sha256": "7850a37ba17f57103cfc5cc5fdc9c013582ea638efa7a5a916c409237e315707"
     },
@@ -13272,7 +13396,7 @@
     },
     {
       "path": "docs/three_tasks/R10/RESULTS.md",
-      "sha256": "53c6e4dd8d991427dfa2f5e2738910e5e2cc0e81b38c69e71718ed89dfeb9284"
+      "sha256": "ea76df06bec65980547dede6768c05cc6c903b91676b62a8381eb1a982d528eb"
     },
     {
       "path": "docs/three_tasks/R10/COLLISION_OBSERVATION.md",
@@ -13283,5 +13407,5 @@
   "formal_credit": false,
   "original_S17": "PARTIAL",
   "original_S18": "PARTIAL",
-  "created_utc": "20261119_093851_044269"
+  "created_utc": "20261119_132940_572932"
 }
