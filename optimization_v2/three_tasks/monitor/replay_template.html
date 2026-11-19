@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>农田机器人 · 作业记录回放</title>
+<style>
+:root{color-scheme:light;font:16px/1.55 "Segoe UI","Microsoft YaHei",sans-serif;color:#173032;background:#f6f6f1}*{box-sizing:border-box}body{margin:0 auto;max-width:1050px;padding:24px clamp(15px,4vw,55px) 60px}h1{font-size:clamp(24px,5vw,37px);margin-bottom:0}h2{font-size:20px}p{margin:.4em 0 1em;color:#43575a}label{display:block;font-weight:650}select,button{font:inherit;color:inherit;border:1px solid #a6b4ae;background:white;border-radius:6px;padding:6px 10px}select{max-width:100%}button{cursor:pointer}input[type=range]{accent-color:#066d59;width:100%;margin:14px 0}output{font:700 24px/1.5 Consolas,monospace;color:#126753}.tools,.grid{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.grid{align-items:stretch;gap:12px}.card,section{padding:14px;border:1px solid #c5d0c6;border-radius:8px;background:white}.card{flex:1 1 225px}.card strong{display:block;font-size:19px}.card small{color:#516163}section{margin:12px 0}table{border-collapse:collapse;width:100%}td,th{padding:6px;text-align:left;border-bottom:1px solid #e0e6df}th{color:#43575a;font-size:14px}td:last-child{overflow-wrap:anywhere}canvas{width:100%;height:240px;display:block;background:#f6f8f4}.sensors{font-size:14px}.note{font-size:14px}.events{max-height:230px;overflow:auto}details{margin-top:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere}code{font-size:.9em}.time{white-space:nowrap}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #118071}
+</style>
+</head><body>
+<h1>农田机器人作业回放</h1><p>沿仿真时钟查看车辆当时的定位、决策、控制和工具反馈。选中事件可跳到对应的采集时刻。</p>
+<label for="mission">运行记录</label><select id="mission" disabled></select><p class="note" id="status">正在解压随页保存的实测数据。</p>
+<main hidden>
+<section>
+<div class="tools"><output id="clock" aria-live="off"></output><button id="prev">上一帧</button><button id="next">下一帧</button><button id="play">连续播放</button></div>
+<input id="seek" aria-label="选择仿真时间" type="range" min="0" value="0"><label for="jump">按作业事件跳转</label><select id="jump"></select>
+</section>
+<div class="grid"><div class="card">行为树决策<strong id="decision"></strong><small id="reason"></small></div><div class="card">底盘指令<strong id="control"></strong><small id="gate"></small></div><div class="card">定位监督<strong id="local"></strong><small id="innovation"></small></div></div>
+<section><h2>定位轨迹</h2><canvas id="map" aria-label="地图坐标系下的实测定位轨迹"></canvas><div class="note">灰线为这次运行保存的完整定位轨迹，绿线为游标之前的轨迹，圆点为当前定位。较长的采样缺口处断开。</div></section>
+<section><h2>传感器和控制观测</h2><div class="sensors"><table><thead><tr><th>通道</th><th>采集时刻</th><th>实测字段</th></tr></thead><tbody id="signals"></tbody></table></div><details><summary>游标处的原始字段</summary><pre id="raw"></pre></details></section>
+<section><h2>最近的作业与工具事件</h2><div class="events"><table><tbody id="events"></tbody></table></div></section>
+<section><h2>本次运行的最终验收</h2><div id="verdict"></div></section>
+</main>
+<script type="application/octet-stream" id="packed">ARCHIVE_BASE64</script>
+<script>
+'use strict';
+const id=x=>document.getElementById(x), taskNames={mowing:'割草',inspection:'巡检',spray:'点喷'};
+const labels={bt:'行为树',gate:'控制门控',loc:'地图定位',gnss:'GNSS 监督',risk:'地形风险',wheel:'轮速',imu:'IMU',icp:'激光里程计'};
+const fmt=(x,n=3)=>Number.isFinite(x)?x.toFixed(n):'—', yn=x=>x===true?'是':x===false?'否':'—';
+let data, run, cursor=0, timer=null, bounds;
+function field(key, raw){return raw?Object.fromEntries(['t',...data.channels[key]].map((f,i)=>[f,raw[i]])):{}}
+function tr(parent,items){const row=parent.insertRow();for(const item of items)row.insertCell().textContent=item}
+function table(target){const element=id(target);element.replaceChildren();return element}
+function option(text,value){const el=document.createElement('option');el.textContent=text;el.value=value;return el}
+function coordinate(i){const row=field('loc',run.observations[i].loc);return row.valid===true&&Array.isArray(row.pose)?row.pose:null}
+function draw(){
+ const c=id('map'),r=c.getBoundingClientRect(),d=window.devicePixelRatio||1; c.width=r.width*d;c.height=r.height*d;
+ const ctx=c.getContext('2d');ctx.scale(d,d);if(!bounds)return;
+ const [xmin,xmax,ymin,ymax]=bounds,k=Math.min((r.width-35)/Math.max(1,xmax-xmin),(r.height-35)/Math.max(1,ymax-ymin));
+ const xy=p=>[(p[0]-(xmin+xmax)/2)*k+r.width/2,r.height/2-(p[1]-(ymin+ymax)/2)*k];
+ function line(last,color){ctx.beginPath();let before=null;for(let n=0;n<=last;n++){const p=coordinate(n);if(!p){before=null;continue}const q=xy(p);
+     if(before!==null&&run.time[n]-before<=8)ctx.lineTo(...q);else ctx.moveTo(...q);before=run.time[n]}ctx.strokeStyle=color;ctx.lineWidth=2;ctx.stroke()}
+ line(run.time.length-1,'#acb9b2');line(cursor,'#19705b');const now=coordinate(cursor);if(now){ctx.beginPath();ctx.arc(...xy(now),4,0,2*Math.PI);ctx.fillStyle='#a65019';ctx.fill()}
+}
+function render(){
+ const t=run.time[cursor],raw=run.observations[cursor],obs=Object.fromEntries(Object.entries(raw).map(([k,v])=>[k,field(k,v)]));
+ id('seek').value=cursor;id('clock').textContent=fmt(t,3)+' s';id('decision').textContent=obs.bt?.action||'缺少同期观测';
+ id('reason').textContent=obs.bt?.reason_code||'—';id('control').textContent=fmt(obs.gate?.v)+' m/s · '+fmt(obs.gate?.w)+' rad/s';
+ id('gate').textContent='车体停稳 '+yn(obs.gate?.stopped)+'　工具停稳 '+yn(obs.gate?.tool_stopped);
+ id('local').textContent=obs.loc?.reason||'缺少同期观测';id('innovation').textContent=(obs.gnss?.gnss_reason||'—')+'　创新量 '+fmt(obs.gnss?.innovation_m)+' m';
+ const sig=table('signals');for(const [key,name] of Object.entries(labels)){const sample=obs[key];tr(sig,[name,sample?fmt(sample.t)+' s':'—',sample?JSON.stringify(Object.fromEntries(Object.entries(sample).filter(([k])=>k!=='t')),(_,v)=>typeof v==='number'?Math.round(v*1000)/1000:v):'无同期样本'])}
+ id('raw').textContent=JSON.stringify(obs,null,2);const ev=table('events'),past=run.events.filter(e=>e.t<=t);
+ for(const e of past.slice(-12).reverse())tr(ev,[fmt(e.t)+' s',e.event,JSON.stringify(Object.fromEntries(Object.entries(e).filter(([k])=>!['t','event'].includes(k))))]);
+ id('jump').value=past.length?String(past.length-1):'';draw()
+}
+function pause(){clearInterval(timer);timer=null;id('play').textContent='连续播放'}
+function selectRun(){
+ pause();run=data.runs[Number(id('mission').value)];cursor=0;id('seek').max=run.time.length-1;
+ const valid=run.time.map((_,i)=>coordinate(i)).filter(Boolean);bounds=valid.length?[Math.min(...valid.map(p=>p[0])),Math.max(...valid.map(p=>p[0])),Math.min(...valid.map(p=>p[1])),Math.max(...valid.map(p=>p[1]))]:null;
+ id('jump').replaceChildren(option('选择事件',''));run.events.forEach((e,i)=>id('jump').append(option(fmt(e.t)+' s · '+e.event+' '+(e.segment||e.point||e.error||''),i)));
+ const end=run.end;id('verdict').textContent='任务分析通过 '+yn(end.passed)+'　进程退出合格 '+yn(end.runtime_clean)+(end.terminal?'　终态 '+end.terminal:'')+(end.error?'　原因 '+end.error:'')+(end.confirmed_area!=null?'　确认面积 '+fmt(end.confirmed_area,2)+' m²　残余 '+fmt(end.residual_area,2)+' m²':'');
+ if(run.behavior){const b=run.behavior;id('verdict').textContent='独立重选行为 '+b.result+'　确认 '+b.confirmed+'/'+b.selected+' 点　原簇 '+b.original+' 点　粗导航重选 '+yn(b.coarse)+'　精停重选 '+yn(b.precision)+'　进程退出合格 '+yn(end.runtime_clean)}
+ if(run.handoff){const h=run.handoff;id('verdict').textContent='独立任务确认 '+h.confirmed+'/'+h.selected+' 点　原簇 '+h.original+' 点　任务完成 '+yn(h.task_passed)+'　人工接管 '+(h.status==='NOT_EXERCISED'?'未触发':h.status||'无记录')+(h.behavior_passed!=null?'　行为验收 '+yn(h.behavior_passed):'')+'　进程退出合格 '+yn(end.runtime_clean)}
+ if(run.isolated_mowing){const m=run.isolated_mowing;id('verdict').textContent='独立接驳试验 '+(m.passed?'PASS':'PARTIAL')+'　原作业段到达 '+m.completed+'/'+m.selected+'　终态 '+m.terminal+'　进程退出合格 '+yn(end.runtime_clean)}
+ id('status').textContent=run.id+' · '+run.time.length+' 个观测时刻 · 每 5 仿真秒和作业事件时刻取样；通道缺少新鲜样本时显示为空。';
+ render()
+}
+function openBookmark(){
+ const params=new URLSearchParams(location.hash.slice(1)),idx=data.runs.findIndex(r=>r.id===params.get('run'));
+ if(idx===-1)return;
+ id('mission').value=idx;selectRun();
+ if(!params.has('t')||!Number.isFinite(Number(params.get('t'))))return;
+ const at=Number(params.get('t'));
+ // Use the last sampled clock at or before the bookmark, never a future measurement.
+ const after=run.time.findIndex(t=>t>at);
+ cursor=after===-1?run.time.length-1:Math.max(0,after-1);render()
+}
+async function boot(){
+ try{const bytes=Uint8Array.from(atob(id('packed').textContent.trim()),x=>x.charCodeAt(0));
+ const text=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+ data=JSON.parse(text);const select=id('mission');data.runs.forEach((r,i)=>select.append(option(taskNames[r.task]+' · '+(r.profile||r.case)+' · '+r.id,i)));
+ select.disabled=false;document.querySelector('main').hidden=false;select.onchange=selectRun;selectRun();openBookmark();window.addEventListener('hashchange',openBookmark)
+ }catch(e){id('status').textContent='记录无法读取。请使用支持 DecompressionStream 的 Edge、Chrome 或 Firefox 打开。 '+e.message}
+}
+id('seek').oninput=e=>{pause();cursor=Number(e.target.value);render()};
+id('jump').onchange=e=>{if(e.target.value==='')return;pause();cursor=run.time.indexOf(run.events[Number(e.target.value)].t);render()};
+id('prev').onclick=()=>{pause();cursor=Math.max(0,cursor-1);render()};id('next').onclick=()=>{pause();cursor=Math.min(run.time.length-1,cursor+1);render()};
+id('play').onclick=()=>{if(timer){pause();return}if(cursor===run.time.length-1)cursor=0;id('play').textContent='暂停播放';timer=setInterval(()=>{render();if(cursor===run.time.length-1)pause();else cursor++},550)};
+window.addEventListener('resize',()=>{if(run)draw()});boot();
+</script></body></html>

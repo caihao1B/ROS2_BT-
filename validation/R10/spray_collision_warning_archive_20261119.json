@@ -1,0 +1,153 @@
+{
+  "schema": "R10/archived-spray-collision-review/1",
+  "run": "optimization_v2/three_tasks/results/R12/spray_20261115_060145_047614",
+  "input_sha256": {
+    "controller_server.log": "cf868448a6a42f704621c16aa400da06311da972894c086ef366bd2f8ff06675",
+    "evaluation/truth.jsonl": "7656517a24a64bf5a655539ff151751b7792e84d295cfbb7e477eae6c6aacc77",
+    "risk/risk.jsonl": "a8b854a4e5c856b991680c7908ce799c5146f78d5b4b0594c8da83529a939b05",
+    "control/gate.jsonl": "72a43833aa65a43b4ae23330d426f01097ef8fef387602a31a8936b4ddc7b5bc",
+    "video/frames.jsonl": "19a6e5f44e0f4599d042d32a9be83d368acec17e5e6b3d4a7b5ca81c87b62409",
+    "scene/world.sdf": "a04845834e244f83a4d06a6b52f35af8f020877040b3723f3fe21c78aae55a3a",
+    "mission.json": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76"
+  },
+  "clock_alignment": "Interpolated controller wall-clock warning times onto recorded frame wall-to-sim chronology. Timebase estimated from video/frames.jsonl last modification minus last frame elapsed wall seconds. First saved PNG independently agrees within 0.064 s; callback lags and image cadence limit precision.",
+  "obstacle_clearance_method": "Offline truth vehicle XY to static obstacle and slope bounds, clearance-margin prior boundary, and conservative bounding boxes of whole commanded actor trajectories. Actor extents include 1.2 m for equipment and 0.45 m for pedestrians. This models the scripted envelope, not independently observed actor positions. Online decisions never see truth.",
+  "meaning_of_far": "Model clearance above 2 m. This is independent of the front-ray field of view and does not prove the local costmap is clear.",
+  "limits": "The historical spray run stored aggregate risk/terrain health only. It did not store Nav2 local grid or individual terrain cells at warnings. A warning is not a physical contact, and no simulated contact here is not proof a guarded continuation would be safe.",
+  "results": {
+    "warnings": 9538,
+    "warnings_span_sim": [
+      27.48569800111542,
+      1332.0790701196843
+    ],
+    "far_count": 9429,
+    "far_and_valid_terrain": 9398,
+    "far_and_clear_forward": 9398,
+    "near_forward_danger": 0,
+    "valid": 9507,
+    "gate_nav_zero": 6812,
+    "gate_stop": 849,
+    "phase": {
+      "NAVIGATING": 9517,
+      "STOPPING": 14,
+      "NAV_FAILED": 5,
+      "WORKING": 2
+    },
+    "reason": {
+      "NEXT_OBLIGATION": 9520,
+      "PERCEPTION_ADMISSION_WAIT": 18
+    },
+    "min_max_true_center_distance": [
+      1.5831362645671616,
+      12.93149017958485
+    ],
+    "wall_alignment_png_difference_s": 0.06399273872375488,
+    "warnings_total_groups": 205,
+    "longest_bursts": [
+      {
+        "count": 451,
+        "sim_window": [
+          1195.2694773487103,
+          1217.75
+        ],
+        "closest_possible_hazard_m": 4.923305659989926,
+        "closest_forward_observed_m": 11.539567120057821,
+        "position_world": [
+          26.00471835319747,
+          64.59161921446864
+        ]
+      },
+      {
+        "count": 357,
+        "sim_window": [
+          1240.613630632981,
+          1257.709594778664
+        ],
+        "closest_possible_hazard_m": 6.045836313048141,
+        "closest_forward_observed_m": 7.994428152684296,
+        "position_world": [
+          29.74256479235144,
+          64.55585651101612
+        ]
+      },
+      {
+        "count": 294,
+        "sim_window": [
+          1294.591664434444,
+          1309.25
+        ],
+        "closest_possible_hazard_m": 4.980988975354819,
+        "closest_forward_observed_m": 5.135320372802742,
+        "position_world": [
+          32.645589992705204,
+          64.43562985766607
+        ]
+      },
+      {
+        "count": 237,
+        "sim_window": [
+          801.6138443725763,
+          816.3545377644406
+        ],
+        "closest_possible_hazard_m": 2.5732877847530413,
+        "closest_forward_observed_m": 3.1803954253265196,
+        "position_world": [
+          35.20278863086311,
+          59.15139372424996
+        ]
+      },
+      {
+        "count": 197,
+        "sim_window": [
+          375.728466798754,
+          388.9450268220645
+        ],
+        "closest_possible_hazard_m": 7.801794410349786,
+        "closest_forward_observed_m": 100.0,
+        "position_world": [
+          25.42710922044239,
+          49.852096501849815
+        ]
+      },
+      {
+        "count": 181,
+        "sim_window": [
+          246.10428504765025,
+          256.126
+        ],
+        "closest_possible_hazard_m": 10.17774041073343,
+        "closest_forward_observed_m": 100.0,
+        "position_world": [
+          31.512543337472888,
+          46.57774041073343
+        ]
+      },
+      {
+        "count": 181,
+        "sim_window": [
+          882.5,
+          892.964254430802
+        ],
+        "closest_possible_hazard_m": 2.6295588598564263,
+        "closest_forward_observed_m": 100.0,
+        "position_world": [
+          36.419825759065525,
+          61.492771566384896
+        ]
+      },
+      {
+        "count": 172,
+        "sim_window": [
+          62.0,
+          72.95354733884818
+        ],
+        "closest_possible_hazard_m": 4.8126023901751696,
+        "closest_forward_observed_m": 100.0,
+        "position_world": [
+          25.559233723770014,
+          44.38618536657691
+        ]
+      }
+    ]
+  }
+}

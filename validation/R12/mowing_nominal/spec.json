@@ -1,6 +1,6 @@
 {
   "task": "mowing",
-  "session": "mowing_20261115_070740_054017",
+  "session": "mowing_20261119_072044_764057",
   "sim_seconds": 1800,
   "wall_budget": 7290,
   "cluster": "B1",
@@ -15,7 +15,7 @@
   "localization_backend": "regional_surface_map",
   "rig_revision": "2a02b26bb968c77a1a3cf953b1060d9da0aed5398631c9c02ba5baede3a5cb93",
   "binding_revision": "42beb29b4a5d7215e22b922859509a853529522eaf2716028f1f074dfb95e253",
-  "online_probe_sha256": "928bce3dd0f1c9eb19760223d82e3cc95189eeff727a9d3f24aaa7874045eed5",
+  "online_probe_sha256": "4cbb6c66c7d1f169e5689b1ac629a2d6428dd79adfdd9f4c705075003a7b0436",
   "runtime_sha256": "ac89853d577c2434e083c7dc91ebb386047f5c21a18bedefb2b198e2e66d1ff3",
   "implementation_bindings": {
     "optimization_v2/three_tasks/build/r03/r03_reeds_shepp": "69c9e786ccb037a726cc2b1ed9e94259947d5fb9648741fbab451f0719002253",
@@ -86,7 +86,7 @@
     "optimization_v2/ws/src/task_platform/scripts/tool_evaluator_r09.py": "650812d9e236c4bda80a7512ca73b745406fce2706482bf57c6c151b29047099",
     "optimization_v2/ws/src/task_platform/scripts/ledger_r09.py": "a17bdd9eecd6e3cef0f1c540f7f7110d7a44df71eca6ca1640e488115125f09c",
     "optimization_v2/ws/src/task_platform/scripts/runtime_mowing_r10.py": "02818c25377b42295e35f734e164020ee8f3f31217cd751ed0a9aaa3c02ef52a",
-    "optimization_v2/ws/src/task_platform/scripts/mission_mowing_r10.py": "928bce3dd0f1c9eb19760223d82e3cc95189eeff727a9d3f24aaa7874045eed5",
+    "optimization_v2/ws/src/task_platform/scripts/mission_mowing_r10.py": "4cbb6c66c7d1f169e5689b1ac629a2d6428dd79adfdd9f4c705075003a7b0436",
     "optimization_v2/ws/src/task_platform/scripts/scene_mowing_r10.py": "d25cc0f3636def1031efa32f15cd65dba42189edad991b8545a0d6732f25926a",
     "optimization_v2/ws/src/task_platform/scripts/groups_mowing_r10.py": "89c8fa41328c0bd1c5872c603871c57b28d6e8ab0c074c0a0a8229a4330bc1b2",
     "optimization_v2/ws/src/task_platform/scripts/recovery_mowing_r10.py": "89c2a15110d3e67acbf6589972efd6e6ff6d328089d07916cc2a613c9c45b3fb",

@@ -1,0 +1,215 @@
+{
+  "schema": "robot-release-materials-qa-v1",
+  "phase": "final",
+  "changes_mission_or_stage_status": false,
+  "scope": "Git index of published-project checkout vs machine receipts. Ubuntu QA. Native Windows, formal six-cluster matrix and new-machine qualification are outside this check.",
+  "base_commit": "9aff8337b7794f704c5556a973a5220e73f17808",
+  "navigation": {
+    "markdown_pages": 22,
+    "relative_links": 238
+  },
+  "stages": {
+    "protected_matching_receipts": 9,
+    "R10_R11_R12": [
+      "PARTIAL",
+      "PARTIAL",
+      "PARTIAL"
+    ],
+    "S17": "PARTIAL",
+    "S18": "PARTIAL"
+  },
+  "closed_runs": [
+    {
+      "session": "mowing_20261119_070346_235832",
+      "case": "startup_perception_loss",
+      "completed": 5,
+      "selected": 5,
+      "original": 34,
+      "sim_s": 280.162,
+      "task": true,
+      "runtime": true,
+      "combined_recording": true,
+      "image_fresh": true
+    },
+    {
+      "session": "spray_20261119_071627_581230",
+      "case": "tool_jam",
+      "completed": 3,
+      "selected": 3,
+      "original": 56,
+      "sim_s": 94.114,
+      "task": true,
+      "runtime": true,
+      "combined_recording": true,
+      "image_fresh": true
+    },
+    {
+      "session": "mowing_20261119_072044_764057",
+      "case": "nominal",
+      "completed": 25,
+      "selected": 47,
+      "original": 34,
+      "sim_s": 1173.702,
+      "task": false,
+      "runtime": true,
+      "combined_recording": false,
+      "image_fresh": true
+    },
+    {
+      "session": "spray_20261119_081218_417252",
+      "case": "nominal",
+      "completed": 22,
+      "selected": 56,
+      "original": 56,
+      "sim_s": 944.304,
+      "task": false,
+      "runtime": false,
+      "combined_recording": false,
+      "image_fresh": true
+    }
+  ],
+  "raw_receipt_files_verified": 33,
+  "readme_case_rows_verified": 9,
+  "coarse_defer": {
+    "formal_credit": false,
+    "original_points": 56,
+    "selected": 4,
+    "confirmed": 3,
+    "precision_defer_demonstrated": false,
+    "original_clip_seconds": 347.0,
+    "highlight_seconds": 46.9,
+    "archive_files_verified": 14
+  },
+  "additional_recordings": [
+    {
+      "session": "spray_defer_20261119_091633_791154",
+      "kind": "natural",
+      "confirmed": 3,
+      "selected": 4,
+      "original": 56,
+      "mission_passed": false,
+      "handoff_status": "NOT_EXERCISED",
+      "sim_s": 202.892,
+      "full_video_s": 402.2,
+      "highlight_s": 31.6
+    },
+    {
+      "session": "spray_defer_20261119_093026_010150",
+      "kind": "last",
+      "confirmed": 1,
+      "selected": 2,
+      "original": 56,
+      "mission_passed": false,
+      "handoff_status": "HUMAN_REQUIRED",
+      "sim_s": 68.688,
+      "full_video_s": 141.6,
+      "highlight_s": 27.4
+    }
+  ],
+  "initial_last_point": {
+    "sim_s": 74.366,
+    "full_video_s": 149.6,
+    "native_human_sim_s": 69.4,
+    "operator_topic_message_count": 0,
+    "handoff_demonstrated": false
+  },
+  "media": {
+    "unique_sha256_verified_mp4s": 16,
+    "full_cluster_files": [
+      "media/closeout_20261119/mowing_20261119_072044_764057_B1_partial_full.mp4",
+      "media/closeout_20261119/spray_20261119_081218_417252_A1_partial_full.mp4"
+    ]
+  },
+  "browser": {
+    "evidence": "Chrome on Linux",
+    "transport": "local file, no ROS or HTTP server",
+    "self_contained_replay_cases": 12,
+    "linked_events": 1240,
+    "player_videos_seeking": 13,
+    "native_windows_executed": false
+  },
+  "build_contract": {
+    "jazzy_harmonic_noble": true,
+    "behaviortree_cpp": "4.10.0 EXACT",
+    "fields2cover": "2.1.1",
+    "scene_shapely": "2.1.2",
+    "recorder_imageio_ffmpeg": "0.8.1",
+    "subtitle_font_package": "fonts-noto-cjk"
+  },
+  "command_routes_checked": [
+    "R08 test detour",
+    "R10 check",
+    "R10 import-recording spray_tool_jam",
+    "R10 test mowing_stopped_revalidation",
+    "R10 test record_mowing_full_B1",
+    "R10 test record_mowing_startup_perception_loss",
+    "R10 test record_spray_full_A1",
+    "R10 test stationary_gyro",
+    "R11 check",
+    "R12 check",
+    "R12 open",
+    "R12 record inspection",
+    "R12 record inspection_blocked",
+    "R12 record inspection_leader",
+    "R12 record mowing_startup_perception_loss",
+    "R12 record spray"
+  ],
+  "candidates": [
+    {
+      "path": "validation/R10/candidates/late_warm_cold_start/candidate_analysis.json",
+      "result": false,
+      "counts_as_formal": false
+    },
+    {
+      "path": "validation/R10/candidates/verified_entry_early_watchdog/candidate_analysis.json",
+      "result": false,
+      "counts_as_formal": false
+    },
+    {
+      "path": "validation/R10/candidates/verified_entry_first_motion/candidate_analysis.json",
+      "result": false,
+      "counts_as_formal": false
+    }
+  ],
+  "sensitive_scan": {
+    "staged_paths": 400,
+    "changed_text_blobs": 370,
+    "binary_or_other_filenames_only": 30,
+    "gzip_json_streams_included": 14,
+    "patterns_checked": [
+      "private_key",
+      "auth_token",
+      "credential_url",
+      "password_literal",
+      "piped_sudo_literal"
+    ],
+    "matches": []
+  },
+  "closed_physical_campaign": {
+    "formal_and_pilots": 4,
+    "separate_candidate_runs": 7,
+    "simulated_seconds": 3345.022,
+    "final_source_hashes_verified": 27,
+    "recorded_matrix_runs": 0
+  },
+  "b1_late_connector": {
+    "seed": 877,
+    "geometry_passed": true,
+    "tested_nav2_forward_reverse_parts": 4,
+    "clear_accepted_and_obstructed_rejected_for_each": true,
+    "gazebo_coverage_credit": false
+  },
+  "reviewed_public_index": {
+    "file_count": 47,
+    "sha256_of_git_ls_files_stage": "4d06460ac5b7fe8c2d08a9fafc11beed31d692da90f295f2bd538eb9f87d4817",
+    "rule": "Changed Markdown + operator guides, all listed MP4s, player, replay, browser and receipt indexes in Git staging area."
+  },
+  "problems": [],
+  "passed": true,
+  "final_frozen_receipts": {
+    "R10": "004e91e65292981a1b92dbcb632f4c2a7ea4cbac",
+    "R11": "0a960075ccaae4bb79ea25ebf1e3240c4cce1b60",
+    "R12": "c7863c82b3054014d339ffc17395ee18a79e4fbb"
+  },
+  "final_delivery_summary_sha256": "4479e558cdff20bbb7c5785db2784f44e556590c5e34a1061e51a4829f7bc492"
+}

@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: C_navigation.pgm
+negate: 0
+occupied_thresh: 0.5
+origin:
+- -23.700000000000003
+- -1.9000000000000001
+- 0.0
+resolution: 0.1

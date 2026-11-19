@@ -1,0 +1,266 @@
+{
+  "schema": "R12-CLOSEOUT-MEDIA/1",
+  "date": "2026-11-19",
+  "recording_scope": "Two new bounded fault demonstrations plus prior measured leader interaction; no formal cluster/matrix credit.",
+  "formal_s17_s18": "PARTIAL",
+  "combined": {
+    "path": "media/closeout_20261119/three_tasks_highlights.mp4",
+    "sha256": "39dd44d04e160c41c51726662e0da24a0cd6e5e05bd205c73e258f2fa07e8e26",
+    "seconds": 78.0,
+    "bytes": 430363,
+    "video_size": [
+      960,
+      766
+    ],
+    "codec": "h264",
+    "decoder_completed": true,
+    "chapters": [
+      {
+        "case": "spray",
+        "start_s": 0.0,
+        "end_s": 22.3
+      },
+      {
+        "case": "inspection_leader",
+        "start_s": 22.3,
+        "end_s": 52.8
+      },
+      {
+        "case": "mowing_startup_perception_loss",
+        "start_s": 52.8,
+        "end_s": 78.0
+      }
+    ]
+  },
+  "episodes": [
+    {
+      "case": "spray",
+      "run": "spray_20261119_071627_581230",
+      "task": "点喷",
+      "scope": "前三个服务点 · 3/3 已完成 · A1 共 56 点",
+      "description": "工具卡滞后停止喷洒，再按反馈账本补作剩余剂量。",
+      "task_passed": true,
+      "task_terminal_sim_s": 94.114,
+      "physical_and_work_checks": {
+        "selected": 3,
+        "original": 56,
+        "completed": 3,
+        "physical_dose_and_feedback_agree": true,
+        "actual_jam_and_residual_retry": true,
+        "repeated_request_no_extra_flow": true
+      },
+      "full_recording": {
+        "path": "media/closeout_20261119/spray_pilot_full.mp4",
+        "sha256": "4c3dc6b1f661d92fd61148151c682e53ecd40391122b7ea324a390c8e182970b",
+        "wall_seconds": 249.0,
+        "fps": 5.0,
+        "frames": 1245,
+        "start_sim_s": 0.0,
+        "end_sim_s": 95.626,
+        "max_active_image_age_wall_s": 0.35910263400000986,
+        "max_active_frame_gap_sim_s": 0.12600000000000477
+      },
+      "source_evidence": {
+        "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/recording_acceptance.json": "65af657e1e3228f3587d04c5caebde06364ba1e3ab40a7a42068932b799f0ff4",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/analysis_spray_r10.json": "f4563835530e010be710f56cc23210f42fdfd5764663cbbdf2d9d6f26dfc88e4",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/spec.json": "44f411516175f7ff3c654d60cf2fd2824f3876e880b6b5ca104899a5c7b0c317",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/mission.json": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/mission_result.json": "738da04fba8789c3cebaf5ea333905331a3582b635720704c011dafeba3ca012",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/mission_events.jsonl": "ff3ae8f179f38ec55d77a570cd9b2a2d2782f28e6410548b4a0465306fcc2aa4",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/video/frames.jsonl": "648949fe5a6837d9d20ffaa36dc03472deff0e09b8d12a0052b25422f95392f0",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/video/recording.json": "b19f535745a5eda8a27e94ba03f1b82db6849427107e8500d0b826dc72e2f370",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/control/gate.jsonl": "b89444a301411d2e88a8959333c050d230b75155690df1331f059e104efc81f0"
+      },
+      "excerpt": {
+        "start_sim": 47.126,
+        "end_sim": 64.5,
+        "start_video_s": 123.6,
+        "duration_video_s": 44.599999999999994,
+        "speed": 2,
+        "label": "工具故障 / 关停 / 按账本补作残余",
+        "selection": "actual recorded events; no synthesized scene motion or behavior",
+        "path": "media/closeout_20261119/spray_excerpt.mp4",
+        "sha256": "8260f959a2a39b4c04326469c9260aefc1ec4c416e6cefeed83b4ab2543949d5",
+        "duration_s": 22.299999999999997
+      },
+      "annotations": [
+        {
+          "evidence_sim_s": 47.126,
+          "source_video_s": 123.6,
+          "caption": "进入喷洒点，等待定位与停稳确认。",
+          "excerpt_start_s": 0.0
+        },
+        {
+          "evidence_sim_s": 51.124,
+          "source_video_s": 133.8,
+          "caption": "卡滞后已计量 0.022，待补作 2.978 剂量单位。",
+          "excerpt_start_s": 5.1
+        },
+        {
+          "evidence_sim_s": 60.494,
+          "source_video_s": 158.0,
+          "caption": "工具确认累计 3.052 剂量单位，继续前往下一点。",
+          "excerpt_start_s": 17.2
+        }
+      ]
+    },
+    {
+      "case": "inspection_leader",
+      "run": "inspection_20261114_161912_321381",
+      "task": "连接路巡检",
+      "scope": "跟随专项 · 路线 20.00 m · 原连接路 88.48 m",
+      "description": "前车停车时跟车停稳，随后恢复前进。",
+      "task_passed": true,
+      "task_terminal_sim_s": 119.812,
+      "physical_and_work_checks": {
+        "selected_m": 19.995639270704046,
+        "original_m": 88.48099013627925,
+        "full_connector_selected": false,
+        "min_physical_gap_m": 3.0633721924952595,
+        "stop_and_resume": {
+          "leader_motion_62_67_m": 0.0,
+          "ego_motion_64_67_m": 0.0,
+          "ego_motion_72_85_m": 1.4511686822362717
+        }
+      },
+      "full_recording": {
+        "path": "media/r12_inspection_leader_full.mp4",
+        "sha256": "9a46b73cb863298dc43ce31709da39eda6f02a619e0d398a0a103213f7651a11",
+        "wall_seconds": 316.4,
+        "fps": 5.0,
+        "frames": 1582,
+        "start_sim_s": 0.376,
+        "end_sim_s": 121.376,
+        "max_active_image_age_wall_s": 1.9414858819945948,
+        "max_active_frame_gap_sim_s": 0.75
+      },
+      "source_evidence": {
+        "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/recording_acceptance.json": "74874c413baea9b684b6fa0f12054d878898c60556f16df29a1cb37fb00051fe",
+        "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/analysis_r08.json": "a4540a92ed35e7957fbc52cf1180e9ad1df70ac5bd03471fef27d220df8a0ba3",
+        "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/spec.json": "67b0a8850e0381ee173caee4b4d364560794eb591dc7a6a943e51dc5d2e2f215",
+        "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/mission.json": "d390dd2205d13ab2b605a3705691bd8ec5cb83c5e63a255a7ce7de508ddd3c88",
+        "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/mission_result.json": "f1325d21d0cd4514f11473b0792ee442463f29729e6ecc4e05f721e0bc816dc8",
+        "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/mission_events.jsonl": "d2eba046845cfe29e090f6864fd12cb30c4e5c4bf5c4805da9520ee53105f1e7",
+        "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/video/frames.jsonl": "70db9146fdd1adeebc028c0f5e72e25328cf16b45d21c674afba547daf62c755",
+        "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/video/recording.json": "0562bdae221c4cb3f4b703bdb63fdefbccdec213ef7058180c60371668f60549",
+        "optimization_v2/three_tasks/results/R12/inspection_20261114_161912_321381/control/gate.jsonl": "b40994ac578e16208ba80ee77d6fc88810fef7bbf64c31d4e486246abe0b13f6"
+      },
+      "excerpt": {
+        "start_sim": 55.0,
+        "end_sim": 90.0,
+        "start_video_s": 142.4,
+        "duration_video_s": 91.4,
+        "speed": 3,
+        "label": "跟随前车 / 前车停止后停车 / 恢复跟随",
+        "selection": "actual recorded events; no synthesized scene motion or behavior",
+        "path": "media/closeout_20261119/inspection_excerpt.mp4",
+        "sha256": "82e8d48bc972f22f59e8a9254cdebf7c6c297e8a9726d710be67cea8b95ac1a5",
+        "duration_s": 30.46666666666667
+      },
+      "annotations": [
+        {
+          "evidence_sim_s": 55.0,
+          "source_video_s": 142.4,
+          "caption": "最近实测车距 3.06 m。",
+          "excerpt_start_s": 0.0
+        },
+        {
+          "evidence_sim_s": 62.0,
+          "source_video_s": 160.6,
+          "caption": "前车在仿真 62–67 秒内保持静止。",
+          "excerpt_start_s": 6.067
+        },
+        {
+          "evidence_sim_s": 64.0,
+          "source_video_s": 165.8,
+          "caption": "跟车在 64–67 秒内实测位移 0.00 m。",
+          "excerpt_start_s": 7.8
+        },
+        {
+          "evidence_sim_s": 69.604,
+          "source_video_s": 180.6,
+          "caption": "继续执行剩余巡检路线。72–85 秒跟车实测前进 1.45 m。",
+          "excerpt_start_s": 12.733
+        }
+      ]
+    },
+    {
+      "case": "mowing_startup_perception_loss",
+      "run": "mowing_20261119_070346_235832",
+      "task": "阿克曼割草",
+      "scope": "前五个执行段 · 5/5 已完成 · 安全版 B1 共 47 段",
+      "description": "感知中断触发取消。底盘和刀具停稳后，恢复原作业。",
+      "task_passed": true,
+      "task_terminal_sim_s": 280.162,
+      "physical_and_work_checks": {
+        "selected": 5,
+        "completed": 5,
+        "execution": 47,
+        "old_reference": 34,
+        "confirmed_work_m2": 26.4086737581878,
+        "selected_target_m2": 27.953981706793993,
+        "both_stops_after_cancel_sim_s": 0.588000000000001
+      },
+      "full_recording": {
+        "path": "media/closeout_20261119/mowing_pilot_full.mp4",
+        "sha256": "413c2ccc8bf355ec332521d6a9489f492c54e7d913eb1b9928e9b85383ab3e9c",
+        "wall_seconds": 749.4,
+        "fps": 5.0,
+        "frames": 3747,
+        "start_sim_s": 0.126,
+        "end_sim_s": 281.876,
+        "max_active_image_age_wall_s": 0.6268861459998334,
+        "max_active_frame_gap_sim_s": 0.12600000000000477
+      },
+      "source_evidence": {
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/recording_acceptance.json": "6e72e5ec553e1be06881cbd6ee4b6bf70bececa0a8a180e21fbdba25a9f1e2df",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/analysis_mowing_r10.json": "4b45929034e104f4e7bb9d3da1c5451fe790c88f8989c49803f623895fc8b47f",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/spec.json": "d5d8b52ef8231e84ee79e3bede80aa4b3adead404451ddb7345bb516fcae0ca8",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/mission.json": "abb235b87e2a7875a586a7191d160b81d07d4f87e2b848be338d3bbfbaad6a54",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/mission_result.json": "702b13612ebaf8a9509bfbe36fae08ae9792f6d9e56cc5f7f025fcc17d26c2e5",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/mission_events.jsonl": "797546bf8f4decf4145715bc3e696e9e8515b91772d452627cd176aca95ddfe5",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/video/frames.jsonl": "3cd8fc721c0196d9f8107b1a143093c87d65859bf7fc16c8d93f3d16129e902b",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/video/recording.json": "c475d214337b5985889dc5958dff003468243853a1c636d3368bc07831e4eab4",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/control/gate.jsonl": "b60b5cc4bbfedc20fa247eaf64727ec81ddea80b5122dcfe6a59bb3de4cd9394"
+      },
+      "excerpt": {
+        "start_sim": 35.126,
+        "end_sim": 44.75,
+        "start_video_s": 91.4,
+        "duration_video_s": 25.19999999999999,
+        "speed": 1,
+        "label": "启动中感知中断 / BT取消 / 实测停刀 / 恢复原义务",
+        "selection": "actual recorded events; no synthesized scene motion or behavior",
+        "path": "media/closeout_20261119/mowing_excerpt.mp4",
+        "sha256": "be4ba5a176f212d105443bd6351a82c653d0ccdb8640a8689e59558638a04755",
+        "duration_s": 25.19999999999999
+      },
+      "annotations": [
+        {
+          "evidence_sim_s": 35.126,
+          "source_video_s": 91.4,
+          "caption": "停稳后发出原条带的刀具启动请求。",
+          "excerpt_start_s": 0.0
+        },
+        {
+          "evidence_sim_s": 38.082,
+          "source_video_s": 99.2,
+          "caption": "行为树发出 CANCEL，等待实测停止。",
+          "excerpt_start_s": 7.8
+        },
+        {
+          "evidence_sim_s": 38.67,
+          "source_video_s": 100.8,
+          "caption": "收到车体与刀具停稳反馈，距取消 0.588 仿真秒。",
+          "excerpt_start_s": 9.4
+        },
+        {
+          "evidence_sim_s": 39.686,
+          "source_video_s": 103.6,
+          "caption": "工具已反馈 WORKING，重新执行原条带。",
+          "excerpt_start_s": 12.2
+        }
+      ]
+    }
+  ]
+}

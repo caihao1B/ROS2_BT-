@@ -1,0 +1,77 @@
+{
+  "session": "mowing_20261119_072044_764057",
+  "passed": true,
+  "checks": {
+    "full_delivered_stream": true,
+    "observed_stop_updates": true,
+    "all_updates_with_measured_evidence": true,
+    "warm_hold_drift_reduced": true,
+    "measured_turns_preserved": true
+  },
+  "scope": "All published sensor observations, capture-time aligned wheel/ICP/actuator gate. DDS arrival jitter cannot be reconstructed. Component evidence only. No simulator pose or hidden bias used.",
+  "startup_bias_rad_s": 0.0021235874866892034,
+  "samples": {
+    "delivered_imu": 235047,
+    "learned": 28177
+  },
+  "units": "rad/s",
+  "stationary_windows": [
+    {
+      "interval_s": [
+        1122.0,
+        1132.0
+      ],
+      "count": 2000,
+      "original_gyro_minus_wheel": -0.0052135625926094924,
+      "candidate_gyro_minus_wheel": -0.00011940870659050592,
+      "mean_estimated_offset": -0.005094153886018986,
+      "observed_encoder_yaw_rate": -5.670353593300975e-05
+    },
+    {
+      "interval_s": [
+        1132.0,
+        1142.0
+      ],
+      "count": 2000,
+      "original_gyro_minus_wheel": -0.005070498112949344,
+      "candidate_gyro_minus_wheel": 6.641282051309649e-05,
+      "mean_estimated_offset": -0.00513691093346244,
+      "observed_encoder_yaw_rate": 0.00013865902408278274
+    },
+    {
+      "interval_s": [
+        1142.0,
+        1152.0
+      ],
+      "count": 2000,
+      "original_gyro_minus_wheel": -0.005316906673017734,
+      "candidate_gyro_minus_wheel": -0.00011676469076899746,
+      "mean_estimated_offset": -0.005200141982248737,
+      "observed_encoder_yaw_rate": -9.80867000131614e-05
+    },
+    {
+      "interval_s": [
+        1152.0,
+        1162.0
+      ],
+      "count": 2000,
+      "original_gyro_minus_wheel": -0.004778382477867821,
+      "candidate_gyro_minus_wheel": 0.00030021901297330207,
+      "mean_estimated_offset": -0.005078601490841123,
+      "observed_encoder_yaw_rate": -8.22278518824852e-05
+    }
+  ],
+  "moving_samples": 50736,
+  "moving_same_sign_fraction": 1,
+  "moving_median_encoder_disagreement_rad_s": 0.0026359385706791714,
+  "source_sha256": {
+    "generation_motion/generation.jsonl": "4abaae5f023ed7595ca18f228296ce74563d78acaa95c87974f8a5e843256178",
+    "inputs/inputs.jsonl": "c1a2a64ab730b4af5450c9a0f677ad9b9059fedf7f36500a76fa28655a3e6ce8",
+    "inputs/result.json": "5d41e77bea0573bab7961335d8b5af755de0cffacc18df8dda2e6e012de92d6a",
+    "icp_gate/quality.jsonl": "8bc229f8c3a71b28f97442af015989d45356a50a8c4f6be197c99b34d85ce9bc",
+    "control/gate.jsonl": "f8d1c834bd88b0ac9221c11667ed3bbe1a1d928ab80f3a326751d556bb74be16",
+    "spec.json": "7bd74b5501cc4402aea657f6a21d51080e08a178258c19cce0a89949d87b4bdf"
+  },
+  "estimator_sha256": "12ef69880ac4fddde5968bd2597b43888fcaeaba16e6a32cc471a4d056c433f6",
+  "replay_sha256": "9c4f250fc3dfc95ed25fac25dd61900f095bdef6e0af0e70d5b6f08b9114ee1f"
+}

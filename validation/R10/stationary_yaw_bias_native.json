@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "scope": "Actual production ROS inputs/IMU output in private domain with synthetic sensors; component only.",
+  "checks": {
+    "clean_exit": true,
+    "epoch_preserved": true,
+    "initialized": true,
+    "injected_drift_visible": true,
+    "recovered_at_stop": true,
+    "real_turn_retained": true,
+    "missing_gate_does_not_hide_new_drift": true,
+    "exercised_estimator": true
+  },
+  "sample_windows": [
+    [
+      3.0,
+      3.8
+    ],
+    [
+      4.1,
+      4.5
+    ],
+    [
+      18.0,
+      18.9
+    ],
+    [
+      20.0,
+      22.0
+    ],
+    [
+      26.0,
+      28.0
+    ]
+  ],
+  "output_mean_yaw_rad_s": [
+    -1.3010426069826053e-18,
+    -0.006000000000000002,
+    -0.0001885224131279696,
+    0.10983523590094389,
+    0.015835235900943902
+  ],
+  "processed_output_samples": 1433,
+  "adapter": {
+    "epoch": 0,
+    "stationary_bias_samples": 146,
+    "gyro_bias_estimate": [
+      0.0,
+      0.0,
+      -0.003835235900943901
+    ],
+    "startup_yaw_bias": 0.0020000000000000013,
+    "stationary_updates": 717,
+    "incremental_yaw_bias": -0.005835235900943902
+  },
+  "bindings": {
+    "optimization_v2/ws/src/task_platform/scripts/probe_stationary_gyro_r10.py": "0d73c08b49631a267dba8360f35c0ed4f233e53f6c4963484b411c8b27508493",
+    "optimization_v2/ws/src/task_platform/scripts/spray_inputs_r10.py": "6f3e4c15a0c2a9d0e175bb86b40eea0c863cd0d12279bdfb520796387b8967bd",
+    "optimization_v2/ws/src/task_platform/scripts/stationary_gyro_r10.py": "12ef69880ac4fddde5968bd2597b43888fcaeaba16e6a32cc471a4d056c433f6",
+    "optimization_v2/ws/src/task_platform/scripts/rig_r05.py": "cedaaca0274000a55d2556710deebf6c01e4618e90feef5e186454111d0edf3c",
+    "optimization_v2/ws/src/task_platform/scripts/overlay_r07.py": "f4cef3c7c90545b542d2ea724c4263788be559134e01dd1d592675a2ade91c21",
+    "optimization_v2/ws/src/task_platform/scripts/overlay_r08.py": "418636a0d3c47ac522c2a7dcc837836b1ecdc4df7349194b3804c5cdd128833a",
+    "optimization_v2/ws/src/localization_guard/scripts/input_adapter.py": "53f91b5326f1d6d540af20e6be8bc1941618f6cd3cb30e5d0f8233a28ed596ec",
+    "optimization_v2/ws/src/localization_guard/scripts/support.py": "e037e98cc143dab1e0c76ba58e18a1706e541879096d5471ccb8e16a7dddef72",
+    "optimization_v2/config/localization_policy.yaml": "5edaa64b0f12ea3ff63da3b559f885a6d2b476241936a056b426fc841cb74077"
+  },
+  "generated_input_adapter_sha256": "9c497a04d69b1b0164a20c4b3dccc78810aa0bdbb51d8c57c97373dd499e78be"
+}

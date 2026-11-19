@@ -1,9 +1,9 @@
 {
   "task": "spray",
   "source": "optimization_v2/ws/src/task_platform/scripts/runtime_spray_r10.py",
-  "source_sha256": "eba540ae6f6e8c036b47f092f7419c2412d59014f964cd9d1bcd7e1283c419b6",
+  "source_sha256": "db083bb3618903865a1b888f666860f33a01441d61ce6dd5a20a041b142d8b47",
   "derived_runtime": "optimization_v2/three_tasks/editions/R12/runtime_spray_video.py",
-  "derived_sha256": "badc668017bd7ab33dada4ee320f0cfbfe753484fc60a0e1d18bdc50acd72200",
+  "derived_sha256": "3cf80dcccf4045265bdf671d2d77620b98562ff559a6f931ba9ca823337dc32c",
   "changes": [
     "same observer-only derivation",
     "64 MiB session SHM segment for observer image writer only"

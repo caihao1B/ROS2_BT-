@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "checks": {
+    "all_declared_gears": true,
+    "clear_paths_accepted": true,
+    "actual_obstacle_rejected": true,
+    "clean_processes": true
+  },
+  "gears": [
+    {
+      "gear": "B1:offline_connection:6:0",
+      "direction": 1,
+      "path_poses": 37,
+      "real_clear_service": true,
+      "real_blocked_service": false,
+      "invalid_pose_indices": [],
+      "wire_goal_bytes": 2729,
+      "clear_again_after_removal": true
+    },
+    {
+      "gear": "B1:offline_connection:6:1",
+      "direction": -1,
+      "path_poses": 57,
+      "real_clear_service": true,
+      "real_blocked_service": false,
+      "invalid_pose_indices": [],
+      "wire_goal_bytes": 4169,
+      "clear_again_after_removal": true
+    },
+    {
+      "gear": "B1:offline_connection:6:2",
+      "direction": 1,
+      "path_poses": 553,
+      "real_clear_service": true,
+      "real_blocked_service": false,
+      "invalid_pose_indices": [],
+      "wire_goal_bytes": 39881,
+      "clear_again_after_removal": true
+    },
+    {
+      "gear": "B1:offline_connection:6:3",
+      "direction": -1,
+      "path_poses": 64,
+      "real_clear_service": true,
+      "real_blocked_service": false,
+      "invalid_pose_indices": [],
+      "wire_goal_bytes": 4673,
+      "clear_again_after_removal": true
+    }
+  ],
+  "scope": "Real Jazzy IsPathValid, frozen map_server + Smac planner/global costmap. Private domain with synthetic TF and blank versus injected measured-grid fixtures. No actuator, no Gazebo and no driving credit.",
+  "domain": 179,
+  "prior_sha256": "a89451538c2a3307db874b063ac2b9bece15a4c5cadb8bd6f1c23f28162c75e6",
+  "nav2_sha256": "b8fedb425724889ce0e1acdbdb9f8fc4519d384b03f278335397f6882e3c4387",
+  "plan_sha256": "2a8fed96cccf06c5cdd22719fab3dce1dec12ce74020d3bb1e2f289dc6eec2e7",
+  "probe_sha256": "6281083dc0ac4aeef1ea8ff36c45043f6ddd5a35374006521a46dcf936640f9f",
+  "wall_seconds": 9.29601795400049,
+  "input_filename": "B1_late_connector.json",
+  "declared_gears": [
+    "B1:offline_connection:6:0",
+    "B1:offline_connection:6:1",
+    "B1:offline_connection:6:2",
+    "B1:offline_connection:6:3"
+  ],
+  "original_private_harness_sha256": "b0f30930bface7150110600b3597ac46e0c7f70cd4e69384d2f66362ea5ced20",
+  "input_revision": "791c11bd9d87e807edd4646fbdd42978a0f0889e380f12c087e9ccea130ff65e",
+  "gear_split_sha256": "89c2a15110d3e67acbf6589972efd6e6ff6d328089d07916cc2a613c9c45b3fb",
+  "fixture_grid_origin": [
+    82.64999999999999,
+    26.7
+  ],
+  "fixture_grid_shape": [
+    162,
+    90
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "scope": "Nominal offline geometry only. No measured area credit or task acceptance.",
+  "planar_authority_bound": {
+    "deck_inside_body": true,
+    "raw_static_slope_exclusion_overlap_m2": 29.609450222844476,
+    "original_target_outside_pre_slope_authority_m2": 0.0,
+    "original_target_outside_current_authorized_body_area_m2": 31.66398215696993,
+    "original_target_inside_current_authorized_body_area_m2": 156.7278195359865,
+    "area_fraction_ceiling": 0.8319248402933354,
+    "footprint_margin_m": 0.1,
+    "scope": "Planar necessary condition, for every heading. The actual body must fit and the deck lies within the body. Being inside the polygon does not guarantee a collision-free connected route, enough time, or tool feedback."
+  },
+  "assumptions": [
+    "Planar map coordinates in metres; nominal roll and pitch are zero. Real observer applies the full 3D rotation to the tool mount before projecting to XY.",
+    "Each enabled strip is checked for constant yaw, straight forward travel and matching world/map poses. Its exact continuous rectangular sweep is the convex hull of its endpoint footprints. Tool-off turns and gaps between fragments add no area.",
+    "Each sweep is intersected with its own original job polygon before combining all keys. The optional eroded figure applies ledger footprint and target margins, without discrete feedback timing, eligibility checks, or grid quantization.",
+    "Actual tracking, rejoining and terrain orientation can change the sweep. These estimates are neither measured feedback nor an upper bound on reachable coverage."
+  ],
+  "input_sha256": {
+    "optimization_v2/three_tasks/editions/R10/mowing_safe_plan.json": "751637cbb784217e5b3742798762080832043f0ef2cd5970c15b3e8cc953b7dd",
+    "optimization_v2/three_tasks/editions/R09/mission.json": "8f7995787f74fb7e54ea5140397518b51315b41b845222de62cde579eb3f61fa",
+    "optimization_v2/three_tasks/editions/R10/mowing/mission.json": "abb235b87e2a7875a586a7191d160b81d07d4f87e2b848be338d3bbfbaad6a54",
+    "optimization_v2/three_tasks/editions/R10/mowing/tool.json": "fa966f1ce9318531f782838b75aff377009ad3583750bbd00cad65a82b3b4b22",
+    "optimization_v2/three_tasks/editions/R09/tool.json": "bafdc95a15b5a480ce11f8de6b12ed5508f4e2b66c3a4420375a0c3fdb2afb7a",
+    "validation/R10/bounded_B1_result.json": "7ebc59e82485dd25387ad6a3475466ad5d46320ec70d83076e73bec0f4742609"
+  },
+  "approved_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+  "world_minus_map_xy_m": [
+    28.0,
+    14.0
+  ],
+  "deck": {
+    "mount_xyz_m": [
+      0.819,
+      0,
+      0.16
+    ],
+    "effective_length_m": 0.7,
+    "effective_width_m": 1.6
+  },
+  "original_target_union_m2": 188.3918016929564,
+  "original_cluster_area_m2": 195.99438340335297,
+  "inherited_planned_cut_m2": 188.3918016929563,
+  "inherited_planned_fraction": 0.9612102062396825,
+  "routes": {
+    "original_reference": {
+      "sampled_world_frame_symmetric_difference_m2": 0.0,
+      "all_segments": 34,
+      "enabled_fragments": 9,
+      "disabled_segments": 25,
+      "enabled_length_m": 139.31683049953764,
+      "full_deck_unclipped_union_m2": 209.5399783239115,
+      "own_target_clipped_union_m2": 188.3918016929561,
+      "own_target_unswept_m2": 2.8421709430404007e-13,
+      "own_target_fraction": 0.9999999999999984,
+      "eroded_continuous_own_target_union_m2": 185.91685886957472,
+      "ledger_footprint_margin_m": 0.08683031149571623,
+      "original_keys": {
+        "B1:segment:0": {
+          "fragments": 1,
+          "target_m2": 10.56149447302867,
+          "nominal_own_target_m2": 10.561494473028667
+        },
+        "B1:segment:4": {
+          "fragments": 1,
+          "target_m2": 18.854836210286567,
+          "nominal_own_target_m2": 18.854836210286553
+        },
+        "B1:segment:8": {
+          "fragments": 1,
+          "target_m2": 25.43231558511847,
+          "nominal_own_target_m2": 25.432315585118488
+        },
+        "B1:segment:12": {
+          "fragments": 1,
+          "target_m2": 35.17287549688209,
+          "nominal_own_target_m2": 35.17287549688208
+        },
+        "B1:segment:16": {
+          "fragments": 1,
+          "target_m2": 29.603227628528433,
+          "nominal_own_target_m2": 29.603227628528405
+        },
+        "B1:segment:20": {
+          "fragments": 1,
+          "target_m2": 26.650568985964707,
+          "nominal_own_target_m2": 26.650568985964707
+        },
+        "B1:segment:24": {
+          "fragments": 1,
+          "target_m2": 31.76858974699501,
+          "nominal_own_target_m2": 31.768589746995033
+        },
+        "B1:segment:29": {
+          "fragments": 1,
+          "target_m2": 24.334976879349664,
+          "nominal_own_target_m2": 24.334976879349675
+        },
+        "B1:segment:33": {
+          "fragments": 1,
+          "target_m2": 8.302354275211044,
+          "nominal_own_target_m2": 8.302354275211044
+        }
+      },
+      "fraction_of_original_cluster": 0.9612102062396815
+    },
+    "approved_execution": {
+      "sampled_world_frame_symmetric_difference_m2": 0.0,
+      "all_segments": 47,
+      "enabled_fragments": 10,
+      "disabled_segments": 37,
+      "enabled_length_m": 79.70681831275742,
+      "full_deck_unclipped_union_m2": 127.1021984479554,
+      "own_target_clipped_union_m2": 112.78873053647732,
+      "own_target_unswept_m2": 75.60307115647907,
+      "own_target_fraction": 0.5986923503194793,
+      "eroded_continuous_own_target_union_m2": 108.64259008347608,
+      "ledger_footprint_margin_m": 0.08683031149571623,
+      "original_keys": {
+        "B1:segment:0": {
+          "fragments": 1,
+          "target_m2": 10.56149447302867,
+          "nominal_own_target_m2": 10.561494473028667
+        },
+        "B1:segment:4": {
+          "fragments": 1,
+          "target_m2": 18.854836210286567,
+          "nominal_own_target_m2": 18.854836210286553
+        },
+        "B1:segment:8": {
+          "fragments": 1,
+          "target_m2": 25.43231558511847,
+          "nominal_own_target_m2": 25.432315585118488
+        },
+        "B1:segment:12": {
+          "fragments": 1,
+          "target_m2": 35.17287549688209,
+          "nominal_own_target_m2": 17.109982841094443
+        },
+        "B1:segment:16": {
+          "fragments": 2,
+          "target_m2": 29.603227628528433,
+          "nominal_own_target_m2": 11.378034500438877
+        },
+        "B1:segment:20": {
+          "fragments": 1,
+          "target_m2": 26.650568985964707,
+          "nominal_own_target_m2": 14.178727021225415
+        },
+        "B1:segment:24": {
+          "fragments": 1,
+          "target_m2": 31.76858974699501,
+          "nominal_own_target_m2": 16.39721803484936
+        },
+        "B1:segment:29": {
+          "fragments": 2,
+          "target_m2": 24.334976879349664,
+          "nominal_own_target_m2": 9.697319835951511
+        },
+        "B1:segment:33": {
+          "fragments": 0,
+          "target_m2": 8.302354275211044,
+          "nominal_own_target_m2": 0.0
+        }
+      },
+      "fraction_of_original_cluster": 0.5754691975247072
+    }
+  },
+  "earlier_measured_run": {
+    "run": "optimization_v2/three_tasks/results/R12/mowing_20261115_070740_054017",
+    "confirmed_m2": 71.94386728545035,
+    "residual_m2": 116.44793440750612,
+    "completed_segments": 19
+  }
+}

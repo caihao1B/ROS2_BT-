@@ -23,6 +23,18 @@ from revalidation_spray_r10 import path_hash
 from progress_spray_r10 import stopped_decision
 from safe_plan_r10 import work_identity
 
+def worker_heartbeat(state, active_group, task_version):
+    fields = ('t', 'phase', 'nav_idle', 'complete', 'nav_failed', 'replans',
+              'deferrals', 'alternative', 'index', 'segment', 'segment_id',
+              'direction', 'work_complete')
+    message = {key: state[key] for key in fields}
+    message['task_version'] = task_version
+    message['endpoint_recovery'] = state.get('endpoint_recovery', False)
+    message['execution_segment_id'] = state['segment_id']
+    if active_group and state['segment'] == 'COVERAGE':
+        message['segment_id'] = work_identity(active_group)[0]
+    return message
+
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);out=ap.parse_args().out;cfg=json.loads((out/'mission.json').read_text());spec=json.loads((out/'spec.json').read_text());toolcfg=json.loads((out/'scene/tool.json').read_text());cluster=next(x for x in cfg['clusters'] if x['cluster']==spec['cluster']);allsegments=cluster['segments'];eligible=allsegments[spec.get('segment_start',0):];selected=eligible[:spec['segment_limit']] if spec['segment_limit'] else eligible;segments=execution_groups(selected,cfg['navigation_execution']['mode'])
  rclpy.init();n=rclpy.create_node('r10_mowing_task',parameter_overrides=[rclpy.parameter.Parameter('use_sim_time',value=True)]);nav=ActionClient(n,FollowPath,'/follow_path');planner=ActionClient(n,ComputePathToPose,'/compute_path_to_pose');pathcheck=n.create_client(IsPathValid,'/is_path_valid');tool=ActionClient(n,ToolTask,'/s10/tool_task');manager=n.create_client(Trigger,'/lifecycle_manager/is_active');pub=n.create_publisher(String,'/r07/mission',10);hintpub=n.create_publisher(PoseWithCovarianceStamped,'/s07/rtabmap/initialpose',10)
@@ -33,7 +45,9 @@ def main():
  n.create_subscription(Clock,'/clock',lambda m:st.update(t=m.clock.sec+m.clock.nanosec*1e-9),qos_profile_sensor_data)
  for topic,key in [('/r06/directive','bt'),('/r07/gate','gate'),('/r07/localization','loc'),('/s10/action/state','tool'),('/r07/safety','safety')]:n.create_subscription(String,topic,lambda m,k=key:st.update({k:json.loads(m.data)}),20)
  def publish():
-  d={k:st[k] for k in ['t','phase','nav_idle','complete','nav_failed','replans','deferrals','alternative','index','segment','segment_id','direction','work_complete']};d['endpoint_recovery']=st.get('endpoint_recovery',False);d['execution_segment_id']=st['segment_id'];d['segment_id']=work_identity(active_group)[0] if active_group and st['segment']=='COVERAGE' else st['segment_id'];pub.publish(String(data=json.dumps(d)));tmp=out/'live.tmp';tmp.write_text(json.dumps(dict(d,bt=st['bt'],gate=st['gate'],loc=st['loc'],tool=st['tool'])));tmp.replace(out/'live.json')
+  d=worker_heartbeat(st,active_group,cfg['version'])
+  pub.publish(String(data=json.dumps(d)))
+  tmp=out/'live.tmp';tmp.write_text(json.dumps(dict(d,bt=st['bt'],gate=st['gate'],loc=st['loc'],tool=st['tool'])));tmp.replace(out/'live.json')
  n.create_timer(.03,publish)
  def record_passage():
   nonlocal checkpoint_index

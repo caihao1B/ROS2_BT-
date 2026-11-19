@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "session": "experiments/spray_last_blocked_latch/spray_defer_20261119_093026_010150",
+  "checked_with": "Linux Chrome against the read-only GUI",
+  "checks": {
+    "confirmed_one_of_two": true,
+    "correct_point": true,
+    "native_human": true,
+    "independent_stop": true,
+    "task_incomplete": true,
+    "received_two_notifications": true
+  }
+}

@@ -1,0 +1,10 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_CLUSTER_HINT"}
+{"t": 38.644, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 38.644, "event": "WARM_TEST_STOP_BEGIN"}
+{"t": 90.0, "event": "WARM_TEST_STOP_END", "began": 38.644}
+{"t": 90.0, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": ""}
+{"t": 90.03, "event": "DIRECTION_ARMED_WHILE_STOPPED", "direction": 1, "segment": "QUALIFICATION_TRANSFER:0"}
+{"t": 90.036, "event": "QUALIFICATION_TRANSFER_COSTMAP_CHECK", "segment": "QUALIFICATION_TRANSFER:0", "valid": true, "direction": 1, "samples": 69}
+{"t": 90.036, "event": "SEGMENT_GOAL", "segment": "QUALIFICATION_TRANSFER:0", "kind": "TURN_TOOL_OFF", "direction": 1, "original_poses": 69, "remaining_poses": 69, "tool_expected": false, "original_members": ["QUALIFICATION_TRANSFER:0"]}
+{"t": 90.036, "event": "TASK_STOP", "error": "TimeoutError('NO_OBSERVED_PROGRESS')", "terminal": "HUMAN_REQUIRED"}
+{"t": 90.058, "event": "BOTH_PHYSICAL_STOPS_CONFIRMED", "segment": "QUALIFICATION_TRANSFER:0"}

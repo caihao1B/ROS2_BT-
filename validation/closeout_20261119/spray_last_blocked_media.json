@@ -1,0 +1,114 @@
+{
+  "schema": "R10-EXPERIMENTAL-SPRAY-FILM/1",
+  "case": "last",
+  "session": "spray_defer_20261119_093026_010150",
+  "formal_credit": false,
+  "closed_sim_s": 68.688,
+  "original_count": 56,
+  "selected": [
+    "point_11_20",
+    "point_10_20"
+  ],
+  "confirmed": [
+    "point_11_20"
+  ],
+  "mission_passed": false,
+  "handoff_status": "HUMAN_REQUIRED",
+  "experiment_behavior_passed": true,
+  "outstanding_selected": [],
+  "runtime_passed": true,
+  "scene_task_scope": "末点受阻 · 停车转人工",
+  "actual_jobs": [
+    {
+      "key": "5952c5ba17482abd25d2e300cd0992bf9011af4d030004c80c8b2dbe4dc5c2fe:point_11_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0519999999999996,
+      "uncertain": false,
+      "physical_dose": 3.189666666665996,
+      "maximum_physical_docking_error_m": 1.0048591735576161e-14,
+      "requested": 3.0
+    }
+  ],
+  "checked_stop": {
+    "raw_nav_v": 0.0,
+    "raw_nav_w": 0.0,
+    "t": 68.67,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "NAV_COMMAND_STALE"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 0.0544822415832471
+  },
+  "original": {
+    "path": "media/closeout_20261119/spray_last_blocked_full.mp4",
+    "sha256": "ab6a632a70cc468064ec9b78984eb68f04b377858020f926e9b72c3e8577a291",
+    "seconds": 141.6,
+    "frames": 708,
+    "fps": 5.0,
+    "unmodified": true
+  },
+  "excerpt": {
+    "path": "media/closeout_20261119/spray_last_blocked_handoff.mp4",
+    "sha256": "682abd6a1fe4f4aab9826663aeacda2f0be46dc847058e5873f19673e8f81e1d",
+    "seconds": 27.4,
+    "frames": 274,
+    "fps": 10,
+    "source_clip_video_s": [
+      85.8,
+      140.6
+    ],
+    "speed_relative_to_original_video": 2.0,
+    "decoded_to_eof": true,
+    "cues": [
+      {
+        "event_sim_s": 43.296,
+        "original_video_s": 85.8,
+        "excerpt_s": 0.0,
+        "text": "第 1 次导航到末点 10_20"
+      },
+      {
+        "event_sim_s": 56.492,
+        "original_video_s": 111.0,
+        "excerpt_s": 12.6,
+        "text": "第 2 次导航到末点 10_20"
+      },
+      {
+        "event_sim_s": 68.676,
+        "original_video_s": 134.4,
+        "excerpt_s": 24.3,
+        "text": "无法安全完成末点，记录残余并请求人工核查"
+      },
+      {
+        "event_sim_s": 68.688,
+        "original_video_s": 134.4,
+        "excerpt_s": 24.3,
+        "text": "人工请求已发出，工具停机与交接关闭均已确认"
+      }
+    ]
+  },
+  "archive_files": {
+    "analysis_spray_r10.json": "4cf9367d38ceee714884842cdf81f5d112e60a696165f7289810c56e206124a9",
+    "candidate_handoff_acceptance.json": "a1b63b3acff40b0a923b8ae876075c835c685114d897728997fd97d5b6086c67",
+    "decisions.jsonl.gz": "b5cff3000d2e150adcf7a2391da0e4d2da10d968b3169e00447cd255b1d8b18b",
+    "mission.json": "8fc14fe38c1de7c1748c6e2da3f6ae68cfb77fec089e63c4acbd83c7d279af33",
+    "mission_events.jsonl": "5a9e76cdd1ee8edd04c28c6409325f3e3c4d7ac38707a3da45d5a772028ab9a8",
+    "mission_result.json": "4d6083a9fd0b640bd6e712ac57ee001e3dc3cbedb1e8e8dccff619634a0b38a9",
+    "nav_shutdown.json": "2d89faff75bb7e056d1ca0b56c2ebdd0930492938059cccf59af9acb40a34512",
+    "operator_attention_receipt.json": "6f003ceaa5f1778c00e340ee3950fdfe33bfb0b7397f805bfc9598ffd942dc61",
+    "operator_attention_wire.jsonl.gz": "c93af8d77e321684b257dc57c9aa336ff18b5a3fdd510130833a757db2ffb48b",
+    "operator_handoff.json": "6ae112b354fd87453394971a03228517a1413c69e270ecafa4d1764506080c87",
+    "runtime.json": "dbc8682522530b99d0b2cdb95718656b3c39239f537c3f8defbe9d96e145b52a",
+    "scene/fixture.json": "6ecb2c833172e2b917a2c680eec48cd15115a2b9a03c75b22479eaf81b199968",
+    "spec.json": "9f539f3087a763634b2474a23f1e21e4f6dc45d569c32af30d98c0f021a3d2b0",
+    "tool_evaluation/result.json": "f0154f88af365e3de77603a7d9528ad67e27ae2256919037837280b37a039f22",
+    "video/frames.jsonl.gz": "06ef447d1fe997ff44572e3cb6ee2da29830c2af560886e778cf5f26c11f140a",
+    "video/recording.json": "07574a14f15845e2d0988ec179b09fd77e9f8bd0821cc29f901a987dc86f166a"
+  },
+  "clock_mapping": "First recording frame at or beyond each event sim_s. Excerpt times use measured video_s and playback speed."
+}

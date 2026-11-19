@@ -1,0 +1,61 @@
+{
+  "session": "mowing_20261119_084537_532941",
+  "raw_relative": "optimization_v2/three_tasks/results/R10/candidates/mowing_20261119_084537_532941",
+  "passed": false,
+  "frozen_original_changes": false,
+  "clock_budget_s": 75.0,
+  "actual_terminal_s": 75.002,
+  "terminal": "HUMAN_REQUIRED",
+  "map_observations_including_teardown": 342,
+  "map_valid": 0,
+  "reason_counts": {
+    "GNSS_MAP_INNOVATION_OR_FRESHNESS": 116,
+    "STARTUP_CORRECTION_STABILITY_PENDING": 226
+  },
+  "first_coarse_samples": [
+    {
+      "t": 8.2,
+      "initialization": true,
+      "reason": "GNSS_MAP_INNOVATION_OR_FRESHNESS",
+      "gnss_innovation_m": 0.16028132709790363,
+      "multistart_spread_m": 0.009927086081571352,
+      "surface_p95_m": 0.20093362464841472
+    },
+    {
+      "t": 8.4,
+      "initialization": true,
+      "reason": "STARTUP_CORRECTION_STABILITY_PENDING",
+      "gnss_innovation_m": 0.13541788036017896,
+      "multistart_spread_m": 0.0035848370089307333,
+      "surface_p95_m": 0.2021467674725645
+    },
+    {
+      "t": 8.6,
+      "initialization": false,
+      "reason": "GNSS_MAP_INNOVATION_OR_FRESHNESS",
+      "gnss_innovation_m": 0.1950937814143696,
+      "multistart_spread_m": 0.0,
+      "surface_p95_m": 0.20646380784914403
+    }
+  ],
+  "longest_eligible_continuous_s": 1.0,
+  "required_continuous_s": 3.0,
+  "minimum_samples": 18,
+  "minimum_span_s": 3.5,
+  "maximum_gap_s": 0.600001,
+  "physical_samples": 1535,
+  "max_independent_speed_mps": 0.27467999999999976,
+  "max_independent_rpm_rad_s": 1.8344155907123473e-21,
+  "runtime_clean": true,
+  "force_killed": [],
+  "evidence_sha256": {
+    "runtime.json": "efa18a22513f69d4c236c8d476a7d4d5f07caceb13fabf442f92baca2762d180",
+    "quality/evidence.jsonl": "ffed1beda8d3ed29f557d51f51e7854c1cb534d845717bc8639eee44d0f362d8",
+    "tool_evaluation/physical.jsonl": "28de08180f0452044183b226d8110172549f67ef03ab9166efe76c5df5aafb7d",
+    "candidate_analysis.json": "6b8dcc1ed37cda42e3f49d2bdaf1af3ea53b79c0b35dc228ae350f8e649d3f4f",
+    "spec.json": "1b2dfd081c54d17613471b26fb6a41edb6e32d9649ea9236c352158ec33260dd",
+    "mission_result.json": "3eab95c332ace88b93833a11d8975dfcd6e6e5168f38af2ab7e0f399c0415b75",
+    "mission_events.jsonl": "3526605d3a3c3380b39627fde611e7907c92f34eaca7cbc0dfd5ba7b1050de30",
+    "inputs/result.json": "c4c6fd2dea3528ff0be88c6e43b222e1d73f2630f709f27a4f2f0f636fc10c6f"
+  }
+}

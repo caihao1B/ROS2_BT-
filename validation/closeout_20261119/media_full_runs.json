@@ -1,0 +1,260 @@
+{
+  "schema": "CLOSEOUT-FULL-CAMERA/1",
+  "date_utc": "2026-11-19",
+  "formal_matrix_runs": 0,
+  "scope": "Full-selection task evidence in chronological order. Original runs and work denominators retained. This recording archive carries no matrix credit.",
+  "runs": [
+    {
+      "session": "mowing_20261119_072044_764057",
+      "case": "mowing_full_B1",
+      "selected_cluster": "B1",
+      "scope": "B1 full selection; 25 of 47 approved safe execution segments traversed; actual task terminal HUMAN_REQUIRED.",
+      "status": "PARTIAL",
+      "mission_terminal": "HUMAN_REQUIRED",
+      "mission_error": "TimeoutError('WAIT_DEADLINE')",
+      "full_selection": true,
+      "selected": 47,
+      "completed": 25,
+      "uncompleted": 22,
+      "original_reference_segments": 34,
+      "source_plan_version": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335",
+      "task_sim_s": 1173.702,
+      "mission_passed": false,
+      "analysis_passed": false,
+      "recording_all_checks_passed": false,
+      "runtime_clean": true,
+      "failed_analysis_checks": [
+        "original_ordered_passages",
+        "selected_segments_traversed",
+        "tools_off_during_recovery"
+      ],
+      "actual_stop": {
+        "body": true,
+        "tool": true
+      },
+      "unexpected_contacts": {},
+      "map_xy_rmse_m": 0.0661973081952321,
+      "work": {
+        "selected_requested_area_m2": 188.3918016929564,
+        "selected_confirmed_union_m2": 74.00915630340378,
+        "selected_residual_m2": 114.38264538955268,
+        "original_cluster_area_m2": 195.99438340335297,
+        "original_cluster_confirmed_fraction": 0.3776085570324439
+      },
+      "original_recording": {
+        "source": "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/video/full.mp4",
+        "sha256": "d3fa90cf5a2663b256ea9b7611301b45641ad44d8affeb6e87694183897b7c38",
+        "bytes": 22067887,
+        "fps": 5.0,
+        "frames": 15376,
+        "seconds": 3075.2,
+        "codec": "h264",
+        "size": [
+          960,
+          650
+        ],
+        "packet_stream_read": true,
+        "decoded_snapshots": 3,
+        "encoder_exit": 0
+      },
+      "timeline": {
+        "complete": true,
+        "active_frames_fresh": true,
+        "first_sim_s": 0.126,
+        "last_sim_s": 1175.25,
+        "first_drive_sim_s": 38.878,
+        "max_active_image_age_wall_s": 0.3971075449999262,
+        "max_active_frame_gap_sim_s": 0.12600000000000477
+      },
+      "published_path": "media/closeout_20261119/mowing_20261119_072044_764057_B1_partial_full.mp4",
+      "published_scope": "full original continuous camera",
+      "source_hashes": {
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/recording_acceptance.json": "59f0943249e58b632e3b532a7e2f799a8664acab9fe8378928e9a63829af1605",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/mission_result.json": "a35417e870ae00c1eeb41b2078cdd7f5459d45dd90bbbe69bce0fc8cb9f65c5d",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/analysis_mowing_r10.json": "125d964750516ce91079ffdd2b919ce6ba6804b7a56ec5a24f41fa95f3d01802",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/video/frames.jsonl": "4e1793e0454e5d7be65ed18e642f744829a7a52c1c60803b8414497227845fdd",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/video/recording.json": "0cdc13f3f1bdcffa81a99df245347148cf7aabd1d969055fdb4ab3979a97136c",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/video/encoder_command.json": "28f408f3acdf760a9a318803ddb9365bec0355710275d1c4583840766dad5925",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/mission_events.jsonl": "03cdcb01e66db3ee638a6a3bc75ad58d1bb5b198ef33d523040b77137e361076",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/runtime.json": "b1b204e08a051b1cb30718e2c5540f2ac1a4391462981b571b73bed51ad6ea17",
+        "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/spec.json": "7bd74b5501cc4402aea657f6a21d51080e08a178258c19cce0a89949d87b4bdf"
+      },
+      "summary_zh": "B1 完整簇选取，25/47 段获准安全执行路径通过端点验收。任务终态 HUMAN_REQUIRED，录像与任务联合验收 PARTIAL。 原作业区分母为 195.99 m²，选中目标上经反馈确认的并集为 74.01 m²。",
+      "published_sha256": "d3fa90cf5a2663b256ea9b7611301b45641ad44d8affeb6e87694183897b7c38",
+      "published_bytes": 22067887,
+      "published_git_blob": "a8f98d41fd9062b680335104b5b01df584af3eb0",
+      "video_bookmarks": [
+        {
+          "label_zh": "首条割草作业的工具反馈",
+          "event": "TOOL_WORKING_CONFIRMED",
+          "sim_s": 38.794,
+          "video_s": 101.0,
+          "frame": 505,
+          "segment": "B1:segment:0:safe:0"
+        },
+        {
+          "label_zh": "首次导航目标",
+          "event": "SEGMENT_GOAL",
+          "sim_s": 38.796,
+          "video_s": 101.0,
+          "frame": 505,
+          "segment": "B1:segment:0:safe:0"
+        },
+        {
+          "label_zh": "首次行为树中断导航",
+          "event": "BT_INTERRUPTS_SEGMENT",
+          "sim_s": 74.072,
+          "video_s": 193.2,
+          "frame": 966,
+          "reason": "PERCEPTION_ADMISSION_WAIT",
+          "action": "CANCEL"
+        },
+        {
+          "label_zh": "首次端点恢复成功",
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "sim_s": 242.73,
+          "video_s": 634.8,
+          "frame": 3174,
+          "segment": "B1:safe_turn:2:1"
+        },
+        {
+          "label_zh": "最后一段端点通过验收",
+          "event": "ORIGINAL_SEGMENT_PASSAGE",
+          "sim_s": 1014.42,
+          "video_s": 2655.0,
+          "frame": 13275,
+          "segment": "B1:safe_turn:6:2"
+        },
+        {
+          "label_zh": "任务终态",
+          "event": "TASK_STOP",
+          "sim_s": 1173.702,
+          "video_s": 3070.4,
+          "frame": 15352
+        }
+      ]
+    },
+    {
+      "session": "spray_20261119_081218_417252",
+      "case": "spray_full_A1",
+      "selected_cluster": "A1",
+      "scope": "A1 full selection; 22 of 56 original points confirmed; actual task terminal INCOMPLETE.",
+      "status": "PARTIAL",
+      "mission_terminal": "INCOMPLETE",
+      "mission_error": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+      "full_selection": true,
+      "selected": 56,
+      "completed": 22,
+      "uncompleted": 34,
+      "original_reference_segments": null,
+      "source_plan_version": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+      "task_sim_s": 944.304,
+      "mission_passed": false,
+      "analysis_passed": false,
+      "recording_all_checks_passed": false,
+      "runtime_clean": false,
+      "failed_analysis_checks": [
+        "runtime_clean",
+        "mission_completed",
+        "feedback_and_independent_physics_agree"
+      ],
+      "actual_stop": {
+        "body": true,
+        "tool": true
+      },
+      "unexpected_contacts": {},
+      "map_xy_rmse_m": 0.04285845113073849,
+      "work": {},
+      "original_recording": {
+        "source": "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/video/full.mp4",
+        "sha256": "1f2c33f5ae822b41700e35c958cab06e8611ce5742b598d27f38812d1735ba07",
+        "bytes": 7920641,
+        "fps": 5.0,
+        "frames": 9929,
+        "seconds": 1985.8,
+        "codec": "h264",
+        "size": [
+          960,
+          650
+        ],
+        "packet_stream_read": true,
+        "decoded_snapshots": 3,
+        "encoder_exit": 0
+      },
+      "timeline": {
+        "complete": true,
+        "active_frames_fresh": true,
+        "first_sim_s": 0.126,
+        "last_sim_s": 946.75,
+        "first_drive_sim_s": 40.08,
+        "max_active_image_age_wall_s": 0.31769927400000597,
+        "max_active_frame_gap_sim_s": 0.12600000000000477
+      },
+      "published_path": "media/closeout_20261119/spray_20261119_081218_417252_A1_partial_full.mp4",
+      "published_scope": "full original continuous camera",
+      "source_hashes": {
+        "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/recording_acceptance.json": "783cfa3e28fe785b337287246e859e9bb20bde93e1ed344b373cfd0ed7bbd95b",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission_result.json": "4583153d38bd29b5c771f540de2e21ea4b63c4a99cc35e877ec45aaaa7101bf3",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/analysis_spray_r10.json": "cc2a4308d66d1cfb08ea56169ae4e1494e1707f2a98c4e48146d7ca27a2decdf",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/video/frames.jsonl": "4bf749c1996f6b3dee03558832a638aae767a2467d16586b489eaa34ab32681b",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/video/recording.json": "96c5cc8e4c107ca2c8a12b393c0637c5cd8bceb6127cd55d96d198dfdb7115de",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/video/encoder_command.json": "81e3528d8ee5e026e65e2a154a51724238faed5b4885c090157b96b9fc4b177c",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission_events.jsonl": "ca4d9838cb7173d34c3ca1530a92cc739772739786820f55a7ecb7396e6b8acd",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/runtime.json": "c22bfb085e22ff11bd3a2c5c6a8a3685e171dfe3d4eb40b2deb457b48b945d9d",
+        "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/spec.json": "058d69509c0c009091250aa9173b706d0a7a0f74610be9647333c9e4ff9f16f5"
+      },
+      "summary_zh": "A1 完整簇选取，22/56 个原喷洒点取得作业确认。任务终态 INCOMPLETE，录像与任务联合验收 PARTIAL。",
+      "video_bookmarks": [
+        {
+          "label_zh": "首次导航目标",
+          "event": "NAV_GOAL",
+          "sim_s": 32.496,
+          "video_s": 67.8,
+          "frame": 339,
+          "point": "point_7_14"
+        },
+        {
+          "label_zh": "第一处点喷得到计量确认",
+          "event": "TOOL_RESULT",
+          "sim_s": 39.95,
+          "video_s": 83.4,
+          "frame": 417,
+          "point": "point_7_14",
+          "reason": "CONFIRMED_WORK"
+        },
+        {
+          "label_zh": "首次行为树中断导航",
+          "event": "BT_INTERRUPTS_NAV",
+          "sim_s": 47.016,
+          "video_s": 98.4,
+          "frame": 492,
+          "reason": "PERCEPTION_ADMISSION_WAIT",
+          "action": "CANCEL"
+        },
+        {
+          "label_zh": "最后一处计量确认",
+          "event": "TOOL_RESULT",
+          "sim_s": 902.062,
+          "video_s": 1891.4,
+          "frame": 9457,
+          "point": "point_11_20",
+          "reason": "CONFIRMED_WORK"
+        },
+        {
+          "label_zh": "任务终态",
+          "event": "TASK_STOP",
+          "sim_s": 944.288,
+          "video_s": 1980.0,
+          "frame": 9900
+        }
+      ],
+      "published_sha256": "1f2c33f5ae822b41700e35c958cab06e8611ce5742b598d27f38812d1735ba07",
+      "published_bytes": 7920641,
+      "published_git_blob": "be47506a01f8ea24ec2fa00a6adeb697d7e31473"
+    }
+  ],
+  "latest_by_task": {
+    "mowing_full_B1": "mowing_20261119_072044_764057",
+    "spray_full_A1": "spray_20261119_081218_417252"
+  }
+}

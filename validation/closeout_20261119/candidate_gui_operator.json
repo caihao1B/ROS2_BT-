@@ -1,0 +1,26 @@
+{
+  "observed_run": {
+    "id": "experiments/spray_last_blocked/spray_defer_20261119_092405_230489",
+    "task": "spray",
+    "case": "last_selected_equipment_blocked",
+    "status": "LIVE",
+    "wall_age_s": 0.06723690032958984,
+    "sim_seconds": 145,
+    "cluster": "A1",
+    "candidate": true
+  },
+  "observed_sim_t": 28.5,
+  "case_selected": true,
+  "can_read_real_decision": true,
+  "sensor_channels": [
+    "imu",
+    "wheel",
+    "lidar",
+    "near",
+    "icp",
+    "gnss",
+    "map"
+  ],
+  "exposed_operator_handoff_channel": true,
+  "read_only": true
+}

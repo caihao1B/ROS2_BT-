@@ -12,6 +12,19 @@ class MonitorEvidenceTests(unittest.TestCase):
         (self.run/'live.json').write_text(json.dumps(dict(t=30,phase='NAVIGATING',index=1)))
         self.e=Evidence(self.app)
     def tearDown(self):self.tmp.cleanup()
+    def test_stop_uses_fresh_observations_before_event(self):
+        (self.run/'mission_events.jsonl').write_text('{"event":"TASK_STOP","t":29,"error":"WAIT_DEADLINE"}\n')
+        (self.run/'reference').mkdir()
+        samples=[dict(t=28.93,native_supervisor=dict(t=28.92,gnss_reason='VALID',innovation_m=.10)),
+                 dict(t=28.97,native_supervisor=dict(t=29.02,gnss_reason='FUTURE')),
+                 dict(t=30,native_supervisor=dict(t=30,gnss_reason='REJECTED'))]
+        (self.run/'reference/reference.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in samples))
+        (self.run/'decisions.jsonl').write_text('{"t":22,"action":"EXECUTE"}\n')
+        context=self.e.state()['stop_context']
+        self.assertEqual(context['localization']['gnss_reason'],'VALID')
+        self.assertEqual(context['localization']['t'],28.92)
+        self.assertEqual(context['decision'],{})
+        self.assertEqual(context['gate'],{})
     def test_partial_json_line_not_treated_as_complete(self):
         p=self.run/'x';p.write_bytes(b'{"t":1}\n{"t":2}\n{"t":3')
         rows,whole=tail_records(p);self.assertEqual([r['t'] for r in rows],[1,2]);self.assertTrue(whole)
@@ -33,6 +46,33 @@ class MonitorEvidenceTests(unittest.TestCase):
     def test_missing_stale_and_future_distinguished(self):
         self.assertEqual(freshness(None,30)[0],'MISSING');self.assertEqual(freshness(28,30)[0],'STALE')
         self.assertEqual(freshness(31,30)[0],'FUTURE');self.assertEqual(freshness(29.9,30)[0],'FRESH')
+    def test_new_experiment_group_exposes_persisted_operator_notice(self):
+        run = self.app/'results/experiments/spray_operator_handoff/spray_20261119_120000_000001'
+        run.mkdir(parents=True)
+        for file,data in {'spec.json':{'task':'spray','case':'last_obligation'},'runtime.json':{},
+                          'operator_handoff.json':{'point':'point_10_20','reason':'bounded'},
+                          'candidate_handoff_acceptance.json':{'handoff_status':'CONTROLLED_MANUAL_HOLD'}}.items():
+            (run/file).write_text(json.dumps(data))
+        s = self.e.state(run.relative_to(self.e.results).as_posix())
+        self.assertTrue(s['run']['candidate'])
+        self.assertEqual(s['operator_handoff']['point'], 'point_10_20')
+        self.assertEqual(s['candidate_result']['handoff_status'], 'CONTROLLED_MANUAL_HOLD')
+
+    def test_isolated_candidates_are_labelled_and_sorted_by_recording_time(self):
+        archive=self.app/'results/experiments/spray_defer/spray_defer_20261114_121000_123456'
+        archive.mkdir(parents=True)
+        spec=dict(task='spray',case='blocked',cluster='A1',point_limit=2,candidate_selected_point_ids=['p2','p3'])
+        (archive/'spec.json').write_text(json.dumps(spec));(archive/'runtime.json').write_text('{}')
+        (archive/'mission.json').write_text(json.dumps(dict(clusters=[dict(id='A1',points=[dict(id=k) for k in ('p1','p2','p3')])])))
+        name=archive.relative_to(self.e.results).as_posix()
+        self.assertEqual(self.e.runs()[0]['id'],'R12/'+self.run.name)
+        (archive/'candidate_acceptance.json').write_text(json.dumps({'behavior_result':'PASS','formal_credit':False}))
+        state=self.e.state(name)
+        self.assertTrue(state['run']['candidate'])
+        self.assertEqual(state['candidate_result']['behavior_result'],'PASS')
+        self.assertEqual(state['analysis'],{})
+        self.assertEqual(self.e.geometry(name)['selected_point_ids'],['p2','p3'])
+        self.assertEqual(self.e.geometry(name)['original_count'],3)
     def test_no_path_traversal_or_unknown_run(self):
         for p in ['../../etc/passwd','R12/no_such_run','/etc']:
             with self.assertRaises(ValueError):self.e.resolve(p)

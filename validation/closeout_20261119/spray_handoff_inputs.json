@@ -1,0 +1,121 @@
+{
+  "schema": "SPRAY-HANDOFF-RECORDED-SNAPSHOT/1",
+  "source_case": "spray_20261119_081218_417252",
+  "actual_formal_result": {
+    "confirmed": 22,
+    "original": 56,
+    "mission_passed": false,
+    "runtime_clean": false,
+    "observer_process_exit": 2,
+    "forced_processes": [],
+    "exception": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')"
+  },
+  "measurements": {
+    "t": 944.304,
+    "request": {
+      "schema": "SPRAY-OPERATOR-HANDOFF/1",
+      "session": "spray_20261119_081218_417252",
+      "terminal": "HUMAN_REQUIRED",
+      "reason": "DOCKING_REALIGNMENT_EXHAUSTED",
+      "requested_t": 944.288,
+      "point": "point_10_20",
+      "original_key": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4:point_10_20",
+      "requested": 3.0,
+      "previous_confirmed": 0.0,
+      "residual": 3.0,
+      "quantity_uncertain": false,
+      "credit_added_by_this_handoff": 0.0,
+      "original_obligations": 56,
+      "completed_at_request": 22,
+      "mission_passed": false,
+      "automatic_resume": false,
+      "operator_action": "Inspect the pending target, localization and obstacle evidence; an explicit new task is required to resume."
+    },
+    "gate": {
+      "raw_nav_v": 0.0,
+      "raw_nav_w": 0.0,
+      "t": 944.28,
+      "allowed": false,
+      "mode": "STOP",
+      "v": 0.0,
+      "w": 0.0,
+      "reasons": [
+        "NAV_COMMAND_STALE"
+      ],
+      "stopped": true,
+      "tool_stopped": true,
+      "nav_idle": true,
+      "progress_m": 92.78969030265785
+    },
+    "odometry": {
+      "t": 944.246,
+      "v": 0.00135140911525183,
+      "w": -0.0014296266864639025
+    },
+    "feedback": {
+      "kind": "feedback",
+      "attempt": "5676870994391-47168",
+      "boot": "5676870994391",
+      "flow": 0.0,
+      "healthy": true,
+      "key": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4:point_11_20",
+      "meter": 71.7607,
+      "request_on": false,
+      "rpm_rad_s": -0.01,
+      "schema": "S10-TOOL-OBS/1",
+      "sensor_epoch": "spray_20261119_081218_417252",
+      "seq": 43882,
+      "t": 944.3,
+      "tool_revision": "6941ab8a0c04fe3823a90b23d01f89018c67871e2f6ec3744e7006f4bb7e423a"
+    },
+    "events": [
+      {
+        "t": 944.288,
+        "event": "TASK_STOP",
+        "error": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')"
+      },
+      {
+        "t": 944.304,
+        "event": "FINAL_TOOL_STOP",
+        "state": "STOPPED"
+      }
+    ],
+    "limits": {
+      "max_v": 0.01,
+      "max_w": 0.02,
+      "max_feedback_age_s": 0.1,
+      "max_tool_rpm_rad_s": 0.1,
+      "max_ack_age_s": 2.0,
+      "tool_revision": "6941ab8a0c04fe3823a90b23d01f89018c67871e2f6ec3744e7006f4bb7e423a"
+    },
+    "mission_passed": false,
+    "actions_idle": true
+  },
+  "independent_offline_physics": {
+    "window_s": 0.2799999999999727,
+    "body_translation_speed_mps": 0.0,
+    "body_yaw_rate_rps": 0.0,
+    "tool_t": 944.302,
+    "tool_flow": 0.0,
+    "tool_angular_speed_rad_s": -5.4036648276774665e-19
+  },
+  "actions_idle_evidence": {
+    "latest_sent_nav_s": 932.764,
+    "latest_failed_or_completed_nav_s": 934.788,
+    "original_gate_nav_idle": true,
+    "original_feedback_request_on": false,
+    "scope": "Original action handles are inferred from terminal events, gate and tool feedback. The live candidate checks its own handles directly."
+  },
+  "source_sha256": {
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission_events.jsonl": "ca4d9838cb7173d34c3ca1530a92cc739772739786820f55a7ecb7396e6b8acd",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission.json": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission_result.json": "4583153d38bd29b5c771f540de2e21ea4b63c4a99cc35e877ec45aaaa7101bf3",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/spec.json": "058d69509c0c009091250aa9173b706d0a7a0f74610be9647333c9e4ff9f16f5",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/runtime.json": "c22bfb085e22ff11bd3a2c5c6a8a3685e171dfe3d4eb40b2deb457b48b945d9d",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/scene/tool.json": "7ce29c4b6c6c2a029b08efcb068419213ab0d92bb1aaca1d43d56c6e5f92fc46",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/reference/reference.jsonl": "bfb34841c615024317f866d650fd8037295fad4614cd0694a269ebe83d4ed8d4",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/tool_observer/observations.jsonl": "8f9dd6d811b731a594df6a2511a70d8bf16301e00a1bf068f73eb6210fab8dd0",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/tool_evaluation/physical.jsonl": "3cc871c0a149db08042604bb74b1a58b4c23abba3b16271a85e3697353bde85a",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/evaluation/truth.jsonl": "45a29fd9ba19b23c698620544f3c1799c1f70cd692c528ca0ab929791c629aa3"
+  }
+}

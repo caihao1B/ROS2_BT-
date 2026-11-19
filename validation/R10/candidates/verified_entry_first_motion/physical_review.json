@@ -1,0 +1,187 @@
+{
+  "session": "mowing_20261119_090706_626159",
+  "formal_credit": false,
+  "passed": false,
+  "scope": "Physical progress, stationary gyro and independent recovery checks. A transient endpoint crossing is not a stopped gear completion.",
+  "warm_hold": {
+    "start": 38.312,
+    "end": 90.0,
+    "elapsed_s": 51.688,
+    "original_stop_gate_mps": 0.01,
+    "max_physical_speed_mps": 0.0,
+    "gyro_minus_encoder_rad_s": -3.405197146643665e-05
+  },
+  "first_action_clock": [
+    {
+      "t": 90.032,
+      "event": "FIRST_TRANSFER_MOTION_CLOCK_ARMED",
+      "segment": "QUALIFICATION_TRANSFER:0",
+      "actual_action_accepted": true,
+      "origin_t": 90.032,
+      "origin_pose": [
+        82.2221217852172,
+        36.42497815436956
+      ]
+    }
+  ],
+  "transfer_motion_elapsed_before_stop_s": 73.552,
+  "independent_physical_path_length_m": 4.779162891085597,
+  "terminal": "HUMAN_REQUIRED",
+  "reason": "RuntimeError('ENDPOINT_RECOVERY_EXHAUSTED')",
+  "raw_report_field_note": "candidate_analysis.transfer.confirmed_gears records instantaneous checkpoint crossings only. Use stopped_transfer_gears_completed for completed stationary gear boundaries.",
+  "intended_transfer_gears": 2,
+  "instantaneous_transfer_crossings": [
+    {
+      "t": 110.25,
+      "event": "QUALIFICATION_TRANSFER_PASSAGE",
+      "segment": "QUALIFICATION_TRANSFER:0",
+      "xy_error_m": 0.09998372524264736,
+      "yaw_error_rad": 0.04470801888311016,
+      "stop_required": true
+    }
+  ],
+  "stopped_transfer_gears_completed": [],
+  "original_segments_traversed": 0,
+  "original_selected": {
+    "requested": 7,
+    "passages": [],
+    "remaining": [
+      "B1:segment:16:safe:1",
+      "B1:safe_turn:6:0",
+      "B1:safe_turn:6:1",
+      "B1:safe_turn:6:2",
+      "B1:safe_turn:6:3",
+      "B1:safe_turn:6:4",
+      "B1:segment:20:safe:0"
+    ],
+    "confirmed_area_m2": 0.0,
+    "residual_area_m2": 56.25379661449311
+  },
+  "endpoint_checks": [
+    {
+      "t": 110.25,
+      "event": "QUALIFICATION_TRANSFER_PASSAGE",
+      "reference_t": 110.25,
+      "reference_valid": true,
+      "reference_xy_error_m": 0.09998372524264736,
+      "reference_heading_error_rad": 0.04470801888311016,
+      "independent_truth_t": 110.242,
+      "independent_xy_error_m": 0.1343578428549404,
+      "independent_heading_error_rad": 0.04154133292413342,
+      "body_stopped": false,
+      "observed_cumulative_progress_m": 2.8932213227282735
+    },
+    {
+      "t": 116.4,
+      "event": "STOPPED_ORIGINAL_ARRIVAL_NOT_CONFIRMED",
+      "reference_t": 116.4,
+      "reference_valid": true,
+      "reference_xy_error_m": 0.12903312771822856,
+      "reference_heading_error_rad": 0.032331545925317506,
+      "independent_truth_t": 116.402,
+      "independent_xy_error_m": 0.1307552603089476,
+      "independent_heading_error_rad": 0.032146697250797995,
+      "body_stopped": true,
+      "observed_cumulative_progress_m": 2.9360199268065332
+    },
+    {
+      "t": 161.792,
+      "event": "RECOVERY_TERMINAL_GEAR_CONFLICT",
+      "reference_t": 161.79,
+      "reference_valid": true,
+      "reference_xy_error_m": 0.030541959617544603,
+      "reference_heading_error_rad": 0.12939549172051712,
+      "independent_truth_t": 161.782,
+      "independent_xy_error_m": 0.06972115966676835,
+      "independent_heading_error_rad": 0.1319059338393529,
+      "body_stopped": true,
+      "observed_cumulative_progress_m": 5.300395565733916
+    },
+    {
+      "t": 163.44,
+      "event": "STOPPED_ORIGINAL_ARRIVAL_NOT_CONFIRMED",
+      "reference_t": 163.44,
+      "reference_valid": true,
+      "reference_xy_error_m": 0.03291101571873222,
+      "reference_heading_error_rad": 0.12898946614933315,
+      "independent_truth_t": 163.442,
+      "independent_xy_error_m": 0.06972115966676835,
+      "independent_heading_error_rad": 0.1319059338393529,
+      "body_stopped": true,
+      "observed_cumulative_progress_m": 5.30299459377043
+    },
+    {
+      "t": 163.584,
+      "event": "TASK_STOP",
+      "reference_t": 163.59,
+      "reference_valid": true,
+      "reference_xy_error_m": 0.03336324993595582,
+      "reference_heading_error_rad": 0.1289024089766342,
+      "independent_truth_t": 163.582,
+      "independent_xy_error_m": 0.06972115966676835,
+      "independent_heading_error_rad": 0.1319059338393529,
+      "body_stopped": true,
+      "observed_cumulative_progress_m": 5.3033034974683755
+    }
+  ],
+  "recovery_feedback_handshakes": 9,
+  "physical_recovery_gear_intervals": [
+    {
+      "start": 116.498,
+      "end": 118.02,
+      "duration_s": 1.5219999999999914,
+      "physical_samples": 31,
+      "physical_max_abs_rpm_rad_s": 5.453775912462918e-13,
+      "physical_max_flow": 0.0
+    },
+    {
+      "start": 120.376,
+      "end": 132.886,
+      "duration_s": 12.509999999999991,
+      "physical_samples": 250,
+      "physical_max_abs_rpm_rad_s": 6.27584386914536e-13,
+      "physical_max_flow": 0.0
+    },
+    {
+      "start": 133.152,
+      "end": 133.286,
+      "duration_s": 0.13400000000001455,
+      "physical_samples": 3,
+      "physical_max_abs_rpm_rad_s": 8.067546248657752e-19,
+      "physical_max_flow": 0.0
+    },
+    {
+      "start": 133.358,
+      "end": 157.828,
+      "duration_s": 24.47,
+      "physical_samples": 489,
+      "physical_max_abs_rpm_rad_s": 5.453801087481041e-13,
+      "physical_max_flow": 0.0
+    },
+    {
+      "start": 158.02,
+      "end": 161.94,
+      "duration_s": 3.9199999999999875,
+      "physical_samples": 78,
+      "physical_max_abs_rpm_rad_s": 3.2648795204408727e-13,
+      "physical_max_flow": 0.0
+    }
+  ],
+  "feedback_tools_off": true,
+  "stop_tolerance_m": 0.1,
+  "stop_tolerance_rad": 0.12,
+  "observed_final_stop": true,
+  "runtime_clean": true,
+  "forced": [],
+  "evidence_sha256": {
+    "tool_evaluation/physical.jsonl": "92d11288696d7182b2f9cf448805448616c6098329aa5365acf1e996559973fd",
+    "control/gate.jsonl": "0a644b40b1ffb3c0e385b342ecf287cc274bf10035a537a347a193a91a9d38e2",
+    "evaluation/truth.jsonl": "f553ba367d7a788e38bad002b980a015de261ba1f80dea429829abac4d317118",
+    "reference/reference.jsonl": "6bfe4dee8f1b60c2de4089d2764b08825162d3a366978e2d0034aa381850b1ae",
+    "mission_events.jsonl": "921d7cdb27b7cffcf16363817fe1eefc56b2b2b9eba4368148766a15a20e3135",
+    "candidate_analysis.json": "4f7d932ae831fab74b99292344fbc550e2e0633fae8edb35e9c108f05cd14701",
+    "runtime.json": "0f7f571d7ca18fdf4ac140530852388f4a5f45d3e0c0d06b1b55d6a3a94a7e74",
+    "spec.json": "f61cb222dce21075b316ebb8b18a45afa2390c0e31b31ea9bbbaf5c0997c217d",
+    "mission_result.json": "0ca90a5316cc1a83bb8bd9999dd00a8fee5250e19f859c6ed8757eef96345a7d"
+  }
+}

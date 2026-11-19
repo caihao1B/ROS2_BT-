@@ -1,0 +1,234 @@
+{
+  "schema": "R10_SPRAY_REAR_CELL_DIAGNOSTIC/1",
+  "run": "spray_20261119_071627_581230",
+  "scope": "Read-only replay of occasional public occupancy-grid snapshots near controller warnings. No actual private RPP collision cell, raw per-ray return coordinates or new acceptance credit.",
+  "bindings": {
+    "delivery/release_20261119/observer/spray_20261119_071627_581230/footprint_samples.jsonl": "e3919f6300c5c902ea2cb8abe1fbc3130bcbf082029be9cce369a06bd3482654",
+    "delivery/release_20261119/observer/spray_20261119_071627_581230/summary.json": "9ef6b012aafff07595ec3b75e61694f209f7d11423129ff978497ca7c7b82e19",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/near/near.jsonl": "89300a7005d84b515bf671cbf3e18ac51cb7f8b02b6dfcdb67b19ee443321f0e",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/risk/risk.jsonl": "f778808177ceac8ed7853b37d7c513c8c0578804d6cf9b0116dd9570baa38740",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/mission_events.jsonl": "ff3ae8f179f38ec55d77a570cd9b2a2d2782f28e6410548b4a0465306fcc2aa4",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/mission_result.json": "738da04fba8789c3cebaf5ea333905331a3582b635720704c011dafeba3ca012",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230/mission.json": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+    "optimization_v2/three_tasks/results/R12/spray_20261115_060145_047614/mission_events.jsonl": "bc65d732c4f71a755af9696c6d969522201a0544b38f158984de701497d8accf",
+    "optimization_v2/three_tasks/results/R12/spray_20261115_060145_047614/mission_result.json": "d8d60609426795edd11808902e2b61ef25d1eea0bad9210f7dcd787f420a40d2"
+  },
+  "controller_warnings": 431,
+  "sampled_warnings": 30,
+  "current_perimeter": {
+    "NO_BLOCKING_EDGE": 23,
+    "UNKNOWN": 7
+  },
+  "nav_unknown_count": 19,
+  "raw_risk_at_nav_unknown": {
+    "-1": 6,
+    "0": 13
+  },
+  "nav_lethal_cell_count": 0,
+  "all_sampled_terrain_health_valid": true,
+  "rear_return_count_range": [
+    1992,
+    2016
+  ],
+  "max_pair_skew_s": 0.0,
+  "all_four_sources_on_all_samples": true,
+  "max_terrain_to_odom_skew_s": 0.01,
+  "nav_risk_patch_origin_delta_max_m": 4.2e-07,
+  "max_published_nav_age_s": 0.486,
+  "max_raw_risk_age_s": 0.146,
+  "terrain_detail_sample_count": 2,
+  "exact_blocked_terrain_detail_row_count": 0,
+  "examples": [
+    {
+      "t": 28.146,
+      "nav_age_s": 0.04,
+      "risk_age_s": 0.146,
+      "unknown_nav_cell_centers_base_xy_and_risk_cost": [
+        [
+          -0.554,
+          -0.223,
+          -1
+        ],
+        [
+          -0.553,
+          -0.073,
+          -1
+        ],
+        [
+          -0.552,
+          0.076,
+          -1
+        ],
+        [
+          -0.551,
+          0.226,
+          -1
+        ]
+      ]
+    },
+    {
+      "t": 35.08,
+      "nav_age_s": 0.432,
+      "risk_age_s": 0.08,
+      "unknown_nav_cell_centers_base_xy_and_risk_cost": [
+        [
+          -0.658,
+          -0.224,
+          0
+        ],
+        [
+          -0.657,
+          -0.074,
+          0
+        ],
+        [
+          -0.656,
+          0.076,
+          0
+        ],
+        [
+          -0.655,
+          0.226,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 66.046,
+      "nav_age_s": 0.152,
+      "risk_age_s": 0.146,
+      "unknown_nav_cell_centers_base_xy_and_risk_cost": [
+        [
+          -0.565,
+          -0.232,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 70.31,
+      "nav_age_s": 0.036,
+      "risk_age_s": 0.11,
+      "unknown_nav_cell_centers_base_xy_and_risk_cost": [
+        [
+          -0.573,
+          0.209,
+          0
+        ],
+        [
+          -0.578,
+          0.059,
+          0
+        ],
+        [
+          -0.584,
+          -0.091,
+          0
+        ],
+        [
+          -0.589,
+          -0.241,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 73.61,
+      "nav_age_s": 0.038,
+      "risk_age_s": 0.11,
+      "unknown_nav_cell_centers_base_xy_and_risk_cost": [
+        [
+          -0.546,
+          0.037,
+          -1
+        ],
+        [
+          -0.557,
+          -0.112,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 75.71,
+      "nav_age_s": 0.004,
+      "risk_age_s": 0.11,
+      "unknown_nav_cell_centers_base_xy_and_risk_cost": [
+        [
+          -0.517,
+          -0.295,
+          -1
+        ]
+      ]
+    },
+    {
+      "t": 80.21,
+      "nav_age_s": 0.128,
+      "risk_age_s": 0.11,
+      "unknown_nav_cell_centers_base_xy_and_risk_cost": [
+        [
+          -0.568,
+          0.222,
+          0
+        ],
+        [
+          -0.573,
+          0.072,
+          0
+        ],
+        [
+          -0.579,
+          -0.077,
+          0
+        ]
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "run": "spray_20261115_060145_047614",
+      "confirmed_points": 28,
+      "first_three_confirmation_times_s": [
+        26.572,
+        48.114,
+        89.764
+      ],
+      "last_confirmed_s": 1266.548,
+      "median_between_confirmations_s": 40.368,
+      "first_navigation_s": 19.12
+    },
+    {
+      "run": "spray_20261119_071627_581230",
+      "confirmed_points": 3,
+      "first_three_confirmation_times_s": [
+        26.416,
+        60.494,
+        92.082
+      ],
+      "last_confirmed_s": 92.082,
+      "median_between_confirmations_s": 32.833,
+      "first_navigation_s": 19.0
+    }
+  ],
+  "formal_budget_s": 1800,
+  "original_point_count": 56,
+  "post_first_required_mean_seconds_per_confirmation": 32.24698181818182,
+  "geometry": {
+    "physical_rear_x_m": -0.495,
+    "self_mask_rear_x_m": -0.545,
+    "nav_padded_rear_x_m": -0.595,
+    "near_rear_origin_x_m": -0.525,
+    "near_rear_height_m": 0.25,
+    "steepest_downward_ray_rad": -1.3,
+    "expected_flat_ground_first_centerline_x_m": -0.5944
+  },
+  "analysis": [
+    "No horizontal grid shift at cell scale and all four real near sensors healthy at sampled events. Counts alone do not measure returns in one blocked cell.",
+    "Perimeter stamps vary. At 35.08 s four published Nav2 UNKNOWN cells are already zero in the more recent source grid. Source also has footprint clearing, so zero does not directly prove a measured return.",
+    "Flat-ground centerline counterexample: first ideal rear ground at x about -0.594 m is already outside self-mask. Some lateral returns might be in the mask ring; actual returned-cell evidence is unavailable.",
+    "Three distinct consistent ray frames are required; a gap >0.25 s resets qualification. After a cell is obscured, a static rear blind strip or a short requalification interval can produce temporary UNKNOWN. Neither model is a confirmed cause here.",
+    "Nav2 1.3.13 returns before publishing the arc on a current-footprint collision. A published arc can describe a prior success or projected collision. The public arc contains no candidate orientations and diverges in time from latest published grids.",
+    "Do not infer full-scope feasibility from the three-point jam pilot. Preserve the real admission/unknown threshold, obstacle shape and 1800 s. On a formal run collect exact RPP candidate pose/cell, current versus future branch, and stamped per-cell raw/masked/three-frame ground counts before selecting a parameter or algorithmic change."
+  ],
+  "nav2_collision_checker_source": "https://raw.githubusercontent.com/ros-navigation/navigation2/1.3.13/nav2_regulated_pure_pursuit_controller/src/collision_checker.cpp"
+}

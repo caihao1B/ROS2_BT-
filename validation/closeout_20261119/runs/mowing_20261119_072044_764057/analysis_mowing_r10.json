@@ -1,0 +1,462 @@
+{
+  "passed": false,
+  "checks": {
+    "runtime_clean": true,
+    "original_database_unchanged": true,
+    "no_unexpected_contact": true,
+    "whole_footprint_authorized": true,
+    "map_rmse_under_15cm": true,
+    "unique_actuator": true,
+    "unique_tool": true,
+    "unique_tf": true,
+    "measured_final_stop": true,
+    "feedback_area_consistent": true,
+    "curvature_bounded": true,
+    "source_bound": true,
+    "task_version_bound": true,
+    "original_ordered_passages": false,
+    "selected_segments_traversed": false,
+    "two_work_strips": true,
+    "actual_reverse_travel": true,
+    "tools_off_during_turns": true,
+    "tools_off_during_recovery": false,
+    "original_area_and_obligations_retained": true,
+    "reference_not_claimed_completed": true,
+    "full_original_area_denominator": true
+  },
+  "case": "nominal",
+  "task_result": {
+    "passed": false,
+    "terminal": "HUMAN_REQUIRED",
+    "controlled_hold": true,
+    "error": "TimeoutError('WAIT_DEADLINE')",
+    "t": 1173.702,
+    "selected_segments": 47,
+    "navigation_groups": 47,
+    "original_segment_passages": [
+      {
+        "segment": "B1:segment:0:safe:0",
+        "xy_error_m": 0.09919736489815938,
+        "yaw_error_rad": 0.0026438384461513476,
+        "t": 76.17
+      },
+      {
+        "segment": "B1:safe_turn:1:0",
+        "xy_error_m": 0.0996508042839303,
+        "yaw_error_rad": 0.050024453380974165,
+        "t": 116.25
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "xy_error_m": 0.09859747521234304,
+        "yaw_error_rad": 0.009268813495117822,
+        "t": 180.18
+      },
+      {
+        "segment": "B1:safe_turn:2:0",
+        "xy_error_m": 0.0990009256714226,
+        "yaw_error_rad": 0.027675414742900806,
+        "t": 203.94
+      },
+      {
+        "segment": "B1:safe_turn:2:1",
+        "xy_error_m": 0.09911571806366574,
+        "yaw_error_rad": 0.018012888949771266,
+        "t": 237.69
+      },
+      {
+        "segment": "B1:safe_turn:2:2",
+        "xy_error_m": 0.09553975061475921,
+        "yaw_error_rad": 0.1024049574141319,
+        "t": 245.13
+      },
+      {
+        "segment": "B1:segment:8:safe:0",
+        "xy_error_m": 0.09958578807910544,
+        "yaw_error_rad": 0.06451096836055603,
+        "t": 336.3
+      },
+      {
+        "segment": "B1:safe_turn:3:0",
+        "xy_error_m": 0.09775543559287027,
+        "yaw_error_rad": 0.11177539994459673,
+        "t": 339.21
+      },
+      {
+        "segment": "B1:safe_turn:3:1",
+        "xy_error_m": 0.09939362636689478,
+        "yaw_error_rad": 0.0492301375740647,
+        "t": 385.86
+      },
+      {
+        "segment": "B1:safe_turn:3:2",
+        "xy_error_m": 0.09738590543666156,
+        "yaw_error_rad": 0.07739479186151804,
+        "t": 469.922
+      },
+      {
+        "segment": "B1:safe_turn:3:3",
+        "xy_error_m": 0.0835663441927843,
+        "yaw_error_rad": 0.11955224999698351,
+        "t": 491.82
+      },
+      {
+        "segment": "B1:segment:12:safe:0",
+        "xy_error_m": 0.09819747168153033,
+        "yaw_error_rad": 0.0012864581195700109,
+        "t": 548.52
+      },
+      {
+        "segment": "B1:safe_turn:4:0",
+        "xy_error_m": 0.0995874956205779,
+        "yaw_error_rad": 0.0858853127445165,
+        "t": 575.28
+      },
+      {
+        "segment": "B1:safe_turn:4:1",
+        "xy_error_m": 0.09923026433391598,
+        "yaw_error_rad": 0.021286115414574258,
+        "t": 679.83
+      },
+      {
+        "segment": "B1:safe_turn:4:2",
+        "xy_error_m": 0.09988101321000008,
+        "yaw_error_rad": 0.04822370510468721,
+        "t": 690.81
+      },
+      {
+        "segment": "B1:segment:16:safe:0",
+        "xy_error_m": 0.09832579437306407,
+        "yaw_error_rad": 0.004448589991199459,
+        "t": 725.31
+      },
+      {
+        "segment": "B1:safe_turn:5:0",
+        "xy_error_m": 0.09944229603328325,
+        "yaw_error_rad": 0.06294195194245855,
+        "t": 732.9
+      },
+      {
+        "segment": "B1:safe_turn:5:1",
+        "xy_error_m": 0.09777609298670166,
+        "yaw_error_rad": 0.10888295927154035,
+        "t": 735.12
+      },
+      {
+        "segment": "B1:safe_turn:5:2",
+        "xy_error_m": 0.09910097151009695,
+        "yaw_error_rad": 0.08781504040771138,
+        "t": 746.552
+      },
+      {
+        "segment": "B1:safe_turn:5:3",
+        "xy_error_m": 0.09906238873604417,
+        "yaw_error_rad": 0.08405611010807945,
+        "t": 841.71
+      },
+      {
+        "segment": "B1:safe_turn:5:4",
+        "xy_error_m": 0.09782621186285864,
+        "yaw_error_rad": 0.020359124076711144,
+        "t": 892.71
+      },
+      {
+        "segment": "B1:segment:16:safe:1",
+        "xy_error_m": 0.09953348205652808,
+        "yaw_error_rad": 0.027186260317431543,
+        "t": 903.99
+      },
+      {
+        "segment": "B1:safe_turn:6:0",
+        "xy_error_m": 0.09966448114864584,
+        "yaw_error_rad": 0.08355644942379437,
+        "t": 908.25
+      },
+      {
+        "segment": "B1:safe_turn:6:1",
+        "xy_error_m": 0.09937676020849745,
+        "yaw_error_rad": 0.02928849373229614,
+        "t": 954.9
+      },
+      {
+        "segment": "B1:safe_turn:6:2",
+        "xy_error_m": 0.09797276820531158,
+        "yaw_error_rad": 0.011222836817843529,
+        "t": 1014.42
+      }
+    ],
+    "original_segments": 47,
+    "execution_segments": 47,
+    "reference_original_segments": 34,
+    "original_reference_status": "PARTIAL",
+    "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+    "localization_revalidations": {},
+    "completed_segments": [
+      "B1:segment:0:safe:0",
+      "B1:safe_turn:1:0",
+      "B1:segment:4:safe:0",
+      "B1:safe_turn:2:0",
+      "B1:safe_turn:2:1",
+      "B1:safe_turn:2:2",
+      "B1:segment:8:safe:0",
+      "B1:safe_turn:3:0",
+      "B1:safe_turn:3:1",
+      "B1:safe_turn:3:2",
+      "B1:safe_turn:3:3",
+      "B1:segment:12:safe:0",
+      "B1:safe_turn:4:0",
+      "B1:safe_turn:4:1",
+      "B1:safe_turn:4:2",
+      "B1:segment:16:safe:0",
+      "B1:safe_turn:5:0",
+      "B1:safe_turn:5:1",
+      "B1:safe_turn:5:2",
+      "B1:safe_turn:5:3",
+      "B1:safe_turn:5:4",
+      "B1:segment:16:safe:1",
+      "B1:safe_turn:6:0",
+      "B1:safe_turn:6:1",
+      "B1:safe_turn:6:2"
+    ],
+    "remaining_selected": [
+      "B1:safe_turn:6:3",
+      "B1:safe_turn:6:4",
+      "B1:segment:20:safe:0",
+      "B1:safe_turn:7:0",
+      "B1:safe_turn:7:1",
+      "B1:safe_turn:7:2",
+      "B1:safe_turn:7:3",
+      "B1:safe_turn:7:4",
+      "B1:safe_turn:7:5",
+      "B1:segment:24:safe:0",
+      "B1:safe_turn:8:0",
+      "B1:safe_turn:8:1",
+      "B1:safe_turn:8:2",
+      "B1:safe_turn:8:3",
+      "B1:safe_turn:8:4",
+      "B1:safe_turn:8:5",
+      "B1:safe_turn:8:6",
+      "B1:safe_turn:8:7",
+      "B1:segment:29:safe:0",
+      "B1:safe_turn:9:0",
+      "B1:safe_turn:9:1",
+      "B1:segment:29:safe:1"
+    ],
+    "not_selected": [],
+    "work_results": [
+      {
+        "segment": "B1:segment:0:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 9.683149999999976,
+        "remaining": 0.8783402816742196,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:0:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 9.682775,
+        "remaining": 0.8787152816741965,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 11.479475,
+        "remaining": 7.37536442751307,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 17.166912500000013,
+        "remaining": 1.6879269275130575,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:8:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 19.543099999999985,
+        "remaining": 5.8892190334253165,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:8:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 21.06497499999996,
+        "remaining": 4.36734403342534,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:8:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 23.154112499999957,
+        "remaining": 2.278206533425344,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:12:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 15.389799999999973,
+        "remaining": 19.783069583359016,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:16:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 0.515837500000002,
+        "remaining": 29.08739341014288,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:16:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 7.957962499999991,
+        "remaining": 21.645268410142894,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:16:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 8.001324999999994,
+        "remaining": 21.60190591014289,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:16:safe:1",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 8.798962499999984,
+        "remaining": 20.8042684101429,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:16:safe:1",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 10.019537499999991,
+        "remaining": 19.583693410142892,
+        "uncertain": false
+      }
+    ],
+    "replans": 0,
+    "coverage_rejoins": 0,
+    "coverage_planner_queries": 0,
+    "endpoint_recoveries": 4,
+    "endpoint_planner_queries": 7,
+    "continuous_recovery_queries": 7,
+    "final_gate": {
+      "t": 1173.69,
+      "allowed": false,
+      "mode": "STOP",
+      "v": 0.0,
+      "w": 0.0,
+      "reasons": [
+        "LOCALIZATION",
+        "PERCEPTION",
+        "NAV_COMMAND_STALE"
+      ],
+      "stopped": true,
+      "tool_stopped": true,
+      "nav_idle": true,
+      "progress_m": 166.59495127020512,
+      "armed_direction": 1,
+      "raw_nav_v": 0.0,
+      "raw_nav_w": 0.0
+    },
+    "ownership": {
+      "/tf": [
+        "s05_local_odometry",
+        "s08_global_pose_manager"
+      ],
+      "/s03/actuator/request": [
+        "r09_actuator_gate"
+      ],
+      "/s10/tool/command": [
+        "s10_tool_action_server"
+      ]
+    },
+    "wall_seconds": 3072.655565813,
+    "execution_mode": "original_primitive_boundaries",
+    "scope": "All current approved execution goals checked in order; original 34 reference remains PARTIAL; unchanged original work polygons use physical feedback only"
+  },
+  "jobs": [
+    {
+      "key": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335:B1:segment:0",
+      "status": "CANCELLED",
+      "confirmed_m2": 9.682775,
+      "requested_m2": 10.561490281674196,
+      "remaining_m2": 0.8787152816741965,
+      "uncertain": false,
+      "physical_area_m2": 13.033940501887312,
+      "credit_outside_physical_3cm_m2": 0.0,
+      "credit_geometry_area_m2": 9.682775
+    },
+    {
+      "key": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335:B1:segment:4",
+      "status": "CANCELLED",
+      "confirmed_m2": 17.166912500000013,
+      "requested_m2": 18.85483942751307,
+      "remaining_m2": 1.6879269275130575,
+      "uncertain": false,
+      "physical_area_m2": 21.357842291906636,
+      "credit_outside_physical_3cm_m2": 0.0,
+      "credit_geometry_area_m2": 17.166912500000013
+    },
+    {
+      "key": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335:B1:segment:8",
+      "status": "CANCELLED",
+      "confirmed_m2": 23.154112499999957,
+      "requested_m2": 25.4323190334253,
+      "remaining_m2": 2.278206533425344,
+      "uncertain": false,
+      "physical_area_m2": 27.606698211937356,
+      "credit_outside_physical_3cm_m2": 0.0,
+      "credit_geometry_area_m2": 23.154112499999957
+    },
+    {
+      "key": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335:B1:segment:12",
+      "status": "CANCELLED",
+      "confirmed_m2": 15.389799999999973,
+      "requested_m2": 35.17286958335899,
+      "remaining_m2": 19.783069583359016,
+      "uncertain": false,
+      "physical_area_m2": 19.11076370549047,
+      "credit_outside_physical_3cm_m2": 0.0,
+      "credit_geometry_area_m2": 15.389799999999973
+    },
+    {
+      "key": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335:B1:segment:16",
+      "status": "CANCELLED",
+      "confirmed_m2": 10.019537499999991,
+      "requested_m2": 29.603230910142884,
+      "remaining_m2": 19.583693410142892,
+      "uncertain": false,
+      "physical_area_m2": 14.02249041111692,
+      "credit_outside_physical_3cm_m2": 0.0,
+      "credit_geometry_area_m2": 10.019537499999991
+    }
+  ],
+  "map_xy_rmse_m": 0.0661973081952321,
+  "actual_reverse_distance_m": 41.13883444090283,
+  "selected_requested_area_m2": 188.3918016929564,
+  "selected_confirmed_union_m2": 74.00915630340378,
+  "selected_fraction": 0.392847011591433,
+  "selected_residual_m2": 114.38264538955268,
+  "original_cluster_area_m2": 195.99438340335297,
+  "original_cluster_confirmed_fraction": 0.3776085570324439,
+  "original_clusters": 3,
+  "unexpected_contacts": {},
+  "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
+  "formal_credit": false
+}

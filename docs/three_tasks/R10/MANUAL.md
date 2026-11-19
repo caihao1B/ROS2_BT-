@@ -1,5 +1,13 @@
 # R10 手工检查
 
+11 月 19 日的复验使用两项短例和两次完整选择。手工核查可先验证 ROS 陀螺标定与停车后的版本握手，再观察一次带录像的车辆运行。完整选择、逐作业键残余和带时间游标的离线回放见[收尾复验](../收尾复验_20261119.md)。
+
+```bash
+cd /home/ceihao/robot_project
+bash optimization_v2/three_tasks/advance.sh R10 test stationary_gyro
+bash optimization_v2/three_tasks/advance.sh R10 test mowing_stopped_revalidation
+```
+
 先看回执及精简结果：
 ```bash
 cd /home/ceihao/robot_project

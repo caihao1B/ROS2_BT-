@@ -1,0 +1,1497 @@
+{
+  "collision_volume": {
+    "ceiling_m": 1.1,
+    "vehicles": {
+      "diff": {
+        "body_and_payload_top_m": 0.9,
+        "tilt_allowance_m": 0.05927231323246028,
+        "ground_uncertainty_m": 0.061000000000000006,
+        "ceiling_m": 1.05
+      },
+      "ackermann": {
+        "body_and_payload_top_m": 0.9,
+        "tilt_allowance_m": 0.12203049003193284,
+        "ground_uncertainty_m": 0.061000000000000006,
+        "ceiling_m": 1.1
+      }
+    },
+    "mounting_allowance_m": 0.1,
+    "scope": "ground-relative collision projection only; full SLAM cloud retained"
+  },
+  "planes": [
+    {
+      "station": "A_A0",
+      "frame": 0,
+      "normal": [
+        -8.138867269735783e-05,
+        -9.355687507195398e-05,
+        1.0
+      ],
+      "offset": -0.004683821927756071,
+      "support": 3166,
+      "ground_points": 4662,
+      "obstacle_points": 298,
+      "overhead_points": 810
+    },
+    {
+      "station": "A_A0",
+      "frame": 1,
+      "normal": [
+        2.884351670218166e-05,
+        -4.394757343106903e-05,
+        1.0
+      ],
+      "offset": -0.00467193778604269,
+      "support": 3151,
+      "ground_points": 4649,
+      "obstacle_points": 297,
+      "overhead_points": 816
+    },
+    {
+      "station": "A_A0",
+      "frame": 2,
+      "normal": [
+        1.264457114302786e-05,
+        7.393440682790242e-06,
+        1.0
+      ],
+      "offset": -0.004658908117562532,
+      "support": 3155,
+      "ground_points": 4638,
+      "obstacle_points": 276,
+      "overhead_points": 819
+    },
+    {
+      "station": "A_A0",
+      "frame": 3,
+      "normal": [
+        -3.0472130674752407e-05,
+        5.968205641693203e-06,
+        1.0
+      ],
+      "offset": -0.004651167429983616,
+      "support": 3182,
+      "ground_points": 4686,
+      "obstacle_points": 285,
+      "overhead_points": 818
+    },
+    {
+      "station": "A_A0",
+      "frame": 4,
+      "normal": [
+        3.1519492040388286e-05,
+        -1.1573608389880974e-05,
+        1.0
+      ],
+      "offset": -0.004613097757101059,
+      "support": 3176,
+      "ground_points": 4652,
+      "obstacle_points": 303,
+      "overhead_points": 812
+    },
+    {
+      "station": "A_A1",
+      "frame": 0,
+      "normal": [
+        1.6259917174465954e-05,
+        -3.1831779779167846e-05,
+        1.0
+      ],
+      "offset": -0.004746547434478998,
+      "support": 3059,
+      "ground_points": 4509,
+      "obstacle_points": 332,
+      "overhead_points": 858
+    },
+    {
+      "station": "A_A1",
+      "frame": 1,
+      "normal": [
+        -7.994006591616198e-05,
+        -2.6693907784647308e-05,
+        1.0
+      ],
+      "offset": -0.004748026840388775,
+      "support": 3101,
+      "ground_points": 4542,
+      "obstacle_points": 326,
+      "overhead_points": 850
+    },
+    {
+      "station": "A_A1",
+      "frame": 2,
+      "normal": [
+        -5.4669802921125665e-05,
+        2.9484926926670596e-06,
+        1.0
+      ],
+      "offset": -0.004720039200037718,
+      "support": 3081,
+      "ground_points": 4518,
+      "obstacle_points": 327,
+      "overhead_points": 861
+    },
+    {
+      "station": "A_A1",
+      "frame": 3,
+      "normal": [
+        7.508734597649891e-06,
+        -6.185910751810297e-05,
+        1.0
+      ],
+      "offset": -0.004657294135540724,
+      "support": 3126,
+      "ground_points": 4550,
+      "obstacle_points": 344,
+      "overhead_points": 851
+    },
+    {
+      "station": "A_A1",
+      "frame": 4,
+      "normal": [
+        -2.9558403184637427e-05,
+        -5.542842700378969e-05,
+        1.0
+      ],
+      "offset": -0.004784293472766876,
+      "support": 3122,
+      "ground_points": 4564,
+      "obstacle_points": 349,
+      "overhead_points": 859
+    },
+    {
+      "station": "A_A2",
+      "frame": 0,
+      "normal": [
+        -0.00012217780749779195,
+        -0.00016705351299606264,
+        1.0
+      ],
+      "offset": -0.004917765036225319,
+      "support": 2963,
+      "ground_points": 4410,
+      "obstacle_points": 232,
+      "overhead_points": 451
+    },
+    {
+      "station": "A_A2",
+      "frame": 1,
+      "normal": [
+        -0.00010437648597871885,
+        -7.179631211329252e-05,
+        1.0
+      ],
+      "offset": -0.004879815969616175,
+      "support": 2948,
+      "ground_points": 4402,
+      "obstacle_points": 228,
+      "overhead_points": 451
+    },
+    {
+      "station": "A_A2",
+      "frame": 2,
+      "normal": [
+        2.8863655643363018e-06,
+        -6.043995017535053e-05,
+        1.0
+      ],
+      "offset": -0.004737989977002144,
+      "support": 2962,
+      "ground_points": 4425,
+      "obstacle_points": 231,
+      "overhead_points": 448
+    },
+    {
+      "station": "A_A2",
+      "frame": 3,
+      "normal": [
+        2.9811619242536835e-05,
+        3.475032281130552e-05,
+        1.0
+      ],
+      "offset": -0.004781452938914299,
+      "support": 2986,
+      "ground_points": 4411,
+      "obstacle_points": 253,
+      "overhead_points": 461
+    },
+    {
+      "station": "A_A2",
+      "frame": 4,
+      "normal": [
+        -7.423164788633585e-06,
+        -6.5300168898829725e-06,
+        1.0
+      ],
+      "offset": -0.0047156610526144505,
+      "support": 2995,
+      "ground_points": 4451,
+      "obstacle_points": 232,
+      "overhead_points": 455
+    },
+    {
+      "station": "A_A3",
+      "frame": 0,
+      "normal": [
+        -4.404552964842878e-05,
+        -3.290592076155008e-06,
+        1.0
+      ],
+      "offset": -0.004776448477059603,
+      "support": 3131,
+      "ground_points": 4681,
+      "obstacle_points": 168,
+      "overhead_points": 577
+    },
+    {
+      "station": "A_A3",
+      "frame": 1,
+      "normal": [
+        9.266450069844723e-05,
+        -4.2670211541917524e-07,
+        1.0
+      ],
+      "offset": -0.004751712083816528,
+      "support": 3164,
+      "ground_points": 4708,
+      "obstacle_points": 164,
+      "overhead_points": 578
+    },
+    {
+      "station": "A_A3",
+      "frame": 2,
+      "normal": [
+        3.461673259153031e-05,
+        7.036974420771003e-05,
+        1.0
+      ],
+      "offset": -0.004768789745867252,
+      "support": 3125,
+      "ground_points": 4668,
+      "obstacle_points": 168,
+      "overhead_points": 578
+    },
+    {
+      "station": "A_A3",
+      "frame": 3,
+      "normal": [
+        7.536321936640888e-05,
+        7.350212399614975e-05,
+        1.0
+      ],
+      "offset": -0.0047333016991615295,
+      "support": 3133,
+      "ground_points": 4690,
+      "obstacle_points": 179,
+      "overhead_points": 586
+    },
+    {
+      "station": "A_A3",
+      "frame": 4,
+      "normal": [
+        -8.787272963672876e-05,
+        -5.6034186854958534e-05,
+        1.0
+      ],
+      "offset": -0.0047523160465061665,
+      "support": 3163,
+      "ground_points": 4711,
+      "obstacle_points": 184,
+      "overhead_points": 579
+    },
+    {
+      "station": "A_A4",
+      "frame": 0,
+      "normal": [
+        -2.460704490658827e-05,
+        2.6858253477257676e-05,
+        1.0
+      ],
+      "offset": -0.0047570024617016315,
+      "support": 3142,
+      "ground_points": 4644,
+      "obstacle_points": 254,
+      "overhead_points": 831
+    },
+    {
+      "station": "A_A4",
+      "frame": 1,
+      "normal": [
+        0.0001175494835479185,
+        2.968764192701201e-06,
+        1.0
+      ],
+      "offset": -0.004770457744598389,
+      "support": 3173,
+      "ground_points": 4663,
+      "obstacle_points": 255,
+      "overhead_points": 830
+    },
+    {
+      "station": "A_A4",
+      "frame": 2,
+      "normal": [
+        -4.585160058923066e-05,
+        -7.009164983173832e-05,
+        1.0
+      ],
+      "offset": -0.004734735004603863,
+      "support": 3151,
+      "ground_points": 4650,
+      "obstacle_points": 260,
+      "overhead_points": 819
+    },
+    {
+      "station": "A_A4",
+      "frame": 3,
+      "normal": [
+        2.227642289653886e-05,
+        6.65860206936486e-05,
+        1.0
+      ],
+      "offset": -0.004771120846271515,
+      "support": 3142,
+      "ground_points": 4624,
+      "obstacle_points": 261,
+      "overhead_points": 827
+    },
+    {
+      "station": "A_A4",
+      "frame": 4,
+      "normal": [
+        2.9099388484610245e-05,
+        -3.7141006032470614e-05,
+        1.0
+      ],
+      "offset": -0.004766760393977165,
+      "support": 3154,
+      "ground_points": 4640,
+      "obstacle_points": 288,
+      "overhead_points": 836
+    },
+    {
+      "station": "B_B0",
+      "frame": 0,
+      "normal": [
+        -0.00013029153342358768,
+        -0.0002356209879508242,
+        0.9999999403953552
+      ],
+      "offset": -0.005338701885193586,
+      "support": 2652,
+      "ground_points": 4017,
+      "obstacle_points": 413,
+      "overhead_points": 873
+    },
+    {
+      "station": "B_B0",
+      "frame": 1,
+      "normal": [
+        2.910084367613308e-05,
+        -0.00019918415637221187,
+        1.0
+      ],
+      "offset": -0.005476501304656267,
+      "support": 2645,
+      "ground_points": 4008,
+      "obstacle_points": 403,
+      "overhead_points": 875
+    },
+    {
+      "station": "B_B0",
+      "frame": 2,
+      "normal": [
+        -6.841981667093933e-05,
+        -0.00019640200480353087,
+        1.0
+      ],
+      "offset": -0.00544868316501379,
+      "support": 2652,
+      "ground_points": 4016,
+      "obstacle_points": 412,
+      "overhead_points": 880
+    },
+    {
+      "station": "B_B0",
+      "frame": 3,
+      "normal": [
+        -6.827559263911098e-05,
+        -0.0001761874882504344,
+        1.0
+      ],
+      "offset": -0.005465931724756956,
+      "support": 2617,
+      "ground_points": 3981,
+      "obstacle_points": 413,
+      "overhead_points": 882
+    },
+    {
+      "station": "B_B0",
+      "frame": 4,
+      "normal": [
+        -2.3265316485776566e-05,
+        -0.00013601069804280996,
+        1.0
+      ],
+      "offset": -0.005399803165346384,
+      "support": 2668,
+      "ground_points": 4017,
+      "obstacle_points": 419,
+      "overhead_points": 872
+    },
+    {
+      "station": "B_B1",
+      "frame": 0,
+      "normal": [
+        5.4550138884224e-05,
+        3.806242602877319e-05,
+        1.0
+      ],
+      "offset": -0.004998262505978346,
+      "support": 2876,
+      "ground_points": 4159,
+      "obstacle_points": 371,
+      "overhead_points": 921
+    },
+    {
+      "station": "B_B1",
+      "frame": 1,
+      "normal": [
+        3.0019441510376055e-06,
+        -6.10916904406622e-05,
+        1.0
+      ],
+      "offset": -0.004883045796304941,
+      "support": 2856,
+      "ground_points": 4142,
+      "obstacle_points": 366,
+      "overhead_points": 895
+    },
+    {
+      "station": "B_B1",
+      "frame": 2,
+      "normal": [
+        -5.9927500842604786e-05,
+        8.702136256033555e-05,
+        1.0
+      ],
+      "offset": -0.005014326423406601,
+      "support": 2848,
+      "ground_points": 4135,
+      "obstacle_points": 361,
+      "overhead_points": 891
+    },
+    {
+      "station": "B_B1",
+      "frame": 3,
+      "normal": [
+        6.503849726868793e-05,
+        -2.1049238057457842e-05,
+        1.0
+      ],
+      "offset": -0.005014399997889996,
+      "support": 2861,
+      "ground_points": 4140,
+      "obstacle_points": 363,
+      "overhead_points": 903
+    },
+    {
+      "station": "B_B1",
+      "frame": 4,
+      "normal": [
+        -3.234506493754452e-06,
+        -5.700757174054161e-05,
+        1.0
+      ],
+      "offset": -0.004969486966729164,
+      "support": 2890,
+      "ground_points": 4187,
+      "obstacle_points": 380,
+      "overhead_points": 908
+    },
+    {
+      "station": "B_B2",
+      "frame": 0,
+      "normal": [
+        8.501824595441576e-06,
+        -6.881502486066893e-05,
+        1.0
+      ],
+      "offset": -0.004916702397167683,
+      "support": 2764,
+      "ground_points": 3932,
+      "obstacle_points": 515,
+      "overhead_points": 935
+    },
+    {
+      "station": "B_B2",
+      "frame": 1,
+      "normal": [
+        -6.150473927846178e-05,
+        -7.590167660964653e-05,
+        1.0
+      ],
+      "offset": -0.004944453947246075,
+      "support": 2771,
+      "ground_points": 3939,
+      "obstacle_points": 495,
+      "overhead_points": 932
+    },
+    {
+      "station": "B_B2",
+      "frame": 2,
+      "normal": [
+        1.4258261217037216e-05,
+        -9.177020547213033e-05,
+        1.0
+      ],
+      "offset": -0.004852762445807457,
+      "support": 2817,
+      "ground_points": 3996,
+      "obstacle_points": 478,
+      "overhead_points": 945
+    },
+    {
+      "station": "B_B2",
+      "frame": 3,
+      "normal": [
+        -7.175893551902846e-05,
+        -4.842438283958472e-05,
+        1.0
+      ],
+      "offset": -0.004944332875311375,
+      "support": 2805,
+      "ground_points": 3997,
+      "obstacle_points": 498,
+      "overhead_points": 961
+    },
+    {
+      "station": "B_B2",
+      "frame": 4,
+      "normal": [
+        -1.716150472930167e-05,
+        -4.115448973607272e-06,
+        1.0
+      ],
+      "offset": -0.00496212812140584,
+      "support": 2798,
+      "ground_points": 3991,
+      "obstacle_points": 501,
+      "overhead_points": 971
+    },
+    {
+      "station": "B_B3",
+      "frame": 0,
+      "normal": [
+        0.00018397172971162945,
+        -0.00011339699995005503,
+        1.0
+      ],
+      "offset": -0.007161380723118782,
+      "support": 2785,
+      "ground_points": 4167,
+      "obstacle_points": 424,
+      "overhead_points": 1287
+    },
+    {
+      "station": "B_B3",
+      "frame": 1,
+      "normal": [
+        0.00019525259267538786,
+        -8.526474266545847e-05,
+        1.0
+      ],
+      "offset": -0.007327515631914139,
+      "support": 2730,
+      "ground_points": 4111,
+      "obstacle_points": 414,
+      "overhead_points": 1307
+    },
+    {
+      "station": "B_B3",
+      "frame": 2,
+      "normal": [
+        0.00015370993060059845,
+        -2.7889536795555614e-05,
+        1.0
+      ],
+      "offset": -0.007319747470319271,
+      "support": 2725,
+      "ground_points": 4099,
+      "obstacle_points": 395,
+      "overhead_points": 1267
+    },
+    {
+      "station": "B_B3",
+      "frame": 3,
+      "normal": [
+        0.0001458865008316934,
+        4.138651638641022e-05,
+        1.0
+      ],
+      "offset": -0.00722863432019949,
+      "support": 2726,
+      "ground_points": 4100,
+      "obstacle_points": 421,
+      "overhead_points": 1290
+    },
+    {
+      "station": "B_B3",
+      "frame": 4,
+      "normal": [
+        0.00011100975825684145,
+        -5.353610686142929e-05,
+        1.0
+      ],
+      "offset": -0.007293822709470987,
+      "support": 2691,
+      "ground_points": 4049,
+      "obstacle_points": 424,
+      "overhead_points": 1293
+    },
+    {
+      "station": "B_B4",
+      "frame": 0,
+      "normal": [
+        0.00018503535829950124,
+        -0.00012405554298311472,
+        1.0
+      ],
+      "offset": -0.005483665969222784,
+      "support": 2983,
+      "ground_points": 4315,
+      "obstacle_points": 414,
+      "overhead_points": 1178
+    },
+    {
+      "station": "B_B4",
+      "frame": 1,
+      "normal": [
+        0.00022924707445781678,
+        -5.689697718480602e-05,
+        1.0
+      ],
+      "offset": -0.0054611265659332275,
+      "support": 2951,
+      "ground_points": 4281,
+      "obstacle_points": 406,
+      "overhead_points": 1132
+    },
+    {
+      "station": "B_B4",
+      "frame": 2,
+      "normal": [
+        0.0001888480328489095,
+        -0.00021484887111000717,
+        0.9999999403953552
+      ],
+      "offset": -0.005367367062717676,
+      "support": 2974,
+      "ground_points": 4290,
+      "obstacle_points": 427,
+      "overhead_points": 1193
+    },
+    {
+      "station": "B_B4",
+      "frame": 3,
+      "normal": [
+        0.00021543509501498193,
+        -4.1123610571958125e-05,
+        1.0
+      ],
+      "offset": -0.005511518567800522,
+      "support": 2975,
+      "ground_points": 4297,
+      "obstacle_points": 422,
+      "overhead_points": 1184
+    },
+    {
+      "station": "B_B4",
+      "frame": 4,
+      "normal": [
+        0.0002141952427336946,
+        -0.0001477681944379583,
+        0.9999999403953552
+      ],
+      "offset": -0.005483647808432579,
+      "support": 2943,
+      "ground_points": 4272,
+      "obstacle_points": 435,
+      "overhead_points": 1193
+    },
+    {
+      "station": "C00",
+      "frame": 0,
+      "normal": [
+        -9.977829904528335e-05,
+        -6.275405758060515e-05,
+        1.0
+      ],
+      "offset": -0.005750935524702072,
+      "support": 3031,
+      "ground_points": 4519,
+      "obstacle_points": 305,
+      "overhead_points": 1003
+    },
+    {
+      "station": "C00",
+      "frame": 1,
+      "normal": [
+        -0.00016205961583182216,
+        0.00011810915020760149,
+        1.0
+      ],
+      "offset": -0.005839955992996693,
+      "support": 3048,
+      "ground_points": 4531,
+      "obstacle_points": 307,
+      "overhead_points": 1007
+    },
+    {
+      "station": "C00",
+      "frame": 2,
+      "normal": [
+        -0.0002339905040571466,
+        0.0001523407263448462,
+        0.9999999403953552
+      ],
+      "offset": -0.005674220621585846,
+      "support": 3032,
+      "ground_points": 4523,
+      "obstacle_points": 304,
+      "overhead_points": 995
+    },
+    {
+      "station": "C00",
+      "frame": 3,
+      "normal": [
+        -9.022760787047446e-05,
+        0.00010027587995864451,
+        1.0
+      ],
+      "offset": -0.005846585147082806,
+      "support": 3016,
+      "ground_points": 4492,
+      "obstacle_points": 307,
+      "overhead_points": 1007
+    },
+    {
+      "station": "C00",
+      "frame": 4,
+      "normal": [
+        -0.00017066944565158337,
+        -5.7241750255343504e-06,
+        1.0
+      ],
+      "offset": -0.005754012148827314,
+      "support": 3050,
+      "ground_points": 4553,
+      "obstacle_points": 310,
+      "overhead_points": 1000
+    },
+    {
+      "station": "C10",
+      "frame": 0,
+      "normal": [
+        -5.589196371147409e-05,
+        1.3431907746053184e-06,
+        1.0
+      ],
+      "offset": -0.007479873485863209,
+      "support": 2814,
+      "ground_points": 4240,
+      "obstacle_points": 345,
+      "overhead_points": 1154
+    },
+    {
+      "station": "C10",
+      "frame": 1,
+      "normal": [
+        -2.7800209863926284e-05,
+        -6.258052599150687e-05,
+        1.0
+      ],
+      "offset": -0.007516819052398205,
+      "support": 2837,
+      "ground_points": 4259,
+      "obstacle_points": 340,
+      "overhead_points": 1152
+    },
+    {
+      "station": "C10",
+      "frame": 2,
+      "normal": [
+        -2.259834946016781e-05,
+        2.209820166854115e-07,
+        1.0
+      ],
+      "offset": -0.007492018397897482,
+      "support": 2824,
+      "ground_points": 4245,
+      "obstacle_points": 342,
+      "overhead_points": 1161
+    },
+    {
+      "station": "C10",
+      "frame": 3,
+      "normal": [
+        -0.0001748401264194399,
+        -0.00016726783360354602,
+        1.0
+      ],
+      "offset": -0.007400099653750658,
+      "support": 2843,
+      "ground_points": 4278,
+      "obstacle_points": 343,
+      "overhead_points": 1168
+    },
+    {
+      "station": "C10",
+      "frame": 4,
+      "normal": [
+        -7.457695755874738e-05,
+        4.98023655381985e-05,
+        1.0
+      ],
+      "offset": -0.007580714765936136,
+      "support": 2832,
+      "ground_points": 4260,
+      "obstacle_points": 355,
+      "overhead_points": 1171
+    },
+    {
+      "station": "C01",
+      "frame": 0,
+      "normal": [
+        0.00024522130843251944,
+        0.00022788088244851679,
+        0.9999999403953552
+      ],
+      "offset": -0.006022858899086714,
+      "support": 3048,
+      "ground_points": 4599,
+      "obstacle_points": 255,
+      "overhead_points": 903
+    },
+    {
+      "station": "C01",
+      "frame": 1,
+      "normal": [
+        0.00022007321240380406,
+        0.00024250190472230315,
+        0.9999999403953552
+      ],
+      "offset": -0.006016287487000227,
+      "support": 3061,
+      "ground_points": 4611,
+      "obstacle_points": 252,
+      "overhead_points": 911
+    },
+    {
+      "station": "C01",
+      "frame": 2,
+      "normal": [
+        0.00025787894264794886,
+        0.0002360426151426509,
+        0.9999999403953552
+      ],
+      "offset": -0.005843311548233032,
+      "support": 3066,
+      "ground_points": 4619,
+      "obstacle_points": 258,
+      "overhead_points": 900
+    },
+    {
+      "station": "C01",
+      "frame": 3,
+      "normal": [
+        0.0001508184795966372,
+        0.00023744608915876597,
+        0.9999999403953552
+      ],
+      "offset": -0.00592245114967227,
+      "support": 3048,
+      "ground_points": 4584,
+      "obstacle_points": 252,
+      "overhead_points": 899
+    },
+    {
+      "station": "C01",
+      "frame": 4,
+      "normal": [
+        0.0002166034682886675,
+        0.0001217538519995287,
+        0.9999999403953552
+      ],
+      "offset": -0.006009705830365419,
+      "support": 3063,
+      "ground_points": 4616,
+      "obstacle_points": 255,
+      "overhead_points": 913
+    },
+    {
+      "station": "C09",
+      "frame": 0,
+      "normal": [
+        -0.00023636178229935467,
+        -5.48106872884091e-05,
+        1.0
+      ],
+      "offset": -0.005700396839529276,
+      "support": 3094,
+      "ground_points": 4645,
+      "obstacle_points": 244,
+      "overhead_points": 1047
+    },
+    {
+      "station": "C09",
+      "frame": 1,
+      "normal": [
+        -0.00025450147222727537,
+        1.1384616300347261e-05,
+        0.9999999403953552
+      ],
+      "offset": -0.005639578681439161,
+      "support": 3092,
+      "ground_points": 4641,
+      "obstacle_points": 243,
+      "overhead_points": 1068
+    },
+    {
+      "station": "C09",
+      "frame": 2,
+      "normal": [
+        -0.00015339234960265458,
+        -0.00011354563321219757,
+        1.0
+      ],
+      "offset": -0.0056025185622274876,
+      "support": 3113,
+      "ground_points": 4644,
+      "obstacle_points": 244,
+      "overhead_points": 1058
+    },
+    {
+      "station": "C09",
+      "frame": 3,
+      "normal": [
+        -0.00030284974491223693,
+        -0.00016026405501179397,
+        0.9999999403953552
+      ],
+      "offset": -0.0056178937666118145,
+      "support": 3110,
+      "ground_points": 4639,
+      "obstacle_points": 243,
+      "overhead_points": 1059
+    },
+    {
+      "station": "C09",
+      "frame": 4,
+      "normal": [
+        -0.00026791804702952504,
+        -4.561476089293137e-05,
+        0.9999999403953552
+      ],
+      "offset": -0.0055992151610553265,
+      "support": 3104,
+      "ground_points": 4654,
+      "obstacle_points": 246,
+      "overhead_points": 1050
+    },
+    {
+      "station": "C02",
+      "frame": 0,
+      "normal": [
+        -3.5533357731765136e-05,
+        -8.08508339105174e-05,
+        1.0
+      ],
+      "offset": -0.0047046588733792305,
+      "support": 3248,
+      "ground_points": 4831,
+      "obstacle_points": 197,
+      "overhead_points": 830
+    },
+    {
+      "station": "C02",
+      "frame": 1,
+      "normal": [
+        3.6512989026959985e-05,
+        -0.00012510802480392158,
+        1.0
+      ],
+      "offset": -0.004787812940776348,
+      "support": 3269,
+      "ground_points": 4846,
+      "obstacle_points": 195,
+      "overhead_points": 830
+    },
+    {
+      "station": "C02",
+      "frame": 2,
+      "normal": [
+        6.169454718474299e-05,
+        -7.588081643916667e-05,
+        1.0
+      ],
+      "offset": -0.004628101363778114,
+      "support": 3270,
+      "ground_points": 4844,
+      "obstacle_points": 199,
+      "overhead_points": 842
+    },
+    {
+      "station": "C02",
+      "frame": 3,
+      "normal": [
+        7.297917181858793e-05,
+        2.3770971893100068e-05,
+        1.0
+      ],
+      "offset": -0.004608748480677605,
+      "support": 3284,
+      "ground_points": 4870,
+      "obstacle_points": 203,
+      "overhead_points": 836
+    },
+    {
+      "station": "C02",
+      "frame": 4,
+      "normal": [
+        5.324929588823579e-05,
+        -0.00014878813817631453,
+        1.0
+      ],
+      "offset": -0.00480913370847702,
+      "support": 3248,
+      "ground_points": 4842,
+      "obstacle_points": 198,
+      "overhead_points": 840
+    },
+    {
+      "station": "C08",
+      "frame": 0,
+      "normal": [
+        -3.1959384614310693e-06,
+        0.0002655715506989509,
+        0.9999999403953552
+      ],
+      "offset": -0.0046446663327515125,
+      "support": 3246,
+      "ground_points": 4836,
+      "obstacle_points": 129,
+      "overhead_points": 671
+    },
+    {
+      "station": "C08",
+      "frame": 1,
+      "normal": [
+        -2.8904833015985787e-05,
+        6.377634417731315e-05,
+        1.0
+      ],
+      "offset": -0.004607643466442823,
+      "support": 3266,
+      "ground_points": 4851,
+      "obstacle_points": 135,
+      "overhead_points": 665
+    },
+    {
+      "station": "C08",
+      "frame": 2,
+      "normal": [
+        0.00017664628103375435,
+        0.0002377365017309785,
+        0.9999999403953552
+      ],
+      "offset": -0.004608355462551117,
+      "support": 3265,
+      "ground_points": 4849,
+      "obstacle_points": 131,
+      "overhead_points": 665
+    },
+    {
+      "station": "C08",
+      "frame": 3,
+      "normal": [
+        -4.6879817091394216e-05,
+        0.00014412359450943768,
+        1.0
+      ],
+      "offset": -0.004688148386776447,
+      "support": 3258,
+      "ground_points": 4836,
+      "obstacle_points": 134,
+      "overhead_points": 669
+    },
+    {
+      "station": "C08",
+      "frame": 4,
+      "normal": [
+        3.057449794141576e-05,
+        0.0002110802015522495,
+        1.0
+      ],
+      "offset": -0.004633902572095394,
+      "support": 3248,
+      "ground_points": 4841,
+      "obstacle_points": 137,
+      "overhead_points": 661
+    },
+    {
+      "station": "C03",
+      "frame": 0,
+      "normal": [
+        6.615691290789982e-06,
+        -8.733798495086376e-06,
+        1.0
+      ],
+      "offset": -0.004751543514430523,
+      "support": 3269,
+      "ground_points": 4859,
+      "obstacle_points": 140,
+      "overhead_points": 720
+    },
+    {
+      "station": "C03",
+      "frame": 1,
+      "normal": [
+        2.7273224986856803e-05,
+        -0.00012571652769111097,
+        1.0
+      ],
+      "offset": -0.0046930923126637936,
+      "support": 3272,
+      "ground_points": 4857,
+      "obstacle_points": 146,
+      "overhead_points": 716
+    },
+    {
+      "station": "C03",
+      "frame": 2,
+      "normal": [
+        -5.527758730750065e-06,
+        -0.00016882894851733,
+        1.0
+      ],
+      "offset": -0.004736691247671843,
+      "support": 3277,
+      "ground_points": 4876,
+      "obstacle_points": 142,
+      "overhead_points": 702
+    },
+    {
+      "station": "C03",
+      "frame": 3,
+      "normal": [
+        -2.9791268389089964e-05,
+        -0.0001762484898790717,
+        1.0
+      ],
+      "offset": -0.004752896726131439,
+      "support": 3281,
+      "ground_points": 4867,
+      "obstacle_points": 146,
+      "overhead_points": 710
+    },
+    {
+      "station": "C03",
+      "frame": 4,
+      "normal": [
+        2.0031477106385864e-05,
+        -0.00013125711120665073,
+        1.0
+      ],
+      "offset": -0.004672069102525711,
+      "support": 3277,
+      "ground_points": 4863,
+      "obstacle_points": 143,
+      "overhead_points": 708
+    },
+    {
+      "station": "C07",
+      "frame": 0,
+      "normal": [
+        0.00020836168550886214,
+        -9.155593579635024e-05,
+        1.0
+      ],
+      "offset": -0.0045837415382266045,
+      "support": 3314,
+      "ground_points": 4904,
+      "obstacle_points": 131,
+      "overhead_points": 607
+    },
+    {
+      "station": "C07",
+      "frame": 1,
+      "normal": [
+        8.1040539953392e-05,
+        9.423288429388776e-05,
+        1.0
+      ],
+      "offset": -0.0046030497178435326,
+      "support": 3285,
+      "ground_points": 4871,
+      "obstacle_points": 131,
+      "overhead_points": 608
+    },
+    {
+      "station": "C07",
+      "frame": 2,
+      "normal": [
+        1.1475331120891497e-05,
+        4.0884624468162656e-05,
+        1.0
+      ],
+      "offset": -0.004651159048080444,
+      "support": 3281,
+      "ground_points": 4881,
+      "obstacle_points": 125,
+      "overhead_points": 609
+    },
+    {
+      "station": "C07",
+      "frame": 3,
+      "normal": [
+        -1.2619673725566827e-05,
+        1.7489463061792776e-05,
+        1.0
+      ],
+      "offset": -0.004647083580493927,
+      "support": 3284,
+      "ground_points": 4874,
+      "obstacle_points": 127,
+      "overhead_points": 605
+    },
+    {
+      "station": "C07",
+      "frame": 4,
+      "normal": [
+        0.00012285509728826582,
+        0.00016038096509873867,
+        1.0
+      ],
+      "offset": -0.004666833207011223,
+      "support": 3264,
+      "ground_points": 4855,
+      "obstacle_points": 128,
+      "overhead_points": 607
+    },
+    {
+      "station": "C04",
+      "frame": 0,
+      "normal": [
+        2.3097480152500793e-05,
+        -2.9382343200268224e-05,
+        1.0
+      ],
+      "offset": -0.004619448911398649,
+      "support": 3270,
+      "ground_points": 4886,
+      "obstacle_points": 110,
+      "overhead_points": 615
+    },
+    {
+      "station": "C04",
+      "frame": 1,
+      "normal": [
+        9.018462151288986e-05,
+        -3.573716458049603e-05,
+        1.0
+      ],
+      "offset": -0.0046852813102304935,
+      "support": 3276,
+      "ground_points": 4883,
+      "obstacle_points": 109,
+      "overhead_points": 627
+    },
+    {
+      "station": "C04",
+      "frame": 2,
+      "normal": [
+        0.00011482991249067709,
+        -0.0001800807222025469,
+        1.0
+      ],
+      "offset": -0.0047548431903123856,
+      "support": 3276,
+      "ground_points": 4893,
+      "obstacle_points": 110,
+      "overhead_points": 622
+    },
+    {
+      "station": "C04",
+      "frame": 3,
+      "normal": [
+        2.1569792806985788e-05,
+        -4.94549167342484e-05,
+        1.0
+      ],
+      "offset": -0.004582779947668314,
+      "support": 3313,
+      "ground_points": 4903,
+      "obstacle_points": 109,
+      "overhead_points": 621
+    },
+    {
+      "station": "C04",
+      "frame": 4,
+      "normal": [
+        2.4855031369952485e-05,
+        -5.694689025403932e-05,
+        1.0
+      ],
+      "offset": -0.00455833226442337,
+      "support": 3260,
+      "ground_points": 4873,
+      "obstacle_points": 112,
+      "overhead_points": 618
+    },
+    {
+      "station": "C06",
+      "frame": 0,
+      "normal": [
+        0.00013417501759249717,
+        2.377189048274886e-06,
+        1.0
+      ],
+      "offset": -0.004512448329478502,
+      "support": 3317,
+      "ground_points": 4907,
+      "obstacle_points": 89,
+      "overhead_points": 570
+    },
+    {
+      "station": "C06",
+      "frame": 1,
+      "normal": [
+        9.839049016591161e-05,
+        0.00012472578964661807,
+        1.0
+      ],
+      "offset": -0.004492614418268204,
+      "support": 3301,
+      "ground_points": 4917,
+      "obstacle_points": 89,
+      "overhead_points": 555
+    },
+    {
+      "station": "C06",
+      "frame": 2,
+      "normal": [
+        6.683028186671436e-05,
+        7.709142664680257e-05,
+        1.0
+      ],
+      "offset": -0.004543961025774479,
+      "support": 3289,
+      "ground_points": 4897,
+      "obstacle_points": 87,
+      "overhead_points": 562
+    },
+    {
+      "station": "C06",
+      "frame": 3,
+      "normal": [
+        1.2084089576092083e-05,
+        4.160746175330132e-05,
+        1.0
+      ],
+      "offset": -0.004575775004923344,
+      "support": 3315,
+      "ground_points": 4929,
+      "obstacle_points": 86,
+      "overhead_points": 567
+    },
+    {
+      "station": "C06",
+      "frame": 4,
+      "normal": [
+        0.00010938991908915341,
+        1.4051642210688442e-05,
+        1.0
+      ],
+      "offset": -0.004497735761106014,
+      "support": 3300,
+      "ground_points": 4907,
+      "obstacle_points": 89,
+      "overhead_points": 556
+    },
+    {
+      "station": "C05",
+      "frame": 0,
+      "normal": [
+        1.526790038042236e-05,
+        -3.222195664420724e-05,
+        1.0
+      ],
+      "offset": -0.004538740962743759,
+      "support": 3252,
+      "ground_points": 4865,
+      "obstacle_points": 114,
+      "overhead_points": 510
+    },
+    {
+      "station": "C05",
+      "frame": 1,
+      "normal": [
+        4.968977373209782e-05,
+        -0.00011331841233186424,
+        1.0
+      ],
+      "offset": -0.004545898176729679,
+      "support": 3324,
+      "ground_points": 4930,
+      "obstacle_points": 112,
+      "overhead_points": 513
+    },
+    {
+      "station": "C05",
+      "frame": 2,
+      "normal": [
+        5.6896256865002215e-05,
+        1.101864836527966e-05,
+        1.0
+      ],
+      "offset": -0.004559952765703201,
+      "support": 3290,
+      "ground_points": 4906,
+      "obstacle_points": 112,
+      "overhead_points": 514
+    },
+    {
+      "station": "C05",
+      "frame": 3,
+      "normal": [
+        6.579287583008409e-05,
+        2.4604250938864425e-06,
+        1.0
+      ],
+      "offset": -0.00456935865804553,
+      "support": 3270,
+      "ground_points": 4881,
+      "obstacle_points": 109,
+      "overhead_points": 514
+    },
+    {
+      "station": "C05",
+      "frame": 4,
+      "normal": [
+        -4.97116161568556e-07,
+        -5.439775486593135e-05,
+        1.0
+      ],
+      "offset": -0.004519366659224033,
+      "support": 3303,
+      "ground_points": 4916,
+      "obstacle_points": 109,
+      "overhead_points": 513
+    }
+  ],
+  "free_cells": 744260,
+  "occupied_cells": 1591,
+  "unknown_cells": 467829,
+  "policy": "Three observed frames; occupied wins; uncertain hits remain unknown; only measured ground rays clear; overhead exclusion never clears ground"
+}

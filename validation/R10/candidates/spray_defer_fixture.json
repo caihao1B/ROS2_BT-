@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "scope": "Offline SDF and static planning-grid check only; runtime navigation and work require independent evidence",
+  "formal_credit": false,
+  "gazebo_started": false,
+  "original_obligations": 56,
+  "selected_original_ids": [
+    "point_11_20",
+    "point_10_20",
+    "point_9_20",
+    "point_8_20"
+  ],
+  "source_r12_sha256": "3cf80dcccf4045265bdf671d2d77620b98562ff559a6f931ba9ca823337dc32c",
+  "source_mission_sha256": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+  "fixture_source_sha256": "1f82f1a51b8917c2218e701a6c58209ce91ad08de95b1a1e5da948f83152f821",
+  "natural_and_injected_other_geometry_identical": true,
+  "camera_present_both": true,
+  "tool_manager_plugin_version_consistent": true,
+  "profiles_have_separate_plan_versions": true,
+  "spawn_world": [
+    34.5,
+    61.5,
+    3.141592653589793
+  ],
+  "coarse_map_hint": [
+    7.0,
+    47.0,
+    3.191592653589793
+  ],
+  "physical_fixture": {
+    "name": "temporary_equipment_crate",
+    "world_xy": [
+      31.5,
+      61.5
+    ],
+    "map_xy": [
+      3.5,
+      47.5
+    ],
+    "size_xyz_m": [
+      0.6,
+      0.6,
+      0.72
+    ],
+    "static": true,
+    "overlay_only": true
+  },
+  "detour_witness_map_m": [
+    [
+      6.5,
+      47.5
+    ],
+    [
+      6.5,
+      46.0
+    ],
+    [
+      0.5,
+      46.0
+    ],
+    [
+      0.5,
+      47.5
+    ],
+    [
+      -2.5,
+      47.5
+    ]
+  ],
+  "footprint_circumradius_plus_margin_m": 0.6977039400907442,
+  "grid_resolution_m": 0.15,
+  "conservative_grid_border_clearance_m": 7.551320957092337,
+  "conservative_crate_clearance_m": 1.175,
+  "online_has_fixture_waypoints": false,
+  "actual_nav2_path_unverified": true
+}

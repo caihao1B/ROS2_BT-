@@ -1,0 +1,11 @@
+{
+  "schema": "LIVE-OPERATOR-ROS-NOTICE/1",
+  "session": "spray_defer_20261119_092405_230489",
+  "read_only": true,
+  "topic": "/r10/operator_attention",
+  "message_count": 0,
+  "initial_request_received": false,
+  "closure_received": false,
+  "closure_matches_durable_case_file": false,
+  "passed": false
+}

@@ -1,0 +1,68 @@
+{
+  "browser": "Chrome on Linux",
+  "transport": "local file, no ROS or HTTP server",
+  "passed": true,
+  "video_event_deep_link_verified": true,
+  "cases": {
+    "点喷 · tool_jam · spray_20261119_071627_581230": {
+      "final_clock": "94.114 s",
+      "final": "任务分析通过 是　进程退出合格 是",
+      "events": 25
+    },
+    "巡检 · leader · inspection_20261114_161912_321381": {
+      "final_clock": "119.812 s",
+      "final": "任务分析通过 是　进程退出合格 是　终态 COMPLETED",
+      "events": 90
+    },
+    "割草 · startup_perception_loss · mowing_20261119_070346_235832": {
+      "final_clock": "280.162 s",
+      "final": "任务分析通过 是　进程退出合格 是　终态 COMPLETED　确认面积 26.41 m²　残余 1.55 m²",
+      "events": 140
+    },
+    "割草 · nominal · mowing_20261119_072044_764057": {
+      "final_clock": "1173.702 s",
+      "final": "任务分析通过 否　进程退出合格 是　终态 HUMAN_REQUIRED　原因 TimeoutError('WAIT_DEADLINE')　确认面积 74.01 m²　残余 114.38 m²",
+      "events": 473
+    },
+    "点喷 · nominal · spray_20261119_081218_417252": {
+      "final_clock": "944.304 s",
+      "final": "任务分析通过 否　进程退出合格 否　原因 RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+      "events": 249
+    },
+    "割草 · late-warm · mowing_20261119_084537_532941": {
+      "final_clock": "75.002 s",
+      "final": "独立接驳试验 PARTIAL　原作业段到达 0/7　终态 HUMAN_REQUIRED　进程退出合格 是",
+      "events": 3
+    },
+    "割草 · verified-entry-transfer · mowing_20261119_090050_995141": {
+      "final_clock": "90.058 s",
+      "final": "独立接驳试验 PARTIAL　原作业段到达 0/7　终态 HUMAN_REQUIRED　进程退出合格 是",
+      "events": 10
+    },
+    "割草 · verified-entry-first-motion · mowing_20261119_090706_626159": {
+      "final_clock": "163.584 s",
+      "final": "独立接驳试验 PARTIAL　原作业段到达 0/7　终态 HUMAN_REQUIRED　进程退出合格 是",
+      "events": 68
+    },
+    "点喷 · bounded_defer · spray_defer_20261119_085422_132494": {
+      "final_clock": "178.150 s",
+      "final": "独立重选行为 PASS　确认 3/4 点　原簇 56 点　粗导航重选 是　精停重选 否　进程退出合格 是",
+      "events": 32
+    },
+    "点喷 · bounded_defer_natural · spray_defer_20261119_091633_791154": {
+      "final_clock": "202.892 s",
+      "final": "独立任务确认 3/4 点　原簇 56 点　任务完成 否　人工接管 未触发　进程退出合格 否",
+      "events": 111
+    },
+    "点喷 · last_selected_equipment_blocked · spray_defer_20261119_092405_230489": {
+      "final_clock": "74.366 s",
+      "final": "独立任务确认 1/2 点　原簇 56 点　任务完成 否　人工接管 无记录　行为验收 否　进程退出合格 是",
+      "events": 18
+    },
+    "点喷 · last_selected_equipment_blocked · spray_defer_20261119_093026_010150": {
+      "final_clock": "68.688 s",
+      "final": "独立任务确认 1/2 点　原簇 56 点　任务完成 否　人工接管 HUMAN_REQUIRED　行为验收 是　进程退出合格 是",
+      "events": 21
+    }
+  }
+}

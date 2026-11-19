@@ -4,6 +4,8 @@
 
 ![地图与任务分簇](media/r03_task_map.png)
 
+[第一次观察三项作业](docs/three_tasks/第一次观察三任务.md) · [11 月 19 日收尾复验与操作](docs/three_tasks/收尾复验_20261119.md) · [离线查看决策与传感器](validation/closeout_20261119/replay.html)
+
 ## 三个任务
 
 |任务|底盘参考|任务执行|
@@ -41,6 +43,8 @@ flowchart LR
 - **导航：** Nav2 Smac/精确末端规划、RPP 跟踪；保留 MPPI/DWB 配置。点喷最后几厘米通过受约束的 odom 路径修正；割草恢复候选按挡位分段，每段分别控制和确认停车。
 - **决策和反馈：** BehaviorTree.CPP 记录原因码、观测证据、等待和重规划次数；工具动作支持取消、幂等重放、故障补作；计量/面积仅由新鲜反馈确认。
 
+巡检运行时使用观测目标的速度、协方差和 2 秒冲突包络，在实测净距与碰撞时间满足条件时跟随前车。原 S15 另外比较了 IMM 与学习型预测器，S16 比较了上下文检索缓存的 CPU 成本和命中率。配对实验中没有得到足够的冲突暴露和净算力收益，因此这些实验模块保持可复现、默认关闭。[巡检决策与控制](docs/three_tasks/R08/TECHNICAL.md) · [预测对照](docs/optimization_v2/S15/RESULTS.md) · [缓存对照](docs/optimization_v2/S16/RESULTS.md)
+
 ## 当前验收范围
 
 |阶段|实际回执|说明|
@@ -55,24 +59,40 @@ R10 的完整 A1、新安全执行版 B1 与小规模录像分别评分。原 B1
 
 **原 S17/S18 保持 PARTIAL。** 不包含六十次正式矩阵、未复验 A2/A3/B2/B3，也不宣称真实机械割草有效率或全场 95% 覆盖通过。路径到达、反馈作业面积和残余分别记录。
 
-|案例|结论|完成情况|仿真秒|
+|案例|任务结论|实际完成情况|仿真秒|
 |---|---|---|---:|
-|spray_full_A1|PARTIAL/FAIL|28/56 点|1402.73|
-|spray_tool_jam|PASS|3/56 点|92.79|
-|mowing_full_B1|PARTIAL/FAIL|19/47 执行段（原参考 34 段）|879.27|
-|mowing_startup_perception_loss|PASS|5/47 执行段（原参考 34 段）|246.91|
-|inspection_full_connector|PASS|COMPLETED|343.64|
-|inspection_follow_stop_resume|PASS|COMPLETED|108.53|
-|inspection_detour|PASS|COMPLETED|100.07|
-|inspection_persistent_block|PASS|HUMAN_REQUIRED|79.3|
-|mowing_persistent_block|PASS|0/34 执行段（原参考 34 段）|62.73|
+|spray_full_A1|PARTIAL|22/56 点|944.30|
+|spray_tool_jam|PASS|3/3 点（原簇 56 点）|94.11|
+|mowing_full_B1|PARTIAL|25/47 个执行段（原参考 34 段）|1173.70|
+|mowing_startup_perception_loss|PASS|5/5 个执行段（原参考 34 段）|280.16|
+|inspection_full_connector|PASS|完成 88.48 m 原连接路|343.64|
+|inspection_follow_stop_resume|PASS|完成跟随、停车与恢复|108.53|
+|inspection_detour|PASS|完成观测绕行与回接|100.07|
+|inspection_persistent_block|PASS|持续封堵，停车转人工|79.30|
+|mowing_persistent_block|PASS|0/5 个执行段（持续封堵，按要求停车）|62.73|
+
+B1 的原始割草目标为 188.39 m²。在当前坡面与整车安全边界下，刀盘在平面模型内可触及的面积最多为 156.73 m²（83.19%）。现有路径的名义刀盘扫掠为 112.79 m²，实际反馈确认面积单独登记。图中绿块和橙块分别代表本次已确认和残余作业。[逐作业键账本](validation/closeout_20261119/B1_residual_review.json) · [几何复算](validation/reproduction/b1_nominal_sweep.json)
+
+![B1 计划和实际反馈](media/closeout_20261119/B1_plan_feedback.png)
+
+B1 第六处地头的离线备选保持同一对作业端点，换向由 6 降到 4 次，四个单挡段通过了原生 Nav2 栅格障碍拒绝检查。正式运行仍采用表中的 47 段版本。[实际路径图与复核命令](docs/three_tasks/B1地头连接对照.md)
 
 ## 演示
 
-[精简三任务录像](media/r12_three_tasks_short.mp4) · [停车、跟随、恢复等行为片段](media/r12_behavior_highlights.mp4)。倍速在画面中明确标注，完整原片保存在本机结果目录。
+[11 月 19 日三任务实录 · 78 秒](media/closeout_20261119/three_tasks_highlights.mp4) · [按事件选片播放](media/closeout_20261119/index.html) · [本轮原片、事件与范围](media/closeout_20261119/README.md)
+
+整簇实速影片可下载后观看。[A1 点喷 · 22/56 · 33 分钟](media/closeout_20261119/spray_20261119_081218_417252_A1_partial_full.mp4) · [B1 割草 · 25/47 · 51 分钟](media/closeout_20261119/mowing_20261119_072044_764057_B1_partial_full.mp4)。两次均保留未完成的停止过程。[A1 逐点工时校准](docs/three_tasks/A1点喷工时校准.md) · [A1 第 23 点终止窗口](validation/closeout_20261119/spray_full_diagnosis.json)
+
+[此前精简三任务录像](media/r12_three_tasks_short.mp4) · [停车、跟随、恢复等行为片段](media/r12_behavior_highlights.mp4)。倍速在画面中标注。新点喷和割草短例的完整原片随仓库提供，逐帧时间记录和完整运行日志保存在开发机结果目录。
 
 ![点喷实际画面](media/r12_spray.png)
 ![割草材质实际画面](media/r11_mowing_material.png)
+
+**受阻后选择下一个喷洒点。** 在独立四点场景，点 10_20 被设备占用。三次真实导航失败后，行为树确认车与工具停稳，把该点的 3.0 剩余剂量保留在账本，再前往 9_20。最终实测完成三个点。回放中可跳至仿真第 80.944 秒查看决策和传感器。[47 秒精简实录](media/closeout_20261119/spray_defer_highlight.mp4) · [347 秒原片](media/closeout_20261119/spray_defer_full.mp4) · [原始事件与独立物理校核](validation/closeout_20261119/spray_defer_media.json)
+
+自然四点场景里，原 A1 故障点 10_20 在定位恢复、原路径校验和再次精停后完成喷洒。整场三点完成，另一个点的工具取消后保留剩余剂量。[31.6 秒连续重定位实录](media/closeout_20261119/spray_natural_relocalization.mp4) · [完整时标与账本](validation/closeout_20261119/spray_natural_media.json)
+
+末点没有可切换的作业目标时，仿真中的执行器会请求人工。双点专项中，末点受阻后原生 BT 锁存人工，上报点位与残余，独立订阅器收到报警和停稳确认。该专项通过，作业任务仍记录为 `HUMAN_REQUIRED`。[27.4 秒人工交接实录](media/closeout_20261119/spray_last_blocked_handoff.mp4) · [两条 ROS 通知回执](validation/closeout_20261119/spray_last_blocked/operator_attention_receipt.json)
 
 ## 实时监视 GUI
 
@@ -99,7 +119,7 @@ bash optimization_v2/three_tasks/advance.sh R12 open
 
 较短演示：`bash optimization_v2/three_tasks/advance.sh R12 record spray`。完整复验：`R10 test record_spray_full_A1`、`R10 test record_mowing_full_B1`。详细命令见各阶段 MANUAL.md。同一时刻只运行一个 Gazebo；录制过程中不要 build 或修改绑定源码/配置。
 
-此仓库同步源码、配置、技术说明、精简证据和展示媒体；冻结地图数据库、完整运行环境、大型依赖和原始录像保留在本机，裸 clone 并非可独立启动的发布包。可复现实验须先准备匹配版本的本地资源，不应跳过哈希准入。[本机复现与资源范围](docs/three_tasks/R12/LOCAL_REPRODUCTION.md)。
+GitHub 已包含冻结地图数据库的 90 个分片、分区定位资源和离线计划。独立克隆已实测还原 27 个文件并核对哈希，另提供 R01 的冻结索引。完整仿真仍依赖本机 ROS/Gazebo 环境、与目录绑定的运行配置和本机前置验收。新机器可先按说明恢复地图，运行离线几何检查并构建原生接口。[独立克隆复现与诊断](docs/three_tasks/复现检查.md)
 
 ## 代码与学习材料
 

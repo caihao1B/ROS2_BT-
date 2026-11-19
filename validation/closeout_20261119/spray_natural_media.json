@@ -1,0 +1,178 @@
+{
+  "schema": "R10-EXPERIMENTAL-SPRAY-FILM/1",
+  "case": "natural",
+  "session": "spray_defer_20261119_091633_791154",
+  "formal_credit": false,
+  "closed_sim_s": 202.892,
+  "original_count": 56,
+  "selected": [
+    "point_11_20",
+    "point_10_20",
+    "point_9_20",
+    "point_8_20"
+  ],
+  "confirmed": [
+    "point_11_20",
+    "point_10_20",
+    "point_8_20"
+  ],
+  "mission_passed": false,
+  "handoff_status": "NOT_EXERCISED",
+  "scene_task_scope": "自然场景 · 原故障点重定位",
+  "actual_jobs": [
+    {
+      "key": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_11_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0519999999999996,
+      "uncertain": false,
+      "physical_dose": 3.2269999999993337,
+      "maximum_physical_docking_error_m": 0.017690030081224613,
+      "requested": 3.0
+    },
+    {
+      "key": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_10_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0720000000000027,
+      "uncertain": false,
+      "physical_dose": 3.2363333333326674,
+      "maximum_physical_docking_error_m": 0.046617856772808774,
+      "requested": 3.0
+    },
+    {
+      "key": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_9_20",
+      "state": "CANCELLED",
+      "confirmed": 0.5900000000000034,
+      "uncertain": false,
+      "physical_dose": 0.954666666665332,
+      "maximum_physical_docking_error_m": 0.006404821002196527,
+      "requested": 3.0
+    },
+    {
+      "key": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_8_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.078000000000003,
+      "uncertain": false,
+      "physical_dose": 3.4099999999986577,
+      "maximum_physical_docking_error_m": 0.04035646856496425,
+      "requested": 3.0
+    }
+  ],
+  "checked_stop": {
+    "raw_nav_v": 0.0,
+    "raw_nav_w": 0.0,
+    "t": 202.89,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "NAV_COMMAND_STALE"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 12.015720930713654
+  },
+  "original": {
+    "path": "media/closeout_20261119/spray_natural_full.mp4",
+    "sha256": "6ddb7134beee867dab84beb9d44e3d722b38cc56e82aa08fbf6de0b237c891db",
+    "seconds": 402.2,
+    "frames": 2011,
+    "fps": 5.0,
+    "unmodified": true
+  },
+  "excerpt": {
+    "path": "media/closeout_20261119/spray_natural_relocalization.mp4",
+    "sha256": "27419827afa7e495baba4437aead5915f3b951a567d0a228243ce844f345b87f",
+    "seconds": 31.6,
+    "frames": 316,
+    "fps": 10,
+    "source_clip_video_s": [
+      118.6,
+      181.8
+    ],
+    "speed_relative_to_original_video": 2.0,
+    "decoded_to_eof": true,
+    "cues": [
+      {
+        "event_sim_s": 60.444,
+        "original_video_s": 118.6,
+        "excerpt_s": 0.0,
+        "text": "进入原受阻点 10_20 的精停观测"
+      },
+      {
+        "event_sim_s": 62.444,
+        "original_video_s": 122.6,
+        "excerpt_s": 2.0,
+        "text": "第一次局部精停修正"
+      },
+      {
+        "event_sim_s": 73.664,
+        "original_video_s": 144.0,
+        "excerpt_s": 12.7,
+        "text": "再次发送局部精停目标"
+      },
+      {
+        "event_sim_s": 73.756,
+        "original_video_s": 144.2,
+        "excerpt_s": 12.8,
+        "text": "停车并请求重新定位"
+      },
+      {
+        "event_sim_s": 76.116,
+        "original_video_s": 148.8,
+        "excerpt_s": 15.1,
+        "text": "原路径和车辆轮廓重新验证通过"
+      },
+      {
+        "event_sim_s": 77.836,
+        "original_video_s": 152.0,
+        "excerpt_s": 16.7,
+        "text": "重定位确认，恢复同一目标"
+      },
+      {
+        "event_sim_s": 86.76,
+        "original_video_s": 169.2,
+        "excerpt_s": 25.3,
+        "text": "静止观测满足精停门限"
+      },
+      {
+        "event_sim_s": 90.874,
+        "original_video_s": 177.0,
+        "excerpt_s": 29.2,
+        "text": "工具反馈确认 10_20 点的作业量"
+      }
+    ]
+  },
+  "archive_files": {
+    "analysis_spray_r10.json": "56917c976f558721cf5ff39c4a763af38ecfea8db8f78a26968fb153147218dc",
+    "candidate_handoff_acceptance.json": "c225574f0a63d08c449d28e3b9d31675bda99381a7137c62238275f54174bbda",
+    "decisions.jsonl.gz": "f9992e0e34f6ce8bcede997d0ff26d3626ce84dec53f22271b8289d39d217ff2",
+    "mission.json": "da0ea9316d2396626899c51409bbf820a3aa5ec1abded10420775f2ab11f7a92",
+    "mission_events.jsonl": "5527d2d26e7552f47263fd0027a92c73bd8af5ff1e66be8eece497ffea52053d",
+    "mission_result.json": "8f9d64407afe609f0ce576abfba115c262f73c442d1d5fb951fcf9c983a3c4b3",
+    "nav_shutdown.json": "2d89faff75bb7e056d1ca0b56c2ebdd0930492938059cccf59af9acb40a34512",
+    "runtime.json": "c6e012a74a1f71e97024303686e1cbe01878321a6481071cdbcb034ece83dc5a",
+    "scene/fixture.json": "a5a38fd05c461c5cd2f7ae8890a32abebc726f8702d3e36c9f6ab8d4baca67af",
+    "spec.json": "d0f03403fa3e0b9556ac9e71e63be2b9d75d7ba27fc0223f274cfed28dad8bf5",
+    "tool_evaluation/result.json": "2cdaf9f18a3e926c6688af0f34ff585dc0586790b62ba0acfe548bf9db8a8a43",
+    "video/frames.jsonl.gz": "f5b90489aec5f04854482114c4b9cc925723e7234e5a5d0e4e0b8294fe642b3e",
+    "video/recording.json": "0767a706abfebd4f5949107ff83f1a4b7ee671d5fda2ff2ff452ac4fb63145ea"
+  },
+  "clock_mapping": "First recording frame at or beyond each event sim_s. Excerpt times use measured video_s and playback speed.",
+  "outstanding_selected": [
+    {
+      "point": "point_9_20",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 0.5900000000000034,
+      "remaining": 2.4099999999999966,
+      "uncertainty": false,
+      "replayed": false,
+      "meter_before": 6.729,
+      "meter_after": 7.5547
+    }
+  ],
+  "runtime_passed": false,
+  "experiment_behavior_passed": null
+}

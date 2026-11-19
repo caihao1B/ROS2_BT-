@@ -1,8 +1,10 @@
+2026 年 11 月 19 日的三任务版本已经在同一台 Ubuntu 24.04 主机的独立克隆中还原冻结地图、检查六簇路线并重建原生接口。新机器运行 Gazebo 前还需完成本机的退出库与前置阶段验证。[三任务复现检查](docs/three_tasks/复现检查.md) · [本轮运行与残余记录](docs/three_tasks/收尾复验_20261119.md)
+
 > 2026-11-13 检查点：S17 源码已同步，完整 S17 资格资产仍在开发机，尚不能从本仓库直接复现 S17 全部证据。恢复说明见 docs/optimization_v2/S17/PAUSE_RESUME_20261113.md。
 
 # 构建、资产恢复与演示
 
-本仓库是正在分阶段验收的开发工程。`validation/development_status.json` 记录开发机证据，不能作为新机器的 PASS 回执。S18 的完整移植交付尚未实施；原 S01 的 Dino 迁移基线还依赖未随本仓库分发的旧资产。新轻量底盘、场地、源码、地图与规划输入已单独收录。
+本仓库是正在分阶段验收的开发工程。`validation/development_status.json` 记录开发机证据，不能作为新机器的 PASS 回执。S18 已完成部分移植与教学验证，完整新机复现和正式六簇验收仍待完成；原 S01 的 Dino 迁移基线还依赖未随本仓库分发的旧资产。新轻量底盘、场地、源码、地图与规划输入已单独收录。
 
 ## 平台与依赖
 
@@ -16,12 +18,12 @@ sudo apt-get install --no-remove \
   ros-jazzy-desktop ros-jazzy-ros-gz \
   ros-jazzy-navigation2 ros-jazzy-nav2-bringup \
   ros-jazzy-robot-localization ros-jazzy-rtabmap-ros \
-  ros-jazzy-fields2cover ros-jazzy-ortools-vendor \
+  ros-jazzy-fields2cover ros-jazzy-ortools-vendor ros-jazzy-ompl \
   ros-jazzy-behaviortree-cpp ros-jazzy-pcl-conversions \
   ros-jazzy-sensor-msgs-py ros-jazzy-rosbag2-py \
   python3-colcon-common-extensions python3-venv \
   python3-numpy python3-scipy python3-yaml python3-opencv \
-  python3-matplotlib python3-pil python3-pytest \
+  python3-matplotlib python3-pil python3-pytest fonts-noto-cjk \
   libmetis-dev libgdal-dev libeigen3-dev libpcl-dev \
   nlohmann-json3-dev libprotobuf-dev build-essential cmake
 ```
@@ -38,15 +40,15 @@ python3 scripts/restore_assets.py
 
 地图数据库超过 GitHub 普通单文件上限，因此大输入存为 `assets_bundle/` 中的无损分片。恢复脚本逐片验证 SHA-256，再检查整个归档及每个输出文件。它拒绝路径越界、符号链接与覆盖已修改文件。网络下载不发生在恢复过程中；所需分片与源码在同一提交中。
 
-`SOURCE_INVENTORY.json` 记录逻辑输入文件，`assets_bundle/manifest.json` 记录分片及原始文件大小、哈希。不要直接把恢复后的大文件再次 `git add -f`；`.gitignore` 已排除这些展开副本。
+`SOURCE_INVENTORY.json` 记录原 S14–S17 快照的逻辑输入文件。三任务当前版本的构建、地图和输入绑定见[独立克隆复验](docs/three_tasks/复现检查.md)，`assets_bundle/manifest.json` 记录分片及原始文件大小、哈希。不要直接把恢复后的大文件再次 `git add -f`；`.gitignore` 已排除这些展开副本。
 
 ## Python 环境与编译
 
-开发机的规划/报告环境只在系统 Python 上额外安装 Shapely 2.1.2；ROS 节点仍使用 `/usr/bin/python3`。不要使用 sudo pip。
+规划和报告使用可读取系统 ROS 包的虚拟环境。几何计算使用 Shapely 2.1.2，R12 录像使用 imageio-ffmpeg 0.8.1 与 Noto CJK 字体。环境内的 pip 可直接以普通用户运行。
 
 ```bash
 python3 -m venv --system-site-packages optimization_v2/venvs/scene
-optimization_v2/venvs/scene/bin/python -m pip install 'shapely==2.1.2'
+optimization_v2/venvs/scene/bin/python -m pip install 'shapely==2.1.2' 'imageio-ffmpeg==0.8.1'
 source optimization_v2/env.sh
 cd optimization_v2/ws
 colcon build --executor sequential --cmake-args -DCMAKE_BUILD_TYPE=Release

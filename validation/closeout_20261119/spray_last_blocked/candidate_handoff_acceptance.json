@@ -1,0 +1,133 @@
+{
+  "schema": "SPRAY-LAST-SELECTED-HUMAN-CASE/1",
+  "session": "spray_defer_20261119_093026_010150",
+  "passed": true,
+  "checks": {
+    "runtime_clean": true,
+    "map_database_unchanged": true,
+    "sensor_render_configuration_valid": true,
+    "four_real_near_sensors": true,
+    "map_pose_rmse_under_15cm": true,
+    "measured_final_stop": true,
+    "unique_actuator_owner": true,
+    "unique_tool_owner": true,
+    "unique_transform_owners": true,
+    "implementation_bound": true,
+    "no_unexpected_contact": true,
+    "original_and_selected_accurate": true,
+    "last_point_really_occupied": true,
+    "human_dispatch_and_no_alternative": true,
+    "process_clean_task_unsuccessful": true,
+    "zero_work_credit_on_blocked_original": true,
+    "first_point_actual_feedback": true,
+    "camera_covers_work_and_hold": true
+  },
+  "formal_credit": false,
+  "trigger_phase": "COARSE_NAVIGATION",
+  "precision_handoff_validated": false,
+  "selected": [
+    "point_11_20",
+    "point_10_20"
+  ],
+  "original_count": 56,
+  "unselected_count": 54,
+  "completed": [
+    "point_11_20"
+  ],
+  "error": "RuntimeError('MANUAL_OR_SAFETY_HOLD BOUNDED_REPLAN_EXHAUSTED')",
+  "mission_passed": false,
+  "terminal": "HUMAN_REQUIRED",
+  "observed_process_exit": 0,
+  "sim_s": 68.688,
+  "runtime_clean": true,
+  "actual_jobs": [
+    {
+      "key": "5952c5ba17482abd25d2e300cd0992bf9011af4d030004c80c8b2dbe4dc5c2fe:point_11_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0519999999999996,
+      "uncertain": false,
+      "physical_dose": 3.189666666665996,
+      "maximum_physical_docking_error_m": 1.0048591735576161e-14,
+      "requested": 3.0
+    }
+  ],
+  "operator_handoff": {
+    "schema": "SPRAY-OPERATOR-HANDOFF/1",
+    "session": "spray_defer_20261119_093026_010150",
+    "terminal": "HUMAN_REQUIRED",
+    "reason": "MANUAL_OR_SAFETY_HOLD BOUNDED_REPLAN_EXHAUSTED",
+    "requested_t": 68.676,
+    "point": "point_10_20",
+    "original_key": "5952c5ba17482abd25d2e300cd0992bf9011af4d030004c80c8b2dbe4dc5c2fe:point_10_20",
+    "requested": 3.0,
+    "previous_confirmed": 0.0,
+    "residual": 3.0,
+    "quantity_uncertain": false,
+    "credit_added_by_this_handoff": 0.0,
+    "original_obligations": 56,
+    "completed_at_request": 1,
+    "mission_passed": false,
+    "automatic_resume": false,
+    "operator_action": "Inspect the pending target, localization and obstacle evidence; an explicit new task is required to resume.",
+    "selected_alternatives_after_point": [],
+    "precision_dock_evidence": {
+      "eligible": false,
+      "attempts": [],
+      "last_stopped_observation": {}
+    },
+    "defer_denials": [],
+    "last_point_proof": {
+      "no_selected_alternative": true,
+      "observed_nav_aborts": 2,
+      "actual_replan_decisions": 2,
+      "native_action": "HUMAN",
+      "reason_code": "BOUNDED_REPLAN_EXHAUSTED",
+      "native_alternative": false,
+      "native_stopped_confirmed": true,
+      "native_manual_latched": true,
+      "native_replan_limit": 2,
+      "native_replan_count": 2,
+      "nav_idle_before_notice": true,
+      "native_session": "spray_defer_20261119_093026_010150",
+      "native_version": "5952c5ba17482abd25d2e300cd0992bf9011af4d030004c80c8b2dbe4dc5c2fe",
+      "native_context_sequence": 2289,
+      "native_dispatch_id": 12
+    },
+    "shutdown": {
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "process_exit": 0,
+      "shutdown_verified": true,
+      "checks": {
+        "known_operational_hold": true,
+        "explicit_manual_terminal": true,
+        "task_remains_incomplete": true,
+        "old_key_retained": true,
+        "no_live_navigation_or_tool_action": true,
+        "fresh_gate_double_stop": true,
+        "measured_chassis_stop": true,
+        "independent_tool_stopped": true,
+        "explicit_stop_work_ack": true,
+        "no_unconfirmed_shutdown": true,
+        "native_locked_last_original_point": true
+      },
+      "actions_authorized": false,
+      "stop_ack_action_status_recorded": true
+    }
+  },
+  "source_sha256": {
+    "spec.json": "9f539f3087a763634b2474a23f1e21e4f6dc45d569c32af30d98c0f021a3d2b0",
+    "mission.json": "8fc14fe38c1de7c1748c6e2da3f6ae68cfb77fec089e63c4acbd83c7d279af33",
+    "mission_result.json": "4d6083a9fd0b640bd6e712ac57ee001e3dc3cbedb1e8e8dccff619634a0b38a9",
+    "operator_handoff.json": "6ae112b354fd87453394971a03228517a1413c69e270ecafa4d1764506080c87",
+    "mission_events.jsonl": "5a9e76cdd1ee8edd04c28c6409325f3e3c4d7ac38707a3da45d5a772028ab9a8",
+    "decisions.jsonl": "e7e402f7f98f638009725edcf906ba4896beec84f48818008769014521822f92",
+    "runtime.json": "dbc8682522530b99d0b2cdb95718656b3c39239f537c3f8defbe9d96e145b52a",
+    "video/full.mp4": "ab6a632a70cc468064ec9b78984eb68f04b377858020f926e9b72c3e8577a291",
+    "video/recording.json": "07574a14f15845e2d0988ec179b09fd77e9f8bd0821cc29f901a987dc86f166a"
+  },
+  "video": {
+    "max_active_gap_s": 0.12600000000000477,
+    "max_active_age_s": 0.27173876999950153
+  }
+}

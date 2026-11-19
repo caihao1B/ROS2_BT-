@@ -1,0 +1,69 @@
+{
+  "schema": "SPRAY-LAST-SELECTED-HUMAN-CASE/1",
+  "session": "spray_defer_20261119_092405_230489",
+  "passed": false,
+  "checks": {
+    "runtime_clean": true,
+    "map_database_unchanged": true,
+    "sensor_render_configuration_valid": true,
+    "four_real_near_sensors": true,
+    "map_pose_rmse_under_15cm": true,
+    "measured_final_stop": true,
+    "unique_actuator_owner": true,
+    "unique_tool_owner": true,
+    "unique_transform_owners": true,
+    "implementation_bound": true,
+    "no_unexpected_contact": true,
+    "original_and_selected_accurate": true,
+    "last_point_really_occupied": true,
+    "human_dispatch_and_no_alternative": false,
+    "process_clean_task_unsuccessful": false,
+    "zero_work_credit_on_blocked_original": false,
+    "first_point_actual_feedback": true,
+    "camera_covers_work_and_hold": true
+  },
+  "formal_credit": false,
+  "trigger_phase": null,
+  "precision_handoff_validated": false,
+  "selected": [
+    "point_11_20",
+    "point_10_20"
+  ],
+  "original_count": 56,
+  "unselected_count": 54,
+  "completed": [
+    "point_11_20"
+  ],
+  "error": "TimeoutError('WAIT_DEADLINE')",
+  "mission_passed": false,
+  "terminal": null,
+  "observed_process_exit": 0,
+  "sim_s": 74.366,
+  "runtime_clean": true,
+  "actual_jobs": [
+    {
+      "key": "45ea560abef9d8236dbbd31557f740d43d1d32608f722471f2794b531bfaefdd:point_11_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.073999999999998,
+      "uncertain": false,
+      "physical_dose": 3.225666666665999,
+      "maximum_physical_docking_error_m": 1.0048591735576161e-14,
+      "requested": 3.0
+    }
+  ],
+  "operator_handoff": {},
+  "source_sha256": {
+    "spec.json": "e9a548e99e03da342661e88b4a9dee64724be9da372341df720255442b360c43",
+    "mission.json": "c86fee197840b8ea5cc3b620b43473124d646b858e3dd402a47fb9b9d11b1f9e",
+    "mission_result.json": "38c1ec170b66f510433a03b7bb121ea6be518fb7697e07d4c60fcbb8747c74d9",
+    "mission_events.jsonl": "15a2e877ecd60bb9af930966a1a96696a9720d1690c868c95ba4ea1f5dec3e96",
+    "decisions.jsonl": "d7425e54eefd495a73851077b60be0a5f63385b8eb782d9790d57ab2c8b71ca1",
+    "runtime.json": "63012cfc0c981b587553563b8d80b5b0a8bfe91fec160409aa0de598e7724fc5",
+    "video/full.mp4": "1f280e05043becea6e50dd0019fb83d9cf14bd2b1d86342384d934f938ad953f",
+    "video/recording.json": "bee857f10ff64755a350d7bd5b3d1af6050d05754ff4a43fe01ff62385bc2d60"
+  },
+  "video": {
+    "max_active_gap_s": 0.12600000000000477,
+    "max_active_age_s": 0.26907443500022055
+  }
+}

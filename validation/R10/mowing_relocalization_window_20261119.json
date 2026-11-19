@@ -1,0 +1,57 @@
+{
+  "schema": "R10/recorded-mowing-stopped-relocalization-audit/1",
+  "run": "optimization_v2/three_tasks/results/R12/mowing_20261115_070740_054017",
+  "pre_fix_commit": "9aff8337b7794f704c5556a973a5220e73f17808",
+  "input_sha256": {
+    "mission_events.jsonl": "88239a5de22a28cf72dbc76bbd7317b80f5df96c34db5dc9e4961f131eaf4d9b",
+    "reference/reference.jsonl": "90a5d4b0453a48c193c9a8d4f4fff26bbfc8506519ab459d5d1a9097d3da06e0",
+    "control/gate.jsonl": "1930693b8ce87c5506d6bf15f6179506535c6c84fc1ce6f295127691abbff4ec",
+    "global_sources/sources.jsonl": "2eddec58edd7a9b923ae04c68a18fc1623faa7671150c8a018ebee39925c8256",
+    "live.json": "c5f9bf76243584ce14b3451a62beca4f3814f575baf265f5cf5a6395987f2492",
+    "mission.json": "abb235b87e2a7875a586a7191d160b81d07d4f87e2b848be338d3bbfbaad6a54",
+    "spec.json": "9421f3e4df99ec82cb470c580572e332168a7eaaca6ba154f5986b4146cae976",
+    "reference/live.json": "466778d93856287ad71e1087725b4119b1ae3e8a67796feec9caed4325ea5ccb"
+  },
+  "window_start": {
+    "t": 864.27,
+    "event": "STOPPED_RELOCALIZATION_REQUEST",
+    "segment": "B1:safe_turn:5:3",
+    "attempt": 1
+  },
+  "window_end": {
+    "t": 879.272,
+    "event": "TASK_STOP",
+    "error": "TimeoutError('WAIT_DEADLINE')",
+    "terminal": "HUMAN_REQUIRED"
+  },
+  "reference_messages": 501,
+  "gnss_status_counts": {
+    "FIXED_AND_INNOVATION_VALID": 501
+  },
+  "accepted_gnss_count_range": [
+    413,
+    488
+  ],
+  "maximum_native_innovation_m": 0.14712528712331155,
+  "native_recovery_candidate_counts": [
+    0
+  ],
+  "max_measured_odom_abs_v_mps": 0.005285999323356803,
+  "max_measured_odom_abs_w_rps": 0.009362692721588892,
+  "gate_count": 501,
+  "both_stops_confirmed_samples": 501,
+  "map_evidence_counts": {
+    "GNSS_MAP_INNOVATION_OR_FRESHNESS": 12,
+    "TRACKING_CORRECTION_BOUND": 1,
+    "HELD_OUT_SURFACE_MATCH": 62
+  },
+  "published_task_version_present": false,
+  "native_expected_plan_revision": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335",
+  "diagnosis": "Worker messages had no task_version, while the native stopped gate unconditionally required the active plan revision. This deterministic admission failure persisted even with accepted GNSS and measured physical stops. The terminal GNSS rejection sample follows the mission stop. This replay does not certify full B1 or prove all possible location candidates safe.",
+  "last_localization_frame_after_mission_stop": {
+    "reference_t": 881.43,
+    "native_t": 881.424,
+    "gnss_reason": "INNOVATION_REJECTED_FIXED",
+    "innovation_m": 0.16932480149603651
+  }
+}

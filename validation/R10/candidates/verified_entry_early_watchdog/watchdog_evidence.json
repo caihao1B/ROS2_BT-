@@ -1,0 +1,56 @@
+{
+  "session": "mowing_20261119_090050_995141",
+  "scope": "First verified-entry transfer held physically and admitted its real path; progress watchdog counted deliberate pre-navigation stationary time. Original failure retained.",
+  "first_valid_localization_s": 36.24,
+  "warm_hold": {
+    "start": 38.644,
+    "end": 90.0,
+    "elapsed_s": 51.356,
+    "original_stop_gate_mps": 0.01,
+    "max_physical_speed_mps": 0.0,
+    "gyro_minus_encoder_rad_s": 0.0004097854479460175
+  },
+  "transfer": {
+    "requested_work_m2": 0.0,
+    "planned_length_m": 11.750973237516902,
+    "planned_gears": [
+      "QUALIFICATION_TRANSFER:0",
+      "QUALIFICATION_TRANSFER:1"
+    ],
+    "confirmed_gears": [],
+    "first_command_sim_s": 90.036,
+    "last_original_entry_arrival_sim_s": null,
+    "travel_elapsed_s": null,
+    "tool_feedback_samples": 2
+  },
+  "first_accepted_follow_path": {
+    "t": 90.036,
+    "event": "SEGMENT_GOAL",
+    "segment": "QUALIFICATION_TRANSFER:0",
+    "kind": "TURN_TOOL_OFF",
+    "direction": 1,
+    "original_poses": 69,
+    "remaining_poses": 69,
+    "tool_expected": false,
+    "original_members": [
+      "QUALIFICATION_TRANSFER:0"
+    ]
+  },
+  "task_stop": {
+    "t": 90.036,
+    "event": "TASK_STOP",
+    "error": "TimeoutError('NO_OBSERVED_PROGRESS')",
+    "terminal": "HUMAN_REQUIRED"
+  },
+  "actual_drive_gate_frames": 0,
+  "runtime_clean": true,
+  "forced": [],
+  "archive_sha256": {
+    "control/gate.jsonl": "597356ff5e0dbc82640dc3e65b0927fd312d291c83fd2db62256bdc975bcb5b2",
+    "reference/reference.jsonl": "1a3c1bfd40cd473f9fa8f54a408ae390c4cfd155696a64a6b3e8ae3eae71cff7",
+    "tool_evaluation/physical.jsonl": "60364c7bf182358f0bc7ae0625ee0685a667fab5cd9c4e73b120f705e79770d0",
+    "mission_events.jsonl": "378772697c8a94517530cbb39fb594417a92df7d64c49e0918a70856da0ac891",
+    "candidate_analysis.json": "12d249cfa0653d99ac40348120d3e753140197e66839fc9a6ab11812ad89e9c1",
+    "runtime.json": "5484371345bd76b5fee0d53a4a86b52ab92a34176e9edec14651221c4945559a"
+  }
+}

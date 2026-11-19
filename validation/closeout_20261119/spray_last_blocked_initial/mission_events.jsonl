@@ -1,0 +1,18 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_PLAN_HINT"}
+{"t": 36.518, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 36.528, "event": "NAV_GOAL", "point": "point_11_20", "target": [6.5, 47.5], "attempt": 0}
+{"t": 36.568, "event": "NAV_SUCCESS", "point": "point_11_20"}
+{"t": 39.84, "event": "DOCKING_SETTLED_CHECK", "point": "point_11_20", "distance_m": 0.017673688462494945, "attempt": 0, "stable": true, "stability": {"samples": 61, "span_s": 1.8000000000000043, "max_gap_s": 0.03200000000000358, "median_distance_m": 0.018722050512952924, "latest_distance_m": 0.017673688462494945, "position_scatter_p95_m": 0.004528392532358857}}
+{"t": 43.946, "event": "TOOL_RESULT", "point": "point_11_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.073999999999998, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 0.0, "meter_after": 3.2717}
+{"t": 43.994, "event": "TOOL_RESULT", "point": "point_11_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.073999999999998, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2717, "meter_after": 3.2717}
+{"t": 43.994, "event": "IDEMPOTENT_REPLAY", "result": {"point": "point_11_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.073999999999998, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2717, "meter_after": 3.2717}}
+{"t": 43.994, "event": "NAV_GOAL", "point": "point_10_20", "target": [3.5, 47.5], "attempt": 0}
+{"t": 44.08, "event": "NAV_CANCEL_ACK", "accepted": false}
+{"t": 44.082, "event": "NAV_TERMINAL_FAILURE", "status": 6, "error_code": 208}
+{"t": 56.146, "event": "RETRY_DECISION", "action": "REPLAN", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 57.202, "event": "NAV_GOAL", "point": "point_10_20", "target": [3.5, 47.5], "attempt": 1}
+{"t": 57.288, "event": "NAV_CANCEL_ACK", "accepted": false}
+{"t": 57.29, "event": "NAV_TERMINAL_FAILURE", "status": 6, "error_code": 208}
+{"t": 69.352, "event": "RETRY_DECISION", "action": "REPLAN", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 74.354, "event": "TASK_STOP", "error": "TimeoutError('WAIT_DEADLINE')"}
+{"t": 74.366, "event": "FINAL_TOOL_STOP", "state": "STOPPED", "action_status": 4}

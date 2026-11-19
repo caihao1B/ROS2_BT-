@@ -3,129 +3,159 @@
   "terminal": "HUMAN_REQUIRED",
   "controlled_hold": true,
   "error": "TimeoutError('WAIT_DEADLINE')",
-  "t": 879.272,
+  "t": 1173.702,
   "selected_segments": 47,
   "navigation_groups": 47,
   "original_segment_passages": [
     {
       "segment": "B1:segment:0:safe:0",
-      "xy_error_m": 0.09898886178687347,
-      "yaw_error_rad": 0.015573017568445618,
-      "t": 82.68
+      "xy_error_m": 0.09919736489815938,
+      "yaw_error_rad": 0.0026438384461513476,
+      "t": 76.17
     },
     {
       "segment": "B1:safe_turn:1:0",
-      "xy_error_m": 0.09997960246749979,
-      "yaw_error_rad": 0.03203662921357048,
-      "t": 120.81
+      "xy_error_m": 0.0996508042839303,
+      "yaw_error_rad": 0.050024453380974165,
+      "t": 116.25
     },
     {
       "segment": "B1:segment:4:safe:0",
-      "xy_error_m": 0.09804368986893588,
-      "yaw_error_rad": 0.016497347474338453,
-      "t": 180.632
+      "xy_error_m": 0.09859747521234304,
+      "yaw_error_rad": 0.009268813495117822,
+      "t": 180.18
     },
     {
       "segment": "B1:safe_turn:2:0",
-      "xy_error_m": 0.09944657651653029,
-      "yaw_error_rad": 0.021503974166546147,
-      "t": 206.64
+      "xy_error_m": 0.0990009256714226,
+      "yaw_error_rad": 0.027675414742900806,
+      "t": 203.94
     },
     {
       "segment": "B1:safe_turn:2:1",
-      "xy_error_m": 0.09952803418022116,
-      "yaw_error_rad": 0.007468608170521751,
-      "t": 246.15
+      "xy_error_m": 0.09911571806366574,
+      "yaw_error_rad": 0.018012888949771266,
+      "t": 237.69
     },
     {
       "segment": "B1:safe_turn:2:2",
-      "xy_error_m": 0.09953424546739471,
-      "yaw_error_rad": 0.10616003036635169,
-      "t": 257.73
+      "xy_error_m": 0.09553975061475921,
+      "yaw_error_rad": 0.1024049574141319,
+      "t": 245.13
     },
     {
       "segment": "B1:segment:8:safe:0",
-      "xy_error_m": 0.09788306472268442,
-      "yaw_error_rad": 0.004009628253518027,
-      "t": 361.592
+      "xy_error_m": 0.09958578807910544,
+      "yaw_error_rad": 0.06451096836055603,
+      "t": 336.3
     },
     {
       "segment": "B1:safe_turn:3:0",
-      "xy_error_m": 0.09720250947922005,
-      "yaw_error_rad": 0.03983865441663958,
-      "t": 365.73
+      "xy_error_m": 0.09775543559287027,
+      "yaw_error_rad": 0.11177539994459673,
+      "t": 339.21
     },
     {
       "segment": "B1:safe_turn:3:1",
-      "xy_error_m": 0.09853796431038514,
-      "yaw_error_rad": 0.050967862865404,
-      "t": 416.1
+      "xy_error_m": 0.09939362636689478,
+      "yaw_error_rad": 0.0492301375740647,
+      "t": 385.86
     },
     {
       "segment": "B1:safe_turn:3:2",
-      "xy_error_m": 0.0959434194427734,
-      "yaw_error_rad": 0.06749456043026147,
-      "t": 497.82
+      "xy_error_m": 0.09738590543666156,
+      "yaw_error_rad": 0.07739479186151804,
+      "t": 469.922
     },
     {
       "segment": "B1:safe_turn:3:3",
-      "xy_error_m": 0.09837975573729493,
-      "yaw_error_rad": 0.11454802214046389,
-      "t": 516.81
+      "xy_error_m": 0.0835663441927843,
+      "yaw_error_rad": 0.11955224999698351,
+      "t": 491.82
     },
     {
       "segment": "B1:segment:12:safe:0",
-      "xy_error_m": 0.09918359554561303,
-      "yaw_error_rad": 0.00791954881982504,
-      "t": 577.89
+      "xy_error_m": 0.09819747168153033,
+      "yaw_error_rad": 0.0012864581195700109,
+      "t": 548.52
     },
     {
       "segment": "B1:safe_turn:4:0",
-      "xy_error_m": 0.09921909216087797,
-      "yaw_error_rad": 0.060886938390747325,
-      "t": 609.45
+      "xy_error_m": 0.0995874956205779,
+      "yaw_error_rad": 0.0858853127445165,
+      "t": 575.28
     },
     {
       "segment": "B1:safe_turn:4:1",
-      "xy_error_m": 0.09996862449913332,
-      "yaw_error_rad": 0.013947400953874924,
-      "t": 701.13
+      "xy_error_m": 0.09923026433391598,
+      "yaw_error_rad": 0.021286115414574258,
+      "t": 679.83
     },
     {
       "segment": "B1:safe_turn:4:2",
-      "xy_error_m": 0.09941415776943444,
-      "yaw_error_rad": 0.07186286701798394,
-      "t": 708.81
+      "xy_error_m": 0.09988101321000008,
+      "yaw_error_rad": 0.04822370510468721,
+      "t": 690.81
     },
     {
       "segment": "B1:segment:16:safe:0",
-      "xy_error_m": 0.0958741705084902,
-      "yaw_error_rad": 0.012731349087898192,
-      "t": 735.51
+      "xy_error_m": 0.09832579437306407,
+      "yaw_error_rad": 0.004448589991199459,
+      "t": 725.31
     },
     {
       "segment": "B1:safe_turn:5:0",
-      "xy_error_m": 0.09622762618975804,
-      "yaw_error_rad": 0.07488047199035952,
-      "t": 743.4
+      "xy_error_m": 0.09944229603328325,
+      "yaw_error_rad": 0.06294195194245855,
+      "t": 732.9
     },
     {
       "segment": "B1:safe_turn:5:1",
-      "xy_error_m": 0.06987221590199122,
-      "yaw_error_rad": 0.11970809145188666,
-      "t": 745.83
+      "xy_error_m": 0.09777609298670166,
+      "yaw_error_rad": 0.10888295927154035,
+      "t": 735.12
     },
     {
       "segment": "B1:safe_turn:5:2",
-      "xy_error_m": 0.0996571215836024,
-      "yaw_error_rad": 0.10411906735800834,
-      "t": 756.36
+      "xy_error_m": 0.09910097151009695,
+      "yaw_error_rad": 0.08781504040771138,
+      "t": 746.552
     },
     {
       "segment": "B1:safe_turn:5:3",
-      "xy_error_m": 0.09809812498490933,
-      "yaw_error_rad": 0.1129179120483088,
-      "t": 863.222
+      "xy_error_m": 0.09906238873604417,
+      "yaw_error_rad": 0.08405611010807945,
+      "t": 841.71
+    },
+    {
+      "segment": "B1:safe_turn:5:4",
+      "xy_error_m": 0.09782621186285864,
+      "yaw_error_rad": 0.020359124076711144,
+      "t": 892.71
+    },
+    {
+      "segment": "B1:segment:16:safe:1",
+      "xy_error_m": 0.09953348205652808,
+      "yaw_error_rad": 0.027186260317431543,
+      "t": 903.99
+    },
+    {
+      "segment": "B1:safe_turn:6:0",
+      "xy_error_m": 0.09966448114864584,
+      "yaw_error_rad": 0.08355644942379437,
+      "t": 908.25
+    },
+    {
+      "segment": "B1:safe_turn:6:1",
+      "xy_error_m": 0.09937676020849745,
+      "yaw_error_rad": 0.02928849373229614,
+      "t": 954.9
+    },
+    {
+      "segment": "B1:safe_turn:6:2",
+      "xy_error_m": 0.09797276820531158,
+      "yaw_error_rad": 0.011222836817843529,
+      "t": 1014.42
     }
   ],
   "original_segments": 47,
@@ -133,9 +163,7 @@
   "reference_original_segments": 34,
   "original_reference_status": "PARTIAL",
   "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
-  "localization_revalidations": {
-    "B1:safe_turn:5:3": 1
-  },
+  "localization_revalidations": {},
   "completed_segments": [
     "B1:segment:0:safe:0",
     "B1:safe_turn:1:0",
@@ -155,15 +183,15 @@
     "B1:segment:16:safe:0",
     "B1:safe_turn:5:0",
     "B1:safe_turn:5:1",
-    "B1:safe_turn:5:2"
-  ],
-  "remaining_selected": [
+    "B1:safe_turn:5:2",
     "B1:safe_turn:5:3",
     "B1:safe_turn:5:4",
     "B1:segment:16:safe:1",
     "B1:safe_turn:6:0",
     "B1:safe_turn:6:1",
-    "B1:safe_turn:6:2",
+    "B1:safe_turn:6:2"
+  ],
+  "remaining_selected": [
     "B1:safe_turn:6:3",
     "B1:safe_turn:6:4",
     "B1:segment:20:safe:0",
@@ -193,139 +221,115 @@
       "segment": "B1:segment:0:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 3.760700000000002,
-      "remaining": 6.800790281674194,
+      "confirmed": 9.683149999999976,
+      "remaining": 0.8783402816742196,
       "uncertain": false
     },
     {
       "segment": "B1:segment:0:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 3.760700000000002,
-      "remaining": 6.800790281674194,
-      "uncertain": false
-    },
-    {
-      "segment": "B1:segment:0:safe:0",
-      "state": "CANCELLED",
-      "reason": "USER_CANCEL",
-      "confirmed": 5.303237499999997,
-      "remaining": 5.258252781674199,
-      "uncertain": false
-    },
-    {
-      "segment": "B1:segment:0:safe:0",
-      "state": "CANCELLED",
-      "reason": "USER_CANCEL",
-      "confirmed": 9.657824999999997,
-      "remaining": 0.9036652816741988,
+      "confirmed": 9.682775,
+      "remaining": 0.8787152816741965,
       "uncertain": false
     },
     {
       "segment": "B1:segment:4:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 17.172062499999978,
-      "remaining": 1.6827769275130926,
+      "confirmed": 11.479475,
+      "remaining": 7.37536442751307,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.166912500000013,
+      "remaining": 1.6879269275130575,
       "uncertain": false
     },
     {
       "segment": "B1:segment:8:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 4.795787499999989,
-      "remaining": 20.636531533425313,
+      "confirmed": 19.543099999999985,
+      "remaining": 5.8892190334253165,
       "uncertain": false
     },
     {
       "segment": "B1:segment:8:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 7.537375000000004,
-      "remaining": 17.894944033425297,
+      "confirmed": 21.06497499999996,
+      "remaining": 4.36734403342534,
       "uncertain": false
     },
     {
       "segment": "B1:segment:8:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 14.147687500000023,
-      "remaining": 11.284631533425278,
-      "uncertain": false
-    },
-    {
-      "segment": "B1:segment:8:safe:0",
-      "state": "CANCELLED",
-      "reason": "USER_CANCEL",
-      "confirmed": 21.53773750000001,
-      "remaining": 3.894581533425292,
-      "uncertain": false
-    },
-    {
-      "segment": "B1:segment:8:safe:0",
-      "state": "CANCELLED",
-      "reason": "USER_CANCEL",
-      "confirmed": 22.255700000000022,
-      "remaining": 3.176619033425279,
-      "uncertain": false
-    },
-    {
-      "segment": "B1:segment:8:safe:0",
-      "state": "CANCELLED",
-      "reason": "USER_CANCEL",
-      "confirmed": 23.149574999999984,
-      "remaining": 2.282744033425317,
+      "confirmed": 23.154112499999957,
+      "remaining": 2.278206533425344,
       "uncertain": false
     },
     {
       "segment": "B1:segment:12:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 11.294662500000014,
-      "remaining": 23.878207083358973,
-      "uncertain": false
-    },
-    {
-      "segment": "B1:segment:12:safe:0",
-      "state": "CANCELLED",
-      "reason": "USER_CANCEL",
-      "confirmed": 14.583799999999998,
-      "remaining": 20.58906958335899,
-      "uncertain": false
-    },
-    {
-      "segment": "B1:segment:12:safe:0",
-      "state": "CANCELLED",
-      "reason": "USER_CANCEL",
-      "confirmed": 14.787375,
-      "remaining": 20.385494583358987,
-      "uncertain": false
-    },
-    {
-      "segment": "B1:segment:12:safe:0",
-      "state": "CANCELLED",
-      "reason": "USER_CANCEL",
-      "confirmed": 15.377387500000012,
-      "remaining": 19.795482083358976,
+      "confirmed": 15.389799999999973,
+      "remaining": 19.783069583359016,
       "uncertain": false
     },
     {
       "segment": "B1:segment:16:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 7.976674999999993,
-      "remaining": 21.62655591014289,
+      "confirmed": 0.515837500000002,
+      "remaining": 29.08739341014288,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:16:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 7.957962499999991,
+      "remaining": 21.645268410142894,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:16:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 8.001324999999994,
+      "remaining": 21.60190591014289,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:16:safe:1",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 8.798962499999984,
+      "remaining": 20.8042684101429,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:16:safe:1",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 10.019537499999991,
+      "remaining": 19.583693410142892,
       "uncertain": false
     }
   ],
   "replans": 0,
   "coverage_rejoins": 0,
   "coverage_planner_queries": 0,
-  "endpoint_recoveries": 1,
-  "endpoint_planner_queries": 1,
-  "continuous_recovery_queries": 1,
+  "endpoint_recoveries": 4,
+  "endpoint_planner_queries": 7,
+  "continuous_recovery_queries": 7,
   "final_gate": {
-    "t": 879.27,
+    "t": 1173.69,
     "allowed": false,
     "mode": "STOP",
     "v": 0.0,
@@ -338,7 +342,7 @@
     "stopped": true,
     "tool_stopped": true,
     "nav_idle": true,
-    "progress_m": 132.44101279923953,
+    "progress_m": 166.59495127020512,
     "armed_direction": 1,
     "raw_nav_v": 0.0,
     "raw_nav_w": 0.0
@@ -355,7 +359,7 @@
       "s10_tool_action_server"
     ]
   },
-  "wall_seconds": 2333.241463890008,
+  "wall_seconds": 3072.655565813,
   "execution_mode": "original_primitive_boundaries",
   "scope": "All current approved execution goals checked in order; original 34 reference remains PARTIAL; unchanged original work polygons use physical feedback only"
 }

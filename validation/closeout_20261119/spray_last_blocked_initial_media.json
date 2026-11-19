@@ -1,0 +1,61 @@
+{
+  "native_human_latched": {
+    "first_sim_t": 69.4,
+    "dispatch_id": 13,
+    "observations": 25
+  },
+  "schema": "R10-SPRAY-INITIAL-WATCHDOG/1",
+  "case": "initial",
+  "session": "spray_defer_20261119_092405_230489",
+  "formal_credit": false,
+  "mission_passed": false,
+  "handoff_demonstrated": false,
+  "expected_behavior_passed": false,
+  "observed_notification": {
+    "schema": "LIVE-OPERATOR-ROS-NOTICE/1",
+    "session": "spray_defer_20261119_092405_230489",
+    "read_only": true,
+    "topic": "/r10/operator_attention",
+    "message_count": 0,
+    "initial_request_received": false,
+    "closure_received": false,
+    "closure_matches_durable_case_file": false,
+    "passed": false
+  },
+  "closed_sim_s": 74.366,
+  "error": "TimeoutError('WAIT_DEADLINE')",
+  "original_count": 56,
+  "selected": [
+    "point_11_20",
+    "point_10_20"
+  ],
+  "confirmed": [
+    "point_11_20"
+  ],
+  "runtime_passed": true,
+  "original": {
+    "path": "media/closeout_20261119/spray_last_blocked_initial_full.mp4",
+    "sha256": "1f280e05043becea6e50dd0019fb83d9cf14bd2b1d86342384d934f938ad953f",
+    "seconds": 149.6,
+    "frames": 748,
+    "fps": 5.0,
+    "unmodified": true
+  },
+  "archived_source": {
+    "analysis_spray_r10.json": "0ecc6fa21b94b77ffa1dc1d50ae2be7e7608ed7ab6c685f27da42ff2bb1e9fe1",
+    "candidate_handoff_acceptance.json": "59434794080587cb3e0e809f0a2e2362186dc43f278327559dc866fcfa700228",
+    "decisions.jsonl.gz": "269ba0b288acb2866db0b8a3b8ca1ae9534f5f7ce778f4b66356aa2dccb3a7a5",
+    "mission.json": "c86fee197840b8ea5cc3b620b43473124d646b858e3dd402a47fb9b9d11b1f9e",
+    "mission_events.jsonl": "15a2e877ecd60bb9af930966a1a96696a9720d1690c868c95ba4ea1f5dec3e96",
+    "mission_result.json": "38c1ec170b66f510433a03b7bb121ea6be518fb7697e07d4c60fcbb8747c74d9",
+    "nav_shutdown.json": "2d89faff75bb7e056d1ca0b56c2ebdd0930492938059cccf59af9acb40a34512",
+    "operator_attention_receipt.json": "3d24982be7868930eb07f7570bee7cae31994db393372c205c251440f834c69a",
+    "operator_attention_wire.jsonl.gz": "f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec",
+    "runtime.json": "63012cfc0c981b587553563b8d80b5b0a8bfe91fec160409aa0de598e7724fc5",
+    "scene/fixture.json": "63658257a6e78ed0054f67463e4631d584209b3e72d182ea0519781a3333a336",
+    "spec.json": "e9a548e99e03da342661e88b4a9dee64724be9da372341df720255442b360c43",
+    "tool_evaluation/result.json": "5e885884a22ced2dc801782b38d4a6edc29acfda5a184442af6714870ec1cadd",
+    "video/frames.jsonl.gz": "269535fe36bd20420420f473f70b12b623632cce633c6a3f5d8a5c935cf813e3",
+    "video/recording.json": "bee857f10ff64755a350d7bd5b3d1af6050d05754ff4a43fe01ff62385bc2d60"
+  }
+}

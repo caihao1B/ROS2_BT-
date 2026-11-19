@@ -37,3 +37,10 @@ preview_runs/
 /optimization_v2/plans/validated/mission_plan.json
 /optimization_v2/plans/validated/routes.geojson
 /optimization_v2/ws/src/motion_prediction/vendor/Trajectron-plus-plus/experiments/pedestrians/models/eth_attention_radius_3/model_registrar-100.pt
+
+# Three-task compilation, raw simulation records and live observer samples.
+/optimization_v2/three_tasks/build/
+/optimization_v2/three_tasks/results/
+/optimization_v2/three_tasks/runtime/
+/optimization_v2/three_tasks/monitor_state/
+/optimization_v2/three_tasks/baseline/frozen_s01_s18.json

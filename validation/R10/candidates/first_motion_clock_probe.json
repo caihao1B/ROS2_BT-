@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "guard_unchanged": true,
+    "historical_before_motion_expiry": true,
+    "time_starts_at_real_admission": true,
+    "unchanged_timeout_fires": true,
+    "retry_cannot_extend": true,
+    "later_gear_cannot_extend": true,
+    "rejected_or_unobserved_cannot_arm": true
+  },
+  "source": "05feac7d264f13e4329e2b29bae4e8c9a93bf9411d0cdfd821ff831d4bb0a21f",
+  "scope": "Recorded 36.24 s first location and 90.036 s accepted action. Actual unmodified worker progress predicate, component-only qualification."
+}

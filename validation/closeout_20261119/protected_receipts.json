@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "scope": "Byte comparison of the original R01–R09 stage receipts against their values before this work period.",
+  "receipts": {
+    "R01": {
+      "original_status": "PASS",
+      "current_status": "PASS",
+      "unchanged": true,
+      "sha256": "8c3ed687da6a7f6f7f94ccf57dec2317e410a30e922fa82d3cfd2520f2ff3983"
+    },
+    "R02": {
+      "original_status": "PASS",
+      "current_status": "PASS",
+      "unchanged": true,
+      "sha256": "2f80f282e89acf17222869855cc3e33d6cc13533083e34b45d15a54dd9cc79eb"
+    },
+    "R03": {
+      "original_status": "PASS",
+      "current_status": "PASS",
+      "unchanged": true,
+      "sha256": "784222c26ad9d24f961047ed7d6211aa2c3b1ec71749b57c0a44f021b7c9e119"
+    },
+    "R04": {
+      "original_status": "PASS",
+      "current_status": "PASS",
+      "unchanged": true,
+      "sha256": "fc4ffff0ee6b43de9a795228ea6a73a839bf0aec0850a63c2f57c76253ab2381"
+    },
+    "R05": {
+      "original_status": "PASS",
+      "current_status": "PASS",
+      "unchanged": true,
+      "sha256": "1b839419892f26f2a59387f7cc058a7931c882a01a5d7b488ac048f7ad1774e9"
+    },
+    "R06": {
+      "original_status": "PASS",
+      "current_status": "PASS",
+      "unchanged": true,
+      "sha256": "bfb18236c9f9e39de4bf72f2880ffb15346ba4430953a2475a957fd04dd04cf0"
+    },
+    "R07": {
+      "original_status": "PASS",
+      "current_status": "PASS",
+      "unchanged": true,
+      "sha256": "d1ed430f8a9f5cfd56ff8a1ee78081d88e411b19d9e5172afd6fe7a635718f69"
+    },
+    "R08": {
+      "original_status": "PASS",
+      "current_status": "PASS",
+      "unchanged": true,
+      "sha256": "087055b8f7e0a51ffee7a65e040cd8051cdac6aeb166276417ba41a47155f46d"
+    },
+    "R09": {
+      "original_status": "PASS",
+      "current_status": "PASS",
+      "unchanged": true,
+      "sha256": "af2648b4d256acada245bf191ae413a496c81e69329544d98f153b893a1066e1"
+    }
+  }
+}

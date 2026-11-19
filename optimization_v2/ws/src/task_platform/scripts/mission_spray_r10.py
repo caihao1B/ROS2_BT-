@@ -267,5 +267,15 @@ def main():
         ownership={topic:[dict(node=i.node_name,namespace=i.node_namespace,gid=list(i.endpoint_gid)) for i in n.get_publishers_info_by_topic(topic)] for topic in ['/tf','/s03/actuator/request','/s10/tool/command']}
         final=dict(ownership=ownership,final_gate=st['gate'],passed=error is None and st['complete'] and bool(replay and replay['replayed']),error=error,cluster=cluster['id'],selected_points=len(points),original_points=len(allpoints),completed=completed,failed=failed,not_selected=[p['id'] for p in allpoints[len(points):]],replay=replay,t=st['t'],wall_seconds=time.monotonic()-begin,scope='Explicitly selected original points; confirmed work and residual separate; full selection does not imply full completion')
         (out/'mission_result.json').write_text(json.dumps(final,indent=2));n.destroy_node();rclpy.try_shutdown()
+    # A bounded localization hold is a controlled mission failure. A supervisor
+    # can exit cleanly only after the tool server and fresh physical feedback
+    # both acknowledge shutdown. Mission completion remains independently false.
+    if error == repr(RuntimeError('LOCALIZATION_REVALIDATION_BOUND')):
+        gate=final.get('final_gate') or {}
+        confirmed=(gate.get('stopped') and gate.get('tool_stopped') and
+                   0 <= final['t']-gate.get('t',-100.) <= .15 and
+                   any(event['event']=='FINAL_TOOL_STOP' and event.get('state')=='STOPPED' for event in events) and
+                   not any(event['event']=='SHUTDOWN_UNCONFIRMED' for event in events))
+        return 0 if confirmed else 2
     return 0 if final['passed'] or (final['final_gate'] and final['final_gate']['stopped'] and final['final_gate']['tool_stopped'] and error and any(k in error for k in ['WAIT_DEADLINE','TASK_BOUND','MANUAL_OR_SAFETY_HOLD'])) else 2
 if __name__=='__main__':raise SystemExit(main())

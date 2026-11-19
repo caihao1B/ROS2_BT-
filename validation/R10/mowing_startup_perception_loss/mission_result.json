@@ -3,39 +3,39 @@
   "terminal": "COMPLETED",
   "controlled_hold": false,
   "error": null,
-  "t": 246.912,
+  "t": 280.162,
   "selected_segments": 5,
   "navigation_groups": 5,
   "original_segment_passages": [
     {
       "segment": "B1:segment:0:safe:0",
-      "xy_error_m": 0.09941376621139832,
-      "yaw_error_rad": 0.017853394061579153,
-      "t": 72.632
+      "xy_error_m": 0.09844291832003008,
+      "yaw_error_rad": 0.005152022057792749,
+      "t": 79.5
     },
     {
       "segment": "B1:safe_turn:1:0",
-      "xy_error_m": 0.09922271573312903,
-      "yaw_error_rad": 0.11194158160339208,
-      "t": 115.05
+      "xy_error_m": 0.09885275825756247,
+      "yaw_error_rad": 0.06842837988672489,
+      "t": 116.732
     },
     {
       "segment": "B1:segment:4:safe:0",
-      "xy_error_m": 0.09955934037422766,
-      "yaw_error_rad": 0.003375562570659296,
-      "t": 183.6
+      "xy_error_m": 0.09981262011288405,
+      "yaw_error_rad": 0.01595025582268972,
+      "t": 191.22
     },
     {
       "segment": "B1:safe_turn:2:0",
-      "xy_error_m": 0.09916446897198283,
-      "yaw_error_rad": 0.03437722363515916,
-      "t": 207.15
+      "xy_error_m": 0.09827789223477422,
+      "yaw_error_rad": 0.04097326122456612,
+      "t": 214.86
     },
     {
       "segment": "B1:safe_turn:2:1",
-      "xy_error_m": 0.09997640313629678,
-      "yaw_error_rad": 0.014205858070003519,
-      "t": 241.712
+      "xy_error_m": 0.09936686366042763,
+      "yaw_error_rad": 0.034522225952656964,
+      "t": 277.17
     }
   ],
   "original_segments": 47,
@@ -109,43 +109,107 @@
       "segment": "B1:segment:0:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 9.682437499999992,
-      "remaining": 0.8790527816742042,
+      "confirmed": 7.688587499999996,
+      "remaining": 2.8729027816742,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 7.688587499999996,
+      "remaining": 2.8729027816742,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0:safe:0",
+      "state": "PARTIAL",
+      "reason": "CONTEXT_STALE",
+      "confirmed": 7.688587499999996,
+      "remaining": 2.8729027816742,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 7.688587499999996,
+      "remaining": 2.8729027816742,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:0:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 9.688599999999997,
+      "remaining": 0.8728902816741986,
       "uncertain": false
     },
     {
       "segment": "B1:segment:4:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 5.335299999999988,
-      "remaining": 13.519539427513083,
+      "confirmed": 10.266449999999999,
+      "remaining": 8.588389427513071,
       "uncertain": false
     },
     {
       "segment": "B1:segment:4:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 14.426937499999983,
-      "remaining": 4.427901927513087,
+      "confirmed": 10.266449999999999,
+      "remaining": 8.588389427513071,
       "uncertain": false
     },
     {
       "segment": "B1:segment:4:safe:0",
       "state": "CANCELLED",
       "reason": "USER_CANCEL",
-      "confirmed": 17.170337499999956,
-      "remaining": 1.6845019275131143,
+      "confirmed": 10.266449999999999,
+      "remaining": 8.588389427513071,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 12.088325000000005,
+      "remaining": 6.766514427513066,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 13.533350000000011,
+      "remaining": 5.321489427513059,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 14.843362500000008,
+      "remaining": 4.011476927513062,
+      "uncertain": false
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "state": "CANCELLED",
+      "reason": "USER_CANCEL",
+      "confirmed": 17.14596249999999,
+      "remaining": 1.7088769275130815,
       "uncertain": false
     }
   ],
   "replans": 0,
   "coverage_rejoins": 0,
   "coverage_planner_queries": 0,
-  "endpoint_recoveries": 0,
-  "endpoint_planner_queries": 0,
-  "continuous_recovery_queries": 0,
+  "endpoint_recoveries": 1,
+  "endpoint_planner_queries": 1,
+  "continuous_recovery_queries": 1,
   "final_gate": {
-    "t": 246.9,
+    "t": 280.14,
     "allowed": false,
     "mode": "STOP",
     "v": 0.0,
@@ -156,8 +220,8 @@
     "stopped": true,
     "tool_stopped": true,
     "nav_idle": true,
-    "progress_m": 38.4224702131667,
-    "armed_direction": -1,
+    "progress_m": 40.53835329697617,
+    "armed_direction": 1,
     "raw_nav_v": 0.0,
     "raw_nav_w": 0.0
   },
@@ -173,7 +237,7 @@
       "s10_tool_action_server"
     ]
   },
-  "wall_seconds": 661.5896586510062,
+  "wall_seconds": 746.2139441739998,
   "execution_mode": "original_primitive_boundaries",
   "scope": "All current approved execution goals checked in order; original 34 reference remains PARTIAL; unchanged original work polygons use physical feedback only"
 }

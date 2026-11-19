@@ -1,11 +1,5 @@
-# R12 实际结果
+# R12 三项作业录像与交付
 
-实际回执：**PARTIAL**。
+**PARTIAL。** 已有三种任务的合格实录。新录点喷卡滞 3/3、割草启动感知中断 5/5。完整选择 A1 确认 22/56 个点，B1 确认 25/47 段；完整工作时段的影片与任务结果各自判定。R10 为 PARTIAL、R11 为 PARTIAL。原 S17/S18 维持 PARTIAL。
 
-三任务真实录像与完整任务验收分开记录；当前合格录像任务：inspection, mowing, spray。
-
-未完成项：R10 is not PASS；R11 is not PASS
-
-[手工验收命令](MANUAL.md) · [技术说明](TECHNICAL.md) · [核心代码](CODE.md)
-
-原 S17/S18 保持 PARTIAL，不从三任务录像推定六簇正式验收。
+[78 秒实录和原片](../../../media/closeout_20261119/README.md) · [整簇录像质量、哈希和事件时间](../../../validation/closeout_20261119/media_full_runs.json) · [在浏览器中按时刻回看](../../../validation/closeout_20261119/replay.html) · [手工验收](MANUAL.md)

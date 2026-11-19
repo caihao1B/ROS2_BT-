@@ -1,0 +1,171 @@
+{
+  "started_utc": "2026-11-19T07:00:32Z",
+  "evidence_verified_utc": "2026-11-19T09:39:15+00:00",
+  "wall_deadline": "2026-11-19T10:00:32Z",
+  "elapsed_to_final_evidence_s": 9523.8,
+  "current_run_sim_s": 3345.022,
+  "official_and_pilots": 4,
+  "isolated_candidates": [
+    {
+      "session": "mowing_20261119_084537_532941",
+      "profile": "late-warm",
+      "formal_credit": false,
+      "checked": false,
+      "runtime_clean": true,
+      "case_receipt": "candidate_analysis.json",
+      "behavior": null,
+      "sim_s": 75.002,
+      "selected": 7,
+      "arrived": 0,
+      "terminal": "HUMAN_REQUIRED"
+    },
+    {
+      "session": "mowing_20261119_090050_995141",
+      "profile": "verified-entry-transfer",
+      "formal_credit": false,
+      "checked": false,
+      "runtime_clean": true,
+      "case_receipt": "candidate_analysis.json",
+      "behavior": null,
+      "sim_s": 90.058,
+      "selected": 7,
+      "arrived": 0,
+      "terminal": "HUMAN_REQUIRED"
+    },
+    {
+      "session": "mowing_20261119_090706_626159",
+      "profile": "verified-entry-first-motion",
+      "formal_credit": false,
+      "checked": false,
+      "runtime_clean": true,
+      "case_receipt": "candidate_analysis.json",
+      "behavior": null,
+      "sim_s": 163.584,
+      "selected": 7,
+      "arrived": 0,
+      "terminal": "HUMAN_REQUIRED"
+    },
+    {
+      "session": "spray_defer_20261119_085422_132494",
+      "profile": "bounded_defer",
+      "formal_credit": false,
+      "checked": true,
+      "runtime_clean": true,
+      "case_receipt": "candidate_acceptance.json",
+      "behavior": "PASS",
+      "sim_s": 178.15,
+      "selected": 4,
+      "arrived": 3,
+      "terminal": "INCOMPLETE"
+    },
+    {
+      "session": "spray_defer_20261119_092405_230489",
+      "profile": "last_selected_equipment_blocked",
+      "formal_credit": false,
+      "checked": false,
+      "runtime_clean": true,
+      "case_receipt": "candidate_handoff_acceptance.json",
+      "behavior": null,
+      "sim_s": 74.366,
+      "selected": 2,
+      "arrived": 1,
+      "terminal": "TimeoutError('WAIT_DEADLINE')"
+    },
+    {
+      "session": "spray_defer_20261119_093026_010150",
+      "profile": "last_selected_equipment_blocked",
+      "formal_credit": false,
+      "checked": true,
+      "runtime_clean": true,
+      "case_receipt": "candidate_handoff_acceptance.json",
+      "behavior": null,
+      "sim_s": 68.688,
+      "selected": 2,
+      "arrived": 1,
+      "terminal": "HUMAN_REQUIRED"
+    },
+    {
+      "session": "spray_defer_20261119_091633_791154",
+      "profile": "bounded_defer_natural",
+      "formal_credit": false,
+      "checked": false,
+      "runtime_clean": false,
+      "case_receipt": "candidate_handoff_acceptance.json",
+      "behavior": "NOT_EXERCISED",
+      "sim_s": 202.892,
+      "selected": 4,
+      "arrived": 3,
+      "terminal": "INCOMPLETE"
+    }
+  ],
+  "stage_checks": {
+    "R08": {
+      "passed": true,
+      "stage": "R08",
+      "changed": [],
+      "status": "PASS"
+    },
+    "R09": {
+      "passed": true,
+      "stage": "R09",
+      "changed": [],
+      "status": "PASS"
+    },
+    "R10": {
+      "passed": false,
+      "stage": "R10",
+      "changed": [],
+      "status": "PARTIAL"
+    },
+    "R11": {
+      "passed": false,
+      "stage": "R11",
+      "changed": [],
+      "status": "PARTIAL"
+    },
+    "R12": {
+      "passed": false,
+      "stage": "R12",
+      "changed": [],
+      "status": "PARTIAL"
+    }
+  },
+  "formal_s17_matrix_runs_this_session": 0,
+  "formal_s17": "PARTIAL",
+  "formal_s18": "PARTIAL",
+  "frozen_R01_R09_receipts_unchanged": true,
+  "previous_media_artifacts_hash_verified": 74,
+  "source_files": {
+    "validation/closeout_20261119/runs.json": "0e14ab05e46b7462af561297abed473b9411442627b3d1d59e35c961213c3267",
+    "validation/closeout_20261119/media_manifest.json": "77e913983bd792ed56ddf3e0fc8090dadb4312f4b3c455b7b48200d2a98c8eee",
+    "validation/closeout_20261119/media_full_runs.json": "1a28af15e30ee5c147cc9d293161a02eb633ed1913c227877f18e021624c55eb",
+    "validation/closeout_20261119/replay.html": "6d72f5c05e2c75aa869167f8ab0d2b9f53367274757defa89e2c3120eade4239",
+    "validation/closeout_20261119/replay_browser.json": "7e8d42412e7c799b80f1e27a148e5b604cf3eea9bff631ab2080efd5edfee1fd",
+    "validation/closeout_20261119/gui_stop_browser.json": "e9cd11fdb6a77beb251c168812a4d191605099b2525f59237973bbbcc39a78da",
+    "validation/closeout_20261119/B1_coverage.geojson.gz": "8164104acaf56c8812b107c8a7fc7694f5a8674e7b2e798f2940fae6341b1c18",
+    "validation/closeout_20261119/B1_residual_review.json": "e2bfda0be31326aa36a57d636d3f8cafe1c57588ed1fe24d06353bdba1890f64",
+    "validation/closeout_20261119/A1_residual_review.json": "2f4848071c35e0174e2e3c936a044df7eef1ddd429d9d2b27f9cb51814c0d252",
+    "validation/closeout_20261119/B1_offline_connector.json": "713fe1779c1278ae58af98f780981951c26b665c86ec956b11e39c2e95708f43",
+    "validation/closeout_20261119/B1_connector_nav2.json": "4221edadb5cedeee27af852edc8b57c6e8006c85dc573f6b4759c23aec22653d",
+    "validation/closeout_20261119/B1_long_reverse_comparison.json": "92662929a2db3816e87181fa0e28a2d57d1fcf5048f77865ab877ca9da702760",
+    "validation/closeout_20261119/spray_defer_media.json": "7b86921b20b6940c040d4d3777c09838642057bd298a3253497159d2535048d8",
+    "validation/closeout_20261119/spray_handoff_probe.json": "d3dfdd7133342646205279aa03865c0c10878e9bc42c7b6fbe94c0fa291a3837",
+    "validation/closeout_20261119/spray_natural_media.json": "fb9683e42af02399ca93ef8a1761d93eb6cb93db9d57195983b59604d800a775",
+    "validation/closeout_20261119/spray_last_blocked_media.json": "c5e2309a9144e4636661921d4f6e0b1e0aa014038453278ea6f67d2c9f3ffb93",
+    "validation/closeout_20261119/spray_last_latch_comparison.json": "bbfc23abf9d89c7cee8764dffda06465d5526d9a7e3029a51dbfa589450ec4a0",
+    "validation/closeout_20261119/spray_last_blocked/operator_attention_receipt.json": "6f003ceaa5f1778c00e340ee3950fdfe33bfb0b7397f805bfc9598ffd942dc61",
+    "validation/closeout_20261119/gui_operator_browser.json": "28bf1fa37d0b8d22a31976639cd8f4c285fa41e20acf502d398a1ee5d264d274",
+    "validation/closeout_20261119/candidate_gui_operator.json": "e98801267983220613e3afb0c74e8ab84f3d1d8dd88a0fd0ff628e831fe8286c",
+    "validation/closeout_20261119/spray_defer_native_replay.json": "335f1b8185ca189be2ec27ed73abedb114cc924778ce6bc07a258d8231b688e0",
+    "validation/closeout_20261119/protected_receipts.json": "a76cab368fd31d730573434cafd5c65a207117b19a414462968683aea8d20fb1",
+    "validation/closeout_20261119/candidate_gui_live.json": "34070c2dba0f2cfbb27351cb97d4003f931363124758d90e581bed8cd0977400",
+    "validation/closeout_20261119/spray_time_budget.json": "20127dc5617ae390b5ca51a97284e9d01cdc34aecc09622a48115db2e2ba6fbd",
+    "validation/closeout_20261119/player_browser.json": "c1dacecad494beede0facf6cfe4673792f4303b4346d71d0e380c0eadae53d32",
+    "validation/closeout_20261119/spray_full_diagnosis.json": "d7305d91f8b12f0801222dc539e48fdb311ada4d3769f3c53a77212ec20db51e",
+    "validation/closeout_20261119/historical_media_checks.json": "e5bc3b6af76e745b27fd3e2a0e03c2d3c18831b49a96928130743c1be98e629b"
+  },
+  "notes": [
+    "The combined task-and-recording verdict is independent of encoder and timeline quality.",
+    "Simulated durations cover the current Gazebo missions. They exclude offline replays, archived inspection videos and documentation time."
+  ]
+}

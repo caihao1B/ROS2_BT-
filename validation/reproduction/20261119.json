@@ -1,0 +1,217 @@
+{
+  "checked_utc": "2026-11-19T07:22:13.215408+00:00",
+  "scope": "Independent checkout on the same Ubuntu 24.04.5 development host, with host-installed Jazzy and Gazebo packages. Offline geometry, native builds and asset admission only. No simulator or new mission receipt.",
+  "base_commit": "9aff8337b7794f704c5556a973a5220e73f17808",
+  "restore": {
+    "bundle_parts": 90,
+    "verified_original_files": 27,
+    "frozen_database_bytes": 150085632,
+    "frozen_database_sha256": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82"
+  },
+  "base_checkout_before_supplement": {
+    "assets_passed": false,
+    "missing_effective_plan": "optimization_v2/plans/s17_full/manifest.json"
+  },
+  "additional_bound_inputs": [
+    {
+      "path": "optimization_v2/maps/s17_full/C_navigation.pgm",
+      "bytes": 1213696,
+      "sha256": "1741554be924f9f86f59001bf2837404d408c45abce12da5d0807236a28aaeef"
+    },
+    {
+      "path": "optimization_v2/maps/s17_full/C_navigation.yaml",
+      "bytes": 148,
+      "sha256": "e11a5729b632e9ba6a2595476d78690432a5f32246044f23f29547d17e135c15"
+    },
+    {
+      "path": "optimization_v2/maps/s17_full/C_occupancy.json",
+      "bytes": 33444,
+      "sha256": "3ba1d38294dfb4b5693a5e642cfbc8af33f445aaae8f7aafc362ae4bf9d5f083"
+    },
+    {
+      "path": "optimization_v2/maps/s17_full/C_occupancy_evidence.npz",
+      "bytes": 436956,
+      "sha256": "c05ea3dbdb1edd9f152c02db82ca1c1086a2b5730322275407db16d5cade4921"
+    },
+    {
+      "path": "optimization_v2/maps/s17_full/C_registered_cloud.ply",
+      "bytes": 924006,
+      "sha256": "18caa05e257c4a9e5bac4a1537349b717b858ea3fec8786651012ddc3541dd8c"
+    },
+    {
+      "path": "optimization_v2/maps/s17_full/manifest.json",
+      "bytes": 382941,
+      "sha256": "25062968d111015f9b26627a960d037349882175e48ed96b4e27c20a4ace33b0"
+    },
+    {
+      "path": "optimization_v2/plans/s17_full/execution_B1.json",
+      "bytes": 348665,
+      "sha256": "e99f51b3ad80303e3ac6fff5adb4f8d1109f99d2d3747fafb5d2267607c1ab09"
+    },
+    {
+      "path": "optimization_v2/plans/s17_full/execution_B2.json",
+      "bytes": 441529,
+      "sha256": "81754546503a8644942ddc121f1f903ec5383ef835519bd5a26711df8a04e1fd"
+    },
+    {
+      "path": "optimization_v2/plans/s17_full/execution_B3.json",
+      "bytes": 368199,
+      "sha256": "0acc05443bdfc50cac39890c20df7b3b11fd464b804a39233d9c9d5c40c4c3ba"
+    },
+    {
+      "path": "optimization_v2/plans/s17_full/manifest.json",
+      "bytes": 567,
+      "sha256": "8a010974d537d3beeaa2aa533db78138ba0337c0c0e8d6845a544f8266086471"
+    },
+    {
+      "path": "optimization_v2/plans/s17_full/mission_plan.json",
+      "bytes": 4994377,
+      "sha256": "fb785e0c839ef85618187b368821700b09c491a4c1e9b1cd8e8d5302af638410"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/mission.json",
+      "bytes": 2236859,
+      "sha256": "1bf3f7090caa57c76700f775c5b9dae74619a0f9adb0de820ed59449ec4fd524"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/A/partition/partition.json",
+      "bytes": 67578,
+      "sha256": "837e163b5063fce37d5486cfe821094dd0ff915b8e2c5e93f7bcda0cf71d6eef"
+    },
+    {
+      "path": "optimization_v2/three_tasks/editions/R03/B/partition/partition.json",
+      "bytes": 24022,
+      "sha256": "e04a8d75556fcb0f6191fc02b2fb95943c1b7dcbfbac70e8eecd6eb049354917"
+    }
+  ],
+  "checkout_assets": {
+    "check": "assets",
+    "passed": true,
+    "details": {
+      "frozen_files": 10,
+      "source_database": "b4d1a2d508ad9dc17205f77ba34ffb8a8e662e2f0f27a8f94119e7147df4bb82",
+      "atlas_regions": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_plan_files": 4,
+      "task_plan_revision": "1f131cc76780f99001e66a3c1eb03a92548a9ebd31d465593f6d092ca6571edf",
+      "rig_contracts": {
+        "spray": {
+          "map_id": "647148fb-975d-4efb-9c8d-8e5b5b8e42a9",
+          "rig_revision": "cc6e2fdd1c929e446bf85171f28d53c8da8bab022b667bcbfb3e8135ecb37bbc"
+        },
+        "inspection": {
+          "map_id": "647148fb-975d-4efb-9c8d-8e5b5b8e42a9",
+          "rig_revision": "fd50f48b23a3f62edad15546013889ad778bd0286b1def804a7f26b9b7bb30f0"
+        },
+        "mowing": {
+          "map_id": "647148fb-975d-4efb-9c8d-8e5b5b8e42a9",
+          "rig_revision": "8e1a4af258224f2e7139ed02ebfbabd358ae2b282722e596ddb06067198eec60"
+        }
+      }
+    }
+  },
+  "checkout_plans": {
+    "passed": true,
+    "geometry_checks": {
+      "source_world_unchanged": true,
+      "manifest_version": true,
+      "three_independent_tasks": true,
+      "not_execution_or_formal_credit": true,
+      "spray_plan_count": true,
+      "A1": true,
+      "A2": true,
+      "A3": true,
+      "point_services_exactly_once": true,
+      "mowing_plan_count": true,
+      "B1": true,
+      "B2": true,
+      "B3": true,
+      "inspection_plan_count": true,
+      "road": true,
+      "A_three_connected_partition_and_scope": true,
+      "B_three_connected_partition_and_scope": true
+    },
+    "routes": [
+      "A1",
+      "A2",
+      "A3",
+      "B1",
+      "B2",
+      "B3",
+      "road"
+    ],
+    "safe_mowing": {
+      "passed": true,
+      "execution_segments": 47,
+      "reference_original_segments": 34,
+      "original_reference_status": "PARTIAL",
+      "original_work_target_union_m2": 188.3918016929564,
+      "original_cluster_area_m2": 195.99438340335297,
+      "original_work_union_unchanged": true
+    }
+  },
+  "checkout_native": {
+    "check": "native",
+    "passed": true,
+    "details": {
+      "ompl_binary_sha256": "df020dcc8c888f3a51a88fe735f5db952a1994ffb4247b769774d0053203c5d5",
+      "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+      "shutdown_candidate_sha256": "974c8d425d25c0a5199bbde2ab54348695edd70a2813adcf430a3860c30e2372",
+      "system_library_sha256": {
+        "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0": "dfb8b2e4e5d5d945a9ebdd6645816e2297d535cd6a7e529bd66a2f6332142270",
+        "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8": "a348e4d28376de4e59ba58402142d0ce9e2abd7852ab76e721a34bafa569ef19"
+      }
+    }
+  },
+  "checkout_colcon": {
+    "packages": [
+      "mission_interfaces",
+      "project_baseline"
+    ],
+    "build_passed": true,
+    "tool_action_visible": true
+  },
+  "checksum_negative_cases": {
+    "altered_bytes_rejected": true,
+    "escaping_relative_path_rejected": true
+  },
+  "checkout_runtime": {
+    "passed": false,
+    "issues": [
+      "SHUTDOWN_SHIM_SCOPE",
+      "R09 recording predecessor: {\"passed\": false, \"stage\": \"R09\", \"reason\": \"NOT_RUN\"}"
+    ],
+    "nodes_checked": 8
+  },
+  "qualified_host_runtime_prerequisites": {
+    "passed": true,
+    "nodes_checked": 8
+  },
+  "fresh_OS_install_qualified": false,
+  "stage_credit": false,
+  "r01_history_index": {
+    "files": 1,
+    "indexed_historical_paths": 41331,
+    "unpacked_sha256": "b2dbd6250f76b3ba028ab6569945b88933a2d8b44dbb66f2afed25616fd34f00",
+    "compressed_bytes": 1724824,
+    "archive_sha256": "e53cdfe1d51f1c1496ca7bf595d7d4788d916981c5801644d1d90b46b1ba01ee",
+    "idempotent_restore_tested": true
+  },
+  "r01_contract_test": {
+    "actual_validators": [
+      "registry_r1.load_task",
+      "lifecycle_r1.validate"
+    ],
+    "scratch_copy": true,
+    "passed_cases": 4,
+    "profile_versions": {
+      "spray": "bedf6d987de3f501a944d672327c82c3a9fa374cb176b0f0fbef08c65451ceca",
+      "inspection": "0568c7be528193cb9740be2ff3f557dde2e82fac292cb4114dc33aa8766d292f",
+      "mowing": "6a95888ef06ffc844f189177038252ccbfae57ecacd8d34f56f7e4ab1d76fc32"
+    },
+    "scope": "Three unmodified profiles accept their original inputs. A relocated shim lock validates its ABI but all three original profiles reject the different shutdown file. Altered binary or system hash is rejected. No receipts created."
+  }
+}

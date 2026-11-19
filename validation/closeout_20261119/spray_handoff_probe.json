@@ -1,0 +1,262 @@
+{
+  "schema": "SPRAY-MANUAL-HANDOFF-PROBE/1",
+  "source_run": "spray_20261119_081218_417252",
+  "scope": "Offline real recorded full A1 measurements used by a separate handoff candidate. Exit codes below are actual candidate decision subprocess exits; whole Gazebo run with this new candidate remains unverified.",
+  "formal_credit": false,
+  "passed": true,
+  "independent_physical_stop_confirmed": true,
+  "actual_original": {
+    "confirmed": 22,
+    "original": 56,
+    "mission_passed": false,
+    "runtime_clean": false,
+    "observer_process_exit": 2,
+    "forced_processes": [],
+    "exception": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')"
+  },
+  "candidate_operator_request": {
+    "schema": "SPRAY-OPERATOR-HANDOFF/1",
+    "session": "spray_20261119_081218_417252",
+    "terminal": "HUMAN_REQUIRED",
+    "reason": "DOCKING_REALIGNMENT_EXHAUSTED",
+    "requested_t": 944.288,
+    "point": "point_10_20",
+    "original_key": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4:point_10_20",
+    "requested": 3.0,
+    "previous_confirmed": 0.0,
+    "residual": 3.0,
+    "quantity_uncertain": false,
+    "credit_added_by_this_handoff": 0.0,
+    "original_obligations": 56,
+    "completed_at_request": 22,
+    "mission_passed": false,
+    "automatic_resume": false,
+    "operator_action": "Inspect the pending target, localization and obstacle evidence; an explicit new task is required to resume."
+  },
+  "candidate_false_success_allowed": false,
+  "full_gazebo_handoff_validated": false,
+  "tests": [
+    {
+      "case": "archive_all_required_checks",
+      "expected_process_exit": 0,
+      "observed_process_exit": 0,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [],
+      "passed": true
+    },
+    {
+      "case": "body_stop_missing",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "fresh_gate_double_stop"
+      ],
+      "passed": true
+    },
+    {
+      "case": "tool_stop_missing",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "fresh_gate_double_stop"
+      ],
+      "passed": true
+    },
+    {
+      "case": "gate_over_age",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "fresh_gate_double_stop"
+      ],
+      "passed": true
+    },
+    {
+      "case": "nav_still_active",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "fresh_gate_double_stop"
+      ],
+      "passed": true
+    },
+    {
+      "case": "odometry_stale",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "measured_chassis_stop"
+      ],
+      "passed": true
+    },
+    {
+      "case": "body_measured_moving",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "measured_chassis_stop"
+      ],
+      "passed": true
+    },
+    {
+      "case": "body_measured_rotating",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "measured_chassis_stop"
+      ],
+      "passed": true
+    },
+    {
+      "case": "tool_flow_present",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "independent_tool_stopped"
+      ],
+      "passed": true
+    },
+    {
+      "case": "tool_still_turning",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "independent_tool_stopped"
+      ],
+      "passed": true
+    },
+    {
+      "case": "tool_feedback_old",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "independent_tool_stopped"
+      ],
+      "passed": true
+    },
+    {
+      "case": "wrong_tool_session",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "independent_tool_stopped"
+      ],
+      "passed": true
+    },
+    {
+      "case": "tool_feedback_unhealthy",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "independent_tool_stopped"
+      ],
+      "passed": true
+    },
+    {
+      "case": "unexpected_exception",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "known_operational_hold"
+      ],
+      "passed": true
+    },
+    {
+      "case": "credit_in_manual_request",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "old_key_retained"
+      ],
+      "passed": true
+    },
+    {
+      "case": "missing_stop_work_ack",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "explicit_stop_work_ack"
+      ],
+      "passed": true
+    },
+    {
+      "case": "ack_returned_abort",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "explicit_stop_work_ack"
+      ],
+      "passed": true
+    },
+    {
+      "case": "shutdown_failed_after_ack",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "no_unconfirmed_shutdown"
+      ],
+      "passed": true
+    },
+    {
+      "case": "pending_action_handle",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "no_live_navigation_or_tool_action"
+      ],
+      "passed": true
+    },
+    {
+      "case": "false_task_success",
+      "expected_process_exit": 2,
+      "observed_process_exit": 2,
+      "task_terminal": "HUMAN_REQUIRED",
+      "mission_passed": false,
+      "failed_checks": [
+        "task_remains_incomplete"
+      ],
+      "passed": true
+    }
+  ],
+  "native_source": "69da79c2818795830a9822929b99ddba1cec9e4d8be25c035f6376d4d62cb5bc",
+  "derived_worker_sha256": "6d57ad63120a5184c7bc48b828fa57eaf6cec38f8ca2eb0b7a7d2c522b1c8b29",
+  "probe_sha256": "58f94c3aa19f55d04437f3d8bf6d3adda66cce7739228f3c631f45c7b2854d9b",
+  "input_sha256": "1c75bb9c4d9623e4efb7e3c4b7aa2fd7ac96fa6f200c0b47c2aac062136859db"
+}

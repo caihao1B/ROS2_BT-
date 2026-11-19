@@ -1,0 +1,22 @@
+{
+  "jobs": {
+    "": {
+      "dose": 0.0,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 0
+    },
+    "45ea560abef9d8236dbbd31557f740d43d1d32608f722471f2794b531bfaefdd:point_11_20": {
+      "dose": 3.225666666665999,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 68
+    }
+  }
+}

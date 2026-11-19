@@ -1,0 +1,101 @@
+{
+  "schema": "SPRAY-PRECISION-AND-NATIVE-DEFER-REPLAY/1",
+  "passed": true,
+  "checks": {
+    "actual_two_exhausted_precision_motions": true,
+    "fresh_formal_terminal_pose": true,
+    "native_wait": true,
+    "native_replan": true,
+    "native_defer": true,
+    "negative_localization_hold": true,
+    "negative_wrong_version_stop": true,
+    "clean_private_process": true
+  },
+  "formal_credit": false,
+  "gazebo_precision_defer_demonstrated": false,
+  "scope_zh": "以正式 A1 现场日志复算真实精停耗尽，并在独立 DDS 域将随后实体障碍短例随传感器得到的 BT 上下文逐条送入原生 C++ 监督器。两组时序单独记录，未声称正式运行在线产生 DEFER，也未重放车辆动力学。",
+  "formal_session": "spray_20261119_081218_417252",
+  "formal_point": "point_10_20",
+  "formal_stop_sim_s": 944.288,
+  "formal_last_fused": {
+    "t": 944.28,
+    "valid": true,
+    "reason": "MAP_AND_GNSS_AGREE"
+  },
+  "formal_gate": {
+    "raw_nav_v": 0.0,
+    "raw_nav_w": 0.0,
+    "t": 944.28,
+    "allowed": false,
+    "mode": "STOP",
+    "v": 0.0,
+    "w": 0.0,
+    "reasons": [
+      "NAV_COMMAND_STALE"
+    ],
+    "stopped": true,
+    "tool_stopped": true,
+    "nav_idle": true,
+    "progress_m": 92.78969030265785
+  },
+  "exhaustion": {
+    "eligible": true,
+    "attempts": [
+      {
+        "attempt": 0,
+        "sent_t": 926.674,
+        "finished_t": 928.686,
+        "path_sha256": "5c26c73216fa85080afe25890e32639b33cbfde0dd0a202a7bf12c0710e8850a",
+        "status": null,
+        "error_code": null
+      },
+      {
+        "attempt": 1,
+        "sent_t": 932.764,
+        "finished_t": 934.788,
+        "path_sha256": "5aee99d9898df2bff870a70daa0bc59c5cdf047eec1ac7acaff326919ce9c57f",
+        "status": null,
+        "error_code": null
+      }
+    ],
+    "last_stopped_observation": {
+      "samples": 74,
+      "span_s": 2.189999999999941,
+      "max_gap_s": 0.03200000000003911,
+      "median_distance_m": 0.03730049163703174,
+      "latest_distance_m": 0.03636313487204156,
+      "position_scatter_p95_m": 0.0014495145476934805
+    }
+  },
+  "real_interaction_session": "spray_defer_20261119_085422_132494",
+  "real_interaction_stage": "COARSE_NAVIGATION",
+  "recorded_contexts": 195,
+  "private_ros_domain": 151,
+  "native_first_defer": {
+    "t": 80.944,
+    "action": "DEFER",
+    "reason_code": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL",
+    "dispatch_id": 12,
+    "context_sequence": 2698,
+    "stopped_confirmation": true,
+    "blocked_duration_s": 12.004000000000005
+  },
+  "negative_controls": {
+    "loss": "WAIT",
+    "version": "STOP"
+  },
+  "bundle_sha256": "5c076fa7886db70ddb81b45374baaddeb736d6b48bab9b9a92ffe85e1072f36c",
+  "bindings": {
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission_events.jsonl": "ca4d9838cb7173d34c3ca1530a92cc739772739786820f55a7ecb7396e6b8acd",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission_result.json": "4583153d38bd29b5c771f540de2e21ea4b63c4a99cc35e877ec45aaaa7101bf3",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission.json": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/reference/reference.jsonl": "bfb34841c615024317f866d650fd8037295fad4614cd0694a269ebe83d4ed8d4",
+    "optimization_v2/three_tasks/results/experiments/spray_defer/spray_defer_20261119_085422_132494/mission_events.jsonl": "bfe8a7ac70b19adb464b9f798630dd387956e3a3fdbe255dc713e7f9047886a7",
+    "optimization_v2/three_tasks/results/experiments/spray_defer/spray_defer_20261119_085422_132494/bt.json": "06d67b6734323e168dde2a61e14dd71b5b1022c48de5b6d7e566b4f3241550a2",
+    "optimization_v2/three_tasks/results/experiments/spray_defer/spray_defer_20261119_085422_132494/decisions.jsonl": "0ec273fd94275cc865fa045cb479c256f83a8f67f32114601f45d92cf85bc96a",
+    "optimization_v2/three_tasks/build/r10_spray_bt/r10_spray_supervisor": "ffaf6fc7458c4b26a2895cab23bc88fedde31891dcfd1f16b82bb25306dd9ac8",
+    "optimization_v2/three_tasks/editions/R06/common.xml": "5d4b111d62ccb8a846e2eb3591c8243562be2527b18adbb4d36e7c2c395b2a1e",
+    "optimization_v2/ws/src/task_platform/scripts/probe_spray_defer_native_r10.py": "86a44b7ea063d517f0a6ac058ebb6d16cd26f7736ec1e0f2ca3944b711466945",
+    "optimization_v2/ws/src/task_platform/scripts/spray_defer_policy_r10.py": "511fd0d28c917fa4d9496988f89b0d7a994f5459d011ed51441e9e837cdf05c7"
+  }
+}

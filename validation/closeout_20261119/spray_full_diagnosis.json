@@ -1,0 +1,904 @@
+{
+  "schema": "A1-FULL-TERMINAL-AUDIT/1",
+  "session": "spray_20261119_081218_417252",
+  "record_source_revision": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+  "time_axis": "simulator seconds",
+  "original_points": 56,
+  "selected": 56,
+  "confirmed": 22,
+  "mission_passed": false,
+  "terminal": {
+    "sim_s": 944.288,
+    "final_receipt_sim_s": 944.304,
+    "budget_s": 1800,
+    "delta_to_budget_s": 855.712,
+    "wall_s": 1982.1440556019998,
+    "wall_budget_s": 7290,
+    "last_target": "point_10_20",
+    "raw_exception": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+    "classification": "DOCKING_ADMISSION_OR_MOTION_FAILURE",
+    "explanation_zh": "任务执行器在到点精停阶段终止，精度、运动或准入原因以原异常为准。",
+    "last_confirmed": {
+      "t": 902.062,
+      "point": "point_11_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0720000000000027
+    },
+    "actual_final_gate": {
+      "t": 944.28,
+      "mode": "STOP",
+      "v": 0.0,
+      "w": 0.0,
+      "stopped": true,
+      "tool_stopped": true,
+      "nav_idle": true
+    },
+    "final_runtime_clean": false
+  },
+  "quantitative_checks": {
+    "map_xy_rmse_m": 0.04285845113073849,
+    "unexpected_contacts": {},
+    "failed": [
+      "runtime_clean",
+      "mission_completed",
+      "feedback_and_independent_physics_agree"
+    ]
+  },
+  "task_rate": {
+    "first_navigation_sim_s": 32.496,
+    "mean_confirmation_interval_s": 41.053,
+    "median_confirmation_interval_s": 41.548,
+    "required_mean_interval_after_first_confirmation_s": 32.001,
+    "longest_confirmed_intervals": [
+      {
+        "point": "point_8_15",
+        "sim_s": 60.064
+      },
+      {
+        "point": "point_9_16",
+        "sim_s": 52.828
+      },
+      {
+        "point": "point_10_19",
+        "sim_s": 51.486
+      },
+      {
+        "point": "point_10_18",
+        "sim_s": 51.028
+      }
+    ],
+    "duration_by_overlay_phase_s": {
+      "NAVIGATING": 682.876,
+      "STOPPING": 139.41,
+      "WORKING": 89.25,
+      "OBSERVATION_HOLD": 0.252,
+      "STARTUP": 0.004
+    },
+    "duration_by_bt_s": [
+      {
+        "action": "EXECUTE",
+        "reason": "NEXT_OBLIGATION",
+        "duration_s": 905.766
+      },
+      {
+        "action": "CANCEL",
+        "reason": "NEXT_OBLIGATION",
+        "duration_s": 4.21
+      },
+      {
+        "action": "CANCEL",
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "duration_s": 1.64
+      },
+      {
+        "action": "WAIT",
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "duration_s": 0.176
+      }
+    ]
+  },
+  "last_site_revalidations": [],
+  "incident_events": [
+    {
+      "t": 876.636,
+      "event": "NAV_GOAL",
+      "point": "point_11_20",
+      "attempt": 0
+    },
+    {
+      "t": 894.66,
+      "event": "NAV_SUCCESS",
+      "point": "point_11_20"
+    },
+    {
+      "t": 897.96,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_11_20",
+      "attempt": 0
+    },
+    {
+      "t": 902.062,
+      "event": "TOOL_RESULT",
+      "point": "point_11_20",
+      "reason": "CONFIRMED_WORK",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0720000000000027
+    },
+    {
+      "t": 902.102,
+      "event": "NAV_GOAL",
+      "point": "point_10_20",
+      "attempt": 0
+    },
+    {
+      "t": 923.34,
+      "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+      "point": "point_10_20",
+      "attempt": 0
+    },
+    {
+      "t": 923.34,
+      "event": "NAV_CANCEL_ACK"
+    },
+    {
+      "t": 926.67,
+      "event": "DOCKING_STABLE_OFFSET",
+      "point": "point_10_20"
+    },
+    {
+      "t": 926.67,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_20",
+      "attempt": 0
+    },
+    {
+      "t": 926.674,
+      "event": "LOCAL_DOCK_GOAL",
+      "point": "point_10_20",
+      "attempt": 0
+    },
+    {
+      "t": 928.684,
+      "event": "NAV_CANCEL_ACK"
+    },
+    {
+      "t": 928.686,
+      "event": "LOCAL_DOCK_NAV_FAILED",
+      "point": "point_10_20"
+    },
+    {
+      "t": 932.76,
+      "event": "DOCKING_STABLE_OFFSET",
+      "point": "point_10_20"
+    },
+    {
+      "t": 932.76,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_20",
+      "attempt": 1
+    },
+    {
+      "t": 932.764,
+      "event": "LOCAL_DOCK_GOAL",
+      "point": "point_10_20",
+      "attempt": 1
+    },
+    {
+      "t": 934.786,
+      "event": "NAV_CANCEL_ACK"
+    },
+    {
+      "t": 934.788,
+      "event": "LOCAL_DOCK_NAV_FAILED",
+      "point": "point_10_20"
+    },
+    {
+      "t": 944.288,
+      "event": "DOCKING_SETTLED_CHECK",
+      "point": "point_10_20",
+      "attempt": 2
+    },
+    {
+      "t": 944.288,
+      "event": "TASK_STOP",
+      "error": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')"
+    },
+    {
+      "t": 944.304,
+      "event": "FINAL_TOOL_STOP",
+      "state": "STOPPED"
+    }
+  ],
+  "bt_transitions_before_stop": [
+    {
+      "t": 755.102,
+      "action": "CANCEL",
+      "reason_code": "NEXT_OBLIGATION",
+      "manual_latched": false
+    },
+    {
+      "t": 755.404,
+      "action": "EXECUTE",
+      "reason_code": "NEXT_OBLIGATION",
+      "manual_latched": false
+    },
+    {
+      "t": 841.0,
+      "action": "CANCEL",
+      "reason_code": "PERCEPTION_ADMISSION_WAIT",
+      "manual_latched": false
+    },
+    {
+      "t": 841.126,
+      "action": "CANCEL",
+      "reason_code": "NEXT_OBLIGATION",
+      "manual_latched": false
+    },
+    {
+      "t": 841.242,
+      "action": "EXECUTE",
+      "reason_code": "NEXT_OBLIGATION",
+      "manual_latched": false
+    },
+    {
+      "t": 876.518,
+      "action": "CANCEL",
+      "reason_code": "PERCEPTION_ADMISSION_WAIT",
+      "manual_latched": false
+    },
+    {
+      "t": 876.578,
+      "action": "WAIT",
+      "reason_code": "PERCEPTION_ADMISSION_WAIT",
+      "manual_latched": false
+    },
+    {
+      "t": 876.636,
+      "action": "EXECUTE",
+      "reason_code": "NEXT_OBLIGATION",
+      "manual_latched": false
+    }
+  ],
+  "sensor_and_supervisor_windows": {
+    "45_to_5_s_before": {
+      "interval_sim_s": [
+        899.288,
+        939.288
+      ],
+      "observations": {
+        "raw_gnss": {
+          "counts": {
+            "True|CALIBRATED_ENU": 200
+          },
+          "last": {
+            "t": 939.2,
+            "valid": true,
+            "reason": "CALIBRATED_ENU",
+            "mode": "fixed"
+          }
+        },
+        "raw_map": {
+          "counts": {
+            "False|MAP_MATCH_REJECTED": 64,
+            "False|TRACKING_CORRECTION_BOUND": 1,
+            "True|HELD_OUT_SURFACE_MATCH": 134,
+            "False|GNSS_MAP_INNOVATION_OR_FRESHNESS": 1
+          },
+          "last": {
+            "t": 939.2,
+            "valid": true,
+            "reason": "HELD_OUT_SURFACE_MATCH",
+            "received_t": 939.248,
+            "surface_points": 337,
+            "surface_overlap": 0.9910979228486647,
+            "surface_p95_m": 0.20174911761609937,
+            "gnss_innovation_m": 0.007635536505301305,
+            "gnss_nis": 0.01714747580111437
+          }
+        },
+        "fused_reference": {
+          "counts": {
+            "True|MAP_AND_GNSS_AGREE": 1169,
+            "True|MAP_STALE_BOUNDED_HEADING": 164
+          },
+          "last": {
+            "t": 939.27,
+            "valid": true,
+            "reason": "MAP_AND_GNSS_AGREE",
+            "planning_valid": false,
+            "localization_epoch": 0,
+            "supervisor": {
+              "state": "TRUSTED_MAP",
+              "source": "MAP",
+              "reason": "MAP_AND_GNSS_AGREE",
+              "navigation_allowed": true,
+              "map_reason": "GEOMETRIC_MATCH",
+              "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+              "map_age": 0.2459999999999809,
+              "gnss_age": 0.045999999999935426,
+              "innovation_m": 0.0017246403604151573,
+              "innovation_limit_m": 0.15,
+              "nis": 0.000874818933161091,
+              "nis_limit": 9.21,
+              "jump_count": 0,
+              "plan_revalidation_required": false,
+              "recovery_ready": false,
+              "recovery_count": 0,
+              "gps_count": 723
+            }
+          }
+        },
+        "local_icp": {
+          "counts": {
+            "True|lost=False": 141,
+            "False|lost=False": 23
+          },
+          "last": {
+            "t": 939.0,
+            "valid": true,
+            "pose_valid": true,
+            "increment_valid": true,
+            "stationary_conflict": false,
+            "lost": false,
+            "inlier_ratio": 0.7108433842658997,
+            "correspondences": 413
+          }
+        },
+        "risk_gate": {
+          "counts": {
+            "True|OBSERVED_GEOMETRY_AVAILABLE": 400
+          },
+          "last": {
+            "t": 939.2,
+            "valid": true,
+            "reason": "OBSERVED_GEOMETRY_AVAILABLE",
+            "boundary_valid": true,
+            "unknown_cells": 26997,
+            "terrain": {
+              "t": 939.1,
+              "valid": true,
+              "reason": "OBSERVED_GEOMETRY_AVAILABLE",
+              "odom_delta_s": 0.011999999999943611
+            }
+          }
+        },
+        "actuator_gate": {
+          "counts": {
+            "STOP|NAV_COMMAND_STALE,TOOL_NOT_STOPPED": 93,
+            "STOP|NAV_COMMAND_STALE": 390,
+            "ARM|": 3,
+            "DRIVE|": 839,
+            "STOP|": 8
+          },
+          "last": {
+            "t": 939.27,
+            "mode": "STOP",
+            "reasons": [
+              "NAV_COMMAND_STALE"
+            ],
+            "v": 0.0,
+            "w": 0.0,
+            "nav_idle": true,
+            "stopped": true,
+            "tool_stopped": true,
+            "progress_m": 92.7811964983245
+          }
+        },
+        "behavior_tree": {
+          "counts": {
+            "EXECUTE|NEXT_OBLIGATION": 193
+          },
+          "last": {
+            "t": 939.218,
+            "action": "EXECUTE",
+            "reason_code": "NEXT_OBLIGATION",
+            "source": {
+              "blocked": false,
+              "localized": true,
+              "loc_age": 0.030000000000086402,
+              "reference_valid": true,
+              "commanded_motion": false,
+              "nav_idle": true,
+              "remaining_s": 860.79
+            }
+          }
+        },
+        "near_sensor_units": {
+          "counts": {
+            "front,rear,left,right": 400
+          },
+          "last": {
+            "t": 939.2,
+            "points": 8040,
+            "sources": [
+              "front",
+              "rear",
+              "left",
+              "right"
+            ],
+            "odom_motion_compensated": true
+          }
+        }
+      }
+    },
+    "final_5_s": {
+      "interval_sim_s": [
+        939.288,
+        944.288
+      ],
+      "observations": {
+        "raw_gnss": {
+          "counts": {
+            "True|CALIBRATED_ENU": 25
+          },
+          "last": {
+            "t": 944.2,
+            "valid": true,
+            "reason": "CALIBRATED_ENU",
+            "mode": "fixed"
+          }
+        },
+        "raw_map": {
+          "counts": {
+            "True|HELD_OUT_SURFACE_MATCH": 25
+          },
+          "last": {
+            "t": 944.2,
+            "valid": true,
+            "reason": "HELD_OUT_SURFACE_MATCH",
+            "received_t": 944.272,
+            "surface_points": 361,
+            "surface_overlap": 0.8060941828254847,
+            "surface_p95_m": 0.2918233154355345,
+            "gnss_innovation_m": 0.07901652394847579,
+            "gnss_nis": 1.8363561932058963
+          }
+        },
+        "fused_reference": {
+          "counts": {
+            "True|MAP_AND_GNSS_AGREE": 167
+          },
+          "last": {
+            "t": 944.28,
+            "valid": true,
+            "reason": "MAP_AND_GNSS_AGREE",
+            "planning_valid": false,
+            "localization_epoch": 0,
+            "supervisor": {
+              "state": "TRUSTED_MAP",
+              "source": "MAP",
+              "reason": "MAP_AND_GNSS_AGREE",
+              "navigation_allowed": true,
+              "map_reason": "GEOMETRIC_MATCH",
+              "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+              "map_age": 0.2740000000000009,
+              "gnss_age": 0.07399999999995543,
+              "innovation_m": 0.02241015061657888,
+              "innovation_limit_m": 0.15,
+              "nis": 0.14771025019123318,
+              "nis_limit": 9.21,
+              "jump_count": 0,
+              "plan_revalidation_required": false,
+              "recovery_ready": false,
+              "recovery_count": 0,
+              "gps_count": 748
+            }
+          }
+        },
+        "local_icp": {
+          "counts": {
+            "True|lost=False": 16,
+            "False|lost=False": 3
+          },
+          "last": {
+            "t": 944.2,
+            "valid": true,
+            "pose_valid": true,
+            "increment_valid": true,
+            "stationary_conflict": false,
+            "lost": false,
+            "inlier_ratio": 0.6996466517448425,
+            "correspondences": 396
+          }
+        },
+        "risk_gate": {
+          "counts": {
+            "True|OBSERVED_GEOMETRY_AVAILABLE": 50
+          },
+          "last": {
+            "t": 944.2,
+            "valid": true,
+            "reason": "OBSERVED_GEOMETRY_AVAILABLE",
+            "boundary_valid": true,
+            "unknown_cells": 27010,
+            "terrain": {
+              "t": 944.1,
+              "valid": true,
+              "reason": "OBSERVED_GEOMETRY_AVAILABLE",
+              "odom_delta_s": 0.009999999999990905
+            }
+          }
+        },
+        "actuator_gate": {
+          "counts": {
+            "STOP|NAV_COMMAND_STALE": 167
+          },
+          "last": {
+            "t": 944.28,
+            "mode": "STOP",
+            "reasons": [
+              "NAV_COMMAND_STALE"
+            ],
+            "v": 0.0,
+            "w": 0.0,
+            "nav_idle": true,
+            "stopped": true,
+            "tool_stopped": true,
+            "progress_m": 92.78969030265785
+          }
+        },
+        "behavior_tree": {
+          "counts": {
+            "EXECUTE|NEXT_OBLIGATION": 24
+          },
+          "last": {
+            "t": 944.214,
+            "action": "EXECUTE",
+            "reason_code": "NEXT_OBLIGATION",
+            "source": {
+              "blocked": false,
+              "localized": true,
+              "loc_age": 0.030000000000086402,
+              "reference_valid": true,
+              "commanded_motion": false,
+              "nav_idle": true,
+              "remaining_s": 855.81
+            }
+          }
+        },
+        "near_sensor_units": {
+          "counts": {
+            "front,rear,left,right": 50
+          },
+          "last": {
+            "t": 944.2,
+            "points": 8016,
+            "sources": [
+              "front",
+              "rear",
+              "left",
+              "right"
+            ],
+            "odom_motion_compensated": true
+          }
+        }
+      }
+    },
+    "after_task_stop": {
+      "interval_sim_s": [
+        944.288,
+        947.288
+      ],
+      "observations": {
+        "raw_gnss": {
+          "counts": {
+            "True|CALIBRATED_ENU": 13
+          },
+          "last": {
+            "t": 946.8,
+            "valid": true,
+            "reason": "CALIBRATED_ENU",
+            "mode": "fixed"
+          }
+        },
+        "raw_map": {
+          "counts": {
+            "False|MAP_MATCH_REJECTED": 5,
+            "True|HELD_OUT_SURFACE_MATCH": 8
+          },
+          "last": {
+            "t": 946.8,
+            "valid": true,
+            "reason": "HELD_OUT_SURFACE_MATCH",
+            "received_t": 946.824,
+            "surface_points": 368,
+            "surface_overlap": 0.8505434782608695,
+            "surface_p95_m": 0.29824242722701705,
+            "gnss_innovation_m": 0.06851854374445442,
+            "gnss_nis": 1.380820834370798
+          }
+        },
+        "fused_reference": {
+          "counts": {
+            "True|MAP_AND_GNSS_AGREE": 84
+          },
+          "last": {
+            "t": 946.8,
+            "valid": true,
+            "reason": "MAP_AND_GNSS_AGREE",
+            "planning_valid": false,
+            "localization_epoch": 0,
+            "supervisor": {
+              "state": "TRUSTED_MAP",
+              "source": "MAP",
+              "reason": "MAP_AND_GNSS_AGREE",
+              "navigation_allowed": true,
+              "map_reason": "GEOMETRIC_MATCH",
+              "gnss_reason": "FIXED_AND_INNOVATION_VALID",
+              "map_age": 0.17399999999997817,
+              "gnss_age": 0.17399999999997817,
+              "innovation_m": 0.04271113977135334,
+              "innovation_limit_m": 0.15,
+              "nis": 0.5365416060452604,
+              "nis_limit": 9.21,
+              "jump_count": 0,
+              "plan_revalidation_required": false,
+              "recovery_ready": false,
+              "recovery_count": 0,
+              "gps_count": 760
+            }
+          }
+        },
+        "local_icp": {
+          "counts": {
+            "True|lost=False": 13
+          },
+          "last": {
+            "t": 946.8,
+            "valid": true,
+            "pose_valid": true,
+            "increment_valid": true,
+            "stationary_conflict": false,
+            "lost": false,
+            "inlier_ratio": 0.7061946988105774,
+            "correspondences": 399
+          }
+        },
+        "risk_gate": {
+          "counts": {
+            "True|OBSERVED_GEOMETRY_AVAILABLE": 23,
+            "False|OBSERVATION_OR_BOUNDARY_STOP": 1
+          },
+          "last": {
+            "t": 946.7,
+            "valid": true,
+            "reason": "OBSERVED_GEOMETRY_AVAILABLE",
+            "boundary_valid": true,
+            "unknown_cells": 26995,
+            "terrain": {
+              "t": 946.6,
+              "valid": true,
+              "reason": "OBSERVED_GEOMETRY_AVAILABLE",
+              "odom_delta_s": 0.011999999999943611
+            }
+          }
+        },
+        "actuator_gate": {
+          "counts": {
+            "STOP|NAV_COMMAND_STALE": 6,
+            "STOP|TASK_STALE,NAV_COMMAND_STALE": 65,
+            "STOP|PERCEPTION,TASK_STALE,NAV_COMMAND_STALE": 4,
+            "STOP|TASK_STALE": 1,
+            "STOP|TASK_STALE,TOOL_NOT_STOPPED": 3,
+            "STOP|TASK_STALE,NAV_COMMAND_STALE,TOOL_NOT_STOPPED": 2,
+            "STOP|TASK_STALE,CLOCK,NAV_COMMAND_STALE,TOOL_NOT_STOPPED": 1
+          },
+          "last": {
+            "t": 946.824,
+            "mode": "STOP",
+            "reasons": [
+              "TASK_STALE",
+              "CLOCK",
+              "NAV_COMMAND_STALE",
+              "TOOL_NOT_STOPPED"
+            ],
+            "v": 0.0,
+            "w": 0.0,
+            "nav_idle": false,
+            "stopped": true,
+            "tool_stopped": false,
+            "progress_m": 92.79353308016658
+          }
+        },
+        "behavior_tree": {
+          "counts": {
+            "EXECUTE|NEXT_OBLIGATION": 7,
+            "CANCEL|PERCEPTION_ADMISSION_WAIT": 1,
+            "CANCEL|NEXT_OBLIGATION": 4,
+            "STOP|INPUT_STALE": 1
+          },
+          "last": {
+            "t": 946.824,
+            "action": "STOP",
+            "reason_code": "INPUT_STALE",
+            "source": {
+              "blocked": false,
+              "localized": true,
+              "loc_age": 0.029999999999972715,
+              "reference_valid": true,
+              "commanded_motion": false,
+              "nav_idle": false,
+              "remaining_s": 853.2
+            }
+          }
+        },
+        "near_sensor_units": {
+          "counts": {
+            "front,rear,left,right": 25
+          },
+          "last": {
+            "t": 946.7,
+            "points": 8025,
+            "sources": [
+              "front",
+              "rear",
+              "left",
+              "right"
+            ],
+            "odom_motion_compensated": true
+          }
+        }
+      }
+    }
+  },
+  "final_bias_input": {
+    "epoch": 0,
+    "stationary_bias_samples": 599,
+    "gyro_bias_estimate": [
+      0.0011673863152385387,
+      -0.0012289579096287713,
+      -0.0019448916280571092
+    ],
+    "startup_yaw_bias": 0.002123587486689203,
+    "stationary_updates": 45100,
+    "incremental_yaw_bias": -0.004068479114746312
+  },
+  "source_sha256": {
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/global_sources/sources.jsonl": "b985ad807f33ce7326ad03cea0b39911534aaadfc27c676522b8850e01758371",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/reference/reference.jsonl": "bfb34841c615024317f866d650fd8037295fad4614cd0694a269ebe83d4ed8d4",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/icp_gate/quality.jsonl": "d65ac513957e50d8b525128a5e50d2b2675007389f9a02cd2a748c24d39a2508",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/risk/risk.jsonl": "a5befc6318a89b7a0bcff90c4a199f1153dfb6f60c24327ff7ddd08c2576a6c8",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/control/gate.jsonl": "b3cd65aade55ab8e70b5c9db4d71997599ba4c6f5330001ae12c950afc9cbfcb",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/decisions.jsonl": "989fabb0db9d12056d3f3c9272b49fb8182dc28d6d1c3d6a44a95f190d0dcf75",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/near/near.jsonl": "7e5e2744291849f94dd6fc8e147c8c359e0ae150ce9967e41bf4143e79500eb1",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/spec.json": "058d69509c0c009091250aa9173b706d0a7a0f74610be9647333c9e4ff9f16f5",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission.json": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission_result.json": "4583153d38bd29b5c771f540de2e21ea4b63c4a99cc35e877ec45aaaa7101bf3",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/mission_events.jsonl": "ca4d9838cb7173d34c3ca1530a92cc739772739786820f55a7ecb7396e6b8acd",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/runtime.json": "c22bfb085e22ff11bd3a2c5c6a8a3685e171dfe3d4eb40b2deb457b48b945d9d",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/recording_acceptance.json": "783cfa3e28fe785b337287246e859e9bb20bde93e1ed344b373cfd0ed7bbd95b",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/analysis_spray_r10.json": "cc2a4308d66d1cfb08ea56169ae4e1494e1707f2a98c4e48146d7ca27a2decdf",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/video/frames.jsonl": "4bf749c1996f6b3dee03558832a638aae767a2467d16586b489eaa34ab32681b",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/inputs/result.json": "9c46c3ff925876c172dc0926546f1fcfcf0f1162b4a9d19315252bc44ee459e7",
+    "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252/controller_server.log": "7915330c210b68e64bfd0d532038adc692f8fbd4b2b6ace3587d5b4b5badb607",
+    "delivery/release_20261119/observer/spray_20261119_081218_417252/private_map_samples.jsonl": "35e9e6f8a07a5b16c50f4d5a76532534023323f9462bb39ea66f8abc21773f36"
+  },
+  "interpretation": "Each source count is a message count in that time window, not a duration or independent trial. A health/stop snapshot after TASK_STOP may reflect shutdown. Camera phase intervals use consecutive recorded simulation stamps and BT intervals use the latest published decision. Overlap between the two totals is intentional.",
+  "completed_job_audit": {
+    "physically_verified": 22,
+    "present": 22,
+    "original": 56,
+    "maximum_physical_error_m": 0.04222142327378491,
+    "whole_cluster_check": false
+  },
+  "terminal_dock_evidence": {
+    "actual_dock_proposals": [
+      {
+        "t": 926.674,
+        "path_sha256": "5c26c73216fa85080afe25890e32639b33cbfde0dd0a202a7bf12c0710e8850a",
+        "correction_m": 0.043941954819183934
+      },
+      {
+        "t": 932.764,
+        "path_sha256": "5aee99d9898df2bff870a70daa0bc59c5cdf047eec1ac7acaff326919ce9c57f",
+        "correction_m": 0.035045060607760935
+      }
+    ],
+    "action_failures_s": [
+      928.686,
+      934.788
+    ],
+    "stopped_windows": [
+      {
+        "t": 926.67,
+        "attempt": 0,
+        "distance_m": 0.042621145412144,
+        "stability": {
+          "samples": 62,
+          "span_s": 1.8299999999999272,
+          "max_gap_s": 0.030000000000086402,
+          "median_distance_m": 0.043941954819183934,
+          "latest_distance_m": 0.042621145412144,
+          "position_scatter_p95_m": 0.004058193623588057
+        },
+        "admitted": false
+      },
+      {
+        "t": 932.76,
+        "attempt": 1,
+        "distance_m": 0.04648189079536932,
+        "stability": {
+          "samples": 74,
+          "span_s": 2.189999999999941,
+          "max_gap_s": 0.03200000000003911,
+          "median_distance_m": 0.035045060607760935,
+          "latest_distance_m": 0.04648189079536932,
+          "position_scatter_p95_m": 0.01415204801868578
+        },
+        "admitted": false
+      },
+      {
+        "t": 944.288,
+        "attempt": 2,
+        "distance_m": 0.03636313487204156,
+        "stability": {
+          "samples": 74,
+          "span_s": 2.189999999999941,
+          "max_gap_s": 0.03200000000003911,
+          "median_distance_m": 0.03730049163703174,
+          "latest_distance_m": 0.03636313487204156,
+          "position_scatter_p95_m": 0.0014495145476934805
+        },
+        "admitted": false
+      }
+    ],
+    "formal_gates": {
+      "navigation_goal_m": 0.025,
+      "median_distance_m": 0.035,
+      "latest_distance_m": 0.045,
+      "scatter_p95_m": 0.015,
+      "span_s": 1.8,
+      "max_observation_wait_s": 8.0
+    },
+    "controller_log_tail": [
+      "[ERROR] [1795077905.158009850] [controller_server]: Controller patience exceeded",
+      "[WARN] [1795077905.158110142] [controller_server]: [follow_path] [ActionServer] Aborting handle."
+    ],
+    "latest_continuous_collision_warnings_before_abort": 48,
+    "sampled_private_current_footprints": [
+      {
+        "trigger_t": 926.68,
+        "grid_t": 926.684,
+        "costs": {
+          "SUB_LETHAL": 28
+        }
+      },
+      {
+        "trigger_t": 927.446,
+        "grid_t": 927.45,
+        "costs": {
+          "SUB_LETHAL": 28
+        }
+      },
+      {
+        "trigger_t": 928.212,
+        "grid_t": 928.23,
+        "costs": {
+          "SUB_LETHAL": 28
+        }
+      },
+      {
+        "trigger_t": 932.746,
+        "grid_t": 932.778,
+        "costs": {
+          "SUB_LETHAL": 28
+        }
+      },
+      {
+        "trigger_t": 933.512,
+        "grid_t": 933.542,
+        "costs": {
+          "SUB_LETHAL": 28
+        }
+      },
+      {
+        "trigger_t": 934.28,
+        "grid_t": 934.296,
+        "costs": {
+          "SUB_LETHAL": 28
+        }
+      }
+    ],
+    "interpretation_zh": "局部跟踪器在两次精停微调中报碰撞并耗尽耐心。异步查询的私有图只覆盖当时车身轮廓，不能反推预测弧上实际触发的栅格。末次停止窗口中位距离独立于截点处的定位可用标志。"
+  }
+}

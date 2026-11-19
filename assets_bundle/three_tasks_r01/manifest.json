@@ -1,0 +1,20 @@
+{
+  "schema": "ROBOT-RELEASE-ASSETS/1",
+  "scope": "Unmodified R01 baseline input, names and hashes only. Stage admission still requires its own local evidence.",
+  "files": [
+    {
+      "path": "optimization_v2/three_tasks/baseline/frozen_s01_s18.json",
+      "size": 7034293,
+      "sha256": "b2dbd6250f76b3ba028ab6569945b88933a2d8b44dbb66f2afed25616fd34f00",
+      "mode": 420
+    }
+  ],
+  "parts": [
+    {
+      "path": "assets_bundle/three_tasks_r01/history-index.tar.gz",
+      "size": 1724824,
+      "sha256": "e53cdfe1d51f1c1496ca7bf595d7d4788d916981c5801644d1d90b46b1ba01ee"
+    }
+  ],
+  "archive_sha256": "e53cdfe1d51f1c1496ca7bf595d7d4788d916981c5801644d1d90b46b1ba01ee"
+}

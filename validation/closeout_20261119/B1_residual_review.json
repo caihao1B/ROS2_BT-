@@ -1,0 +1,159 @@
+{
+  "session": "mowing_20261119_072044_764057",
+  "task": "mowing",
+  "case": "nominal",
+  "cluster": "B1",
+  "task_version": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335",
+  "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+  "sources": {
+    "spec.json": "7bd74b5501cc4402aea657f6a21d51080e08a178258c19cce0a89949d87b4bdf",
+    "mission.json": "abb235b87e2a7875a586a7191d160b81d07d4f87e2b848be338d3bbfbaad6a54",
+    "mission_result.json": "a35417e870ae00c1eeb41b2078cdd7f5459d45dd90bbbe69bce0fc8cb9f65c5d",
+    "analysis_mowing_r10.json": "125d964750516ce91079ffdd2b919ce6ba6804b7a56ec5a24f41fa95f3d01802",
+    "runtime.json": "b1b204e08a051b1cb30718e2c5540f2ac1a4391462981b571b73bed51ad6ea17",
+    "coverage.geojson": "68cdd0a6ce782a8aaea8d6b14ddd95ef839ac0a26a2de3bbfdcf85d3b8cade96"
+  },
+  "analysis_passed": false,
+  "clean_exit": true,
+  "summary": {
+    "original_cluster_m2": 195.99438340335297,
+    "selected_target_union_m2": 188.3918016929564,
+    "confirmed_union_m2": 74.00915630340378,
+    "residual_union_m2": 114.38264538955268,
+    "selected_segments": 47,
+    "reached_segments": 25,
+    "untouched_reference_status": "PARTIAL"
+  },
+  "obligations": [
+    {
+      "key": "B1:segment:0",
+      "state": "PARTIAL_FEEDBACK",
+      "selected": true,
+      "planned_fragments": [
+        "B1:segment:0:safe:0"
+      ],
+      "reached_fragments": [
+        "B1:segment:0:safe:0"
+      ],
+      "original_requested_m2": 10.56149447302867,
+      "ledger_requested_m2": 10.561490281674196,
+      "confirmed_for_key_m2": 9.682775,
+      "remaining_for_key_m2": 0.8787152816741965
+    },
+    {
+      "key": "B1:segment:4",
+      "state": "PARTIAL_FEEDBACK",
+      "selected": true,
+      "planned_fragments": [
+        "B1:segment:4:safe:0"
+      ],
+      "reached_fragments": [
+        "B1:segment:4:safe:0"
+      ],
+      "original_requested_m2": 18.854836210286567,
+      "ledger_requested_m2": 18.85483942751307,
+      "confirmed_for_key_m2": 17.166912500000013,
+      "remaining_for_key_m2": 1.6879269275130575
+    },
+    {
+      "key": "B1:segment:8",
+      "state": "PARTIAL_FEEDBACK",
+      "selected": true,
+      "planned_fragments": [
+        "B1:segment:8:safe:0"
+      ],
+      "reached_fragments": [
+        "B1:segment:8:safe:0"
+      ],
+      "original_requested_m2": 25.43231558511847,
+      "ledger_requested_m2": 25.4323190334253,
+      "confirmed_for_key_m2": 23.154112499999957,
+      "remaining_for_key_m2": 2.278206533425344
+    },
+    {
+      "key": "B1:segment:12",
+      "state": "PARTIAL_FEEDBACK",
+      "selected": true,
+      "planned_fragments": [
+        "B1:segment:12:safe:0"
+      ],
+      "reached_fragments": [
+        "B1:segment:12:safe:0"
+      ],
+      "original_requested_m2": 35.17287549688209,
+      "ledger_requested_m2": 35.17286958335899,
+      "confirmed_for_key_m2": 15.389799999999973,
+      "remaining_for_key_m2": 19.783069583359016
+    },
+    {
+      "key": "B1:segment:16",
+      "state": "PARTIAL_FEEDBACK",
+      "selected": true,
+      "planned_fragments": [
+        "B1:segment:16:safe:0",
+        "B1:segment:16:safe:1"
+      ],
+      "reached_fragments": [
+        "B1:segment:16:safe:0",
+        "B1:segment:16:safe:1"
+      ],
+      "original_requested_m2": 29.603227628528433,
+      "ledger_requested_m2": 29.603230910142884,
+      "confirmed_for_key_m2": 10.019537499999991,
+      "remaining_for_key_m2": 19.583693410142892
+    },
+    {
+      "key": "B1:segment:20",
+      "state": "NO_RECORDED_WORK",
+      "selected": true,
+      "planned_fragments": [
+        "B1:segment:20:safe:0"
+      ],
+      "reached_fragments": [],
+      "original_requested_m2": 26.650568985964707,
+      "ledger_requested_m2": null,
+      "confirmed_for_key_m2": 0.0,
+      "remaining_for_key_m2": 26.650568985964707
+    },
+    {
+      "key": "B1:segment:24",
+      "state": "NO_RECORDED_WORK",
+      "selected": true,
+      "planned_fragments": [
+        "B1:segment:24:safe:0"
+      ],
+      "reached_fragments": [],
+      "original_requested_m2": 31.76858974699501,
+      "ledger_requested_m2": null,
+      "confirmed_for_key_m2": 0.0,
+      "remaining_for_key_m2": 31.76858974699501
+    },
+    {
+      "key": "B1:segment:29",
+      "state": "NO_RECORDED_WORK",
+      "selected": true,
+      "planned_fragments": [
+        "B1:segment:29:safe:0",
+        "B1:segment:29:safe:1"
+      ],
+      "reached_fragments": [],
+      "original_requested_m2": 24.334976879349664,
+      "ledger_requested_m2": null,
+      "confirmed_for_key_m2": 0.0,
+      "remaining_for_key_m2": 24.334976879349664
+    },
+    {
+      "key": "B1:segment:33",
+      "state": "NO_SAFE_FRAGMENT_IN_THIS_PLAN",
+      "selected": false,
+      "planned_fragments": [],
+      "reached_fragments": [],
+      "original_requested_m2": 8.302354275211044,
+      "ledger_requested_m2": null,
+      "confirmed_for_key_m2": 0.0,
+      "remaining_for_key_m2": 8.302354275211044
+    }
+  ],
+  "automatic_dispatch": false,
+  "scope": "One closed run. Keep the original denominator. Per-key areas can overlap. Review localization, terrain, and access before scheduling remaining work."
+}

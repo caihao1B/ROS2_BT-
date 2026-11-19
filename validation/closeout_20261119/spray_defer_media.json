@@ -1,0 +1,344 @@
+{
+  "schema": "SPRAY-DEFER-CAMERA/1",
+  "session": "spray_defer_20261119_085422_132494",
+  "formal_credit": false,
+  "behavior_result": "PASS",
+  "behavior": "COARSE_NAVIGATION_DEFER",
+  "precision_defer_demonstrated": false,
+  "full_cluster_denominator": 56,
+  "selected": [
+    "point_11_20",
+    "point_10_20",
+    "point_9_20",
+    "point_8_20"
+  ],
+  "confirmed": [
+    "point_11_20",
+    "point_9_20",
+    "point_8_20"
+  ],
+  "outstanding": [
+    {
+      "point": "point_10_20",
+      "state": "DEFERRED",
+      "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL",
+      "origin": "COARSE_NAVIGATION",
+      "remaining": 3.0,
+      "confirmed": 0.0
+    }
+  ],
+  "physical_jobs": [
+    {
+      "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_11_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.073999999999998,
+      "uncertain": false,
+      "physical_dose": 3.2276666666660003,
+      "maximum_physical_docking_error_m": 1.0048591735576161e-14,
+      "requested": 3.0
+    },
+    {
+      "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_9_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.078000000000003,
+      "uncertain": false,
+      "physical_dose": 3.228999999999337,
+      "maximum_physical_docking_error_m": 0.03807696329748701,
+      "requested": 3.0
+    },
+    {
+      "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_8_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.078000000000003,
+      "uncertain": false,
+      "physical_dose": 3.2256666666660037,
+      "maximum_physical_docking_error_m": 0.019668683744486062,
+      "requested": 3.0
+    }
+  ],
+  "native_dispatch_id": 14,
+  "native_defer_sim_s": 80.944,
+  "terminal_sim_s": 178.15,
+  "original_camera": {
+    "path": "media/closeout_20261119/spray_defer_full.mp4",
+    "sha256": "8b47236601b9ad3863b2fec9d6a9379e70555b9aa255897e560f9bf9cabfaa73",
+    "frames": 1735,
+    "seconds": 347.0,
+    "fps": 5.0,
+    "unmodified": true
+  },
+  "highlight": {
+    "path": "media/closeout_20261119/spray_defer_highlight.mp4",
+    "sha256": "f4a1d7b15dda3e7b2de00bc8a503c839a175c4762ebb8f2fd7925ec0091da42f",
+    "seconds": 46.9,
+    "fps": 10,
+    "frames": 469,
+    "decoded_to_eof": true,
+    "clips": [
+      {
+        "title": "首个服务点完成，开始接近被设备占用的点",
+        "speed_relative_to_original_video": 2,
+        "source_video_s": [
+          65.6,
+          83.6
+        ],
+        "source_sim_t_window": [
+          34.5,
+          44.0
+        ],
+        "source_frame_range_half_open": [
+          328,
+          418
+        ],
+        "highlight_s": [
+          0.0,
+          9.0
+        ],
+        "frames": 90,
+        "events": [
+          {
+            "t": 34.874,
+            "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED",
+            "point": null
+          },
+          {
+            "t": 34.874,
+            "event": "NAV_GOAL",
+            "point": "point_11_20"
+          },
+          {
+            "t": 34.926,
+            "event": "NAV_SUCCESS",
+            "point": "point_11_20"
+          },
+          {
+            "t": 38.25,
+            "event": "DOCKING_SETTLED_CHECK",
+            "point": "point_11_20"
+          },
+          {
+            "t": 42.38,
+            "event": "TOOL_RESULT",
+            "point": "point_11_20"
+          },
+          {
+            "t": 42.424,
+            "event": "TOOL_RESULT",
+            "point": "point_11_20"
+          },
+          {
+            "t": 42.424,
+            "event": "IDEMPOTENT_REPLAY",
+            "point": null
+          },
+          {
+            "t": 42.424,
+            "event": "NAV_GOAL",
+            "point": "point_10_20"
+          },
+          {
+            "t": 42.504,
+            "event": "NAV_CANCEL_ACK",
+            "point": null
+          },
+          {
+            "t": 42.506,
+            "event": "NAV_TERMINAL_FAILURE",
+            "point": null
+          }
+        ]
+      },
+      {
+        "title": "三次导航尝试，停车后把受阻点保留为待作业",
+        "speed_relative_to_original_video": 4,
+        "source_video_s": [
+          102.8,
+          156.2
+        ],
+        "source_sim_t_window": [
+          54.0,
+          82.0
+        ],
+        "source_frame_range_half_open": [
+          514,
+          781
+        ],
+        "highlight_s": [
+          9.0,
+          22.3
+        ],
+        "frames": 133,
+        "events": [
+          {
+            "t": 54.546,
+            "event": "RETRY_DECISION",
+            "point": null
+          },
+          {
+            "t": 55.626,
+            "event": "NAV_GOAL",
+            "point": "point_10_20"
+          },
+          {
+            "t": 55.698,
+            "event": "NAV_CANCEL_ACK",
+            "point": null
+          },
+          {
+            "t": 55.698,
+            "event": "NAV_TERMINAL_FAILURE",
+            "point": null
+          },
+          {
+            "t": 67.768,
+            "event": "RETRY_DECISION",
+            "point": null
+          },
+          {
+            "t": 68.818,
+            "event": "NAV_GOAL",
+            "point": "point_10_20"
+          },
+          {
+            "t": 68.898,
+            "event": "NAV_CANCEL_ACK",
+            "point": null
+          },
+          {
+            "t": 68.898,
+            "event": "NAV_TERMINAL_FAILURE",
+            "point": null
+          },
+          {
+            "t": 80.944,
+            "event": "RETRY_DECISION",
+            "point": null
+          },
+          {
+            "t": 80.944,
+            "event": "CANDIDATE_EXHAUSTION_EVIDENCE",
+            "point": "point_10_20"
+          },
+          {
+            "t": 80.944,
+            "event": "CANDIDATE_DEFER_CONFIRMED",
+            "point": "point_10_20"
+          }
+        ]
+      },
+      {
+        "title": "选择后续原始点 9_20，继续导航、精停与喷洒",
+        "speed_relative_to_original_video": 8,
+        "source_video_s": [
+          156.2,
+          273.4
+        ],
+        "source_sim_t_window": [
+          82.0,
+          143.0
+        ],
+        "source_frame_range_half_open": [
+          781,
+          1367
+        ],
+        "highlight_s": [
+          22.3,
+          36.9
+        ],
+        "frames": 146,
+        "events": [
+          {
+            "t": 82.012,
+            "event": "NAV_GOAL",
+            "point": "point_9_20"
+          },
+          {
+            "t": 134.432,
+            "event": "NAV_SUCCESS",
+            "point": "point_9_20"
+          },
+          {
+            "t": 137.73,
+            "event": "DOCKING_SETTLED_CHECK",
+            "point": "point_9_20"
+          },
+          {
+            "t": 141.844,
+            "event": "TOOL_RESULT",
+            "point": "point_9_20"
+          },
+          {
+            "t": 141.87,
+            "event": "NAV_GOAL",
+            "point": "point_8_20"
+          }
+        ]
+      },
+      {
+        "title": "到达 8_20 喷洒，最后确认车体停车、工具停机",
+        "speed_relative_to_original_video": 3,
+        "source_video_s": [
+          312.2,
+          342.2
+        ],
+        "source_sim_t_window": [
+          163.0,
+          178.5
+        ],
+        "source_frame_range_half_open": [
+          1561,
+          1711
+        ],
+        "highlight_s": [
+          36.9,
+          46.9
+        ],
+        "frames": 100,
+        "events": [
+          {
+            "t": 168.72,
+            "event": "NAV_SUCCESS",
+            "point": "point_8_20"
+          },
+          {
+            "t": 171.99,
+            "event": "DOCKING_SETTLED_CHECK",
+            "point": "point_8_20"
+          },
+          {
+            "t": 176.094,
+            "event": "TOOL_RESULT",
+            "point": "point_8_20"
+          },
+          {
+            "t": 176.13,
+            "event": "SUBSET_FINISHED",
+            "point": null
+          },
+          {
+            "t": 178.15,
+            "event": "FINAL_TOOL_STOP",
+            "point": null
+          }
+        ]
+      }
+    ]
+  },
+  "clock_mapping": "First original frame with sim_t >= the declared boundary; speed factor uses source player time. End index excluded.",
+  "archived_source": {
+    "analysis_spray_r10.json": "99003521ff7b69d3ddaad617bf28c3107fb62e211aa94fc62133f5b2c7a7d768",
+    "candidate_acceptance.json": "3990a20f44dff864d34ad89861514579cb54f8793e867ec70494b255dd61a742",
+    "decisions.jsonl.gz": "e1e8d36920b286c524c40f537e6bb8ef4559c1e3c42caf0da4f9def863ae7eab",
+    "mission.json": "d80d4454357ecb253e2e96094cfbb3f8cf2226e72f986d53edb6f40ab0ef7741",
+    "mission_events.jsonl": "bfe8a7ac70b19adb464b9f798630dd387956e3a3fdbe255dc713e7f9047886a7",
+    "mission_result.json": "92626b577234b06b0a25e9876f7bd88ecbe8831b441f3bc99cc0959601acdddb",
+    "native_defer_excerpt.json": "affd44dff2b2989a20a69e304482f2f9396d4071ceea360a3df06d1e728bf64f",
+    "nav_shutdown.json": "2d89faff75bb7e056d1ca0b56c2ebdd0930492938059cccf59af9acb40a34512",
+    "runtime.json": "66a9ebf04f4d0320be7a78bec2b2d01327fe462e4907f7b00c3e6671f03b3265",
+    "scene/fixture.json": "f28a4f93f64b4eccf6d8aea5d2819e3d8b7faaaace73933e23be7d0b36dc4307",
+    "spec.json": "6bd609651adbb21a256b74390662e40df3866f858a8c3b965d4ccbf39068c86f",
+    "tool_evaluation/result.json": "2044306280e0124ffc07988ec1360d02788e14400812de7895fa214888cdfd06",
+    "video/frames.jsonl.gz": "da18b7cb0c6ebf98facca7012a01473a4f4a292aeaf7ada646983bce52aa7792",
+    "video/recording.json": "c732aed4c822eb34601e65485d9bc59e67c199183925f1c73e139646d1c52530"
+  }
+}

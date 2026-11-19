@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "archive": "R12/mowing_20261115_070740_054017",
+  "checks": {
+    "879.272": true,
+    "WAIT_DEADLINE": true,
+    "LOCALIZATION_ADMISSION_WAIT": true,
+    "0.132": true,
+    "FIXED_AND_INNOVATION_VALID": true
+  }
+}

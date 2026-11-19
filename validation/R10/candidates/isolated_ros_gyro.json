@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "scope": "Isolated real ROS component, synthetic measured inputs. Mower overlay, .005 rad/s warm yaw bias, .35 m/s forward and .11 rad/s Ackermann turn, stale STOP gate.",
+  "checks": {
+    "clean_exit": true,
+    "epoch_preserved": true,
+    "initialized": true,
+    "injected_drift_visible": true,
+    "recovered_at_stop": true,
+    "real_turn_retained": true,
+    "missing_gate_does_not_hide_new_drift": true,
+    "exercised_estimator": true
+  },
+  "sample_windows": [
+    [
+      3.0,
+      3.8
+    ],
+    [
+      4.1,
+      4.5
+    ],
+    [
+      18.0,
+      18.9
+    ],
+    [
+      20.0,
+      22.0
+    ],
+    [
+      26.0,
+      28.0
+    ]
+  ],
+  "output_mean_yaw_rad_s": [
+    -1.3010426069826053e-18,
+    -0.005000000000000001,
+    -0.00015710201093997435,
+    0.10986269658411991,
+    0.014862696584119919
+  ],
+  "processed_output_samples": 1451,
+  "adapter": {
+    "epoch": 0,
+    "stationary_bias_samples": 149,
+    "gyro_bias_estimate": [
+      0.0,
+      0.0,
+      -0.0028626965841199183
+    ],
+    "startup_yaw_bias": 0.0020000000000000013,
+    "stationary_updates": 719,
+    "incremental_yaw_bias": -0.00486269658411992
+  },
+  "domain": 174,
+  "input_adapter_sha256": "9c497a04d69b1b0164a20c4b3dccc78810aa0bdbb51d8c57c97373dd499e78be",
+  "bound_sha256": {
+    "optimization_v2/ws/src/task_platform/scripts/probe_stationary_gyro_r10.py": "0d73c08b49631a267dba8360f35c0ed4f233e53f6c4963484b411c8b27508493",
+    "optimization_v2/ws/src/task_platform/scripts/probe_mowing_yaw_r10.py": "673bf39ecb0afd06e9b89107122e840f8cee1152e10a9e063ee5b30c9b49f86d",
+    "optimization_v2/ws/src/task_platform/scripts/mowing_yaw_candidate_r10.py": "0e09b84cbbfef84f8ab13004c819bb4ab890b13cbeed44524e30d42aea4e110f",
+    "optimization_v2/ws/src/task_platform/scripts/spray_inputs_r10.py": "6f3e4c15a0c2a9d0e175bb86b40eea0c863cd0d12279bdfb520796387b8967bd",
+    "optimization_v2/ws/src/task_platform/scripts/stationary_gyro_r10.py": "12ef69880ac4fddde5968bd2597b43888fcaeaba16e6a32cc471a4d056c433f6",
+    "optimization_v2/ws/src/task_platform/scripts/recovery_stop_candidate_r10.py": "bd30d6c865f4100f0db985ab3dab2ef55d94231a1c565a699aa41d559f4cb354",
+    "optimization_v2/ws/src/task_platform/scripts/runtime_mowing_r10.py": "02818c25377b42295e35f734e164020ee8f3f31217cd751ed0a9aaa3c02ef52a",
+    "optimization_v2/ws/src/task_platform/scripts/mission_mowing_r10.py": "4cbb6c66c7d1f169e5689b1ac629a2d6428dd79adfdd9f4c705075003a7b0436"
+  }
+}

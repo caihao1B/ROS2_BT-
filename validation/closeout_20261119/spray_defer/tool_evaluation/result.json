@@ -1,0 +1,40 @@
+{
+  "jobs": {
+    "": {
+      "dose": 0.0,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 0
+    },
+    "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_11_20": {
+      "dose": 3.2276666666660003,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 68
+    },
+    "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_9_20": {
+      "dose": 3.228999999999337,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 68
+    },
+    "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_8_20": {
+      "dose": 3.2256666666660037,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 68
+    }
+  }
+}

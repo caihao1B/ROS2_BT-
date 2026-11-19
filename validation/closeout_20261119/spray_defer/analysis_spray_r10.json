@@ -1,0 +1,292 @@
+{
+  "passed": false,
+  "checks": {
+    "runtime_clean": true,
+    "map_database_unchanged": true,
+    "mission_completed": false,
+    "qualified_three_points": true,
+    "no_unexpected_contact": true,
+    "sensor_render_configuration_valid": true,
+    "four_real_near_sensors": true,
+    "map_pose_rmse_under_15cm": true,
+    "feedback_and_independent_physics_agree": false,
+    "idempotent_replay_no_extra_flow": true,
+    "measured_final_stop": true,
+    "unique_actuator_owner": true,
+    "unique_tool_owner": true,
+    "unique_transform_owners": true,
+    "implementation_bound": true,
+    "probe_source_bound": false,
+    "runtime_source_bound": false,
+    "task_version_bound": false
+  },
+  "case": "bounded_defer",
+  "cluster": "A1",
+  "map_xy_rmse_m": 0.05131853681668377,
+  "jobs": [
+    {
+      "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_11_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.073999999999998,
+      "uncertain": false,
+      "physical_dose": 3.2276666666660003,
+      "maximum_physical_docking_error_m": 1.0048591735576161e-14,
+      "requested": 3.0
+    },
+    {
+      "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_9_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.078000000000003,
+      "uncertain": false,
+      "physical_dose": 3.228999999999337,
+      "maximum_physical_docking_error_m": 0.03807696329748701,
+      "requested": 3.0
+    },
+    {
+      "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_8_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.078000000000003,
+      "uncertain": false,
+      "physical_dose": 3.2256666666660037,
+      "maximum_physical_docking_error_m": 0.019668683744486062,
+      "requested": 3.0
+    }
+  ],
+  "unexpected_contacts": {},
+  "task_result": {
+    "ownership": {
+      "/tf": [
+        {
+          "node": "s05_local_odometry",
+          "namespace": "/",
+          "gid": [
+            1,
+            15,
+            245,
+            121,
+            177,
+            167,
+            195,
+            241,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            19,
+            3
+          ]
+        },
+        {
+          "node": "s08_global_pose_manager",
+          "namespace": "/",
+          "gid": [
+            1,
+            15,
+            245,
+            121,
+            193,
+            167,
+            76,
+            116,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            23,
+            3
+          ]
+        }
+      ],
+      "/s03/actuator/request": [
+        {
+          "node": "r07_actuator_gate",
+          "namespace": "/",
+          "gid": [
+            1,
+            15,
+            245,
+            121,
+            197,
+            167,
+            244,
+            65,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            3
+          ]
+        }
+      ],
+      "/s10/tool/command": [
+        {
+          "node": "s10_tool_action_server",
+          "namespace": "/",
+          "gid": [
+            1,
+            15,
+            245,
+            121,
+            207,
+            167,
+            247,
+            115,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            3
+          ]
+        }
+      ]
+    },
+    "final_gate": {
+      "raw_nav_v": 0.0,
+      "raw_nav_w": 0.0,
+      "t": 178.14,
+      "allowed": false,
+      "mode": "STOP",
+      "v": 0.0,
+      "w": 0.0,
+      "reasons": [
+        "NAV_COMMAND_STALE"
+      ],
+      "stopped": true,
+      "tool_stopped": true,
+      "nav_idle": true,
+      "progress_m": 12.94542481071059
+    },
+    "passed": false,
+    "error": null,
+    "cluster": "A1",
+    "selected_points": 4,
+    "original_points": 56,
+    "completed": [
+      {
+        "point": "point_11_20",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.073999999999998,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 0.0,
+        "meter_after": 3.2537
+      },
+      {
+        "point": "point_9_20",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.078000000000003,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 3.2537,
+        "meter_after": 6.5313
+      },
+      {
+        "point": "point_8_20",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.078000000000003,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 6.5313,
+        "meter_after": 9.809
+      }
+    ],
+    "failed": [
+      {
+        "point": "point_10_20",
+        "state": "DEFERRED",
+        "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL",
+        "origin": "COARSE_NAVIGATION",
+        "remaining": 3.0,
+        "confirmed": 0.0
+      }
+    ],
+    "not_selected": [
+      "point_7_14",
+      "point_8_14",
+      "point_8_15",
+      "point_9_15",
+      "point_9_14",
+      "point_10_14",
+      "point_10_15",
+      "point_10_16",
+      "point_9_16",
+      "point_8_16",
+      "point_8_17",
+      "point_9_17",
+      "point_10_17",
+      "point_10_18",
+      "point_9_18",
+      "point_8_18",
+      "point_8_19",
+      "point_9_19",
+      "point_10_19",
+      "point_11_19",
+      "point_12_20",
+      "point_8_21",
+      "point_9_21",
+      "point_10_21",
+      "point_11_21",
+      "point_12_21",
+      "point_12_22",
+      "point_12_23",
+      "point_11_23",
+      "point_11_22",
+      "point_10_22",
+      "point_9_22",
+      "point_8_22",
+      "point_7_22",
+      "point_7_21",
+      "point_6_21",
+      "point_6_20",
+      "point_7_20",
+      "point_7_19",
+      "point_7_18",
+      "point_7_17",
+      "point_7_16",
+      "point_6_17",
+      "point_6_18",
+      "point_6_19",
+      "point_5_19",
+      "point_5_18",
+      "point_5_17",
+      "point_5_16",
+      "point_6_16",
+      "point_6_15",
+      "point_7_15"
+    ],
+    "replay": {
+      "point": "point_11_20",
+      "state": "SUCCEEDED",
+      "reason": "CONFIRMED_WORK",
+      "confirmed": 3.073999999999998,
+      "remaining": 0.0,
+      "uncertainty": false,
+      "replayed": true,
+      "meter_before": 3.2537,
+      "meter_after": 3.2537
+    },
+    "t": 178.15,
+    "wall_seconds": 344.0102218150005,
+    "scope": "Explicitly selected original points; confirmed work and residual separate; full selection does not imply full completion"
+  },
+  "wall_seconds": 355.9168490339998,
+  "original_obligations_preserved": true,
+  "formal_credit": false,
+  "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit"
+}

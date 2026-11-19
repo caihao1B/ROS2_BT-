@@ -5,252 +5,252 @@
       "phase": "producers_and_consumers",
       "role": "raw_bridge",
       "exit": 0,
-      "elapsed_wall_s": 0.20716401102254167,
+      "elapsed_wall_s": 0.20384610100063583,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "evaluation_bridge",
       "exit": 0,
-      "elapsed_wall_s": 0.20722603000467643,
+      "elapsed_wall_s": 0.20389743499981705,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "video_bridge",
       "exit": 0,
-      "elapsed_wall_s": 0.26173422901774757,
+      "elapsed_wall_s": 0.2039388510002027,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "online_bridge",
       "exit": 0,
-      "elapsed_wall_s": 0.31208684999728575,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "lifecycle_manager",
-      "exit": 0,
-      "elapsed_wall_s": 0.3122826820181217,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "evaluator",
-      "exit": 0,
-      "elapsed_wall_s": 0.3625183200056199,
+      "elapsed_wall_s": 0.25424868400023115,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "bt",
       "exit": 0,
-      "elapsed_wall_s": 0.36266896600136533,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "map_server",
-      "exit": 0,
-      "elapsed_wall_s": 0.3627547300129663,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "tool_bridge",
-      "exit": 0,
-      "elapsed_wall_s": 0.41317907700431533,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "video_recorder",
-      "exit": 0,
-      "elapsed_wall_s": 0.4132271270209458,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "global_manager",
-      "exit": 0,
-      "elapsed_wall_s": 0.4133215510228183,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "terrain",
-      "exit": 0,
-      "elapsed_wall_s": 0.4133830110076815,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "tool_server",
-      "exit": 0,
-      "elapsed_wall_s": 0.41344495900557376,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "tool_evaluator",
-      "exit": 0,
-      "elapsed_wall_s": 0.4134811370167881,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "controller_server",
-      "exit": 0,
-      "elapsed_wall_s": 0.4135154980176594,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "planner_server",
-      "exit": 0,
-      "elapsed_wall_s": 0.41354839300038293,
+      "elapsed_wall_s": 0.30510013900038757,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "bt_navigator",
       "exit": 0,
-      "elapsed_wall_s": 0.4135851990140509,
+      "elapsed_wall_s": 0.30520895200061204,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
-      "role": "reference",
+      "role": "lifecycle_manager",
       "exit": 0,
-      "elapsed_wall_s": 0.4637571420171298,
+      "elapsed_wall_s": 0.30526000700047007,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
-      "role": "generator_vision",
+      "role": "global_manager",
       "exit": 0,
-      "elapsed_wall_s": 0.5138992630236316,
+      "elapsed_wall_s": 0.35556802400060405,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "map_server",
+      "exit": 0,
+      "elapsed_wall_s": 0.35567271699983394,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "evaluator",
+      "exit": 0,
+      "elapsed_wall_s": 0.40645614599998225,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "video_recorder",
+      "exit": 0,
+      "elapsed_wall_s": 0.4567708680006035,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "terrain",
+      "exit": 0,
+      "elapsed_wall_s": 0.45688443100061704,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "tool_evaluator",
+      "exit": 0,
+      "elapsed_wall_s": 0.45695308500035026,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "tool_bridge",
+      "exit": 0,
+      "elapsed_wall_s": 0.5070967649999147,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "icp_motion_guess",
       "exit": 0,
-      "elapsed_wall_s": 0.5139413770230021,
+      "elapsed_wall_s": 0.5071672359999866,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
-      "role": "generator_motion",
+      "role": "reference",
       "exit": 0,
-      "elapsed_wall_s": 0.5640904120227788,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "cloud",
-      "exit": 0,
-      "elapsed_wall_s": 0.5641226090083364,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "icp_gate",
-      "exit": 0,
-      "elapsed_wall_s": 0.5641448179958388,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "mapping_inputs",
-      "exit": 0,
-      "elapsed_wall_s": 0.5641742910083849,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "slam_initial",
-      "exit": 0,
-      "elapsed_wall_s": 0.5641962910012808,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "global_sources",
-      "exit": 0,
-      "elapsed_wall_s": 0.5642178010020871,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "risk",
-      "exit": 0,
-      "elapsed_wall_s": 0.5642382650112268,
+      "elapsed_wall_s": 0.5072145180001826,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "control",
       "exit": 0,
-      "elapsed_wall_s": 0.5642573310178705,
-      "forced": false
-    },
-    {
-      "phase": "producers_and_consumers",
-      "role": "ledger",
-      "exit": 0,
-      "elapsed_wall_s": 0.564280309015885,
+      "elapsed_wall_s": 0.5072494390005886,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "fanout",
       "exit": 0,
-      "elapsed_wall_s": 0.6144248740165494,
+      "elapsed_wall_s": 0.5574000340002385,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "mapping_inputs",
+      "exit": 0,
+      "elapsed_wall_s": 0.5574376780004968,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "global_sources",
+      "exit": 0,
+      "elapsed_wall_s": 0.5575453740002558,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "tool_server",
+      "exit": 0,
+      "elapsed_wall_s": 0.5575773609998578,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "planner_server",
+      "exit": 0,
+      "elapsed_wall_s": 0.5575992220001353,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "generator_motion",
+      "exit": 0,
+      "elapsed_wall_s": 0.6077185969998027,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "generator_vision",
+      "exit": 0,
+      "elapsed_wall_s": 0.6077410859998054,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "icp_gate",
+      "exit": 0,
+      "elapsed_wall_s": 0.6077630859999772,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "inputs",
       "exit": 0,
-      "elapsed_wall_s": 0.6144572799967136,
+      "elapsed_wall_s": 0.6077814549998948,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
-      "role": "odom_output",
+      "role": "slam_initial",
       "exit": 0,
-      "elapsed_wall_s": 0.6144835400045849,
+      "elapsed_wall_s": 0.6078034550000666,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "risk",
+      "exit": 0,
+      "elapsed_wall_s": 0.6078195179998147,
       "forced": false
     },
     {
       "phase": "producers_and_consumers",
       "role": "tool_observer",
       "exit": 0,
-      "elapsed_wall_s": 0.6145086830074433,
+      "elapsed_wall_s": 0.6078363500000705,
       "forced": false
     },
     {
-      "phase": "estimators_after_inputs_closed",
-      "role": "icp",
+      "phase": "producers_and_consumers",
+      "role": "controller_server",
       "exit": 0,
-      "elapsed_wall_s": 0.15038599600666203,
+      "elapsed_wall_s": 0.6078577920006865,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "cloud",
+      "exit": 0,
+      "elapsed_wall_s": 0.6579743040001631,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "odom_output",
+      "exit": 0,
+      "elapsed_wall_s": 0.6579980500000602,
+      "forced": false
+    },
+    {
+      "phase": "producers_and_consumers",
+      "role": "ledger",
+      "exit": 0,
+      "elapsed_wall_s": 0.6580171860005066,
       "forced": false
     },
     {
       "phase": "estimators_after_inputs_closed",
       "role": "fused",
       "exit": 0,
-      "elapsed_wall_s": 0.150411767011974,
+      "elapsed_wall_s": 0.15035728800012294,
       "forced": false
     },
     {
       "phase": "estimators_after_inputs_closed",
       "role": "wheel_imu",
       "exit": 0,
-      "elapsed_wall_s": 0.15043425501789898,
+      "elapsed_wall_s": 0.1503822910008239,
+      "forced": false
+    },
+    {
+      "phase": "estimators_after_inputs_closed",
+      "role": "icp",
+      "exit": 0,
+      "elapsed_wall_s": 0.20047435800006497,
       "forced": false
     }
   ]

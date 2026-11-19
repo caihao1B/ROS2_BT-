@@ -73,6 +73,9 @@ test_reverse_turn_to_work_requires_preselection_before_tool_start (test_recovery
 test_sharp_curve_rejected (test_recovery_mowing_r10.RecoveryAdmission.test_sharp_curve_rejected) ... ok
 test_straight_real_candidate (test_recovery_mowing_r10.RecoveryAdmission.test_straight_real_candidate) ... ok
 test_wrong_goal (test_recovery_mowing_r10.RecoveryAdmission.test_wrong_goal) ... ok
+test_actual_worker_specialization_parses (test_recovery_stop_candidate_r10.RecoveryStopTest.test_actual_worker_specialization_parses) ... ok
+test_four_milliseconds_after_arm_cannot_confirm_stop (test_recovery_stop_candidate_r10.RecoveryStopTest.test_four_milliseconds_after_arm_cannot_confirm_stop) ... ok
+test_gap_wrong_revision_or_motion_interrupt_proof (test_recovery_stop_candidate_r10.RecoveryStopTest.test_gap_wrong_revision_or_motion_interrupt_proof) ... ok
 test_distant_or_wrong_heading_does_not_advance (test_resume_cursor_r10.RecoveryCursor.test_distant_or_wrong_heading_does_not_advance) ... ok
 test_final_index_retained (test_resume_cursor_r10.RecoveryCursor.test_final_index_retained) ... ok
 test_monotonic_local_progress (test_resume_cursor_r10.RecoveryCursor.test_monotonic_local_progress) ... ok
@@ -100,9 +103,16 @@ test_cannot_reduce_original_denominator (test_safe_plan_r10.SafePlanContract.tes
 test_fragments_share_original_job_and_target (test_safe_plan_r10.SafePlanContract.test_fragments_share_original_job_and_target) ... ok
 test_full_denominator_includes_wholly_unexecuted_strip (test_safe_plan_r10.SafePlanContract.test_full_denominator_includes_wholly_unexecuted_strip) ... ok
 test_reference_has_not_been_replaced (test_safe_plan_r10.SafePlanContract.test_reference_has_not_been_replaced) ... ok
+test_empty_binding_manifest_is_unverified (test_scope_receipt_r10.HistoricalEvidenceTests.test_empty_binding_manifest_is_unverified) ... ok
+test_new_edition_cannot_overwrite_an_archived_success (test_scope_receipt_r10.HistoricalEvidenceTests.test_new_edition_cannot_overwrite_an_archived_success) ... ok
+test_recomputation_leaves_sealed_results_and_database_sidecars_unchanged (test_scope_receipt_r10.HistoricalEvidenceTests.test_recomputation_leaves_sealed_results_and_database_sidecars_unchanged) ... ok
+test_full_mowing_requires_original_start_cluster_and_budget (test_scope_receipt_r10.ScopeReceiptTests.test_full_mowing_requires_original_start_cluster_and_budget) ... ok
+test_spray_fault_pilots_keep_declared_headless_and_recorded_budgets (test_scope_receipt_r10.ScopeReceiptTests.test_spray_fault_pilots_keep_declared_headless_and_recorded_budgets) ... ok
 test_moving_body_return_masked_at_capture (test_self_capture_mowing_r10.CaptureMask.test_moving_body_return_masked_at_capture) ... ok
 test_original_low_ground_and_steps_remain (test_self_capture_mowing_r10.CaptureMask.test_original_low_ground_and_steps_remain) ... ok
 test_same_r09_high_and_physical_body_contract (test_self_capture_mowing_r10.CaptureMask.test_same_r09_high_and_physical_body_contract) ... ok
+test_controlled_exit_preserves_partial_work (test_spray_bounded_exit_r10.BoundedExitTest.test_controlled_exit_preserves_partial_work) ... ok
+test_refuse_unknown_or_unconfirmed_exit (test_spray_bounded_exit_r10.BoundedExitTest.test_refuse_unknown_or_unconfirmed_exit) ... ok
 test_controller_does_not_latch_a_past_xy_arrival (test_spray_control_contract_r10.SprayCurvatureContract.test_controller_does_not_latch_a_past_xy_arrival) ... ok
 test_local_dock_controller_retains_original_motion_and_collision_limits (test_spray_control_contract_r10.SprayCurvatureContract.test_local_dock_controller_retains_original_motion_and_collision_limits) ... ok
 test_near_goal_curvature_floor_cannot_force_angular_saturation (test_spray_control_contract_r10.SprayCurvatureContract.test_near_goal_curvature_floor_cannot_force_angular_saturation) ... ok
@@ -114,11 +124,15 @@ test_healthy_feedback_admits (test_start_work_r10.StartWork.test_healthy_feedbac
 test_mid_start_wait_returns_before_original_deadline (test_start_work_r10.StartWork.test_mid_start_wait_returns_before_original_deadline) ... ok
 test_stale_execute_is_not_admission (test_start_work_r10.StartWork.test_stale_execute_is_not_admission) ... ok
 test_working_feedback_belongs_to_fresh_active_goal (test_start_work_r10.StartWork.test_working_feedback_belongs_to_fresh_active_goal) ... ok
+test_estimates_sensor_difference_and_keeps_real_rotation (test_stationary_gyro_r10.StationaryCalibrationTest.test_estimates_sensor_difference_and_keeps_real_rotation) ... ok
+test_gap_or_bad_samples_restart_stationary_dwell (test_stationary_gyro_r10.StationaryCalibrationTest.test_gap_or_bad_samples_restart_stationary_dwell) ... ok
+test_motion_sparse_data_and_large_fault_cannot_calibrate (test_stationary_gyro_r10.StationaryCalibrationTest.test_motion_sparse_data_and_large_fault_cannot_calibrate) ... ok
+test_only_fresh_evaluated_wheel_conflicts_veto (test_stationary_gyro_r10.StationaryCalibrationTest.test_only_fresh_evaluated_wheel_conflicts_veto) ... ok
 test_bad_inputs_rejected (test_terminal_approach_r10.TerminalApproach.test_bad_inputs_rejected) ... ok
 test_exact_pose_and_forward_kinematics_at_wrapped_headings (test_terminal_approach_r10.TerminalApproach.test_exact_pose_and_forward_kinematics_at_wrapped_headings) ... ok
 test_unsafe_tail_does_not_gain_admission (test_terminal_approach_r10.TerminalApproach.test_unsafe_tail_does_not_gain_admission) ... ok
 
 ----------------------------------------------------------------------
-Ran 119 tests in 5.489s
+Ran 133 tests in 5.328s
 
 OK

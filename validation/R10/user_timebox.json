@@ -1,7 +1,10 @@
 {
-  "requested_at_utc": "2026-11-14T15:21:58.472926+00:00",
-  "deadline_utc": "2026-11-14T18:51:58.472926+00:00",
-  "monotonic_deadline": 118939.296919801,
-  "maximum_additional_seconds": 12600,
-  "target": "R12 if evidenced; retain PARTIAL otherwise; no new tests near deadline"
+  "started_utc": "2026-11-19T07:00:32Z",
+  "end_by_utc": "2026-11-19T10:00:32Z",
+  "stop_sim_utc": "2026-11-19T09:45:00Z",
+  "cluster_sim_budget_seconds": 1800,
+  "formal_matrix_requested": false,
+  "last_finished_run": "20261119_081218_417252",
+  "collected_utc": "2026-11-19T08:45:37.151737+00:00",
+  "scope": "Current timebox; historical runs separately sealed"
 }

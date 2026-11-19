@@ -1,0 +1,110 @@
+{
+  "passed": false,
+  "checks": {
+    "baseline_physical_checks": false,
+    "generated_files_bound": true,
+    "effective_worker_bound": true,
+    "transfer_edition_bound": true,
+    "physical_warm_hold": true,
+    "warm_gyro_consistent": true,
+    "transfer_order_measured": false,
+    "each_transfer_gear_checked": false,
+    "transfer_physical_tool_off": true,
+    "no_transfer_ledger_credit": true,
+    "original_problem_turn_measured": false,
+    "new_feedback_barrier_exercised": true,
+    "one_clock_at_first_real_action": true
+  },
+  "original_checks": {
+    "runtime_clean": true,
+    "original_database_unchanged": true,
+    "no_unexpected_contact": true,
+    "whole_footprint_authorized": true,
+    "map_rmse_under_15cm": true,
+    "unique_actuator": true,
+    "unique_tool": true,
+    "unique_tf": true,
+    "measured_final_stop": true,
+    "feedback_area_consistent": false,
+    "curvature_bounded": true,
+    "source_bound": true,
+    "task_version_bound": true,
+    "original_ordered_passages": false,
+    "selected_segments_traversed": false,
+    "two_work_strips": false,
+    "actual_reverse_travel": true,
+    "tools_off_during_turns": true,
+    "tools_off_during_recovery": true,
+    "original_area_and_obligations_retained": true,
+    "reference_not_claimed_completed": true
+  },
+  "profile": "verified-entry-first-motion",
+  "transfer": {
+    "requested_work_m2": 0.0,
+    "planned_length_m": 11.750973237516902,
+    "planned_gears": [
+      "QUALIFICATION_TRANSFER:0",
+      "QUALIFICATION_TRANSFER:1"
+    ],
+    "confirmed_gears": [
+      "QUALIFICATION_TRANSFER:0"
+    ],
+    "first_command_sim_s": 90.032,
+    "last_original_entry_arrival_sim_s": null,
+    "travel_elapsed_s": null,
+    "tool_feedback_samples": 1472
+  },
+  "warm_hold": {
+    "start": 38.312,
+    "end": 90.0,
+    "elapsed_s": 51.688,
+    "original_stop_gate_mps": 0.01,
+    "max_physical_speed_mps": 0.0,
+    "gyro_minus_encoder_rad_s": -3.405197146643665e-05
+  },
+  "original_selected": {
+    "requested": 7,
+    "passages": [],
+    "remaining": [
+      "B1:segment:16:safe:1",
+      "B1:safe_turn:6:0",
+      "B1:safe_turn:6:1",
+      "B1:safe_turn:6:2",
+      "B1:safe_turn:6:3",
+      "B1:safe_turn:6:4",
+      "B1:segment:20:safe:0"
+    ],
+    "confirmed_area_m2": 0.0,
+    "residual_area_m2": 56.25379661449311
+  },
+  "recovery_stop_feedback_count": 9,
+  "adapter": {
+    "epoch": 0,
+    "stationary_bias_samples": 599,
+    "gyro_bias_estimate": [
+      0.0011813143318715389,
+      -0.0012352189373512415,
+      -0.002327423138661069
+    ],
+    "startup_yaw_bias": 0.002153467281314648,
+    "stationary_updates": 18213,
+    "incremental_yaw_bias": -0.004480890419975717
+  },
+  "terminal": "HUMAN_REQUIRED",
+  "terminal_error": "RuntimeError('ENDPOINT_RECOVERY_EXHAUSTED')",
+  "elapsed_sim_s": 163.584,
+  "formal_credit": false,
+  "actual_motion_clock_arming": [
+    {
+      "t": 90.032,
+      "event": "FIRST_TRANSFER_MOTION_CLOCK_ARMED",
+      "segment": "QUALIFICATION_TRANSFER:0",
+      "actual_action_accepted": true,
+      "origin_t": 90.032,
+      "origin_pose": [
+        82.2221217852172,
+        36.42497815436956
+      ]
+    }
+  ]
+}

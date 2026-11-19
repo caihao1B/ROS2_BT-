@@ -1,0 +1,28 @@
+{
+  "run": "spray_20261115_060145_047614",
+  "scope": "Offline replay of decimated IMU samples and real recorded gates and encoder. No global heading ground truth, navigation action or completion credit.",
+  "updates": {
+    "stationary": 7369
+  },
+  "measured_stop_windows": [
+    {
+      "interval_sim_s": [
+        1338.0,
+        1344.0
+      ],
+      "samples": 121,
+      "old_mean_gyro_minus_wheel_rad_s": -0.004980052719174462,
+      "new_mean_gyro_minus_wheel_rad_s": 0.0001340447125562877
+    },
+    {
+      "interval_sim_s": [
+        1391.0,
+        1402.0
+      ],
+      "samples": 221,
+      "old_mean_gyro_minus_wheel_rad_s": -0.008258578495132955,
+      "new_mean_gyro_minus_wheel_rad_s": -0.0013295801058936043
+    }
+  ],
+  "passed": true
+}

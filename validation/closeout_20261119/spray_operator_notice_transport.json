@@ -1,0 +1,21 @@
+{
+  "schema": "OPERATOR-NOTICE-PRIVATE-TRANSPORT/1",
+  "scope": "Real publisher, late dashboard subscription and atomic file path of the generated worker, using a recorded formal measurement snapshot. No Gazebo handoff claimed.",
+  "domain": 157,
+  "topic": "/r10/operator_attention",
+  "qos": "reliable transient local depth 1",
+  "passed": true,
+  "checks": {
+    "actual_generated_message_writer": true,
+    "late_operator_received_initial": true,
+    "operator_received_closed_record": true,
+    "first_atomic_file_matches": true,
+    "final_file_survives_publisher_shutdown": true,
+    "no_partial_file_left": true,
+    "operator_sees_hold_incomplete": true,
+    "residual_original_key_and_amount": true
+  },
+  "generated_worker_sha256": "6d57ad63120a5184c7bc48b828fa57eaf6cec38f8ca2eb0b7a7d2c522b1c8b29",
+  "probe_sha256": "6ece6c7a305092d478a9905b93e55b39f046fb7adcd5b4f0971a097059b9a43a",
+  "inputs_sha256": "1c75bb9c4d9623e4efb7e3c4b7aa2fd7ac96fa6f200c0b47c2aac062136859db"
+}

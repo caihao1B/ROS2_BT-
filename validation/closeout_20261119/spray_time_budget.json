@@ -1,0 +1,1135 @@
+{
+  "schema": "spray-time-budget-v1",
+  "clock": "simulation_seconds",
+  "stage_status_change": false,
+  "r03_reference": {
+    "mission_sha256": "1bf3f7090caa57c76700f775c5b9dae74619a0f9adb0de820ed59449ec4fd524",
+    "mission_version": "1f131cc76780f99001e66a3c1eb03a92548a9ebd31d465593f6d092ca6571edf",
+    "cluster_version": "ec0deed78da4353f9a33a87d41a7e64db0e317dd1aa13f2b8239d79bff515c85",
+    "points": [
+      "point_7_14",
+      "point_8_14",
+      "point_8_15",
+      "point_9_15",
+      "point_9_14",
+      "point_10_14",
+      "point_10_15",
+      "point_10_16",
+      "point_9_16",
+      "point_8_16",
+      "point_8_17",
+      "point_9_17",
+      "point_10_17",
+      "point_10_18",
+      "point_9_18",
+      "point_8_18",
+      "point_8_19",
+      "point_9_19",
+      "point_10_19",
+      "point_11_19",
+      "point_12_20",
+      "point_11_20",
+      "point_10_20",
+      "point_9_20",
+      "point_8_20",
+      "point_8_21",
+      "point_9_21",
+      "point_10_21",
+      "point_11_21",
+      "point_12_21",
+      "point_12_22",
+      "point_12_23",
+      "point_11_23",
+      "point_11_22",
+      "point_10_22",
+      "point_9_22",
+      "point_8_22",
+      "point_7_22",
+      "point_7_21",
+      "point_6_21",
+      "point_6_20",
+      "point_7_20",
+      "point_7_19",
+      "point_7_18",
+      "point_7_17",
+      "point_7_16",
+      "point_6_17",
+      "point_6_18",
+      "point_6_19",
+      "point_5_19",
+      "point_5_18",
+      "point_5_17",
+      "point_5_16",
+      "point_6_16",
+      "point_6_15",
+      "point_7_15"
+    ],
+    "nominal_by_kind_s": {
+      "POINT_SERVICE": 112.0,
+      "ROTATE": 241.5907,
+      "TRANSIT": 538.2132
+    },
+    "nominal_service_action_s": 168.0,
+    "length_m": 170.4853,
+    "budget_sim_s": 1800,
+    "total_estimate_s": 1384.7549,
+    "tail_after_last_point_estimate_s": 19.2837,
+    "estimate_through_point_s": {
+      "point_7_14": 66.25,
+      "point_8_14": 86.875,
+      "point_8_15": 112.4087,
+      "point_9_15": 137.9425,
+      "point_9_14": 163.4762,
+      "point_10_14": 189.01,
+      "point_10_15": 214.5437,
+      "point_10_16": 235.1687,
+      "point_9_16": 260.7024,
+      "point_8_16": 281.3274,
+      "point_8_17": 306.8612,
+      "point_9_17": 332.3949,
+      "point_10_17": 353.0199,
+      "point_10_18": 378.5536,
+      "point_9_18": 404.0874,
+      "point_8_18": 424.7124,
+      "point_8_19": 450.2461,
+      "point_9_19": 475.7799,
+      "point_10_19": 496.4049,
+      "point_11_19": 517.0299,
+      "point_12_20": 543.9925,
+      "point_11_20": 571.9806,
+      "point_10_20": 592.6056,
+      "point_9_20": 613.2306,
+      "point_8_20": 633.8556,
+      "point_8_21": 659.3893,
+      "point_9_21": 684.9231,
+      "point_10_21": 705.5481,
+      "point_11_21": 726.1731,
+      "point_12_21": 746.7981,
+      "point_12_22": 772.3318,
+      "point_12_23": 792.9568,
+      "point_11_23": 818.4905,
+      "point_11_22": 844.0243,
+      "point_10_22": 869.558,
+      "point_9_22": 890.183,
+      "point_8_22": 910.808,
+      "point_7_22": 931.433,
+      "point_7_21": 956.9668,
+      "point_6_21": 982.5005,
+      "point_6_20": 1008.0342,
+      "point_7_20": 1033.568,
+      "point_7_19": 1059.1017,
+      "point_7_18": 1079.7267,
+      "point_7_17": 1100.3517,
+      "point_7_16": 1120.9767,
+      "point_6_17": 1152.8481,
+      "point_6_18": 1175.9274,
+      "point_6_19": 1196.5524,
+      "point_5_19": 1222.0862,
+      "point_5_18": 1247.6199,
+      "point_5_17": 1268.2449,
+      "point_5_16": 1288.8699,
+      "point_6_16": 1314.4037,
+      "point_6_15": 1339.9374,
+      "point_7_15": 1365.4711
+    }
+  },
+  "sessions": [
+    {
+      "session": "spray_20261115_060145_047614",
+      "closed": true,
+      "error": "RuntimeError('LOCALIZATION_REVALIDATION_BOUND')",
+      "original_mission_report_passed": false,
+      "mission_version": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+      "speed_cap_mps": 0.3,
+      "yaw_cap_rps": 0.35,
+      "observed_through_sim_s": 1402.732,
+      "mission_report_wall_s": 3004.4799021510116,
+      "lifecycle_active_sim_s": 19.12,
+      "startup_to_first_accepted_goal_s": 19.12,
+      "confirmed_points": 28,
+      "selected_points": 56,
+      "without_accepted_goal": [
+        "point_12_21",
+        "point_12_22",
+        "point_12_23",
+        "point_11_23",
+        "point_11_22",
+        "point_10_22",
+        "point_9_22",
+        "point_8_22",
+        "point_7_22",
+        "point_7_21",
+        "point_6_21",
+        "point_6_20",
+        "point_7_20",
+        "point_7_19",
+        "point_7_18",
+        "point_7_17",
+        "point_7_16",
+        "point_6_17",
+        "point_6_18",
+        "point_6_19",
+        "point_5_19",
+        "point_5_18",
+        "point_5_17",
+        "point_5_16",
+        "point_6_16",
+        "point_6_15",
+        "point_7_15"
+      ],
+      "attempted_unconfirmed": [
+        "point_11_21"
+      ],
+      "remaining_obligations": 28,
+      "ledger_outcomes": {
+        "SUCCEEDED": 28,
+        "CANCELLED": 3
+      },
+      "accepted_global_goals": 49,
+      "local_dock_goals": 15,
+      "bt_interrupts_global_nav": 14,
+      "stopped_relocalization_requests": 2,
+      "phase_totals_from_first_goal_s": {
+        "navigation": 805.012,
+        "precision": 341.802,
+        "tool": 119.398,
+        "wait_recovery_handoff": 117.4
+      },
+      "completed_cycle_stats": {
+        "elapsed": {
+          "n": 28,
+          "median_s": 39.805,
+          "p90_s": 64.0114,
+          "mean_s": 44.551
+        },
+        "navigation": {
+          "n": 28,
+          "median_s": 26.535,
+          "p90_s": 34.159,
+          "mean_s": 27.1546
+        },
+        "precision": {
+          "n": 28,
+          "median_s": 3.33,
+          "p90_s": 28.5176,
+          "mean_s": 10.9321
+        },
+        "tool": {
+          "n": 28,
+          "median_s": 4.094,
+          "p90_s": 4.1198,
+          "mean_s": 4.1179
+        },
+        "wait_recovery_handoff": {
+          "n": 28,
+          "median_s": 0.069,
+          "p90_s": 13.155,
+          "mean_s": 2.3464
+        }
+      },
+      "unassigned_after_last_closed_cycle_s": 0.0,
+      "observed_stop_cleanup_s": 0.018,
+      "prefix_comparison": {
+        "same_contiguous_confirmed_count": 28,
+        "r03_estimated_through_same_point_s": 705.5481,
+        "measured_through_same_point_s": 1266.548,
+        "measured_minus_estimated_s": 560.9999
+      },
+      "budget_arithmetic": {
+        "mean_s_per_selected_point_after_observed_startup_before_reserve": 31.8014,
+        "signed_time_left_at_cutoff_s": 397.268,
+        "required_mean_s_per_remaining_point_at_cutoff_before_reserve": 14.1881
+      },
+      "point_cycles": [
+        {
+          "id": "point_7_14",
+          "first_nav_sim_s": 19.12,
+          "cycle_start_sim_s": 19.12,
+          "end_sim_s": 26.572,
+          "confirmed": true,
+          "elapsed_s": 7.452,
+          "phase_s": {
+            "navigation": 0.058,
+            "precision": 3.324,
+            "tool": 4.068,
+            "wait_recovery_handoff": 0.002
+          }
+        },
+        {
+          "id": "point_8_14",
+          "first_nav_sim_s": 26.616,
+          "cycle_start_sim_s": 26.572,
+          "end_sim_s": 48.114,
+          "confirmed": true,
+          "elapsed_s": 21.542,
+          "phase_s": {
+            "navigation": 14.124,
+            "precision": 3.304,
+            "tool": 4.07,
+            "wait_recovery_handoff": 0.044
+          }
+        },
+        {
+          "id": "point_8_15",
+          "first_nav_sim_s": 48.15,
+          "cycle_start_sim_s": 48.114,
+          "end_sim_s": 89.764,
+          "confirmed": true,
+          "elapsed_s": 41.65,
+          "phase_s": {
+            "navigation": 26.878,
+            "precision": 8.94,
+            "tool": 4.114,
+            "wait_recovery_handoff": 1.718
+          }
+        },
+        {
+          "id": "point_9_15",
+          "first_nav_sim_s": 89.792,
+          "cycle_start_sim_s": 89.764,
+          "end_sim_s": 122.952,
+          "confirmed": true,
+          "elapsed_s": 33.188,
+          "phase_s": {
+            "navigation": 25.74,
+            "precision": 3.33,
+            "tool": 4.09,
+            "wait_recovery_handoff": 0.028
+          }
+        },
+        {
+          "id": "point_9_14",
+          "first_nav_sim_s": 123.0,
+          "cycle_start_sim_s": 122.952,
+          "end_sim_s": 161.548,
+          "confirmed": true,
+          "elapsed_s": 38.596,
+          "phase_s": {
+            "navigation": 30.644,
+            "precision": 3.272,
+            "tool": 4.104,
+            "wait_recovery_handoff": 0.576
+          }
+        },
+        {
+          "id": "point_10_14",
+          "first_nav_sim_s": 161.586,
+          "cycle_start_sim_s": 161.548,
+          "end_sim_s": 205.876,
+          "confirmed": true,
+          "elapsed_s": 44.328,
+          "phase_s": {
+            "navigation": 25.496,
+            "precision": 14.7,
+            "tool": 4.092,
+            "wait_recovery_handoff": 0.04
+          }
+        },
+        {
+          "id": "point_10_15",
+          "first_nav_sim_s": 205.92,
+          "cycle_start_sim_s": 205.876,
+          "end_sim_s": 245.118,
+          "confirmed": true,
+          "elapsed_s": 39.242,
+          "phase_s": {
+            "navigation": 31.83,
+            "precision": 3.272,
+            "tool": 4.096,
+            "wait_recovery_handoff": 0.044
+          }
+        },
+        {
+          "id": "point_10_16",
+          "first_nav_sim_s": 245.16,
+          "cycle_start_sim_s": 245.118,
+          "end_sim_s": 292.992,
+          "confirmed": true,
+          "elapsed_s": 47.874,
+          "phase_s": {
+            "navigation": 25.294,
+            "precision": 18.476,
+            "tool": 4.06,
+            "wait_recovery_handoff": 0.044
+          }
+        },
+        {
+          "id": "point_9_16",
+          "first_nav_sim_s": 293.042,
+          "cycle_start_sim_s": 292.992,
+          "end_sim_s": 336.068,
+          "confirmed": true,
+          "elapsed_s": 43.076,
+          "phase_s": {
+            "navigation": 28.582,
+            "precision": 10.142,
+            "tool": 4.116,
+            "wait_recovery_handoff": 0.236
+          }
+        },
+        {
+          "id": "point_8_16",
+          "first_nav_sim_s": 336.09,
+          "cycle_start_sim_s": 336.068,
+          "end_sim_s": 368.064,
+          "confirmed": true,
+          "elapsed_s": 31.996,
+          "phase_s": {
+            "navigation": 24.33,
+            "precision": 3.33,
+            "tool": 4.072,
+            "wait_recovery_handoff": 0.264
+          }
+        },
+        {
+          "id": "point_8_17",
+          "first_nav_sim_s": 368.102,
+          "cycle_start_sim_s": 368.064,
+          "end_sim_s": 400.668,
+          "confirmed": true,
+          "elapsed_s": 32.604,
+          "phase_s": {
+            "navigation": 25.198,
+            "precision": 3.272,
+            "tool": 4.094,
+            "wait_recovery_handoff": 0.04
+          }
+        },
+        {
+          "id": "point_9_17",
+          "first_nav_sim_s": 400.71,
+          "cycle_start_sim_s": 400.668,
+          "end_sim_s": 461.86,
+          "confirmed": true,
+          "elapsed_s": 61.192,
+          "phase_s": {
+            "navigation": 28.65,
+            "precision": 28.382,
+            "tool": 4.118,
+            "wait_recovery_handoff": 0.042
+          }
+        },
+        {
+          "id": "point_10_17",
+          "first_nav_sim_s": 461.91,
+          "cycle_start_sim_s": 461.86,
+          "end_sim_s": 500.042,
+          "confirmed": true,
+          "elapsed_s": 38.182,
+          "phase_s": {
+            "navigation": 30.722,
+            "precision": 3.302,
+            "tool": 4.108,
+            "wait_recovery_handoff": 0.05
+          }
+        },
+        {
+          "id": "point_10_18",
+          "first_nav_sim_s": 500.072,
+          "cycle_start_sim_s": 500.042,
+          "end_sim_s": 531.87,
+          "confirmed": true,
+          "elapsed_s": 31.828,
+          "phase_s": {
+            "navigation": 23.99,
+            "precision": 3.302,
+            "tool": 4.076,
+            "wait_recovery_handoff": 0.46
+          }
+        },
+        {
+          "id": "point_9_18",
+          "first_nav_sim_s": 531.912,
+          "cycle_start_sim_s": 531.87,
+          "end_sim_s": 587.282,
+          "confirmed": true,
+          "elapsed_s": 55.412,
+          "phase_s": {
+            "navigation": 30.738,
+            "precision": 3.272,
+            "tool": 4.178,
+            "wait_recovery_handoff": 17.224
+          }
+        },
+        {
+          "id": "point_8_18",
+          "first_nav_sim_s": 587.31,
+          "cycle_start_sim_s": 587.282,
+          "end_sim_s": 635.164,
+          "confirmed": true,
+          "elapsed_s": 47.882,
+          "phase_s": {
+            "navigation": 21.998,
+            "precision": 8.642,
+            "tool": 4.08,
+            "wait_recovery_handoff": 13.162
+          }
+        },
+        {
+          "id": "point_8_19",
+          "first_nav_sim_s": 635.192,
+          "cycle_start_sim_s": 635.164,
+          "end_sim_s": 667.518,
+          "confirmed": true,
+          "elapsed_s": 32.354,
+          "phase_s": {
+            "navigation": 24.928,
+            "precision": 3.302,
+            "tool": 4.094,
+            "wait_recovery_handoff": 0.03
+          }
+        },
+        {
+          "id": "point_9_19",
+          "first_nav_sim_s": 667.53,
+          "cycle_start_sim_s": 667.518,
+          "end_sim_s": 720.07,
+          "confirmed": true,
+          "elapsed_s": 52.552,
+          "phase_s": {
+            "navigation": 26.192,
+            "precision": 21.932,
+            "tool": 4.118,
+            "wait_recovery_handoff": 0.31
+          }
+        },
+        {
+          "id": "point_10_19",
+          "first_nav_sim_s": 720.122,
+          "cycle_start_sim_s": 720.07,
+          "end_sim_s": 760.438,
+          "confirmed": true,
+          "elapsed_s": 40.368,
+          "phase_s": {
+            "navigation": 32.614,
+            "precision": 3.274,
+            "tool": 4.104,
+            "wait_recovery_handoff": 0.376
+          }
+        },
+        {
+          "id": "point_11_19",
+          "first_nav_sim_s": 760.472,
+          "cycle_start_sim_s": 760.438,
+          "end_sim_s": 793.306,
+          "confirmed": true,
+          "elapsed_s": 32.868,
+          "phase_s": {
+            "navigation": 25.386,
+            "precision": 3.302,
+            "tool": 4.092,
+            "wait_recovery_handoff": 0.088
+          }
+        },
+        {
+          "id": "point_12_20",
+          "first_nav_sim_s": 793.35,
+          "cycle_start_sim_s": 793.306,
+          "end_sim_s": 863.896,
+          "confirmed": true,
+          "elapsed_s": 70.59,
+          "phase_s": {
+            "navigation": 33.448,
+            "precision": 28.834,
+            "tool": 4.712,
+            "wait_recovery_handoff": 3.596
+          }
+        },
+        {
+          "id": "point_11_20",
+          "first_nav_sim_s": 863.942,
+          "cycle_start_sim_s": 863.896,
+          "end_sim_s": 969.318,
+          "confirmed": true,
+          "elapsed_s": 105.422,
+          "phase_s": {
+            "navigation": 35.818,
+            "precision": 65.432,
+            "tool": 4.124,
+            "wait_recovery_handoff": 0.048
+          }
+        },
+        {
+          "id": "point_10_20",
+          "first_nav_sim_s": 969.36,
+          "cycle_start_sim_s": 969.318,
+          "end_sim_s": 1064.156,
+          "confirmed": true,
+          "elapsed_s": 94.838,
+          "phase_s": {
+            "navigation": 39.78,
+            "precision": 37.352,
+            "tool": 4.104,
+            "wait_recovery_handoff": 13.602
+          }
+        },
+        {
+          "id": "point_9_20",
+          "first_nav_sim_s": 1064.19,
+          "cycle_start_sim_s": 1064.156,
+          "end_sim_s": 1110.078,
+          "confirmed": true,
+          "elapsed_s": 45.922,
+          "phase_s": {
+            "navigation": 24.926,
+            "precision": 3.752,
+            "tool": 4.092,
+            "wait_recovery_handoff": 13.152
+          }
+        },
+        {
+          "id": "point_8_20",
+          "first_nav_sim_s": 1110.12,
+          "cycle_start_sim_s": 1110.078,
+          "end_sim_s": 1146.592,
+          "confirmed": true,
+          "elapsed_s": 36.514,
+          "phase_s": {
+            "navigation": 25.62,
+            "precision": 6.752,
+            "tool": 4.1,
+            "wait_recovery_handoff": 0.042
+          }
+        },
+        {
+          "id": "point_8_21",
+          "first_nav_sim_s": 1146.632,
+          "cycle_start_sim_s": 1146.592,
+          "end_sim_s": 1184.57,
+          "confirmed": true,
+          "elapsed_s": 37.978,
+          "phase_s": {
+            "navigation": 30.204,
+            "precision": 3.302,
+            "tool": 4.066,
+            "wait_recovery_handoff": 0.406
+          }
+        },
+        {
+          "id": "point_9_21",
+          "first_nav_sim_s": 1184.61,
+          "cycle_start_sim_s": 1184.57,
+          "end_sim_s": 1227.99,
+          "confirmed": true,
+          "elapsed_s": 43.42,
+          "phase_s": {
+            "navigation": 36.03,
+            "precision": 3.272,
+            "tool": 4.076,
+            "wait_recovery_handoff": 0.042
+          }
+        },
+        {
+          "id": "point_10_21",
+          "first_nav_sim_s": 1228.022,
+          "cycle_start_sim_s": 1227.99,
+          "end_sim_s": 1266.548,
+          "confirmed": true,
+          "elapsed_s": 38.558,
+          "phase_s": {
+            "navigation": 31.11,
+            "precision": 3.332,
+            "tool": 4.082,
+            "wait_recovery_handoff": 0.034
+          }
+        },
+        {
+          "id": "point_11_21",
+          "first_nav_sim_s": 1266.572,
+          "cycle_start_sim_s": 1266.548,
+          "end_sim_s": 1402.732,
+          "confirmed": false,
+          "elapsed_s": 136.184,
+          "phase_s": {
+            "navigation": 44.684,
+            "precision": 35.702,
+            "tool": 4.098,
+            "wait_recovery_handoff": 51.7
+          }
+        }
+      ]
+    },
+    {
+      "session": "spray_20261119_081218_417252",
+      "closed": true,
+      "error": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+      "original_mission_report_passed": false,
+      "mission_version": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+      "speed_cap_mps": 0.3,
+      "yaw_cap_rps": 0.35,
+      "observed_through_sim_s": 944.304,
+      "mission_report_wall_s": 1982.1440556019998,
+      "lifecycle_active_sim_s": 32.496,
+      "startup_to_first_accepted_goal_s": 32.496,
+      "confirmed_points": 22,
+      "selected_points": 56,
+      "without_accepted_goal": [
+        "point_9_20",
+        "point_8_20",
+        "point_8_21",
+        "point_9_21",
+        "point_10_21",
+        "point_11_21",
+        "point_12_21",
+        "point_12_22",
+        "point_12_23",
+        "point_11_23",
+        "point_11_22",
+        "point_10_22",
+        "point_9_22",
+        "point_8_22",
+        "point_7_22",
+        "point_7_21",
+        "point_6_21",
+        "point_6_20",
+        "point_7_20",
+        "point_7_19",
+        "point_7_18",
+        "point_7_17",
+        "point_7_16",
+        "point_6_17",
+        "point_6_18",
+        "point_6_19",
+        "point_5_19",
+        "point_5_18",
+        "point_5_17",
+        "point_5_16",
+        "point_6_16",
+        "point_6_15",
+        "point_7_15"
+      ],
+      "attempted_unconfirmed": [
+        "point_10_20"
+      ],
+      "remaining_obligations": 34,
+      "ledger_outcomes": {
+        "SUCCEEDED": 22
+      },
+      "accepted_global_goals": 39,
+      "local_dock_goals": 13,
+      "bt_interrupts_global_nav": 16,
+      "stopped_relocalization_requests": 0,
+      "phase_totals_from_first_goal_s": {
+        "navigation": 609.794,
+        "precision": 206.276,
+        "tool": 89.88,
+        "wait_recovery_handoff": 5.858
+      },
+      "completed_cycle_stats": {
+        "elapsed": {
+          "n": 22,
+          "median_s": 39.484,
+          "p90_s": 51.4402,
+          "mean_s": 39.5257
+        },
+        "navigation": {
+          "n": 22,
+          "median_s": 26.805,
+          "p90_s": 35.3278,
+          "mean_s": 26.7525
+        },
+        "precision": {
+          "n": 22,
+          "median_s": 3.303,
+          "p90_s": 18.5058,
+          "mean_s": 8.424
+        },
+        "tool": {
+          "n": 22,
+          "median_s": 4.084,
+          "p90_s": 4.1074,
+          "mean_s": 4.0855
+        },
+        "wait_recovery_handoff": {
+          "n": 22,
+          "median_s": 0.104,
+          "p90_s": 0.6138,
+          "mean_s": 0.2637
+        }
+      },
+      "unassigned_after_last_closed_cycle_s": 0.0,
+      "observed_stop_cleanup_s": 0.016,
+      "prefix_comparison": {
+        "same_contiguous_confirmed_count": 22,
+        "r03_estimated_through_same_point_s": 571.9806,
+        "measured_through_same_point_s": 902.062,
+        "measured_minus_estimated_s": 330.0814
+      },
+      "budget_arithmetic": {
+        "mean_s_per_selected_point_after_observed_startup_before_reserve": 31.5626,
+        "signed_time_left_at_cutoff_s": 855.696,
+        "required_mean_s_per_remaining_point_at_cutoff_before_reserve": 25.1675
+      },
+      "point_cycles": [
+        {
+          "id": "point_7_14",
+          "first_nav_sim_s": 32.496,
+          "cycle_start_sim_s": 32.496,
+          "end_sim_s": 39.95,
+          "confirmed": true,
+          "elapsed_s": 7.454,
+          "phase_s": {
+            "navigation": 0.052,
+            "precision": 3.304,
+            "tool": 4.096,
+            "wait_recovery_handoff": 0.002
+          }
+        },
+        {
+          "id": "point_8_14",
+          "first_nav_sim_s": 40.002,
+          "cycle_start_sim_s": 39.95,
+          "end_sim_s": 67.518,
+          "confirmed": true,
+          "elapsed_s": 27.568,
+          "phase_s": {
+            "navigation": 19.434,
+            "precision": 3.274,
+            "tool": 4.064,
+            "wait_recovery_handoff": 0.796
+          }
+        },
+        {
+          "id": "point_8_15",
+          "first_nav_sim_s": 67.56,
+          "cycle_start_sim_s": 67.518,
+          "end_sim_s": 127.582,
+          "confirmed": true,
+          "elapsed_s": 60.064,
+          "phase_s": {
+            "navigation": 28.71,
+            "precision": 27.21,
+            "tool": 4.1,
+            "wait_recovery_handoff": 0.044
+          }
+        },
+        {
+          "id": "point_9_15",
+          "first_nav_sim_s": 127.622,
+          "cycle_start_sim_s": 127.582,
+          "end_sim_s": 161.934,
+          "confirmed": true,
+          "elapsed_s": 34.352,
+          "phase_s": {
+            "navigation": 26.478,
+            "precision": 3.298,
+            "tool": 4.102,
+            "wait_recovery_handoff": 0.474
+          }
+        },
+        {
+          "id": "point_9_14",
+          "first_nav_sim_s": 161.97,
+          "cycle_start_sim_s": 161.934,
+          "end_sim_s": 196.186,
+          "confirmed": true,
+          "elapsed_s": 34.252,
+          "phase_s": {
+            "navigation": 26.85,
+            "precision": 3.276,
+            "tool": 4.088,
+            "wait_recovery_handoff": 0.038
+          }
+        },
+        {
+          "id": "point_10_14",
+          "first_nav_sim_s": 196.232,
+          "cycle_start_sim_s": 196.186,
+          "end_sim_s": 226.408,
+          "confirmed": true,
+          "elapsed_s": 30.222,
+          "phase_s": {
+            "navigation": 22.38,
+            "precision": 3.272,
+            "tool": 4.076,
+            "wait_recovery_handoff": 0.494
+          }
+        },
+        {
+          "id": "point_10_15",
+          "first_nav_sim_s": 226.44,
+          "cycle_start_sim_s": 226.408,
+          "end_sim_s": 259.354,
+          "confirmed": true,
+          "elapsed_s": 32.946,
+          "phase_s": {
+            "navigation": 25.126,
+            "precision": 3.27,
+            "tool": 4.08,
+            "wait_recovery_handoff": 0.47
+          }
+        },
+        {
+          "id": "point_10_16",
+          "first_nav_sim_s": 259.38,
+          "cycle_start_sim_s": 259.354,
+          "end_sim_s": 304.012,
+          "confirmed": true,
+          "elapsed_s": 44.658,
+          "phase_s": {
+            "navigation": 25.082,
+            "precision": 15.48,
+            "tool": 4.068,
+            "wait_recovery_handoff": 0.028
+          }
+        },
+        {
+          "id": "point_9_16",
+          "first_nav_sim_s": 304.05,
+          "cycle_start_sim_s": 304.012,
+          "end_sim_s": 356.84,
+          "confirmed": true,
+          "elapsed_s": 52.828,
+          "phase_s": {
+            "navigation": 29.85,
+            "precision": 18.842,
+            "tool": 4.098,
+            "wait_recovery_handoff": 0.038
+          }
+        },
+        {
+          "id": "point_8_16",
+          "first_nav_sim_s": 356.88,
+          "cycle_start_sim_s": 356.84,
+          "end_sim_s": 400.92,
+          "confirmed": true,
+          "elapsed_s": 44.08,
+          "phase_s": {
+            "navigation": 26.76,
+            "precision": 13.172,
+            "tool": 4.108,
+            "wait_recovery_handoff": 0.04
+          }
+        },
+        {
+          "id": "point_8_17",
+          "first_nav_sim_s": 400.95,
+          "cycle_start_sim_s": 400.92,
+          "end_sim_s": 437.906,
+          "confirmed": true,
+          "elapsed_s": 36.986,
+          "phase_s": {
+            "navigation": 29.61,
+            "precision": 3.274,
+            "tool": 4.072,
+            "wait_recovery_handoff": 0.03
+          }
+        },
+        {
+          "id": "point_9_17",
+          "first_nav_sim_s": 437.94,
+          "cycle_start_sim_s": 437.906,
+          "end_sim_s": 480.436,
+          "confirmed": true,
+          "elapsed_s": 42.53,
+          "phase_s": {
+            "navigation": 27.12,
+            "precision": 11.254,
+            "tool": 4.12,
+            "wait_recovery_handoff": 0.036
+          }
+        },
+        {
+          "id": "point_10_17",
+          "first_nav_sim_s": 480.48,
+          "cycle_start_sim_s": 480.436,
+          "end_sim_s": 512.28,
+          "confirmed": true,
+          "elapsed_s": 31.844,
+          "phase_s": {
+            "navigation": 24.422,
+            "precision": 3.3,
+            "tool": 4.078,
+            "wait_recovery_handoff": 0.044
+          }
+        },
+        {
+          "id": "point_10_18",
+          "first_nav_sim_s": 512.31,
+          "cycle_start_sim_s": 512.28,
+          "end_sim_s": 563.308,
+          "confirmed": true,
+          "elapsed_s": 51.028,
+          "phase_s": {
+            "navigation": 24.352,
+            "precision": 21.752,
+            "tool": 4.074,
+            "wait_recovery_handoff": 0.85
+          }
+        },
+        {
+          "id": "point_9_18",
+          "first_nav_sim_s": 563.34,
+          "cycle_start_sim_s": 563.308,
+          "end_sim_s": 607.124,
+          "confirmed": true,
+          "elapsed_s": 43.816,
+          "phase_s": {
+            "navigation": 25.23,
+            "precision": 14.494,
+            "tool": 4.06,
+            "wait_recovery_handoff": 0.032
+          }
+        },
+        {
+          "id": "point_8_18",
+          "first_nav_sim_s": 607.17,
+          "cycle_start_sim_s": 607.124,
+          "end_sim_s": 648.672,
+          "confirmed": true,
+          "elapsed_s": 41.548,
+          "phase_s": {
+            "navigation": 26.24,
+            "precision": 10.592,
+            "tool": 4.09,
+            "wait_recovery_handoff": 0.626
+          }
+        },
+        {
+          "id": "point_8_19",
+          "first_nav_sim_s": 648.724,
+          "cycle_start_sim_s": 648.672,
+          "end_sim_s": 684.71,
+          "confirmed": true,
+          "elapsed_s": 36.038,
+          "phase_s": {
+            "navigation": 28.108,
+            "precision": 3.3,
+            "tool": 4.126,
+            "wait_recovery_handoff": 0.504
+          }
+        },
+        {
+          "id": "point_9_19",
+          "first_nav_sim_s": 684.75,
+          "cycle_start_sim_s": 684.71,
+          "end_sim_s": 732.89,
+          "confirmed": true,
+          "elapsed_s": 48.18,
+          "phase_s": {
+            "navigation": 40.468,
+            "precision": 3.31,
+            "tool": 4.052,
+            "wait_recovery_handoff": 0.35
+          }
+        },
+        {
+          "id": "point_10_19",
+          "first_nav_sim_s": 732.932,
+          "cycle_start_sim_s": 732.89,
+          "end_sim_s": 784.376,
+          "confirmed": true,
+          "elapsed_s": 51.486,
+          "phase_s": {
+            "navigation": 37.242,
+            "precision": 9.752,
+            "tool": 4.072,
+            "wait_recovery_handoff": 0.42
+          }
+        },
+        {
+          "id": "point_11_19",
+          "first_nav_sim_s": 784.41,
+          "cycle_start_sim_s": 784.376,
+          "end_sim_s": 821.056,
+          "confirmed": true,
+          "elapsed_s": 36.68,
+          "phase_s": {
+            "navigation": 29.252,
+            "precision": 3.3,
+            "tool": 4.094,
+            "wait_recovery_handoff": 0.034
+          }
+        },
+        {
+          "id": "point_12_20",
+          "first_nav_sim_s": 821.1,
+          "cycle_start_sim_s": 821.056,
+          "end_sim_s": 864.642,
+          "confirmed": true,
+          "elapsed_s": 43.586,
+          "phase_s": {
+            "navigation": 35.936,
+            "precision": 3.302,
+            "tool": 4.06,
+            "wait_recovery_handoff": 0.288
+          }
+        },
+        {
+          "id": "point_11_20",
+          "first_nav_sim_s": 864.69,
+          "cycle_start_sim_s": 864.642,
+          "end_sim_s": 902.062,
+          "confirmed": true,
+          "elapsed_s": 37.42,
+          "phase_s": {
+            "navigation": 29.854,
+            "precision": 3.3,
+            "tool": 4.102,
+            "wait_recovery_handoff": 0.164
+          }
+        },
+        {
+          "id": "point_10_20",
+          "first_nav_sim_s": 902.102,
+          "cycle_start_sim_s": 902.062,
+          "end_sim_s": 944.304,
+          "confirmed": false,
+          "elapsed_s": 42.242,
+          "phase_s": {
+            "navigation": 21.238,
+            "precision": 20.948,
+            "tool": 0,
+            "wait_recovery_handoff": 0.056
+          }
+        }
+      ]
+    }
+  ],
+  "common_confirmed_prefix": [
+    {
+      "session": "spray_20261115_060145_047614",
+      "same_points": 22,
+      "at_last_confirmed_sim_s": 969.318,
+      "remaining_points_at_checkpoint": 34,
+      "required_mean_s_per_remaining_point_by_hypothetical_reserve_s": {
+        "0": 24.4318,
+        "60": 22.6671
+      },
+      "completed_cycle_stats": {
+        "n": 22,
+        "median_s": 39.805,
+        "p90_s": 60.614,
+        "mean_s": 43.1908
+      },
+      "phase_totals_s": {
+        "navigation": 572.658,
+        "precision": 248.338,
+        "tool": 90.78,
+        "wait_recovery_handoff": 38.422
+      }
+    },
+    {
+      "session": "spray_20261119_081218_417252",
+      "same_points": 22,
+      "at_last_confirmed_sim_s": 902.062,
+      "remaining_points_at_checkpoint": 34,
+      "required_mean_s_per_remaining_point_by_hypothetical_reserve_s": {
+        "0": 26.4099,
+        "60": 24.6452
+      },
+      "completed_cycle_stats": {
+        "n": 22,
+        "median_s": 39.484,
+        "p90_s": 51.4402,
+        "mean_s": 39.5257
+      },
+      "phase_totals_s": {
+        "navigation": 588.556,
+        "precision": 185.328,
+        "tool": 89.88,
+        "wait_recovery_handoff": 5.802
+      }
+    }
+  ]
+}

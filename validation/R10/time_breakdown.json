@@ -1,68 +1,49 @@
 {
   "cases": [
     {
-      "case": "spray_full_A1",
-      "passed": false,
-      "simulation_seconds": 1402.732,
-      "wall_seconds": 3004.4799021510116,
-      "path": "optimization_v2/three_tasks/results/R12/spray_20261115_060145_047614"
+      "session": "mowing_20261119_070346_235832",
+      "task": "mowing",
+      "case": "startup_perception_loss",
+      "selected": 5,
+      "completed": 5,
+      "simulation_s": 280.162,
+      "wall_s": 757.9934079709999,
+      "terminal": "COMPLETED",
+      "task_checks_passed": true
     },
     {
-      "case": "spray_tool_jam",
-      "passed": true,
-      "simulation_seconds": 92.786,
-      "wall_seconds": 242.6777821329888,
-      "path": "optimization_v2/three_tasks/results/R12/spray_20261115_065207_245639"
+      "session": "spray_20261119_071627_581230",
+      "task": "spray",
+      "case": "tool_jam",
+      "selected": 3,
+      "completed": 3,
+      "simulation_s": 94.114,
+      "wall_s": 254.16567744299982,
+      "terminal": "COMPLETED",
+      "task_checks_passed": true
     },
     {
-      "case": "mowing_full_B1",
-      "passed": false,
-      "simulation_seconds": 879.272,
-      "wall_seconds": 2333.241463890008,
-      "path": "optimization_v2/three_tasks/results/R12/mowing_20261115_070740_054017"
+      "session": "mowing_20261119_072044_764057",
+      "task": "mowing",
+      "case": "nominal",
+      "selected": 47,
+      "completed": 25,
+      "simulation_s": 1173.702,
+      "wall_s": 3084.2818984490004,
+      "terminal": "HUMAN_REQUIRED",
+      "task_checks_passed": false
     },
     {
-      "case": "mowing_startup_perception_loss",
-      "passed": true,
-      "simulation_seconds": 246.912,
-      "wall_seconds": 661.5896586510062,
-      "path": "optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371"
-    },
-    {
-      "case": "inspection_full_connector",
-      "passed": true,
-      "simulation_seconds": 343.642,
-      "wall_seconds": 893.1436295809981,
-      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_122404_262658"
-    },
-    {
-      "case": "inspection_follow_stop_resume",
-      "passed": true,
-      "simulation_seconds": 108.532,
-      "wall_seconds": 286.49436309799785,
-      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_123912_581545"
-    },
-    {
-      "case": "inspection_detour",
-      "passed": true,
-      "simulation_seconds": 100.074,
-      "wall_seconds": 266.37195582200366,
-      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_124410_931009"
-    },
-    {
-      "case": "inspection_persistent_block",
-      "passed": true,
-      "simulation_seconds": 79.298,
-      "wall_seconds": 210.20496897499834,
-      "path": "optimization_v2/three_tasks/results/R08/inspection_20261114_124850_642479"
-    },
-    {
-      "case": "mowing_persistent_block",
-      "passed": true,
-      "simulation_seconds": 62.728,
-      "wall_seconds": 167.72069314299733,
-      "path": "optimization_v2/three_tasks/results/R09/mowing_20261114_140747_354583"
+      "session": "spray_20261119_081218_417252",
+      "task": "spray",
+      "case": "nominal",
+      "selected": 56,
+      "completed": 22,
+      "simulation_s": 944.304,
+      "wall_s": 1994.0422698829998,
+      "terminal": "INCOMPLETE",
+      "task_checks_passed": false
     }
   ],
-  "scope": "Measured independent cases. No sixty-run matrix or extrapolated runtime"
+  "scope": "Measured Nov 19 Gazebo runs. Cases are sequential and individually bounded."
 }

@@ -1,0 +1,298 @@
+{
+  "optimization_v2/three_tasks/results/R12/media/behavior_highlights.log": {
+    "sha256": "110d1a46b75f1f1e20f19412f5f993b81fc9f8db2b0cc02af25f07741b6b625e",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/behavior_highlights.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/behavior_highlights.mp4": {
+    "sha256": "14cf68220207a15de63ed7ab3d5504885750074e55707b71b455c1cc1d76ad4c",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/behavior_highlights.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/behavior_highlights.txt": {
+    "sha256": "dc528060994ca3f15dccf3d38a0fdfc60520724ecba5d31974bddf3f608be00f",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/behavior_highlights.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/full_recordings.log": {
+    "sha256": "10c7ee5638f0ae2a7d11f0f07ef6dfb71da8b572b3e835118be606b7b627a53f",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/full_recordings.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/full_recordings.mp4": {
+    "sha256": "52f31808b859c8684d10b59ff99feda3014e517fa3324c4a8ad2d2e92244a64c",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/full_recordings.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/full_recordings.txt": {
+    "sha256": "853e00fe7cfddbec821a8fdf52f216063b0ac68fefef729e69df308a6f350c05",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/full_recordings.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/index.html": {
+    "sha256": "f15158d52a7d01192c773dc8db667c8a928cf45cd424ed736c46b57141ba90a7",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/index.html"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_behavior.log": {
+    "sha256": "7b535b0a8df8bb0e434a96f320190b040d25b51d4aa1ed8bc92dc5ace0085782",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/inspection_behavior.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_behavior.mp4": {
+    "sha256": "9ab24f1aa0af14d73000eb61202226c51d04f7c987e395c1837caca5015a54e2",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_behavior.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_behavior.txt": {
+    "sha256": "78bf8a7cc27c502f9c76d08be84f7c5f1b73f2eb88b86d7c3a467e179266d2dd",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_behavior.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_blocked_behavior.log": {
+    "sha256": "d2a0d16cff386dcd46521fa297c33133f3ced027e173ec29e2d4a461fafa8c11",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/inspection_blocked_behavior.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_blocked_behavior.mp4": {
+    "sha256": "19b710cef04b2ac29964caf0ce775f182c5bfc3b9a7ff2ad648db4b249e43a53",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_blocked_behavior.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_blocked_behavior.txt": {
+    "sha256": "befc3bd4efcf3eb67e98a4322f5e79acd7bd1ac03dcee00a1ac1afeb6801d0da",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_blocked_behavior.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_blocked_overview.log": {
+    "sha256": "796e26e407882c09325d68761186ec071722d20c79046586c6fd01a177dcb281",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/inspection_blocked_overview.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_blocked_overview.mp4": {
+    "sha256": "30fc3811ae802344b0854d540d0106daa13ed5dd77ea4df1d4555859968f24f6",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_blocked_overview.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_blocked_overview.txt": {
+    "sha256": "cb4b146eb7ee1140e3f3593b9f84a33660d1a0eecc406cee9c6af2c23496f794",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_blocked_overview.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_leader_behavior.log": {
+    "sha256": "5bc01d11e4add939ba1cce50a5d1dc1585b74b4b7c11647d94dc715c4fa98fe8",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/inspection_leader_behavior.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_leader_behavior.mp4": {
+    "sha256": "31121364e711252a64ecea33a8942f1f3c57fcf340a5d3d3d9a7764881a2c137",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_leader_behavior.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_leader_behavior.txt": {
+    "sha256": "7a21a69beb9a4b5a612a7daede5f31c7e2219acbe524a4f7e37363b3fbf4710d",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_leader_behavior.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_leader_overview.log": {
+    "sha256": "3693aaa9885606be6aa6b9abb704ef45898ab2ce8cacf6ea90a9617e46d27b51",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/inspection_leader_overview.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_leader_overview.mp4": {
+    "sha256": "977a0540c36e229b4e1853367bd0bab9e5a961fccdd54da98e401423428a1ff3",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_leader_overview.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_leader_overview.txt": {
+    "sha256": "759a974a357c58ec0e781433ec13806c27d17935b05136e6f52e8ecf8996c3bd",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_leader_overview.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_overview.log": {
+    "sha256": "eef89cbff09507bac77b8db9a38d8122332cad06beea8163c75835ac88fc1ab0",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/inspection_overview.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_overview.mp4": {
+    "sha256": "d6a5592d909dd78ba515558755c99115a891b746eb3c02e7b3941564dedad56a",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_overview.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/inspection_overview.txt": {
+    "sha256": "8d65df56446b13c0bbe963b3a1dea5671826adf9068cb9570d58f834eaf918e3",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/inspection_overview.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/manifest.json": {
+    "sha256": "8d5da2c15b7ea244b88fe78db110f828231e0cea5890d413d61d0f72d9c37efb",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/manifest.json"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_behavior.log": {
+    "sha256": "3a1c15b997f877cd3d0ef008c423b78d7595cbf4e8bd85e4761197970dc9f65d",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_behavior.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_behavior.mp4": {
+    "sha256": "1ae8653c32105ed82737226570ec9646bab4be8028755c0b989e637677630ad4",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_behavior.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_behavior.txt": {
+    "sha256": "389ed7de5f09d9e14f8eeba571570dd9a52aebf6ef196720c33439c1a8c595bc",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_behavior.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_full_B1_behavior.log": {
+    "sha256": "8f38be4b877838ed9608ab6461b8197562426468de1f3717a18ce27e31afe92e",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_full_B1_behavior.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_full_B1_behavior.mp4": {
+    "sha256": "4bc9b11f7a0fe306d04d86a256177c37d7cad4b2380ae09aa5f7b518c9f4b2fa",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_full_B1_behavior.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_full_B1_behavior.txt": {
+    "sha256": "e3c3cd10422b26b67f23f31b588806267421e940d7ad35315b4ee422b99194e4",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_full_B1_behavior.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_full_B1_overview.log": {
+    "sha256": "66fa359c501ba54326f5e71f4297f9d7414906bd33ebfea87672c3c8764487a9",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_full_B1_overview.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_full_B1_overview.mp4": {
+    "sha256": "e4c626258e14885708266a00a32a16dfe42edf27fe0a4c1a25ef851571044cf7",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_full_B1_overview.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_full_B1_overview.txt": {
+    "sha256": "46a7ca288ec63eca2df355570d34930f71fba6ea622d3555a3366bb2778a418f",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_full_B1_overview.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_overview.log": {
+    "sha256": "53b9b24c497e91a6b4927930c0b478ccf3a8117a9a7466a580665d682f441dcf",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_overview.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_overview.mp4": {
+    "sha256": "c37793fa53c62eb7a3fdfafc86e6e4abd951b0ca6e7ba7de70cf9ca337ce6b9d",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_overview.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_startup_perception_loss_behavior.log": {
+    "sha256": "dc6fed3fc620b826beebc7867b1a5cd518211174b99863640fa211e085d30aab",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_startup_perception_loss_behavior.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_startup_perception_loss_behavior.mp4": {
+    "sha256": "cab344b2c592356112fdae786e0f2c1b603a3623aeb15a505e58036bd20a972d",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_startup_perception_loss_behavior.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_startup_perception_loss_behavior.txt": {
+    "sha256": "e11a4f71453539c06639f3d3f222b7de697636d2c8849d11c987bcc00a32ed2b",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/mowing_startup_perception_loss_behavior.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_startup_perception_loss_overview.log": {
+    "sha256": "da142f2c36ec42cc95a1e483f6dd3c3f51e3d29cc14fe57912feb8647294203a",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_startup_perception_loss_overview.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_startup_perception_loss_overview.mp4": {
+    "sha256": "9b2e00dc6d5ef06677ba1c1a921d04f871b419852b24fd6410c5fbff431e65c2",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_startup_perception_loss_overview.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/mowing_startup_perception_loss_overview.txt": {
+    "sha256": "94a3daea21ff12d2d9ec8e52eabb932ab69e7cd4c514cd72a00fd088bc2ad488",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/mowing_startup_perception_loss_overview.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_behavior.log": {
+    "sha256": "e56f239ece6be2dd1b1bdfa5f9718a6f7d4b2807f211ebeebfffda761767129d",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_behavior.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_behavior.mp4": {
+    "sha256": "e8eaf9a3f759791daab9cff734b9d336cb335851cedf9683d97cb5afa3eed072",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_behavior.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_behavior.txt": {
+    "sha256": "14484b8ff0f5ff98a2654c286115a23716dfa0416e215639bf85c0646e3ffd64",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_behavior.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_full_A1_behavior.log": {
+    "sha256": "dc81040376640289a5a5d14e2788b7d193bec8329df29674d6115f503aa18ef5",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_full_A1_behavior.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_full_A1_behavior.mp4": {
+    "sha256": "746dd81e953972c5b75909e4f14d5d71b014bd2e78e29bf813dd16fdaebb89ff",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_full_A1_behavior.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_full_A1_behavior.txt": {
+    "sha256": "876c424aafc77b5259b38b76d251e25d3d57fcc58feb629a06a9637109a761c4",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_full_A1_behavior.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_full_A1_overview.log": {
+    "sha256": "4153fc5916bc745528b83e1a744a3000df0e54ae25aa7f76b79c2f5a35b59f0f",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_full_A1_overview.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_full_A1_overview.mp4": {
+    "sha256": "536ba395a48f12f23692854139cc6a50f17c5842ca057bb967585b613d99d363",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_full_A1_overview.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_full_A1_overview.txt": {
+    "sha256": "811f5a6896e95fa1cd12ea45ff2c365f9b8d26bf17b3b8d38ccd91f363a8d9f8",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_full_A1_overview.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_overview.log": {
+    "sha256": "19b99ae866297fd390c3928c5efbf6f9cf1a7074c8e6051b876c8820e0ad1803",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_overview.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_overview.mp4": {
+    "sha256": "9202d3d06ef8791a213454fd941efbe0bbfc80dbb65a775a03076ebf22d2e5b3",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/spray_overview.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/spray_overview.txt": {
+    "sha256": "e7ba1ca5da8cd51d8f4ffd14292de8db17335d588c264275b9cecf7d9af02518",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/spray_overview.txt"
+  },
+  "optimization_v2/three_tasks/results/R12/media/three_tasks_short.log": {
+    "sha256": "e2b0adb4eb1ad219057f4a438e56495b39b88d8d62d2dac1fdeb612b0753eb59",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/three_tasks_short.log"
+  },
+  "optimization_v2/three_tasks/results/R12/media/three_tasks_short.mp4": {
+    "sha256": "e3667d78951105036a878e6ec93618bde56d940e67fa096ea68ee25225977723",
+    "checked_path": "delivery/closeout_20261119/prior/R12/media/three_tasks_short.mp4"
+  },
+  "optimization_v2/three_tasks/results/R12/media/three_tasks_short.txt": {
+    "sha256": "3c5b333724533eaf754161ae41b2929248073e1672678bf8be5719ef505343bc",
+    "checked_path": "optimization_v2/three_tasks/results/R12/media/three_tasks_short.txt"
+  },
+  "media/r12_behavior_highlights.mp4": {
+    "sha256": "14cf68220207a15de63ed7ab3d5504885750074e55707b71b455c1cc1d76ad4c",
+    "checked_path": "media/r12_behavior_highlights.mp4"
+  },
+  "media/r12_inspection.png": {
+    "sha256": "1fb8aaca2ff24b52d55ebba0ae43b43df013be6a5a95cdbc825f5e2b845141b5",
+    "checked_path": "media/r12_inspection.png"
+  },
+  "media/r12_inspection_blocked.png": {
+    "sha256": "5bcce1807d31cf22ff1ec7f5bdd657970700f256a615953eee3310faf3510a33",
+    "checked_path": "media/r12_inspection_blocked.png"
+  },
+  "media/r12_inspection_blocked_full.mp4": {
+    "sha256": "911097333988c4b8e0a56a81dbb73fcd5a2bcfd0fafa5a26e67e606862a19b11",
+    "checked_path": "media/r12_inspection_blocked_full.mp4"
+  },
+  "media/r12_inspection_full.mp4": {
+    "sha256": "9acec2107601374bee7d333364b2e5338a625658666fa98cfaf4d75286990aa6",
+    "checked_path": "media/r12_inspection_full.mp4"
+  },
+  "media/r12_inspection_leader.png": {
+    "sha256": "7ad4a2fadd1c4bfbd738a64b8fceea16cd093e87092efead0f56b2209411fae3",
+    "checked_path": "media/r12_inspection_leader.png"
+  },
+  "media/r12_inspection_leader_full.mp4": {
+    "sha256": "9a46b73cb863298dc43ce31709da39eda6f02a619e0d398a0a103213f7651a11",
+    "checked_path": "media/r12_inspection_leader_full.mp4"
+  },
+  "media/r12_mowing_full_B1.png": {
+    "sha256": "ca73fda93788c6b591d28bd9d17b8bfd9ef4b333352d34eda36694ba1b931315",
+    "checked_path": "media/r12_mowing_full_B1.png"
+  },
+  "media/r12_mowing_full_B1_full.mp4": {
+    "sha256": "b43cb0501711c4840ab18ad47bf5bcfbc4b901701c4f3d206add1d0159319b92",
+    "checked_path": "media/r12_mowing_full_B1_full.mp4"
+  },
+  "media/r12_mowing_startup_perception_loss.png": {
+    "sha256": "d9ee6837724f7c6d0e059c1032cdf222887dd7dbdabb38c1da4f827609a38fc3",
+    "checked_path": "media/r12_mowing_startup_perception_loss.png"
+  },
+  "media/r12_mowing_startup_perception_loss_full.mp4": {
+    "sha256": "f30b20f0c0a338dcbb170733ed1396f724ad36cb1bbd552a48ba2ddc887d75bb",
+    "checked_path": "media/r12_mowing_startup_perception_loss_full.mp4"
+  },
+  "media/r12_spray.png": {
+    "sha256": "46a3d938fe2ae21966e8b614ff6266aca144e1e7e9dda45cdde55f1f63715596",
+    "checked_path": "media/r12_spray.png"
+  },
+  "media/r12_spray_full.mp4": {
+    "sha256": "a9167f1ba78bacbe37f92ba96676dcee9e79a8ba5d49d8e5499f3bbf11cf6973",
+    "checked_path": "media/r12_spray_full.mp4"
+  },
+  "media/r12_spray_full_A1.png": {
+    "sha256": "2d379f576e94334c82ab42e38d53e3346d28cd20e02fdf919d1eedae93b6578d",
+    "checked_path": "media/r12_spray_full_A1.png"
+  },
+  "media/r12_spray_full_A1_full.mp4": {
+    "sha256": "68c1e1cc98b9934448f4e988ad1645b5c15f0f14d4300a250381fc856e751827",
+    "checked_path": "media/r12_spray_full_A1_full.mp4"
+  },
+  "media/r12_three_tasks_short.mp4": {
+    "sha256": "e3667d78951105036a878e6ec93618bde56d940e67fa096ea68ee25225977723",
+    "checked_path": "media/r12_three_tasks_short.mp4"
+  }
+}

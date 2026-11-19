@@ -1,0 +1,57 @@
+{
+  "schema": "B1-OFFLINE-CONNECTOR-COMPARISON/1",
+  "passed": true,
+  "checks": {
+    "full_plan_geometry": true,
+    "original_work_polygons_and_strips": true,
+    "shorter_path": true,
+    "no_extra_reverse_travel": true,
+    "fewer_switches": true,
+    "shortest_gear_no_worse": true,
+    "envelope_clearance_improved": true,
+    "continuous_padded_envelope_inside_prior": true
+  },
+  "source_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+  "candidate_sha256": "2a8fed96cccf06c5cdd22719fab3dce1dec12ce74020d3bb1e2f289dc6eec2e7",
+  "checker_sha256": "eb8c8f69e05dc022a0218c7b87d765cd38fc5b932d41cf9eabc9a1dac75b6cce",
+  "covered_original_connector_ids": [
+    "B1:safe_turn:6:0",
+    "B1:safe_turn:6:1",
+    "B1:safe_turn:6:2",
+    "B1:safe_turn:6:3",
+    "B1:safe_turn:6:4"
+  ],
+  "original": {
+    "chord_length_m": 28.316146096628284,
+    "gear_sections": 5,
+    "forward_m": 23.12238615011223,
+    "reverse_m": 5.193759946516051,
+    "switches_between_forward_work_strips": 6,
+    "shortest_single_gear_section_m": 0.37781426439792487,
+    "min_sampled_envelope_clearance_m": 0.02014393483218144,
+    "continuous_envelope_clearance_lower_bound_m": -0.022787638842405627
+  },
+  "proposed": {
+    "chord_length_m": 27.938314110631133,
+    "gear_sections": 4,
+    "forward_m": 23.26778145558531,
+    "reverse_m": 4.670532655045819,
+    "switches_between_forward_work_strips": 4,
+    "shortest_single_gear_section_m": 1.4149686754849407,
+    "min_sampled_envelope_clearance_m": 0.07690245474168476,
+    "continuous_envelope_clearance_lower_bound_m": 0.034016545966630785
+  },
+  "proposed_full_plan_checks": {
+    "passed": true,
+    "execution_segments": 46,
+    "reference_original_segments": 34,
+    "original_reference_status": "PARTIAL",
+    "original_work_target_union_m2": 188.3918016929564,
+    "original_cluster_area_m2": 195.99438340335297,
+    "original_work_union_unchanged": true
+  },
+  "original_full_plan_estimate_s": 1247.1236791947608,
+  "proposed_full_plan_estimate_s": 1240.6123512507722,
+  "original_budget_s": 1800,
+  "scope": "Offline geometry only. New tool-off connection retaining both original work poses and all ten work strips. No Nav2/Gazebo driving, collision feedback, localization, completed area or R10 credit."
+}

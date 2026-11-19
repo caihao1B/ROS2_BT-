@@ -1,0 +1,312 @@
+{
+  "passed": true,
+  "checks": {
+    "runtime_clean": true,
+    "original_database_unchanged": true,
+    "no_unexpected_contact": true,
+    "whole_footprint_authorized": true,
+    "map_rmse_under_15cm": true,
+    "unique_actuator": true,
+    "unique_tool": true,
+    "unique_tf": true,
+    "measured_final_stop": true,
+    "feedback_area_consistent": true,
+    "curvature_bounded": true,
+    "source_bound": true,
+    "task_version_bound": true,
+    "original_ordered_passages": true,
+    "selected_segments_traversed": true,
+    "two_work_strips": true,
+    "actual_reverse_travel": true,
+    "tools_off_during_turns": true,
+    "tools_off_during_recovery": true,
+    "actual_startup_outage": true,
+    "startup_cancel_observed": true,
+    "consumers_detected_missing_perception": true,
+    "startup_cancel_physically_confirmed": true,
+    "no_cancel_timeout_latch": true,
+    "startup_recovery_completed": true,
+    "original_area_and_obligations_retained": true,
+    "reference_not_claimed_completed": true
+  },
+  "case": "startup_perception_loss",
+  "task_result": {
+    "passed": true,
+    "terminal": "COMPLETED",
+    "controlled_hold": false,
+    "error": null,
+    "t": 280.162,
+    "selected_segments": 5,
+    "navigation_groups": 5,
+    "original_segment_passages": [
+      {
+        "segment": "B1:segment:0:safe:0",
+        "xy_error_m": 0.09844291832003008,
+        "yaw_error_rad": 0.005152022057792749,
+        "t": 79.5
+      },
+      {
+        "segment": "B1:safe_turn:1:0",
+        "xy_error_m": 0.09885275825756247,
+        "yaw_error_rad": 0.06842837988672489,
+        "t": 116.732
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "xy_error_m": 0.09981262011288405,
+        "yaw_error_rad": 0.01595025582268972,
+        "t": 191.22
+      },
+      {
+        "segment": "B1:safe_turn:2:0",
+        "xy_error_m": 0.09827789223477422,
+        "yaw_error_rad": 0.04097326122456612,
+        "t": 214.86
+      },
+      {
+        "segment": "B1:safe_turn:2:1",
+        "xy_error_m": 0.09936686366042763,
+        "yaw_error_rad": 0.034522225952656964,
+        "t": 277.17
+      }
+    ],
+    "original_segments": 47,
+    "execution_segments": 47,
+    "reference_original_segments": 34,
+    "original_reference_status": "PARTIAL",
+    "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
+    "localization_revalidations": {},
+    "completed_segments": [
+      "B1:segment:0:safe:0",
+      "B1:safe_turn:1:0",
+      "B1:segment:4:safe:0",
+      "B1:safe_turn:2:0",
+      "B1:safe_turn:2:1"
+    ],
+    "remaining_selected": [],
+    "not_selected": [
+      "B1:safe_turn:2:2",
+      "B1:segment:8:safe:0",
+      "B1:safe_turn:3:0",
+      "B1:safe_turn:3:1",
+      "B1:safe_turn:3:2",
+      "B1:safe_turn:3:3",
+      "B1:segment:12:safe:0",
+      "B1:safe_turn:4:0",
+      "B1:safe_turn:4:1",
+      "B1:safe_turn:4:2",
+      "B1:segment:16:safe:0",
+      "B1:safe_turn:5:0",
+      "B1:safe_turn:5:1",
+      "B1:safe_turn:5:2",
+      "B1:safe_turn:5:3",
+      "B1:safe_turn:5:4",
+      "B1:segment:16:safe:1",
+      "B1:safe_turn:6:0",
+      "B1:safe_turn:6:1",
+      "B1:safe_turn:6:2",
+      "B1:safe_turn:6:3",
+      "B1:safe_turn:6:4",
+      "B1:segment:20:safe:0",
+      "B1:safe_turn:7:0",
+      "B1:safe_turn:7:1",
+      "B1:safe_turn:7:2",
+      "B1:safe_turn:7:3",
+      "B1:safe_turn:7:4",
+      "B1:safe_turn:7:5",
+      "B1:segment:24:safe:0",
+      "B1:safe_turn:8:0",
+      "B1:safe_turn:8:1",
+      "B1:safe_turn:8:2",
+      "B1:safe_turn:8:3",
+      "B1:safe_turn:8:4",
+      "B1:safe_turn:8:5",
+      "B1:safe_turn:8:6",
+      "B1:safe_turn:8:7",
+      "B1:segment:29:safe:0",
+      "B1:safe_turn:9:0",
+      "B1:safe_turn:9:1",
+      "B1:segment:29:safe:1"
+    ],
+    "work_results": [
+      {
+        "segment": "B1:segment:0:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 0.0,
+        "remaining": 10.561490281674196,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:0:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 7.688587499999996,
+        "remaining": 2.8729027816742,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:0:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 7.688587499999996,
+        "remaining": 2.8729027816742,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:0:safe:0",
+        "state": "PARTIAL",
+        "reason": "CONTEXT_STALE",
+        "confirmed": 7.688587499999996,
+        "remaining": 2.8729027816742,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:0:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 7.688587499999996,
+        "remaining": 2.8729027816742,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:0:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 9.688599999999997,
+        "remaining": 0.8728902816741986,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 10.266449999999999,
+        "remaining": 8.588389427513071,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 10.266449999999999,
+        "remaining": 8.588389427513071,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 10.266449999999999,
+        "remaining": 8.588389427513071,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 12.088325000000005,
+        "remaining": 6.766514427513066,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 13.533350000000011,
+        "remaining": 5.321489427513059,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 14.843362500000008,
+        "remaining": 4.011476927513062,
+        "uncertain": false
+      },
+      {
+        "segment": "B1:segment:4:safe:0",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 17.14596249999999,
+        "remaining": 1.7088769275130815,
+        "uncertain": false
+      }
+    ],
+    "replans": 0,
+    "coverage_rejoins": 0,
+    "coverage_planner_queries": 0,
+    "endpoint_recoveries": 1,
+    "endpoint_planner_queries": 1,
+    "continuous_recovery_queries": 1,
+    "final_gate": {
+      "t": 280.14,
+      "allowed": false,
+      "mode": "STOP",
+      "v": 0.0,
+      "w": 0.0,
+      "reasons": [
+        "NAV_COMMAND_STALE"
+      ],
+      "stopped": true,
+      "tool_stopped": true,
+      "nav_idle": true,
+      "progress_m": 40.53835329697617,
+      "armed_direction": 1,
+      "raw_nav_v": 0.0,
+      "raw_nav_w": 0.0
+    },
+    "ownership": {
+      "/tf": [
+        "s05_local_odometry",
+        "s08_global_pose_manager"
+      ],
+      "/s03/actuator/request": [
+        "r09_actuator_gate"
+      ],
+      "/s10/tool/command": [
+        "s10_tool_action_server"
+      ]
+    },
+    "wall_seconds": 746.2139441739998,
+    "execution_mode": "original_primitive_boundaries",
+    "scope": "All current approved execution goals checked in order; original 34 reference remains PARTIAL; unchanged original work polygons use physical feedback only"
+  },
+  "jobs": [
+    {
+      "key": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335:B1:segment:0",
+      "status": "CANCELLED",
+      "confirmed_m2": 9.688599999999997,
+      "requested_m2": 10.561490281674196,
+      "remaining_m2": 0.8728902816741986,
+      "uncertain": false,
+      "physical_area_m2": 13.061001998204876,
+      "credit_outside_physical_3cm_m2": 0.0,
+      "credit_geometry_area_m2": 9.688599999999997
+    },
+    {
+      "key": "2501c692964e6ec67d356127fe081edcddf36ef9b490b0b5bc87608c18b42335:B1:segment:4",
+      "status": "CANCELLED",
+      "confirmed_m2": 17.14596249999999,
+      "requested_m2": 18.85483942751307,
+      "remaining_m2": 1.7088769275130815,
+      "uncertain": false,
+      "physical_area_m2": 21.335989457678156,
+      "credit_outside_physical_3cm_m2": 0.0,
+      "credit_geometry_area_m2": 17.14596249999999
+    }
+  ],
+  "map_xy_rmse_m": 0.05615164273152025,
+  "actual_reverse_distance_m": 13.880904193767831,
+  "selected_requested_area_m2": 27.953981706793993,
+  "selected_confirmed_union_m2": 26.4086737581878,
+  "selected_fraction": 0.9447195764519436,
+  "selected_residual_m2": 1.5453079486062506,
+  "original_cluster_area_m2": 195.99438340335297,
+  "original_cluster_confirmed_fraction": 0.13474199260005923,
+  "original_clusters": 3,
+  "unexpected_contacts": {},
+  "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
+  "formal_credit": false
+}

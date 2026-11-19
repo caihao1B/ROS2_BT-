@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "checks": {
+    "two_exact_gears": true,
+    "clear_paths_accepted": true,
+    "actual_obstacle_rejected": true,
+    "clean_processes": true
+  },
+  "gears": [
+    {
+      "gear": "QUALIFICATION_TRANSFER:0",
+      "direction": 1,
+      "path_poses": 69,
+      "real_clear_service": true,
+      "real_blocked_service": false,
+      "invalid_pose_indices": [],
+      "wire_goal_bytes": 5033,
+      "clear_again_after_removal": true
+    },
+    {
+      "gear": "QUALIFICATION_TRANSFER:1",
+      "direction": -1,
+      "path_poses": 236,
+      "real_clear_service": true,
+      "real_blocked_service": false,
+      "invalid_pose_indices": [],
+      "wire_goal_bytes": 17057,
+      "clear_again_after_removal": true
+    }
+  ],
+  "scope": "Real Jazzy IsPathValid, frozen map_server + Smac planner/global costmap. Private domain with synthetic TF and blank versus injected measured-grid fixtures. No actuator, no Gazebo and no driving credit.",
+  "domain": 178,
+  "prior_sha256": "a89451538c2a3307db874b063ac2b9bece15a4c5cadb8bd6f1c23f28162c75e6",
+  "nav2_sha256": "b8fedb425724889ce0e1acdbdb9f8fc4519d384b03f278335397f6882e3c4387",
+  "plan_sha256": "c570309f234a89bb3a5a3526ecb600f001287887346452b6d11c0deb3ffd9147",
+  "probe_sha256": "b0f30930bface7150110600b3597ac46e0c7f70cd4e69384d2f66362ea5ced20",
+  "wall_seconds": 5.764585051001632
+}

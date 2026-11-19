@@ -1,0 +1,135 @@
+{
+  "schema": "R10-SINGLE-KEY-DOSE-AUDIT/1",
+  "session": "spray_defer_20261119_091633_791154",
+  "point": "point_9_20",
+  "key": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_9_20",
+  "source_sha256": {
+    "ledger/ledger.sqlite": "0847338b8faedd6ce3744fdd96e112282f79a60a67ab8ea583645267122289bb",
+    "ledger/summary.json": "e19e4b06dc5534dd7106a5055fe66d03e02102606f1b98f114a495f2d5a50f12",
+    "tool_evaluation/result.json": "2cdaf9f18a3e926c6688af0f34ff585dc0586790b62ba0acfe548bf9db8a8a43",
+    "tool_evaluation/physical.jsonl": "d4953d3940042c12de4ab3477c470fbde39d7c1294f7fad9eb2e9164d72302e2",
+    "mission_events.jsonl": "5527d2d26e7552f47263fd0027a92c73bd8af5ff1e66be8eece497ffea52053d",
+    "mission.json": "da0ea9316d2396626899c51409bbf820a3aa5ec1abded10420775f2ab11f7a92",
+    "scene/tool.json": "58cc27ad0e5789e890f2345fa85a75c0519a4163bc078ce1e75d4816aeb96d31"
+  },
+  "requested_quantity": 3.0,
+  "attempts": [
+    {
+      "attempt": "9532316561755-6795",
+      "tool_receipt": {
+        "t": 140.28,
+        "event": "TOOL_RESULT",
+        "point": "point_9_20",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 0.0,
+        "remaining": 3.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 6.5193,
+        "meter_after": 6.729
+      },
+      "transitions": [
+        {
+          "t": 139.236,
+          "status": "RUNNING",
+          "reason": "RESERVED_NOT_COMPLETED"
+        },
+        {
+          "t": 140.28,
+          "status": "CANCELLED",
+          "reason": "USER_CANCEL"
+        }
+      ],
+      "sqlite_evidence_count": 48,
+      "sqlite_reason_counts": {
+        "TOOL_NOT_WORKING": 33,
+        "FIRST_OR_GAP": 1,
+        "CONFIRMING": 9,
+        "PERCEPTION": 5
+      },
+      "accepted_observations": 0,
+      "accepted_quantity_this_attempt": 0.0,
+      "accepted_quantity_entire_key_at_end": 0.0,
+      "command_feedback_meter_delta": 0.20969999999999978,
+      "physical_meter_first_last": [
+        6.519333333331514,
+        6.7289999999975
+      ],
+      "physical_cumulative_meter_delta": 0.20966666666598588,
+      "independent_integral_dose": 0.17699999999932567,
+      "independent_active_frames": 7
+    },
+    {
+      "attempt": "9532316561755-7009",
+      "tool_receipt": {
+        "t": 145.286,
+        "event": "TOOL_RESULT",
+        "point": "point_9_20",
+        "state": "CANCELLED",
+        "reason": "USER_CANCEL",
+        "confirmed": 0.5900000000000034,
+        "remaining": 2.4099999999999966,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 6.729,
+        "meter_after": 7.5547
+      },
+      "transitions": [
+        {
+          "t": 143.642,
+          "status": "RUNNING",
+          "reason": "RESERVED_NOT_COMPLETED"
+        },
+        {
+          "t": 145.284,
+          "status": "CANCELLED",
+          "reason": "USER_CANCEL"
+        }
+      ],
+      "sqlite_evidence_count": 76,
+      "sqlite_reason_counts": {
+        "TOOL_NOT_WORKING": 33,
+        "FIRST_OR_GAP": 1,
+        "CONFIRMING": 9,
+        "OK": 28,
+        "PERCEPTION": 5
+      },
+      "accepted_observations": 28,
+      "accepted_quantity_this_attempt": 0.5900000000000034,
+      "accepted_quantity_entire_key_at_end": 0.5900000000000034,
+      "command_feedback_meter_delta": 0.8257000000000003,
+      "physical_meter_first_last": [
+        6.7289999999975,
+        7.554666666663418
+      ],
+      "physical_cumulative_meter_delta": 0.825666666665918,
+      "independent_integral_dose": 0.7776666666660064,
+      "independent_active_frames": 19
+    }
+  ],
+  "total": {
+    "physical_meter_delta": 1.035333333331904,
+    "observer_meter_delta": 1.0354,
+    "independent_evaluator_dose": 0.954666666665332,
+    "independent_evaluator_active_frames": 26,
+    "s10_ledger_confirmed_key_quantity": 0.5900000000000034,
+    "remaining_quantity": 2.4099999999999966,
+    "terminal": "CANCELLED",
+    "uncertainty_pending": false
+  },
+  "following_point_first_receipt": {
+    "t": 191.29,
+    "event": "TOOL_RESULT",
+    "point": "point_8_20",
+    "state": "CANCELLED",
+    "reason": "USER_CANCEL",
+    "confirmed": 2.171999999999997,
+    "remaining": 0.828000000000003,
+    "uncertainty": false,
+    "replayed": false,
+    "meter_before": 7.5547,
+    "meter_after": 9.9283
+  },
+  "semantics": "Physical meter is cumulative liquid flow irrespective of qualifying conditions. The independent 20 Hz evaluator integrates the smaller of consecutive flow readings while measured RPM qualifies. SQLite accepts only feedback observations passing the original docking, perception, stability, RPM, freshness, identity and continuity guards. The primary key persists across retries; action results report its cumulative qualified quantity. An incomplete point earns no completion credit. Subsequent point meter increments have a different key."
+}

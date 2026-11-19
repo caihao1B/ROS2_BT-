@@ -1,9 +1,12 @@
 """Bounded, read-only adapters for recorded task evidence (no ROS/control imports)."""
 from collections import deque
 from pathlib import Path
-import json, math, time
+import json, math, re, time
 
 STAGES = ('R12', 'R10', 'R09', 'R08', 'R07')
+def candidate_run_id(run_id):
+    return run_id.startswith(('R10/candidates/', 'experiments/'))
+
 
 def json_value(value):
     """ROS/numpy scalar values and invalid measurements become valid JSON."""
@@ -60,23 +63,53 @@ def freshness(stamp, now, maximum=.5):
     if not math.isfinite(delta): return 'MISSING', None
     return ('FUTURE' if delta < -.1 else 'FRESH' if delta <= maximum else 'STALE'), delta
 
+def stop_context(run, event):
+    """Use only fresh records at or before the task stop, even during teardown."""
+    stamp = event.get('t')
+    if not isinstance(stamp, (int, float)) or not math.isfinite(stamp):
+        return {}
+    def sample(path, fields, maximum_age, nested=None):
+        rows, _ = tail_records(run/path, limit=1_048_576, count=2048)
+        for row in reversed(rows):
+            capture = row.get('t')
+            if not isinstance(capture, (int, float)) or not 0 <= stamp-capture <= maximum_age:
+                continue
+            record = row.get(nested, {}) if nested else row
+            if not isinstance(record, dict):
+                continue
+            t = record.get('t')
+            if isinstance(t, (int, float)) and 0 <= stamp-t <= maximum_age:
+                return {k: record.get(k) for k in ('t', *fields)}
+        return {}
+    return dict(t=stamp, error=event.get('error'), terminal=event.get('terminal'),
+                localization=sample('reference/reference.jsonl',
+                                    ('reason', 'gnss_reason', 'innovation_m', 'recovery_count'),
+                                    .15, 'native_supervisor'),
+                decision=sample('decisions.jsonl', ('action', 'reason_code'), .15),
+                gate=sample('control/gate.jsonl', ('mode', 'stopped', 'tool_stopped', 'reasons'), .15))
+
 class Evidence:
     def __init__(self, app):
         self.app=Path(app).resolve(); self.results=self.app/'results'
-        self._runs=[]; self._listed=0.; self._geometry={}; self._samples={}
+        self._runs=[]; self._listed=0.; self._geometry={}; self._samples={}; self._stops={}
 
     def runs(self):
         if time.monotonic()-self._listed < 3: return self._runs
         runs=[]
-        for stage in STAGES:
+        experiments = self.results/'experiments'
+        groups = [p.relative_to(self.results).as_posix() for p in experiments.iterdir()
+                  if p.is_dir() and not p.is_symlink()] if experiments.is_dir() else []
+        for stage in (*STAGES, 'R10/candidates', *groups):
             parent=self.results/stage
             if not parent.is_dir(): continue
             for p in parent.iterdir():
-                if not p.is_dir() or not (p/'spec.json').is_file(): continue
+                if p.is_symlink() or not p.is_dir() or not (p/'spec.json').is_file(): continue
                 spec=read_json(p/'spec.json')
                 if spec.get('task') not in ('spray','inspection','mowing'): continue
-                stamp=p.name.split('_',1)[-1]
-                runs.append(dict(id=stage+'/'+p.name, task=spec['task'], case=spec.get('case',''), sort=stamp))
+                suffix=re.search(r'(\d{8}_\d{6}_\d+)$', p.name)
+                stamp=suffix.group(1) if suffix else p.name.split('_',1)[-1]
+                runs.append(dict(id=stage+'/'+p.name, task=spec['task'], case=spec.get('case',''),
+                                 candidate=candidate_run_id(stage+'/'+p.name), sort=stamp))
         self._runs=sorted(runs,key=lambda r:r['sort'],reverse=True)[:160]
         self._listed=time.monotonic(); return self._runs
 
@@ -119,7 +152,17 @@ class Evidence:
                rig=cfg.get('rig',{}),vehicle=cfg.get('vehicle',{}))
         total=len(g['points']) if spec.get('task')=='spray' else len(g['segments'])
         limit=spec.get('point_limit',0) if spec.get('task')=='spray' else spec.get('segment_limit',0)
-        g.update(selected_count=min(limit,total) if limit else total,original_count=total,
+        selected_count=min(limit,total) if limit else total
+        if spec.get('candidate_selected_point_ids'):
+            selected_ids=spec['candidate_selected_point_ids']
+            g['selected_point_ids']=selected_ids
+            selected_count=len(selected_ids)
+        elif spec.get('task')=='mowing':
+            offset=spec.get('segment_start',0)
+            selected=segments[offset:offset+limit] if limit else segments[offset:]
+            g['selected_segment_ids']=[item['id'] for item in selected]
+            selected_count=len(selected)
+        g.update(selected_count=selected_count,original_count=total,
                  selection_scope='Current run selection; unselected original obligations remain in the plan')
         if spec.get('task')=='inspection':
             original=cfg.get('original_route_length_m')
@@ -162,6 +205,13 @@ class Evidence:
             for file in ['analysis_spray_r10.json','analysis_mowing_r10.json','analysis_r08.json','analysis_r09.json']:
                 analysis=read_json(p/file)
                 if analysis:break
+        candidate_result={}
+        if closed and candidate_run_id(rid):
+            receipts = sorted(p.glob('candidate_*acceptance.json'))
+            for receipt in [*receipts, p/'candidate_analysis.json']:
+                candidate_result = read_json(receipt)
+                if candidate_result:
+                    break
         samples=self._samples.setdefault(rid,deque(maxlen=1200))
         if isinstance(now,(int,float)) and (not samples or samples[-1]['t']!=now):
             samples.append(dict(t=now,v=gate.get('v'),w=gate.get('w'),raw_v=gate.get('raw_nav_v'),
@@ -169,14 +219,26 @@ class Evidence:
         if len(self._samples)>6:
             for k in list(self._samples):
                 if k!=rid:del self._samples[k];break
+        stop_event=next((e for e in reversed(ev) if e.get('event')=='TASK_STOP'), None)
+        context={}
+        if stop_event:
+            cache_key=(rid,stop_event.get('t'))
+            if closed and cache_key in self._stops:
+                context=self._stops[cache_key]
+            else:
+                context=stop_context(p,stop_event)
+                if closed:
+                    if len(self._stops)>=16:self._stops.pop(next(iter(self._stops)))
+                    self._stops[cache_key]=context
         accepted=[x for x in ev if x.get('event')=='TOOL_RESULT' and x.get('state')=='SUCCEEDED' and not x.get('replayed')]
         arrivals=[x for x in ev if x.get('event')=='SEGMENT_ARRIVAL']
         return dict(available=True,run=dict(id=rid,task=spec.get('task'),case=spec.get('case'),
-                    status=status,wall_age_s=wall_age,sim_seconds=spec.get('sim_seconds'),cluster=spec.get('cluster')),
-                    sim_t=now,live=live,mission_result=mission,bt=bt,loc=loc,gate=gate,risk=risk,ledger=ledger,
+                    status=status,wall_age_s=wall_age,sim_seconds=spec.get('sim_seconds'),cluster=spec.get('cluster'),
+                    candidate=candidate_run_id(rid)),
+                    sim_t=now,live=live,mission_result=mission,stop_context=context,bt=bt,loc=loc,gate=gate,risk=risk,ledger=ledger,
                     sensors=channels,observer=observer,events=ev[-150:],events_complete=complete,
                     confirmed_points=len(accepted),confirmed_ids=[x.get('point') for x in accepted],
                     segment_arrivals=len(arrivals),samples=list(samples),video=frame,
-                    analysis=analysis,recording=read_json(p/'recording_acceptance.json'),
+                    analysis=analysis,candidate_result=candidate_result,operator_handoff=read_json(p/'operator_handoff.json'),recording=read_json(p/'recording_acceptance.json'),
                     stages={s:read_json(self.results/s/'latest.json').get('automated_status','NOT_RUN') for s in ['R08','R09','R10','R11','R12']},
                     source_scope='Observed task logs and optional ROS subscriptions. No simulator truth; no control authority.')

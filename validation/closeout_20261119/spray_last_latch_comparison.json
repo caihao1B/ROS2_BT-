@@ -1,0 +1,184 @@
+{
+  "schema": "SPRAY-LAST-POINT-LATCH-COMPARISON/1",
+  "passed": true,
+  "formal_credit": false,
+  "checks": {
+    "selection_and_accounting_unchanged": true,
+    "original_native_action_reconstructed": true,
+    "original_worker_missed_latch": true,
+    "fresh_real_native_action_reconstructed": true,
+    "operator_observed_both_messages": true,
+    "terminal_preserves_failed_task": true,
+    "independently_closed": true,
+    "retains_work_obligation": true
+  },
+  "initial": {
+    "session": "spray_defer_20261119_092405_230489",
+    "point": "point_10_20",
+    "selected": [
+      "point_11_20",
+      "point_10_20"
+    ],
+    "original": 56,
+    "unselected": 54,
+    "completed": [
+      "point_11_20"
+    ],
+    "mission_passed": false,
+    "terminal": null,
+    "error": "TimeoutError('WAIT_DEADLINE')",
+    "sim_s": 74.366,
+    "native": {
+      "time": 69.4,
+      "dispatch_id": 13,
+      "reason": "BOUNDED_REPLAN_EXHAUSTED",
+      "physical_and_sources_qualified": true,
+      "has_alternative": false,
+      "replans": 2,
+      "replan_limit": 2
+    },
+    "actions": [
+      43.994,
+      57.202
+    ],
+    "aborts": [
+      {
+        "t": 44.082,
+        "status": 6,
+        "error_code": 208
+      },
+      {
+        "t": 57.29,
+        "status": 6,
+        "error_code": 208
+      }
+    ],
+    "replans": [
+      56.146,
+      69.352
+    ],
+    "any_goal_after_human": false,
+    "wire": {
+      "schema": "LIVE-OPERATOR-ROS-NOTICE/1",
+      "session": "spray_defer_20261119_092405_230489",
+      "read_only": true,
+      "topic": "/r10/operator_attention",
+      "message_count": 0,
+      "initial_request_received": false,
+      "closure_received": false,
+      "closure_matches_durable_case_file": false,
+      "passed": false
+    },
+    "disk_verified": false,
+    "handoff_credit": null,
+    "residual": null,
+    "automatic_resume": null,
+    "double_stop_checks": {},
+    "observer_exit": 0,
+    "runtime_clean": true,
+    "source_hashes": {
+      "mission_events.jsonl": "15a2e877ecd60bb9af930966a1a96696a9720d1690c868c95ba4ea1f5dec3e96",
+      "decisions.jsonl": "d7425e54eefd495a73851077b60be0a5f63385b8eb782d9790d57ab2c8b71ca1",
+      "operator_attention_wire.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "spec.json": "e9a548e99e03da342661e88b4a9dee64724be9da372341df720255442b360c43",
+      "mission_result.json": "38c1ec170b66f510433a03b7bb121ea6be518fb7697e07d4c60fcbb8747c74d9",
+      "operator_attention_receipt.json": "3d24982be7868930eb07f7570bee7cae31994db393372c205c251440f834c69a",
+      "runtime.json": "63012cfc0c981b587553563b8d80b5b0a8bfe91fec160409aa0de598e7724fc5"
+    }
+  },
+  "revised": {
+    "session": "spray_defer_20261119_093026_010150",
+    "point": "point_10_20",
+    "selected": [
+      "point_11_20",
+      "point_10_20"
+    ],
+    "original": 56,
+    "unselected": 54,
+    "completed": [
+      "point_11_20"
+    ],
+    "mission_passed": false,
+    "terminal": "HUMAN_REQUIRED",
+    "error": "RuntimeError('MANUAL_OR_SAFETY_HOLD BOUNDED_REPLAN_EXHAUSTED')",
+    "sim_s": 68.688,
+    "native": {
+      "time": 68.676,
+      "dispatch_id": 12,
+      "reason": "BOUNDED_REPLAN_EXHAUSTED",
+      "physical_and_sources_qualified": true,
+      "has_alternative": false,
+      "replans": 2,
+      "replan_limit": 2
+    },
+    "actions": [
+      43.296,
+      56.492
+    ],
+    "aborts": [
+      {
+        "t": 43.374,
+        "status": 6,
+        "error_code": 208
+      },
+      {
+        "t": 56.568,
+        "status": 6,
+        "error_code": 208
+      }
+    ],
+    "replans": [
+      55.43,
+      68.63
+    ],
+    "any_goal_after_human": false,
+    "wire": {
+      "schema": "LIVE-OPERATOR-ROS-NOTICE/1",
+      "session": "spray_defer_20261119_093026_010150",
+      "read_only": true,
+      "topic": "/r10/operator_attention",
+      "message_count": 2,
+      "initial_request_received": true,
+      "closure_received": true,
+      "closure_matches_durable_case_file": true,
+      "passed": true
+    },
+    "disk_verified": true,
+    "handoff_credit": 0.0,
+    "residual": 3.0,
+    "automatic_resume": false,
+    "double_stop_checks": {
+      "known_operational_hold": true,
+      "explicit_manual_terminal": true,
+      "task_remains_incomplete": true,
+      "old_key_retained": true,
+      "no_live_navigation_or_tool_action": true,
+      "fresh_gate_double_stop": true,
+      "measured_chassis_stop": true,
+      "independent_tool_stopped": true,
+      "explicit_stop_work_ack": true,
+      "no_unconfirmed_shutdown": true,
+      "native_locked_last_original_point": true
+    },
+    "observer_exit": 0,
+    "runtime_clean": true,
+    "source_hashes": {
+      "mission_events.jsonl": "5a9e76cdd1ee8edd04c28c6409325f3e3c4d7ac38707a3da45d5a772028ab9a8",
+      "decisions.jsonl": "e7e402f7f98f638009725edcf906ba4896beec84f48818008769014521822f92",
+      "operator_attention_wire.jsonl": "37439efa4a58db9e8e3ee801e20f8fcfd2debdb6fd92d09745bfd786aae94f7c",
+      "spec.json": "9f539f3087a763634b2474a23f1e21e4f6dc45d569c32af30d98c0f021a3d2b0",
+      "mission_result.json": "4d6083a9fd0b640bd6e712ac57ee001e3dc3cbedb1e8e8dccff619634a0b38a9",
+      "operator_attention_receipt.json": "6f003ceaa5f1778c00e340ee3950fdfe33bfb0b7397f805bfc9598ffd942dc61",
+      "runtime.json": "dbc8682522530b99d0b2cdb95718656b3c39239f537c3f8defbe9d96e145b52a",
+      "operator_handoff.json": "6ae112b354fd87453394971a03228517a1413c69e270ecafa4d1764506080c87"
+    }
+  },
+  "redacted_evidence_negative_controls_rejected": {
+    "missing_first_operator_notice": true,
+    "missing_final_operator_notice": true,
+    "different_persisted_notice": true,
+    "missing_chassis_stop": true,
+    "missing_tool_stop": true,
+    "missing_stop_ack": true
+  }
+}

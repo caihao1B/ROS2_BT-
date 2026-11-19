@@ -1,0 +1,164 @@
+{
+  "schema": "R10-EXPERIMENTAL-POINT-DEFER/1",
+  "session": "spray_defer_20261119_085422_132494",
+  "case": "bounded_defer",
+  "behavior_result": "PASS",
+  "formal_credit": false,
+  "formal_mission_unchanged": true,
+  "formal_A1_latest_at_design": "22/56 PARTIAL",
+  "precision_defer_demonstrated": false,
+  "coarse_defer_demonstrated": true,
+  "selected": [
+    "point_11_20",
+    "point_10_20",
+    "point_9_20",
+    "point_8_20"
+  ],
+  "original_count": 56,
+  "completed": [
+    "point_11_20",
+    "point_9_20",
+    "point_8_20"
+  ],
+  "residuals": [
+    {
+      "point": "point_10_20",
+      "state": "DEFERRED",
+      "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL",
+      "origin": "COARSE_NAVIGATION",
+      "remaining": 3.0,
+      "confirmed": 0.0
+    }
+  ],
+  "mission_error": null,
+  "runtime": true,
+  "checks": {
+    "runtime_clean": true,
+    "map_database_unchanged": true,
+    "no_unexpected_contact": true,
+    "sensor_render_configuration_valid": true,
+    "four_real_near_sensors": true,
+    "map_pose_rmse_under_15cm": true,
+    "idempotent_replay_no_extra_flow": true,
+    "measured_final_stop": true,
+    "unique_actuator_owner": true,
+    "unique_tool_owner": true,
+    "unique_transform_owners": true,
+    "implementation_bound": true,
+    "full_denominator_retained": true,
+    "candidate_separate_version": true,
+    "one_explicit_residual": true,
+    "native_decision_and_stops": true,
+    "next_original_point_paid": true,
+    "all_selected_accounted": true,
+    "all_paid_physically_verified": true,
+    "camera_covers_real_run": true
+  },
+  "deferred": [
+    {
+      "point": "point_10_20",
+      "next_point": "point_9_20",
+      "stage": "COARSE_NAVIGATION",
+      "sim_s": 80.944,
+      "native_dispatch_id": 14,
+      "native_dispatch_matched": true,
+      "proof": {
+        "t": 80.944,
+        "event": "CANDIDATE_EXHAUSTION_EVIDENCE",
+        "point": "point_10_20",
+        "stage": "COARSE_NAVIGATION",
+        "proof": {
+          "eligible": true,
+          "actual_replans": 2,
+          "sent_navigation_goals": 3,
+          "aborts": 3
+        }
+      },
+      "gate_checks": {
+        "no_live_action": true,
+        "other_original_point_exists": true,
+        "worker_navigation_idle": true,
+        "correct_session": true,
+        "correct_version": true,
+        "bt_fresh": true,
+        "bt_no_emergency": true,
+        "map_pose_admitted": true,
+        "risk_admitted": true,
+        "measured_body_tool_stop": true,
+        "tool_server_stopped": true,
+        "independent_tool_feedback": true,
+        "native_defer": true
+      },
+      "physical_stop_samples": 3,
+      "remaining": 3.0,
+      "deferred_dose_zero": true,
+      "subsequent_meter_event": {
+        "t": 141.844,
+        "event": "TOOL_RESULT",
+        "point": "point_9_20",
+        "state": "SUCCEEDED",
+        "reason": "CONFIRMED_WORK",
+        "confirmed": 3.078000000000003,
+        "remaining": 0.0,
+        "uncertainty": false,
+        "replayed": false,
+        "meter_before": 3.2537,
+        "meter_after": 6.5313
+      },
+      "subsequent_physical_feedback": {
+        "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_9_20",
+        "state": "SUCCEEDED",
+        "confirmed": 3.078000000000003,
+        "uncertain": false,
+        "physical_dose": 3.228999999999337,
+        "maximum_physical_docking_error_m": 0.03807696329748701,
+        "requested": 3.0
+      }
+    }
+  ],
+  "evidence": {
+    "spec.json": "6bd609651adbb21a256b74390662e40df3866f858a8c3b965d4ccbf39068c86f",
+    "mission.json": "d80d4454357ecb253e2e96094cfbb3f8cf2226e72f986d53edb6f40ab0ef7741",
+    "scene/fixture.json": "f28a4f93f64b4eccf6d8aea5d2819e3d8b7faaaace73933e23be7d0b36dc4307",
+    "mission_events.jsonl": "bfe8a7ac70b19adb464b9f798630dd387956e3a3fdbe255dc713e7f9047886a7",
+    "decisions.jsonl": "0ec273fd94275cc865fa045cb479c256f83a8f67f32114601f45d92cf85bc96a",
+    "mission_result.json": "92626b577234b06b0a25e9876f7bd88ecbe8831b441f3bc99cc0959601acdddb",
+    "runtime.json": "66a9ebf04f4d0320be7a78bec2b2d01327fe462e4907f7b00c3e6671f03b3265",
+    "video/full.mp4": "8b47236601b9ad3863b2fec9d6a9379e70555b9aa255897e560f9bf9cabfaa73",
+    "video/recording.json": "c732aed4c822eb34601e65485d9bc59e67c199183925f1c73e139646d1c52530"
+  },
+  "video": {
+    "max_active_gap_sim_s": 0.12600000000000477,
+    "max_active_age_wall_s": 0.27164612199885596,
+    "frames": 1735
+  },
+  "physical_jobs": [
+    {
+      "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_11_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.073999999999998,
+      "uncertain": false,
+      "physical_dose": 3.2276666666660003,
+      "maximum_physical_docking_error_m": 1.0048591735576161e-14,
+      "requested": 3.0
+    },
+    {
+      "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_9_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.078000000000003,
+      "uncertain": false,
+      "physical_dose": 3.228999999999337,
+      "maximum_physical_docking_error_m": 0.03807696329748701,
+      "requested": 3.0
+    },
+    {
+      "key": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa:point_8_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.078000000000003,
+      "uncertain": false,
+      "physical_dose": 3.2256666666660037,
+      "maximum_physical_docking_error_m": 0.019668683744486062,
+      "requested": 3.0
+    }
+  ]
+}

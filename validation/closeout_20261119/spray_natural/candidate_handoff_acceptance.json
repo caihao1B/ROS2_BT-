@@ -1,0 +1,90 @@
+{
+  "schema": "SPRAY-OPERATOR-HANDOFF-LIVE/1",
+  "path": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/experiments/spray_operator_handoff/spray_defer_20261119_091633_791154",
+  "session": "spray_defer_20261119_091633_791154",
+  "handoff_status": "NOT_EXERCISED",
+  "separately_confirmed_four_points": false,
+  "observer_exit": 2,
+  "mission_passed": false,
+  "runtime_clean": false,
+  "selected": [
+    "point_11_20",
+    "point_10_20",
+    "point_9_20",
+    "point_8_20"
+  ],
+  "completed": [
+    "point_11_20",
+    "point_10_20",
+    "point_8_20"
+  ],
+  "original": 56,
+  "formal_credit": false,
+  "manual_handoff": null,
+  "mission_error": null,
+  "quantitative_safety": {
+    "runtime_clean": false,
+    "map_database_unchanged": true,
+    "no_unexpected_contact": true,
+    "sensor_render_configuration_valid": true,
+    "four_real_near_sensors": true,
+    "map_pose_rmse_under_15cm": true,
+    "measured_final_stop": true,
+    "unique_actuator_owner": true,
+    "unique_tool_owner": true,
+    "unique_transform_owners": true,
+    "implementation_bound": true
+  },
+  "map_xy_rmse_m": 0.040907192563341056,
+  "camera_valid": true,
+  "max_active_gap_sim_s": 0.12600000000000477,
+  "max_active_image_age_wall_s": 0.30557117799980915,
+  "actual_jobs": [
+    {
+      "key": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_11_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0519999999999996,
+      "uncertain": false,
+      "physical_dose": 3.2269999999993337,
+      "maximum_physical_docking_error_m": 0.017690030081224613,
+      "requested": 3.0
+    },
+    {
+      "key": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_10_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.0720000000000027,
+      "uncertain": false,
+      "physical_dose": 3.2363333333326674,
+      "maximum_physical_docking_error_m": 0.046617856772808774,
+      "requested": 3.0
+    },
+    {
+      "key": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_9_20",
+      "state": "CANCELLED",
+      "confirmed": 0.5900000000000034,
+      "uncertain": false,
+      "physical_dose": 0.954666666665332,
+      "maximum_physical_docking_error_m": 0.006404821002196527,
+      "requested": 3.0
+    },
+    {
+      "key": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_8_20",
+      "state": "SUCCEEDED",
+      "confirmed": 3.078000000000003,
+      "uncertain": false,
+      "physical_dose": 3.4099999999986577,
+      "maximum_physical_docking_error_m": 0.04035646856496425,
+      "requested": 3.0
+    }
+  ],
+  "received_tool_and_physics_for_every_point": false,
+  "source_sha256": {
+    "spec.json": "d0f03403fa3e0b9556ac9e71e63be2b9d75d7ba27fc0223f274cfed28dad8bf5",
+    "mission.json": "da0ea9316d2396626899c51409bbf820a3aa5ec1abded10420775f2ab11f7a92",
+    "mission_result.json": "8f9d64407afe609f0ce576abfba115c262f73c442d1d5fb951fcf9c983a3c4b3",
+    "runtime.json": "c6e012a74a1f71e97024303686e1cbe01878321a6481071cdbcb034ece83dc5a",
+    "mission_events.jsonl": "5527d2d26e7552f47263fd0027a92c73bd8af5ff1e66be8eece497ffea52053d",
+    "video/full.mp4": "6ddb7134beee867dab84beb9d44e3d722b38cc56e82aa08fbf6de0b237c891db",
+    "video/recording.json": "0767a706abfebd4f5949107ff83f1a4b7ee671d5fda2ff2ff452ac4fb63145ea"
+  }
+}

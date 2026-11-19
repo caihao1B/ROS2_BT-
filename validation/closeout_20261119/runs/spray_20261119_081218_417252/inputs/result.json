@@ -1,0 +1,12 @@
+{
+  "epoch": 0,
+  "stationary_bias_samples": 599,
+  "gyro_bias_estimate": [
+    0.0011673863152385387,
+    -0.0012289579096287713,
+    -0.0019448916280571092
+  ],
+  "startup_yaw_bias": 0.002123587486689203,
+  "stationary_updates": 45100,
+  "incremental_yaw_bias": -0.004068479114746312
+}

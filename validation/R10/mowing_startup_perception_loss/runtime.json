@@ -5,7 +5,7 @@
   "processes": [
     {
       "role": "server",
-      "pid": 433936,
+      "pid": 9366,
       "args": [
         "gz",
         "sim",
@@ -14,16 +14,16 @@
         "-s",
         "--seed",
         "41",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/world.sdf"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/world.sdf"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "online_bridge",
-      "pid": 433955,
+      "pid": 9382,
       "args": [
         "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
         "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
@@ -35,24 +35,24 @@
         "/r07/near_right/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "tool_bridge",
-      "pid": 433956,
+      "pid": 9383,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r10_bridge/r10_tool_bridge"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "raw_bridge",
-      "pid": 433957,
+      "pid": 9384,
       "args": [
         "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
         "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
@@ -64,13 +64,13 @@
         "/s04/raw/joints@std_msgs/msg/String[gz.msgs.StringMsg"
       ],
       "domain": "121",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
-      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/fastdds.xml",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
+      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/fastdds.xml",
       "exit": 0
     },
     {
       "role": "evaluation_bridge",
-      "pid": 433958,
+      "pid": 9385,
       "args": [
         "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
         "/s03/evaluation/pose@std_msgs/msg/String[gz.msgs.StringMsg",
@@ -78,60 +78,60 @@
         "/s10/evaluation/effect@std_msgs/msg/String[gz.msgs.StringMsg"
       ],
       "domain": "120",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "evaluator",
-      "pid": 433959,
+      "pid": 9386,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/chassis_bridge/scripts/evaluator.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/evaluation"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/evaluation"
       ],
       "domain": "120",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "video_bridge",
-      "pid": 433960,
+      "pid": 9387,
       "args": [
         "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
         "/r12/observer/image@sensor_msgs/msg/Image[gz.msgs.Image"
       ],
       "domain": "120",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
-      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/fastdds.xml",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
+      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/fastdds.xml",
       "exit": 0
     },
     {
       "role": "video_recorder",
-      "pid": 433961,
+      "pid": 9388,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/record_r12.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/video"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/video"
       ],
       "domain": "120",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "generator_motion",
-      "pid": 433962,
+      "pid": 9389,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/overlay/adapter.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/overlay/adapter.py",
         "--vehicle",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/vehicle.json",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/vehicle.json",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/generation_motion",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/generation_motion",
         "--seed",
         "41",
         "--profile",
@@ -140,20 +140,20 @@
         "motion"
       ],
       "domain": "121",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "generator_vision",
-      "pid": 433963,
+      "pid": 9390,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/overlay/adapter.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/overlay/adapter.py",
         "--vehicle",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/vehicle.json",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/vehicle.json",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/generation_vision",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/generation_vision",
         "--seed",
         "41",
         "--profile",
@@ -162,41 +162,41 @@
         "vision"
       ],
       "domain": "121",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
-      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/fastdds.xml",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
+      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/fastdds.xml",
       "exit": 0
     },
     {
       "role": "fanout",
-      "pid": 433964,
+      "pid": 9391,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/near_mowing_r10.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/near"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/near"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
-      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/fastdds.xml",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
+      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/fastdds.xml",
       "exit": 0
     },
     {
       "role": "cloud",
-      "pid": 433965,
+      "pid": 9392,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/overlay/cloud_filter.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/overlay/cloud_filter.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/cloud"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/cloud"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "icp",
-      "pid": 433966,
+      "pid": 9393,
       "args": [
         "/opt/ros/jazzy/lib/rtabmap_odom/icp_odometry",
         "--ros-args",
@@ -205,7 +205,7 @@
         "-r",
         "__ns:=/s05/icp",
         "--params-file",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/icp.yaml",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/icp.yaml",
         "-r",
         "scan_cloud:=/s05/icp/cloud",
         "-r",
@@ -220,55 +220,55 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "icp_gate",
-      "pid": 433967,
+      "pid": 9394,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/overlay/icp_gate.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/overlay/icp_gate.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/icp_gate"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/icp_gate"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "inputs",
-      "pid": 433968,
+      "pid": 9395,
       "args": [
         "/usr/bin/python3",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/overlay/input_adapter.py",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/overlay/input_adapter.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/inputs"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/inputs"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "odom_output",
-      "pid": 433969,
+      "pid": 9396,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/localization_guard/scripts/odom_output.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/odom_output"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/odom_output"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "fused",
-      "pid": 433970,
+      "pid": 9397,
       "args": [
         "/opt/ros/jazzy/lib/robot_localization/ekf_node",
         "--ros-args",
@@ -277,7 +277,7 @@
         "-r",
         "__ns:=/s05/fused",
         "--params-file",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/fused.yaml",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/fused.yaml",
         "-r",
         "odometry/filtered:=/s05/raw/fused",
         "--log-level",
@@ -286,13 +286,13 @@
         "/tf:=/s05/internal/fused_tf"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "wheel_imu",
-      "pid": 433971,
+      "pid": 9398,
       "args": [
         "/opt/ros/jazzy/lib/robot_localization/ekf_node",
         "--ros-args",
@@ -301,7 +301,7 @@
         "-r",
         "__ns:=/s05/wheel_imu",
         "--params-file",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/wheel_imu.yaml",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/wheel_imu.yaml",
         "-r",
         "odometry/filtered:=/s05/raw/wheel_imu",
         "--log-level",
@@ -310,73 +310,73 @@
         "/tf:=/s05/internal/wheel_imu_tf"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "icp_motion_guess",
-      "pid": 433972,
+      "pid": 9399,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/guess_r07.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/icp_motion_guess"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/icp_motion_guess"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "mapping_inputs",
-      "pid": 433973,
+      "pid": 9400,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/map_inputs_r08.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/mapping_inputs"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/mapping_inputs"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
-      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/fastdds.xml",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
+      "dds_profile": "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/fastdds.xml",
       "exit": 0
     },
     {
       "role": "slam_initial",
-      "pid": 433974,
+      "pid": 9401,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/regional_r09.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/quality",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/quality",
         "--request",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/request.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/request.json"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "global_sources",
-      "pid": 433982,
+      "pid": 9402,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/sources_r07.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/global_sources",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/global_sources",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/mission.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/mission.json"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "global_manager",
-      "pid": 433983,
+      "pid": 9403,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r10_global/r10_global_manager",
         "--ros-args",
@@ -386,29 +386,29 @@
         "policy_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/editions/R10/mowing/manager.json"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "reference",
-      "pid": 433986,
+      "pid": 9404,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/reference_spray_r10.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/reference",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/reference",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/mission.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/mission.json"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "terrain",
-      "pid": 433987,
+      "pid": 9405,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r09/r09_terrain",
         "--ros-args",
@@ -418,67 +418,67 @@
         "config_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/editions/R10/mowing/terrain.json"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "risk",
-      "pid": 433988,
+      "pid": 9406,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/risk_mowing_r10.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/risk",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/risk",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/mission.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/mission.json"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "control",
-      "pid": 433989,
+      "pid": 9407,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/control_mowing_r10.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/control",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/control",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/mission.json",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/mission.json",
         "--session",
-        "mowing_20261115_065623_825371"
+        "mowing_20261119_070346_235832"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "bt",
-      "pid": 433990,
+      "pid": 9408,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r08/r08_supervisor",
         "--ros-args",
         "-p",
         "use_sim_time:=true",
         "-p",
-        "config_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/bt.json",
+        "config_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/bt.json",
         "-p",
         "tree_file:=/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/r08_backend/common.xml",
         "-p",
-        "log_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/decisions.jsonl"
+        "log_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/decisions.jsonl"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "map_server",
-      "pid": 433991,
+      "pid": 9409,
       "args": [
         "/opt/ros/jazzy/lib/nav2_map_server/map_server",
         "--ros-args",
@@ -492,13 +492,13 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "controller_server",
-      "pid": 433992,
+      "pid": 9410,
       "args": [
         "/opt/ros/jazzy/lib/nav2_controller/controller_server",
         "--ros-args",
@@ -512,13 +512,13 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "planner_server",
-      "pid": 433993,
+      "pid": 9411,
       "args": [
         "/opt/ros/jazzy/lib/nav2_planner/planner_server",
         "--ros-args",
@@ -532,13 +532,13 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "bt_navigator",
-      "pid": 433994,
+      "pid": 9421,
       "args": [
         "/opt/ros/jazzy/lib/nav2_bt_navigator/bt_navigator",
         "--ros-args",
@@ -552,13 +552,13 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "lifecycle_manager",
-      "pid": 433995,
+      "pid": 9422,
       "args": [
         "/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager",
         "--ros-args",
@@ -572,103 +572,103 @@
         "warn"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "tool_observer",
-      "pid": 433996,
+      "pid": 9423,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/tool_observer_r09.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/tool_observer",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/tool_observer",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/tool.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/tool.json"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "ledger",
-      "pid": 433997,
+      "pid": 9424,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/ledger_mowing_r10.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/ledger",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/ledger",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/tool.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/tool.json"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "tool_server",
-      "pid": 434000,
+      "pid": 9425,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/three_tasks/build/r09/r09_tool_action_server",
         "--ros-args",
         "-p",
-        "config_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/tool.json"
+        "config_file:=/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/tool.json"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "tool_evaluator",
-      "pid": 434001,
+      "pid": 9426,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/tool_evaluator_r09.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/tool_evaluation",
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/tool_evaluation",
         "--config",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/scene/tool.json"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/scene/tool.json"
       ],
       "domain": "120",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "diagnostics",
-      "pid": 434002,
+      "pid": 9427,
       "args": [
         "/usr/bin/python3",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/diagnostics_mowing_r10.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371/diagnostics"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832/diagnostics"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "observer",
-      "pid": 434005,
+      "pid": 9428,
       "args": [
         "/home/ceihao/robot_project/optimization_v2/venvs/scene/bin/python",
         "/home/ceihao/robot_project/optimization_v2/ws/src/task_platform/scripts/mission_mowing_r10.py",
         "--out",
-        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371"
+        "/home/ceihao/robot_project/optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     },
     {
       "role": "nav_startup",
-      "pid": 435008,
+      "pid": 10755,
       "args": [
         "ros2",
         "service",
@@ -678,11 +678,11 @@
         "{command: 0}"
       ],
       "domain": "119",
-      "partition": "r10_mowing_mowing_20261115_065623_825371",
+      "partition": "r10_mowing_mowing_20261119_070346_235832",
       "dds_profile": "DEFAULT",
       "exit": 0
     }
   ],
-  "wall_seconds": 673.6819580089941,
+  "wall_seconds": 757.9934079709999,
   "original_db_unchanged": true
 }

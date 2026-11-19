@@ -1,0 +1,64 @@
+{
+  "passed": false,
+  "checks": {
+    "unchanged_physical_acceptance": false,
+    "bound_generated_sources": true,
+    "bound_executed_worker": true,
+    "stationary_adaptation_exercised": true,
+    "recovery_stop_feedback_observed": false,
+    "recovery_after_new_samples": true,
+    "warm_physical_hold": false,
+    "held_gyro_consistent_with_encoder": false,
+    "target_turn_passed": false
+  },
+  "profile": "late-warm",
+  "original_checks": {
+    "runtime_clean": true,
+    "original_database_unchanged": true,
+    "no_unexpected_contact": true,
+    "whole_footprint_authorized": true,
+    "map_rmse_under_15cm": false,
+    "unique_actuator": true,
+    "unique_tool": true,
+    "unique_tf": true,
+    "measured_final_stop": true,
+    "feedback_area_consistent": false,
+    "curvature_bounded": false,
+    "source_bound": true,
+    "task_version_bound": true,
+    "original_ordered_passages": false,
+    "selected_segments_traversed": false,
+    "two_work_strips": false,
+    "actual_reverse_travel": false,
+    "tools_off_during_turns": false,
+    "tools_off_during_recovery": true,
+    "original_area_and_obligations_retained": true,
+    "reference_not_claimed_completed": true
+  },
+  "selected_original_segments": 0,
+  "stop_handshakes": 0,
+  "warm_hold": {
+    "start_s": 0.0,
+    "end_s": 0.0,
+    "gate_samples": 0,
+    "physical_tool_samples": 0,
+    "maximum_independent_body_speed_mps": null,
+    "maximum_independent_body_displacement_m": null,
+    "original_stopped_speed_gate_mps": 0.01,
+    "corrected_gyro_minus_encoder_rad_s": null
+  },
+  "adapter": {
+    "epoch": 0,
+    "stationary_bias_samples": 599,
+    "gyro_bias_estimate": [
+      0.00116738631523854,
+      -0.0012289579099014792,
+      -0.00210890533551976
+    ],
+    "startup_yaw_bias": 0.0021235874866892034,
+    "stationary_updates": 14114,
+    "incremental_yaw_bias": -0.004232492822208963
+  },
+  "formal_credit": false,
+  "scope": "Separate candidate profile. A partial-route run qualifies only its explicitly selected measured segments."
+}

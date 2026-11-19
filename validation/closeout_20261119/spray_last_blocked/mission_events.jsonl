@@ -1,0 +1,21 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_PLAN_HINT"}
+{"t": 35.838, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 35.84, "event": "NAV_GOAL", "point": "point_11_20", "target": [6.5, 47.5], "attempt": 0}
+{"t": 35.904, "event": "NAV_SUCCESS", "point": "point_11_20"}
+{"t": 39.21, "event": "DOCKING_SETTLED_CHECK", "point": "point_11_20", "distance_m": 0.012976907423588003, "attempt": 0, "stable": true, "stability": {"samples": 62, "span_s": 1.8299999999999983, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.01319129174851584, "latest_distance_m": 0.012976907423588003, "position_scatter_p95_m": 0.0028495385356536325}}
+{"t": 43.268, "event": "TOOL_RESULT", "point": "point_11_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0519999999999996, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 0.0, "meter_after": 3.2477}
+{"t": 43.294, "event": "TOOL_RESULT", "point": "point_11_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0519999999999996, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2477, "meter_after": 3.2477}
+{"t": 43.294, "event": "IDEMPOTENT_REPLAY", "result": {"point": "point_11_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.0519999999999996, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2477, "meter_after": 3.2477}}
+{"t": 43.296, "event": "NAV_GOAL", "point": "point_10_20", "target": [3.5, 47.5], "attempt": 0}
+{"t": 43.374, "event": "NAV_CANCEL_ACK", "accepted": false}
+{"t": 43.374, "event": "NAV_TERMINAL_FAILURE", "status": 6, "error_code": 208}
+{"t": 55.43, "event": "RETRY_DECISION", "action": "REPLAN", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 56.492, "event": "NAV_GOAL", "point": "point_10_20", "target": [3.5, 47.5], "attempt": 1}
+{"t": 56.568, "event": "NAV_CANCEL_ACK", "accepted": false}
+{"t": 56.568, "event": "NAV_TERMINAL_FAILURE", "status": 6, "error_code": 208}
+{"t": 68.63, "event": "RETRY_DECISION", "action": "REPLAN", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 68.676, "event": "REPLAN_SUPERSEDED_BY_NATIVE_STOP", "point": "point_10_20", "action": "HUMAN", "reason": "BOUNDED_REPLAN_EXHAUSTED", "dispatch_id": 12, "context_sequence": 2289, "motion_dispatched": false}
+{"t": 68.676, "event": "TASK_STOP", "error": "RuntimeError('MANUAL_OR_SAFETY_HOLD BOUNDED_REPLAN_EXHAUSTED')"}
+{"t": 68.676, "event": "HUMAN_ASSISTANCE_REQUESTED", "point": "point_10_20", "reason": "MANUAL_OR_SAFETY_HOLD BOUNDED_REPLAN_EXHAUSTED", "work_credit": false}
+{"t": 68.688, "event": "FINAL_TOOL_STOP", "state": "STOPPED", "action_status": 4}
+{"t": 68.688, "event": "HUMAN_HANDOFF_CLOSED", "point": "point_10_20", "verified": true, "process_exit": 0, "mission_passed": false}

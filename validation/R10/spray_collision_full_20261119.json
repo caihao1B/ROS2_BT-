@@ -1,0 +1,305 @@
+{
+  "scope": "Private Nav2 snapshots around sampled controller warnings. Responses are asynchronous. An edge observation cannot reconstruct the exact triggering control iteration or prove the rest of a command arc is clear.",
+  "session": "spray_20261119_081218_417252",
+  "plan_revision": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+  "observer_status": "SESSION_ENDED",
+  "warning_lines_seen": 6378,
+  "public_samples": 501,
+  "paired_private_samples": 501,
+  "private_current_edge_by_sample": {
+    "UNKNOWN": 348,
+    "NO_BLOCKING_EDGE": 153
+  },
+  "unknown_cells_by_vehicle_side": {
+    "REAR": 628,
+    "LEFT": 32,
+    "RIGHT": 40,
+    "FRONT": 18
+  },
+  "samples_with_unknown_by_side": {
+    "REAR": 323,
+    "LEFT": 11,
+    "RIGHT": 20,
+    "FRONT": 4
+  },
+  "samples_with_unknown_on_multiple_sides": 4,
+  "private_unknown_cell_centers_relative_to_footprint": {
+    "BETWEEN_BODY_AND_PADDED_OUTLINE": 682,
+    "BEYOND_PADDED_OUTLINE": 35,
+    "INSIDE_BODY": 1
+  },
+  "raw_observation_at_private_unknown": {
+    "UNKNOWN": 592,
+    "ZERO_COST": 126
+  },
+  "preceding_2s_observed_same_cell_outside_padded_body_plus_10cm": {
+    "NO_RECENT_OUTSIDE_BODY_MEASUREMENT": 705,
+    "ZERO_COST": 13
+  },
+  "private_header_minus_warning_clock_s": {
+    "median": 0.02800000000002001,
+    "min": 0.0039999999999054126,
+    "max": 0.04600000000004911
+  },
+  "raw_grid_age_at_warning_s": {
+    "median": 0.11200000000008004,
+    "min": 0.07599999999996498,
+    "max": 0.2459999999999809
+  },
+  "ideal_floor_projection": {
+    "scope": "Synthetic flat level ground, original beam count, declared mounts and self-mask. No occlusion, dropout, vehicle motion, temporal qualification or surface classification. Never authorizes motion.",
+    "terrain_config_sha256": "264e326981a04f552ccac5324109dacd665268c8b965ab079d583250100ec5b5",
+    "by_vertical_min_rad": {
+      "-1.3": {
+        "sampled_private_unknown_cells": 718,
+        "fewer_than_three_expected_hits": 0,
+        "median_expected_hits": 71.0
+      },
+      "-1.48": {
+        "sampled_private_unknown_cells": 718,
+        "fewer_than_three_expected_hits": 0,
+        "median_expected_hits": 63.0
+      }
+    }
+  },
+  "examples": [
+    {
+      "t": 41.006,
+      "current_edge": "UNKNOWN",
+      "sides": [
+        "REAR"
+      ],
+      "private_time_minus_pose": 0.012000000000000455,
+      "observed_grid_age": 0.10600000000000165,
+      "raw_map_origin": [
+        -1.3499994575977325,
+        -1.499999463558197
+      ]
+    },
+    {
+      "t": 42.146,
+      "current_edge": "UNKNOWN",
+      "sides": [
+        "REAR"
+      ],
+      "private_time_minus_pose": 0.027999999999998693,
+      "observed_grid_age": 0.1460000000000008,
+      "raw_map_origin": [
+        -1.0499994456768036,
+        -1.499999463558197
+      ]
+    },
+    {
+      "t": 43.3,
+      "current_edge": "UNKNOWN",
+      "sides": [
+        "REAR"
+      ],
+      "private_time_minus_pose": 0.04200000000000159,
+      "observed_grid_age": 0.09999999999999432,
+      "raw_map_origin": [
+        -0.7499994337558746,
+        -1.499999463558197
+      ]
+    },
+    {
+      "t": 44.08,
+      "current_edge": "UNKNOWN",
+      "sides": [
+        "REAR"
+      ],
+      "private_time_minus_pose": 0.018000000000000682,
+      "observed_grid_age": 0.0799999999999983,
+      "raw_map_origin": [
+        -0.5999994277954102,
+        -1.499999463558197
+      ]
+    },
+    {
+      "t": 45.246,
+      "current_edge": "UNKNOWN",
+      "sides": [
+        "REAR"
+      ],
+      "private_time_minus_pose": 0.02599999999999625,
+      "observed_grid_age": 0.1460000000000008,
+      "raw_map_origin": [
+        -0.2999994158744812,
+        -1.499999463558197
+      ]
+    },
+    {
+      "t": 48.18,
+      "current_edge": "UNKNOWN",
+      "sides": [
+        "REAR"
+      ],
+      "private_time_minus_pose": 0.030000000000001137,
+      "observed_grid_age": 0.17999999999999972,
+      "raw_map_origin": [
+        0.3000005424022678,
+        -1.499999463558197
+      ]
+    },
+    {
+      "t": 48.94,
+      "current_edge": "UNKNOWN",
+      "sides": [
+        "REAR"
+      ],
+      "private_time_minus_pose": 0.014000000000002899,
+      "observed_grid_age": 0.23999999999999488,
+      "raw_map_origin": [
+        0.4500005483627323,
+        -1.499999463558197
+      ]
+    },
+    {
+      "t": 54.78,
+      "current_edge": "UNKNOWN",
+      "sides": [
+        "REAR"
+      ],
+      "private_time_minus_pose": 0.03399999999999892,
+      "observed_grid_age": 0.0799999999999983,
+      "raw_map_origin": [
+        1.2000005781650547,
+        -1.499999463558197
+      ]
+    }
+  ],
+  "terrain_window": {
+    "window_sim_s": [
+      479.7,
+      599.8
+    ],
+    "terrain_frames": 69,
+    "tolerance_s": 0.16,
+    "private_unknown_cell_by_reported_terrain": {
+      "NO_QUALIFIED_TERRAIN_ROW": 8,
+      "ZERO_COST": 4
+    },
+    "unknown_diff_class_breakdown": {},
+    "median_reported_cell_points": 8.0,
+    "example": [
+      {
+        "warning_t": 516.71,
+        "terrain_t": 516.7,
+        "raw_grid_minus_terrain_s": -0.1,
+        "private_xy": [
+          10.425000229477885,
+          10.425000223517422
+        ],
+        "terrain_cell": {
+          "x": 10.425000000000002,
+          "y": 10.425,
+          "ground_relative_m": -0.00826714515180027,
+          "top_relative_m": 0.005899296351527139,
+          "slope_deg": 0.49457630868704044,
+          "roughness_m": 0.0015112975531234368,
+          "step_m": 0.01416644150332741,
+          "points": 6,
+          "diff_cost": 0,
+          "ackermann_cost": 0,
+          "slope_sigma_deg": 0.2815498689675828,
+          "slope_observed": true,
+          "diff_risk_age_s": 0.0,
+          "ackermann_risk_age_s": 0.0,
+          "diff_stored_cost": 0,
+          "ackermann_stored_cost": 0
+        }
+      },
+      {
+        "warning_t": 531.81,
+        "terrain_t": 531.8,
+        "raw_grid_minus_terrain_s": -0.1,
+        "private_xy": [
+          10.725000241398813,
+          12.975000217556964
+        ],
+        "terrain_cell": {
+          "x": 10.725000000000001,
+          "y": 12.975000000000001,
+          "ground_relative_m": -0.007389487665370176,
+          "top_relative_m": 0.008923647958561709,
+          "slope_deg": 0.5172853170534613,
+          "roughness_m": 0.0012674188205421112,
+          "step_m": 0.016313135623931885,
+          "points": 10,
+          "diff_cost": 0,
+          "ackermann_cost": 0,
+          "slope_sigma_deg": 0.2323067275666394,
+          "slope_observed": true,
+          "diff_risk_age_s": 0.0,
+          "ackermann_risk_age_s": 0.0,
+          "diff_stored_cost": 0,
+          "ackermann_stored_cost": 0
+        }
+      },
+      {
+        "warning_t": 531.81,
+        "terrain_t": 531.8,
+        "raw_grid_minus_terrain_s": -0.1,
+        "private_xy": [
+          10.875000247359278,
+          12.975000217556964
+        ],
+        "terrain_cell": {
+          "x": 10.875000000000004,
+          "y": 12.975000000000001,
+          "ground_relative_m": -0.004501184280511272,
+          "top_relative_m": 0.006948867980841267,
+          "slope_deg": 0.49455900051120694,
+          "roughness_m": 0.0013982147205672663,
+          "step_m": 0.011450052261352539,
+          "points": 19,
+          "diff_cost": 0,
+          "ackermann_cost": 0,
+          "slope_sigma_deg": 0.2467306260928792,
+          "slope_observed": true,
+          "diff_risk_age_s": 0.0,
+          "ackermann_risk_age_s": 0.0,
+          "diff_stored_cost": 0,
+          "ackermann_stored_cost": 0
+        }
+      },
+      {
+        "warning_t": 570.906,
+        "terrain_t": 570.8,
+        "raw_grid_minus_terrain_s": 0.0,
+        "private_xy": [
+          10.125000253319742,
+          14.475000247359286
+        ],
+        "terrain_cell": {
+          "x": 10.125000000000004,
+          "y": 14.475000000000001,
+          "ground_relative_m": -0.007998824078015832,
+          "top_relative_m": -0.00012958045618965963,
+          "slope_deg": 0.6298774160851647,
+          "roughness_m": 0.0011402961216321053,
+          "step_m": 0.007869243621826172,
+          "points": 5,
+          "diff_cost": 0,
+          "ackermann_cost": 0,
+          "slope_sigma_deg": 0.25300122201954134,
+          "slope_observed": true,
+          "diff_risk_age_s": 0.0,
+          "ackermann_risk_age_s": 0.0,
+          "diff_stored_cost": 0,
+          "ackermann_stored_cost": 0
+        }
+      }
+    ],
+    "source_sha256": "9a13f95da86fa7c786bb30df6461e1b335c3ca14910d0a04b3eac36975e74cf1",
+    "scope": "A missing terrain detail can mean no input points or insufficient qualified ground. Different pipeline times are possible even within the reported time tolerance."
+  },
+  "inputs": {
+    "footprint_samples.jsonl": "57c9940d05c4d9f5a308b59eca59629e4437626f4432a2883f5683b084ad38ba",
+    "private_map_samples.jsonl": "35e9e6f8a07a5b16c50f4d5a76532534023323f9462bb39ea66f8abc21773f36",
+    "summary.json": "841a3df3958033dc67a6febd5dd4d20921b01ef9158cf13228cb27f52f3fb658",
+    "spec.json": "058d69509c0c009091250aa9173b706d0a7a0f74610be9647333c9e4ff9f16f5",
+    "mission.json": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+    "nav2.yaml": "f08f3c0365a632adb25688849fc7a66c70068fbed27e76e94536a679398a0e53"
+  }
+}

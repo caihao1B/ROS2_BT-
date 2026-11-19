@@ -434,13 +434,13 @@
     {
       "case": "spray_full_A1",
       "passed": false,
-      "simulation_seconds": 1402.732,
-      "wall_seconds": 3004.4799021510116,
+      "simulation_seconds": 944.304,
+      "wall_seconds": 1982.1440556019998,
       "terminal": "INCOMPLETE",
-      "reason": "RuntimeError('LOCALIZATION_REVALIDATION_BOUND')",
+      "reason": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
       "selected_points": 56,
       "original_points": 56,
-      "confirmed_points": 28,
+      "confirmed_points": 22,
       "selected_segments": null,
       "original_segments": null,
       "execution_segments": null,
@@ -452,13 +452,11 @@
       "residual_area_m2": null,
       "remaining_original_route_m": null,
       "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit",
-      "path": "optimization_v2/three_tasks/results/R12/spray_20261115_060145_047614",
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261119_081218_417252",
       "terminal_snapshot": {
-        "bt_reason": "LOCALIZATION_ADMISSION_WAIT",
-        "localization_reason": "PLAN_REVALIDATION_REQUIRED",
+        "bt_reason": "NEXT_OBLIGATION",
+        "localization_reason": "MAP_AND_GNSS_AGREE",
         "gate_reasons": [
-          "LOCALIZATION",
-          "PERCEPTION",
           "NAV_COMMAND_STALE"
         ],
         "scope": "Last snapshot for context, not an independent root-cause conclusion"
@@ -467,8 +465,8 @@
     {
       "case": "spray_tool_jam",
       "passed": true,
-      "simulation_seconds": 92.786,
-      "wall_seconds": 242.6777821329888,
+      "simulation_seconds": 94.114,
+      "wall_seconds": 243.47886094299975,
       "terminal": "COMPLETED",
       "reason": null,
       "selected_points": 3,
@@ -485,7 +483,7 @@
       "residual_area_m2": null,
       "remaining_original_route_m": null,
       "scope": "Explicit point count and remaining original obligations; no inherited full-cluster credit",
-      "path": "optimization_v2/three_tasks/results/R12/spray_20261115_065207_245639",
+      "path": "optimization_v2/three_tasks/results/R12/spray_20261119_071627_581230",
       "terminal_snapshot": {
         "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
         "localization_reason": "MAP_AND_GNSS_AGREE",
@@ -498,8 +496,8 @@
     {
       "case": "mowing_full_B1",
       "passed": false,
-      "simulation_seconds": 879.272,
-      "wall_seconds": 2333.241463890008,
+      "simulation_seconds": 1173.702,
+      "wall_seconds": 3072.655565813,
       "terminal": "HUMAN_REQUIRED",
       "reason": "TimeoutError('WAIT_DEADLINE')",
       "selected_points": null,
@@ -511,15 +509,15 @@
       "reference_original_segments": 34,
       "original_reference_status": "PARTIAL",
       "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
-      "confirmed_segments": 19,
-      "confirmed_area_m2": 71.94386728545035,
-      "residual_area_m2": 116.44793440750612,
+      "confirmed_segments": 25,
+      "confirmed_area_m2": 74.00915630340378,
+      "residual_area_m2": 114.38264538955268,
       "remaining_original_route_m": null,
       "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
-      "path": "optimization_v2/three_tasks/results/R12/mowing_20261115_070740_054017",
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057",
       "terminal_snapshot": {
         "bt_reason": "LOCALIZATION_ADMISSION_WAIT",
-        "localization_reason": "PLAN_REVALIDATION_REQUIRED",
+        "localization_reason": "ABSOLUTE_HEADING_EXPIRED",
         "gate_reasons": [
           "LOCALIZATION",
           "PERCEPTION",
@@ -529,15 +527,7 @@
       },
       "endpoint_recovery_successes": [
         {
-          "t": 211.35,
-          "event": "ENDPOINT_RECOVERY_SUCCESS",
-          "segment": "B1:safe_turn:2:0",
-          "attempt": 0,
-          "pause_restarts": 0,
-          "method": "measured stopped original segment admission; no extra motion"
-        },
-        {
-          "t": 255.124,
+          "t": 242.73,
           "event": "ENDPOINT_RECOVERY_SUCCESS",
           "segment": "B1:safe_turn:2:1",
           "attempt": 0,
@@ -545,7 +535,7 @@
           "method": "measured stopped original segment admission; no extra motion"
         },
         {
-          "t": 264.99,
+          "t": 251.49,
           "event": "ENDPOINT_RECOVERY_SUCCESS",
           "segment": "B1:safe_turn:2:2",
           "attempt": 0,
@@ -553,14 +543,38 @@
           "method": "measured stopped original segment admission; no extra motion"
         },
         {
-          "t": 701.942,
+          "t": 343.92,
           "event": "ENDPOINT_RECOVERY_SUCCESS",
-          "segment": "B1:safe_turn:4:1",
+          "segment": "B1:safe_turn:3:0",
           "attempt": 0,
-          "pause_restarts": 1
+          "pause_restarts": 0,
+          "method": "measured stopped original segment admission; no extra motion"
         },
         {
-          "t": 750.87,
+          "t": 496.56,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:3:3",
+          "attempt": 0,
+          "pause_restarts": 0,
+          "method": "measured stopped original segment admission; no extra motion"
+        },
+        {
+          "t": 681.51,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:4:1",
+          "attempt": 1,
+          "pause_restarts": 0
+        },
+        {
+          "t": 694.47,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:4:2",
+          "attempt": 0,
+          "pause_restarts": 0,
+          "method": "measured stopped original segment admission; no extra motion"
+        },
+        {
+          "t": 740.58,
           "event": "ENDPOINT_RECOVERY_SUCCESS",
           "segment": "B1:safe_turn:5:1",
           "attempt": 0,
@@ -568,21 +582,50 @@
           "method": "measured stopped original segment admission; no extra motion"
         },
         {
-          "t": 762.24,
+          "t": 846.63,
           "event": "ENDPOINT_RECOVERY_SUCCESS",
-          "segment": "B1:safe_turn:5:2",
+          "segment": "B1:safe_turn:5:3",
           "attempt": 0,
           "pause_restarts": 0,
           "method": "measured stopped original segment admission; no extra motion"
+        },
+        {
+          "t": 893.55,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:5:4",
+          "attempt": 1,
+          "pause_restarts": 1
+        },
+        {
+          "t": 912.9,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:6:0",
+          "attempt": 0,
+          "pause_restarts": 0,
+          "method": "measured stopped original segment admission; no extra motion"
+        },
+        {
+          "t": 955.8,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:6:1",
+          "attempt": 0,
+          "pause_restarts": 2
+        },
+        {
+          "t": 1015.262,
+          "event": "ENDPOINT_RECOVERY_SUCCESS",
+          "segment": "B1:safe_turn:6:2",
+          "attempt": 1,
+          "pause_restarts": 3
         }
       ],
-      "observation_resume_count": 1
+      "observation_resume_count": 6
     },
     {
       "case": "mowing_startup_perception_loss",
       "passed": true,
-      "simulation_seconds": 246.912,
-      "wall_seconds": 661.5896586510062,
+      "simulation_seconds": 280.162,
+      "wall_seconds": 746.2139441739998,
       "terminal": "COMPLETED",
       "reason": null,
       "selected_points": null,
@@ -595,11 +638,11 @@
       "original_reference_status": "PARTIAL",
       "safe_plan_revision": "78397fecb57e9ce683d5c2e232fe75055e152e142b193e9a0e0a7423ed984a9e",
       "confirmed_segments": 5,
-      "confirmed_area_m2": 26.391029762931016,
-      "residual_area_m2": 1.5629519438629738,
+      "confirmed_area_m2": 26.4086737581878,
+      "residual_area_m2": 1.5453079486062506,
       "remaining_original_route_m": null,
       "scope": "Declared segment subset only; segment arrival is not full coverage credit; formal S17/S18 unchanged",
-      "path": "optimization_v2/three_tasks/results/R12/mowing_20261115_065623_825371",
+      "path": "optimization_v2/three_tasks/results/R12/mowing_20261119_070346_235832",
       "terminal_snapshot": {
         "bt_reason": "FEEDBACK_CONFIRMED_COMPLETE",
         "localization_reason": "MAP_AND_GNSS_AGREE",
@@ -784,6 +827,74 @@
   "original_S17": "PARTIAL",
   "original_S18": "PARTIAL",
   "scope": "Three separately run task acceptance cases plus declared bounded faults; no sixty-run matrix, no A2/A3/B2/B3 or cutting-effectiveness claim",
+  "stationary_gyro_probe": {
+    "passed": true,
+    "scope": "Actual production ROS inputs/IMU output in private domain with synthetic sensors; component only.",
+    "checks": {
+      "clean_exit": true,
+      "epoch_preserved": true,
+      "initialized": true,
+      "injected_drift_visible": true,
+      "recovered_at_stop": true,
+      "real_turn_retained": true,
+      "missing_gate_does_not_hide_new_drift": true,
+      "exercised_estimator": true
+    },
+    "sample_windows": [
+      [
+        3.0,
+        3.8
+      ],
+      [
+        4.1,
+        4.5
+      ],
+      [
+        18.0,
+        18.9
+      ],
+      [
+        20.0,
+        22.0
+      ],
+      [
+        26.0,
+        28.0
+      ]
+    ],
+    "output_mean_yaw_rad_s": [
+      -1.3010426069826053e-18,
+      -0.006000000000000002,
+      -0.0001885224131279696,
+      0.10983523590094389,
+      0.015835235900943902
+    ],
+    "processed_output_samples": 1433,
+    "adapter": {
+      "epoch": 0,
+      "stationary_bias_samples": 146,
+      "gyro_bias_estimate": [
+        0.0,
+        0.0,
+        -0.003835235900943901
+      ],
+      "startup_yaw_bias": 0.0020000000000000013,
+      "stationary_updates": 717,
+      "incremental_yaw_bias": -0.005835235900943902
+    },
+    "bindings": {
+      "optimization_v2/ws/src/task_platform/scripts/probe_stationary_gyro_r10.py": "0d73c08b49631a267dba8360f35c0ed4f233e53f6c4963484b411c8b27508493",
+      "optimization_v2/ws/src/task_platform/scripts/spray_inputs_r10.py": "6f3e4c15a0c2a9d0e175bb86b40eea0c863cd0d12279bdfb520796387b8967bd",
+      "optimization_v2/ws/src/task_platform/scripts/stationary_gyro_r10.py": "12ef69880ac4fddde5968bd2597b43888fcaeaba16e6a32cc471a4d056c433f6",
+      "optimization_v2/ws/src/task_platform/scripts/rig_r05.py": "cedaaca0274000a55d2556710deebf6c01e4618e90feef5e186454111d0edf3c",
+      "optimization_v2/ws/src/task_platform/scripts/overlay_r07.py": "f4cef3c7c90545b542d2ea724c4263788be559134e01dd1d592675a2ade91c21",
+      "optimization_v2/ws/src/task_platform/scripts/overlay_r08.py": "418636a0d3c47ac522c2a7dcc837836b1ecdc4df7349194b3804c5cdd128833a",
+      "optimization_v2/ws/src/localization_guard/scripts/input_adapter.py": "53f91b5326f1d6d540af20e6be8bc1941618f6cd3cb30e5d0f8233a28ed596ec",
+      "optimization_v2/ws/src/localization_guard/scripts/support.py": "e037e98cc143dab1e0c76ba58e18a1706e541879096d5471ccb8e16a7dddef72",
+      "optimization_v2/config/localization_policy.yaml": "5edaa64b0f12ea3ff63da3b559f885a6d2b476241936a056b426fc841cb74077"
+    },
+    "generated_input_adapter_sha256": "9c497a04d69b1b0164a20c4b3dccc78810aa0bdbb51d8c57c97373dd499e78be"
+  },
   "precision_progress_probe": {
     "passed": true,
     "cases": [
@@ -1218,6 +1329,8 @@
         "original_jump_guard_stops": true,
         "reject_without_worker_transaction": true,
         "reject_while_moving": true,
+        "reject_missing_worker_version": true,
+        "reject_wrong_worker_version": true,
         "prepare_retains_hold": true,
         "no_path_proof_rejected": true,
         "wrong_epoch_rejected": true,
@@ -1241,43 +1354,54 @@
           "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
         },
         {
-          "t": 7.25,
+          "t": 7.45,
+          "success": false,
+          "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+        },
+        {
+          "t": 9.3,
+          "success": false,
+          "message": "{\"epoch\":0,\"reason\":\"CANDIDATE_NOT_STABLE_OR_NOT_STOPPED\",\"t\":-100.0}"
+        },
+        {
+          "t": 11.0,
           "success": true,
-          "message": "{\"epoch\":1,\"reason\":\"STOPPED_CANDIDATE_PREPARED_HOLD_RETAINED\",\"t\":7.25}"
+          "message": "{\"epoch\":1,\"reason\":\"STOPPED_CANDIDATE_PREPARED_HOLD_RETAINED\",\"t\":11.0}"
         },
         {
-          "t": 7.3,
+          "t": 11.05,
           "success": false,
           "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
         },
         {
-          "t": 7.4,
+          "t": 11.15,
           "success": false,
           "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
         },
         {
-          "t": 7.5,
+          "t": 11.25,
           "success": false,
           "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
         },
         {
-          "t": 7.6,
+          "t": 11.35,
           "success": false,
           "message": "REVALIDATION_PROOF_MISSING_STALE_OR_MISMATCHED"
         },
         {
-          "t": 7.7,
+          "t": 11.45,
           "success": true,
           "message": "PLAN_REVALIDATED_WAIT_FOR_ORIGINAL_CONFIRMATION"
         }
       ],
       "binary_sha256": "9841b3ae8bc22328d1fe8d82a45f28f037ac653818dfa45adea280d406aacd40",
       "policy_sha256": "11995f47574f63e722f9ea90393d0e433fdff4c7f3e25e7fefa542153a0b456b",
-      "source_sha256": "9c58154f26c22eef3369e63e82854ddd1cfa79ae18d41eda0d9b08eec9e14537",
+      "source_sha256": "e0ff9cac30bee564503d47bda13022886d0f7fc4fa24ce9c8fea19b3936fca9e",
       "domain": "139",
       "scope": "Synthetic isolated production recovery transaction; no Gazebo or work completion credit",
       "template_sha256": "53ef899b91b02a4c41f403c9aa693f4f521630fca0fecf69b79e33c020fbe1a2",
-      "derived_source_sha256": "505b30d9c9c8e84f1de9d7fdb1d74c2b83682ff60a1d23814253de9914126d08"
+      "worker_sha256": "4cbb6c66c7d1f169e5689b1ac629a2d6428dd79adfdd9f4c705075003a7b0436",
+      "derived_source_sha256": "f48727f0277dc6472e68eb44b96e2371d54dcdc871835e654bb5d6ad79adb0a9"
     }
   },
   "safe_execution_validation": {

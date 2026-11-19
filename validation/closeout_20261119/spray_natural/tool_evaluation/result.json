@@ -1,0 +1,49 @@
+{
+  "jobs": {
+    "": {
+      "dose": 0.0,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 0
+    },
+    "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_11_20": {
+      "dose": 3.2269999999993337,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 68
+    },
+    "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_10_20": {
+      "dose": 3.2363333333326674,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 68
+    },
+    "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_9_20": {
+      "dose": 0.954666666665332,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 26
+    },
+    "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d:point_8_20": {
+      "dose": 3.4099999999986577,
+      "area_m2": 0.0,
+      "area": {
+        "type": "Polygon",
+        "coordinates": []
+      },
+      "active_samples": 75
+    }
+  }
+}

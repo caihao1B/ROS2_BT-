@@ -1,0 +1,48 @@
+{
+  "spawn": [
+    34.5,
+    61.5,
+    3.141592653589793
+  ],
+  "online_access": false,
+  "coarse_operator_map_hint": [
+    7.0,
+    47.0,
+    3.191592653589793
+  ],
+  "selected_original_ids": [
+    "point_11_20",
+    "point_10_20",
+    "point_9_20",
+    "point_8_20"
+  ],
+  "original_obligations": 56,
+  "map_offset": [
+    28.0,
+    14.0
+  ],
+  "candidate_version": "3916bac04a1dbd756c71a3b7525fe5a77a83cb027bb6206e79a8c461db1718fa",
+  "candidate_tool_revision": "fda90af32eb0944407caea182687f8a8c56f4f59f39641108a63dd308e3795d8",
+  "frozen_map_unchanged": true,
+  "obstacle_in_frozen_prior": false,
+  "effect_domain": "Gazebo physics and rendering",
+  "physical_fixture": {
+    "name": "temporary_equipment_crate",
+    "world_xy": [
+      31.5,
+      61.5
+    ],
+    "map_xy": [
+      3.5,
+      47.5
+    ],
+    "size_xyz_m": [
+      0.6,
+      0.6,
+      0.72
+    ],
+    "static": true,
+    "overlay_only": true
+  },
+  "world_sdf_sha256": "c3c4b78c2f73297325d9e9f17c6ec251f3d3bff24087789cfee6dc55e1f25a27"
+}

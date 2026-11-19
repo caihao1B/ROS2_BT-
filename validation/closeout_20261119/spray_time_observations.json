@@ -1,0 +1,2910 @@
+{
+  "schema": "spray-time-observations-v1",
+  "plan_sha256": "1bf3f7090caa57c76700f775c5b9dae74619a0f9adb0de820ed59449ec4fd524",
+  "samples": [
+    {
+      "session": "spray_20261115_060145_047614",
+      "closed": true,
+      "end_sim_s": 1402.732,
+      "error": "RuntimeError('LOCALIZATION_REVALIDATION_BOUND')",
+      "mission_report_passed": false,
+      "wall_seconds_mission_report": 3004.4799021510116,
+      "report_completed_ids": [
+        "point_7_14",
+        "point_8_14",
+        "point_8_15",
+        "point_9_15",
+        "point_9_14",
+        "point_10_14",
+        "point_10_15",
+        "point_10_16",
+        "point_9_16",
+        "point_8_16",
+        "point_8_17",
+        "point_9_17",
+        "point_10_17",
+        "point_10_18",
+        "point_9_18",
+        "point_8_18",
+        "point_8_19",
+        "point_9_19",
+        "point_10_19",
+        "point_11_19",
+        "point_12_20",
+        "point_11_20",
+        "point_10_20",
+        "point_9_20",
+        "point_8_20",
+        "point_8_21",
+        "point_9_21",
+        "point_10_21"
+      ],
+      "source": {
+        "mission_event_log_sha256_at_read": "bc65d732c4f71a755af9696c6d969522201a0544b38f158984de701497d8accf",
+        "mission_sha256": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+        "spec_sha256": "d16adb6c21eb7717e188475d15563ecb69a95816d2e972d725119812b30b98d8",
+        "runtime_sha256": "badc668017bd7ab33dada4ee320f0cfbfe753484fc60a0e1d18bdc50acd72200",
+        "bound_spray_executor_sha256": "77674242c5e68378237223573022361f91963f61c0901a4cbc334c0a9fd24cb6",
+        "selected_events_sha256": "44769552127010d072b675d14a31d82ca5d9ffb45bacb1232e6013d898f237f9",
+        "ledger_rows_sha256": "121801b7680e29228e5658aec49f09eea7186bdbc4a46bc5d15f06e1e476befc",
+        "mission_result_sha256": "d8d60609426795edd11808902e2b61ef25d1eea0bad9210f7dcd787f420a40d2"
+      },
+      "mission_version": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+      "speed_cap_mps": 0.3,
+      "yaw_cap_rps": 0.35,
+      "event_counts": {
+        "BT_CANCEL_TOOL": 4,
+        "BT_INTERRUPTS_NAV": 14,
+        "COARSE_PUBLIC_PLAN_HINT": 1,
+        "DOCKING_SETTLED_CHECK": 46,
+        "DOCKING_STABLE_OFFSET": 15,
+        "FINAL_TOOL_STOP": 1,
+        "GLOBAL_APPROACH_STOP_FOR_PRECISION": 4,
+        "IDEMPOTENT_REPLAY": 1,
+        "LOCALIZATION_PLAN_COMMITTED": 2,
+        "LOCALIZATION_PREVIEW_PREPARED": 2,
+        "LOCALIZATION_REVALIDATED_RESUME": 2,
+        "LOCAL_DOCK_GOAL": 15,
+        "LOCAL_DOCK_INTERRUPTED": 1,
+        "LOCAL_DOCK_NAV_FAILED": 2,
+        "LOCAL_DOCK_NAV_SUCCESS": 3,
+        "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION": 9,
+        "NAV_CANCEL_ACK": 36,
+        "NAV_GOAL": 49,
+        "NAV_LIFECYCLE_ACTIVE_VERIFIED": 1,
+        "NAV_SUCCESS": 25,
+        "NAV_TERMINAL_FAILURE": 6,
+        "RESIDUAL_RETRY": 3,
+        "RESUME_AFTER_OBSERVATION_CLEAR": 14,
+        "RETRY_DECISION": 20,
+        "STOPPED_PLAN_REVALIDATION": 2,
+        "STOPPED_RELOCALIZATION_REQUEST": 2,
+        "TASK_STOP": 1,
+        "TOOL_RESULT": 32
+      },
+      "events": [
+        {
+          "t": 19.12,
+          "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"
+        },
+        {
+          "t": 19.12,
+          "event": "NAV_GOAL",
+          "point": "point_7_14"
+        },
+        {
+          "t": 19.178,
+          "event": "NAV_SUCCESS",
+          "point": "point_7_14"
+        },
+        {
+          "t": 22.5,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_7_14"
+        },
+        {
+          "t": 26.572,
+          "event": "TOOL_RESULT",
+          "point": "point_7_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 26.614,
+          "event": "TOOL_RESULT",
+          "point": "point_7_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": true,
+          "uncertainty": false
+        },
+        {
+          "t": 26.616,
+          "event": "NAV_GOAL",
+          "point": "point_8_14"
+        },
+        {
+          "t": 40.74,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_14"
+        },
+        {
+          "t": 44.042,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_14"
+        },
+        {
+          "t": 48.114,
+          "event": "TOOL_RESULT",
+          "point": "point_8_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 48.15,
+          "event": "NAV_GOAL",
+          "point": "point_8_15"
+        },
+        {
+          "t": 59.562,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 61.244,
+          "event": "NAV_GOAL",
+          "point": "point_8_15"
+        },
+        {
+          "t": 76.71,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_15"
+        },
+        {
+          "t": 80.01,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_8_15"
+        },
+        {
+          "t": 80.01,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_15"
+        },
+        {
+          "t": 80.036,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_8_15"
+        },
+        {
+          "t": 82.218,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_8_15"
+        },
+        {
+          "t": 85.65,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_15"
+        },
+        {
+          "t": 89.764,
+          "event": "TOOL_RESULT",
+          "point": "point_8_15",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 89.792,
+          "event": "NAV_GOAL",
+          "point": "point_9_15"
+        },
+        {
+          "t": 115.532,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_15"
+        },
+        {
+          "t": 118.86,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_15"
+        },
+        {
+          "t": 122.952,
+          "event": "TOOL_RESULT",
+          "point": "point_9_15",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 123.0,
+          "event": "NAV_GOAL",
+          "point": "point_9_14"
+        },
+        {
+          "t": 139.214,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 139.684,
+          "event": "NAV_GOAL",
+          "point": "point_9_14"
+        },
+        {
+          "t": 140.686,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 140.742,
+          "event": "NAV_GOAL",
+          "point": "point_9_14"
+        },
+        {
+          "t": 154.17,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_14"
+        },
+        {
+          "t": 157.44,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_14"
+        },
+        {
+          "t": 161.548,
+          "event": "TOOL_RESULT",
+          "point": "point_9_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 161.586,
+          "event": "NAV_GOAL",
+          "point": "point_10_14"
+        },
+        {
+          "t": 187.082,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_10_14"
+        },
+        {
+          "t": 190.8,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_14"
+        },
+        {
+          "t": 190.8,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_14"
+        },
+        {
+          "t": 190.806,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_14"
+        },
+        {
+          "t": 198.35,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_10_14"
+        },
+        {
+          "t": 201.78,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_14"
+        },
+        {
+          "t": 205.876,
+          "event": "TOOL_RESULT",
+          "point": "point_10_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 205.92,
+          "event": "NAV_GOAL",
+          "point": "point_10_15"
+        },
+        {
+          "t": 237.75,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_15"
+        },
+        {
+          "t": 241.02,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_15"
+        },
+        {
+          "t": 245.118,
+          "event": "TOOL_RESULT",
+          "point": "point_10_15",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 245.16,
+          "event": "NAV_GOAL",
+          "point": "point_10_16"
+        },
+        {
+          "t": 270.454,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_10_16"
+        },
+        {
+          "t": 274.14,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_16"
+        },
+        {
+          "t": 274.14,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_16"
+        },
+        {
+          "t": 274.142,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_16"
+        },
+        {
+          "t": 276.754,
+          "event": "LOCAL_DOCK_NAV_SUCCESS",
+          "point": "point_10_16"
+        },
+        {
+          "t": 280.11,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_16"
+        },
+        {
+          "t": 280.11,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_16"
+        },
+        {
+          "t": 280.112,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_16"
+        },
+        {
+          "t": 285.486,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_10_16"
+        },
+        {
+          "t": 288.93,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_16"
+        },
+        {
+          "t": 292.992,
+          "event": "TOOL_RESULT",
+          "point": "point_10_16",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 293.042,
+          "event": "NAV_GOAL",
+          "point": "point_9_16"
+        },
+        {
+          "t": 317.492,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 317.678,
+          "event": "NAV_GOAL",
+          "point": "point_9_16"
+        },
+        {
+          "t": 321.81,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_16"
+        },
+        {
+          "t": 325.08,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_9_16"
+        },
+        {
+          "t": 325.08,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_16"
+        },
+        {
+          "t": 325.1,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_9_16"
+        },
+        {
+          "t": 328.676,
+          "event": "LOCAL_DOCK_NAV_SUCCESS",
+          "point": "point_9_16"
+        },
+        {
+          "t": 331.95,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_16"
+        },
+        {
+          "t": 336.068,
+          "event": "TOOL_RESULT",
+          "point": "point_9_16",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 336.09,
+          "event": "NAV_GOAL",
+          "point": "point_8_16"
+        },
+        {
+          "t": 347.524,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 347.766,
+          "event": "NAV_GOAL",
+          "point": "point_8_16"
+        },
+        {
+          "t": 360.662,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_16"
+        },
+        {
+          "t": 363.99,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_16"
+        },
+        {
+          "t": 368.064,
+          "event": "TOOL_RESULT",
+          "point": "point_8_16",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 368.102,
+          "event": "NAV_GOAL",
+          "point": "point_8_17"
+        },
+        {
+          "t": 393.3,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_17"
+        },
+        {
+          "t": 396.57,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_17"
+        },
+        {
+          "t": 400.668,
+          "event": "TOOL_RESULT",
+          "point": "point_8_17",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 400.71,
+          "event": "NAV_GOAL",
+          "point": "point_9_17"
+        },
+        {
+          "t": 429.36,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_9_17"
+        },
+        {
+          "t": 433.112,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_9_17"
+        },
+        {
+          "t": 433.112,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_17"
+        },
+        {
+          "t": 433.118,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_9_17"
+        },
+        {
+          "t": 441.25,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_9_17"
+        },
+        {
+          "t": 444.54,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_9_17"
+        },
+        {
+          "t": 444.54,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_17"
+        },
+        {
+          "t": 444.542,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_9_17"
+        },
+        {
+          "t": 453.818,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_9_17"
+        },
+        {
+          "t": 457.74,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_17"
+        },
+        {
+          "t": 461.86,
+          "event": "TOOL_RESULT",
+          "point": "point_9_17",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 461.91,
+          "event": "NAV_GOAL",
+          "point": "point_10_17"
+        },
+        {
+          "t": 492.632,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_17"
+        },
+        {
+          "t": 495.93,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_17"
+        },
+        {
+          "t": 500.042,
+          "event": "TOOL_RESULT",
+          "point": "point_10_17",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 500.072,
+          "event": "NAV_GOAL",
+          "point": "point_10_18"
+        },
+        {
+          "t": 513.512,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 513.94,
+          "event": "NAV_GOAL",
+          "point": "point_10_18"
+        },
+        {
+          "t": 524.49,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_18"
+        },
+        {
+          "t": 527.79,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_18"
+        },
+        {
+          "t": 531.87,
+          "event": "TOOL_RESULT",
+          "point": "point_10_18",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 531.912,
+          "event": "NAV_GOAL",
+          "point": "point_9_18"
+        },
+        {
+          "t": 534.1,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 534.546,
+          "event": "NAV_GOAL",
+          "point": "point_9_18"
+        },
+        {
+          "t": 545.996,
+          "event": "NAV_TERMINAL_FAILURE"
+        },
+        {
+          "t": 559.11,
+          "event": "NAV_GOAL",
+          "point": "point_9_18"
+        },
+        {
+          "t": 576.21,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_18"
+        },
+        {
+          "t": 579.48,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_18"
+        },
+        {
+          "t": 579.55,
+          "event": "TOOL_RESULT",
+          "point": "point_9_18",
+          "state": "CANCELLED",
+          "remaining": 3.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 579.84,
+          "event": "RESIDUAL_RETRY",
+          "point": "point_9_18"
+        },
+        {
+          "t": 583.17,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_18"
+        },
+        {
+          "t": 587.282,
+          "event": "TOOL_RESULT",
+          "point": "point_9_18",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 587.31,
+          "event": "NAV_GOAL",
+          "point": "point_8_18"
+        },
+        {
+          "t": 599.174,
+          "event": "NAV_TERMINAL_FAILURE"
+        },
+        {
+          "t": 612.306,
+          "event": "NAV_GOAL",
+          "point": "point_8_18"
+        },
+        {
+          "t": 622.44,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_18"
+        },
+        {
+          "t": 625.71,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_8_18"
+        },
+        {
+          "t": 625.71,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_18"
+        },
+        {
+          "t": 625.712,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_8_18"
+        },
+        {
+          "t": 627.786,
+          "event": "LOCAL_DOCK_NAV_SUCCESS",
+          "point": "point_8_18"
+        },
+        {
+          "t": 631.08,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_18"
+        },
+        {
+          "t": 635.164,
+          "event": "TOOL_RESULT",
+          "point": "point_8_18",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 635.192,
+          "event": "NAV_GOAL",
+          "point": "point_8_19"
+        },
+        {
+          "t": 660.12,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_19"
+        },
+        {
+          "t": 663.42,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_19"
+        },
+        {
+          "t": 667.518,
+          "event": "TOOL_RESULT",
+          "point": "point_8_19",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 667.53,
+          "event": "NAV_GOAL",
+          "point": "point_9_19"
+        },
+        {
+          "t": 683.494,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 683.792,
+          "event": "NAV_GOAL",
+          "point": "point_9_19"
+        },
+        {
+          "t": 694.02,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_19"
+        },
+        {
+          "t": 699.42,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_9_19"
+        },
+        {
+          "t": 699.42,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_19"
+        },
+        {
+          "t": 699.454,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_9_19"
+        },
+        {
+          "t": 712.618,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_9_19"
+        },
+        {
+          "t": 715.95,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_19"
+        },
+        {
+          "t": 720.07,
+          "event": "TOOL_RESULT",
+          "point": "point_9_19",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 720.122,
+          "event": "NAV_GOAL",
+          "point": "point_10_19"
+        },
+        {
+          "t": 729.52,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 729.844,
+          "event": "NAV_GOAL",
+          "point": "point_10_19"
+        },
+        {
+          "t": 753.06,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_19"
+        },
+        {
+          "t": 756.33,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_19"
+        },
+        {
+          "t": 760.438,
+          "event": "TOOL_RESULT",
+          "point": "point_10_19",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 760.472,
+          "event": "NAV_GOAL",
+          "point": "point_11_19"
+        },
+        {
+          "t": 761.474,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 761.526,
+          "event": "NAV_GOAL",
+          "point": "point_11_19"
+        },
+        {
+          "t": 785.91,
+          "event": "NAV_SUCCESS",
+          "point": "point_11_19"
+        },
+        {
+          "t": 789.21,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_11_19"
+        },
+        {
+          "t": 793.306,
+          "event": "TOOL_RESULT",
+          "point": "point_11_19",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 793.35,
+          "event": "NAV_GOAL",
+          "point": "point_12_20"
+        },
+        {
+          "t": 818.526,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 818.708,
+          "event": "NAV_GOAL",
+          "point": "point_12_20"
+        },
+        {
+          "t": 826.98,
+          "event": "NAV_SUCCESS",
+          "point": "point_12_20"
+        },
+        {
+          "t": 830.28,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_12_20"
+        },
+        {
+          "t": 830.28,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_12_20"
+        },
+        {
+          "t": 830.282,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_12_20"
+        },
+        {
+          "t": 838.652,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_12_20"
+        },
+        {
+          "t": 842.28,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_12_20"
+        },
+        {
+          "t": 842.28,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_12_20"
+        },
+        {
+          "t": 842.316,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_12_20"
+        },
+        {
+          "t": 851.85,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_12_20"
+        },
+        {
+          "t": 855.81,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_12_20"
+        },
+        {
+          "t": 856.402,
+          "event": "TOOL_RESULT",
+          "point": "point_12_20",
+          "state": "CANCELLED",
+          "remaining": 3.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 856.442,
+          "event": "RESIDUAL_RETRY",
+          "point": "point_12_20"
+        },
+        {
+          "t": 859.77,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_12_20"
+        },
+        {
+          "t": 863.896,
+          "event": "TOOL_RESULT",
+          "point": "point_12_20",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 863.942,
+          "event": "NAV_GOAL",
+          "point": "point_11_20"
+        },
+        {
+          "t": 899.76,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_11_20"
+        },
+        {
+          "t": 903.33,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_11_20"
+        },
+        {
+          "t": 903.33,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_11_20"
+        },
+        {
+          "t": 903.358,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_11_20"
+        },
+        {
+          "t": 921.652,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_11_20"
+        },
+        {
+          "t": 924.962,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_11_20"
+        },
+        {
+          "t": 924.962,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_11_20"
+        },
+        {
+          "t": 924.974,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_11_20"
+        },
+        {
+          "t": 961.884,
+          "event": "LOCAL_DOCK_NAV_FAILED",
+          "point": "point_11_20"
+        },
+        {
+          "t": 965.19,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_11_20"
+        },
+        {
+          "t": 969.318,
+          "event": "TOOL_RESULT",
+          "point": "point_11_20",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 969.36,
+          "event": "NAV_GOAL",
+          "point": "point_10_20"
+        },
+        {
+          "t": 981.52,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 981.67,
+          "event": "NAV_GOAL",
+          "point": "point_10_20"
+        },
+        {
+          "t": 991.97,
+          "event": "NAV_TERMINAL_FAILURE"
+        },
+        {
+          "t": 1005.094,
+          "event": "NAV_GOAL",
+          "point": "point_10_20"
+        },
+        {
+          "t": 1007.534,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 1007.82,
+          "event": "NAV_GOAL",
+          "point": "point_10_20"
+        },
+        {
+          "t": 1022.7,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_20"
+        },
+        {
+          "t": 1026.0,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_20"
+        },
+        {
+          "t": 1026.0,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_20"
+        },
+        {
+          "t": 1026.004,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_20"
+        },
+        {
+          "t": 1055.132,
+          "event": "LOCAL_DOCK_NAV_FAILED",
+          "point": "point_10_20"
+        },
+        {
+          "t": 1060.05,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_20"
+        },
+        {
+          "t": 1064.156,
+          "event": "TOOL_RESULT",
+          "point": "point_10_20",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 1064.19,
+          "event": "NAV_GOAL",
+          "point": "point_9_20"
+        },
+        {
+          "t": 1066.254,
+          "event": "NAV_TERMINAL_FAILURE"
+        },
+        {
+          "t": 1079.368,
+          "event": "NAV_GOAL",
+          "point": "point_9_20"
+        },
+        {
+          "t": 1102.23,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_20"
+        },
+        {
+          "t": 1105.98,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_20"
+        },
+        {
+          "t": 1110.078,
+          "event": "TOOL_RESULT",
+          "point": "point_9_20",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 1110.12,
+          "event": "NAV_GOAL",
+          "point": "point_8_20"
+        },
+        {
+          "t": 1135.74,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_20"
+        },
+        {
+          "t": 1142.49,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_20"
+        },
+        {
+          "t": 1146.592,
+          "event": "TOOL_RESULT",
+          "point": "point_8_20",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 1146.632,
+          "event": "NAV_GOAL",
+          "point": "point_8_21"
+        },
+        {
+          "t": 1166.528,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 1166.892,
+          "event": "NAV_GOAL",
+          "point": "point_8_21"
+        },
+        {
+          "t": 1177.2,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_21"
+        },
+        {
+          "t": 1180.5,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_21"
+        },
+        {
+          "t": 1184.57,
+          "event": "TOOL_RESULT",
+          "point": "point_8_21",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 1184.61,
+          "event": "NAV_GOAL",
+          "point": "point_9_21"
+        },
+        {
+          "t": 1220.64,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_21"
+        },
+        {
+          "t": 1223.91,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_21"
+        },
+        {
+          "t": 1227.99,
+          "event": "TOOL_RESULT",
+          "point": "point_9_21",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 1228.022,
+          "event": "NAV_GOAL",
+          "point": "point_10_21"
+        },
+        {
+          "t": 1259.132,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_21"
+        },
+        {
+          "t": 1262.462,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_21"
+        },
+        {
+          "t": 1266.548,
+          "event": "TOOL_RESULT",
+          "point": "point_10_21",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 1266.572,
+          "event": "NAV_GOAL",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1275.104,
+          "event": "NAV_TERMINAL_FAILURE"
+        },
+        {
+          "t": 1288.23,
+          "event": "NAV_GOAL",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1314.268,
+          "event": "NAV_TERMINAL_FAILURE"
+        },
+        {
+          "t": 1327.376,
+          "event": "NAV_GOAL",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1337.49,
+          "event": "NAV_SUCCESS",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1340.79,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1344.89,
+          "event": "TOOL_RESULT",
+          "point": "point_11_21",
+          "state": "CANCELLED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 1344.93,
+          "event": "STOPPED_RELOCALIZATION_REQUEST",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1353.856,
+          "event": "LOCALIZATION_REVALIDATED_RESUME",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1353.856,
+          "event": "RESIDUAL_RETRY",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1357.14,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1357.14,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1357.144,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1389.54,
+          "event": "STOPPED_RELOCALIZATION_REQUEST",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1393.214,
+          "event": "LOCALIZATION_REVALIDATED_RESUME",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1393.214,
+          "event": "LOCAL_DOCK_INTERRUPTED",
+          "point": "point_11_21"
+        },
+        {
+          "t": 1402.714,
+          "event": "TASK_STOP"
+        }
+      ],
+      "ledger": [
+        [
+          22.502,
+          "point_7_14",
+          "RUNNING"
+        ],
+        [
+          26.57,
+          "point_7_14",
+          "SUCCEEDED"
+        ],
+        [
+          44.044,
+          "point_8_14",
+          "RUNNING"
+        ],
+        [
+          48.114,
+          "point_8_14",
+          "SUCCEEDED"
+        ],
+        [
+          85.65,
+          "point_8_15",
+          "RUNNING"
+        ],
+        [
+          89.764,
+          "point_8_15",
+          "SUCCEEDED"
+        ],
+        [
+          118.862,
+          "point_9_15",
+          "RUNNING"
+        ],
+        [
+          122.952,
+          "point_9_15",
+          "SUCCEEDED"
+        ],
+        [
+          157.442,
+          "point_9_14",
+          "RUNNING"
+        ],
+        [
+          161.546,
+          "point_9_14",
+          "SUCCEEDED"
+        ],
+        [
+          201.782,
+          "point_10_14",
+          "RUNNING"
+        ],
+        [
+          205.874,
+          "point_10_14",
+          "SUCCEEDED"
+        ],
+        [
+          241.022,
+          "point_10_15",
+          "RUNNING"
+        ],
+        [
+          245.118,
+          "point_10_15",
+          "SUCCEEDED"
+        ],
+        [
+          288.93,
+          "point_10_16",
+          "RUNNING"
+        ],
+        [
+          292.99,
+          "point_10_16",
+          "SUCCEEDED"
+        ],
+        [
+          331.952,
+          "point_9_16",
+          "RUNNING"
+        ],
+        [
+          336.068,
+          "point_9_16",
+          "SUCCEEDED"
+        ],
+        [
+          363.992,
+          "point_8_16",
+          "RUNNING"
+        ],
+        [
+          368.064,
+          "point_8_16",
+          "SUCCEEDED"
+        ],
+        [
+          396.572,
+          "point_8_17",
+          "RUNNING"
+        ],
+        [
+          400.666,
+          "point_8_17",
+          "SUCCEEDED"
+        ],
+        [
+          457.742,
+          "point_9_17",
+          "RUNNING"
+        ],
+        [
+          461.86,
+          "point_9_17",
+          "SUCCEEDED"
+        ],
+        [
+          495.934,
+          "point_10_17",
+          "RUNNING"
+        ],
+        [
+          500.042,
+          "point_10_17",
+          "SUCCEEDED"
+        ],
+        [
+          527.792,
+          "point_10_18",
+          "RUNNING"
+        ],
+        [
+          531.868,
+          "point_10_18",
+          "SUCCEEDED"
+        ],
+        [
+          579.482,
+          "point_9_18",
+          "RUNNING"
+        ],
+        [
+          579.548,
+          "point_9_18",
+          "CANCELLED"
+        ],
+        [
+          583.17,
+          "point_9_18",
+          "RUNNING"
+        ],
+        [
+          587.282,
+          "point_9_18",
+          "SUCCEEDED"
+        ],
+        [
+          631.082,
+          "point_8_18",
+          "RUNNING"
+        ],
+        [
+          635.162,
+          "point_8_18",
+          "SUCCEEDED"
+        ],
+        [
+          663.422,
+          "point_8_19",
+          "RUNNING"
+        ],
+        [
+          667.516,
+          "point_8_19",
+          "SUCCEEDED"
+        ],
+        [
+          715.952,
+          "point_9_19",
+          "RUNNING"
+        ],
+        [
+          720.07,
+          "point_9_19",
+          "SUCCEEDED"
+        ],
+        [
+          756.334,
+          "point_10_19",
+          "RUNNING"
+        ],
+        [
+          760.438,
+          "point_10_19",
+          "SUCCEEDED"
+        ],
+        [
+          789.212,
+          "point_11_19",
+          "RUNNING"
+        ],
+        [
+          793.304,
+          "point_11_19",
+          "SUCCEEDED"
+        ],
+        [
+          855.812,
+          "point_12_20",
+          "RUNNING"
+        ],
+        [
+          856.4,
+          "point_12_20",
+          "CANCELLED"
+        ],
+        [
+          859.772,
+          "point_12_20",
+          "RUNNING"
+        ],
+        [
+          863.896,
+          "point_12_20",
+          "SUCCEEDED"
+        ],
+        [
+          965.192,
+          "point_11_20",
+          "RUNNING"
+        ],
+        [
+          969.316,
+          "point_11_20",
+          "SUCCEEDED"
+        ],
+        [
+          1060.052,
+          "point_10_20",
+          "RUNNING"
+        ],
+        [
+          1064.156,
+          "point_10_20",
+          "SUCCEEDED"
+        ],
+        [
+          1105.982,
+          "point_9_20",
+          "RUNNING"
+        ],
+        [
+          1110.074,
+          "point_9_20",
+          "SUCCEEDED"
+        ],
+        [
+          1142.492,
+          "point_8_20",
+          "RUNNING"
+        ],
+        [
+          1146.592,
+          "point_8_20",
+          "SUCCEEDED"
+        ],
+        [
+          1180.502,
+          "point_8_21",
+          "RUNNING"
+        ],
+        [
+          1184.568,
+          "point_8_21",
+          "SUCCEEDED"
+        ],
+        [
+          1223.912,
+          "point_9_21",
+          "RUNNING"
+        ],
+        [
+          1227.988,
+          "point_9_21",
+          "SUCCEEDED"
+        ],
+        [
+          1262.464,
+          "point_10_21",
+          "RUNNING"
+        ],
+        [
+          1266.546,
+          "point_10_21",
+          "SUCCEEDED"
+        ],
+        [
+          1340.792,
+          "point_11_21",
+          "RUNNING"
+        ],
+        [
+          1344.89,
+          "point_11_21",
+          "CANCELLED"
+        ]
+      ]
+    },
+    {
+      "session": "spray_20261119_081218_417252",
+      "closed": true,
+      "end_sim_s": 944.304,
+      "error": "RuntimeError('DOCKING_REALIGNMENT_EXHAUSTED')",
+      "mission_report_passed": false,
+      "wall_seconds_mission_report": 1982.1440556019998,
+      "report_completed_ids": [
+        "point_7_14",
+        "point_8_14",
+        "point_8_15",
+        "point_9_15",
+        "point_9_14",
+        "point_10_14",
+        "point_10_15",
+        "point_10_16",
+        "point_9_16",
+        "point_8_16",
+        "point_8_17",
+        "point_9_17",
+        "point_10_17",
+        "point_10_18",
+        "point_9_18",
+        "point_8_18",
+        "point_8_19",
+        "point_9_19",
+        "point_10_19",
+        "point_11_19",
+        "point_12_20",
+        "point_11_20"
+      ],
+      "source": {
+        "mission_event_log_sha256_at_read": "ca4d9838cb7173d34c3ca1530a92cc739772739786820f55a7ecb7396e6b8acd",
+        "mission_sha256": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+        "spec_sha256": "058d69509c0c009091250aa9173b706d0a7a0f74610be9647333c9e4ff9f16f5",
+        "runtime_sha256": "3cf80dcccf4045265bdf671d2d77620b98562ff559a6f931ba9ca823337dc32c",
+        "bound_spray_executor_sha256": "d5c23b2b5ffcb52770ed07c8db8c0692406c98c9006a5edd84bb0d8726cbac4a",
+        "selected_events_sha256": "0ccdca07955b5fb934db9d6582e5db0f20c8c09b1d027181443c50097b68adab",
+        "ledger_rows_sha256": "e5aa3c9f480fc9efea857b052332e4c0e18a8e802457a4312805d6bccb1ac8a1",
+        "mission_result_sha256": "4583153d38bd29b5c771f540de2e21ea4b63c4a99cc35e877ec45aaaa7101bf3"
+      },
+      "mission_version": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+      "speed_cap_mps": 0.3,
+      "yaw_cap_rps": 0.35,
+      "event_counts": {
+        "BT_INTERRUPTS_NAV": 16,
+        "COARSE_PUBLIC_PLAN_HINT": 1,
+        "DOCKING_SETTLED_CHECK": 36,
+        "DOCKING_STABLE_OFFSET": 13,
+        "FINAL_TOOL_STOP": 1,
+        "GLOBAL_APPROACH_STOP_FOR_PRECISION": 7,
+        "IDEMPOTENT_REPLAY": 1,
+        "LOCAL_DOCK_GOAL": 13,
+        "LOCAL_DOCK_NAV_FAILED": 2,
+        "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION": 11,
+        "NAV_CANCEL_ACK": 36,
+        "NAV_GOAL": 39,
+        "NAV_LIFECYCLE_ACTIVE_VERIFIED": 1,
+        "NAV_SUCCESS": 16,
+        "RESUME_AFTER_OBSERVATION_CLEAR": 16,
+        "RETRY_DECISION": 16,
+        "TASK_STOP": 1,
+        "TOOL_RESULT": 23
+      },
+      "events": [
+        {
+          "t": 32.496,
+          "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"
+        },
+        {
+          "t": 32.496,
+          "event": "NAV_GOAL",
+          "point": "point_7_14"
+        },
+        {
+          "t": 32.548,
+          "event": "NAV_SUCCESS",
+          "point": "point_7_14"
+        },
+        {
+          "t": 35.85,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_7_14"
+        },
+        {
+          "t": 39.95,
+          "event": "TOOL_RESULT",
+          "point": "point_7_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 40.0,
+          "event": "TOOL_RESULT",
+          "point": "point_7_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": true,
+          "uncertainty": false
+        },
+        {
+          "t": 40.002,
+          "event": "NAV_GOAL",
+          "point": "point_8_14"
+        },
+        {
+          "t": 47.016,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 47.468,
+          "event": "NAV_GOAL",
+          "point": "point_8_14"
+        },
+        {
+          "t": 49.03,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 49.322,
+          "event": "NAV_GOAL",
+          "point": "point_8_14"
+        },
+        {
+          "t": 60.18,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_14"
+        },
+        {
+          "t": 63.45,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_14"
+        },
+        {
+          "t": 67.518,
+          "event": "TOOL_RESULT",
+          "point": "point_8_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 67.56,
+          "event": "NAV_GOAL",
+          "point": "point_8_15"
+        },
+        {
+          "t": 96.27,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_8_15"
+        },
+        {
+          "t": 99.99,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_8_15"
+        },
+        {
+          "t": 99.99,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_15"
+        },
+        {
+          "t": 100.04,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_8_15"
+        },
+        {
+          "t": 108.15,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_8_15"
+        },
+        {
+          "t": 111.63,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_8_15"
+        },
+        {
+          "t": 111.63,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_15"
+        },
+        {
+          "t": 111.632,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_8_15"
+        },
+        {
+          "t": 119.918,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_8_15"
+        },
+        {
+          "t": 123.48,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_15"
+        },
+        {
+          "t": 127.582,
+          "event": "TOOL_RESULT",
+          "point": "point_8_15",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 127.622,
+          "event": "NAV_GOAL",
+          "point": "point_9_15"
+        },
+        {
+          "t": 140.704,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 141.136,
+          "event": "NAV_GOAL",
+          "point": "point_9_15"
+        },
+        {
+          "t": 154.532,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_15"
+        },
+        {
+          "t": 157.83,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_15"
+        },
+        {
+          "t": 161.934,
+          "event": "TOOL_RESULT",
+          "point": "point_9_15",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 161.97,
+          "event": "NAV_GOAL",
+          "point": "point_9_14"
+        },
+        {
+          "t": 188.82,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_14"
+        },
+        {
+          "t": 192.09,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_14"
+        },
+        {
+          "t": 196.186,
+          "event": "TOOL_RESULT",
+          "point": "point_9_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 196.232,
+          "event": "NAV_GOAL",
+          "point": "point_10_14"
+        },
+        {
+          "t": 207.014,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 207.462,
+          "event": "NAV_GOAL",
+          "point": "point_10_14"
+        },
+        {
+          "t": 219.06,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_14"
+        },
+        {
+          "t": 222.33,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_14"
+        },
+        {
+          "t": 226.408,
+          "event": "TOOL_RESULT",
+          "point": "point_10_14",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 226.44,
+          "event": "NAV_GOAL",
+          "point": "point_10_15"
+        },
+        {
+          "t": 240.602,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 241.036,
+          "event": "NAV_GOAL",
+          "point": "point_10_15"
+        },
+        {
+          "t": 252.0,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_15"
+        },
+        {
+          "t": 255.27,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_15"
+        },
+        {
+          "t": 259.354,
+          "event": "TOOL_RESULT",
+          "point": "point_10_15",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 259.38,
+          "event": "NAV_GOAL",
+          "point": "point_10_16"
+        },
+        {
+          "t": 284.462,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_10_16"
+        },
+        {
+          "t": 288.24,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_16"
+        },
+        {
+          "t": 288.24,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_16"
+        },
+        {
+          "t": 288.244,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_16"
+        },
+        {
+          "t": 296.616,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_10_16"
+        },
+        {
+          "t": 299.94,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_16"
+        },
+        {
+          "t": 304.012,
+          "event": "TOOL_RESULT",
+          "point": "point_10_16",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 304.05,
+          "event": "NAV_GOAL",
+          "point": "point_9_16"
+        },
+        {
+          "t": 333.9,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_16"
+        },
+        {
+          "t": 338.04,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_9_16"
+        },
+        {
+          "t": 338.04,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_16"
+        },
+        {
+          "t": 338.042,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_9_16"
+        },
+        {
+          "t": 349.386,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_9_16"
+        },
+        {
+          "t": 352.74,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_16"
+        },
+        {
+          "t": 356.84,
+          "event": "TOOL_RESULT",
+          "point": "point_9_16",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 356.88,
+          "event": "NAV_GOAL",
+          "point": "point_8_16"
+        },
+        {
+          "t": 383.64,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_8_16"
+        },
+        {
+          "t": 387.18,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_8_16"
+        },
+        {
+          "t": 387.18,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_16"
+        },
+        {
+          "t": 387.184,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_8_16"
+        },
+        {
+          "t": 393.416,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_8_16"
+        },
+        {
+          "t": 396.81,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_16"
+        },
+        {
+          "t": 400.92,
+          "event": "TOOL_RESULT",
+          "point": "point_8_16",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 400.95,
+          "event": "NAV_GOAL",
+          "point": "point_8_17"
+        },
+        {
+          "t": 430.56,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_17"
+        },
+        {
+          "t": 433.83,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_17"
+        },
+        {
+          "t": 437.906,
+          "event": "TOOL_RESULT",
+          "point": "point_8_17",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 437.94,
+          "event": "NAV_GOAL",
+          "point": "point_9_17"
+        },
+        {
+          "t": 465.06,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_9_17"
+        },
+        {
+          "t": 468.692,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_9_17"
+        },
+        {
+          "t": 468.692,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_17"
+        },
+        {
+          "t": 468.694,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_9_17"
+        },
+        {
+          "t": 472.85,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_9_17"
+        },
+        {
+          "t": 476.31,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_17"
+        },
+        {
+          "t": 480.436,
+          "event": "TOOL_RESULT",
+          "point": "point_9_17",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 480.48,
+          "event": "NAV_GOAL",
+          "point": "point_10_17"
+        },
+        {
+          "t": 504.902,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_17"
+        },
+        {
+          "t": 508.2,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_17"
+        },
+        {
+          "t": 512.28,
+          "event": "TOOL_RESULT",
+          "point": "point_10_17",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 512.31,
+          "event": "NAV_GOAL",
+          "point": "point_10_18"
+        },
+        {
+          "t": 519.008,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 519.284,
+          "event": "NAV_GOAL",
+          "point": "point_10_18"
+        },
+        {
+          "t": 524.928,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 525.276,
+          "event": "NAV_GOAL",
+          "point": "point_10_18"
+        },
+        {
+          "t": 534.736,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 534.93,
+          "event": "NAV_GOAL",
+          "point": "point_10_18"
+        },
+        {
+          "t": 537.48,
+          "event": "NAV_SUCCESS",
+          "point": "point_10_18"
+        },
+        {
+          "t": 540.78,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_18"
+        },
+        {
+          "t": 540.78,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_18"
+        },
+        {
+          "t": 540.782,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_18"
+        },
+        {
+          "t": 544.218,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_10_18"
+        },
+        {
+          "t": 547.59,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_18"
+        },
+        {
+          "t": 547.59,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_18"
+        },
+        {
+          "t": 547.594,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_18"
+        },
+        {
+          "t": 555.75,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_10_18"
+        },
+        {
+          "t": 559.23,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_18"
+        },
+        {
+          "t": 563.308,
+          "event": "TOOL_RESULT",
+          "point": "point_10_18",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 563.34,
+          "event": "NAV_GOAL",
+          "point": "point_9_18"
+        },
+        {
+          "t": 588.57,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_9_18"
+        },
+        {
+          "t": 592.292,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_9_18"
+        },
+        {
+          "t": 592.292,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_18"
+        },
+        {
+          "t": 592.298,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_9_18"
+        },
+        {
+          "t": 599.718,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_9_18"
+        },
+        {
+          "t": 603.06,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_18"
+        },
+        {
+          "t": 607.124,
+          "event": "TOOL_RESULT",
+          "point": "point_9_18",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 607.17,
+          "event": "NAV_GOAL",
+          "point": "point_8_18"
+        },
+        {
+          "t": 619.414,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 619.784,
+          "event": "NAV_GOAL",
+          "point": "point_8_18"
+        },
+        {
+          "t": 620.786,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 620.854,
+          "event": "NAV_GOAL",
+          "point": "point_8_18"
+        },
+        {
+          "t": 621.856,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 621.998,
+          "event": "NAV_GOAL",
+          "point": "point_8_18"
+        },
+        {
+          "t": 633.99,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_18"
+        },
+        {
+          "t": 637.29,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_8_18"
+        },
+        {
+          "t": 637.29,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_18"
+        },
+        {
+          "t": 637.304,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_8_18"
+        },
+        {
+          "t": 641.252,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_8_18"
+        },
+        {
+          "t": 644.58,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_18"
+        },
+        {
+          "t": 648.672,
+          "event": "TOOL_RESULT",
+          "point": "point_8_18",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 648.724,
+          "event": "NAV_GOAL",
+          "point": "point_8_19"
+        },
+        {
+          "t": 650.736,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 651.186,
+          "event": "NAV_GOAL",
+          "point": "point_8_19"
+        },
+        {
+          "t": 677.282,
+          "event": "NAV_SUCCESS",
+          "point": "point_8_19"
+        },
+        {
+          "t": 680.58,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_8_19"
+        },
+        {
+          "t": 684.71,
+          "event": "TOOL_RESULT",
+          "point": "point_8_19",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 684.75,
+          "event": "NAV_GOAL",
+          "point": "point_9_19"
+        },
+        {
+          "t": 712.508,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 712.812,
+          "event": "NAV_GOAL",
+          "point": "point_9_19"
+        },
+        {
+          "t": 725.522,
+          "event": "NAV_SUCCESS",
+          "point": "point_9_19"
+        },
+        {
+          "t": 728.824,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_9_19"
+        },
+        {
+          "t": 732.89,
+          "event": "TOOL_RESULT",
+          "point": "point_9_19",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 732.932,
+          "event": "NAV_GOAL",
+          "point": "point_10_19"
+        },
+        {
+          "t": 755.028,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 755.404,
+          "event": "NAV_GOAL",
+          "point": "point_10_19"
+        },
+        {
+          "t": 770.55,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_10_19"
+        },
+        {
+          "t": 774.3,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_19"
+        },
+        {
+          "t": 774.3,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_19"
+        },
+        {
+          "t": 774.314,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_19"
+        },
+        {
+          "t": 776.816,
+          "event": "LOCAL_DOCK_STOP_FOR_GLOBAL_OBSERVATION",
+          "point": "point_10_19"
+        },
+        {
+          "t": 780.3,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_19"
+        },
+        {
+          "t": 784.376,
+          "event": "TOOL_RESULT",
+          "point": "point_10_19",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 784.41,
+          "event": "NAV_GOAL",
+          "point": "point_11_19"
+        },
+        {
+          "t": 813.662,
+          "event": "NAV_SUCCESS",
+          "point": "point_11_19"
+        },
+        {
+          "t": 816.96,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_11_19"
+        },
+        {
+          "t": 821.056,
+          "event": "TOOL_RESULT",
+          "point": "point_11_19",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 821.1,
+          "event": "NAV_GOAL",
+          "point": "point_12_20"
+        },
+        {
+          "t": 841.0,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 841.244,
+          "event": "NAV_GOAL",
+          "point": "point_12_20"
+        },
+        {
+          "t": 857.28,
+          "event": "NAV_SUCCESS",
+          "point": "point_12_20"
+        },
+        {
+          "t": 860.58,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_12_20"
+        },
+        {
+          "t": 864.642,
+          "event": "TOOL_RESULT",
+          "point": "point_12_20",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 864.69,
+          "event": "NAV_GOAL",
+          "point": "point_11_20"
+        },
+        {
+          "t": 876.52,
+          "event": "BT_INTERRUPTS_NAV"
+        },
+        {
+          "t": 876.636,
+          "event": "NAV_GOAL",
+          "point": "point_11_20"
+        },
+        {
+          "t": 894.66,
+          "event": "NAV_SUCCESS",
+          "point": "point_11_20"
+        },
+        {
+          "t": 897.96,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_11_20"
+        },
+        {
+          "t": 902.062,
+          "event": "TOOL_RESULT",
+          "point": "point_11_20",
+          "state": "SUCCEEDED",
+          "remaining": 0.0,
+          "replayed": false,
+          "uncertainty": false
+        },
+        {
+          "t": 902.102,
+          "event": "NAV_GOAL",
+          "point": "point_10_20"
+        },
+        {
+          "t": 923.34,
+          "event": "GLOBAL_APPROACH_STOP_FOR_PRECISION",
+          "point": "point_10_20"
+        },
+        {
+          "t": 926.67,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_20"
+        },
+        {
+          "t": 926.67,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_20"
+        },
+        {
+          "t": 926.674,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_20"
+        },
+        {
+          "t": 928.686,
+          "event": "LOCAL_DOCK_NAV_FAILED",
+          "point": "point_10_20"
+        },
+        {
+          "t": 932.76,
+          "event": "DOCKING_STABLE_OFFSET",
+          "point": "point_10_20"
+        },
+        {
+          "t": 932.76,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_20"
+        },
+        {
+          "t": 932.764,
+          "event": "LOCAL_DOCK_GOAL",
+          "point": "point_10_20"
+        },
+        {
+          "t": 934.788,
+          "event": "LOCAL_DOCK_NAV_FAILED",
+          "point": "point_10_20"
+        },
+        {
+          "t": 944.288,
+          "event": "DOCKING_SETTLED_CHECK",
+          "point": "point_10_20"
+        },
+        {
+          "t": 944.288,
+          "event": "TASK_STOP"
+        }
+      ],
+      "ledger": [
+        [
+          35.852,
+          "point_7_14",
+          "RUNNING"
+        ],
+        [
+          39.948,
+          "point_7_14",
+          "SUCCEEDED"
+        ],
+        [
+          63.454,
+          "point_8_14",
+          "RUNNING"
+        ],
+        [
+          67.518,
+          "point_8_14",
+          "SUCCEEDED"
+        ],
+        [
+          123.48,
+          "point_8_15",
+          "RUNNING"
+        ],
+        [
+          127.58,
+          "point_8_15",
+          "SUCCEEDED"
+        ],
+        [
+          157.83,
+          "point_9_15",
+          "RUNNING"
+        ],
+        [
+          161.932,
+          "point_9_15",
+          "SUCCEEDED"
+        ],
+        [
+          192.096,
+          "point_9_14",
+          "RUNNING"
+        ],
+        [
+          196.184,
+          "point_9_14",
+          "SUCCEEDED"
+        ],
+        [
+          222.332,
+          "point_10_14",
+          "RUNNING"
+        ],
+        [
+          226.408,
+          "point_10_14",
+          "SUCCEEDED"
+        ],
+        [
+          255.27,
+          "point_10_15",
+          "RUNNING"
+        ],
+        [
+          259.35,
+          "point_10_15",
+          "SUCCEEDED"
+        ],
+        [
+          299.942,
+          "point_10_16",
+          "RUNNING"
+        ],
+        [
+          304.01,
+          "point_10_16",
+          "SUCCEEDED"
+        ],
+        [
+          352.742,
+          "point_9_16",
+          "RUNNING"
+        ],
+        [
+          356.84,
+          "point_9_16",
+          "SUCCEEDED"
+        ],
+        [
+          396.812,
+          "point_8_16",
+          "RUNNING"
+        ],
+        [
+          400.92,
+          "point_8_16",
+          "SUCCEEDED"
+        ],
+        [
+          433.834,
+          "point_8_17",
+          "RUNNING"
+        ],
+        [
+          437.906,
+          "point_8_17",
+          "SUCCEEDED"
+        ],
+        [
+          476.314,
+          "point_9_17",
+          "RUNNING"
+        ],
+        [
+          480.434,
+          "point_9_17",
+          "SUCCEEDED"
+        ],
+        [
+          508.202,
+          "point_10_17",
+          "RUNNING"
+        ],
+        [
+          512.28,
+          "point_10_17",
+          "SUCCEEDED"
+        ],
+        [
+          559.232,
+          "point_10_18",
+          "RUNNING"
+        ],
+        [
+          563.306,
+          "point_10_18",
+          "SUCCEEDED"
+        ],
+        [
+          603.064,
+          "point_9_18",
+          "RUNNING"
+        ],
+        [
+          607.124,
+          "point_9_18",
+          "SUCCEEDED"
+        ],
+        [
+          644.582,
+          "point_8_18",
+          "RUNNING"
+        ],
+        [
+          648.672,
+          "point_8_18",
+          "SUCCEEDED"
+        ],
+        [
+          680.582,
+          "point_8_19",
+          "RUNNING"
+        ],
+        [
+          684.708,
+          "point_8_19",
+          "SUCCEEDED"
+        ],
+        [
+          728.832,
+          "point_9_19",
+          "RUNNING"
+        ],
+        [
+          732.884,
+          "point_9_19",
+          "SUCCEEDED"
+        ],
+        [
+          780.302,
+          "point_10_19",
+          "RUNNING"
+        ],
+        [
+          784.374,
+          "point_10_19",
+          "SUCCEEDED"
+        ],
+        [
+          816.962,
+          "point_11_19",
+          "RUNNING"
+        ],
+        [
+          821.056,
+          "point_11_19",
+          "SUCCEEDED"
+        ],
+        [
+          860.582,
+          "point_12_20",
+          "RUNNING"
+        ],
+        [
+          864.642,
+          "point_12_20",
+          "SUCCEEDED"
+        ],
+        [
+          897.96,
+          "point_11_20",
+          "RUNNING"
+        ],
+        [
+          902.062,
+          "point_11_20",
+          "SUCCEEDED"
+        ]
+      ]
+    }
+  ]
+}

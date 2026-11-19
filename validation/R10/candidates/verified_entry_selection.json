@@ -1,0 +1,680 @@
+{
+  "scope": "Archives by distinct native session; original coarse public hint and independent sensor supervision required. Successful initial admission is not route completion. Only sessions with first actual valid source record counted.",
+  "current_declared_spawn": [
+    110.25344445444406,
+    50.3848589598888,
+    0.2617993877991483
+  ],
+  "archive_selection_distance_m": 0.1,
+  "archive_selection_yaw_tolerance_rad": 0.03,
+  "number": 44,
+  "by_stage": {
+    "R09": 13,
+    "R10": 5,
+    "R12": 26
+  },
+  "max_actual_difference_m": 0.0,
+  "max_actual_heading_difference_rad": 0.0,
+  "examples": [
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_125813_734313",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 67.44,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "448a0d64919ec704301a19962864cdfbe7a340b1fa5b480306f7198473e48417"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_130226_729625",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 24.42,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "6031c62566d54dd5c237bc2519daf167b610dc964b31fee0562185f1ee45cf62"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_130637_930224",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 24.45,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "43874fad77e77a45e2e3f3d0dd9aded24563d555a6bdaae80c4a3186f8995bd7"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_131018_376785",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 24.42,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "f383ba2aa38c1b98531b534e1e282e6ba7d432db7a6a6c8a37791574affbcef9"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_131457_243866",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 24.42,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "e468a234ab3d783320cdc6f96c7d3be744aa8c7f800f3e389d629cd64abd4543"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_131913_726834",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.25,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "0e8f2d5eca7fb92a8c5eafc925f8bce96e928dc678df1ddf44f18d2c678c4db6"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_132831_113445",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 24.42,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "c4d9cbf764b5266eb4c77e30b3a7048a0e9cadf854fc198451d520f88fe5a9ca"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_133742_254783",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 24.45,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "46d0183112d32a4b3f945bf6fc56e7bcd4487cec31744a5c01075fde8d2118ae"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_134229_232775",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 24.45,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "681ed61735cc3dcba35f51d91e07f6b31080d3bff067d712e33e3069ea713ef0"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_135029_008421",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.25,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "cfc54ada00fc3090cf84196b81d2543376150ee1e442746e4131d73bb84ddb8a"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_140747_354583",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.21,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "18215f96490347d82eebacba7cc21a8dd79e7e9c8fb65299b86c354e237f6e2b"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_141045_985350",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.27,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "a7629f3649f47fcf1573d4acbf0f3add7e92f8152f51a2018b12add9af19f9d5"
+    },
+    {
+      "stage": "R09",
+      "session": "mowing_20261114_142357_863815",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.24,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "e8ee9a62535d8fd615d1acc53da7b34bcf5e931076f785dc58cf4950f6be115c"
+    },
+    {
+      "stage": "R10",
+      "session": "mowing_20261114_143310_337090",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.24,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "533bd35aa76af6890a98ade369201ea24cc86a27429e8389ac3f934eb6761988"
+    },
+    {
+      "stage": "R10",
+      "session": "mowing_20261114_144528_327956",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.25,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "0ff49b9cba0f64d20a15ff92fbc6f1bd4e508492474336d4b0cb480e2a0d011c"
+    },
+    {
+      "stage": "R10",
+      "session": "mowing_20261114_145216_655294",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.85,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "9ec68ff6a3249158162d61f8fc7080fe045ed61a6284458cec57b8a79500af97"
+    },
+    {
+      "stage": "R10",
+      "session": "mowing_20261114_150105_005791",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.24,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "291e1a7c2bcb3b336c3d07c97d50d7f78ebb9bc190c37a996b9f282c5eff5381"
+    },
+    {
+      "stage": "R10",
+      "session": "mowing_20261114_152257_042754",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.82,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "4f3f4ff6ef316616d03f8e17918b91bb0b644d984b6f6bc4f8121540586026c5"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_155708_666310",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.82,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "5169f01ed626fd62f8e58be0169dc99340a6acbfae1b532f55dbc04e1c70f8e4"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_162442_021182",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.24,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "abefa69748617ed4022142b708c38d758fdabe02e2efef7b01f20ece4170dd55"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_164849_024832",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 18.42,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "e98b7f9cdefdc33449a7a1e697eedc73155aa7b0477626c109323c34fe5b1e5b"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_172924_433566",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 24.21,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "66f1b7f2fd37334ab7b8c79cb339e37e9eaa1295ba9ab3373ed0580dfdd6bdf2"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_173824_624692",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.25,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "db1c1b582bb1378f4afef486221b9259681af1f19c5afe487cbf023ab8271497"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_174644_953306",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.82,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "02287027f4b9f0ef900b2f35ed337ab157383570b85a7da2e67db1d74c6123ad"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_204129_401398",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 18.42,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "097decc3fbdf66cc8a431295e92c08879f670d326756af772f0654daadc1517b"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_204938_642664",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.4,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "771782bc35dc637d3e99ee0d548d3f25383f999a3cece974f929a3f6580419a4"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_205558_700516",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.21,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "1902903e76c5fa6d07b8994e7e37eb8642734493cfb633d94a5631bd5f161bca"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_211518_676200",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.21,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "1daed90c735b0fce4f48bcece74d461263176b91ef3a80eca34e145f9284152a"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_231841_995560",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.43,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "f2db2104ec8e7ae899950b1a7e0f72f4fc7cac1749e5f8e3ceadeb9ec43fec41"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261114_235742_951592",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.79,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "40c8cfbd6487ed1259876020407dfdf85b7dadb1eed0b2274888c1b95914435b"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_003535_670288",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.82,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "31f09c3a9f1d437f2bb535693233ab95ef8986f727a4e4fcd9802a1e3216da2a"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_012438_511623",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 18.42,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "b83176ec57d33efe2935ef440b3e44fabeaac73475490823a7757c84494ddceb",
+      "first_valid_reference_line_sha256": "d4aa2bb2a0587e9450e503d851c03d03317043a70004eaa405044ee80be84085"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_023352_374703",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.18,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "a4a064d75b89c9a93c11db2a10579b96137244d1b505b3e4404a8990739719da",
+      "first_valid_reference_line_sha256": "9a1290707e185681f9dea1f4c3cc60a1dd40b3dcf953fd26b623f808de50527a"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_023724_657473",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.85,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "a4a064d75b89c9a93c11db2a10579b96137244d1b505b3e4404a8990739719da",
+      "first_valid_reference_line_sha256": "6fdf7df0645cf1c8f4fb0d570e37aab844a8557bd829b15cd6636aad1feb758c"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_032259_006016",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 18.45,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "a4a064d75b89c9a93c11db2a10579b96137244d1b505b3e4404a8990739719da",
+      "first_valid_reference_line_sha256": "5b3ff25fa725b9d984ede306e96d4c586d624a753feac524669aa5f8123edcd3"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_032728_973082",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.85,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "a4a064d75b89c9a93c11db2a10579b96137244d1b505b3e4404a8990739719da",
+      "first_valid_reference_line_sha256": "a24c3295b882377a854b99e09a0ca28467a0782b2ad84ccd3600c7bbbb1900dd"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_033846_289066",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.4,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "a4a064d75b89c9a93c11db2a10579b96137244d1b505b3e4404a8990739719da",
+      "first_valid_reference_line_sha256": "c2d65491e571fc6d0e2eb24f41ec8ff3f01cee423ce83da1857e64d3476af611"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_042330_043786",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.22,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "1b4ed5a5b452df51036f4991ac97cad54767b5fadc8dabd9bb33f33a6ec653d0",
+      "first_valid_reference_line_sha256": "621be269747a97e9ff9263ebb54ab06d0ac20fd263ed484f2f67365a753e3c23"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_043537_296551",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.61,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "1b4ed5a5b452df51036f4991ac97cad54767b5fadc8dabd9bb33f33a6ec653d0",
+      "first_valid_reference_line_sha256": "18aaa63f29df5b80af329ca80f259159754237d31fda05f25c14c08374127535"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_054835_908507",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.46,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "314dbbfb2858eadcffe84189ee3aba4a936bff6fba2a016ccf0a64bdcefcb981",
+      "first_valid_reference_line_sha256": "bfc9d2682ee2dc611216e39b3377285950d2f9b48f24c66f211d910b67b337f6"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_065623_825371",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.85,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "314dbbfb2858eadcffe84189ee3aba4a936bff6fba2a016ccf0a64bdcefcb981",
+      "first_valid_reference_line_sha256": "513478d0a03cea459e0b046d8d1494fb760c52eb96d13bac0b9e06b2afd265b2"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261115_070740_054017",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 36.24,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "314dbbfb2858eadcffe84189ee3aba4a936bff6fba2a016ccf0a64bdcefcb981",
+      "first_valid_reference_line_sha256": "64c63d9d94e4623772232600b77fcc46aab59e08a2d1e931ee0911b60bc74543"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261119_070346_235832",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.07,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "314dbbfb2858eadcffe84189ee3aba4a936bff6fba2a016ccf0a64bdcefcb981",
+      "first_valid_reference_line_sha256": "82b7cb1f3dceee3b26d34a3affe73a7bc88bd5119c7f58996ef87758ae694e56"
+    },
+    {
+      "stage": "R12",
+      "session": "mowing_20261119_072044_764057",
+      "actual_declared_spawn": [
+        110.25344445444406,
+        50.3848589598888,
+        0.2617993877991483
+      ],
+      "xy_difference_m": 0.0,
+      "heading_difference_rad": 0.0,
+      "initial_valid_sim_s": 35.25,
+      "reason": "MAP_AND_GNSS_AGREE",
+      "fixture_sha256": "314dbbfb2858eadcffe84189ee3aba4a936bff6fba2a016ccf0a64bdcefcb981",
+      "first_valid_reference_line_sha256": "94ff46005e747f6a4e3e6f1cf2d6c4534a4fa27446dbc159089cc23ad6942389"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{"t": 8.002, "event": "COARSE_PUBLIC_PLAN_HINT"}
+{"t": 34.874, "event": "NAV_LIFECYCLE_ACTIVE_VERIFIED"}
+{"t": 34.874, "event": "NAV_GOAL", "point": "point_11_20", "target": [6.5, 47.5], "attempt": 0}
+{"t": 34.926, "event": "NAV_SUCCESS", "point": "point_11_20"}
+{"t": 38.25, "event": "DOCKING_SETTLED_CHECK", "point": "point_11_20", "distance_m": 0.011474080975822332, "attempt": 0, "stable": true, "stability": {"samples": 62, "span_s": 1.8299999999999983, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.009456537948773209, "latest_distance_m": 0.011474080975822332, "position_scatter_p95_m": 0.007664260513149612}}
+{"t": 42.38, "event": "TOOL_RESULT", "point": "point_11_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.073999999999998, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 0.0, "meter_after": 3.2537}
+{"t": 42.424, "event": "TOOL_RESULT", "point": "point_11_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.073999999999998, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2537, "meter_after": 3.2537}
+{"t": 42.424, "event": "IDEMPOTENT_REPLAY", "result": {"point": "point_11_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.073999999999998, "remaining": 0.0, "uncertainty": false, "replayed": true, "meter_before": 3.2537, "meter_after": 3.2537}}
+{"t": 42.424, "event": "NAV_GOAL", "point": "point_10_20", "target": [3.5, 47.5], "attempt": 0}
+{"t": 42.504, "event": "NAV_CANCEL_ACK", "accepted": false}
+{"t": 42.506, "event": "NAV_TERMINAL_FAILURE", "status": 6, "error_code": 208}
+{"t": 54.546, "event": "RETRY_DECISION", "action": "REPLAN", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 55.626, "event": "NAV_GOAL", "point": "point_10_20", "target": [3.5, 47.5], "attempt": 1}
+{"t": 55.698, "event": "NAV_CANCEL_ACK", "accepted": false}
+{"t": 55.698, "event": "NAV_TERMINAL_FAILURE", "status": 6, "error_code": 208}
+{"t": 67.768, "event": "RETRY_DECISION", "action": "REPLAN", "reason": "PERSISTENT_BLOCK_GLOBAL_QUERY"}
+{"t": 68.818, "event": "NAV_GOAL", "point": "point_10_20", "target": [3.5, 47.5], "attempt": 2}
+{"t": 68.898, "event": "NAV_CANCEL_ACK", "accepted": false}
+{"t": 68.898, "event": "NAV_TERMINAL_FAILURE", "status": 6, "error_code": 208}
+{"t": 80.944, "event": "RETRY_DECISION", "action": "DEFER", "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL"}
+{"t": 80.944, "event": "CANDIDATE_EXHAUSTION_EVIDENCE", "point": "point_10_20", "stage": "COARSE_NAVIGATION", "proof": {"eligible": true, "actual_replans": 2, "sent_navigation_goals": 3, "aborts": 3}}
+{"t": 80.944, "event": "CANDIDATE_DEFER_CONFIRMED", "point": "point_10_20", "next_point": "point_9_20", "stage": "COARSE_NAVIGATION", "checks": {"no_live_action": true, "other_original_point_exists": true, "worker_navigation_idle": true, "correct_session": true, "correct_version": true, "bt_fresh": true, "bt_no_emergency": true, "map_pose_admitted": true, "risk_admitted": true, "measured_body_tool_stop": true, "tool_server_stopped": true, "independent_tool_feedback": true, "native_defer": true}, "dispatch_id": 14, "context_sequence": 2698, "reason": "TRY_OTHER_OBLIGATION_RETAIN_RESIDUAL", "bt_t": 80.944, "blocked_duration_s": 12.004000000000005, "replans": 2, "new_planner_queries": 0, "residual_quantity": 3.0, "credited_quantity": 0.0, "dose_meter": 3.2537, "global_no_path_claim": false}
+{"t": 82.012, "event": "NAV_GOAL", "point": "point_9_20", "target": [0.5, 47.5], "attempt": 0}
+{"t": 134.432, "event": "NAV_SUCCESS", "point": "point_9_20"}
+{"t": 137.73, "event": "DOCKING_SETTLED_CHECK", "point": "point_9_20", "distance_m": 0.02550062488704279, "attempt": 0, "stable": true, "stability": {"samples": 62, "span_s": 1.829999999999984, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.024105203076728934, "latest_distance_m": 0.02550062488704279, "position_scatter_p95_m": 0.0025800652497645193}}
+{"t": 141.844, "event": "TOOL_RESULT", "point": "point_9_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.078000000000003, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 3.2537, "meter_after": 6.5313}
+{"t": 141.87, "event": "NAV_GOAL", "point": "point_8_20", "target": [-2.5, 47.5], "attempt": 0}
+{"t": 168.72, "event": "NAV_SUCCESS", "point": "point_8_20"}
+{"t": 171.99, "event": "DOCKING_SETTLED_CHECK", "point": "point_8_20", "distance_m": 0.018516870986939167, "attempt": 0, "stable": true, "stability": {"samples": 61, "span_s": 1.8000000000000114, "max_gap_s": 0.030000000000001137, "median_distance_m": 0.017199927057429433, "latest_distance_m": 0.018516870986939167, "position_scatter_p95_m": 0.006401151827790755}}
+{"t": 176.094, "event": "TOOL_RESULT", "point": "point_8_20", "state": "SUCCEEDED", "reason": "CONFIRMED_WORK", "confirmed": 3.078000000000003, "remaining": 0.0, "uncertainty": false, "replayed": false, "meter_before": 6.5313, "meter_after": 9.809}
+{"t": 176.13, "event": "SUBSET_FINISHED", "selected": 4, "completed": 3, "original_total": 56}
+{"t": 178.15, "event": "FINAL_TOOL_STOP", "state": "STOPPED"}

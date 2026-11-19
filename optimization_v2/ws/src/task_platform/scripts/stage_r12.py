@@ -1,5 +1,6 @@
 """Truthful separate recordings; partial upstream acceptance never becomes a full release."""
 from common import *
+from recheck_evidence_r10 import current_analysis
 import importlib.util
 from prepare_r12 import build
 
@@ -9,6 +10,9 @@ CASES['mowing_startup_perception_loss']=dict(task='mowing',case='startup_percept
 
 def declared_scope_matches(receipt,spec,name):
  expected=CASES[name];fields={'seconds':'sim_seconds','distance_limit':'distance_limit_m'}
+ cluster={'spray':'A1','mowing':'B1'}.get(expected['task'])
+ if cluster and spec.get('cluster')!=cluster:return False
+ if spec.get('diagnostic_only') or spec.get('candidate_profile'):return False
  if expected['task']=='mowing' and spec.get('segment_start',0)!=0:return False
  if receipt.get('case')!=name or receipt.get('task')!=expected['task'] or spec.get('task')!=expected['task']:return False
  if not all(spec.get(fields.get(k,k))==v for k,v in expected.items() if k!='task'):return False
@@ -23,7 +27,7 @@ def recheck(receipt):
   from analyze_mowing_r10 import analyze
  else:
   from analyze_r08 import analyze
- analysis=analyze(out);rec=read(out/'video/recording.json');frames=[json.loads(x) for x in (out/'video/frames.jsonl').read_text().splitlines()];gates=[json.loads(x) for x in (out/'control/gate.jsonl').read_text().splitlines()];start=next((x['t'] for x in gates if x.get('mode')=='DRIVE' and abs(x.get('v',0))+abs(x.get('w',0))>.003),None)
+ analysis=current_analysis(out,analyze);rec=read(out/'video/recording.json');frames=[json.loads(x) for x in (out/'video/frames.jsonl').read_text().splitlines()];gates=[json.loads(x) for x in (out/'control/gate.jsonl').read_text().splitlines()];start=next((x['t'] for x in gates if x.get('mode')=='DRIVE' and abs(x.get('v',0))+abs(x.get('w',0))>.003),None)
  if receipt['case']=='mowing_startup_perception_loss':
   events=[json.loads(l) for l in (out/'mission_events.jsonl').read_text().splitlines()];start=min([e['t'] for e in events if e['event']=='START_WORK_REQUEST']+([start] if start is not None else []),default=None)
  end=analysis['task_result'].get('t',1e9);active=[f for f in frames if (start or 0)<=f['sim_t']<=end]
