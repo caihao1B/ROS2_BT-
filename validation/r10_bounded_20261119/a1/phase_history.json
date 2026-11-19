@@ -1,0 +1,151 @@
+{
+  "schema": "A1-PHASE-HISTORY/1",
+  "reference_session": "spray_defer_20261119_130223_269769",
+  "sessions": [
+    {
+      "session": "spray_defer_20261119_130223_269769",
+      "mission_version": "762cb1e244a78b33809c766b65a6991434e2de4117917bcb24cf632c05ae9fd7",
+      "selected": 56,
+      "confirmed": 26,
+      "attempted_incomplete": 1,
+      "not_reached": 29,
+      "not_selected": 0,
+      "navigation_largest_on_confirmed_points": 25,
+      "confirmed_phase_totals_s": {
+        "elapsed_s": 936.204,
+        "travel_s": 707.364,
+        "precision_s": 53.398,
+        "localization_wait_s": 49.36,
+        "spray_flow_s": 86.2,
+        "other_s": 39.882
+      },
+      "confirmed_navigation_fraction": 0.755566,
+      "common_confirmed_ids_with_reference": 26,
+      "same_selection_as_reference": true,
+      "same_mission_version_as_reference": true,
+      "collision_warning_lines": 6446,
+      "raw_event_sha256": "19a547aa94646eaae54049d58f72c28651565392ba217b6d7c68c44606cd55fe"
+    },
+    {
+      "session": "spray_20261115_060145_047614",
+      "mission_version": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+      "selected": 56,
+      "confirmed": 28,
+      "attempted_incomplete": 1,
+      "not_reached": 27,
+      "not_selected": 0,
+      "navigation_largest_on_confirmed_points": 26,
+      "confirmed_phase_totals_s": {
+        "elapsed_s": 1247.428,
+        "travel_s": 760.328,
+        "precision_s": 306.042,
+        "localization_wait_s": 1.682,
+        "spray_flow_s": 92.0,
+        "other_s": 87.376
+      },
+      "confirmed_navigation_fraction": 0.609517,
+      "common_confirmed_ids_with_reference": 26,
+      "same_selection_as_reference": true,
+      "same_mission_version_as_reference": false,
+      "collision_warning_lines": 9538,
+      "raw_event_sha256": "bc65d732c4f71a755af9696c6d969522201a0544b38f158984de701497d8accf"
+    },
+    {
+      "session": "spray_20261119_081218_417252",
+      "mission_version": "a349307eebbcce8a9362d4eebdd72090f83bbdfd83eb006221dc6327b653bbf4",
+      "selected": 56,
+      "confirmed": 22,
+      "attempted_incomplete": 1,
+      "not_reached": 33,
+      "not_selected": 0,
+      "navigation_largest_on_confirmed_points": 21,
+      "confirmed_phase_totals_s": {
+        "elapsed_s": 869.566,
+        "travel_s": 588.556,
+        "precision_s": 185.274,
+        "localization_wait_s": 0.0,
+        "spray_flow_s": 72.15,
+        "other_s": 23.586
+      },
+      "confirmed_navigation_fraction": 0.676839,
+      "common_confirmed_ids_with_reference": 22,
+      "same_selection_as_reference": true,
+      "same_mission_version_as_reference": false,
+      "collision_warning_lines": 6378,
+      "raw_event_sha256": "ca4d9838cb7173d34c3ca1530a92cc739772739786820f55a7ecb7396e6b8acd"
+    },
+    {
+      "session": "spray_defer_20261119_121141_482729",
+      "mission_version": "ddd84c0951e3f46d220615006c3b2502c4fdb8c132515ed059266fd55fcc6c9d",
+      "selected": 4,
+      "confirmed": 3,
+      "attempted_incomplete": 1,
+      "not_reached": 0,
+      "not_selected": 52,
+      "navigation_largest_on_confirmed_points": 2,
+      "confirmed_phase_totals_s": {
+        "elapsed_s": 82.77,
+        "travel_s": 46.368,
+        "precision_s": 17.23,
+        "localization_wait_s": 0.0,
+        "spray_flow_s": 10.1,
+        "other_s": 9.072
+      },
+      "confirmed_navigation_fraction": 0.560203,
+      "common_confirmed_ids_with_reference": 3,
+      "same_selection_as_reference": false,
+      "same_mission_version_as_reference": false,
+      "collision_warning_lines": 673,
+      "raw_event_sha256": "46d1fafc9f715599951929828107ca90c1f20adb43981545ef41eefec51a8d3b"
+    },
+    {
+      "session": "spray_defer_20261119_121833_942724",
+      "mission_version": "04cc0a294d920cd672bc0dd6692d7d4ad6a09aebeef2c42cf320434b3e781dd3",
+      "selected": 4,
+      "confirmed": 4,
+      "attempted_incomplete": 0,
+      "not_reached": 0,
+      "not_selected": 52,
+      "navigation_largest_on_confirmed_points": 3,
+      "confirmed_phase_totals_s": {
+        "elapsed_s": 91.28,
+        "travel_s": 67.298,
+        "precision_s": 7.49,
+        "localization_wait_s": 0.0,
+        "spray_flow_s": 13.0,
+        "other_s": 3.492
+      },
+      "confirmed_navigation_fraction": 0.73727,
+      "common_confirmed_ids_with_reference": 4,
+      "same_selection_as_reference": false,
+      "same_mission_version_as_reference": false,
+      "collision_warning_lines": 684,
+      "raw_event_sha256": "8c3abe83eff4dce5cc3bb9aca10d6094ccc3e2db20496fc3a46707b4450df097"
+    },
+    {
+      "session": "spray_defer_20261119_122402_750899",
+      "mission_version": "32dc5ea049496ee92f9873c19b84b9d913ceac3047c1cf13a3377a3470a27502",
+      "selected": 4,
+      "confirmed": 4,
+      "attempted_incomplete": 0,
+      "not_reached": 0,
+      "not_selected": 52,
+      "navigation_largest_on_confirmed_points": 3,
+      "confirmed_phase_totals_s": {
+        "elapsed_s": 81.794,
+        "travel_s": 57.778,
+        "precision_s": 7.528,
+        "localization_wait_s": 0.0,
+        "spray_flow_s": 13.05,
+        "other_s": 3.438
+      },
+      "confirmed_navigation_fraction": 0.706384,
+      "common_confirmed_ids_with_reference": 4,
+      "same_selection_as_reference": false,
+      "same_mission_version_as_reference": false,
+      "collision_warning_lines": 542,
+      "raw_event_sha256": "92ede8b8a8892a485047eba2beee5506f971bacebe78e080e6e95f80c2f1a3ee"
+    }
+  ],
+  "interpretation": "Each row uses the same five disjoint phases. Navigation must exceed every other phase on that specific confirmed point. These sessions include overlapping points and successive software versions; they are not independent trials of one release."
+}

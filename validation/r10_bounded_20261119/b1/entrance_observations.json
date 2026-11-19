@@ -1,0 +1,197 @@
+{
+  "schema": "B1-ENTRANCE-FAULT-AND-AREA/1",
+  "session": "mowing_20261119_134227_187793",
+  "plan_revision": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac",
+  "status": "PARTIAL",
+  "terminal": "HUMAN_REQUIRED",
+  "error": "RuntimeError('SEGMENT_RETRY_BOUND')",
+  "sim_s": 53.894,
+  "real_s": 125.43813074599893,
+  "complete_sections": 0,
+  "selected_sections": 46,
+  "areas": {
+    "target_m2": 188.3918016929564,
+    "raw_cut_union_all_ground_m2": 6.545525390921902,
+    "actual_cut_m2": 5.951626739857179,
+    "confirmed_union_m2": 5.08400000000001,
+    "residual_m2": 183.30780169295636
+  },
+  "stop": {
+    "world_xyz": [
+      113.57224974491731,
+      51.28302990031751,
+      -1.3748653367023753e-08
+    ],
+    "measured_yaw_rad": 0.26342720682009246,
+    "truth_time": 53.882,
+    "yaw_rad_max_rate_last_600ms": 0.00015047962308998165,
+    "max_observed_body_speed_last_600ms_mps": 0.11481616414981206,
+    "max_rotor_rad_s_last_600ms": 2.929791277100696e-15,
+    "all_rotors_off_last_600ms": true,
+    "last_attempted_endpoint": "B1:segment:0:safe:0",
+    "physical_distance_to_attempted_endpoint_m": 3.9151033776943924,
+    "physical_yaw_error_to_attempted_endpoint_rad": 0.0016278190209441656,
+    "final_body_speed_max_mps": 0.0,
+    "final_rotor_max_rad_s": 1.2197443980175756e-18,
+    "final_window_s": [
+      53.794,
+      54.004
+    ],
+    "note": "Terminal safety stop. A stopped partial segment receives no endpoint or gear qualification."
+  },
+  "interruptions": [
+    {
+      "event": {
+        "t": 27.278,
+        "event": "BT_INTERRUPTS_SEGMENT",
+        "action": "CANCEL",
+        "reason": "PERCEPTION_ADMISSION_WAIT"
+      },
+      "decision_stamp": 27.276,
+      "dispatch_id": 14,
+      "sequence": 909,
+      "context_stamp": 27.27,
+      "valid_localization": true,
+      "blocked": false,
+      "sensors_healthy": false,
+      "safety_grid_age_s": 0.46999999999999886,
+      "terrain_capture_s": 26.6,
+      "progress_m": 0.41749443780715706
+    },
+    {
+      "event": {
+        "t": 28.492,
+        "event": "BT_INTERRUPTS_START_WORK",
+        "action": "CANCEL",
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "segment": "B1:segment:0:safe:0"
+      },
+      "decision_stamp": 28.494,
+      "dispatch_id": 16,
+      "sequence": 949,
+      "context_stamp": 28.468,
+      "valid_localization": true,
+      "blocked": false,
+      "sensors_healthy": false,
+      "safety_grid_age_s": 0.46799999999999997,
+      "terrain_capture_s": 27.9,
+      "progress_m": 0.5255461494242453
+    },
+    {
+      "event": {
+        "t": 33.674,
+        "event": "BT_INTERRUPTS_SEGMENT",
+        "action": "CANCEL",
+        "reason": "PERCEPTION_ADMISSION_WAIT"
+      },
+      "decision_stamp": 33.674,
+      "dispatch_id": 18,
+      "sequence": 1122,
+      "context_stamp": 33.66,
+      "valid_localization": true,
+      "blocked": false,
+      "sensors_healthy": false,
+      "safety_grid_age_s": 0.45999999999999375,
+      "terrain_capture_s": 33.0,
+      "progress_m": 1.188270296803174
+    },
+    {
+      "event": {
+        "t": 35.864,
+        "event": "BT_INTERRUPTS_SEGMENT",
+        "action": "CANCEL",
+        "reason": "PERCEPTION_ADMISSION_WAIT"
+      },
+      "decision_stamp": 35.86,
+      "dispatch_id": 20,
+      "sequence": 1195,
+      "context_stamp": 35.85,
+      "valid_localization": true,
+      "blocked": false,
+      "sensors_healthy": false,
+      "safety_grid_age_s": 0.45000000000000284,
+      "terrain_capture_s": 35.3,
+      "progress_m": 1.3382817431561225
+    },
+    {
+      "event": {
+        "t": 42.664,
+        "event": "BT_INTERRUPTS_SEGMENT",
+        "action": "CANCEL",
+        "reason": "PERCEPTION_ADMISSION_WAIT"
+      },
+      "decision_stamp": 42.668,
+      "dispatch_id": 22,
+      "sequence": 1422,
+      "context_stamp": 42.66,
+      "valid_localization": true,
+      "blocked": false,
+      "sensors_healthy": false,
+      "safety_grid_age_s": 0.45999999999999375,
+      "terrain_capture_s": 42.1,
+      "progress_m": 2.20862735405946
+    },
+    {
+      "event": {
+        "t": 49.964,
+        "event": "BT_INTERRUPTS_SEGMENT",
+        "action": "CANCEL",
+        "reason": "PERCEPTION_ADMISSION_WAIT"
+      },
+      "decision_stamp": 49.964,
+      "dispatch_id": 24,
+      "sequence": 1665,
+      "context_stamp": 49.95,
+      "valid_localization": true,
+      "blocked": false,
+      "sensors_healthy": false,
+      "safety_grid_age_s": 0.45000000000000284,
+      "terrain_capture_s": 49.3,
+      "progress_m": 3.1143590588452046
+    },
+    {
+      "event": {
+        "t": 52.984,
+        "event": "BT_INTERRUPTS_SEGMENT",
+        "action": "CANCEL",
+        "reason": "PERCEPTION_ADMISSION_WAIT"
+      },
+      "decision_stamp": 52.982,
+      "dispatch_id": 26,
+      "sequence": 1766,
+      "context_stamp": 52.976,
+      "valid_localization": true,
+      "blocked": false,
+      "sensors_healthy": false,
+      "safety_grid_age_s": 0.4759999999999991,
+      "terrain_capture_s": 52.4,
+      "progress_m": 3.394031518369468
+    }
+  ],
+  "perception": {
+    "original_gate_s": 0.45,
+    "risk_frames_during_work": 219,
+    "risk_reasons": {
+      "OBSERVED_DIRECTIONAL_GEOMETRY": 219
+    },
+    "native_snapshot_count": 219,
+    "native_reported_processing_ms_median": 137.500518,
+    "native_reported_processing_ms_max": 315.005417,
+    "note": "Risk timestamps are capture time. Age at the BT context comes from the gate reception, including upstream processing and transport."
+  },
+  "archive_sha256": "2dfc2fe3cb94414b9baf44e3b2f1a139b90885a3ca09b48edf9e60d983bb81df",
+  "clean_processes": true,
+  "rotor_area_sha256": "9c9b37262dd0daba64c22a5f9f8a1435ebba8bfcb30881d8c86cfb3723a1e2f1",
+  "final_stop_evidence": true,
+  "no_unexpected_contact": true,
+  "formal_credit": false,
+  "video": {
+    "file": "b1_entrance.mp4",
+    "sha256": "8efff081dea67309c8dc3bd0fdf521007847511b31d2d990f33682a59b847263",
+    "bytes": 1022736,
+    "decoded_frames": 547,
+    "duration_s": 109.4,
+    "source": "actual Gazebo camera",
+    "fps": 5.0
+  }
+}

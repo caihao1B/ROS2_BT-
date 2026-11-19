@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "exact_frozen_route": true,
+    "worker_cli": true,
+    "worker_hash_matches": true,
+    "independent_worker_version": true,
+    "worker_checks_real_clock_and_obligation": true,
+    "terrain_binary_bound": true,
+    "exact_terrain_binary_in_launch": true,
+    "terrain_builder_bound": true,
+    "progress_worker_path_bound": true,
+    "isolated_results": true,
+    "no_second_vehicle_launch": true,
+    "worker_cli_parses": true
+  },
+  "mission_version": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac",
+  "worker_source_sha256": "34f163ebcb6ca727fdeb1aab3188c50316dd291776406a46765bebf9d371142d",
+  "terrain_binary_sha256": "a0ff06442860f09969ff20f616e2a47781ad7a4479f4a8352255fb1e23f95d0c",
+  "terrain_source_sha256": "19f6269003659eb04af4cb4b95baf629bb25bd47501e79fd51a19554f421b5f8",
+  "progress_source_sha256": "5b0aec29cd847d67471cca5a86aae4d90220613db3545cb73d13e53fa54cfb39",
+  "scope": "Assembled launcher and worker CLI only; zero vehicle executions."
+}

@@ -4,7 +4,7 @@
 
 ![地图与任务分簇](media/r03_task_map.png)
 
-[连续点喷与四段换向实测](docs/three_tasks/R10/CONTINUOUS_SERVICE_AND_PARKING.md) · [第一次观察三项作业](docs/three_tasks/第一次观察三任务.md) · [11 月 19 日收尾复验与操作](docs/three_tasks/收尾复验_20261119.md) · [离线查看决策与传感器](validation/closeout_20261119/replay.html)
+[A1 逐点工时与 B1 整簇入口实测](docs/three_tasks/R10_WORKLOAD_REVIEW.md) · [连续点喷与四段换向实测](docs/three_tasks/R10/CONTINUOUS_SERVICE_AND_PARKING.md) · [第一次观察三项作业](docs/three_tasks/第一次观察三任务.md) · [11 月 19 日收尾复验与操作](docs/three_tasks/收尾复验_20261119.md) · [离线查看决策与传感器](validation/closeout_20261119/replay.html)
 
 ## 三个任务
 

@@ -1,0 +1,179 @@
+{
+  "schema": "B1-TERRAIN-INDEPENDENT-REPLAY/1",
+  "passed": true,
+  "fixtures": [
+    {
+      "npz": "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/diagnostics/capture_00.npz",
+      "sha256": "92b976e5283108a624cd3399826591df34692413447e8f0ae9df19727d131dab",
+      "metadata_sha256": "18ed8269e02797cfab7bb293b195e318aacd5e789cf6801e616a7b967be94472",
+      "points": 62584,
+      "original_sensor_stamp": 20.2,
+      "planar_odom": [
+        0.0007028055104266916,
+        -3.942553499104988e-05,
+        0.010719309428626148
+      ],
+      "xyz_sha256": "c30b43bbeffef592b8c4eedadad822e100714013fcdb11a5907ecaf10f90e2a8"
+    },
+    {
+      "npz": "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/diagnostics/capture_03.npz",
+      "sha256": "1563fe768b3eaf2a0905067ff178b2ea5ec29f4c3b4928d5b6bf738fa03429ac",
+      "metadata_sha256": "e9f1f4f35a2c59a6df55e187992531299140b79b1b2d15a5ed15b6a42574a992",
+      "points": 62602,
+      "original_sensor_stamp": 428.0,
+      "planar_odom": [
+        12.587225520482647,
+        -1.8985088964308576,
+        -0.23301571620440978
+      ],
+      "xyz_sha256": "e25b6cc009e9220036aad7818c8bce08acef595c9e9cdad207de3a5204c70688"
+    },
+    {
+      "npz": "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/diagnostics/capture_06.npz",
+      "sha256": "aba66c7ac54c46712cb0d1e4bacc2005a2622a1e08752ce68fc27ac9f6943688",
+      "metadata_sha256": "02e11abec124975d0c7744d153c433c8f00cca41297cff2f5da8f4197bac74b3",
+      "points": 62312,
+      "original_sensor_stamp": 626.1,
+      "planar_odom": [
+        23.72156355594329,
+        -2.3270776344351813,
+        -2.2604261217341906
+      ],
+      "xyz_sha256": "6bd43be4c2bd76c297b2d0cfe3d4088e947f2dc49c8e7195fb18d11b95da1a0f"
+    },
+    {
+      "npz": "optimization_v2/three_tasks/results/R12/mowing_20261119_072044_764057/diagnostics/capture_09.npz",
+      "sha256": "4edca586dc1628d4e35cfcd0848797dede03da92c5ff45c27994a8de45cb4803",
+      "metadata_sha256": "930793b1675a8727333eae8d443704ffdfae1ba2fc83426cbbc17cbd323047a7",
+      "points": 62547,
+      "original_sensor_stamp": 846.2,
+      "planar_odom": [
+        4.4948530973597745,
+        -3.116352728174621,
+        -2.6714325668789285
+      ],
+      "xyz_sha256": "4019b8bd6cf31df356ab34c153a02a7d26f918ed9c1db400aef7118850e57b84"
+    },
+    {
+      "npz": "optimization_v2/three_tasks/results/experiments/b1_connector/mowing_20261119_125335_539235/diagnostics/capture_00.npz",
+      "sha256": "655f3577292cdd0eb3b3af28a44353bfdb8b077ab894c4bd46d723c64b024d52",
+      "metadata_sha256": "d69956c4a3895d19bcd751b3ce05ce85cb49a6c3dcc3ca9a0989d39c359db409",
+      "points": 62527,
+      "original_sensor_stamp": 88.1,
+      "planar_odom": [
+        -2.1733258464769043,
+        -3.0168313624826832,
+        -2.8761180133216024
+      ],
+      "xyz_sha256": "fc72cddccb5a848fe1889353d3a5cf9110c33546c39299a34e4947bf95d4390e"
+    }
+  ],
+  "calls_per_round": 15,
+  "rounds": 2,
+  "results": [
+    {
+      "variant": "original",
+      "round": 0,
+      "ms": [
+        37.382414,
+        33.053782,
+        75.44215,
+        53.793612,
+        35.355546,
+        75.421756,
+        52.404257,
+        36.764457,
+        76.461625,
+        50.316417,
+        35.709433,
+        79.817505,
+        56.740363,
+        37.915443,
+        79.572083
+      ],
+      "output_bytes": 2632778,
+      "output_sha256": "b8d371375cf06c196f39cd6f6167dc1f0890549193d72ade1f055a1ee5f555f5",
+      "grid_bytes": 2400000
+    },
+    {
+      "variant": "indexed",
+      "round": 0,
+      "ms": [
+        21.720893,
+        16.593764,
+        30.522589,
+        35.087216,
+        16.496266,
+        32.549178,
+        33.10784,
+        17.129518,
+        33.06363,
+        31.563925,
+        16.928234,
+        33.954038,
+        32.513279,
+        19.25151,
+        36.041738
+      ],
+      "output_bytes": 2632778,
+      "output_sha256": "b8d371375cf06c196f39cd6f6167dc1f0890549193d72ade1f055a1ee5f555f5",
+      "grid_bytes": 2400000
+    },
+    {
+      "variant": "indexed",
+      "round": 1,
+      "ms": [
+        20.838167,
+        17.253765,
+        31.228477,
+        35.421476,
+        15.93062,
+        32.932258,
+        33.668386,
+        17.671627,
+        33.499231,
+        31.815214,
+        17.513925,
+        35.204479,
+        34.039594,
+        19.143466,
+        37.557996
+      ],
+      "output_bytes": 2632778,
+      "output_sha256": "b8d371375cf06c196f39cd6f6167dc1f0890549193d72ade1f055a1ee5f555f5",
+      "grid_bytes": 2400000
+    },
+    {
+      "variant": "original",
+      "round": 1,
+      "ms": [
+        37.655634,
+        33.906755,
+        74.076122,
+        53.419333,
+        34.548737,
+        74.833273,
+        51.471874,
+        35.495578,
+        77.843159,
+        49.852461,
+        34.246674,
+        78.629922,
+        50.681269,
+        35.727871,
+        80.349209
+      ],
+      "output_bytes": 2632778,
+      "output_sha256": "b8d371375cf06c196f39cd6f6167dc1f0890549193d72ade1f055a1ee5f555f5",
+      "grid_bytes": 2400000
+    }
+  ],
+  "identical_risk_grids_and_geometry": true,
+  "callback_median_ms": {
+    "original": 51.0765715,
+    "indexed": 31.6895695
+  },
+  "median_wall_reduction_percent": 37.95674108627279,
+  "scope": "Offline process invocation on retained combined LiDAR arrays and recorded planar odometry. Three repeats of each input at synthetic 10 Hz exercise ground confirmation. Compares raw bytes of all four risk grids and identical normalized geometry/terrain/health JSON except timing. Callback timing includes identical instrumentation. No vehicle or live success measured.",
+  "input_bundle_sha256": "e22dbef104681b9cd509b77d3e8b982b24b9723c1fb009409f9748f536c418de"
+}

@@ -1,0 +1,211 @@
+{
+  "schema": "A1-REDUCED-TURN-REPLAY/1",
+  "source_sha256": {
+    "optimization_v2/three_tasks/editions/R10/spray/mission.json": "d24f60f1f0abeec62e47616c240b80ae68bf50dab8417a83febc51877ca75a76",
+    "optimization_v2/three_tasks/candidates/A1_equal_length_turns.json": "6052d0c658854e09cdbb8d3b92e2c935ce7938f6ea4f743ef35c7c4c0bd4ddea",
+    "validation/closeout_20261119/spray_time_budget.json": "20127dc5617ae390b5ca51a97284e9d01cdc34aecc09622a48115db2e2ba6fbd",
+    "validation/r10_bounded_20261119/a1/point_phase_profile.json": "b5be57446872e10421eefba998f09696bcff1a40b2cf4ac6a7c11a42ceab35ea"
+  },
+  "method": "Only frozen prior, service points and drive limits are input to optimization. Historical runs and the suffix of the latest run are observational checks. No time model is fitted.",
+  "original": {
+    "points": 56,
+    "open_motion_m": 167.485281,
+    "sum_abs_heading_change_rad": 50.265482,
+    "translation_and_turn_proxy_s": 701.899935,
+    "r03_depot_return_m": 3.0,
+    "minimum_centerline_boundary_distance_m": 1.030786
+  },
+  "candidate": {
+    "points": 56,
+    "open_motion_m": 167.485281,
+    "sum_abs_heading_change_rad": 34.557519,
+    "translation_and_turn_proxy_s": 657.02004,
+    "r03_depot_return_m": 3.0,
+    "minimum_centerline_boundary_distance_m": 1.030786
+  },
+  "certificate": {
+    "solver": "scipy.optimize.milp / HiGHS",
+    "mip_relative_gap": 0.0,
+    "turn_lower_bound_rad": 34.557519,
+    "subtour_cuts": 3,
+    "scope": "Fixed service endpoints, original swept-disk prior and longest allowed edge, total length capped at original; measured initial yaw, no final yaw requirement."
+  },
+  "proxy_reduction_s": 44.879895,
+  "sample_medians": [
+    {
+      "session": "spray_20261115_060145_047614",
+      "all_matched_3m_from_second_leg": {
+        "straight": {
+          "n": 10,
+          "median_nav_s": 25.503,
+          "minimum_nav_s": 21.998,
+          "maximum_nav_s": 39.78,
+          "slowest_point": "point_10_20",
+          "median_body_rotate_s": null
+        },
+        "quarter_turn": {
+          "n": 14,
+          "median_nav_s": 27.73,
+          "minimum_nav_s": 23.99,
+          "maximum_nav_s": 36.03,
+          "slowest_point": "point_9_21",
+          "median_body_rotate_s": null
+        }
+      },
+      "suffix_from_original_ordinal_14": {
+        "straight": {
+          "n": 7,
+          "median_nav_s": 25.62,
+          "minimum_nav_s": 21.998,
+          "maximum_nav_s": 39.78,
+          "slowest_point": "point_10_20",
+          "median_body_rotate_s": null
+        },
+        "quarter_turn": {
+          "n": 6,
+          "median_nav_s": 28.198,
+          "minimum_nav_s": 23.99,
+          "maximum_nav_s": 36.03,
+          "slowest_point": "point_9_21",
+          "median_body_rotate_s": null
+        }
+      },
+      "censored": [
+        {
+          "id": "point_11_21",
+          "confirmed": false,
+          "started": true,
+          "nav_s": 44.684,
+          "body_rotate_s": null,
+          "ordinal": 29,
+          "length_m": 3.0,
+          "turn_deg": 0.0,
+          "group": "straight"
+        }
+      ],
+      "confirmed_points": 28,
+      "selected_points": 56
+    },
+    {
+      "session": "spray_20261119_081218_417252",
+      "all_matched_3m_from_second_leg": {
+        "straight": {
+          "n": 6,
+          "median_nav_s": 26.5,
+          "minimum_nav_s": 24.422,
+          "maximum_nav_s": 37.242,
+          "slowest_point": "point_10_19",
+          "median_body_rotate_s": null
+        },
+        "quarter_turn": {
+          "n": 12,
+          "median_nav_s": 26.985,
+          "minimum_nav_s": 22.38,
+          "maximum_nav_s": 40.468,
+          "slowest_point": "point_9_19",
+          "median_body_rotate_s": null
+        }
+      },
+      "suffix_from_original_ordinal_14": {
+        "straight": {
+          "n": 3,
+          "median_nav_s": 29.252,
+          "minimum_nav_s": 26.24,
+          "maximum_nav_s": 37.242,
+          "slowest_point": "point_10_19",
+          "median_body_rotate_s": null
+        },
+        "quarter_turn": {
+          "n": 4,
+          "median_nav_s": 26.669,
+          "minimum_nav_s": 24.352,
+          "maximum_nav_s": 40.468,
+          "slowest_point": "point_9_19",
+          "median_body_rotate_s": null
+        }
+      },
+      "censored": [
+        {
+          "id": "point_10_20",
+          "confirmed": false,
+          "started": true,
+          "nav_s": 21.238,
+          "body_rotate_s": null,
+          "ordinal": 23,
+          "length_m": 3.0,
+          "turn_deg": 0.0,
+          "group": "straight"
+        }
+      ],
+      "confirmed_points": 22,
+      "selected_points": 56
+    },
+    {
+      "session": "spray_defer_20261119_130223_269769",
+      "all_matched_3m_from_second_leg": {
+        "straight": {
+          "n": 9,
+          "median_nav_s": 25.594,
+          "minimum_nav_s": 20.13,
+          "maximum_nav_s": 36.268,
+          "slowest_point": "point_10_20",
+          "median_body_rotate_s": 0.9
+        },
+        "quarter_turn": {
+          "n": 13,
+          "median_nav_s": 29.586,
+          "minimum_nav_s": 27.722,
+          "maximum_nav_s": 38.734,
+          "slowest_point": "point_9_18",
+          "median_body_rotate_s": 4.358
+        }
+      },
+      "suffix_from_original_ordinal_14": {
+        "straight": {
+          "n": 6,
+          "median_nav_s": 23.47,
+          "minimum_nav_s": 20.13,
+          "maximum_nav_s": 36.268,
+          "slowest_point": "point_10_20",
+          "median_body_rotate_s": 0.2
+        },
+        "quarter_turn": {
+          "n": 5,
+          "median_nav_s": 33.41,
+          "minimum_nav_s": 28.196,
+          "maximum_nav_s": 38.734,
+          "slowest_point": "point_9_18",
+          "median_body_rotate_s": 4.848
+        }
+      },
+      "censored": [
+        {
+          "id": "point_9_21",
+          "confirmed": false,
+          "started": true,
+          "nav_s": 21.692,
+          "body_rotate_s": 5.85,
+          "ordinal": 27,
+          "length_m": 3.0,
+          "turn_deg": 90.0,
+          "group": "quarter_turn"
+        }
+      ],
+      "confirmed_points": 26,
+      "selected_points": 56
+    }
+  ],
+  "coverage_of_new_legs": {
+    "total": 55,
+    "same_direction_in_confirmed_original_runs": 12,
+    "seen_only_in_reverse": 1,
+    "neither_direction_seen": 42
+  },
+  "qualification": {
+    "static_geometry_and_turn_objective": "PASS",
+    "new_route_closed_loop": "NOT_RUN",
+    "new_route_elapsed_sim_s": null,
+    "formal_cluster_credit": false
+  },
+  "limits": "Recorded original-order segments carry safety stops, speed regulation and localization recovery. The physical turn times describe original executions. A same-direction leg can have a different starting pose and heading in the new task. Future pilot runs still use Nav2 collision checks."
+}

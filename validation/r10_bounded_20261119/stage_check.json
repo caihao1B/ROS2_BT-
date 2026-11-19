@@ -1,0 +1,45 @@
+{
+  "original_cases": {
+    "spray_full_A1": false,
+    "spray_tool_jam": true,
+    "mowing_full_B1": false,
+    "mowing_startup_perception_loss": true,
+    "inspection_full_connector": true,
+    "inspection_follow_stop_resume": true,
+    "inspection_detour": true,
+    "inspection_persistent_block": true,
+    "mowing_persistent_block": true
+  },
+  "stages": [
+    {
+      "stage": "R08",
+      "exit": 0,
+      "status": "PASS",
+      "changed": []
+    },
+    {
+      "stage": "R09",
+      "exit": 0,
+      "status": "PASS",
+      "changed": []
+    },
+    {
+      "stage": "R10",
+      "exit": 2,
+      "status": "PARTIAL",
+      "changed": []
+    },
+    {
+      "stage": "R11",
+      "exit": 2,
+      "status": "PARTIAL",
+      "changed": []
+    },
+    {
+      "stage": "R12",
+      "exit": 2,
+      "status": "PARTIAL",
+      "changed": []
+    }
+  ]
+}

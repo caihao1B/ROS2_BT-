@@ -1,0 +1,146 @@
+{
+  "session": "mowing_20261119_134227_187793",
+  "version": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac",
+  "terminal_error": "RuntimeError('SEGMENT_RETRY_BOUND')",
+  "source_sha256": {
+    "mission.json": "3ea2fd1565ee1313114e0bf2ed77032f65081eb30e60f270ed553404057f4df3",
+    "spec.json": "f9bc31e1b6a568bbef6c8cb18f34edf305e8e832346d91890f1a0e04b6990e1d",
+    "mission_result.json": "78cfee1bed96cb78e0a90c2cc873bfbdde4022893e2d0ae0732d4e49e55f691e",
+    "mission_events.jsonl": "dc0e87f99717f5092b1b4d4a8c2b3fe7105def65a1c1897266d0991823a346e4",
+    "control/gate.jsonl": "10d1ba6a691545417dc1d009f541d527ad04964c436e1e653d50d04f41cb3cb4",
+    "reference/reference.jsonl": "32c3dae80914fbf299e823735462389f0b2ba906a62c369ee8c98188be6bd882"
+  },
+  "counters": {
+    "RetryProgress": [
+      {
+        "end_sim_s": 27.278,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 0.0,
+        "resets_consecutive_counter": false,
+        "consecutive": 1,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 28.492,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": false,
+        "path_progress_m": 0.0,
+        "resets_consecutive_counter": false,
+        "consecutive": 2,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 33.674,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 0.0,
+        "resets_consecutive_counter": false,
+        "consecutive": 3,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 35.864,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 0.0,
+        "resets_consecutive_counter": false,
+        "consecutive": 4,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 42.664,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 0.0,
+        "resets_consecutive_counter": false,
+        "consecutive": 5,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 49.964,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 0.0,
+        "resets_consecutive_counter": false,
+        "consecutive": 6,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 52.984,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 0.0,
+        "resets_consecutive_counter": false,
+        "consecutive": 7,
+        "consecutive_bound_reached": true
+      }
+    ],
+    "ContinuousRetryProgress": [
+      {
+        "end_sim_s": 27.278,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 0.3599,
+        "resets_consecutive_counter": false,
+        "consecutive": 1,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 28.492,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": false,
+        "path_progress_m": 0.3599,
+        "resets_consecutive_counter": false,
+        "consecutive": 2,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 33.674,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 0.8896,
+        "resets_consecutive_counter": true,
+        "consecutive": 0,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 35.864,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 0.9542,
+        "resets_consecutive_counter": false,
+        "consecutive": 1,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 42.664,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 1.6385,
+        "resets_consecutive_counter": false,
+        "consecutive": 2,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 49.964,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 2.227,
+        "resets_consecutive_counter": true,
+        "consecutive": 0,
+        "consecutive_bound_reached": false
+      },
+      {
+        "end_sim_s": 52.984,
+        "reason": "PERCEPTION_ADMISSION_WAIT",
+        "in_motion": true,
+        "path_progress_m": 2.3486,
+        "resets_consecutive_counter": false,
+        "consecutive": 1,
+        "consecutive_bound_reached": false
+      }
+    ]
+  },
+  "scope": "Same recorded online pose, odometry, gate and cancellations. A replayed rearm grants only another bounded attempt. No subsequent driving or area is inferred."
+}

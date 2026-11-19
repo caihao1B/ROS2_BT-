@@ -1,0 +1,792 @@
+{
+  "schema": "B1-FULL-46-PHYSICAL/1",
+  "status": "PARTIAL",
+  "session": "mowing_20261119_134227_187793",
+  "plan_revision": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac",
+  "map_revision": "5473af1b26d4a4b1cb46f78a838487e4ecac99ed9df75dffd67035291b673653",
+  "full_entrance_selected": true,
+  "sim_budget_s": 1800,
+  "sim_elapsed_s": 53.894,
+  "runtime_wall_s": 125.43813074599893,
+  "terminal": "HUMAN_REQUIRED",
+  "error": "RuntimeError('SEGMENT_RETRY_BOUND')",
+  "total_segments": 46,
+  "completed_segments": 0,
+  "parking_verified": 0,
+  "gear_change_parks_verified": 0,
+  "max_verified_parking_xy_m": null,
+  "max_verified_parking_yaw_deg": null,
+  "actual_cut_m2": 5.951626739857179,
+  "raw_cut_union_all_ground_m2": 6.545525390921902,
+  "confirmed_union_m2": 5.08400000000001,
+  "target_m2": 188.3918016929564,
+  "residual_m2": 183.30780169295636,
+  "physical_uncut_target_m2": 182.44017495309907,
+  "area_definition": "actual_cut_m2 is independent rotor effect clipped to the original target. confirmed_union_m2 comes from the SQLite ledger. residual_m2 is original target minus confirmed union.",
+  "work_jobs": [
+    {
+      "key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:0",
+      "status": "CANCELLED",
+      "confirmed_m2": 5.0840000000000085,
+      "requested_m2": 10.561490281674196,
+      "remaining_m2": 5.4774902816741875,
+      "uncertain": false,
+      "physical_area_m2": 6.545525390921902,
+      "credit_outside_physical_3cm_m2": 0.0,
+      "credit_geometry_area_m2": 5.0840000000000085
+    }
+  ],
+  "work_fragments": [
+    {
+      "segment": "B1:segment:0:safe:0",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:0",
+      "worker_completed": false,
+      "started_at": 23.986,
+      "interval_end": 53.894,
+      "actual_blade_samples": 469,
+      "measured": true
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:4",
+      "worker_completed": false,
+      "started_at": null,
+      "interval_end": null,
+      "actual_blade_samples": 0,
+      "measured": false
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:8",
+      "worker_completed": false,
+      "started_at": null,
+      "interval_end": null,
+      "actual_blade_samples": 0,
+      "measured": false
+    },
+    {
+      "segment": "B1:segment:12:safe:0",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:12",
+      "worker_completed": false,
+      "started_at": null,
+      "interval_end": null,
+      "actual_blade_samples": 0,
+      "measured": false
+    },
+    {
+      "segment": "B1:segment:16:safe:0",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:16",
+      "worker_completed": false,
+      "started_at": null,
+      "interval_end": null,
+      "actual_blade_samples": 0,
+      "measured": false
+    },
+    {
+      "segment": "B1:segment:16:safe:1",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:16",
+      "worker_completed": false,
+      "started_at": null,
+      "interval_end": null,
+      "actual_blade_samples": 0,
+      "measured": false
+    },
+    {
+      "segment": "B1:segment:20:safe:0",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:20",
+      "worker_completed": false,
+      "started_at": null,
+      "interval_end": null,
+      "actual_blade_samples": 0,
+      "measured": false
+    },
+    {
+      "segment": "B1:segment:24:safe:0",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:24",
+      "worker_completed": false,
+      "started_at": null,
+      "interval_end": null,
+      "actual_blade_samples": 0,
+      "measured": false
+    },
+    {
+      "segment": "B1:segment:29:safe:0",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:29",
+      "worker_completed": false,
+      "started_at": null,
+      "interval_end": null,
+      "actual_blade_samples": 0,
+      "measured": false
+    },
+    {
+      "segment": "B1:segment:29:safe:1",
+      "original_key": "d51ea307ca11422d2bf82bdc0a7627308afe78865a90ba103c88b2c1c9acdaac:B1:segment:29",
+      "worker_completed": false,
+      "started_at": null,
+      "interval_end": null,
+      "actual_blade_samples": 0,
+      "measured": false
+    }
+  ],
+  "checks": {
+    "runtime_clean": true,
+    "original_database_unchanged": true,
+    "no_unexpected_contact": true,
+    "whole_footprint_authorized": true,
+    "map_rmse_under_15cm": true,
+    "unique_actuator": true,
+    "unique_tool": true,
+    "unique_tf": true,
+    "measured_final_stop": true,
+    "feedback_area_consistent": true,
+    "curvature_bounded": true,
+    "source_bound": true,
+    "original_ordered_passages": false,
+    "selected_segments_traversed": false,
+    "two_work_strips": false,
+    "actual_reverse_travel": false,
+    "tools_off_during_turns": false,
+    "tools_off_during_recovery": true,
+    "original_area_and_obligations_retained": true,
+    "reference_not_claimed_completed": true,
+    "full_original_area_denominator": true,
+    "candidate_version_bound": true,
+    "all_46_in_order": false,
+    "original_1800s_budget": true,
+    "every_required_park_physically_verified": false,
+    "active_cut_measured": true,
+    "measured_feedback_for_each_selected_work_fragment": false,
+    "feedback_union_and_residual_reconcile": true
+  },
+  "archived_47_section_version_match": false,
+  "failed_checks": [
+    "original_ordered_passages",
+    "selected_segments_traversed",
+    "two_work_strips",
+    "actual_reverse_travel",
+    "tools_off_during_turns",
+    "all_46_in_order",
+    "every_required_park_physically_verified",
+    "measured_feedback_for_each_selected_work_fragment"
+  ],
+  "formal_credit": false,
+  "original_xy_m": 0.1,
+  "original_yaw_rad": 0.12,
+  "parking": [
+    {
+      "segment": "B1:segment:0:safe:0",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": false,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        89.35616502958243,
+        38.28802720206104,
+        0.2617993877991483
+      ],
+      "state": "ATTEMPTED",
+      "worker_completed": false
+    },
+    {
+      "segment": "B1:safe_turn:1:0",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        82.65590847537625,
+        35.04331221670593,
+        0.2617993877991517
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:segment:4:safe:0",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": false,
+      "endpoint_map": [
+        94.76534965680149,
+        38.28802720206103,
+        0.2617993877991517
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:2:0",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": false,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        97.06059406241783,
+        41.36648961098413,
+        1.5984588232873884
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:2:1",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        100.62537497232134,
+        38.389340000944195,
+        -2.990085269803484
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:2:2",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": false,
+      "endpoint_map": [
+        100.29109325173076,
+        38.319259083329804,
+        -2.879793265790643
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:segment:8:safe:0",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": false,
+      "gear_changes_after": false,
+      "endpoint_map": [
+        84.64055900007116,
+        34.12571106948198,
+        -2.879793265790643
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:3:0",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": false,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        84.42908302135343,
+        34.06087217822674,
+        -2.808387387070694
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:3:1",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        90.11260759439746,
+        39.05205620309749,
+        -1.2724711221637723
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:3:2",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        102.5164054326933,
+        35.45802211497654,
+        0.37714792446185097
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:3:3",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        100.00749168187039,
+        33.895108313990974,
+        0.2617993877991478
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:segment:12:safe:0",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        110.80401195432361,
+        36.78802720206104,
+        0.2617993877991475
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:4:0",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        106.9275984974726,
+        39.3972215049777,
+        -1.4466789005363803
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:4:1",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        105.81600854803239,
+        36.61642875224234,
+        -2.4554756204646955
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:4:2",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        106.97701383056543,
+        37.21197279793897,
+        -2.879793265790642
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:segment:16:safe:0",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        101.18589141621476,
+        35.660246223743925,
+        -2.879793265790642
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:5:0",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        101.73607458646059,
+        35.865261727333696,
+        -2.6900071614620513
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:5:1",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        101.58317547967725,
+        35.78577769073307,
+        -2.6343815308318552
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:5:2",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        102.44389909786506,
+        36.22437701223751,
+        -2.8121000605464412
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:5:3",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        88.00574948861306,
+        31.610499977345278,
+        -2.303461684445702
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:5:4",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        89.50712788060756,
+        32.53093096578392,
+        -2.8797932657906413
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:segment:16:safe:1",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": false,
+      "endpoint_map": [
+        88.15586598392574,
+        32.16886143180507,
+        -2.879793265790642
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:offline_connection:6:0",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": false,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        86.75393716261267,
+        32.12194275301114,
+        2.946702758863019
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:offline_connection:6:1",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        88.58785649065003,
+        30.999455600140266,
+        2.2379879057101375
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:offline_connection:6:2",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        102.94387567748458,
+        30.81321081290492,
+        -0.53692704041775
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:offline_connection:6:3",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        100.55717284124896,
+        31.143621631592943,
+        0.261799387799147
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:segment:20:safe:0",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": false,
+      "endpoint_map": [
+        109.13504065463724,
+        33.442054384971236,
+        0.2617993877991474
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:7:0",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": false,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        111.37619239938391,
+        37.017472907302526,
+        1.7599760726392888
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:7:1",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        112.71803295645267,
+        35.010617555669896,
+        2.5603356265804913
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:7:2",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        111.1575842419303,
+        35.51624852272003,
+        3.096142472665331
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:7:3",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        111.52739029966067,
+        35.521525829655204,
+        -3.067603466157332
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:7:4",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        111.31585525202134,
+        35.498519298364464,
+        -2.9989136587470595
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:7:5",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        111.67719484468476,
+        35.57260919980397,
+        -2.879793265790649
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:segment:24:safe:0",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        101.92730659893098,
+        32.96013451806057,
+        -2.8797932657906458
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:8:0",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        102.26897712114206,
+        33.07332900950934,
+        -2.7635581868875048
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:8:1",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        102.19340994601978,
+        33.04215836492666,
+        -2.7371743992365043
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:8:2",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        103.38049094569763,
+        33.938695158579414,
+        -2.25231218532138
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:8:3",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        102.7283755928028,
+        32.48305826727418,
+        -1.7316480150264697
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:8:4",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        101.77509177744484,
+        35.252702910933195,
+        -0.746965699959689
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:8:5",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        101.78602009103439,
+        35.24263246696075,
+        -0.742169335063495
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:8:6",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        84.38827187284222,
+        32.59963245715769,
+        0.33710904353179727
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:8:7",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": false,
+      "endpoint_map": [
+        84.61117007359816,
+        32.668449677793,
+        0.26179938779915024
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:segment:29:safe:0",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": false,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        87.87824550668421,
+        33.543859901699975,
+        0.2617993877991509
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:9:0",
+      "kind": "TURN_TOOL_OFF",
+      "gear": -1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": true,
+      "endpoint_map": [
+        87.13944485004716,
+        33.239200984585686,
+        0.5204488512701995
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:safe_turn:9:1",
+      "kind": "TURN_TOOL_OFF",
+      "gear": 1,
+      "gear_changed_at_entry": true,
+      "gear_changes_after": false,
+      "endpoint_map": [
+        97.39120044419927,
+        36.09284849484081,
+        0.26179938779913936
+      ],
+      "state": "NOT_STARTED"
+    },
+    {
+      "segment": "B1:segment:29:safe:1",
+      "kind": "COVERAGE",
+      "gear": 1,
+      "gear_changed_at_entry": false,
+      "gear_changes_after": false,
+      "endpoint_map": [
+        99.98564269988519,
+        36.78802720206104,
+        0.2617993877991509
+      ],
+      "state": "NOT_STARTED"
+    }
+  ],
+  "evaluator_sha256": "dd17fd91728aee565512b721e8ff7903713a448a26eefc5b35d0cbacd30faed2",
+  "sources": {
+    "spec.json": "f9bc31e1b6a568bbef6c8cb18f34edf305e8e832346d91890f1a0e04b6990e1d",
+    "mission.json": "3ea2fd1565ee1313114e0bf2ed77032f65081eb30e60f270ed553404057f4df3",
+    "scene/fixture.json": "8ad9f0a3875820e175788ad158b0431f53a11c6c686d97e6da814355267439d0",
+    "mission_result.json": "78cfee1bed96cb78e0a90c2cc873bfbdde4022893e2d0ae0732d4e49e55f691e",
+    "mission_events.jsonl": "dc0e87f99717f5092b1b4d4a8c2b3fe7105def65a1c1897266d0991823a346e4",
+    "evaluation/truth.jsonl": "55bce8c5a5205a8ae345ebee1e13cc450a962375725cbccf4d86af0dac2bf526",
+    "evaluation/contacts.json": "4b8cac70577a46fba8a9c57b1ce36664c8040be586cf04eb1ad7053c44dd8a8b",
+    "tool_evaluation/physical.jsonl": "da6e0b1cabaec9186353e7a2027153b3b28730d3cc5958f9f7bdfff682f07c64",
+    "tool_evaluation/result.json": "9c9b37262dd0daba64c22a5f9f8a1435ebba8bfcb30881d8c86cfb3723a1e2f1",
+    "ledger/ledger.sqlite": "b6aa794c384584a00e209807a7f16359af7b40532b6912aff3052a23b429ee57",
+    "control/gate.jsonl": "10d1ba6a691545417dc1d009f541d527ad04964c436e1e653d50d04f41cb3cb4",
+    "runtime.json": "9b16971a6fda6d99e043dc1c70eedbf236f11054d0fc4373e687b79aab90b1bb",
+    "analysis_mowing_r10.json": "138e412d51ea72b0b9a9de6652be0a4b47e27ea32477a675bf5a56696eea17be"
+  }
+}

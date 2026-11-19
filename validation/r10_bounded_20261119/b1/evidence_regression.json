@@ -1,0 +1,60 @@
+{
+  "schema": "B1-SCORER-REGRESSION/1",
+  "passed": true,
+  "checks": {
+    "candidate_and_route_identity": true,
+    "four_positions_headings_equal_sealed_values": true,
+    "changed_heading_rejected": true,
+    "missing_rotor_rejected": true,
+    "opposite_gear_rejected": true,
+    "actual_entrance_not_promoted": true,
+    "no_credit_for_unmeasured_positions": true,
+    "scoped_physical_and_ledger_areas": true,
+    "retained_uncut_work": true
+  },
+  "earlier_four_gear_run": "mowing_20261119_125335_539235",
+  "scope": "Earlier four real sensor stops with intentional offline mutations. No simulated distance added.",
+  "earlier_stops": [
+    {
+      "segment": "B1:offline_connection:6:0",
+      "xy_m": 0.04871349667486329,
+      "yaw_rad": 0.014002928401436687,
+      "gear": [
+        1
+      ]
+    },
+    {
+      "segment": "B1:offline_connection:6:1",
+      "xy_m": 0.04895582239684552,
+      "yaw_rad": 0.009573351890470594,
+      "gear": [
+        -1
+      ]
+    },
+    {
+      "segment": "B1:offline_connection:6:2",
+      "xy_m": 0.09378121424056331,
+      "yaw_rad": 0.011054434409946134,
+      "gear": [
+        1
+      ]
+    },
+    {
+      "segment": "B1:offline_connection:6:3",
+      "xy_m": 0.03570286504059339,
+      "yaw_rad": 0.025038693064344225,
+      "gear": [
+        -1
+      ]
+    }
+  ],
+  "partial_entrance": "mowing_20261119_134227_187793",
+  "areas_m2": {
+    "target_m2": 188.3918016929564,
+    "raw_cut_union_all_ground_m2": 6.545525390921902,
+    "actual_cut_m2": 5.951626739857179,
+    "confirmed_union_m2": 5.08400000000001,
+    "residual_m2": 183.30780169295636
+  },
+  "bundle_sha256": "22c7c271b88afd038cca37068e78b2f7d51513666ac1bbd1d638951093480459"
+}

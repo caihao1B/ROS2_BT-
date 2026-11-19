@@ -1,0 +1,62 @@
+{
+  "schema": "R10-BOUNDED-RELEASE-CHECK/1",
+  "base_commit": "20aefc4f14c25fc835d5ff55ed81c685202f8d05",
+  "standalone_unit_tests_passed": {
+    "test_spray_phase_profile.py": 6,
+    "test_spray_equal_length.py": 4,
+    "test_b1_progress.py": 7
+  },
+  "b1_scorer_regression_replayed": {
+    "candidate_and_route_identity": true,
+    "four_positions_headings_equal_sealed_values": true,
+    "changed_heading_rejected": true,
+    "missing_rotor_rejected": true,
+    "opposite_gear_rejected": true,
+    "actual_entrance_not_promoted": true,
+    "no_credit_for_unmeasured_positions": true,
+    "scoped_physical_and_ledger_areas": true,
+    "retained_uncut_work": true
+  },
+  "b1_actual_entrance_video_sha256": "8efff081dea67309c8dc3bd0fdf521007847511b31d2d990f33682a59b847263",
+  "b1_actual_entrance_decoded_frames": 547,
+  "public_videos_rehashed_and_index_preserved": 43,
+  "local_sealed_videos_sha256_checked": 25,
+  "unchanged_original_receipts": {
+    "R01": "PASS",
+    "R02": "PASS",
+    "R03": "PASS",
+    "R04": "PASS",
+    "R05": "PASS",
+    "R06": "PASS",
+    "R07": "PASS",
+    "R08": "PASS",
+    "R09": "PASS",
+    "R10": "PARTIAL",
+    "R11": "PARTIAL",
+    "R12": "PARTIAL"
+  },
+  "unchanged_historical_receipts": {
+    "S17": "PARTIAL",
+    "S18": "PARTIAL"
+  },
+  "frozen_r10_edition_and_world_paths_checked": [
+    "optimization_v2/assets/worlds/irregular_farm.sdf",
+    "optimization_v2/three_tasks/editions/R10/catalog.json",
+    "optimization_v2/three_tasks/editions/R10/mowing/manager.json",
+    "optimization_v2/three_tasks/editions/R10/mowing/mission.json",
+    "optimization_v2/three_tasks/editions/R10/mowing/nav2.yaml",
+    "optimization_v2/three_tasks/editions/R10/mowing/terrain.json",
+    "optimization_v2/three_tasks/editions/R10/mowing/tool.json",
+    "optimization_v2/three_tasks/editions/R10/mowing_safe_plan.json",
+    "optimization_v2/three_tasks/editions/R10/spray/manager.json",
+    "optimization_v2/three_tasks/editions/R10/spray/mission.json",
+    "optimization_v2/three_tasks/editions/R10/spray/nav2.yaml",
+    "optimization_v2/three_tasks/editions/R10/spray/terrain.json",
+    "optimization_v2/three_tasks/editions/R10/spray/tool.json"
+  ],
+  "local_doc_links_checked": 71,
+  "profile_six_sessions_portable_replay": "PASS",
+  "canonical_release_files_identical": true,
+  "no_historical_deletions": true,
+  "original_gate_map_plan_and_area_unchanged": true
+}
